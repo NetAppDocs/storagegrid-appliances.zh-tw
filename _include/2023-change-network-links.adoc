@@ -1,0 +1,51 @@
+= 
+:allow-uri-read: 
+
+
+.開始之前
+* 您有 link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
+
+
+
+NOTE: 在極少數情況StorageGRID 下、將某個應用程式置於維護模式可能會使應用裝置無法遠端存取。
+
+.步驟
+. 從《SectionAppliance安裝程式》StorageGRID 中、選取*「Configure Networking」（設定網路）*>「* Link Configuration」（*連結組態）*。
+. 對連結組態進行所需的變更。
++
+如需選項的詳細資訊、請參閱 link:../installconfig/configuring-network-links.html["設定網路連結"]。
+
++
+
+NOTE: 在應用裝置處於維護模式時所做的 IP 組態變更不會套用至已安裝的 StorageGRID 環境。執行下列連結： ../Mainte/changing-nodes-network-configuration.html[`change-ip` 命令 ] 將應用裝置重新開機至 StorageGRID 後。
+
+. 當您對所選項目感到滿意時、請按一下「*儲存*」。
++
+
+NOTE: 如果您變更所連線的網路或連結、可能會失去連線。如果您在 1 分鐘內未重新連線、請使用指派給應用裝置的其他 IP 位址之一、重新輸入 StorageGRID 應用裝置安裝程式的 URL ： `*https://_appliance_IP_:8443*`
+
+. 對應用裝置的IP位址進行必要的變更。
++
+如果您變更了VLAN設定、裝置的子網路可能已經變更。如果您需要變更應用裝置的IP位址、請參閱 link:../installconfig/setting-ip-configuration.html["設定StorageGRID 靜態IP位址"]。
+
+. 從功能表中選取「*組態網路*>* Ping Test*」。
+. 使用Ping測試工具檢查連線至任何網路上的IP位址、這些網路可能會受到您在設定應用裝置時所做的連結組態變更影響。
++
+除了您選擇執行的任何其他測試之外、請確認您可以ping主管理節點的Grid Network IP位址、以及至少一個其他節點的Grid Network IP位址。如有必要、請返回設定網路連結的指示、並修正任何問題。
+
+. 當您確定連結組態變更是否正常運作後、請重新啟動節點。從「the Sof the Sof the Some Installer」選取「*進階*>*重新開機控制器*」StorageGRID 、然後選取下列其中一個選項：
++
+** 選取 * 重新開機至 StorageGRID * 、以重新啟動節點重新加入網格的運算控制器。如果您已在維護模式下完成工作、並準備好讓節點恢復正常作業、請選取此選項。
+** 選取 * 重新開機至維護模式 * 、以重新啟動運算控制器、使節點保持在維護模式。（此選項僅在控制器處於維護模式時可用。） 如果在節點重新加入網格之前、需要在節點上執行其他維護作業、請選取此選項。
++
+image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
+
++
+裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。節點頁面應顯示正常狀態（綠色核取記號圖示） image:../media/icon_alert_green_checkmark.png["綠色核取記號"] 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。
+
++
+image::../media/nodes_menu.png[應用裝置節點重新加入網格]
+
+
+
+

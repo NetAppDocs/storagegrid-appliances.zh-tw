@@ -1,0 +1,8 @@
+---
+permalink: installconfig/controllers-in-sg5700-appliances.html 
+redirect: storagegrid-appliances/installconfig/hardware-description-sg5700.html#sg5700-controllers 
+---
+= 
+:allow-uri-read: 
+
+

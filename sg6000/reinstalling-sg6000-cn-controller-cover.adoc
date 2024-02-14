@@ -1,0 +1,63 @@
+---
+permalink: sg6000/reinstalling-sg6000-cn-controller-cover.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, controller, cover, install, installing, installation, reinstall, reinstalling, reinstallation, remove, removing, removal 
+summary: 取下產品外蓋以檢修內部組件以進行維護、完成後請裝回外蓋。 
+---
+= 更換 SG6000 控制器護蓋
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+取下產品外蓋以檢修內部組件以進行維護、完成後請裝回外蓋。
+
+
+
+== 取下SG6000-CN-控制器護蓋
+
+取下控制器護蓋、以存取內部元件進行維護。
+
+.開始之前
+從機櫃或機架中取出控制器、以存取頂蓋。
+
+link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html#remove-sg6000-cn-controller-from-cabinet-or-rack["從機櫃或機架上卸下SG6000-CN.控制器"]
+
+.步驟
+. 請確定SG6000-CN-控制器護蓋栓鎖未鎖定。如有必要、請將藍色的塑膠栓鎖鎖朝解除鎖定方向轉動四分之一圈、如鎖銷鎖上所示。
+. 將栓鎖朝SG6000-CN-控制器機箱的背面向上和向後旋轉、直到卡住為止、然後小心地從機箱中提起機箱蓋、並將其放在一邊。
++
+image::../media/sg6060_cover_latch_open.jpg[SG6060護蓋栓鎖開啟]
+
++
+
+CAUTION: 將ESD腕帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免在SG6000-CN-控制器內部工作時產生靜電釋放。
+
+
+
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+
+
+
+== 重新安裝SG6000-CN-控制器護蓋
+
+內部硬體維護完成後、請重新安裝控制器護蓋。
+
+.開始之前
+您已完成控制器內部的所有維護程序。
+
+.步驟
+. 打開機箱蓋栓鎖時、將機箱上方的機箱蓋固定、並將機箱頂蓋栓鎖上的孔對準機箱中的插銷。將機箱蓋對齊後、將其放低到機箱上。
++
+image::../media/sg6060_cover_latch_alignment_pin.jpg[SG6060護蓋栓鎖對齊插銷]
+
+. 向前或向下轉動機箱蓋栓鎖、直到其停止、並將機箱蓋完全裝入機箱。確認機箱蓋前緣沒有任何間隙。
++
+如果機箱蓋未完全就位、您可能無法將SG6000-CN-控制器滑入機架。
+
+. 選用：將藍色的塑膠鎖栓鎖朝鎖定方向轉動四分之一圈、如鎖銷鎖上所示、即可將其鎖定。
+
+
+.完成後
+link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html["將控制器重新安裝到機櫃或機架中。"]

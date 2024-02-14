@@ -1,0 +1,8 @@
+---
+permalink: installconfig/gathering-installation-information-overview.html 
+redirect: storagegrid-appliances/installconfig/reviewing-appliance-network-connections.html 
+---
+= 
+:allow-uri-read: 
+
+

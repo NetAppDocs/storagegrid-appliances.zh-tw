@@ -1,0 +1,77 @@
+---
+permalink: installconfig/index.html 
+sidebar: sidebar 
+keywords: Installation, deployment, Install, deploy, Installing, deploying 
+summary: 請遵循這些高階步驟來安裝和設定 StorageGRID 應用裝置、並將其部署為 StorageGRID 系統中的節點。 
+---
+= 裝置安裝快速入門
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+請遵循這些高階步驟來安裝和設定 StorageGRID 應用裝置、並將其部署為 StorageGRID 系統中的節點。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 準備安裝
+[role="quick-margin-list"]
+. 與 NetApp 專業服務顧問合作、自動化安裝與組態。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
++
+此步驟為選用步驟。不過、簡化及自動化組態步驟可節省時間、並在多個應用裝置的組態中提供一致性。
+
+. link:preparing-site.html["準備網站"]
+. link:unpacking-boxes.html["打開包裝盒"]
+. link:obtaining-additional-equipment-and-tools.html["取得其他設備和工具"]
+. https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["檢閱網頁瀏覽器需求"^]
+. link:reviewing-appliance-network-connections.html["收集網路資訊"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 安裝硬體
+[role="quick-margin-list"]
+. link:registering-hardware.html["註冊硬體"]
+. 安裝到機櫃或機架中
++
+** link:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html["SG100 與 SG1000"]
+** link:installing-appliance-in-cabinet-or-rack-sg5700.html["SG5700"]
+** link:installing-hardware-sg6000.html["SG6000"]
+** link:installing-appliance-in-cabinet-or-rack-sgf6112.html["SG6100"]
+
+
+. link:cabling-appliance.html["纜線應用裝置"]
+. link:connecting-power-cords-and-applying-power.html["連接電源線並接上電源"]
+. link:viewing-status-indicators.html["檢視狀態指示燈和代碼"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 設定硬體
+[role="quick-margin-para"]
+如果您要設定和部署多個應用裝置、請使用 NetApp ConfigBuilder 工具來自動化下列組態和部署步驟。如需相關指引、請聯絡您的 NetApp 專業服務顧問。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
+
+[role="quick-margin-list"]
+. 設定 StorageGRID 連線
++
+** link:accessing-storagegrid-appliance-installer.html["存取StorageGRID 產品安裝程式"] 並確認您執行的是最新版本
+** link:configuring-network-links.html["設定網路連結"]
+** link:setting-ip-configuration.html["設定StorageGRID 靜態IP位址"]
+** link:verifying-network-connections.html["驗證網路連線"]
+** link:verifying-port-level-network-connections.html["驗證連接埠層級的網路連線"]
+
+
+. link:accessing-and-configuring-santricity-system-manager.html["存取及設定 SANtricity 系統管理員"] （ SG6000 和 SG5700 ）
+. link:configuring-bmc-interface.html["設定 BMC 介面"] （ SG100 、 SG1000 、 SG6000 和 SG6100 ）
+. 執行選用的設定步驟
++
+** link:optional-enabling-node-encryption.html["啟用節點或磁碟機加密"]
+** link:optional-changing-raid-mode.html["變更 RAID 模式（ SG6000 和 SG5700 ）"]
+** link:optional-remapping-network-ports-for-appliance.html["重新對應網路連接埠"]
+
+
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 部署應用裝置節點
+[role="quick-margin-para"]
+將應用裝置部署為 StorageGRID 系統中的新節點。
+
+[role="quick-margin-list"]
+* link:deploying-appliance-storage-node.html["部署應用裝置儲存節點"]
+* link:deploying-services-appliance-node.html["部署服務應用裝置節點"]
+

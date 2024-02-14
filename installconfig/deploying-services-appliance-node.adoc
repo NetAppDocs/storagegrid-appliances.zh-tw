@@ -1,0 +1,196 @@
+---
+permalink: installconfig/deploying-services-appliance-node.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
+summary: 您可以將服務應用裝置部署為主要管理節點、非主要管理節點或閘道節點。所有服務應用裝置都可以同時做為閘道節點和管理節點 \ （主要或非主要 \ ）運作。 
+---
+= 部署服務應用裝置節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將服務應用裝置部署為主要管理節點、非主要管理節點或閘道節點。所有服務應用裝置都可以同時做為閘道節點和管理節點（主要或非主要）運作。
+
+
+
+== 將服務應用裝置部署為主要管理節點
+
+當您將服務應用裝置部署為主要管理節點時、您可以使用StorageGRID 應用裝置隨附的《支援服務應用程式安裝程式」來安裝StorageGRID 此版的更新、或是上傳您要安裝的軟體版本。您必須先安裝並設定主要管理節點、才能安裝任何其他應用裝置節點類型。主管理節點可連線至網格網路、以及選用的管理網路和用戶端網路（如果已設定一個或兩個）。
+
+.開始之前
+* 設備已安裝在機架或機櫃中、並已連接至您的網路、並已開啟電源。
+* 網路連結、IP位址和連接埠重新對應（如有必要）已使用StorageGRID 《應用程式安裝程式》為應用裝置設定。
+* 您的服務型筆記型電腦配備 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 您知道指派給應用裝置的其中一個IP位址。您可以將IP位址用於任何附加StorageGRID 的靜態網路。
+
+
+.關於這項工作
+若要在StorageGRID 應用裝置主要管理節點上安裝功能：
+
+* 您可以使用StorageGRID 「功能介紹」安裝程式來安裝StorageGRID 此功能。如果您想安裝不同版本的軟體、請先使用StorageGRID 《》應用程式安裝程式上傳。
+* 安裝軟體時請稍候。
+* 安裝軟體後、裝置會自動重新開機。
+
+
+.步驟
+. 開啟瀏覽器、然後輸入應用裝置的IP位址。+
+`*https://_services_appliance_IP_:8443*`
++
+畫面會出現「the不再安裝StorageGRID 程式」首頁。
+
+. 在「*此節點*」區段中、選取「*主要管理員*」。
+. 在「*節點名稱*」欄位中、輸入您要用於此應用裝置節點的名稱、然後按一下「*儲存*」。
++
+節點名稱會指派給StorageGRID 此應用裝置節點的功能。網格管理程式的「網格節點」頁面上會顯示此資訊。
+
+. 或者、若要安裝StorageGRID 不同版本的更新版的更新版本、請依照下列步驟操作：
++
+.. 下載安裝歸檔：
++
+https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]
+
+.. 擷取歸檔。
+.. 從《Sile Appliance Installer》StorageGRID （英文）中、選取*進階*>*上傳StorageGRID 《Some Software*》（英文）。
+.. 按一下「*移除*」以移除目前的軟體套件。
++
+image::../media/appliance_installer_rmv_current_software.png[應用裝置安裝程式-移除目前的軟體]
+
+.. 按一下*瀏覽*以取得您下載並解壓縮的軟體套件、然後按一下*瀏覽*以取得Checksum檔案。
++
+image::../media/appliance_installer_upload_sg_software.png[應用裝置安裝程式-上傳SG軟體]
+
+.. 選擇*主頁*返回主頁。
+
+
+. 確認目前狀態為「Ready to start installation of primary Admin Node name with software version x.y」（已準備好開始安裝軟體版本x.y的主管理節點名稱）、且已啟用* Start Installation*（開始安裝）按鈕。
++
+
+NOTE: 如果您要將管理節點應用裝置部署為節點複製目標、請在此停止部署程序、然後繼續 link:../commonhardware/appliance-node-cloning-procedure.html["節點複製程序"]。
+
+. 從「the Some Appliance Installer」首頁、按一下StorageGRID 「*開始安裝*」。
++
+image::../media/appliance_installer_home_start_installation_enabled_primary_an.png[裝置主要管理節點安裝]
+
++
+目前狀態會變更為「Installation is in progress、」、並顯示「Monitor Installation（監控安裝）」頁面。
+
++
+
+NOTE: 如果您需要手動存取「監視器安裝」頁面、請從功能表列按一下「*監視器安裝*」。
+
+
+
+
+
+== 將服務應用裝置部署為閘道或非主要管理節點
+
+當您將服務應用裝置部署為閘道節點或非主要管理節點時、請使用StorageGRID 應用裝置隨附的《支援服務應用程式》安裝程式。
+
+.開始之前
+* 設備已安裝在機架或機櫃中、並已連接至您的網路、並已開啟電源。
+* 網路連結、IP位址和連接埠重新對應（如有必要）已使用StorageGRID 《應用程式安裝程式》為應用裝置設定。
+* 已部署適用於此系統的主要管理節點StorageGRID 。
+* 列出在《IP組態》頁面StorageGRID 上的所有Grid Network子網路、均已在主要管理節點的Grid Network Subnet List（網格網路子網路清單）中定義。
+* 您的服務型筆記型電腦配備 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 您知道指派給應用裝置的IP位址。您可以將IP位址用於任何附加StorageGRID 的靜態網路。
+
+
+.關於這項工作
+若要在StorageGRID 服務應用裝置節點上安裝支援：
+
+* 您可以指定或確認主要管理節點的IP位址、以及應用裝置節點的名稱。
+* 您開始安裝、並等待軟體安裝完成。
++
+在設備閘道節點的安裝工作中、安裝會暫停一段時間。若要繼續安裝、請登入Grid Manager、核准所有網格節點、並完成StorageGRID 安裝程序。安裝非主要管理節點不需要您的核准。
+
+
+
+
+NOTE: 請勿在同一個站台部署 SG100 和 SG1000 服務應用裝置。可能會導致無法預測的效能。
+
+
+NOTE: 如果您需要一次部署多個應用裝置節點、您可以將安裝程序自動化。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
+
+.步驟
+. 開啟瀏覽器、然後輸入應用裝置的IP位址。
++
+`*https://_Controller_IP_:8443*`
+
++
+畫面會出現「the不再安裝StorageGRID 程式」首頁。
+
+. 在「主要管理節點連線」區段中、判斷是否需要指定主要管理節點的IP位址。
++
+如果您先前已在此資料中心安裝其他節點、StorageGRID 則當主管理節點或至少有一個已設定ADD_IP的其他網格節點出現在同一個子網路上時、即可自動探索此IP位址。
+
+. 如果未顯示此IP位址、或您需要變更它、請指定位址：
++
+[cols="1a,2a"]
+|===
+| 選項 | 說明 
+
+
+ a| 
+手動輸入IP
+ a| 
+.. 清除 * 啟用管理節點探索 * 核取方塊。
+.. 手動輸入IP位址。
+.. 按一下「 * 儲存 * 」。
+.. 等待連線狀態、讓新的IP位址準備就緒。
+
+
+
+
+ a| 
+自動探索所有連線的主要管理節點
+ a| 
+.. 選中 * 啓用管理節點發現 * 複選框。
+.. 等待顯示已發現的IP位址清單。
+.. 選取要部署此應用裝置儲存節點的網格主要管理節點。
+.. 按一下「 * 儲存 * 」。
+.. 等待連線狀態、讓新的IP位址準備就緒。
+
+
+|===
+. 在 * 節點名稱 * 欄位中、提供您要用於此應用裝置節點的系統名稱、然後按一下 * 儲存 * 。
++
+此處顯示的名稱將是應用裝置節點的系統名稱。內部 StorageGRID 作業需要系統名稱、因此無法變更。
+
+. 或者、若要安裝StorageGRID 不同版本的更新版的更新版本、請依照下列步驟操作：
++
+.. 下載安裝歸檔：
++
+https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]
+
+.. 擷取歸檔。
+.. 從《Sile Appliance Installer》StorageGRID （英文）中、選取*進階*>*上傳StorageGRID 《Some Software*》（英文）。
+.. 按一下「*移除*」以移除目前的軟體套件。
++
+image::../media/appliance_installer_rmv_current_software.png[應用裝置安裝程式-移除目前的軟體]
+
+.. 按一下*瀏覽*以取得您下載並解壓縮的軟體套件、然後按一下*瀏覽*以取得Checksum檔案。
++
+image::../media/appliance_installer_upload_sg_software.png[應用裝置安裝程式-上傳SG軟體]
+
+.. 選擇*主頁*返回主頁。
+
+
+. 在「安裝」區段中、確認目前狀態為「準備開始安裝 `_node name_` 使用主要管理節點進入網格 `_admin_ip_` "且已啟用*開始安裝*按鈕。
++
+如果*開始安裝*按鈕未啟用、您可能需要變更網路組態或連接埠設定。如需相關指示、請參閱產品的維護指示。
+
+. 從「the Some Appliance Installer」首頁、按一下StorageGRID 「*開始安裝*」。
++
+image::../media/appliance_installer_services_appliance_non_pan.png[應用裝置安裝程式首頁-安裝非主要管理節點]
+
++
+目前狀態會變更為「Installation is in progress、」、並顯示「Monitor Installation（監控安裝）」頁面。
+
++
+
+NOTE: 如果您需要手動存取「監視器安裝」頁面、請從功能表列按一下「*監視器安裝*」。
+
+. 如果網格包含多個應用裝置節點、請針對每個應用裝置重複上述步驟。
+

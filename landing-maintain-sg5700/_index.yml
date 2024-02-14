@@ -1,0 +1,19 @@
+---
+indexpage:
+  tiles:
+  - title: 經常執行的程序
+    links:
+    - title: 變更連結組態
+      url: "../sg5700/changing-link-configuration-of-e5700sg-controller.html"
+    - title: 升級 SANtricity
+      url: "../sg5700/upgrading-santricity-os-on-storage-controller.html"
+    - title: 升級磁碟機韌體
+      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: 硬體程序
+    links:
+    - title: 更換 E2800 系列儲存控制器
+      url: "../sg5700/replacing-e2800-controller.html"
+    - title: 更換 E5700SG 運算控制器
+      url: "../sg5700/replacing-e5700sg-controller.html"
+    - title: 更換其他 SG5700 元件
+      url: "../sg5700/replacing-other-hardware-components-sg5700.html"

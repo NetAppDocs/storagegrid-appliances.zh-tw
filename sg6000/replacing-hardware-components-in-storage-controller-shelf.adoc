@@ -1,0 +1,76 @@
+---
+permalink: sg6000/replacing-hardware-components-in-storage-controller-shelf.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, storage controller shelf, Battery, Drive, Power canister, power supply, Fan canister, fan, Drive drawer 
+summary: 如果發生硬體問題、您可能需要更換儲存控制器機櫃中的元件。 
+---
+= 更換 SG6000 儲存控制器機櫃中的硬體元件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果發生硬體問題、您可能需要更換儲存控制器機櫃中的元件。
+
+.開始之前
+* 您有E系列硬體更換程序。
+* 您已實際將儲存設備放置在資料中心內、以便更換儲存櫃硬體元件。
++
+link:locating-controller-in-data-center.html["在資料中心找到控制器"]
+
+
+
+.關於這項工作
+若要更換儲存控制器中的電池、請參閱的說明中的步驟 link:replacing-storage-controller-sg6000.html["更換儲存控制器"]。這些指示說明如何從產品中取出控制器、從控制器中取出電池、安裝電池、以及更換控制器。
+
+如需控制器機櫃中其他現場可更換單元（ FRU ）的說明、請存取 http://mysupport.netapp.com/info/web/ECMP1658252.html["E 系列系統維護程序"^]。
+
+[cols="1a,3a"]
+|===
+| FRU | 請參閱指示 
+
+
+ a| 
+電池
+ a| 
+（以下說明）：更換儲存控制器StorageGRID
+
+
+
+ a| 
+磁碟機
+ a| 
+E系列：
+
+* 更換磁碟機（60個磁碟機）
+* 更換磁碟機（12個磁碟機或24個磁碟機）
+
+
+
+
+ a| 
+電力箱
+ a| 
+E系列
+
+* 更換動力箱（60個磁碟機）
+* 更換電源供應器（12個磁碟機或24個磁碟機）
+
+
+
+
+ a| 
+風扇容器（僅限60個磁碟機櫃）
+ a| 
+E系列：更換風扇容器（60個磁碟機）
+
+
+
+ a| 
+磁碟機抽取器（僅限60個磁碟機磁碟櫃）
+ a| 
+E系列：更換磁碟機抽屜（60個磁碟機）
+
+|===
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。

@@ -1,0 +1,41 @@
+---
+permalink: sg100-1000/locating-controller-in-data-center.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, locate, find, locating, finding, identify, blue led, blue light 
+summary: 找到控制器、以便執行硬體維護或升級。 
+---
+= 在資料中心找到 SG100 或 SG1000
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+找到控制器、以便執行硬體維護或升級。
+
+.開始之前
+* 您已確定需要維護的控制器。
+* （選用）為了協助您在資料中心找到控制器、 link:turning-controller-identify-led-on-and-off.html["開啟藍色識別LED"]。
+
+
+.步驟
+. 在資料中心尋找需要維護的控制器。
++
+** 在控制器正面或背面尋找亮起的藍色識別LED。
++
+前面的識別LED位於控制器前擋板後面、可能很難看出是否安裝了擋板。
+
++
+image::../media/sg6060_front_panel_service_led_on.jpg[正面識別LED -亮起]
+
+** 檢查附加在每個控制器正面的標記、以取得相符的零件編號。
+
+
+. 如果安裝了控制器前擋板、請將其卸下、以存取前面板控制項和指示燈。
+. 選用： link:turning-controller-identify-led-on-and-off.html["關閉藍色識別 LED"] 如果您使用它來尋找控制器。
++
+** 按下控制器前面板上的識別LED開關。
+** 使用控制器BMC介面。
+
+
+

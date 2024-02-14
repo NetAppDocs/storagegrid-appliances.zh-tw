@@ -1,0 +1,201 @@
+---
+permalink: sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
+summary: 對於目前使用SANtricity 更新版本的儲存控制器、您必須使用Grid Manager來套用升級。 
+---
+= 使用 Grid Manager 升級 SG5700 儲存控制器上的 SANtricity OS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於目前使用SANtricity 不支援更新版本的儲存控制器、您必須使用Grid Manager進行升級。
+
+.開始之前
+* 您已諮詢 https://imt.netapp.com/matrix/#welcome["NetApp互通性對照表工具IMT （不含）"^] 確認您用於升級的 SANtricity 作業系統版本與您的應用裝置相容。
+* 您擁有 https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["維護或根存取權限"^]。
+* 您將使用登入Grid Manager https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 您有資源配置通關密碼。
+* 您可以存取 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]。
+
+
+.關於這項工作
+在完成 SANtricity OS 升級程序之前、您無法執行其他軟體更新（ StorageGRID 軟體升級或 Hotfix ）。如果您在StorageGRID 完成更新程序之前嘗試啟動修補程式或更新版的功能、SANtricity 您會被重新導向SANtricity 到「更新版更新版」頁面。
+
+直到成功將更新套用至所有已選擇進行升級的適用節點為止、此程序才會完成SANtricity 。在SANtricity 每個節點上（依序）載入不一致的作業系統可能需要30分鐘以上、而重新啟動StorageGRID 每個不一致的儲存設備可能需要90分鐘。您網格中任何不使用 SANtricity OS 的節點都不會受到此程序的影響。
+
+
+CAUTION: 下列步驟僅適用於使用Grid Manager執行升級的情況。當控制器使用早於 08.42.20.00 （ 11.42 ）的 SANtricity 作業系統時、無法使用 Grid Manager 來升級應用裝置中的儲存控制器。
+
+
+NOTE: 此程序會自動將NVSRAM升級 至SANtricity 與更新版有關的最新版本。您不需要套用個別的 NVSRAM 升級檔案。
+
+
+NOTE: 在開始此程序之前、請務必套用最新的 StorageGRID Hotfix 。請參閱 https://docs.netapp.com/us-en/storagegrid-118/maintain/storagegrid-hotfix-procedure.html["修復程序StorageGRID"^] 以取得詳細資料。
+
+.步驟
+. [[download-SANtricity -OS]] 從下載新的 SANtricity OS 軟體檔案 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]。
++
+請務必為SANtricity 儲存控制器選擇適用的作業系統版本。
+
+. 選擇*維護*>*系統*>*軟體更新*。
++
+image::../media/software_update_landing.png[軟體更新登陸頁面]
+
+. 在「更新作業系統」區段中、選取*更新*。SANtricity
++
+隨即出現 SANtricity OS 升級頁面、並列出每個應用裝置節點的詳細資料、包括：
+
++
+** 節點名稱
+** 網站
+** 應用裝置機型
+** SANtricity OS 版本
+** 狀態
+** 上次升級狀態
+
+
+. 查看表中所有可升級設備的資訊。確認所有儲存控制器的狀態均為 * 標稱 * 。如果任何控制器的狀態為 * 不明 * 、請前往 * 節點 * > *_appliance node_* > * 硬體 * 調查並解決此問題。
+. 選取您從 NetApp 支援網站 下載的 SANtricity OS 升級檔案。
++
+.. 選擇*瀏覽*。
+.. 找出並選取檔案。
+.. 選取*「Open*（開啟*）」。
+
+
++
+檔案已上傳並驗證。驗證程序完成後、檔案名稱會在 * 瀏覽 * 按鈕旁顯示綠色核取記號。請勿變更檔案名稱、因為它是驗證程序的一部分。
+
+. 輸入資源配置密碼短語、然後選取 * 繼續 * 。
++
+此時會出現一個警告方塊、指出當重新啟動升級的節點上的服務時、瀏覽器的連線可能會暫時中斷。
+
+. 選擇 * 是 * 、將 SANtricity OS 升級檔案登入主要管理節點。
++
+當作業系統升級開始時SANtricity ：
+
++
+.. 執行健全狀況檢查。此程序會檢查沒有節點的狀態是否為「Needs Attention（需要注意）」。
++
+
+NOTE: 如果報告了任何錯誤、請解決這些錯誤、然後再次選取* Start*（開始*）。
+
+.. 畫面會出現「更新作業系統」進度表。SANtricity此表顯示網格中的所有儲存節點、以及每個節點的目前升級階段。
++
+
+NOTE: 下表顯示所有應用裝置儲存節點。不會顯示軟體型儲存節點。對於所有需要升級的節點、請選取* Approve *。
+
++
+image::../media/santricity_upgrade_progress_table.png[快照顯示SANtricity 「VMware作業系統升級」頁面的「VMware作業系統升級進度」SANtricity 部分]
+
+
+
+. 您也可以選擇以遞增或遞減順序排序節點清單：
++
+** 節點名稱
+** 目前版本
+** 進度
+** 階段
+** 狀態
+
+
++
+您也可以在「搜尋」方塊中輸入字詞、以搜尋特定節點。
+
+. 核准已準備好新增至升級佇列的網格節點。核准的節點一次升級一個。
++
+
+CAUTION: 請勿核准應用裝置儲存節點的 SANtricity OS 升級、除非您確定該節點已準備好要停止並重新開機。當某個節點上的更新獲得核准時、該節點上的服務會停止、升級程序也會開始。SANtricity之後、當節點完成升級時、應用裝置節點會重新開機。這些作業可能會造成與節點通訊的用戶端服務中斷。
+
++
+** 選取 * 全部核准 * 按鈕、將所有儲存節點新增至 SANtricity OS 升級佇列。
++
+
+NOTE: 如果節點的升級順序很重要、請一次核准一個節點或節點群組、並等到每個節點上的升級完成後再核准下一個節點。
+
+** 選取一或多個*核准*按鈕、將一個或多個節點新增至SANtricity 「支援作業系統」升級佇列。如果狀態不是標稱的、則會停用 * 核准 * 按鈕。
++
+選擇* Approve（核准）*之後、升級程序會決定是否可以升級節點。如果節點可以升級、則會將其新增至升級佇列。
+
++
+對於某些節點、所選的升級檔案並非刻意套用、您可以在不升級這些特定節點的情況下完成升級程序。非刻意升級的節點會顯示完成階段（嘗試升級）、並在詳細資料欄中列出節點未升級的原因。
+
+
+
+. 如果您需要從SANtricity 「支援作業系統」升級佇列中移除節點或所有節點、請選取「*移除*」或「*全部移除*」。
++
+當階段的進度超過「佇列」時、*移除*按鈕會隱藏、您將無法再從SANtricity 「支援」作業系統升級程序中移除節點。
+
+. 請稍候SANtricity 、將更新版套用至每個核准的網格節點。
++
+** 如果應用 SANtricity OS 升級時有任何節點顯示錯誤階段、則表示節點的升級失敗。在技術支援的協助下、您可能需要將設備置於維護模式才能恢復。
+** 如果節點上的韌體太舊、無法使用 Grid Manager 進行升級、則節點會顯示錯誤階段、其中包含您必須使用維護模式來升級節點上的 SANtricity OS 的詳細資料。若要解決此錯誤、請執行下列步驟：
++
+... 在SANtricity 顯示錯誤階段的節點上、使用維護模式來升級支援的作業系統。
+... 使用Grid Manager重新啟動並完成SANtricity 更新。
+
+
+
+
++
+當所有核准節點上的 SANtricity OS 升級完成時、 SANtricity OS 升級進度表會關閉、綠色橫幅會顯示已升級的節點數、以及升級完成的日期和時間。
+
+. 如果節點無法升級、請記下「詳細資料」欄中顯示的原因、然後採取適當的行動。
++
+
+NOTE: 除非您核准所有列出的儲存節點上的作業系統升級、否則無法完成此作業系統升級程序。SANtricity SANtricity
+
++
+[cols="1a,2a"]
+|===
+| 理由 | 建議採取的行動 
+
+
+ a| 
+儲存節點已升級。
+ a| 
+無需採取進一步行動。
+
+
+
+ a| 
+不適用於此節點的作業系統升級SANtricity 。
+ a| 
+節點沒有可由 StorageGRID 系統管理的儲存控制器。完成升級程序、而不升級顯示此訊息的節點。
+
+
+
+ a| 
+作業系統檔案與此節點不相容SANtricity 。
+ a| 
+節點需要的 SANtricity OS 檔案與您選取的檔案不同。
+完成目前的升級之後、請下載SANtricity 節點適用的正確的作業系統檔案、然後重複升級程序。
+
+|===
+. 如果您想要結束核准節點並返回SANtricity 到「支援更新作業系統」頁面、以便上傳新SANtricity 的作業系統檔案、請執行下列步驟：
++
+.. 選擇*跳過節點和完成*。
++
+系統會出現一則警告、詢問您是否確定要在不升級所有適用節點的情況下完成升級程序。
+
+.. 選擇*確定*以返回* SANtricity 不支援作業系統*頁面。
+.. 當您準備好繼續核准節點時、 <<download-santricity-os,下載 SANtricity 作業系統>> 以重新啟動升級程序。
++
+
+NOTE: 節點已核准並升級、但沒有錯誤、仍會繼續升級。
+
+
+
+. 對於需要不同SANtricity 的更新檔的任何節點、請重複此升級程序。
++
+
+NOTE: 對於狀態為「Needs Attention（需要注意）」的任何節點、請使用維護模式來執行升級。
+
+
+
+.相關資訊
+https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]
+
+link:upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html["使用SANtricity 維護模式升級E2800控制器上的作業系統"]

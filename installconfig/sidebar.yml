@@ -1,0 +1,124 @@
+---
+section: installconfig
+title: 安裝應用裝置
+url: "/landing-appl-install/index.html"
+entries:
+- title: 快速入門
+  pdf-filename: 安裝 StorageGRID 應用裝置硬體
+  url: "/installconfig/index.html"
+- title: 準備安裝
+  url: "/landing-install-prep/index.html"
+  entries:
+  - title: 準備網站
+    url: "/installconfig/preparing-site.html"
+  - title: 打開包裝盒
+    url: "/installconfig/unpacking-boxes.html"
+  - title: 取得其他設備和工具
+    url: "/installconfig/obtaining-additional-equipment-and-tools.html"
+  - title: 收集網路資訊
+    entries:
+    - title: 網路類型StorageGRID
+      url: "/installconfig/reviewing-appliance-network-connections.html"
+    - title: SG100 與 SG1000
+      url: "/installconfig/gathering-installation-information-sg100-and-sg1000.html"
+    - title: SG5700
+      url: "/installconfig/gathering-installation-information-sg5700.html"
+    - title: SG6000
+      url: "/installconfig/gathering-installation-information-sg6000.html"
+    - title: SG6100
+      url: "/installconfig/gathering-installation-information-sg6100.html"
+- title: 自動化應用裝置的安裝與組態
+  url: "/installconfig/automating-appliance-installation-and-configuration.html"
+- title: 自動化 StorageGRID 組態
+  url: "/installconfig/automating-configuration-of-storagegrid.html"
+- title: 安裝REST API總覽
+  url: "/installconfig/overview-of-installation-rest-apis.html"
+- title: 安裝應用裝置硬體
+  url: "/landing-install-hdwr/index.html"
+  entries:
+  - title: 註冊硬體
+    url: "/installconfig/registering-hardware.html"
+  - title: 安裝到機櫃或機架中
+    entries:
+    - title: SG100 與 SG1000
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
+    - title: SG5700
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html"
+    - title: SG6000
+      entries:
+      - title: 總覽
+        pdf-filename: 將 SG6000 安裝到機櫃或機架中
+        url: "/installconfig/installing-hardware-sg6000.html"
+      - title: 安裝 60 個磁碟機櫃（ SG6060 ）
+        url: "/installconfig/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html"
+      - title: 安裝磁碟機（ SG6060 ）
+        url: "/installconfig/sg6060-installing-drives.html"
+      - title: 安裝 24 個磁碟機櫃（ SGF6024 ）
+        url: "/installconfig/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html"
+      - title: 安裝 SG6000-CN 控制器（ SG6024 和 SG6060 ）
+        url: "/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+    - title: SG6100
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html"
+  - title: 纜線應用裝置
+    url: "/installconfig/cabling-appliance.html"
+  - title: 連接並供電
+    url: "/installconfig/connecting-power-cords-and-applying-power.html"
+  - title: 檢視狀態指示燈和代碼
+    url: "/installconfig/viewing-status-indicators.html"
+- title: 設定硬體
+  entries:
+  - title: 總覽
+    url: "/installconfig/configuring-hardware.html"
+  - title: 設定 StorageGRID 連線
+    entries:
+    - title: 存取StorageGRID 產品安裝程式
+      url: "/installconfig/accessing-storagegrid-appliance-installer.html"
+    - title: 驗StorageGRID 證並升級版本的應用程式
+      url: "/installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html"
+    - title: 設定網路連結
+      url: "/installconfig/configuring-network-links.html"
+    - title: 設定StorageGRID 靜態IP位址
+      url: "/installconfig/setting-ip-configuration.html"
+    - title: 驗證網路連線
+      url: "/installconfig/verifying-network-connections.html"
+    - title: 驗證連接埠層級的網路連線
+      url: "/installconfig/verifying-port-level-network-connections.html"
+  - title: 設定 SANtricity 系統管理員（ SG5700 和 SG6000 ）
+    url: "/installconfig/accessing-and-configuring-santricity-system-manager.html"
+  - title: 設定 BMC 介面（ SG100 、 SG1000 、 SG6000 和 SG6100 ）
+    entries:
+    - title: 總覽
+      url: "/installconfig/configuring-bmc-interface.html"
+    - title: 變更 root 密碼
+      url: "/installconfig/changing-root-password-for-bmc-interface.html"
+    - title: 設定BMC管理連接埠的IP位址
+      url: "/installconfig/setting-ip-address-for-bmc-management-port.html"
+    - title: 存取BMC介面
+      url: "/installconfig/accessing-bmc-interface.html"
+    - title: 設定 SNMP 設定
+      url: "/installconfig/configuring-snmp-settings-for-bmc.html"
+    - title: 設定電子郵件通知
+      url: "/installconfig/setting-up-email-notifications-for-alerts.html"
+  - title: 選用：啟用節點或磁碟機加密
+    url: "/installconfig/optional-enabling-node-encryption.html"
+  - title: 選用：變更 RAID 模式（ SG5760 和 SG6000 ）
+    url: "/installconfig/optional-changing-raid-mode.html"
+  - title: 選用：重新對應網路連接埠
+    url: "/installconfig/optional-remapping-network-ports-for-appliance.html"
+- title: 部署應用裝置節點
+  url: "/landing-deploy-appliance/index.html"
+  entries:
+  - title: 部署應用裝置儲存節點
+    url: "/installconfig/deploying-appliance-storage-node.html"
+  - title: 部署服務應用裝置節點
+    url: "/installconfig/deploying-services-appliance-node.html"
+  - title: 監控應用裝置安裝
+    url: "/installconfig/monitoring-appliance-installation.html"
+  - title: StorageGRID 應用裝置安裝程式正在執行時、請重新啟動應用裝置
+    url: "/installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html"
+  - title: 疑難排解安裝（ SG100 和 SG1000 ）
+    url: "/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html"
+  - title: 疑難排解安裝（ SG5700 或 SG6000 ）
+    url: "/installconfig/troubleshooting-hardware-installation.html"
+  - title: 疑難排解安裝（ SG6100 ）
+    url: "/installconfig/troubleshooting-hardware-installation-sg6100.html"

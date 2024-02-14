@@ -1,0 +1,133 @@
+---
+permalink: commonhardware/monitoring-node-encryption-in-maintenance-mode.html 
+sidebar: sidebar 
+keywords: kms, key management server, monitor, monitoring, status, encryption 
+summary: 如果您在安裝期間為應用裝置啟用節點加密、則可以監控每個應用裝置節點的節點加密狀態、包括節點加密狀態和金鑰管理伺服器（KMS）詳細資料。 
+---
+= 在維護模式中監控節點加密
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您在安裝期間為應用裝置啟用節點加密、則可以監控每個應用裝置節點的節點加密狀態、包括節點加密狀態和金鑰管理伺服器（KMS）詳細資料。
+
+請參閱 https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["設定金鑰管理伺服器"^] 如需實作 KMS for StorageGRID 應用裝置的相關資訊、
+
+.開始之前
+* 您已在安裝期間啟用應用裝置的節點加密。安裝應用裝置後、您無法啟用節點加密。
+* 您有 link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
+
+
+.步驟
+. 從《SectionAppliance安裝程式》StorageGRID 中、選取*「Configure Hardware」（設定硬體）>「* Node Encryption」（*節點加密）*。
++
+image::../media/fde_monitor_in_maint_mode.png[KMS清除組態]
+
++
+「節點加密」頁面包含三個區段：
+
++
+** 「加密狀態」會顯示裝置的節點加密是啟用還是停用。
+** 金鑰管理伺服器詳細資料顯示用於加密應用裝置的KMS相關資訊。您可以展開伺服器和用戶端憑證區段、以檢視憑證詳細資料和狀態。
++
+*** 若要解決憑證本身的問題、例如更新過期的憑證、請參閱 https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["設定KMS的說明"^]。
+*** 如果連線至KMS主機時發生非預期的問題、請確認 link:../commonhardware/checking-dns-server-configuration.html["DNS 伺服器正確"] 以及這點 link:../installconfig/configuring-network-links.html["應用裝置網路設定正確"]。
+*** 如果您無法解決憑證問題、請聯絡技術支援部門。
+
+
+** 清除KMS金鑰會停用應用裝置的節點加密、移除應用裝置與設定StorageGRID 用於該站台的金鑰管理伺服器之間的關聯、並從應用裝置刪除所有資料。您必須 <<清除金鑰管理伺服器組態,清除KMS金鑰>> 在將本產品安裝到另StorageGRID 一個作業系統之前。
++
+
+CAUTION: 清除KMS組態會刪除應用裝置中的資料、使其永遠無法存取。此資料無法恢復。
+
+
+
+. 檢查完節點加密狀態後、請重新啟動節點。從「the Sof the Sof the Some Installer」選取「*進階*>*重新開機控制器*」StorageGRID 、然後選取下列其中一個選項：
++
+** 選取*重新開機至StorageGRID SESW*、以重新啟動控制器、並使節點重新加入網格。如果您已在維護模式下完成工作、並準備好讓節點恢復正常作業、請選取此選項。
+** 選取*重新開機進入維護模式*、以重新啟動控制器、使節點保持維護模式。（此選項僅在控制器處於維護模式時可用。） 如果在重新加入網格之前需要在節點上執行其他維護作業、請選取此選項。
++
+image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
+
++
+裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。「 * 節點 * 」頁面應顯示正常狀態（綠色核取記號圖示） image:../media/icon_alert_green_checkmark.png["綠色核取記號"] 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。
+
++
+image::../media/nodes_menu.png[應用裝置節點重新加入網格]
+
+
+
+
+
+
+
+== 清除金鑰管理伺服器組態
+
+清除金鑰管理伺服器（KMS）組態會停用設備上的節點加密。清除KMS組態之後、您設備上的資料將永久刪除、無法再存取。此資料無法恢復。
+
+.開始之前
+如果您需要保留應用裝置上的資料、則必須先執行節點取消委任程序或複製節點、才能清除KMS組態。
+
+
+CAUTION: 清除KMS時、設備上的資料將永久刪除、無法再存取。此資料無法恢復。
+
+https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html["取消委任節點"^] 將其中包含的任何資料移至StorageGRID 其他節點。
+
+.關於這項工作
+清除應用裝置KMS組態會停用節點加密、移除應用裝置節點與StorageGRID 站台KMS組態之間的關聯。然後刪除應用裝置上的資料、並將應用裝置保留在預先安裝狀態。此程序無法還原。
+
+您必須清除KMS組態：
+
+* 在您將本產品安裝到其他StorageGRID 不使用KMS或使用不同KMS的作業系統之前。
++
+
+CAUTION: 如果您打算在使用相同 KMS 金鑰的 StorageGRID 系統中重新安裝應用裝置節點、請勿清除 KMS 組態。
+
+* 在您恢復和重新安裝遺失KMS組態且無法恢復KMS金鑰的節點之前。
+* 在退回任何先前在您所在地點使用的應用裝置之前。
+* 停用已啟用節點加密的應用裝置之後。
+
+
+
+CAUTION: 在清除KMS之前、先取消委任應用裝置、將其資料移至StorageGRID 您的作業系統中的其他節點。在設備停用之前清除KMS、將會導致資料遺失、並可能使設備無法運作。
+
+.步驟
+. 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個IP位址。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
+
++
+畫面會出現「the不再安裝StorageGRID 程式」首頁。
+
+. 選擇*設定硬體*>*節點加密*。
++
+
+CAUTION: 如果清除KMS組態、設備上的資料將永久刪除。此資料無法恢復。
+
+. 在視窗底部、選取*清除KMS金鑰及刪除資料*。
+. 如果您確定要清除KMS組態、請輸入 `*clear*` 在警告對話方塊中、選取 * 清除 KMS 金鑰和刪除資料 * 。
++
+KMS加密金鑰和所有資料都會從節點刪除、然後設備重新開機。這可能需要20分鐘的時間。
+
+. 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個IP位址。+
+`*https://_Controller_IP_:8443*`
++
+`_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
+
++
+畫面會出現「the不再安裝StorageGRID 程式」首頁。
+
+. 選擇*設定硬體*>*節點加密*。
+. 確認節點加密已停用、且*金鑰管理伺服器詳細資料*中的金鑰與憑證資訊、以及*清除KMS金鑰與刪除資料*控制項已從視窗中移除。
++
+在網格中重新安裝節點加密之前、無法在應用裝置上重新啟用節點加密。
+
+
+
+.完成後
+設備重新開機並驗證KMS已清除、且設備處於預先安裝狀態之後、您可以從StorageGRID 您的故障排除系統中實際移除應用裝置。請參閱 https://docs.netapp.com/us-en/storagegrid-118/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["準備設備以重新安裝的說明"^]。

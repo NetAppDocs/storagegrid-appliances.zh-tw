@@ -1,0 +1,268 @@
+---
+permalink: installconfig/automating-appliance-installation-and-configuration.html 
+sidebar: sidebar 
+keywords: automate, automating, automation, automatic, install, installation, configuration, configure 
+summary: 自動化安裝與組態可用於部署多StorageGRID 個版本的不二執行個體、或是一個大型且複雜StorageGRID 的例項。 
+---
+= 自動化應用裝置的安裝與組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+自動化安裝與組態可用於部署多StorageGRID 個版本的不二執行個體、或是一個大型且複雜StorageGRID 的例項。
+
+使用 NetApp StorageGRID 工具、您可以自動化 StorageGRID 應用裝置的安裝與組態。安裝及設定應用裝置之後、您可以 link:automating-configuration-of-storagegrid.html["自動化整個 StorageGRID 系統的組態"]。
+
+您可以自動設定下列項目：
+
+* 網格網路、管理網路和用戶端網路IP位址
+* BMC 介面
+* 網路連結
++
+** 連接埠連結模式
+** 網路連結模式
+** 連結速度
+
+
+
+
+
+
+== 自動化選項
+
+若要自動化應用裝置的安裝與組態、請使用下列一或多個選項：
+
+* 產生包含組態詳細資料的 JSON 檔案。請與 NetApp 專業服務顧問合作使用 link:https://configbuilder.netapp.com/index.aspx["NetApp ConfigBuilder 工具"^] 若要完成這些步驟：
++
+.. 請洽詢 NetApp 專業服務部門以取得銷售訂單編號。
+.. 從 ConfigBuilder 取得活頁簿。
+.. 請諮詢專業服務部門以完成工作簿。
+.. 使用 ConfigBuilder 上傳活頁簿。
+.. 使用 ConfigBuilder 來產生 JSON 檔案。
+.. 請諮詢專業服務、將 JSON 檔案上傳至應用裝置。
++
+請參閱 <<automate-with-appliance-installer,使用應用裝置安裝程式自動化>>。
+
++
+
+NOTE: 您可以使用相同的 JSON 檔案來設定多個應用裝置。
+
+
+
++
+使用上傳的 JSON 檔案設定應用裝置通常比手動執行組態更有效率、尤其是必須設定多個節點時。手動執行組態需要在 StorageGRID 應用裝置安裝程式中使用多個頁面、並一次為每個節點套用一個組態檔案。
+
+* 如果您是進階使用者、可以使用下列 StorageGRID Python 指令碼來安裝及設定系統：
++
+** `configure-sga.py`：自動化設備的安裝與組態。請參閱 <<automate-with-configure-sga-py-script,使用 configure-sga.py 指令碼自動化應用裝置的安裝與組態>>。
+** `configure-storagegrid.py`：配置整個 StorageGRID 系統的其他元件（「網格」）。請參閱 link:automating-configuration-of-storagegrid.html["自動化 StorageGRID 組態"]。
+
+
++
+
+NOTE: 您可以StorageGRID 直接使用自動化Python指令碼、也可以將其作為範例、說明如何在StorageGRID 網格部署和自行開發的組態工具中使用「靜態安裝REST API」。請參閱的說明 https://docs.netapp.com/us-en/storagegrid-118/maintain/downloading-and-extracting-storagegrid-installation-files.html["下載及解壓縮StorageGRID 安裝文件"^]。
+
+
+
+
+
+== 使用StorageGRID 應用程式安裝程式來自動化應用裝置組態
+
+產生 JSON 檔案之後、您可以使用 StorageGRID 應用裝置安裝程式來上傳 JSON 檔案、將一或多個應用裝置的組態自動化。
+
+.開始之前
+* 應用裝置已安裝在機架中、連接至您的網路、並已開啟電源。
+* 您有 <<automation-options,已產生 JSON 檔案>> 在 NetApp 專業服務顧問的指導下、
+* 您的應用裝置包含與 StorageGRID 11.5 或更新版本相容的最新韌體。
+* 您已連線至正在使用設定的應用裝置上的 StorageGRID 應用裝置安裝程式 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+
+
+.步驟
+. 在 StorageGRID 應用裝置安裝程式中、選取 * 進階 * > * 更新應用裝置組態 * 。此時會出現「更新設備組態」頁面。
+. 瀏覽並選擇含有您要上傳之組態的 JSON 檔案。
++
+檔案已上傳並驗證。驗證程序完成時、檔案名稱會顯示在綠色核取符號旁。
+
++
+
+NOTE: 如果 JSON 檔案的組態包含的節、您可能會失去與應用裝置的連線 `link_config`、 `networks`或兩者。如果您在 1 分鐘內未重新連線、請使用指派給應用裝置的其他 IP 位址之一重新輸入應用裝置 URL 。
+
++
+image::../media/update_appliance_configuration_valid_json.png[已上傳更新應用裝置組態Json]
+
++
+「*節點名稱*」下拉式清單會填入Json檔案中定義的頂層節點名稱。
+
++
+
+NOTE: 如果檔案無效、檔案名稱會以紅色顯示、並以黃色橫幅顯示錯誤訊息。無效檔案未套用至應用裝置。ConfigBuilder 會驗證您是否擁有有效的 JSON 檔案。
+
+. 從「*節點名稱*」下拉式清單中選取節點。
++
+「套用 JSON 組態 * 」按鈕即會啟用。
+
+. 選取*套用Json組態*。
++
+此組態會套用至選取的節點。
+
+
+
+
+
+== 使用 configure-sga.py 指令碼自動化應用裝置的安裝與組態
+
+如果您是進階使用者、可以使用 `configure-sga.py` 指令碼、可自動化StorageGRID 許多有關應用程式節點的安裝與組態工作、包括安裝及設定主要管理節點。如果您有大量設備需要設定、此指令碼就很有用。
+
+您也可以使用指令碼來產生包含應用裝置組態資訊的Json檔案。您可以將 JSON 檔案上傳至 StorageGRID 應用裝置安裝程式、以同時設定所有應用裝置節點。您也可以編輯 JSON 檔案、然後上傳檔案、將新的組態套用至一或多個應用裝置。
+
+
+NOTE: 此程序適用於具有使用命令列介面的經驗的進階使用者。或者、您也可以 <<automate-with-appliance-installer,使用StorageGRID 「功能不全」安裝程式來自動化組態>>。
+
+.開始之前
+* 應用裝置已安裝在機架中、連接至您的網路、並已開啟電源。
+* 您有 <<automation-options,已產生 JSON 檔案>> 在 NetApp 專業服務顧問的指導下、
+* 您的應用裝置包含與 StorageGRID 11.5 或更新版本相容的最新韌體。
+* 您已為應用裝置設定管理網路的 IP 位址。
+* 您已下載 `configure-sga.py` 檔案：檔案會包含在安裝歸檔中、您也可以按StorageGRID 一下「支援*」>「應用裝置安裝指令碼*」（英文）來存取。
+
+
+.步驟
+. 登入您用來執行Python指令碼的Linux機器。
+. 如需指令碼語法的一般說明及可用參數清單、請輸入下列命令：
++
+[listing]
+----
+configure-sga.py --help
+----
++
+。 `configure-sga.py` 指令碼使用五個子命令：
+
++
+** `advanced` 可進行進階StorageGRID 的功能性應用、包括BMC組態、以及建立包含應用裝置目前組態的Json檔案
+** `configure` 用於設定RAID模式、節點名稱和網路參數
+** `install` 以開始StorageGRID 執行安裝
+** `monitor` 用於監控StorageGRID 安裝
+** `reboot` 以重新啟動應用裝置
++
+如果您輸入子命令（進階、設定、安裝、監控或重新開機）引數、然後輸入 `--help` 選項您將會看到不同的說明文字、詳細說明該子命令中可用的選項：+
+`configure-sga.py _subcommand_ --help`
+
++
+如果您願意 <<back-up-appliance-config,將應用裝置組態備份至 JSON 檔案>>，確保節點名稱符合以下要求：
+
++
+*** 如果您想要使用 JSON 檔案自動設定所有應用裝置節點、則每個節點名稱都是唯一的。
+*** 必須是包含至少 1 個字元且不超過 32 個字元的有效主機名稱。
+*** 可以使用字母、數字和連字號。
+*** 無法以連字號開始或結束。
+*** 不能只包含數字。
+
+
+
+
+. 若要將 JSON 檔案的組態套用至應用裝置、請輸入下列內容、其中所示 `_SGA-INSTALL-IP_` 是應用裝置的管理網路 IP 位址、 `_json-file-name_` 是 JSON 檔案的名稱、和 `_node-name-inside-json-file_` 為套用組態的節點名稱： +
+`configure-sga.py advanced --restore-file _json-file-name_ --restore-node _node-name-inside-json-file_ _SGA-INSTALL-IP_`
+. 若要確認應用裝置節點的目前組態、請輸入下列位置 `_SGA-INSTALL-IP_` 是應用裝置的管理網路 IP 位址： +
+`configure-sga.py configure _SGA-INSTALL-IP_`
++
+結果顯示設備的目前IP資訊、包括主要管理節點的IP位址、以及管理、網格和用戶端網路的相關資訊。
+
++
+[listing]
+----
+Connecting to +https://10.224.2.30:8443+ (Checking version and connectivity.)
+2021/02/25 16:25:11: Performing GET on /api/versions... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/system-info... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/admin-connection... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/link-config... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/networks... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/system-config... Received 200
+
+  StorageGRID Appliance
+    Name:        LAB-SGA-2-30
+    Node type:   storage
+
+  StorageGRID primary Admin Node
+    IP:        172.16.1.170
+    State:     unknown
+    Message:   Initializing...
+    Version:   Unknown
+
+  Network Link Configuration
+    Link Status
+          Link      State      Speed (Gbps)
+          ----      -----      -----
+          1         Up         10
+          2         Up         10
+          3         Up         10
+          4         Up         10
+          5         Up         1
+          6         Down       N/A
+
+    Link Settings
+        Port bond mode:      FIXED
+        Link speed:          10GBE
+
+        Grid Network:        ENABLED
+            Bonding mode:    active-backup
+            VLAN:            novlan
+            MAC Addresses:   00:a0:98:59:8e:8a  00:a0:98:59:8e:82
+
+        Admin Network:       ENABLED
+            Bonding mode:    no-bond
+            MAC Addresses:   00:80:e5:29:70:f4
+
+        Client Network:      ENABLED
+            Bonding mode:    active-backup
+            VLAN:            novlan
+            MAC Addresses:   00:a0:98:59:8e:89  00:a0:98:59:8e:81
+
+  Grid Network
+    CIDR:      172.16.2.30/21 (Static)
+    MAC:       00:A0:98:59:8E:8A
+    Gateway:   172.16.0.1
+    Subnets:   172.17.0.0/21
+               172.18.0.0/21
+               192.168.0.0/21
+    MTU:       1500
+
+  Admin Network
+    CIDR:      10.224.2.30/21 (Static)
+    MAC:       00:80:E5:29:70:F4
+    Gateway:   10.224.0.1
+    Subnets:   10.0.0.0/8
+               172.19.0.0/16
+               172.21.0.0/16
+    MTU:       1500
+
+  Client Network
+    CIDR:      47.47.2.30/21 (Static)
+    MAC:       00:A0:98:59:8E:89
+    Gateway:   47.47.0.1
+    MTU:       2000
+
+##############################################################
+#####   If you are satisfied with this configuration,    #####
+##### execute the script with the "install" sub-command. #####
+##############################################################
+----
+. 如果您需要變更目前組態中的任何值、請使用 `configure` 子命令進行更新。例如、如果您想要將應用裝置用於連線至主要管理節點的IP位址變更為 `172.16.2.99`，輸入以下內容：
++
+`configure-sga.py configure --admin-ip 172.16.2.99 _SGA-INSTALL-IP_`
+
+. [[備 份應用裝置組態 ]] 如果您要將應用裝置組態備份至 JSON 檔案、請使用進階和 `backup-file` 子命令。例如、如果您要使用IP位址備份設備的組態 `_SGA-INSTALL-IP_` 至名為的檔案 `appliance-SG1000.json`、輸入下列命令：+
+`configure-sga.py advanced --backup-file appliance-SG1000.json _SGA-INSTALL-IP_`
++
+包含組態資訊的Json檔案會寫入執行指令碼的相同目錄。
+
++
+
+CAUTION: 檢查所產生Json檔案中的頂層節點名稱是否與應用裝置名稱相符。除非您是經驗豐富的使用者、且對 StorageGRID API 有深入瞭解、否則請勿對此檔案進行任何變更。
+
+. 當您對應用裝置組態感到滿意時、請使用 `install` 和 `monitor` 安裝應用裝置的子命令：+
+`configure-sga.py install --monitor _SGA-INSTALL-IP_`
+. 如果您要重新啟動設備、請輸入下列命令：+
+`configure-sga.py reboot _SGA-INSTALL-IP_`
+

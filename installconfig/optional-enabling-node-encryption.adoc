@@ -1,0 +1,246 @@
+---
+permalink: installconfig/optional-enabling-node-encryption.html 
+sidebar: sidebar 
+keywords: node encryption, encryption, kms, key management server, drive encryption, self-encrypting drives, sed, full-disk encryption, fde 
+summary: 您可以在節點和磁碟層級啟用加密、以保護應用裝置中的磁碟、避免實體遺失或從站台移除。 
+---
+= 選用：啟用節點或磁碟機加密
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在節點和磁碟層級啟用加密、以保護應用裝置中的磁碟、避免實體遺失或從站台移除。
+
+* <<啟用節點加密,節點加密>> 使用軟體加密來保護應用裝置中的所有磁碟。它不需要特殊的磁碟機硬體。節點加密是由應用裝置軟體使用外部金鑰管理伺服器（ KMS ）所管理的金鑰來執行。
+* <<啟用磁碟機加密,磁碟機加密>> 使用硬體加密來保護自我加密磁碟機（ SED ）、也稱為全磁碟加密（ FED ）磁碟機、包括符合聯邦資訊處理標準（ FIPS ）的磁碟機。磁碟機加密是使用 StorageGRID 金鑰管理程式所管理的加密金鑰在每個磁碟機內執行。
+
+
+您可以在支援的磁碟機上執行這兩種加密層級、以提高安全性。
+
+請參閱 https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID 加密方法"^] 如需 StorageGRID 應用裝置所有可用加密方法的相關資訊、
+
+
+
+== 啟用節點加密
+
+如果您啟用節點加密、裝置中的磁碟可透過安全金鑰管理伺服器（KMS）加密來保護、避免實體遺失或從站台移除。您必須在裝置安裝期間選取並啟用節點加密。KMS 加密程序啟動後、您無法停用節點加密。
+
+如果您使用 ConfigBuilder 來產生 JSON 檔案、則可以自動啟用節點加密。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
+
+.開始之前
+檢閱相關資訊 https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["設定 KMS"^]。
+
+.關於這項工作
+啟用節點加密的應用裝置會連線至為StorageGRID 該站台設定的外部金鑰管理伺服器（KMS）。每個KMS（或KMS叢集）都會管理站台所有應用裝置節點的加密金鑰。這些金鑰可加密及解密應用裝置中每個磁碟上已啟用節點加密的資料。
+
+KMS可在應用StorageGRID 程式安裝於原地之前或之後、在Grid Manager中設定。如StorageGRID 需更多詳細資料、請參閱《管理》中有關KMS和應用裝置組態的資訊。
+
+* 如果KMS是在安裝應用裝置之前設定的、則當您在應用裝置上啟用節點加密、並將其新增StorageGRID 至設定KMS的站台時、系統就會開始採用KMS控制的加密。
+* 如果在安裝設備之前尚未設定KMS、則只要設定KMS、且該站台包含應用裝置節點、就會立即在每個啟用節點加密的應用裝置上執行KMS控制加密。
+
+
+
+CAUTION: 當裝置安裝時啟用節點加密時、會指派一個暫存金鑰。在應用裝置連線至金鑰管理系統（ KMS ）並設定 KMS 安全金鑰之前、應用裝置上的資料不會受到保護。請參閱 https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html["KMS 應用裝置組態總覽"^] 以取得更多資訊。
+
+如果沒有解密磁碟所需的 KMS 金鑰、設備上的資料就無法擷取、而且會有效遺失。當解密金鑰無法從 KMS 擷取時、就會發生這種情況。如果客戶清除KMS組態、KMS金鑰過期、與KMS的連線中斷、或是設備從StorageGRID 安裝KMS金鑰的作業系統中移除、金鑰就無法存取。
+
+.步驟
+. 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個IP位址。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
+
++
+畫面會出現「the不再安裝StorageGRID 程式」首頁。
+
++
+
+CAUTION: 使用 KMS 金鑰加密應用裝置後、如果沒有使用相同的 KMS 金鑰、就無法解密應用裝置磁碟。
+
+. 選擇*設定硬體*>*節點加密*。
++
+image::../media/kms_fde_enabled.png[已啟用KMS FDE]
+
+. 選取*啟用節點加密*。
++
+在應用裝置安裝之前、您可以清除 * 啟用節點加密 * 、而不會有資料遺失的風險。安裝開始時、應用裝置節點會存取 StorageGRID 系統中的 KMS 加密金鑰、並開始磁碟加密。安裝應用裝置後、您無法停用節點加密。
+
++
+
+CAUTION: 將已啟用節點加密的應用裝置新增至具有 KMS 的 StorageGRID 網站之後、您就無法停止對該節點使用 KMS 加密。
+
+. 選擇*保存*。
+. 將應用裝置部署為StorageGRID 您的整個作業系統中的節點。
++
+受kms控制的加密會在應用裝置存取設定用於StorageGRID 您的站台的KMS金鑰時開始。安裝程式會在KMS加密程序期間顯示進度訊息、視應用裝置中的磁碟區數量而定、可能需要幾分鐘的時間。
+
++
+
+NOTE: 設備一開始會設定指派給每個磁碟區的隨機非KMS加密金鑰。磁碟會使用這種不安全的暫時加密金鑰進行加密、直到啟用節點加密的應用裝置存取針對StorageGRID 您的站台所設定的KMS金鑰為止。
+
+
+
+.完成後
+當應用裝置節點處於維護模式時、您可以檢視節點加密狀態、KMS詳細資料及使用中的憑證。請參閱 link:../commonhardware/monitoring-node-encryption-in-maintenance-mode.html["在維護模式中監控節點加密"] 以取得資訊。
+
+
+
+== 磁碟機加密
+
+磁碟機加密是在寫入和讀取程序期間、在自我加密磁碟機（ SED ）硬體上進行管理。存取這些磁碟機上的資料是由使用者定義的複雜密碼所控制。磁碟機加密用於直接附加的固態硬碟（ SSD ）、這些硬碟用於 StorageGRID 應用裝置中的快取。
+
+加密的 SED 會在設備關機或從應用裝置移除磁碟機時自動鎖定。加密的 SED 會在電源恢復後保持鎖定、直到輸入正確的密碼。若要在不手動重新輸入複雜密碼的情況下存取磁碟機、複雜密碼會儲存在 StorageGRID 應用裝置上、以便在應用裝置重新啟動時、解除鎖定仍留在應用裝置中的加密磁碟機。任何知道密碼短語的人都可以存取使用 SED 密碼短語加密的磁碟機。
+
+磁碟機加密不適用於 SANtricity 管理的磁碟機。如果您的 StorageGRID 應用裝置具有 SED 和 SANtricity 控制器、則可以在中啟用磁碟機安全性 link:../installconfig/accessing-and-configuring-santricity-system-manager.html["系統管理程式SANtricity"]。
+
+您可以在初始應用裝置安裝期間啟用磁碟機加密、然後再載入 Grid Manager 。您也可以將應用裝置設為維護模式、以啟用節點加密或變更密碼。
+
+.開始之前
+檢閱相關資訊 https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID 加密方法"^]。
+
+.關於這項工作
+一開始啟用磁碟機加密時、會設定複雜密碼。如果更換運算節點、或將加密的 SED 移至新的運算節點、您必須手動重新輸入複雜密碼。
+
+
+CAUTION: 請務必將磁碟機加密密碼短語儲存在安全的位置。如果 SED 安裝在其他 StorageGRID 應用裝置中、則必須手動輸入相同的密碼、才能存取加密的 SED 。
+
+
+
+=== 啟用磁碟機加密
+
+. 存取 StorageGRID 應用裝置安裝程式。
++
+** 在初始應用裝置安裝期間、開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個 IP 位址。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
+
+** 對於現有的 StorageGRID 應用裝置、 link:../commonhardware/placing-appliance-into-maintenance-mode.html["將產品置於維護模式"]。
+
+
+. 從 StorageGRID 應用裝置安裝程式首頁、選取 * 設定硬體 * > * 磁碟機加密 * 。
+. 選取 * 啟用磁碟機加密 * 。
++
+
+CAUTION: 啟用磁碟機加密並設定密碼後、 SED 磁碟機即為硬體加密。如果沒有使用相同的複雜密碼、就無法存取磁碟機的內容。
+
+. 選擇*保存*。
++
+磁碟機加密後、會顯示磁碟機複雜密碼資訊。
+
++
+
+NOTE: 磁碟機一開始加密時、複雜密碼會設為預設的空白值、而目前的複雜密碼文字會指出「預設（不安全）」。 當此磁碟機上的資料經過加密時、只要設定唯一的複雜密碼、就可以在不輸入複雜密碼的情況下存取資料。
+
+. 輸入加密磁碟機存取的專屬密碼、然後再次輸入密碼以確認。密碼必須至少有 8 個字元、長度不得超過 32 個字元。
+. 輸入密碼短語顯示文字、以協助您重新輸入密碼短語。
++
+將複雜密碼和複雜密碼顯示文字儲存在安全的位置、例如密碼管理應用程式。
+
+. 選擇*保存*。
+
+
+
+
+=== 檢視磁碟機加密狀態
+
+. link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
+. 從 StorageGRID 應用裝置安裝程式中、選取 * 設定硬體 * > * 磁碟機加密 * 。
+
+
+
+
+=== 存取加密磁碟機
+
+您必須輸入複雜密碼、才能在更換運算節點之後或將磁碟機移至新的運算節點之後存取加密磁碟機。
+
+. 存取 StorageGRID 應用裝置安裝程式。
++
+** 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個 IP 位址。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
+
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
+
+
+. 從 StorageGRID 應用裝置安裝程式中、選取警告橫幅中的 * 磁碟機加密 * 連結。
+. 輸入您先前在 * 新密碼短語 * 和 * 重新輸入新密碼短語 * 中設定的磁碟機加密密碼。
++
+
+NOTE: 如果您輸入的複雜密碼和複雜密碼顯示文字值與先前輸入的值不符、磁碟機驗證將會失敗。您需要重新啟動應用裝置、並輸入正確的複雜密碼和複雜密碼顯示文字。
+
+. 輸入您先前在 * 新密碼提示顯示文字 * 中設定的密碼提示顯示文字。
+. 選擇*保存*。
++
+當磁碟機解除鎖定時、警告橫幅將不再顯示。
+
+. 返回 StorageGRID 應用裝置安裝程式首頁、並在「安裝」區段橫幅中選取 * 重新開機 * 、以重新啟動運算節點並存取加密的磁碟機。
+
+
+
+
+=== 變更磁碟機加密密碼
+
+. 存取 StorageGRID 應用裝置安裝程式。
++
+** 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個 IP 位址。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
+
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
+
+
+. 從 StorageGRID 應用裝置安裝程式中、選取 * 設定硬體 * > * 磁碟機加密 * 。
+. 輸入新的唯一複雜密碼以供磁碟機存取、然後再次輸入複雜密碼以確認。密碼必須至少有 8 個字元、長度不得超過 32 個字元。
++
+
+NOTE: 您必須已通過驗證、才能存取磁碟機、才能變更磁碟機加密複雜密碼。
+
+. 輸入密碼短語顯示文字、以協助您重新輸入密碼短語。
+. 選擇*保存*。
++
+
+CAUTION: 設定新的複雜密碼後、如果沒有使用新的複雜密碼和複雜密碼顯示文字、就無法解密加密的磁碟機。
+
+. 將新的複雜密碼和複雜密碼顯示文字儲存在安全的位置、例如密碼管理應用程式。
+
+
+
+
+=== 停用磁碟機加密
+
+. 存取 StorageGRID 應用裝置安裝程式。
++
+** 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個 IP 位址。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
+
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
+
+
+. 從 StorageGRID 應用裝置安裝程式中、選取 * 設定硬體 * > * 磁碟機加密 * 。
+. 清除 * 啟用磁碟機加密 * 。
+. 若要在磁碟機加密停用時清除所有磁碟機資料、請選取 * 清除磁碟機上的所有資料。 *
++
+
+NOTE: 資料抹除選項僅可在將應用裝置新增至網格之前、從 StorageGRID 應用裝置安裝程式取得。從維護模式存取 StorageGRID 應用裝置安裝程式時、您無法存取此選項。
+
+. 選擇*保存*。
+
+
+磁碟機內容會以未加密或加密方式清除、加密複雜密碼會被清除、而且 SED 現在可以在沒有複雜密碼的情況下存取。

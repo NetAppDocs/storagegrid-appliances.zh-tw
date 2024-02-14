@@ -1,0 +1,43 @@
+---
+permalink: sg6100/turning-sgf6112-identify-led-on-and-off.html 
+sidebar: sidebar 
+keywords: sgf6112, locate, find, locating, finding, identify, blue led, blue light 
+summary: 產品正面的藍色識別 LED 可開啟、協助您在資料中心找到產品。 
+---
+= 開啟和關閉 SGF6112 應用裝置識別 LED
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+產品正面和背面的藍色識別 LED 可開啟、協助您將產品定位在資料中心。
+
+.開始之前
+您擁有要識別的應用裝置的 BMC IP 位址。
+
+.步驟
+. link:../installconfig/accessing-bmc-interface.html["存取應用裝置 BMC 介面"]。
+. 選擇*伺服器識別*。
++
+已選取識別 LED 的目前狀態。
+
+. 選取 * 開啟 * 或 * 關閉 * 、然後選取 * 執行動作 * 。
++
+當您選擇 * 開啟 * 時、產品正面（圖示為典型）和背面的藍色識別 LED 燈會亮起。
+
++
+image::../media/sgf6112_front_panel_service_led_on.png[正面識別LED -亮起]
+
++
+
+NOTE: 如果控制器上安裝了擋板、可能很難看到正面的識別LED。
+
++
+後方識別 LED 位於產品中央的 Micro-SD 插槽下方。
+
+. 視需要開啟和關閉識別 LED 。
+
+
+.相關資訊
+link:locating-sgf6112-in-data-center.html["在資料中心找到應用裝置"]

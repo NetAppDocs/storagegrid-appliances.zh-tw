@@ -1,0 +1,32 @@
+---
+permalink: installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, service appliance, services appliance, gateway Node, admin node, reboot, restart 
+summary: 您可能需要在 StorageGRID 應用裝置安裝程式執行時重新啟動應用裝置。例如、如果安裝失敗、您可能需要重新啟動應用裝置。 
+---
+= StorageGRID 應用裝置安裝程式正在執行時、請重新啟動應用裝置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要在 StorageGRID 應用裝置安裝程式執行時重新啟動應用裝置。例如、如果安裝失敗、您可能需要重新啟動應用裝置。
+
+.關於這項工作
+此程序僅適用於應用裝置執行 StorageGRID 應用裝置安裝程式的情況。安裝完成後、StorageGRID 此步驟將不再運作、因為無法再使用到此版本的NetApp應用裝置安裝程式。
+
+.步驟
+. 從「the Some Appliance Installer」StorageGRID 按一下「*進階*」>「*重新開機控制器*」、然後選取下列其中一個選項：
++
+** 選取*重新開機至StorageGRID SESW*、以重新啟動控制器、並使節點重新加入網格。如果您已在維護模式下完成工作、並準備好讓節點恢復正常作業、請選取此選項。
+** 選取*重新開機進入維護模式*、以重新啟動控制器、使節點保持維護模式。（此選項僅在控制器處於維護模式時可用。） 如果在重新加入網格之前需要在節點上執行其他維護作業、請選取此選項。
++
+image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
+
++
+設備隨即重新開機。
+
+
+
+

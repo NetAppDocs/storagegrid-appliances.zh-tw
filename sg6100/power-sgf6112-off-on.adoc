@@ -1,0 +1,118 @@
+---
+permalink: sg6100/power-sgf6112-off-on.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6112, power off, turn off, shut off, shutdown, shut down, power on, turn on, start 
+summary: 您可以關閉 SGF6112 應用裝置、然後重新開啟電源以執行維護。 
+---
+= 關閉和開啟 SGF6112 應用裝置電源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以關閉 SGF6112 應用裝置、然後重新開啟電源以執行維護。
+
+
+
+== 關閉 SGF6112 應用裝置
+
+關閉設備以執行硬體維護。
+
+.開始之前
+* 您有 link:locating-sgf6112-in-data-center.html["實際放置設備"]。
+
+
+.關於這項工作
+為避免服務中斷、請在可接受服務中斷期間的排程維護期間、關閉設備。
+
+.步驟
+. 關閉產品電源：
++
+
+CAUTION: 您必須輸入下列指定的命令、以控制裝置的關機。最佳做法是盡可能執行管制關機、以避免不必要的警示、確保完整記錄可用、並避免服務中斷。
+
++
+.. 如果您尚未登入網格節點、請使用 PuTTY 或其他 ssh 用戶端登入：
++
+... 輸入下列命令： `ssh admin@_grid_node_IP_`
+... 輸入中所列的密碼 `Passwords.txt` 檔案：
+... 輸入下列命令以切換至root： `su -`
+... 輸入中所列的密碼 `Passwords.txt` 檔案：
++
+當您以root登入時、提示會從變更 `$` 至 `#`。
+
+
+
+.. 關閉產品電源：+
+`*shutdown -h now*`
++
+此命令可能需要10分鐘才能完成。
+
+
+
+. 請使用下列其中一種方法、確認裝置電源已關閉：
++
+** 查看產品正面的電源LED、確認電源已關閉。
+** 請查看BMC介面的「電源控制」頁面、確認裝置已關閉。
+
+
+
+
+
+
+== 開啟 SGF6112 並驗證作業
+
+完成維護後、開啟控制器電源。
+
+.開始之前
+* 您有 link:reinstalling-sgf6112-into-cabinet-or-rack.html["已將控制器安裝在機櫃或機架中"] 並已連接資料纜線和電源線。
+* 您有 link:locating-sgf6112-in-data-center.html["將控制器實際放置在資料中心"]。
+
+
+.步驟
+. 開啟產品電源。
++
+您可能必須卸下擋板才能使用電源開關；如果是、請記得在之後重新安裝。
+
+. 使用下列其中一種方法來監控控制器 LED 和開機代碼：
++
+** 按下控制器正面的電源開關。
+** 使用控制器BMC介面：
++
+... link:../installconfig/accessing-bmc-interface.html["存取控制器 BMC 介面"]。
+... 選擇*電源控制*。
+... 選取 * 開機 * 、然後選取 * 執行動作 * 。
++
+image::../media/sgf6112_power_on_from_bmc.png[從 BMC 開啟應用裝置電源]
+
++
+使用BMC介面來監控啟動狀態。
+
+
+
+
+
+. 確認應用裝置控制器顯示在Grid Manager中、且沒有警示。
++
+控制器可能需要20分鐘才能在Grid Manager中顯示。
+
++
+
+CAUTION: 除非此應用裝置有綠色圖示、否則請勿將其他應用裝置節點離線。
+
+. 使用 Putty 或其他 ssh 用戶端登入網格節點、確認新應用裝置完全正常運作：
++
+.. 輸入下列命令： `ssh _Appliance_IP_`
+.. 輸入中所列的密碼 `Passwords.txt` 檔案：
+.. 輸入下列命令以切換至root： `su -`
+.. 輸入中所列的密碼 `Passwords.txt` 檔案：
++
+當您以root登入時、提示會從變更 `$` 至 `#`。
+
+
+
+
+
+.相關資訊
+link:../installconfig/viewing-status-indicators.html["檢視狀態指標"]

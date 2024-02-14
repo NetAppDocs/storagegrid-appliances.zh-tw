@@ -1,0 +1,64 @@
+---
+permalink: sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
+summary: 若儲存控制器目前使用SANtricity 的是08.42.20.00之前的版本（11.42\）、您必須使用維護模式程序來套用升級。 
+---
+= 使用維護模式升級 SG6000 儲存控制器上的 SANtricity OS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若儲存控制器目前使用SANtricity 的是08.42.20.00（11.42）之前版本的作業系統、您必須使用維護模式程序來套用升級。
+
+.開始之前
+* 您已諮詢 https://imt.netapp.com/matrix/#welcome["NetApp互通性對照表工具IMT （不含）"^] 確認您用於升級的 SANtricity 作業系統版本與您的應用裝置相容。
+* 如果 StorageGRID 應用裝置是在 StorageGRID 系統中執行、您已將 SG6000-CN 控制器放入 link:../commonhardware/placing-appliance-into-maintenance-mode.html["維護模式"]。
++
+
+NOTE: 維護模式會中斷與儲存控制器的連線。
+
+
+
+.關於這項工作
+請勿一次在多個 StorageGRID 應用裝置上的 E 系列控制器中升級 SANtricity OS 或 NVSRAM 。
+
+
+CAUTION: 視StorageGRID 部署模式和ILM原則而定、一次升級多個不適用的應用裝置可能會導致資料無法使用。
+
+.步驟
+. 確認產品已裝入 link:../commonhardware/placing-appliance-into-maintenance-mode.html["維護模式"]。
+. 從服務型筆記型電腦存取SANtricity 「NetApp系統管理程式」並登入。
+. 將全新SANtricity 的SKETOS軟體檔案和NVSRAM/檔案下載到管理用戶端。
++
+
+CAUTION: NVSRAM/SRAM/SRAM/VRAM/VRAM/VRAM/VRA StorageGRID請勿使用標準的 NVSRAM 下載。
+
+. 請遵循_升級SANtricity 支援資訊指南或SANtricity 《支援支援支援服務》中的說明、升級韌體和NVSRAM.
++
+
+NOTE: 立即啟動升級檔案。請勿延遲啟動。
+
+. 如果此程序順利完成、而且您有其他程序可在節點處於維護模式時執行、請立即執行。完成後、或是遇到任何故障並想要重新啟動時、請選取*進階*>*重新啟動控制器*、然後選取下列其中一個選項：
++
+** 選擇*重新開機StorageGRID 至S編*
+** 選取*重新開機進入維護模式*、以重新啟動控制器、使節點保持維護模式。  如果您在程序期間遇到任何失敗、並想要重新啟動、請選取此選項。  節點完成重新開機至維護模式後、請從失敗程序的適當步驟重新啟動。
++
+image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
+
++
+裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。節點頁面應顯示正常狀態（綠色核取記號圖示） image:../media/icon_alert_green_checkmark.png["綠色核取記號"] 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。
+
++
+image::../media/nodes_menu.png[應用裝置節點重新加入網格]
+
+
+
+
+
+.相關資訊
+https://imt.netapp.com/matrix/#welcome["NetApp 互通性對照表工具"^]
+
+link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html["使用SANtricity Grid Manager升級儲存控制器上的作業系統"]

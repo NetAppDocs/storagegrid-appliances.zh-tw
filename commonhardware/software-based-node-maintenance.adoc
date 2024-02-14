@@ -1,0 +1,12 @@
+---
+sidebar: sidebar 
+permalink: commonhardware/software-based-node-maintenance.html 
+keywords: software based node maintenance 
+summary: 軟體型節點維護。 
+---
+= 軟體型節點維護
+:allow-uri-read: 
+
+
+[role="lead"]
+軟體型節點維護。這裡有什麼嗎？

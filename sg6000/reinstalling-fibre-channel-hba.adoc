@@ -1,0 +1,136 @@
+---
+permalink: sg6000/reinstalling-fibre-channel-hba.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, host bus adapter, fibre channel, fiber channel, install, installing, installation, reinstall, reinstalling, reinstallation, remove, removing, removal, locate, identify, find 
+summary: 如果光纖通道 HBA 無法以最佳方式運作或發生故障、您可能需要更換該 HBA 。 
+---
+= 更換 SG6000 中的 Fibre Channel HBA
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果光纖通道 HBA 無法以最佳方式運作或發生故障、您可能需要更換該 HBA 。
+
+
+
+== 驗證要更換的Fibre Channel HBA
+
+如果您不確定要更換哪個Fibre Channel主機匯流排介面卡（HBA）、請完成此程序以識別它。
+
+.開始之前
+* 您有需要更換光纖通道HBA的儲存設備或SG6000-CN.控制器序號。
++
+
+NOTE: 如果您要更換的儲存應用裝置的序號開頭為字母Q、則不會列在Grid Manager中。您必須檢查資料中心內每個SG6000-CN-控制器正面的標記、直到找到相符項目為止。
+
+* 您將使用登入Grid Manager https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+
+
+.步驟
+. 從Grid Manager中選取* nodes *。
+. 從「節點」頁面的表格中、選取應用裝置儲存節點。
+. 選取*硬體*索引標籤。
++
+請查看StorageGRID 「介紹應用程式」一節中的*儲存設備機箱序號*和*運算控制器序號*。請查看其中一個序號是否與您要更換光纖通道HBA的儲存設備序號相符。如果任一序號相符、表示您找到正確的應用裝置。
+
++
+image::../media/nodes_page_hardware_tab_for_appliance_verify_HBA.png[適用於Fibre Channel HCA的應用裝置區段]
+
++
+** 如果StorageGRID 「無法」顯示「畫面不顯示」區段、則所選的節點不是StorageGRID 「畫面不顯示」應用程式。從樹狀檢視中選取不同的節點。
+** 如果設備機型不是SG6060或SG6060X、請從樹狀檢視中選取不同的節點。
+** 如果序號不相符、請從樹狀檢視中選取不同的節點。
+
+
+. 找到需要更換光纖通道HBA的節點之後、請記下運算控制器BMC IP位址、並將「StorageGRID 《支援資源的需求」一節列出。
++
+您可以將此 IP 位址用於 link:turning-controller-identify-led-on-and-off.html["開啟運算控制器識別 LED"]，以協助您在資料中心找到應用裝置。
+
+
+
+
+
+== 移除Fibre Channel HBA
+
+如果SG6000-CN-控制器無法正常運作或發生故障、您可能需要更換光纖通道主機匯流排介面卡（HBA）。
+
+.開始之前
+* 您擁有正確的備用Fibre Channel HBA。
+* 您有 link:reinstalling-fibre-channel-hba.html#verify-fibre-channel-hba-to-replace["已確定哪個 SG6000-CN 控制器包含要更換的光纖通道 HBA"]。
+* 您有 link:locating-controller-in-data-center.html["實體放置 SG6000-CN 控制器"] 在資料中心。
+* 您有 link:power-sg6000-cn-controller-off-on.html#shut-down-sg6000-cn-controller["關閉 SG6000-CN 控制器"]。
++
+
+CAUTION: 從機架中移除控制器之前、必須先進行管制關機。
+
+* 您有 link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html#remove-sg6000-cn-controller-from-cabinet-or-rack["已從機櫃或機架中卸下控制器"]。
+* 您有 link:reinstalling-sg6000-cn-controller-cover.html#remove-sg6000-cn-controller-cover["已卸下控制器護蓋"]。
+
+
+.關於這項工作
+為避免服務中斷、請在開始更換光纖通道 HBA 之前、確認所有其他儲存節點都已連線至網格、或在可接受服務中斷期間的排程維護期間更換介面卡。請參閱相關資訊 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["監控節點連線狀態"^]。
+
+
+CAUTION: 如果您曾經使用過僅建立物件複本的ILM規則、則必須在排程維護期間更換光纖通道HBA。否則、在此程序期間、您可能會暫時失去對這些物件的存取權。+
+請參閱相關資訊 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["為何不應使用單一複本複寫"^]。
+
+.步驟
+. 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
+. 找到位於包含光纖通道HBA的控制器背面的擴充卡組件。
++
+image::../media/sg6060_riser_assembly_location.jpg[SG6060擴充卡組件位置]
+
+. 抓住提昇部件的藍色標記孔、然後小心地將其向上提起。當您提起擴充卡組件時、請將其朝機箱正面移動、以便安裝的介面卡中的外部連接器能夠清除機箱。
+. 將擴充卡放在防靜態平面上、金屬框架面朝下、以便存取介面卡。
++
+image::../media/sg6060_fc_hba_location.jpg[SG6060 Fibre Channel HBA（位於提升板組件中）]
+
++
+提升板組件中有兩個介面卡：一個光纖通道HBA和一個乙太網路介面卡。如圖所示、光纖通道HBA。
+
+. 打開藍色介面卡鎖（圈起的）、然後小心地從擴充卡組件中移除光纖通道HBA。稍微搖一下介面卡、以協助將介面卡從其連接器中移除。請勿過度施力。
+. 將介面卡放在一個平坦的防靜態表面上。
+
+
+.完成後
+link:reinstalling-fibre-channel-hba.html["安裝替換的 Fibre Channel HBA"]。
+
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+
+
+
+== 重新安裝Fibre Channel HBA
+
+替換的Fibre Channel HBA安裝在與移除HBA相同的位置。
+
+.開始之前
+* 您擁有正確的備用Fibre Channel HBA。
+* 您已移除現有的Fibre Channel HBA。
++
+link:reinstalling-fibre-channel-hba.html#remove-fibre-channel-hba["移除Fibre Channel HBA"]
+
+
+
+.步驟
+. 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
+. 從包裝中取出更換的Fibre Channel HBA。
+. 將藍色介面卡鎖定在開啟位置時、將光纖通道HBA與其在擴充卡組件上的連接器對齊、然後小心地將介面卡壓入連接器、直到它完全就位。
++
+image::../media/sg6060_fc_hba_location.jpg[SG6060 Fibre Channel HBA（位於提升板組件中）]
+
++
+提升板組件中有兩個介面卡：一個光纖通道HBA和一個乙太網路介面卡。如圖所示、光纖通道HBA。
+
+. 找到與主機板上的導引插銷對齊的提升板組件（圈圈）上的定位孔、以確保正確的提升板組件定位。
++
+image::../media/sg6060_riser_alignment_hole.jpg[SG6060擴充卡組件上的定位孔]
+
+. 將提升板部件放入機箱中，確保其與系統板上的連接器和導向銷對齊，然後插入提升板部件。
+. 小心地沿着藍色標記孔旁的中心線將提升部件按入到位，直到其完全就位。
+. 從要重新安裝纜線的光纖通道HBA連接埠取下保護蓋。
+
+
+.完成後
+如果您沒有其他維護程序要在控制器中執行、 link:reinstalling-sg6000-cn-controller-cover.html["重新安裝控制器護蓋"]。

@@ -1,0 +1,83 @@
+---
+permalink: sg5700/replacing-other-hardware-components-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, controller battery, battery, drive, fan, power supply 
+summary: 您可能需要更換StorageGRID 處理器內的控制器電池、磁碟機、風扇或電源供應器。 
+---
+= 更換 SG5700 中的其他硬體元件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要更換StorageGRID 處理器內的控制器電池、磁碟機、風扇或電源供應器。
+
+.開始之前
+* 您有E系列硬體更換程序。
+* 本產品已經使用過 link:../commonhardware/placing-appliance-into-maintenance-mode.html["進入維護模式"] 如果元件更換程序需要關閉產品電源、
+
+
+.關於這項工作
+若要更換 E2800 控制器中的電池、請參閱這些說明中的說明 link:replacing-e2800-controller.html["裝回 E2800 控制器"]。這些指示說明如何從產品中取出控制器、從控制器中取出電池、安裝電池、以及更換控制器。
+
+若要更換產品中的磁碟機、電源風扇箱、風扇箱、電源箱或磁碟抽屜、請存取 http://mysupport.netapp.com/info/web/ECMP1658252.html["E 系列維護 E2800 硬體的程序"^]。
+
+
+
+== SG5712元件更換說明
+
+[cols="1a,3a"]
+|===
+| FRU | 請參閱的E系列說明 
+
+
+ a| 
+磁碟機
+ a| 
+更換E2800 12磁碟機或24磁碟機櫃中的磁碟機
+
+
+
+ a| 
+電力風扇容器
+ a| 
+更換E2800機櫃中的電源風扇機箱
+
+|===
+
+
+== SG5760 元件更換說明
+
+[cols="1a,3a"]
+|===
+| FRU | 請參閱的E系列說明 
+
+
+ a| 
+磁碟機
+ a| 
+更換E2860磁碟櫃中的磁碟機
+
+
+
+ a| 
+電力箱
+ a| 
+更換E2860磁碟櫃中的電力箱
+
+
+
+ a| 
+風扇容器
+ a| 
+更換E2860磁碟櫃中的風扇容器
+
+
+
+ a| 
+磁碟機抽屜
+ a| 
+更換E2860磁碟櫃中的磁碟機匣
+
+|===

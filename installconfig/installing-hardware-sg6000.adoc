@@ -1,0 +1,55 @@
+---
+permalink: installconfig/installing-hardware-sg6000.html 
+sidebar: sidebar 
+keywords: install, sg6000, sg6060, sgf6024, expansion shelf, cabinet, rack, drives 
+summary: 對於 SG6060 和 SGF6024 、您可以在機櫃或機架中安裝滑軌、然後將控制器機櫃、任何擴充機櫃和運算控制器滑到滑軌上。對於 SG6060 、在安裝磁碟櫃之前、請勿在每個機櫃中安裝磁碟機。 
+---
+= 安裝至機櫃或機架（ SG6000 ）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於 SG6060 和 SGF6024 、您可以在機櫃或機架中安裝滑軌、然後將控制器機櫃、任何擴充機櫃和運算控制器滑到滑軌上。對於 SG6060 、在安裝磁碟櫃之前、請勿在每個機櫃中安裝磁碟機。
+
+[cols="1a,2a,2a"]
+|===
+| 模型 | 安裝 | 以取得資訊 
+
+
+ a| 
+SG6060
+ a| 
+60 個磁碟機控制器機櫃和任何 60 個磁碟機擴充機櫃
+ a| 
+link:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html["安裝 60 個磁碟機櫃"]
+
+
+
+ a| 
+SG6060
+ a| 
+每個機櫃有 60 個磁碟機
+ a| 
+link:sg6060-installing-drives.html["安裝磁碟機"]
+
+
+
+ a| 
+SGF6024.
+ a| 
+24 個磁碟機控制器機櫃
+ a| 
+link:sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html["安裝 24 個磁碟機櫃"]
+
+
+
+ a| 
+SG6060 和 SGF6024
+ a| 
+SG6000-CN 運算控制器
+ a| 
+link:sg6000-cn-installing-into-cabinet-or-rack.html["安裝 SG6000-CN 控制器"]
+
+|===

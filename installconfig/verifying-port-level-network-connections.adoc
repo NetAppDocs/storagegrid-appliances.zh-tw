@@ -1,0 +1,73 @@
+---
+permalink: installconfig/verifying-port-level-network-connections.html 
+sidebar: sidebar 
+keywords: network connections, network connection, network, connection, connectivity, verify, verifying, check, checking, ports, port, port-level, port level, test, testing, udp, Client Network, Admin Network 
+summary: 為了確保StorageGRID 不受防火牆阻礙、請確認StorageGRID 《不適用》裝置安裝程式可連線至特定IP位址或位址範圍內的特定TCP連接埠或連接埠集。 
+---
+= 驗證連接埠層級的網路連線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+為了確保StorageGRID 不受防火牆阻礙、請確認StorageGRID 《不適用》裝置安裝程式可連線至特定IP位址或位址範圍內的特定TCP連接埠或連接埠集。
+
+.關於這項工作
+您可以使用StorageGRID 《解決方案安裝程式》中提供的連接埠清單、測試應用裝置與Grid Network中其他節點之間的連線能力。
+
+此外、您也可以在管理網路和用戶端網路上、以及在諸如外部NFS或DNS伺服器所使用的udp連接埠上測試連線能力。如需這些連接埠的清單、請參閱 https://docs.netapp.com/us-en/storagegrid-118/network/network-port-reference.html["網路連接埠參考"^]。
+
+
+NOTE: 連接埠連線表中列出的網格網路連接埠僅適用於 StorageGRID 11.7 版或更新版本。若要驗證每種節點類型的連接埠是否正確、請務必參閱StorageGRID 您的版本的《網路指南》。
+
+.步驟
+. 從「SectionAppliance安裝程式」中、按一下StorageGRID 「*組態網路*>*連接埠連線測試（nmap）*」。
++
+隨即顯示「連接埠連線測試」頁面。
+
++
+連接埠連線表列出需要網格網路上TCP連線的節點類型。針對每種節點類型、表格會列出您的應用裝置應可存取的Grid Network連接埠。
+
++
+您可以測試表格中所列應用裝置連接埠與Grid Network中其他節點之間的連線能力。
+
+. 從*網路*下拉式清單中、選取您要測試的網路：*網格*、*管理*或*用戶端*。
+. 為該網路上的主機指定一系列的IPv6位址。
++
+例如、您可能想要探查網路或主要管理節點上的閘道。
+
++
+使用連字號指定範圍、如範例所示。
+
+. 輸入TCP連接埠號碼、以逗號分隔的連接埠清單、或連接埠範圍。
++
+image::../media/port_connectivity_test_start.png[連接埠連線測試]
+
+. 按一下「*測試連線能力*」。
++
+** 如果所選的連接埠層級網路連線有效、「Port connections test passed」（連接埠連線測試通過）訊息會顯示在綠色橫幅中。nmap命令輸出會列在橫幅下方。
++
+image::../media/port_connectivity_test_passed.png[連接埠連線測試通過]
+
+** 如果與遠端主機建立連接埠層級的網路連線、但主機未接聽一個或多個選取的連接埠、則「Port Connectivity test failed」（連接埠連線測試失敗）訊息會顯示在黃色橫幅中。nmap命令輸出會列在橫幅下方。
++
+主機未接聽的任何遠端連接埠都會顯示「Closed」（已關閉）狀態。 例如、當您嘗試連線的節點處於預先安裝狀態、StorageGRID 且該節點上尚未執行「更新服務」時、您可能會看到這個黃色橫幅。
+
++
+image::../media/nmap_test_yellow_banner.png[nmap測試黃色橫幅]
+
+** 如果無法為一或多個選取的連接埠建立連接埠層級網路連線、則紅色橫幅會顯示「連接埠連線測試失敗」訊息。nmap命令輸出會列在橫幅下方。
++
+紅色橫幅表示TCP連線嘗試連接遠端主機上的連接埠、但未將任何內容傳回傳送者。當沒有傳回回應時、連接埠的狀態為「已篩選」、可能會被防火牆封鎖。
+
++
+
+NOTE: 也會列出「Closed」（已關閉）的連接埠。
+
++
+image::../media/nmap_test_red_banner.png[nmap測試紅色橫幅]
+
+
+
+

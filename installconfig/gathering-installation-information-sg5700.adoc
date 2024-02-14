@@ -1,0 +1,469 @@
+---
+permalink: installconfig/gathering-installation-information-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10/25-gbe, 10/25 gbe, e5700sg, independent, active-backup, active backup, 1-gbe, 1 gbe 
+summary: 使用表格記錄您連線至應用裝置的每個網路所需的資訊。這些值是安裝和設定硬體所需的值。 
+---
+= 收集網路資訊（ SG5700 ）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用表格記錄您連線至應用裝置的每個網路所需的資訊。這些值是安裝和設定硬體所需的值。
+
+
+TIP: 請使用 ConfigBuilder 隨附的活頁簿、而非使用表格。使用 ConfigBuilder 活頁簿可讓您上傳系統資訊並產生 JSON 檔案、以自動完成 StorageGRID 應用裝置安裝程式中的某些組態步驟。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
+
+
+
+== 連接SANtricity 到E2800控制器上的《E2800系統管理程式》所需的資訊
+
+您可以將 E2800 系列控制器連接至 SANtricity 系統管理員所使用的管理網路。
+
+[cols="2a,1a"]
+|===
+| 所需資訊 | 您的價值 
+
+
+ a| 
+您將連接至管理連接埠1的乙太網路交換器連接埠
+ a| 
+
+
+
+ a| 
+管理連接埠1的Mac位址（印在連接埠P1附近的標籤上）
+ a| 
+
+
+
+ a| 
+DHCP指派的管理連接埠1 IP位址（如果在開機後可用）
+
+*附註：*如果您要連線至E2800控制器的網路包含DHCP伺服器、網路管理員可以使用MAC位址來判斷DHCP伺服器指派的IP位址。
+ a| 
+
+
+
+ a| 
+速度與雙工模式
+
+*附註：*您必須確定SANtricity 適用於「系統管理程式」管理網路的乙太網路交換器已設定為自動協調。
+ a| 
+必須：
+
+* 自動協商（預設）
+
+
+
+
+ a| 
+IP位址格式
+ a| 
+請選擇一項：
+
+* IPV4
+* IPv6
+
+
+
+
+ a| 
+您計畫用於管理網路上應用裝置的靜態IP位址
+ a| 
+對於IPV4：
+
+* IPV4位址：
+* 子網路遮罩：
+* 閘道：
+
+
+對於IPv6：
+
+* IPv6位址：
+* 可路由的IP位址：
+* E2800控制器路由器IP位址：
+
+
+|===
+
+
+== 將E5700SG控制器連接至管理網路所需的資訊
+
+管理員網路for支援功能是選用的網路、可用於系統管理和維護。StorageGRID應用裝置使用E5700SG控制器上的1-GbE管理連接埠來連線至管理網路。
+
+[cols="2a,1a"]
+|===
+| 所需資訊 | 您的價值 
+
+
+ a| 
+管理網路已啟用
+ a| 
+請選擇一項：
+
+* 否
+* 是（預設）
+
+
+
+
+ a| 
+網路連結模式
+ a| 
+請選擇一項：
+
+* 獨立
+* 主動備份
+
+
+
+
+ a| 
+連接埠1的交換器連接埠
+ a| 
+
+
+
+ a| 
+連接埠2的交換器連接埠（僅限主動備份網路連結模式）
+ a| 
+
+
+
+ a| 
+DHCP指派的管理連接埠1 IP位址（如果在開機後可用）
+
+*附註：*如果管理網路包含DHCP伺服器、E5700SG控制器會在開機後、在七段顯示器上顯示DHCP指派的IP位址。您也可以使用MAC位址來查詢指派的IP、藉此判斷DHCP指派的IP位址。
+ a| 
+* IPV4位址（CIDR）：
+* 閘道：
+
+
+
+
+ a| 
+您計畫用於管理網路上應用裝置儲存節點的靜態IP位址
+
+*注意：*如果您的網路沒有閘道、請為閘道指定相同的靜態IPv4位址。
+ a| 
+* IPV4位址（CIDR）：
+* 閘道：
+
+
+
+
+ a| 
+管理網路子網路（CIDR）
+ a| 
+
+|===
+
+
+== 在E5700SG控制器上連接及設定10/25-GbE連接埠所需的資訊
+
+E5700SG控制器上的四個10/25-GbE連接埠可連接StorageGRID 至「Se Grid Network and Client Network」（英文）。
+
+
+NOTE: 請參閱 link:gathering-installation-information-sg5700.html#port-bond-modes["連接埠連結模式（ E5700SG 控制器）"]。
+
+[cols="2a,1a"]
+|===
+| 所需資訊 | 您的價值 
+
+
+ a| 
+連結速度
+
+* 注意： * 如果您選擇 25 GbE 、請安裝 SPF28 收發器。不支援自動協商、因此您也必須將連接埠和連接的交換器設定為 25GbE 。
+ a| 
+請選擇一項：
+
+* 10 GbE（預設）
+* 25 GbE
+
+
+
+
+ a| 
+連接埠連結模式
+ a| 
+請選擇一項：
+
+* 固定（預設）
+* Aggregate
+
+
+
+
+ a| 
+連接埠1的交換器連接埠（用戶端網路）
+ a| 
+
+
+
+ a| 
+連接埠2的交換器連接埠（網格網路）
+ a| 
+
+
+
+ a| 
+連接埠 3 的交換器連接埠（用戶端網路）
+ a| 
+
+
+
+ a| 
+連接埠4的交換器連接埠（Grid Network）
+ a| 
+
+|===
+
+
+== 將E5700SG控制器連接至Grid Network所需的資訊
+
+Grid Network for StorageGRID 效能不只是一項必要的網路、可用於所有內部StorageGRID 的資訊流量。應用裝置使用E5700SG控制器上的10/25-GbE連接埠來連線至Grid Network。
+
+
+NOTE: 請參閱 link:gathering-installation-information-sg5700.html#port-bond-modes["連接埠連結模式（ E5700SG 控制器）"]。
+
+[cols="2a,1a"]
+|===
+| 所需資訊 | 您的價值 
+
+
+ a| 
+網路連結模式
+ a| 
+請選擇一項：
+
+* 雙主動備份（預設）
+* LACP（802.3ad）
+
+
+
+
+ a| 
+已啟用VLAN標記
+ a| 
+請選擇一項：
+
+* 否（預設）
+* 是的
+
+
+
+
+ a| 
+VLAN標記（如果已啟用VLAN標記）
+ a| 
+輸入介於0和4095之間的值：
+
+
+
+ a| 
+網格網路的DHCP指派IP位址（如果在開機後可用）
+
+*附註：*如果Grid Network包含DHCP伺服器、E5700SG控制器會在啟動後、在七段顯示器上顯示Grid Network的DHCP指派IP位址。
+ a| 
+* IPV4位址（CIDR）：
+* 閘道：
+
+
+
+
+ a| 
+您計畫在Grid Network上用於應用裝置儲存節點的靜態IP位址
+
+*注意：*如果您的網路沒有閘道、請為閘道指定相同的靜態IPv4位址。
+ a| 
+* IPV4位址（CIDR）：
+* 閘道：
+
+
+
+
+ a| 
+網格網路子網路（CIDR）
+
+*注意：*如果未啟用用戶端網路、則控制器上的預設路由將使用此處指定的閘道。
+ a| 
+
+|===
+
+
+== 將E5700SG控制器連接至用戶端網路所需的資訊
+
+Client Network for StorageGRID 推銷是選用的網路、通常用於提供用戶端傳輸協定存取網格。應用裝置會使用E5700SG控制器上的10/25-GbE連接埠來連線至用戶端網路。
+
+
+NOTE: 請參閱 link:gathering-installation-information-sg5700.html#port-bond-modes["連接埠連結模式（ E5700SG 控制器）"]。
+
+[cols="2a,1a"]
+|===
+| 所需資訊 | 您的價值 
+
+
+ a| 
+用戶端網路已啟用
+ a| 
+請選擇一項：
+
+* 否（預設）
+* 是的
+
+
+
+
+ a| 
+網路連結模式
+ a| 
+請選擇一項：
+
+* 雙主動備份（預設）
+* LACP（802.3ad）
+
+
+
+
+ a| 
+已啟用VLAN標記
+ a| 
+請選擇一項：
+
+* 否（預設）
+* 是的
+
+
+
+
+ a| 
+VLAN標記
+
+（如果已啟用VLAN標記）
+ a| 
+輸入介於0和4095之間的值：
+
+
+
+ a| 
+用戶端網路的DHCP指派IP位址（如果在開機後可用）
+ a| 
+* IPV4位址（CIDR）：
+* 閘道：
+
+
+
+
+ a| 
+您計畫用於用戶端網路上應用裝置儲存節點的靜態IP位址
+
+*附註：*如果已啟用用戶端網路、則控制器上的預設路由將使用此處指定的閘道。
+ a| 
+* IPV4位址（CIDR）：
+* 閘道：
+
+
+|===
+
+
+== 連接埠連結模式
+
+何時 link:configuring-network-links.html["設定網路連結"] 對於 E5700SG 控制器、您可以使用連接埠連結連接至網格網路和選用用戶端網路的 10/25-GbE 連接埠、以及連接至選用管理網路的 1-GbE 管理連接埠。連接埠連結功能可在StorageGRID 各個解決方案之間提供備援路徑、協助您保護資料。
+
+
+
+=== 10/25-GbE連接埠的網路連結模式
+
+E5700SG控制器上的10/25-GbE網路連接埠支援固定連接埠連結模式、或是Grid Network和用戶端網路連線的Aggregate連接埠連結模式。
+
+
+
+==== 固定連接埠連結模式
+
+固定模式是10/25-GbE網路連接埠的預設組態。
+
+image::../media/e5700sg_fixed_port.gif[用於固定連接埠繫結模式的連接埠]
+
+[cols="1a,3a"]
+|===
+| 標註 | 連結哪些連接埠 
+
+
+ a| 
+c
+ a| 
+如果使用此網路、用戶端網路的連接埠1和3會連結在一起。
+
+
+
+ a| 
+G
+ a| 
+連接埠2和4會連結至Grid Network。
+
+|===
+使用固定連接埠連結模式時、您可以使用兩種網路連結模式之一：主動備份或連結集合控制傳輸協定（LACP）。
+
+* 在主動備份模式（預設）中、一次只有一個連接埠處於作用中狀態。如果作用中連接埠故障、其備份連接埠會自動提供容錯移轉連線。連接埠4提供連接埠2（Grid Network）的備份路徑、連接埠3則提供連接埠1（用戶端網路）的備份路徑。
+* 在LACP模式中、每對連接埠會形成控制器與網路之間的邏輯通道、以提高處理量。如果一個連接埠故障、另一個連接埠會繼續提供該通道。處理量減少、但連線能力不受影響。
+
+
+
+NOTE: 如果您不需要備援連線、則每個網路只能使用一個連接埠。不過請注意StorageGRID 、安裝完功能後、Grid Manager會發出警示、表示纜線已拔下。您可以安全地確認此警報以清除警報。
+
+
+
+==== Aggregate連接埠連結模式
+
+Aggregate連接埠連結模式可大幅增加每StorageGRID 個支援網的整體效能、並提供額外的容錯移轉路徑。
+
+image::../media/e5700sg_aggregate_port.gif[用於Aggregate連接埠連結模式的連接埠]
+
+[cols="1a,3a"]
+|===
+| 標註 | 連結哪些連接埠 
+
+
+ a| 
+1.
+ a| 
+所有連接的連接埠都集中在單一LACP連結中、允許所有連接埠用於Grid Network和Client Network流量。
+
+|===
+如果您打算使用Aggregate連接埠連結模式：
+
+* 您必須使用LACP網路連結模式。
+* 您必須為每個網路指定唯一的VLAN標記。此VLAN標記將新增至每個網路封包、以確保網路流量路由傳送至正確的網路。
+* 連接埠必須連接至可支援VLAN和LACP的交換器。如果有多個交換器參與LACP連結、交換器必須支援多機箱連結集合群組（MLAG）或等效群組。
+* 您將瞭解如何設定交換器以使用 VLAN 、 LACP 和 MLAG 或同等功能。
+
+
+如果您不想使用全部四個 10/25-GbE 連接埠、可以使用一個、兩個或三個連接埠。使用一個以上的連接埠、可大幅提高當10/25-GbE連接埠故障時、部分網路連線仍可繼續使用的機率。
+
+
+NOTE: 如果您選擇使用少於四個連接埠、請注意StorageGRID 、安裝完效益分析之後、Grid Manager會發出一或多個警示、表示纜線已拔下。您可以安全地確認警報以清除警報。
+
+
+
+=== 1 GbE管理連接埠的網路連結模式
+
+對於E5700SG控制器上的兩個1-GbE管理連接埠、您可以選擇「獨立網路連結模式」或「主動備份網路連結模式」、以連線至選用的管理網路。
+
+在「獨立」模式中、只有管理連接埠1連線至管理網路。此模式不提供備援路徑。管理連接埠2未連線、可用於暫用本機連線（使用IP位址169.254.0.1）
+
+在主動備份模式中、管理連接埠1和2都會連線至管理網路。一次只有一個連接埠處於作用中狀態。如果作用中連接埠故障、其備份連接埠會自動提供容錯移轉連線。將這兩個實體連接埠結合成一個邏輯管理連接埠、可提供通往管理網路的備援路徑。
+
+
+NOTE: 如果您需要在將1-GbE管理連接埠設定為主動備份模式時、暫時連接到E5700SG控制器、請從兩個管理連接埠拔下纜線、將暫時纜線插入管理連接埠2、然後使用IP位址169.254.0.1存取應用裝置。
+
+image::../media/e5700sg_bonded_management_ports.gif[E5700SG連結式管理連接埠]
+
+.相關資訊
+* link:cabling-appliance-sg5700.html["纜線應用裝置（SG5700）"]
+* link:gathering-installation-information-sg5700.html#port-bond-modes["連接埠連結模式（ E5700SG 控制器）"]
+* link:configuring-hardware.html["設定硬體（SG5700）"]
+

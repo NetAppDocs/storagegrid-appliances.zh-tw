@@ -1,0 +1,42 @@
+---
+section: sg6100
+title: 維護 SG6100 硬體
+url: "/landing-maintain-sgf6112/index.html"
+entries:
+- title: 總覽
+  pdf-filename: SG6100 硬體維護
+  url: "/sg6100/index.html"
+- title: 組態維護程序
+  pdf-filename: 組態維護程序 - SG6100
+  entries:
+  - title: 使用管理磁碟機索引標籤
+    url: "/sg6100/manage-drives-tab.html"
+  - title: 開啟和關閉識別 LED
+    url: "/sg6100/turning-sgf6112-identify-led-on-and-off.html"
+  - title: 在資料中心找到應用裝置
+    url: "/sg6100/locating-sgf6112-in-data-center.html"
+  - title: 關閉並開啟產品電源
+    url: "/sg6100/power-sgf6112-off-on.html"
+  - title: 變更連結組態
+    url: "/sg6100/changing-link-configuration-of-sgf6112-appliance.html"
+- title: 硬體維護程序
+  pdf-filename: 硬體維護程序 - SG6100
+  entries:
+  - title: 確認要更換的元件
+    url: "/sg6100/verify-component-to-replace.html"
+  - title: 更換一或多個電源供應器
+    url: "/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
+  - title: 更換風扇
+    url: "/sg6100/replacing-fan-in-sgf6112.html"
+  - title: 更換磁碟機
+    url: "/sg6100/replacing-drive-in-sgf6112.html"
+  - title: 更換 NIC
+    url: "/sg6100/replace-nic-in-sgf6112.html"
+  - title: 更換 CMOS 電池
+    url: "/sg6100/replace-cmos-in-sgf6112.html"
+  - title: 裝回機箱蓋
+    url: "/sg6100/reinstalling-sgf6112-cover.html"
+  - title: 更換 SGF6112 應用裝置
+    url: "/sg6100/replacing-sgf6112-appliance.html"
+  - title: 將 SGF6112 重新放置在機架中
+    url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"

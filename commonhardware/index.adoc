@@ -1,0 +1,45 @@
+---
+permalink: commonhardware/index.html 
+sidebar: sidebar 
+keywords: maintain overview, maintenance overview, about maintain, about maintenance 
+summary: 請依照下列指示維護 StorageGRID 系統。 
+---
+= 節點維護的一般程序：總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+請依照下列指示維護 StorageGRID 系統。
+
+
+
+== 關於這些指示
+
+這些指示說明所有節點的通用程序、例如如何套用軟體 Hotfix 、恢復網格節點、恢復故障站台、取消委任網格節點或整個站台、執行網路維護、執行主機層級和中介軟體維護程序、以及執行網格節點程序。
+
+
+NOTE: 在這些說明中， "Linux " 指的是 Red Hat ® Enterprise Linux ® 、 Ubuntu ® 或 Debian ® 部署。使用 https://imt.netapp.com/matrix/#welcome["NetApp互通性對照表工具IMT （不含）"^] 以取得支援版本的清單。
+
+
+
+== 開始之前
+
+* 您對StorageGRID 此系統有廣泛的瞭解。
+* 您已檢閱StorageGRID 過您的不全系統拓撲、並瞭解網格組態。
+* 您瞭解必須確實遵循所有指示、並留意所有警告。
+* 您瞭解不支援未說明的維護程序、或是需要服務參與。
+
+
+
+
+== 設備的維護程序
+
+每種類型的 StorageGRID 應用裝置的特定維護程序、請在應用裝置維護章節中說明：
+
+* link:../sg6100/index.html["維護 SG6100 應用裝置"]
+* link:../sg6000/index.html["維護 SG6000 應用裝置"]
+* link:../sg5700/index.html["維護SG5700應用裝置"]
+* link:../sg100-1000/index.html["維護 SG100 和 SG1000 設備"]
+

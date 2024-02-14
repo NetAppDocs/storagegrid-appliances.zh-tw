@@ -1,0 +1,31 @@
+---
+section: sg5700
+title: 維護 SG5700 硬體
+url: "/landing-maintain-sg5700/index.html"
+entries:
+- title: 總覽
+  pdf-filename: SG5700 硬體維護
+  url: "/sg5700/index.html"
+- title: 維護組態程序
+  pdf-filename: 維護組態程序 - SG5700
+  entries:
+  - title: 升級SANtricity 儲存控制器上的作業系統
+    url: "/sg5700/upgrading-santricity-os-on-storage-controller.html"
+    entries:
+    - title: 使用SANtricity Grid Manager升級儲存控制器上的作業系統
+      url: "/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html"
+    - title: 使用SANtricity 維護模式升級E2800控制器上的作業系統
+      url: "/sg5700/upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html"
+  - title: 使用SANtricity 《支援系統管理程式》升級磁碟機韌體
+    url: "/sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: 變更E5700SG控制器的連結組態
+    url: "/sg5700/changing-link-configuration-of-e5700sg-controller.html"
+- title: 硬體程序
+  pdf-filename: 硬體程序 - SG5700
+  entries:
+  - title: 更換 E2800 儲存控制器
+    url: "/sg5700/replacing-e2800-controller.html"
+  - title: 更換 E5700SG 運算控制器
+    url: "/sg5700/replacing-e5700sg-controller.html"
+  - title: 更換其他硬體元件
+    url: "/sg5700/replacing-other-hardware-components-sg5700.html"

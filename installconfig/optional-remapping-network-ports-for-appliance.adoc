@@ -1,0 +1,38 @@
+---
+permalink: installconfig/optional-remapping-network-ports-for-appliance.html 
+sidebar: sidebar 
+keywords: remap appliance ports, network, internal to external port mapping 
+summary: 您可以選擇性地將應用裝置節點上的內部連接埠重新對應至不同的外部連接埠。例如、由於防火牆問題、您可能需要重新對應連接埠。 
+---
+= 選用：重新對應應用裝置的網路連接埠
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以選擇性地將應用裝置節點上的內部連接埠重新對應至不同的外部連接埠。例如、由於防火牆問題、您可能需要重新對應連接埠。
+
+.開始之前
+* 您先前曾存取StorageGRID 過《不再使用的應用程式」。
+
+
+.關於這項工作
+您無法為負載平衡器端點使用重新對應的連接埠。如果您需要移除重新對應的連接埠、請遵循中的步驟 https://docs.netapp.com/us-en/storagegrid-118/maintain/removing-port-remaps.html["移除連接埠重新對應"^]。
+
+.步驟
+. 從 StorageGRID 設備安裝程式中、選取 * 設定網路 * > * 重新對應連接埠 * 。
++
+此時將顯示「重新對應連接埠」頁面。
+
+. 從*網路*下拉式方塊中、為您要重新對應的連接埠選取網路：GRID、管理或用戶端。
+. 從*傳輸協定*下拉式方塊中、選取IP傳輸協定：TCP或udp。
+. 從*重新對應方向*下拉式方塊中、選取您要重新對應此連接埠的流量方向：傳入、傳出或雙向。
+. 對於*原始連接埠*、請輸入您要重新對應的連接埠編號。
+. 對於*對應至連接埠*、請輸入您要改用的連接埠編號。
+. 選取 * 新增規則 * 。
++
+新的連接埠對應會新增至表格、重新對應會立即生效。
+
+. 若要移除連接埠對應、請選取您要移除規則的選項按鈕、然後選取 * 移除選取的規則 * 。
+

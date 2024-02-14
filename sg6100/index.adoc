@@ -1,0 +1,43 @@
+---
+permalink: sg6100/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100 storage appliance, SGF6112 storage appliance, maintain, maintaining, hardware, procedures, tasks 
+summary: 您可能需要在裝置上執行維護程序。本節將說明維護 SG6100 應用裝置的特定程序。 
+---
+= 維護 SG6100 應用裝置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要在裝置上執行維護程序。本節將說明維護 SG6100 應用裝置的特定程序。
+
+本節中的程序假設應用裝置已部署為StorageGRID 位於整個系統的儲存節點。
+
+* 組態維護程序 * 是使用設備安裝程式、 Grid Manager 或 BMC 介面來執行。這些程序包括：
+
+* link:turning-sgf6112-identify-led-on-and-off.html["開啟和關閉產品識別 LED"]
+* link:locating-sgf6112-in-data-center.html["在資料中心找到應用裝置"]
+* link:power-sgf6112-off-on.html["關閉產品電源"]
+* link:changing-link-configuration-of-sgf6112-appliance.html["變更應用裝置的連結組態"]
+
+
+* 硬體維護程序 * 需要實際操作特定 SGF6112 元件。
+
+
+
+== 磁碟機韌體升級
+
+每次設備重新開機時、會自動檢查 SGF6112 磁碟機上的韌體。必要時、韌體會自動升級至目前 StorageGRID 版本所預期的版本。通常、韌體升級會在 StorageGRID 軟體升級期間進行。現有 StorageGRID 版本的任何必要磁碟機韌體升級都會包含在 Hotfix 中。請遵循每個 Hotfix 所提供的指示、以確保升級套用至所有能從中受益的磁碟機。
+
+
+NOTE: 您不需要 SANtricity 系統管理員來維護 SGF6112 應用裝置。
+
+
+
+== 一般維護程序
+
+請參閱 link:../commonhardware/index.html["一般維護程序"] 適用於所有應用裝置的相同程序、例如套用 Hotfix 、還原節點或站台、以及執行網路維護。
+
+請參閱 link:../installconfig/configuring-hardware.html["設定應用裝置硬體"] 應用裝置的維護程序、也可在初始應用裝置安裝和組態期間執行。

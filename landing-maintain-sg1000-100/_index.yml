@@ -1,0 +1,25 @@
+---
+indexpage:
+  tiles:
+  - title: 經常執行的程序
+    links:
+    - title: 開啟或關閉位置 LED
+      url: "../sg100-1000/turning-controller-identify-led-on-and-off.html"
+    - title: 在資料中心找到應用裝置
+      url: "../sg100-1000/locating-controller-in-data-center.html"
+    - title: 關閉應用裝置電源
+      url: "../sg100-1000/shut-down-sg100-and-sg1000.html"
+    - title: 變更連結組態
+      url: "../sg100-1000/changing-link-configuration-of-services-appliance.html"
+  - title: 機架程序
+    links:
+    - title: 更換產品
+      url: "../sg100-1000/replacing-services-appliance.html"
+  - title: 硬體程序
+    links:
+    - title: 更換電源供應器
+      url: "../sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
+    - title: 更換風扇
+      url: "../sg100-1000/replacing-fan-in-services-appliance.html"
+    - title: 更換磁碟機
+      url: "../sg100-1000/replacing-drive-in-services-appliance.html"

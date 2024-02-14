@@ -1,0 +1,13 @@
+---
+layout: landing-page 
+sidebar: sidebar 
+permalink: landing-learn-hdwr/index.html 
+summary: 瞭解 StorageGRID 系統中的儲存設備或服務應用裝置。 
+---
+= 開始使用 StorageGRID 應用裝置
+:hardbreaks:
+:allow-uri-read: 
+:linkattrs: 
+:imagesdir: ./media/
+
+

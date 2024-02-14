@@ -1,0 +1,58 @@
+---
+permalink: installconfig/registering-hardware.html 
+sidebar: sidebar 
+keywords: register, registering, registration, support 
+summary: 註冊應用裝置硬體可提供支援效益。 
+---
+= 註冊硬體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+註冊應用裝置硬體可提供支援效益。
+
+.步驟
+. 找出應用裝置的機箱序號。對於 SG6000 應用裝置、機箱序號位於儲存控制器機櫃上。
++
+您可以在包裝單、確認電子郵件或打開產品包裝後、在產品上找到編號。
+
++
+image::../media/appliance_label.gif[標籤、包括序號]
+
++
+
+NOTE: SG6000 儲存設備上有數個序號。儲存控制器機櫃上的序號是當您致電 SG6000 應用裝置尋求服務或支援時、必須註冊及使用的序號。
+
+. 前往 NetApp 支援網站： http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 判斷您是否需要註冊硬體：
++
+[cols="1a,2a"]
+|===
+| 如果您是... | 請遵循下列步驟... 
+
+
+ a| 
+現有NetApp客戶
+ a| 
+.. 使用您的使用者名稱和密碼登入。
+.. 選擇*產品*>*我的產品*。
+.. 確認已列出新的序號。
+.. 如果沒有、請依照新NetApp客戶的指示進行。
+
+
+
+
+ a| 
+NetApp新客戶
+ a| 
+.. 按一下*立即註冊*、然後建立帳戶。
+.. 選擇*產品*>*註冊產品*。
+.. 輸入產品序號和要求的詳細資料。
+
+
+註冊核准後、您可以下載任何必要的軟體。核准程序可能需要24小時。
+
+|===
+

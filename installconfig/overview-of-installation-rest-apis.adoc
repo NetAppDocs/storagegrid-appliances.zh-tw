@@ -1,0 +1,62 @@
+---
+permalink: installconfig/overview-of-installation-rest-apis.html 
+sidebar: sidebar 
+keywords: installation REST API, REST API, installation REST APIs, REST APIs, Appliance Installer API, Appliance Installer APIs, Install API, Install APIs, Installer API, Installer APIs, Installation API, Installation APIs, api, apis 
+summary: 提供兩個REST API來執行安裝工作：《支援安裝》API和《支援使用者支援應用程式》API。StorageGRID StorageGRID StorageGRID 
+---
+= 安裝REST API總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+提供兩個REST API來執行安裝工作：《支援安裝》API和《支援使用者支援應用程式》API。StorageGRID StorageGRID StorageGRID
+
+這兩種API都使用Swagger開放原始碼API平台來提供API文件。Swagger可讓開發人員和非開發人員在使用者介面中與API互動、說明API如何回應參數和選項。本文件假設您熟悉標準網路技術和 JSON 資料格式。
+
+
+CAUTION: 您使用API文件網頁執行的任何API作業都是即時作業。請小心不要錯誤地建立、更新或刪除組態資料或其他資料。
+
+每個REST API命令都包含API的URL、HTTP動作、任何必要或選用的URL參數、以及預期的API回應。
+
+
+
+== 安裝API StorageGRID
+
+StorageGRID 安裝 API 僅在您初次設定 StorageGRID 系統、以及需要執行主要管理節點還原時可用。安裝API可透過HTTPS從Grid Manager存取。
+
+若要存取 API 文件、請前往主要管理節點上的安裝網頁、然後從功能表列選取 * 說明 * > * API 文件 * 。
+
+《程式集安裝API》包含下列各節：StorageGRID
+
+* * 組態 * ：與產品版本和 API 版本相關的作業。您可以列出該版本所支援的產品版本和主要API版本。
+* * GRID * ：網格層級組態作業。您可以取得並更新網格設定、包括網格詳細資料、網格網路子網路、網格密碼、以及NTP和DNS伺服器IP位址。
+* * 節點 * ：節點層級的組態作業。您可以擷取網格節點清單、刪除網格節點、設定網格節點、檢視網格節點、以及重設網格節點的組態。
+* * 資源配置 * ：資源配置作業。您可以啟動資源配置作業、並檢視資源配置作業的狀態。
+* * 恢復 * ：主管理節點恢復操作。您可以重設資訊、上傳恢復套件、開始恢復、以及檢視恢復作業的狀態。
+* * 恢復套件 * ：下載恢復套件的作業。
+* * 站台 * ：站台層級的組態作業。您可以建立、檢視、刪除及修改網站。
+
+
+
+
+== 應用程式安裝程式API StorageGRID
+
+您可以從透過HTTPS存取《支援應用程式應用程式API StorageGRID `_Controller_IP_:8443`。
+
+若要存取API文件、請移至StorageGRID 應用裝置上的《Some Appliance Installer》（英文）、然後從功能表列中選取*「Help*」（說明*）>「* API Docs」（* API文件）。
+
+《支援應用程式應用程式應用程式API：StorageGRID
+
+* * 複製 * ：設定及控制節點複製的作業。
+* * 加密 * ：管理加密及檢視加密狀態的作業。
+* * 硬體組態 * ：在附加硬體上設定系統設定的作業。
+* * 安裝 * ：啟動應用裝置安裝及監控安裝狀態的作業。
+* * 網路 * ：與 StorageGRID 應用裝置和應用裝置連接埠設定的網格、管理和用戶端網路組態相關的作業。
+* * 設定 * ：協助初始應用裝置安裝設定的作業、包括要求取得系統資訊及更新主要管理節點 IP 。
+* * 支援 * ：重新啟動控制器並取得記錄的作業。
+* *update-config* ：更新 StorageGRID 應用裝置組態的作業。
+* * 升級 * ：與設備韌體升級相關的作業。
+* * 上傳 sg* ：上傳 StorageGRID 安裝檔案的作業。
+

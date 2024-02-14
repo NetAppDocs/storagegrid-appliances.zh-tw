@@ -1,0 +1,71 @@
+---
+permalink: sg100-1000/replacing-drive-in-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, drive, remove, removing, removal, install, installing, installation 
+summary: 服務應用裝置中的SSD包含StorageGRID 了不實的作業系統。此外、當設備設定為管理節點時、SSD也會包含稽核記錄、度量和資料庫表格。磁碟機使用RAID1進行鏡射、以提供備援功能。如果其中一個磁碟機故障、您必須儘快更換、以確保備援。 
+---
+= 更換 SG100 或 SG1000 中的磁碟機
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+服務應用裝置中的SSD包含StorageGRID 了不實的作業系統。此外、當設備設定為管理節點時、SSD也會包含稽核記錄、度量和資料庫表格。磁碟機使用RAID1進行鏡射、以提供備援功能。如果其中一個磁碟機故障、您必須儘快更換、以確保備援。
+
+.開始之前
+* 您有 link:locating-controller-in-data-center.html["實際放置設備"]。
+* 您已確認哪個磁碟機故障、但其左LED指示燈呈黃色閃爍。
++
+兩個 SSD 放在插槽中、如下圖所示：
+
++
+image::../media/drive_locations_sg1000_front_with_ssds.png[磁碟機位置]
+
++
+
+CAUTION: 如果您移除工作正常的磁碟機、就會關閉應用裝置節點。請參閱檢視狀態指標以驗證故障的相關資訊。
+
+* 您已取得替換磁碟機。
+* 您已獲得適當的電子軟碟保護。
+
+
+.步驟
+. 驗證要更換的磁碟機的左側 LED 是否閃爍琥珀色。如果 Grid Manager 或 BMC UI 中回報磁碟機問題、 HDD02 或 HDD2 會參考上插槽中的磁碟機、而 HDD03 或 HDD3 則會參考下插槽中的磁碟機。
++
+您也可以使用Grid Manager來監控SSD的狀態。選擇*節點*。然後選取 `*Appliance Node*` >*硬體*。如果磁碟機故障、「Storage RAID Mode（儲存RAID模式）」欄位會顯示關於哪個磁碟機故障的訊息。
+
+. 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
+. 打開備用磁碟機的包裝、並將其放在產品附近無靜電且水平的表面上。
++
+儲存所有包裝材料。
+
+. 按下故障磁碟機上的釋放按鈕。
++
+image::../media/h600s_driveremoval.gif[移除磁碟機]
+
++
+磁碟機上的握把會部分開啟、而磁碟機會從插槽中釋放。
+
+. 打開握把、將磁碟機滑出、然後將其放在無靜電且水平的表面上。
+. 在將替換磁碟機插入磁碟機插槽之前、請先按下釋放按鈕。
++
+栓鎖會彈開。
+
++
+image::../media/h600s_driveinstall.gif[磁碟機安裝]
+
+. 將替換磁碟機插入插槽、然後關閉磁碟機握把。
++
+
+CAUTION: 請勿在關閉握把時過度施力。
+
++
+當磁碟機完全插入時、您會聽到「喀」一聲。
+
++
+磁碟機會自動以工作磁碟機的鏡射資料重建。您可以使用Grid Manager來檢查重新建置的狀態。選擇*節點*。然後選取 `*Appliance Node*` >*硬體*。Storage RAID Mode（儲存RAID模式）欄位會顯示「正在重建」訊息、直到磁碟機完全重建為止。
+
+
+
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。

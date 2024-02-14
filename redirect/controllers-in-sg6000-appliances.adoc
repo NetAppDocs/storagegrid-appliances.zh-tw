@@ -1,0 +1,8 @@
+---
+permalink: installconfig/controllers-in-sg6000-appliances.html 
+redirect: storagegrid-appliances/installconfig/hardware-description-sg6000.html#sg6000-controllers 
+---
+= 
+:allow-uri-read: 
+
+

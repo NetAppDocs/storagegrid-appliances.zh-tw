@@ -1,0 +1,52 @@
+---
+permalink: sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, i/o module, input/output module, power supply, fan, 60-drive expansion shelf, expansion shelf 
+summary: 您可能需要更換擴充櫃中的輸入/輸出模組、電源供應器或風扇。 
+---
+= 更換選購的 SG6000 60 磁碟機擴充機櫃中的硬體元件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要更換擴充櫃中的輸入/輸出模組、電源供應器或風扇。
+
+.開始之前
+* 您有E系列硬體更換程序。
+* 您已將儲存設備實際放置在資料中心內、以便更換擴充櫃硬體元件。
++
+link:locating-controller-in-data-center.html["在資料中心找到控制器"]
+
+
+
+.關於這項工作
+若要更換 60 個磁碟機擴充機櫃中的輸入 / 輸出模組（ IOM ）、請參閱的說明中的步驟 link:replacing-storage-controller-sg6000.html["更換儲存控制器"]。
+
+若要更換60個磁碟機擴充櫃中的電源供應器或風扇、請存取E系列維護60個磁碟機硬體的程序。
+
+|===
+| FRU | 請參閱的E系列說明 
+
+
+ a| 
+輸入/輸出模組（IOM）
+ a| 
+更換IOM
+
+
+
+ a| 
+電力箱
+ a| 
+更換動力箱（60個磁碟機）
+
+
+
+ a| 
+風扇容器
+ a| 
+更換風扇容器（60個磁碟機）
+
+|===

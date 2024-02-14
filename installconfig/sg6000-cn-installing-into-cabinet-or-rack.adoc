@@ -1,0 +1,44 @@
+---
+permalink: installconfig/sg6000-cn-installing-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, sg6000-cn, rail, rails 
+summary: 您可以在機櫃或機架中安裝一組 SG6000-CN 控制器的滑軌、然後將控制器滑到滑軌上。 
+---
+= 安裝 SG6000-CN 控制器（ SG6060 和 SG6024 ）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在機櫃或機架中安裝一組 SG6000-CN 控制器的滑軌、然後將控制器滑到滑軌上。
+
+.開始之前
+* 您已閱讀包裝盒中的「安全注意事項」文件、並瞭解移動和安裝硬體的預防措施。
+* 您已取得軌道套件隨附的說明。
+* 您已安裝E2860控制器機櫃和磁碟機或EF570控制器機櫃。
+
+
+.步驟
+. 請小心遵循軌道套件的指示、將軌道安裝在機櫃或機架中。
+. 在機櫃或機架中安裝的兩個滑軌上、將滑軌的可移動部分展開、直到聽到「喀」一聲為止。
++
+image::../media/rails_extended_out.gif[SG6000導軌]
+
+. 將SG6000-CN-控制器插入軌道。
+. 將控制器滑入機櫃或機架。
++
+如果您無法進一步移動控制器、請拉動機箱兩側的藍色閂鎖、將控制器完全滑入。
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[SG6000滑軌]
+
++
+
+NOTE: 在您開啟控制器電源之前、請勿連接前擋板。
+
+. 鎖緊控制器前面板上的緊固螺絲、將控制器固定在機架中。
++
+image::../media/sg6060_rack_retaining_screws.png[SG6060機架固定螺絲]
+
+

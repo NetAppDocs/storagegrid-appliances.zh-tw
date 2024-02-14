@@ -1,0 +1,39 @@
+---
+permalink: installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, install, installing, installation, cabinet, rack, rail, rails 
+summary: 您可以在機櫃或機架中安裝產品的滑軌組、然後將產品滑到滑軌上。 
+---
+= 安裝至機櫃或機架（ SG100 和 SG1000 ）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在機櫃或機架中安裝產品的滑軌組、然後將產品滑到滑軌上。
+
+.開始之前
+* 您已閱讀包裝盒中的「安全注意事項」文件、並瞭解移動和安裝硬體的預防措施。
+* 您已取得軌道套件隨附的說明。
+
+
+.步驟
+. 請小心遵循軌道套件的指示、將軌道安裝在機櫃或機架中。
+. 在機櫃或機架中安裝的兩個滑軌上、將滑軌的可移動部分展開、直到聽到「喀」一聲為止。
++
+image::../media/rails_extended_out.gif[SG100和SG 1000導軌]
+
+. 將產品插入軌道。
+. 將產品滑入機櫃或機架。
++
+當您無法進一步移動產品時、請拉動機箱兩側的藍色栓鎖、將產品完全滑入。
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[SG 100和SG1000滑軌]
+
++
+
+NOTE: 請勿在開啟產品電源之前連接前擋板。
+
+

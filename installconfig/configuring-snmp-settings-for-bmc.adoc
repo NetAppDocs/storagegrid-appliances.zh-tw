@@ -1,0 +1,40 @@
+---
+permalink: installconfig/configuring-snmp-settings-for-bmc.html 
+sidebar: sidebar 
+keywords: SNMP, configure, setup, set up 
+summary: 如果您熟悉硬體的 SNMP 設定、可以使用 BMC 介面來設定 SG6100 、 SG6000 和服務應用裝置的 SNMP 設定。您可以提供安全的社群字串、啟用SNMP設陷、以及指定最多五個SNMP目的地。 
+---
+= 設定 BMC 的 SNMP 設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您熟悉硬體的 SNMP 設定、可以使用 BMC 介面來設定 SG6100 、 SG6000 和服務應用裝置的 SNMP 設定。您可以提供安全的社群字串、啟用SNMP設陷、以及指定最多五個SNMP目的地。
+
+.開始之前
+* 您知道如何存取BMC儀表板。
+* 您有設定SNMP v1-v2c設備的SNMP設定經驗。
+
+
+
+NOTE: 如果設備故障且必須更換、則此程序所做的BMC設定可能無法保留。  請務必記錄您套用的所有設定、以便在必要時更換硬體後、輕鬆重新套用。
+
+.步驟
+. 從BMC儀表板中、選取*設定*>* SNMP設定*。
+. 在「SNMP設定」頁面上、選取*啟用SNMP V1/V2*、然後提供唯讀社群字串和讀寫社群字串。
++
+唯讀社群字串就像使用者ID或密碼。您應該變更此值、以防止入侵者取得網路設定的相關資訊。「讀寫社群字串」可保護裝置免於未經授權的變更。
+
+. （可選）選擇* Enable Trap（啟用陷阱）*、然後輸入所需資訊。
++
+
+NOTE: 使用IP位址輸入每個SNMP設陷的目的地IP。不支援 DNS 名稱。
+
++
+如果您希望應用裝置在 SNMP 主控台處於異常狀態時、立即傳送通知給該主控台、請啟用陷阱。根據裝置而定、陷阱可能會指出各種元件的硬體故障、連結上 / 下條件、超出溫度臨界值或流量過高。
+
+. （可選）單擊*發送測試陷阱*以測試您的設置。
+. 如果設定正確、請按一下「*儲存*」。
+

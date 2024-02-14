@@ -1,0 +1,45 @@
+---
+indexpage:
+  tiles:
+  - title: 快速入門
+    links:
+    - title: 裝置安裝快速入門
+      url: "../installconfig/index.html"
+    - title: 自動化應用裝置的安裝與組態
+      url: "../installconfig/automating-appliance-installation-and-configuration.html"
+    - title: 自動化 StorageGRID 組態
+      url: "../installconfig/automating-configuration-of-storagegrid.html"
+    - title: 安裝 REST API （進階使用者）
+      url: "../installconfig/overview-of-installation-rest-apis.html"
+  - title: 準備安裝
+    links:
+    - title: 準備網站
+      url: "../installconfig/preparing-site.html"
+    - title: 打開包裝盒
+      url: "../installconfig/unpacking-boxes.html"
+    - title: 取得其他設備和工具
+      url: "../installconfig/obtaining-additional-equipment-and-tools.html"
+  - title: 收集網路資訊
+    links:
+    - title: 網路類型StorageGRID
+      url: "../installconfig/reviewing-appliance-network-connections.html"
+    - title: SG100 與 SG1000
+      url: "../installconfig/gathering-installation-information-sg100-and-sg1000.html"
+    - title: SG5700
+      url: "../installconfig/gathering-installation-information-sg5700.html"
+    - title: SG6000
+      url: "../installconfig/gathering-installation-information-sg6000.html"
+    - title: SG6100
+      url: "../installconfig/gathering-installation-information-sg6100.html"
+  - title: 安裝硬體
+    links:
+    - title: 註冊硬體
+      url: "../installconfig/registering-hardware.html"
+    - title: 安裝應用裝置
+      url: "../landing-install-hdwr/index.html"
+    - title: 設定硬體
+      url: "../installconfig/configuring-hardware.html"
+    - title: 部署應用裝置儲存節點
+      url: "../installconfig/deploying-appliance-storage-node.html"
+    - title: 部署服務應用裝置節點
+      url: "../installconfig/deploying-services-appliance-node.html"

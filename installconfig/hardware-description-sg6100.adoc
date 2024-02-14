@@ -1,0 +1,150 @@
+---
+permalink: installconfig/hardware-description-sg6100.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, sgf6112, storage node, storage appliance, appliance models, appliance features, specifications 
+summary: StorageGRID SGF6112 應用裝置在 StorageGRID 系統中作為儲存節點運作。此應用裝置可在混合式網格環境中使用、此環境結合了應用裝置儲存節點和虛擬（軟體型）儲存節點。 
+---
+= SG6100 應用裝置：總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID SGF6112 應用裝置在 StorageGRID 系統中作為儲存節點運作。此應用裝置可在混合式網格環境中使用、此環境結合了應用裝置儲存節點和虛擬（軟體型）儲存節點。
+
+SGF6112 應用裝置提供下列功能：
+
+* 12 個 NVMe （非揮發性記憶體高速） SSD 磁碟機、內建整合式運算與儲存控制器。
+* 整合StorageGRID 了適用於整個過程的儲存與運算元素。
+* 包含StorageGRID 旨在簡化儲存節點部署與組態的《不再》應用裝置安裝程式。
+* 內含用於監控及診斷運算控制器硬體的基礎板管理控制器（ BMC ）。
+* 支援最多四個10-GbE或25-GbE連線至StorageGRID 「支援網格網」和「用戶端網路」。
+
+
+
+
+== SGF6112 硬體說明
+
+StorageGRID SGF6112 是一款全快閃應用裝置、採用精巧設計、並將運算控制器和儲存控制器整合至 1U 機箱中。此應用裝置支援 12 個 SSD NVMe 磁碟機、每個磁碟機的儲存容量最高可達 15.3 TB 。
+
+
+
+=== 彈性物件儲存
+
+SGF6112 的 RAID 設計採用 SSD 、提供下列資料保護功能：
+
+* 在單一 SSD 故障後仍能運作、不會影響物件可用度。
+* 可在多個 SSD 故障後運作、並將物件可用度降至最低（根據基礎 RAID 配置的設計）。
+* 在服務期間、 SSD 故障不會對節點根磁碟區（ StorageGRID 作業系統）的 RAID 外殼造成嚴重損壞、因此可完全恢復。
+
+
+
+
+== SGF6112 硬體元件
+
+SGF6112 應用裝置包含下列元件：
+
+運算與儲存平台:: 單機架單元（ 1U ）伺服器、包括：
++
+--
+* 兩個 2.1/2.6 GHz 165 W 處理器、提供 48 核心
+* 256 GB RAM
+* 2 個 1/10 GBase-T 連接埠
+* 4 個 10/25 GbE 乙太網路連接埠
+* 1 個 256 GB 內部開機磁碟機（包括 StorageGRID 軟體）
+* 基礎板管理控制器（BMC）、可簡化硬體管理
+* 備援電源供應器與風扇
+
+
+--
+
+
+
+
+== SGF6112 圖表
+
+
+
+=== SGF6112 正面視圖
+
+此圖顯示 SGF6112 的正面、不含擋板。此應用裝置包含 1U 運算與儲存平台、內含 12 個 SSD 磁碟機。
+
+image::../media/sgf6112_front_with_ssds.png[SGF6112 正面視圖]
+
+
+
+=== SGF6112 後視圖
+
+此圖顯示 SGF6112 的背面、包括連接埠、風扇和電源供應器。
+
+image::../media/sgf6112_rear_view.png[SGF6112 後視圖]
+
+[cols="1a,2a,2a,2a"]
+|===
+| 標註 | 連接埠 | 類型 | 使用 
+
+
+ a| 
+1.
+ a| 
+網路連接埠1-4
+ a| 
+10/25-GbE 、根據纜線或 SFP 收發器類型（支援 SFP28 和 SFP+ 模組）、交換器速度和設定的連結速度。
+ a| 
+連線到Grid Network和Client Network for StorageGRID the
+
+
+
+ a| 
+2.
+ a| 
+BMC管理連接埠
+ a| 
+1-GbE（RJ-45）
+ a| 
+連接至應用裝置基板管理控制器。
+
+
+
+ a| 
+3.
+ a| 
+診斷與支援連接埠
+ a| 
+* VGA
+* USB
+* Micro-USB 主控台連接埠
+* Micro-SD 插槽模組
+
+ a| 
+保留以供技術支援使用。
+
+
+
+ a| 
+4.
+ a| 
+管理網路連接埠1
+ a| 
+1/10-GbE （ RJ-45 ）
+ a| 
+將應用裝置連接至管理網路StorageGRID 以供其使用。
+
+
+
+ a| 
+5.
+ a| 
+管理網路連接埠2.
+ a| 
+1/10-GbE （ RJ-45 ）
+ a| 
+選項：
+
+* 與管理網路連接埠 1 連結、以建立與 StorageGRID 管理網路的備援連線。
+* 保持中斷連線、可用於暫用本機存取（IP 169.254.0.1）。
+* 安裝期間、如果 DHCP 指派的 IP 位址無法使用、請使用連接埠 2 進行 IP 組態。
+
+
+|===

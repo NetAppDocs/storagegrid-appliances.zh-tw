@@ -1,0 +1,17 @@
+---
+section: commonhardware
+title: 維護應用裝置組態
+entries:
+- title: 總覽
+  pdf-filename: 維護應用裝置組態（所有節點）
+  url: "/commonhardware/index.html"
+- title: 將應用裝置置於維護模式
+  url: "/commonhardware/placing-appliance-into-maintenance-mode.html"
+- title: 變更MTU設定
+  url: "/commonhardware/changing-mtu-setting.html"
+- title: 檢查DNS伺服器組態
+  url: "/commonhardware/checking-dns-server-configuration.html"
+- title: 更新 MAC 位址參照
+  url: "/commonhardware/locate-mac-address.html"
+- title: 在維護模式中監控節點加密
+  url: "/commonhardware/monitoring-node-encryption-in-maintenance-mode.html"

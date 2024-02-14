@@ -1,0 +1,79 @@
+---
+permalink: installconfig/optional-changing-raid-mode.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, raid, raid mode, change, changing, modify, DDP, ddp16, RAID 6 
+summary: 在某些應用裝置機型上、您可以變更為應用裝置上的不同 RAID 模式、以符合您的儲存和還原需求。您只能在部署應用裝置儲存節點之前變更模式。 
+---
+= 選用：變更 RAID 模式（ SG5760 和 SG6000 ）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在某些應用裝置機型上、您可以變更為應用裝置上的不同 RAID 模式、以符合您的儲存和還原需求。您只能在部署應用裝置儲存節點之前變更模式。
+
+如果您使用 ConfigBuilder 來產生 JSON 檔案、則可以自動變更 RAID 模式。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
+
+.關於這項工作
+如果您的應用裝置支援、您可以選擇下列其中一個 Volume 組態選項：
+
+* * 動態磁碟集區（ DDP ） * ：此模式每八個資料磁碟機使用兩個同位元磁碟機。這是所有應用裝置的預設和建議模式。相較於 RAID 6 、 DDP 可提供更好的系統效能、減少磁碟機故障後的重建時間、並簡化管理。DDP 也在 SG5760 應用裝置中提供藥屜遺失保護。
++
+
+NOTE: 由於兩個 SSD 、 DDP 無法在 SG6060 設備中提供抽屜遺失保護。任何新增至 SG6060 的擴充機櫃都能有效保護抽屜遺失。
+
+* * DDP16*：此模式每16個資料磁碟機使用兩個同位元檢查磁碟機、相較於DDP、可提高儲存效率。相較於 RAID 6 、 DDP16 可提供更好的系統效能、減少磁碟機故障後的重新建置時間、易於管理、以及可媲美的儲存效率。若要使用DDP16模式、您的組態必須包含至少20個磁碟機。DDP16不提供藥櫃遺失保護。
+* * RAID6*：此模式每16個或更多資料磁碟機使用兩個同位元檢查磁碟機。這是一種硬體保護方案、使用每個磁碟上的同位元區塊、並允許在遺失任何資料之前、在 RAID 組內發生兩個磁碟故障。若要使用RAID 6模式、您的組態必須包含至少20個磁碟機。雖然與 DDP 相比、 RAID 6 可以提高應用裝置的儲存效率、但不建議在大多數 StorageGRID 環境中使用。
+
+
+
+CAUTION: 如果已設定任何磁碟區、或StorageGRID 先前安裝了支援功能、變更RAID模式會移除和更換磁碟區。這些磁碟區上的任何資料都會遺失。
+
+[role="tabbed-block"]
+====
+.SG5760
+--
+.開始之前
+* 您的 SG5760 內含 60 個磁碟機。如果您有 SG5712 、則必須使用預設 DDP 模式。
+* 您正在使用任何可連線StorageGRID 到該功能的用戶端。
+* 用戶端有 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+
+
+.步驟
+. 使用服務型筆記型電腦開啟網頁瀏覽器、然後存取StorageGRID 《The》《The Service laptop》（《The Service laptop》）：+
+`*https://_E5700SG_Controller_IP_:8443*`
++
+其中 `_E5700SG_Controller_IP_` 是E5700SG控制器的任何IP位址。
+
+. 選擇*進階*>* RAID模式*。
+. 在「*組態RAID模式*」頁面上、從「模式」下拉式清單中選取所需的RAID模式。
+. 按一下「 * 儲存 * 」。
+
+
+--
+.SG6000
+--
+.開始之前
+* 您正在使用任何可連線StorageGRID 到該功能的用戶端。
+* 用戶端有  https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+
+
+.步驟
+. 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個IP位址。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
+
++
+畫面會出現「the不再安裝StorageGRID 程式」首頁。
+
+. 選擇*進階*>* RAID模式*。
+. 在「*組態RAID模式*」頁面上、從「模式」下拉式清單中選取所需的RAID模式。
+. 按一下「 * 儲存 * 」。
+
+
+--
+====

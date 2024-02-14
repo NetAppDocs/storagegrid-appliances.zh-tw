@@ -1,0 +1,45 @@
+---
+permalink: installconfig/verifying-network-connections.html 
+sidebar: sidebar 
+keywords: network connections, network connection, network, connection, connectivity, verify, verifying, check, checking, mtu, test, testing 
+summary: 您應該確認是否可以從StorageGRID 應用裝置存取所使用的資訊網。若要驗證透過網路閘道的路由、您應該測試StorageGRID 與眾不同子網路上的《解決方案安裝程式與IP位址之間的連線能力。您也可以驗證MTU設定。 
+---
+= 驗證網路連線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應該確認是否可以從StorageGRID 應用裝置存取所使用的資訊網。若要驗證透過網路閘道的路由、您應該測試StorageGRID 與眾不同子網路上的《解決方案安裝程式與IP位址之間的連線能力。您也可以驗證MTU設定。
+
+.步驟
+. 從「SectionAppliance安裝程式」的功能表列StorageGRID 中、按一下「*組態網路*」>「* Ping和MTU Test*」。
++
+Ping和MTU Test（Ping和MTU測試）頁面隨即出現。
+
++
+image::../media/ping_test_start.png[以擷取畫面擷取StorageGRID 畫面顯示的Ping應用程式和MTU測試選項]
+
+. 從*網路*下拉式方塊中、選取您要測試的網路：網格、管理或用戶端。
+. 輸入該網路上主機的IPV4位址或完整網域名稱（FQDN）。
++
+例如、您可能想要ping網路或主要管理節點上的閘道。
+
+. 或者、選取 * 測試 MTU* 核取方塊、以驗證整個網路路徑到目的地的 MTU 設定。
++
+例如、您可以測試應用裝置節點與不同站台節點之間的路徑。
+
+. 按一下「*測試連線能力*」。
++
+如果網路連線有效、會出現「Ping test passed」（Ping測試通過）訊息、並列出ping命令輸出。
+
++
+image::../media/ping_test_passed.png[以畫面擷取畫面顯示StorageGRID 的Ping測試結果]
+
+
+
+.相關資訊
+* link:configuring-network-links.html["設定網路連結"]
+* link:../commonhardware/changing-mtu-setting.html["變更MTU設定"]
+

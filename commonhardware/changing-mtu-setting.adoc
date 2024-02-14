@@ -1,0 +1,65 @@
+---
+permalink: commonhardware/changing-mtu-setting.html 
+sidebar: sidebar 
+keywords: mtu, change, changing 
+summary: 您可以變更為應用裝置節點設定IP位址時所指派的MTU設定。 
+---
+= 變更MTU設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以變更為應用裝置節點設定IP位址時所指派的MTU設定。
+
+.關於這項工作
+
+CAUTION: 網路的MTU值必須符合節點所連接之交換器連接埠上所設定的值。否則、可能會發生網路效能問題或封包遺失。
+
+
+NOTE: 為獲得最佳網路效能、所有節點都應在其Grid Network介面上設定類似的MTU值。如果個別節點上Grid Network的MTU設定有顯著差異、則會觸發* Grid Network MTU mismis*警示。所有網路類型的 MTU 值都不一定相同。
+
+若要變更MTU設定而不重新啟動應用裝置節點、 <<使用變更IP工具變更MTU設定,使用變更IP工具>>。
+
+如果StorageGRID 在初始安裝期間、客戶端或管理網路並未在市場上設定、 <<使用維護模式變更MTU設定,使用維護模式變更MTU設定>>。
+
+
+
+== 使用變更IP工具變更MTU設定
+
+.開始之前
+您擁有 `Passwords.txt` 使用變更 IP 工具的檔案。
+
+.步驟
+存取變更IP工具、並依照所述更新MTU設定 https://docs.netapp.com/us-en/storagegrid-118/maintain/changing-nodes-network-configuration.html["變更節點網路組態"^]。
+
+
+
+== 使用維護模式變更MTU設定
+
+如果無法使用變更IP工具存取這些設定、請使用維護模式變更MTU設定。
+
+.開始之前
+本產品已經使用過 link:../commonhardware/placing-appliance-into-maintenance-mode.html["已設定維護模式"]。
+
+.步驟
+. 從《SectionAppliance安裝程式》StorageGRID 中、選取*「Configure Networking」（設定網路）*>「* IP Configuration」（* IP組態）*。
+. 對Grid Network、管理網路和用戶端網路的MTU設定進行所需的變更。
+. 當您對設定感到滿意時、請選取*儲存*。
+. 如果此程序順利完成、而且您有其他程序可在節點處於維護模式時執行、請立即執行。完成後、或是遇到任何故障並想要重新啟動時、請選取*進階*>*重新啟動控制器*、然後選取下列其中一個選項：
++
+** 選擇*重新開機StorageGRID 至S編*
+** 選取*重新開機進入維護模式*、以重新啟動控制器、使節點保持維護模式。  如果您在程序期間遇到任何失敗、並想要重新啟動、請選取此選項。節點完成重新開機至維護模式後、請從失敗程序的適當步驟重新啟動。
++
+image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
+
++
+裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。「 * 節點 * 」頁面應顯示正常狀態（綠色核取記號圖示） image:../media/icon_alert_green_checkmark.png["綠色核取記號"] 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。
+
++
+image::../media/nodes_menu.png[應用裝置節點重新加入網格]
+
+
+
+

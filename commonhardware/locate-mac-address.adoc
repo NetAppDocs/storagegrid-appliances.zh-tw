@@ -1,0 +1,37 @@
+---
+permalink: commonhardware/locate-mac-address.html 
+sidebar: sidebar 
+keywords: storagegrid, mac, mac address 
+summary: 在某些情況下、您可能需要在更換設備後更新 MAC 位址參照。 
+---
+= 更新 MAC 位址參照
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在某些情況下、您可能需要在更換設備後更新 MAC 位址參照。
+
+.關於這項工作
+如果您要更換之應用裝置上的任何網路介面都已設定為使用 DHCP 、您可能需要更新 DHCP 伺服器上的永久 DHCP 租用指派、以參照替換應用裝置的 MAC 位址。此更新可確保替換應用裝置已指派預期的 IP 位址。
+
+.步驟
+. 找到產品正面的標籤。標籤會列出應用裝置 BMC 管理連接埠的 MAC 位址。
+. 若要判斷管理網路連接埠的MAC位址、您必須將* 2 *新增至標籤上的十六進位數字。
++
+例如、如果標籤上的MAC位址以* 09 *結尾、則管理連接埠的MAC位址將以* 0B*結尾。如果標籤上的MAC位址以*（_y_）FF*結尾、則管理連接埠的MAC位址將以*（_y_+1*）結尾。
+
++
+您可以在Windows中開啟「計算機」、將其設定為「程式設計師」模式、選取「Hex」、輸入MAC位址、然後輸入*+ 2 =*、輕鬆完成此計算。
+
+. 請網路管理員將您移除的應用裝置DNS /網路和IP位址與替換應用裝置的MAC位址建立關聯。
++
+
+CAUTION: 您必須先確認原始應用裝置的所有IP位址都已更新、才能為替換應用裝置供電。否則、當裝置開機時、就會取得新的DHCP IP位址、而且可能無法重新連線StorageGRID 到效益。此步驟適用於StorageGRID 所有連接至應用裝置的資訊網路。
+
++
+
+NOTE: 如果原始應用裝置使用靜態IP位址、則新應用裝置會自動採用您移除的應用裝置IP位址。
+
+

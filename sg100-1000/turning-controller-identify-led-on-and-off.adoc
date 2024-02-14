@@ -1,0 +1,42 @@
+---
+permalink: sg100-1000/turning-controller-identify-led-on-and-off.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, locate, find, locating, finding, identify, blue led, blue light 
+summary: 控制器正面和背面的藍色識別LED可開啟、以協助在資料中心找到應用裝置。 
+---
+= 開啟和關閉 SG100 或 SG1000 識別 LED
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+控制器正面和背面的藍色識別LED可開啟、以協助在資料中心找到應用裝置。
+
+.開始之前
+您擁有要識別的控制器的 BMC IP 位址。
+
+.步驟
+. 存取應用裝置 BMC 介面。
+. 選擇*伺服器識別*。
++
+已選取識別 LED 的目前狀態。
+
+. 選取 * 開啟 * 或 * 關閉 * 、然後選取 * 執行動作 * 。
++
+當您選擇 * 開啟 * 時、產品正面（圖示）和背面的藍色識別 LED 燈會亮起。
+
++
+image::../media/sg6060_front_panel_service_led_on.jpg[正面識別LED -亮起]
+
++
+
+NOTE: 如果控制器上安裝了擋板、可能很難看到正面的識別LED。
+
+. 視需要開啟和關閉 LED 。
+
+
+.相關資訊
+link:locating-controller-in-data-center.html["在資料中心找到控制器"]
+
+link:../installconfig/accessing-bmc-interface.html["存取BMC介面"]

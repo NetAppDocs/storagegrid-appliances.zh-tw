@@ -1,0 +1,84 @@
+---
+permalink: sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6112, storage node, storage appliance, install, installing, installation, cabinet, rack 
+summary: 將 SGF6112 從機櫃或機架中取出、以便拆裝機箱頂蓋或將產品移至其他位置、然後在硬體維護完成時、將產品重新安裝到機櫃或機架中。 
+---
+= 將 SGF6112 重新放置在機櫃或機架中
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+將 SGF6112 從機櫃或機架中取出、以便拆裝機箱頂蓋或將產品移至其他位置、然後在硬體維護完成時、將產品重新安裝到機櫃或機架中。
+
+
+
+== 從機櫃或機架上卸下 SGF6112
+
+.開始之前
+* 您可以使用標籤來識別連接至 SGF6112 的每條纜線。
+* 您有 link:locating-sgf6112-in-data-center.html["實體放置 SGF6112"] 您在資料中心執行維護的位置。
+* 您有 link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["關閉 SGF6112"]。
++
+
+CAUTION: 請勿使用電源開關關閉產品。
+
+
+
+.步驟
+. 標示產品電源纜線、然後拔下產品電源纜線。
+. 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
+. 標記並拔下應用裝置資料纜線和任何 SFP+ 或 SFP28 收發器。
++
+
+NOTE: 為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或踩踏。
+
+. 鬆開產品前面板上的兩顆緊固螺絲。
++
+image::../media/sg6060_rack_retaining_screws.png[SGF6112 機架固定螺絲]
+
+. 將 SGF6112 向前滑出機架、直到安裝滑軌完全展開、同時聽到兩側的卡榫發出卡嗒聲。
++
+產品頂蓋可供使用。
+
+. 選用：如果您要從機櫃或機架中完全移除產品、請遵循軌道套件的指示、將產品從軌道中移除。
+
+
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+
+
+
+== 將 SGF6112 重新安裝到機櫃或機架中
+
+.開始之前
+您有 link:reinstalling-sgf6112-cover.html["已重新安裝設備護蓋"]。
+
+.步驟
+. 同時按下藍色滑軌可同時釋放兩個機架滑軌、並將 SGF6112 滑入機架、直到完全就位。
++
+如果您無法進一步移動控制器、請拉動機箱兩側的藍色閂鎖、將控制器完全滑入。
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[SG6000滑軌]
+
++
+
+NOTE: 在您開啟控制器電源之前、請勿連接前擋板。
+
+. 鎖緊控制器前面板上的緊固螺絲、將控制器固定在機架中。
++
+image::../media/sg6060_rack_retaining_screws.png[SG6060機架固定螺絲]
+
+. 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
+. link:../installconfig/cabling-appliance.html["重新連接控制器資料纜線和任何 SFP+ 或 SFP28 收發器"]。
++
+
+NOTE: 為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或踩踏。
+
+. link:../installconfig/connecting-power-cords-and-applying-power.html["重新連接控制器電源線"]。
+
+
+.完成後
+link:powering-on-sgf6112-and-verifying-operation.html["重新啟動應用裝置"]。

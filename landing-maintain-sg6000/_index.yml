@@ -1,0 +1,39 @@
+---
+indexpage:
+  tiles:
+  - title: 經常執行的程序
+    links:
+    - title: 開啟或關閉位置 LED
+      url: "../sg6000/turning-controller-identify-led-on-and-off.html"
+    - title: 在資料中心找到應用裝置
+      url: "../sg6000/locating-controller-in-data-center.html"
+    - title: 關閉和開啟產品電源
+      url: "../sg6000/power-sg6000-cn-controller-off-on.html"
+    - title: 變更連結組態
+      url: "../sg6000/changing-link-configuration-of-sg6000-cn-controller.html"
+    - title: 升級 SANtricity
+      url: "../sg6000/upgrading-santricity-os-on-storage-controllers.html"
+    - title: 升級磁碟機韌體
+      url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: 機架程序
+    links:
+    - title: 更換機架中的控制器
+      url: "../sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html"
+    - title: 新增擴充機櫃
+      url: "../sg6000/adding-expansion-shelf-to-deployed-sg6060.html"
+  - title: 硬體程序
+    links:
+    - title: 更換控制器護蓋
+      url: "../sg6000/reinstalling-sg6000-cn-controller-cover.html"
+    - title: 更換儲存控制器
+      url: "../sg6000/replacing-storage-controller-sg6000.html"
+    - title: 更換儲存控制器元件
+      url: "../sg6000/replacing-hardware-components-in-storage-controller-shelf.html"
+    - title: 更換 60 個磁碟機擴充機櫃元件
+      url: "../sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html"
+    - title: 更換 SG6000-CN 控制器
+      url: "../sg6000/replacing-sg6000-cn-controller.html"
+    - title: 更換電源供應器
+      url: "../sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
+    - title: 更換 Fibre Channel HBA
+      url: "../sg6000/reinstalling-fibre-channel-hba.html"

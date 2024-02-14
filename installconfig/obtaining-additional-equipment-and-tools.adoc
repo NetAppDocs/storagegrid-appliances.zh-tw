@@ -1,0 +1,167 @@
+---
+permalink: installconfig/obtaining-additional-equipment-and-tools.html 
+sidebar: sidebar 
+keywords: equipment to install appliance, tools for installation 
+summary: 安裝 StorageGRID 應用裝置之前、請確認您擁有所需的所有額外設備和工具。 
+---
+= 取得其他設備和工具
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝 StorageGRID 應用裝置之前、請確認您擁有所需的所有額外設備和工具。
+
+
+
+== 所有應用裝置
+
+您需要下列設備來安裝及設定所有應用裝置。
+
+螺絲起子::
++
+--
+* 飛利浦編號2個螺絲起子
+* 中型平口螺絲刀
+
+
+--
+ESD腕帶::
++
+--
+* https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]
+* SSH用戶端、例如Putty
+* 1-GbE（RJ-45）連接埠
+
+
+--
+
+
+
+NOTE: 某些連接埠可能不支援10/100乙太網路速度。
+
+選用工具::
++
+--
+* 使用十字頭的動力鑽孔機
+* 手電筒
+
+
+--
+
+
+
+
+== 設備專屬設備與工具
+
+[role="tabbed-block"]
+====
+.SG100 與 SG1000
+--
+您需要下列額外設備來安裝及設定 SG100 和 SG1000 硬體。
+
+光纖纜線和收發器::
++
+--
+* 纜線、 1 至 4 條：
++
+** 雙軸纜線 / 銅線
+** 光纖 / 光纖
+
+
+* 收發器 / 介面卡、每個介面卡 1 到 4 個、根據連結速度（不支援混合速度）：
++
+** SG100：
++
+*** 10-GbE SFP+
+*** 25-GbE SFP28
+
+
+** SG1000 ：
++
+*** 10-GbE QSFP-to SFP 介面卡（ QSA ）和 SFP+
+*** 25-GbE QSFP-to SFP 介面卡（ QSA ）和 SFP28
+*** 40-GbE QSFP+
+*** 100-GbE QFSP28
+
+
+
+
+
+
+--
+乙太網路纜線:: RJ-45 （ Cat5/Cat5e/Cat6/Cat6a ）
+
+
+--
+.SG5700
+--
+您需要下列額外設備來安裝和設定 SG5700 硬體。
+
+光纖纜線和 SFP 收發器::
++
+--
+* 光纖纜線、適用於您計畫使用的10/25-GbE連接埠
+* 選用：SFP28收發器（如果您想使用25-GbE連結速度）
+
+
+--
+乙太網路纜線:: SG5760的機械式起重
+
+
+--
+.SG6000
+--
+您需要下列額外設備來安裝和設定 SG6000 硬體。
+
+光纖纜線和 SFP 收發器::
++
+--
+* 纜線、 1 至 4 條：
++
+** 雙軸纜線 / 銅線
+** 光纖 / 光纖
+
+
+* 收發器 / 介面卡、每個介面卡 1 到 4 個、根據連結速度（不支援混合速度）：
++
+** 10-GbE SFP+
+** 25-GbE SFP28
+
+
+
+
+--
+乙太網路纜線:: RJ-45 （ Cat5/Cat5e/Cat6 ）
+選用工具:: 60個磁碟機櫃的機械式起重
+
+
+--
+.SG6100
+--
+您需要下列額外設備來安裝和設定 SGF6112 硬體。
+
+光纖纜線和收發器::
++
+--
+* 纜線、 1 至 4 條：
++
+** 雙軸纜線 / 銅線
+** 光纖 / 光纖
+
+
+* 收發器 / 介面卡、每個介面卡 1 到 4 個、根據連結速度（不支援混合速度）：
++
+** 10-GbE SFP+
+** 25-GbE SFP28
+
+
+
+
+--
+乙太網路纜線:: RJ-45 （ Cat5/Cat5e/Cat6/Cat6a ）
+
+
+--
+====

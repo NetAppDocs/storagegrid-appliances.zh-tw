@@ -1,0 +1,115 @@
+---
+permalink: installconfig/deploying-appliance-storage-node.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, deploy node, deploying node, node, deploy, deploying 
+summary: 安裝及設定儲存應用裝置之後、您可以將其部署為StorageGRID 位於整個系統的儲存節點。當您將應用裝置部署為儲存節點時、請使用StorageGRID 應用裝置隨附的《一套解決方案》安裝程式。 
+---
+= 部署應用裝置儲存節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝及設定儲存應用裝置之後、您可以將其部署為StorageGRID 位於整個系統的儲存節點。當您將應用裝置部署為儲存節點時、請使用StorageGRID 應用裝置隨附的《一套解決方案》安裝程式。
+
+.開始之前
+* 如果您要複製應用裝置節點、請繼續執行 link:../commonhardware/appliance-node-cloning-procedure.html["應用裝置節點複製"] 流程。
+* 設備已安裝在機架或機櫃中、並已連接至您的網路、並已開啟電源。
+* 網路連結、IP位址和連接埠重新對應（如有必要）已使用StorageGRID 《應用程式安裝程式》為應用裝置設定。
+* 您知道指派給應用裝置運算控制器的其中一個IP位址。您可以將IP位址用於任何附加StorageGRID 的靜態網路。
+* 已部署適用於此系統的主要管理節點StorageGRID 。
+* 列出在《IP組態》頁面StorageGRID 上的所有Grid Network子網路、均已在主要管理節點的Grid Network Subnet List（網格網路子網路清單）中定義。
+* 您的服務型筆記型電腦具備支援的網頁瀏覽器。
+
+
+.關於這項工作
+每個儲存應用裝置都能做為單一儲存節點。任何應用裝置都可以連線至Grid Network、管理網路和用戶端網路
+
+若要在StorageGRID 整個作業系統中部署應用裝置儲存節點、請存取StorageGRID 《產品安裝程式》並執行下列步驟：
+
+* 您可以指定或確認主管理節點的IP位址和儲存節點的名稱。
+* 您可以開始部署、並在磁碟區已設定且已安裝軟體的情況下等待。
+* 當安裝在設備安裝工作中暫停一段時間時、您可以登入Grid Manager、核准所有網格節點、並完成StorageGRID 還原安裝和部署程序、以繼續安裝。
+
+
+
+NOTE: 如果您需要一次部署多個應用裝置節點、可以使用將安裝程序自動化 `configure-sga.py` 應用裝置安裝指令碼。
+
+* 如果您要執行擴充或還原作業、請遵循適當的指示：
++
+** 若要將應用裝置儲存節點新增至現有的 StorageGRID 系統、請參閱的指示 https://docs.netapp.com/us-en/storagegrid-118/expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html["新增網格節點"^]。
+** 若要將應用裝置儲存節點部署為還原作業的一部分、請參閱說明 https://docs.netapp.com/us-en/storagegrid-118/maintain/recovering-storagegrid-appliance-storage-node.html["恢復應用裝置儲存節點"^]。
+
+
+
+
+.步驟
+. 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個IP位址。+
+`*https://_Controller_IP_:8443*`
++
+畫面會出現「the不再安裝StorageGRID 程式」首頁。
+
++
+image::../media/appliance_installer_home_start_installation_enabled.gif[其他節點類型的應用裝置安裝程式首頁（管理節點除外）]
+
+. 在「*主要管理節點連線*」區段中、判斷您是否需要指定主要管理節點的IP位址。
++
+如果您先前已在此資料中心安裝其他節點、StorageGRID 則當主管理節點或至少有一個已設定ADD_IP的其他網格節點出現在同一個子網路上時、即可自動探索此IP位址。
+
+. 如果未顯示此IP位址、或您需要變更它、請指定位址：
++
+[cols="1a,2a"]
+|===
+| 選項 | 說明 
+
+
+ a| 
+手動輸入IP
+ a| 
+.. 清除 * 啟用管理節點探索 * 核取方塊。
+.. 手動輸入IP位址。
+.. 按一下「 * 儲存 * 」。
+.. 等待連線狀態、讓新的IP位址準備就緒。
+
+
+
+
+ a| 
+自動探索所有連線的主要管理節點
+ a| 
+.. 選中 * 啓用管理節點發現 * 複選框。
+.. 等待顯示已發現的IP位址清單。
+.. 選取要部署此應用裝置儲存節點的網格主要管理節點。
+.. 按一下「 * 儲存 * 」。
+.. 等待連線狀態、讓新的IP位址準備就緒。
+
+
+|===
+. 在 * 節點名稱 * 欄位中、提供您要用於此應用裝置節點的系統名稱、然後按一下 * 儲存 * 。
++
+此處顯示的名稱將是應用裝置節點的系統名稱。內部 StorageGRID 作業需要系統名稱、因此無法變更。
+
+. 在* Installation*區段中、確認目前狀態為「Ready to start installation `_node name_` 使用主要管理節點進入網格 `_admin_ip_` "且已啟用*開始安裝*按鈕。
++
+如果*開始安裝*按鈕未啟用、您可能需要變更網路組態或連接埠設定。如需相關指示、請參閱產品的維護指示。
+
++
+
+NOTE: 如果您要將儲存節點應用裝置部署為節點複製目標、請在此停止部署程序、然後繼續
+link:../commonhardware/appliance-node-cloning-procedure.html["節點複製程序"]。
+
+. 從「the Some Appliance Installer」首頁、按一下StorageGRID 「*開始安裝*」。
++
+目前狀態會變更為「Installation is in progress、」、並顯示「Monitor Installation（監控安裝）」頁面。
+
++
+
+NOTE: 如果您需要手動存取「監視器安裝」頁面、請按一下「*監視器安裝*」。
+
+. 如果您的網格包含多個應用裝置儲存節點、請針對每個應用裝置重複這些步驟。
++
+
+NOTE: 如果您需要一次部署多個應用裝置儲存節點、可以使用將安裝程序自動化 `configure-sga.py` 應用裝置安裝指令碼。
+
+

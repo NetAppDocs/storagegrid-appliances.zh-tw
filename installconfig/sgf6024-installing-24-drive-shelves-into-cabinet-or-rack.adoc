@@ -1,0 +1,54 @@
+---
+permalink: installconfig/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, drive shelf, drive shelves, 24-drive, shelf, shelves, rail, rails 
+summary: 您可以在機櫃或機架中安裝一組 EF570 控制器機櫃的滑軌、然後將陣列滑入滑軌。 
+---
+= 安裝 24 個磁碟機櫃（ SGF6024 ）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在機櫃或機架中安裝一組 EF570 控制器機櫃的滑軌、然後將陣列滑入滑軌。
+
+.開始之前
+* 您已閱讀包裝盒中的「安全注意事項」文件、並瞭解移動和安裝硬體的預防措施。
+* 您已取得軌道套件隨附的說明。
+
+
+.步驟
+. 請小心遵循軌道套件的指示、將軌道安裝在機櫃或機架中。
++
+對於方孔機櫃、請先安裝隨附的鎖緊螺帽、以螺絲固定機架的前後端。
+
+. 取下產品的外包裝箱。然後將內箱上的封蓋向下摺疊。
+. 將機櫃的背面（連接器的一端）放在軌道上。
++
+
+CAUTION: 滿載的機櫃重量約52磅（24公斤）。需要兩個人安全地移動機箱。
+
+. 小心地將機箱完全滑入滑軌。
++
+
+CAUTION: 您可能需要調整滑軌、以確保機箱完全滑入滑軌。
+
++
+
+CAUTION: 安裝完機箱後、請勿在軌道上放置其他設備。軌道設計不適合承受額外重量。
+
++
+
+NOTE: 如果適用、您可能需要取下機櫃端蓋或系統擋板、將機箱固定在機架柱上；如果是、您必須在完成時更換端蓋或擋板。
+
+. 將兩顆M5螺絲插入安裝支架（預先安裝在機箱正面的任一側）、機架或系統機櫃上的孔、以及軌道正面的孔、以將機箱固定在機箱正面或機架和軌道上。
++
+image::../media/secure_shelf.png[將機櫃固定在機櫃正面]
+
+. 將兩顆M5螺絲插入機箱的支架和軌道套件托架、將機箱固定在軌道的背面。
+. 如果適用、請更換機櫃端蓋或系統擋板。
++
+image::../media/install_endcaps.png[更換機架端蓋]
+
+

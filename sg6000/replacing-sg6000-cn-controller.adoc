@@ -1,0 +1,129 @@
+---
+permalink: sg6000/replacing-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, sg6000-cn, controller, remove, removing, removal, install, installing, installation 
+summary: 如果SG6000-CN-控制器無法以最佳方式運作、或是發生故障、您可能需要更換該控制器。 
+---
+= 更換 SG6000-CN 控制器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果SG6000-CN-控制器無法以最佳方式運作、或是發生故障、您可能需要更換該控制器。
+
+.開始之前
+* 您的更換控制器的零件編號與您要更換的控制器相同。
+* 您可以使用標籤來識別連接至控制器的每條纜線。
+* 您已實際找到要在資料中心更換的控制器。
++
+link:locating-controller-in-data-center.html["在資料中心找到控制器"]
+
+
+
+.關於這項工作
+當您更換SG6000-CN-控制器時、將無法存取應用裝置儲存節點。如果SG6000-CN-控制器運作正常、您可以在本程序開始時執行管制關機。
+
+
+NOTE: 如果您在安裝StorageGRID 完此程序之前更換控制器、可能StorageGRID 無法在完成此程序後立即存取《產品安裝程式（到此程序）」。雖然您可以從與應用裝置位於同一子網路上的其他主機存取 StorageGRID 應用裝置安裝程式、但您無法從其他子網路上的主機存取。此情況應在15分鐘內自行解決（當原始控制器的任何ARP快取項目逾時時）、或者您可以從本機路由器或閘道手動清除任何舊的ARP快取項目、以立即清除此狀況。
+
+.步驟
+. 顯示應用裝置的目前組態並加以記錄。
++
+.. 登入要更換的應用裝置：
++
+... 輸入下列命令： `ssh admin@_grid_node_IP_`
+... 輸入中所列的密碼 `Passwords.txt` 檔案：
+... 輸入下列命令以切換至root： `su -`
+... 輸入中所列的密碼 `Passwords.txt` 檔案：
++
+當您以root登入時、提示會從變更 `$` 至 `#`。
+
+
+
+.. 輸入： `*run-host-command ipmitool lan print*` 顯示應用裝置目前的 BMC 組態。
+
+
+. 如果 SG6000-CN 控制器的運作足以允許控制關機、 link:power-sg6000-cn-controller-off-on.html#shut-down-sg6000-cn-controller["關閉 SG6000-CN 控制器"]。
+. 如果此 StorageGRID 應用裝置上的任何網路介面都設定為使用 DHCP 、您可能需要更新 DHCP 伺服器上的永久 DHCP 租用指派、以參照替換應用裝置的 MAC 位址。此更新可確保設備已指派預期的 IP 位址。請參閱 link:../commonhardware/locate-mac-address.html["更新 MAC 位址參照"]。
+. 移除並更換SG6000-CN-控制器：
++
+.. 標記纜線、然後拔下纜線和任何SFP+或SFP28收發器。
++
+
+NOTE: 為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或踩踏。
+
+.. 從機櫃或機架中取出故障控制器。
+.. 將替換控制器安裝到機櫃或機架中。
+.. 更換纜線及任何SFP+或SFP28收發器。
+.. 開啟控制器和 link:../installconfig/viewing-status-indicators.html["監控控制器 LED"] 和 link:../installconfig/troubleshooting-hardware-installation.html#view-boot-codes["開機代碼"]。
++
+控制器啟動時、會自動安裝控制器和應用裝置元件的擱置更新。這些更新的安裝可能需要一小時或更長時間才能完成、而且控制器可能會多次重新開機。
+
++
+
+CAUTION: 請勿手動重新啟動應用裝置、除非您確定裝置在韌體更新期間為 _not 。
+
++
+您可以連接 link:../installconfig/troubleshooting-hardware-installation.html["監控"] 或 link:../installconfig/accessing-storagegrid-appliance-installer.html["服務筆記型電腦"] 至 SG6000-CN 控制器、監控更新安裝進度。
+
++
+
+NOTE: 服務筆記型電腦連線可能在安裝程序的某些階段無法使用。
+
+
+
+. 如果您更換控制器的應用裝置使用金鑰管理伺服器（ KMS ）來加密資料、則可能需要額外的組態、節點才能加入網格。如果節點未自動加入網格、請確定這些組態設定已傳輸至新控制器、並手動設定任何沒有預期組態的設定：
++
+** link:../installconfig/configuring-network-links.html["設定網路連結"]
+** link:../installconfig/setting-ip-configuration.html["設定StorageGRID 靜態IP位址"]
+** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["設定應用裝置的節點加密"^]
+
+
+. 使用更換的控制器登入應用裝置：
++
+.. 輸入下列命令： `ssh admin@_grid_node_IP_`
+.. 輸入中所列的密碼 `Passwords.txt` 檔案：
+.. 輸入下列命令以切換至root： `su -`
+.. 輸入中所列的密碼 `Passwords.txt` 檔案：
+
+
+. 還原應用裝置的 BMC 網路連線能力。有兩種選擇：
++
+** 使用靜態 IP 、網路遮罩和閘道
+** 使用 DHCP 取得 IP 、網路遮罩和閘道
++
+... 若要還原 BMC 組態以使用靜態 IP 、網路遮罩和閘道、請輸入下列命令：
++
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
+`*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 netmask _Netmask_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 defgw ipaddr _Default_gateway_*`
+
+... 若要還原 BMC 組態以使用 DHCP 取得 IP 、網路遮罩和閘道、請輸入下列命令：
++
+`*run-host-command ipmitool lan set 1 ipsrc dhcp*`
+
+
+
+
+
+. 還原 BMC 網路連線之後、請連線至 BMC 介面以稽核及還原您可能已套用的任何其他自訂 BMC 組態。例如、您應該確認 SNMP 設陷目的地和電子郵件通知的設定。請參閱 link:../installconfig/configuring-bmc-interface.html["設定 BMC 介面"]。
+. 確認應用裝置節點出現在Grid Manager中、且未顯示任何警示。
+
+
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+
+.相關資訊
+link:../installconfig/sg6000-cn-installing-into-cabinet-or-rack.html["將 SG6000-CN 安裝到機櫃或機架中"]
+
+link:../installconfig/viewing-status-indicators.html["檢視狀態指標"]
+
+link:../installconfig/troubleshooting-hardware-installation.html#view-boot-codes["檢視SG6000-CN-控制器的開機代碼"]

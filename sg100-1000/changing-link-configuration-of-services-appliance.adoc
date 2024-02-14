@@ -1,0 +1,71 @@
+---
+permalink: sg100-1000/changing-link-configuration-of-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, link configuration, link, configure, configuring, ethernet, port bond mode, port bond, network bond mode, network bond, link speed, vlan tagging, vlan tag 
+summary: 您可以變更服務應用裝置的乙太網路連結組態。您可以變更連接埠連結模式、網路連結模式及連結速度。 
+---
+= 變更 SG100 或 SG1000 的連結組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以變更服務應用裝置的乙太網路連結組態。您可以變更連接埠連結模式、網路連結模式及連結速度。
+
+.開始之前
+* 您有 link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
+
+
+
+NOTE: 在極少數情況StorageGRID 下、將某個應用程式置於維護模式可能會使應用裝置無法遠端存取。
+
+.關於這項工作
+變更服務應用裝置的乙太網路連結組態選項包括：
+
+* 將*連接埠連結模式*從「固定」變更為「Aggregate」、或從「Aggregate」變更為「固定」
+* 將*網路連結模式*從主動備份變更為LACP、或從LACP變更為主動備份
+* 啟用或停用VLAN標記、或變更VLAN標記的值
+* 變更連結速度
+
+
+.步驟
+. 從《SectionAppliance安裝程式》StorageGRID 中、選取*「Configure Networking」（設定網路）*>「* Link Configuration」（*連結組態）*。
++
+image::../media/link_configuration_option.gif[連結組態]
+
+. 對連結組態進行所需的變更。
++
+如需選項的詳細資訊、請參閱 link:../installconfig/configuring-network-links.html["設定網路連結"]。
+
+. 當您對所選項目感到滿意時、請按一下「*儲存*」。
++
+
+NOTE: 如果您變更所連線的網路或連結、可能會失去連線。如果您在 1 分鐘內未重新連線、請使用指派給應用裝置的其他 IP 位址之一、重新輸入 StorageGRID 應用裝置安裝程式的 URL ： +
+`*https://_services_appliance_IP_:8443*`
+
+. 對應用裝置的IP位址進行必要的變更。
++
+如果您變更了VLAN設定、裝置的子網路可能已經變更。如果您需要變更應用裝置的IP位址、請參閱 link:../installconfig/setting-ip-configuration.html["設定StorageGRID 靜態IP位址"]。
+
+. 從功能表中選取「*組態網路*>* Ping Test*」。
+. 使用Ping測試工具檢查連線至任何網路上的IP位址、這些網路可能會受到您在設定應用裝置時所做的連結組態變更影響。
++
+除了您選擇執行的任何其他測試之外、請確認您可以ping主管理節點的Grid Network IP位址、以及至少一個其他節點的Grid Network IP位址。如有必要、請返回設定網路連結的指示、並修正任何問題。
+
+. 一旦您確信連結組態變更正常運作、請重新啟動節點。從「the Sof the Sof the Some Installer」選取「*進階*>*重新開機控制器*」StorageGRID 、然後選取下列其中一個選項：
++
+** 選取*重新開機至StorageGRID SESW*、以重新啟動控制器、並使節點重新加入網格。如果您已在維護模式下完成工作、並準備好讓節點恢復正常作業、請選取此選項。
+** 選取*重新開機進入維護模式*、以重新啟動控制器、使節點保持維護模式。（此選項僅在控制器處於維護模式時可用。） 如果在重新加入網格之前需要在節點上執行其他維護作業、請選取此選項。
++
+image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
+
++
+裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。「 * 節點 * 」頁面應顯示正常狀態（綠色核取記號圖示） image:../media/icon_alert_green_checkmark.png["綠色核取記號"] 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。
+
++
+image::../media/nodes_menu.png[應用裝置節點重新加入網格]
+
+
+
+

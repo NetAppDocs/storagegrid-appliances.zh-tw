@@ -1,0 +1,20 @@
+---
+permalink: sg100-1000/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, maintain, maintaining, hardware, procedures, tasks 
+summary: 您可能需要在設備上執行維護程序。本節中的程序假設應用裝置已部署為StorageGRID 位於整個系統的閘道節點或管理節點。 
+---
+= 維護 SG100 和 SG1000 設備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要在設備上執行維護程序。本節中的程序假設應用裝置已部署為StorageGRID 位於整個系統的閘道節點或管理節點。
+
+本節將說明維護 SG100 或 SG1000 應用裝置的特定程序。
+
+請參閱 link:../commonhardware/index.html["一般程序"] 適用於所有應用裝置所使用的維護程序。
+
+請參閱 link:../installconfig/configuring-hardware.html["設定硬體"] 適用於在初始應用裝置安裝和組態期間也會執行的維護程序。

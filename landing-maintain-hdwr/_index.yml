@@ -1,0 +1,33 @@
+---
+indexpage:
+  tiles:
+  - title: 經常執行的程序
+    links:
+    - title: 將產品置於維護模式
+      url: "../commonhardware/placing-appliance-into-maintenance-mode.html"
+    - title: 變更MTU設定
+      url: "../commonhardware/changing-mtu-setting.html"
+    - title: 檢查 DNS 組態
+      url: "../commonhardware/checking-dns-server-configuration.html"
+    - title: 更新 MAC 位址
+      url: "../commonhardware/locate-mac-address.html"
+    - title: 監控節點加密
+      url: "../commonhardware/monitoring-node-encryption-in-maintenance-mode.html"
+  - title: 節點複製
+    links:
+    - title: 節點複製需求
+      url: "../commonhardware/considerations-and-requirements-for-appliance-node-cloning.html"
+    - title: 複製應用裝置節點
+      url: "../commonhardware/appliance-node-cloning-procedure.html"
+  - title: 應用裝置專屬維護
+    links:
+    - title: SG1000 和 SG100
+      url: "../landing-maintain-sg1000-100/index.html"
+    - title: SG5600
+      url: "../sg5600/index.html"
+    - title: SG5700
+      url: "../landing-maintain-sg5700/index.html"
+    - title: SG6000
+      url: "../landing-maintain-sg6000/index.html"
+    - title: SG6100
+      url: "../landing-maintain-sgf6112/index.html"

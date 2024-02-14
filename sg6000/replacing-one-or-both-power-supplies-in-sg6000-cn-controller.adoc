@@ -1,0 +1,70 @@
+---
+permalink: sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, sg6000-cn, power supply, remove, removing, removal, install, installing 
+summary: SG6000-CN-控制器有兩個電源供應器可供備援。如果其中一個電源供應器故障、您必須儘快更換、以確保運算控制器具有備援電源。在控制器中運作的兩個電源供應器型號和瓦數必須相同。 
+---
+= 在SG6000-CN-控制器中更換一個或兩個電源供應器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6000-CN-控制器有兩個電源供應器可供備援。如果其中一個電源供應器故障、您必須儘快更換、以確保運算控制器具有備援電源。在控制器中運作的兩個電源供應器型號和瓦數必須相同。
+
+.開始之前
+* 您已確定要更換電源供應器的控制器資料中心實體位置。
++
+link:locating-controller-in-data-center.html["將控制器定位在資料中心"]
+
+* 如果您只要更換一個電源供應器：
++
+** 您已將更換的電源供應器解壓縮、並確保其型號與瓦數與您要更換的電源供應器相同。
+** 您已確認其他電源供應器已安裝並正在執行。
+
+
+* 如果您同時更換兩個電源供應器：
++
+** 您已將更換的電源供應器解壓縮、並確保它們的型號和瓦數相同。
+
+
+
+
+.關於這項工作
+圖中顯示SG6000-CN-控制器的兩個電源供應器單元、可從控制器背面存取。請使用此程序來更換一或兩個電源供應器。如果您要更換兩個電源供應器、則必須先控制產品的關機。
+
+image::../media/sg6000_cn_power_supplies.gif[SG6000-CN-後端配備兩個電源供應器]
+
+.步驟
+. 如果您只要更換一個電源供應器、就不需要關閉產品電源。前往 <<Unplug_the_power_cord,拔下電源線>> 步驟。如果您同時更換兩個電源供應器、請在拔下電源線之前執行下列步驟：
++
+.. link:power-sg6000-cn-controller-off-on.html#shut-down-sg6000-cn-controller["關閉產品電源"]。
+
+
+. [拔 下_the_電源線、start=2]]從每個要更換的電源供應器拔下電源線。
+. 提起要更換的第一個電源供應器上的CAM握把。
++
+image::../media/sg6000_cn_lift_cam_handle_psu.gif[提起CAM握把以移除SG6000-CNPSU]
+
+. 按下藍色栓鎖、將電源供應器拉出。
++
+image::../media/sg6000_cn_remove_power_supply.gif[卸下SG6000-CN-電源供應器]
+
+. 在右側的藍色栓鎖中、將替換電源供應器滑入機箱。
++
+
+NOTE: 兩個電源供應器的型號和瓦數必須相同。
+
++
+將替換單元滑入時、請確定藍色栓鎖位於右側。
+
++
+image::../media/sg6000_cn_insert_power_supply.gif[將電源供應器滑入SG6000-CN]
+
+. 向下推CAM握把以固定替換電源供應器。
+. 如果您要更換兩個電源供應器、請重複步驟2到6以更換第二個電源供應器。
+. link:../installconfig/connecting-power-cords-and-applying-power.html["將電源線連接至更換的裝置並接上電源"]。
+
+
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。

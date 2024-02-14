@@ -1,0 +1,107 @@
+---
+permalink: installconfig/monitoring-appliance-installation.html 
+sidebar: sidebar 
+keywords: appliance, installation, install, progress, monitor, status 
+summary: 直到安裝完成為止、才會StorageGRID 顯示此狀態。軟體安裝完成後、即會重新啟動應用裝置。 
+---
+= 監控應用裝置安裝
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+直到安裝完成為止、才會StorageGRID 顯示此狀態。軟體安裝完成後、即會重新啟動應用裝置。
+
+.步驟
+[role="tabbed-block"]
+====
+.儲存設備
+--
+. 若要監控安裝進度、請按一下*監控安裝*。
++
+「監視器安裝」頁面會顯示安裝進度。
+
++
+image::../media/monitor_installation_configure_storage.gif[此影像由周邊文字說明。]
+
++
+藍色狀態列會指出目前正在進行的工作。綠色狀態列表示已成功完成的工作。
+
++
+
+NOTE: 安裝程式可確保先前安裝中完成的工作不會重新執行。如果您正在重新執行安裝、任何不需要重新執行的工作都會顯示綠色狀態列和「已中斷」狀態。
+
+. 檢閱前兩個安裝階段的進度。
++
+* 1。設定儲存設備*
+
++
+在此階段、安裝程式會連線至儲存控制器、清除任何現有的組態、根據設定的 RAID 模式建立 RAID 、為 StorageGRID 軟體和物件資料儲存設備分配磁碟區、以及設定主機設定。
+
++
+2.安裝作業系統*
+
++
+在此階段、安裝程式會將基礎作業系統映像複製到StorageGRID 應用裝置中以供使用。
+
+. 繼續監控安裝進度、直到*安裝StorageGRID Sid*階段暫停、並在內嵌主控台顯示訊息、提示您使用Grid Manager在管理節點上核准此節點。前往下一步。
++
+image::../media/monitor_installation_install_sgws.gif[此影像由周邊文字說明。]
+
+. 前往「主要管理」節點的Grid Manager、核准擱置的儲存節點、然後完成StorageGRID 「更新安裝」程序。
++
+當您從Grid Manager按一下* Install*時、階段3完成、階段4 *完成安裝*開始。當階段4完成時、控制器會重新開機。
+
+
+
+--
+.服務應用裝置
+--
+. 若要監控安裝進度、請按一下功能表列中的*監控安裝*。
++
+「監視器安裝」頁面會顯示安裝進度。
+
++
+image::../media/monitor_installation_services_appl.png[監控安裝-服務應用]
+
++
+藍色狀態列會指出目前正在進行的工作。綠色狀態列表示已成功完成的工作。
+
++
+
+NOTE: 安裝程式可確保先前安裝中完成的工作不會重新執行。如果您正在重新執行安裝、任何不需要重新執行的工作都會顯示綠色狀態列和「已中斷」狀態。
+
+. 檢閱前兩個安裝階段的進度。
++
+** * 1。設定儲存設備*
++
+在此階段中、安裝程式會清除應用裝置中磁碟機的任何現有組態、並設定主機設定。
+
+** 2.安裝作業系統*
++
+在此階段、安裝程式會將基礎作業系統映像複製到StorageGRID 應用裝置中以供使用。
+
+
+
+. 繼續監控安裝進度、直到下列其中一個程序發生為止：
++
+** 除了主要管理節點之外、所有應用裝置節點的「Install StorageGRID 」（安裝）階段都會暫停、並在內嵌式主控台顯示訊息、提示您使用Grid Manager在管理節點上核准此節點。前往下一步。
+** 對於應用裝置主要管理節點安裝、您不需要核准節點。設備隨即重新開機。您可以跳過下一步。
++
+
+NOTE: 在安裝應用裝置主要管理節點期間、會出現第五階段（請參閱顯示四個階段的範例擷取畫面）。如果第五階段進行超過10分鐘、請手動重新整理網頁。
+
++
+image::../media/monitor_installation_install_sgws.gif[此影像由周邊文字說明。]
+
+
+
+. 前往「主要管理」節點的Grid Manager、核准擱置的GRID節點、然後完成StorageGRID 整套安裝程序。
++
+當您從Grid Manager按一下* Install*時、階段3完成、階段4 *完成安裝*開始。當階段4完成時、即會重新啟動應用裝置。
+
+
+
+--
+====

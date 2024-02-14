@@ -1,0 +1,52 @@
+---
+permalink: sg6000/replacing-power-supply-in-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, sg6000-cn, power supply, remove, removing, removal, install, installing, installation 
+summary: SG6000-CN-控制器有兩個電源供應器可供備援。如果其中一個電源供應器故障、您必須儘快更換、以確保運算控制器具有備援電源。 
+---
+= 更換SG6000-CN-控制器中的電源供應器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6000-CN-控制器有兩個電源供應器可供備援。如果其中一個電源供應器故障、您必須儘快更換、以確保運算控制器具有備援電源。
+
+
+NOTE: 兩個電源供應器的瓦數必須相同。如果您需要同時更換兩個電源供應器、請參閱 link:replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html["更換SG6000-CN-控制器中的兩個電源供應器"]。
+
+.開始之前
+* 您已解壓縮更換的電源供應器。
+* 您已將控制器實際放置在資料中心內要更換電源供應器的位置。
++
+link:locating-controller-in-data-center.html["在資料中心找到控制器"]
+
+* 您已確認其他電源供應器已安裝並正在執行。
+
+
+.關於這項工作
+圖中顯示SG6000-CN-控制器的兩個電源供應器單元、可從控制器背面存取。
+
+image::../media/sg6000_cn_power_supplies.gif[SG6000-CN-後端配備兩個電源供應器]
+
+.步驟
+. 從電源供應器拔下電源線。
+. 提起CAM握把。
++
+image::../media/sg6000_cn_lift_cam_handle_psu.gif[提起CAM握把以移除SG6000-CNPSU]
+
+. 按下藍色栓鎖、將電源供應器拉出。
++
+image::../media/sg6000_cn_remove_power_supply.gif[移除SG6000-CN-電源供應器]
+
+. 將替換電源供應器滑入機箱。
++
+將裝置滑入時、請確定藍色栓鎖位於右側。
+
++
+image::../media/sg6000_cn_insert_power_supply.gif[將電源供應器滑入SG6000-CN]
+
+. 向下推CAM握把以固定電源供應器。
+. 將電源線連接至電源供應器、並確保綠色LED亮起。
+

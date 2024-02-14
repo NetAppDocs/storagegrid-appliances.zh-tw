@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: storagegrid-documentation.html 
+keywords: storagegrid, software, grid 
+summary: 瞭解如何設定及使用 StorageGRID 系統。 
+---
+= StorageGRID 軟體文件
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+前往 https://docs.netapp.com/us-en/storagegrid-118/index.html["StorageGRID 11.8 文件"^] 以瞭解如何設定及使用 StorageGRID 11.8 系統。
+
+StorageGRID 文件網站包含下列資訊：
+
+* 網路準則：
+* 適用於 Linux 和 VMware 節點的安裝指示。
+* StorageGRID 升級與 Hotfix 指示。
+* 設定系統的管理指示、包括使用資訊生命週期管理（ ILM ）來保護物件資料。
+* 使用 StorageGRID 租戶帳戶和 S3 REST API 的指示。
+* 監控和疑難排解指示、包括警示、稽核訊息和系統記錄的相關資訊。
+* 維護 StorageGRID 系統的指示、包括新增 StorageGRID 磁碟區、節點或站台、還原故障節點和磁碟區、淘汰節點或站台、以及在網格上執行其他維護。
+
+
+
+
+== 其他版本
+
+您可以在這裡找到其他 NetApp StorageGRID 軟體版本的文件：
+
+* https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRID 11.7 文件"^]
+* https://docs.netapp.com/us-en/storagegrid-116/index.html["StorageGRID 11.6 文件"^]
+* https://docs.netapp.com/us-en/storagegrid-115/index.html["本文檔的內容StorageGRID"^]
+* https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61023["部分11.4文件StorageGRID"^]
+

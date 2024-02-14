@@ -1,0 +1,67 @@
+---
+permalink: installconfig/configuring-hardware.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, hardware, configure, configuration, set up, setup, network, networking 
+summary: 為應用裝置加電後、您可以設定 StorageGRID 將使用的網路連線。  
+---
+= 設定硬體：總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+為應用裝置加電後、您可以設定 StorageGRID 將使用的網路連線。
+
+
+
+== 設定必要的網路連線
+
+對於所有應用裝置、您必須執行數項工作來設定必要的網路連線、例如：
+
+* 存取應用裝置安裝程式
+* 設定網路連結
+* 驗證連接埠層級的網路連線
+
+
+
+
+== 可能需要的其他組態
+
+視您要設定的應用裝置類型而定、可能需要額外的硬體組態。
+
+
+
+=== 系統管理程式SANtricity
+
+對於 SG6000 和 SG5700 、您可以設定 SANtricity 系統管理員。SANtricity 軟體用於監控這些應用裝置的硬體。
+
+
+
+=== BMC 介面
+
+下列應用裝置具有必須設定的 BMC 介面：
+
+* SG100
+* SG1000
+* SG6000
+* SG6100
+
+
+
+
+== 選用組態
+
+* 儲存設備
++
+** 設定 SANtricity 系統管理員（ SG5700 和 SG6000 ）您將用於監控硬體的軟體
+** 變更 RAID 模式
+** 存取 SG6000-CN 控制器的 BMC 介面
+
+
+* 服務應用裝置
++
+** 存取 SG100 或 SG1000 的 BMC 介面
+
+
+

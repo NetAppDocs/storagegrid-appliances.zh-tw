@@ -1,0 +1,70 @@
+---
+permalink: sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, power supply, remove, removing, removal, install, installing, installation 
+summary: 服務應用裝置有兩個電源供應器以提供備援。如果其中一個電源供應器故障、您必須儘快更換、以確保產品具備備援電力。在控制器中運作的兩個電源供應器必須具有相同的型號和瓦數。 
+---
+= 更換 SG100 或 SG1000 中的一個或兩個電源供應器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+服務應用裝置有兩個電源供應器以提供備援。如果其中一個電源供應器故障、您必須儘快更換、以確保運算控制器具有備援電源。在控制器中運作的兩個電源供應器型號和瓦數必須相同。
+
+.開始之前
+* 您有 link:locating-controller-in-data-center.html["實體定位控制器"] 更換電源供應器。
+* 如果您只要更換一個電源供應器：
++
+** 您已將更換的電源供應器解壓縮、並確保其型號與瓦數與您要更換的電源供應器相同。
+** 您已確認其他電源供應器已安裝並正在執行。
+
+
+* 如果您同時更換兩個電源供應器：
++
+** 您已將更換的電源供應器解壓縮、並確保它們的型號和瓦數相同。
+
+
+
+
+.關於這項工作
+圖中顯示SG100的兩個電源供應器單元、可從產品背面存取。
+
+image::../media/sg1000_power_supplies.png[SG100後端配備兩個電源供應器]
+
+
+NOTE: SG1000的電源供應器完全相同。
+
+.步驟
+. 如果您只要更換一個電源供應器、就不需要關閉產品電源。前往 <<Unplug_the_power_cord,拔下電源線>> 步驟。如果您同時更換兩個電源供應器、請在拔下電源線之前執行下列步驟：
++
+.. link:shut-down-sg100-and-sg1000.html["關閉產品電源"]。
+
+
+. [拔 下_the_電源線、start=2]]從每個要更換的電源供應器拔下電源線。
+. 提起要更換的第一個電源供應器上的CAM握把。
++
+image::../media/sg6000_cn_lift_cam_handle_psu.gif[提起CAM握把以移除SG6000-CNPSU]
+
+. 按下藍色栓鎖、將電源供應器拉出。
++
+image::../media/sg6000_cn_remove_power_supply.gif[卸下SG6000-CN-電源供應器]
+
+. 在右側的藍色栓鎖中、將替換電源供應器滑入機箱。
++
+
+NOTE: 兩個電源供應器的型號和瓦數必須相同。
+
++
+將替換單元滑入時、請確定藍色栓鎖位於右側。
+
++
+image::../media/sg6000_cn_insert_power_supply.gif[將電源供應器滑入SG6000-CN]
+
+. 向下推CAM握把以固定替換電源供應器。
+. 如果您要更換兩個電源供應器、請重複步驟2到6以更換第二個電源供應器。
+. link:../installconfig/connecting-power-cords-and-applying-power.html["將電源線連接至更換的裝置並接上電源"]。
+
+
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
