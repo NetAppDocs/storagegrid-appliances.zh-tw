@@ -4229,4 +4229,5 @@
   <block id="36312847d9ed62c091364066df9b573f" category="sidebar">更換儲存控制器機櫃中的硬體元件</block>
   <block id="297057bf431ff214cf5fb064c5a836ac" category="sidebar">更換選購的60磁碟機擴充櫃中的硬體元件</block>
   <block id="6e59386fb6d09c0b4945ad4afa8a4092" category="sidebar">更換SG6000-CN-控制器中的Fibre Channel HBA</block>
+  <block id="46621f49f52b2e7735202aeadc8627bc" category="paragraph"><block ref="46621f49f52b2e7735202aeadc8627bc" category="inline-link-rx"></block></block>
 </blocks>
