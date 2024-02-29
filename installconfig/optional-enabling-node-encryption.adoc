@@ -19,7 +19,7 @@ summary: 您可以在節點和磁碟層級啟用加密、以保護應用裝置�
 
 您可以在支援的磁碟機上執行這兩種加密層級、以提高安全性。
 
-請參閱 https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID 加密方法"^] 如需 StorageGRID 應用裝置所有可用加密方法的相關資訊、
+請參閱 https://docs.netapp.com/us-en/storagegrid-118/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID 加密方法"^] 如需 StorageGRID 應用裝置所有可用加密方法的相關資訊、
 
 
 
@@ -100,7 +100,7 @@ NOTE: 設備一開始會設定指派給每個磁碟區的隨機非KMS加密金�
 您可以在初始應用裝置安裝期間啟用磁碟機加密、然後再載入 Grid Manager 。您也可以將應用裝置設為維護模式、以啟用節點加密或變更密碼。
 
 .開始之前
-檢閱相關資訊 https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID 加密方法"^]。
+檢閱相關資訊 https://docs.netapp.com/us-en/storagegrid-118/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID 加密方法"^]。
 
 .關於這項工作
 一開始啟用磁碟機加密時、會設定複雜密碼。如果更換運算節點、或將加密的 SED 移至新的運算節點、您必須手動重新輸入複雜密碼。

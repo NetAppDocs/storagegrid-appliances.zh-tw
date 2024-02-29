@@ -14,11 +14,11 @@ summary: 您可以使用 Grid Manager 中的「管理磁碟機」標籤、在 SG
 您可以使用 Grid Manager 中的「管理磁碟機」標籤、在 SGF6112 應用裝置中執行磁碟機的疑難排解和維護工作。
 
 .開始之前
-* 您將使用登入Grid Manager https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 您將使用登入Grid Manager https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
 
 
 .關於這項工作
-如果您有 SGF6112 應用裝置、且 https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/admin-group-permissions.html["儲存設備管理員或根存取權限"]的「管理磁碟機」索引標籤會出現在應用裝置詳細資料頁面上。
+如果您有 SGF6112 應用裝置、且 https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["儲存設備管理員或根存取權限"]的「管理磁碟機」索引標籤會出現在應用裝置詳細資料頁面上。
 
 管理磁碟機索引標籤包含下列檢視：
 

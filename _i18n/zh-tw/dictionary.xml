@@ -1837,7 +1837,6 @@
   <block id="05c9534a4968bb692db6c477bda3216e" category="list-text"><block ref="af9633264dfe5a57796032ab701180e5" category="inline-xref-macro-rx"></block> 使用硬體加密來保護自我加密磁碟機（ SED ）、也稱為全磁碟加密（ FED ）磁碟機、包括符合聯邦資訊處理標準（ FIPS ）的磁碟機。磁碟機加密是使用 StorageGRID 金鑰管理程式所管理的加密金鑰在每個磁碟機內執行。</block>
   <block id="0f8b6d1e008864add25c54498d52b95d" category="paragraph">您可以在支援的磁碟機上執行這兩種加密層級、以提高安全性。</block>
   <block id="3222848370401de62a0389566cdc6e45" category="inline-link">StorageGRID 加密方法</block>
-  <block id="d2ff273ea38e1c87a7e75159cbc94cb5" category="paragraph">請參閱<block ref="dc22ceb0306f26ff8ce9d4588db8c9bc" category="inline-link-rx"></block> 如需 StorageGRID 應用裝置所有可用加密方法的相關資訊、</block>
   <block id="18c6ba3c5dc613670300302d6b6e13e8" category="section-title">啟用節點加密</block>
   <block id="1c2a7c57450bd0841ba8af585da8e2e7" category="paragraph">如果您啟用節點加密、裝置中的磁碟可透過安全金鑰管理伺服器（KMS）加密來保護、避免實體遺失或從站台移除。您必須在裝置安裝期間選取並啟用節點加密。KMS 加密程序啟動後、您無法停用節點加密。</block>
   <block id="df20a5800890fb9c6f211a466c532c76" category="paragraph">如果您使用 ConfigBuilder 來產生 JSON 檔案、則可以自動啟用節點加密。請參閱 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
@@ -1865,7 +1864,6 @@
   <block id="f4b6f694a5501888787381e6a815ab2e" category="paragraph">加密的 SED 會在設備關機或從應用裝置移除磁碟機時自動鎖定。加密的 SED 會在電源恢復後保持鎖定、直到輸入正確的密碼。若要在不手動重新輸入複雜密碼的情況下存取磁碟機、複雜密碼會儲存在 StorageGRID 應用裝置上、以便在應用裝置重新啟動時、解除鎖定仍留在應用裝置中的加密磁碟機。任何知道密碼短語的人都可以存取使用 SED 密碼短語加密的磁碟機。</block>
   <block id="0ffb3b992e7b67a3cf4b6e86c5e6d58e" category="paragraph">磁碟機加密不適用於 SANtricity 管理的磁碟機。如果您的 StorageGRID 應用裝置具有 SED 和 SANtricity 控制器、則可以在中啟用磁碟機安全性 <block ref="26de6fd427efcc81f7ad7cd6aad9003d" category="inline-link-macro-rx"></block>。</block>
   <block id="0fb0c001659e1b8d7876247f8c4b3eac" category="paragraph">您可以在初始應用裝置安裝期間啟用磁碟機加密、然後再載入 Grid Manager 。您也可以將應用裝置設為維護模式、以啟用節點加密或變更密碼。</block>
-  <block id="fd8cd1fe2d84ec18c3b56eff1070e866" category="paragraph">檢閱相關資訊<block ref="dc22ceb0306f26ff8ce9d4588db8c9bc" category="inline-link-rx"></block>。</block>
   <block id="d112382db4537727ec6a38fd83f7931d" category="paragraph">一開始啟用磁碟機加密時、會設定複雜密碼。如果更換運算節點、或將加密的 SED 移至新的運算節點、您必須手動重新輸入複雜密碼。</block>
   <block id="68054e05b3829648df9f1eed60b84a85" category="admonition">請務必將磁碟機加密密碼短語儲存在安全的位置。如果 SED 安裝在其他 StorageGRID 應用裝置中、則必須手動輸入相同的密碼、才能存取加密的 SED 。</block>
   <block id="a7168e3fce65db38199c759024bcc6ad" category="section-title">啟用磁碟機加密</block>
@@ -3499,9 +3497,7 @@
   <block id="8a319d9f1f8fa62d913f59ab432b8f1a" category="list-text">輸入下列命令：<block ref="604b3aa6831925c337f9cec38597d65a" prefix=" " category="inline-code"></block></block>
   <block id="4a4df9fcde02f4c20df662c4d87783a1" category="summary">您可以使用 Grid Manager 中的「管理磁碟機」標籤、在 SGF6112 應用裝置中執行磁碟機的疑難排解和維護工作。</block>
   <block id="e525b6b4f718b6369b2fa00ac33b215b" category="doc">使用管理磁碟機索引標籤</block>
-  <block id="dd646486f335d66fb3729899cbdd1d43" category="list-text">您將使用登入Grid Manager<block ref="42eb699be885105e5a08932567501037" category="inline-link-rx"></block>。</block>
   <block id="bf8542827bf52ff1d2d3ca74de649b6a" category="inline-link">儲存設備管理員或根存取權限</block>
-  <block id="4b1bc73909f0b7b1282d782289068051" category="paragraph">如果您有 SGF6112 應用裝置、且<block ref="3b6eef8d5dca76558b5505ffa4aa79b9" category="inline-link-rx"></block>的「管理磁碟機」索引標籤會出現在應用裝置詳細資料頁面上。</block>
   <block id="bf5f327428f0175033f3cbe43e6e7b3e" category="paragraph">管理磁碟機索引標籤包含下列檢視：</block>
   <block id="ebd9bec4d70abc789d439c1f136b0538" category="list-text">配置</block>
   <block id="a92cd291617f14a6abada995fa7b9a3f" category="list-text">應用裝置中的資料儲存磁碟機配置。選取磁碟機以檢視磁碟機詳細資料。</block>
@@ -4230,4 +4226,7 @@
   <block id="297057bf431ff214cf5fb064c5a836ac" category="sidebar">更換選購的60磁碟機擴充櫃中的硬體元件</block>
   <block id="6e59386fb6d09c0b4945ad4afa8a4092" category="sidebar">更換SG6000-CN-控制器中的Fibre Channel HBA</block>
   <block id="46621f49f52b2e7735202aeadc8627bc" category="paragraph"><block ref="46621f49f52b2e7735202aeadc8627bc" category="inline-link-rx"></block></block>
+  <block id="39822573479d4d01c9fc52445e6f90d4" category="paragraph">請參閱<block ref="182f5524fe0d353d40aacb3022a6d00c" category="inline-link-rx"></block> 如需 StorageGRID 應用裝置所有可用加密方法的相關資訊、</block>
+  <block id="38863f5650b2800fa51be4d3a390b203" category="paragraph">檢閱相關資訊<block ref="182f5524fe0d353d40aacb3022a6d00c" category="inline-link-rx"></block>。</block>
+  <block id="00480567d9c91f7b7ba44e21f754f737" category="paragraph">如果您有 SGF6112 應用裝置、且<block ref="646dc3cd3bd62a6be1690aac96e1dd08" category="inline-link-rx"></block>的「管理磁碟機」索引標籤會出現在應用裝置詳細資料頁面上。</block>
 </blocks>
