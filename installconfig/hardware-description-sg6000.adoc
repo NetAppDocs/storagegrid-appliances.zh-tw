@@ -559,7 +559,7 @@ SG6000-CN 控制器有四個連線（每個 E2800B 有兩個連線）。
 * 連接埠1選項：
 +
 ** 連線至管理網路、即可直接從TCP/IP存取SANtricity 到「支援系統管理程式」
-** 保留無線以儲存交換器連接埠和IP位址。  使用Grid Manager或Storage Grid Appliance Installer UI存取SANtricity 《系統管理程式》。
+** 保留無線以儲存交換器連接埠和IP位址。使用Grid Manager或Storage Grid Appliance Installer UI存取SANtricity 《系統管理程式》。
 
 
 
