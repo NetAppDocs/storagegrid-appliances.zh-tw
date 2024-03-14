@@ -53,7 +53,7 @@ image::../media/sgf6112_two-slot-riser_guide-pin.png[主機板上的雙插槽擴
 . 將轉接器組件放入機箱中、確定其對齊主機板上的連接器和導引針。
 . 小心地沿著藍色標記的孔洞旁的中心線、將雙插槽立管組件按入定位、直到完全就位。
 . 如果您沒有其他維護程序可以在產品中執行、請重新安裝產品護蓋、將產品放回機架、連接纜線並接上電源。
-. 如果您更換的應用裝置已啟用 SED 磁碟機的磁碟機加密、則您必須 link:optional-enabling-node-encryption.html#access-an-encrypted-drive["輸入磁碟機加密密碼"] 可在第一次啓動更換設備時訪問加密的驅動器。
+. 如果您更換的應用裝置已啟用 SED 磁碟機的磁碟機加密、則您必須 link:../installconfig/optional-enabling-node-encryption.html#access-an-encrypted-drive["輸入磁碟機加密密碼"] 可在第一次啓動更換設備時訪問加密的驅動器。
 . 如果您更換的應用裝置使用金鑰管理伺服器（ KMS ）來管理節點加密的加密金鑰、則可能需要額外的組態、節點才能加入網格。如果節點未自動加入網格、請確定這些組態設定已傳輸至新應用裝置、並手動設定任何沒有預期組態的設定：
 +
 ** link:../installconfig/accessing-storagegrid-appliance-installer.html["設定 StorageGRID 連線"]

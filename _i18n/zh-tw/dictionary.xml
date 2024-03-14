@@ -2984,7 +2984,6 @@
   <block id="f9df26f43e7cbb8a8facb5017b47ccbe" category="list-text">找到主機板上的導引針。</block>
   <block id="e2ca2c1368ac8b9d1d8e5571f1857efd" category="image-alt">主機板上的雙插槽擴充卡組件導引插腳</block>
   <block id="f456f175997595ccbac05b05c7dbc0d8" category="inline-link-macro">輸入磁碟機加密密碼</block>
-  <block id="2961ad31d988fa2e014040d6361c363e" category="list-text">如果您更換的應用裝置已啟用 SED 磁碟機的磁碟機加密、則您必須 <block ref="8ca8505552d3e0acf0b7c638e20906f9" category="inline-link-macro-rx"></block> 可在第一次啓動更換設備時訪問加密的驅動器。</block>
   <block id="46f19b3ee8dedf83d42c3a4ff5d0c6bb" category="list-text">如果您更換的應用裝置使用金鑰管理伺服器（ KMS ）來管理節點加密的加密金鑰、則可能需要額外的組態、節點才能加入網格。如果節點未自動加入網格、請確定這些組態設定已傳輸至新應用裝置、並手動設定任何沒有預期組態的設定：</block>
   <block id="7deed07135df9d94ea323d9469e424d3" category="list-text"><block ref="7deed07135df9d94ea323d9469e424d3" category="inline-link-macro-rx"></block></block>
   <block id="5d5e7579cc415f2940c02cee9b12c42d" category="inline-link">設定應用裝置的節點加密</block>
@@ -3388,7 +3387,6 @@
   <block id="fadc88cd0b2f17c2130cb8814db82929" category="inline-link-macro">將替換產品安裝到機櫃或機架中</block>
   <block id="a4c24c1e4a12470715433d6f6a22590b" category="list-text"><block ref="e863dd214d46a90fc51854e24b3dd0fd" category="inline-link-macro-rx"></block>。</block>
   <block id="05af8dc3b0588fc5c9ecb2b6c178bee0" category="list-text">開啟產品電源。</block>
-  <block id="94be36ec44c8318cfab0eec6871e7823" category="list-text">如果您更換的應用裝置已啟用 SED 磁碟機的硬碟機加密、則您必須 <block ref="8ca8505552d3e0acf0b7c638e20906f9" category="inline-link-macro-rx"></block> 可在第一次啓動更換設備時訪問加密的驅動器。</block>
   <block id="4245635d62a9242eb35a7e4ec5a56abd" category="list-text">請等待產品重新加入網格。如果應用裝置未重新加入網格、請遵循 StorageGRID 應用裝置安裝程式首頁上的指示來解決任何問題。</block>
   <block id="a7c99d1b44c3cfef060bab2387eba42e" category="admonition">為了避免資料遺失、如果 Appliance Installer 指出需要變更實體硬體、例如將磁碟機移至不同的插槽、請先關閉應用裝置電源、再進行硬體變更。</block>
   <block id="ca2048aa7418bfc8c45e3193b5be5e0d" category="paragraph"><block ref="ca2048aa7418bfc8c45e3193b5be5e0d" category="inline-link-macro-rx"></block></block>
@@ -4237,4 +4235,6 @@
   <block id="2afc7927e5f45cc2a3ef83b60ea186cd" category="list-text">開啟控制器機櫃電源。</block>
   <block id="944f002f126d9f60a7abfb7abb8b19a6" category="section-title">步驟 1 ：準備更換控制器</block>
   <block id="7dc8820948fbd0653bf70cd43dd02d4c" category="paragraph">準備移除故障控制器、並將其離線。</block>
+  <block id="eb10eb07d3a38a1d82d1975eb3a3c409" category="list-text">如果您更換的應用裝置已啟用 SED 磁碟機的硬碟機加密、則您必須 <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> 可在第一次啓動更換設備時訪問加密的驅動器。</block>
+  <block id="b01853030b7f0a28704ab7f8c1c35ee8" category="list-text">如果您更換的應用裝置已啟用 SED 磁碟機的磁碟機加密、則您必須 <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> 可在第一次啓動更換設備時訪問加密的驅動器。</block>
 </blocks>

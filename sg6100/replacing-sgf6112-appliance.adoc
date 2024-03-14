@@ -163,7 +163,7 @@ CAUTION: 如果您想要保留磁碟機上的資料、請務必將 SSD 磁碟機
 
 
 . 開啟產品電源。
-. 如果您更換的應用裝置已啟用 SED 磁碟機的硬碟機加密、則您必須 link:optional-enabling-node-encryption.html#access-an-encrypted-drive["輸入磁碟機加密密碼"] 可在第一次啓動更換設備時訪問加密的驅動器。
+. 如果您更換的應用裝置已啟用 SED 磁碟機的硬碟機加密、則您必須 link:../installconfig/optional-enabling-node-encryption.html#access-an-encrypted-drive["輸入磁碟機加密密碼"] 可在第一次啓動更換設備時訪問加密的驅動器。
 . 請等待產品重新加入網格。如果應用裝置未重新加入網格、請遵循 StorageGRID 應用裝置安裝程式首頁上的指示來解決任何問題。
 +
 
