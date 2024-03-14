@@ -1,0 +1,3286 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>安裝 SG6000-CN 控制器（ SG6060 和 SG6024 ）</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="安裝 SG6000-CN 控制器（ SG6060 和 SG6024 ）" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" />
+	<meta property="og:description" content="您可以在機櫃或機架中安裝一組 SG6000-CN 控制器的滑軌、然後將控制器滑到滑軌上。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/storagegrid-appliances/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="您可以在機櫃或機架中安裝一組 SG6000-CN 控制器的滑軌、然後將控制器滑到滑軌上。">
+  <meta name="keywords" content=" storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, sg6000-cn, rail, rails"><!-- Icons -->
+  <link rel="icon" href="/zh-tw/storagegrid-appliances/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/storagegrid-appliances/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-tw/storagegrid-appliances/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/storagegrid-appliances/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-tw/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/storagegrid-appliances/js/na-search.js'></script><script src='/zh-tw/storagegrid-appliances/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-tw/storagegrid-appliances/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/storagegrid-appliances/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/storagegrid-appliances/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/storagegrid-appliances/js/jszip.min.js'></script><script src='/zh-tw/storagegrid-appliances/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-tw/storagegrid-appliances/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/tw">
+                <image id="ie-header-logo" src="/zh-tw/storagegrid-appliances/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文件</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-tw/storagegrid-appliances/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">繁體中文</span>
+                    <img src="/zh-tw/storagegrid-appliances/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/storagegrid-appliances/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-tw/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-tw/storagegrid-appliances/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">所有 NetApp</span>
+                    <img src="/zh-tw/storagegrid-appliances/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/storagegrid-appliances/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支援</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知識庫</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">訓練</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-tw/storagegrid-appliances/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-tw/storagegrid-appliances/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文件</a>
+    </li>
+    
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/zh-tw/storagegrid-family/">
+        StorageGRID documentation
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-tw/storagegrid-appliances/">-->
+      StorageGRID Appliances
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-tw/storagegrid-appliances/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-tw/storagegrid-appliances/search.html" 
+        data-type="widget"
+        data-placeholder="搜尋說明文件"
+        data-no-results-found="找不到 {query} 的結果"
+        data-did-you-mean="搜尋 {suggestion}。"
+        data-no-results-found-did-you-mean="找不到 {query} 的結果。您的意思是 {suggestion} 嗎？"
+        data-results-found="找到 {hitCount} 個結果"
+        data-error-message="發生錯誤。請再試一次。"
+        data-error-reset="重設搜尋"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID 應用裝置文件"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/storagegrid-appliances/index.html">
+        StorageGRID 應用裝置文件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID 軟體文件"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/storagegrid-documentation.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/storagegrid-appliances/storagegrid-documentation.html">
+        StorageGRID 軟體文件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="開始使用"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/landing-learn-hdwr/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/storagegrid-appliances/landing-learn-hdwr/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 開始使用</div>-->
+         開始使用
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="應用裝置的新功能"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/whats-new-appliances.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/storagegrid-appliances/whats-new-appliances.html">
+        應用裝置的新功能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="瞭解 StorageGRID 應用裝置"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 瞭解 StorageGRID 應用裝置</div>-->
+         瞭解 StorageGRID 應用裝置
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG100與SG1000服務應用裝置"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/hardware-description-sg100-and-1000.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/hardware-description-sg100-and-1000.html">
+        SG100與SG1000服務應用裝置
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG5700 儲存設備"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/hardware-description-sg5700.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/hardware-description-sg5700.html">
+        SG5700 儲存設備
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000儲存設備"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/hardware-description-sg6000.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/hardware-description-sg6000.html">
+        SG6000儲存設備
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6100 儲存設備"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/hardware-description-sg6100.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/hardware-description-sg6100.html">
+        SG6100 儲存設備
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安裝應用裝置"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/landing-appl-install/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/storagegrid-appliances/landing-appl-install/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 安裝應用裝置</div>-->
+         安裝應用裝置
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安裝 StorageGRID 應用裝置硬體"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/storagegrid-appliances/installconfig/index.html">
+        快速入門
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="準備安裝"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/landing-install-prep/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/storagegrid-appliances/landing-install-prep/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 準備安裝</div>-->
+         準備安裝
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="準備網站"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/preparing-site.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/preparing-site.html">
+        準備網站
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="打開包裝盒"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/unpacking-boxes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/unpacking-boxes.html">
+        打開包裝盒
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="取得其他設備和工具"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/obtaining-additional-equipment-and-tools.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/obtaining-additional-equipment-and-tools.html">
+        取得其他設備和工具
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="收集網路資訊"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 收集網路資訊</div>-->
+         收集網路資訊
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="網路類型StorageGRID"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/reviewing-appliance-network-connections.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/reviewing-appliance-network-connections.html">
+        網路類型StorageGRID
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG100 與 SG1000"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/gathering-installation-information-sg100-and-sg1000.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/gathering-installation-information-sg100-and-sg1000.html">
+        SG100 與 SG1000
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG5700"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/gathering-installation-information-sg5700.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/gathering-installation-information-sg5700.html">
+        SG5700
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/gathering-installation-information-sg6000.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/gathering-installation-information-sg6000.html">
+        SG6000
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6100"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/gathering-installation-information-sg6100.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/gathering-installation-information-sg6100.html">
+        SG6100
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="自動化應用裝置的安裝與組態"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/automating-appliance-installation-and-configuration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/storagegrid-appliances/installconfig/automating-appliance-installation-and-configuration.html">
+        自動化應用裝置的安裝與組態
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="自動化 StorageGRID 組態"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/automating-configuration-of-storagegrid.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/storagegrid-appliances/installconfig/automating-configuration-of-storagegrid.html">
+        自動化 StorageGRID 組態
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安裝REST API總覽"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/overview-of-installation-rest-apis.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/storagegrid-appliances/installconfig/overview-of-installation-rest-apis.html">
+        安裝REST API總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安裝應用裝置硬體"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/landing-install-hdwr/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/storagegrid-appliances/landing-install-hdwr/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 安裝應用裝置硬體</div>-->
+         安裝應用裝置硬體
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="註冊硬體"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/registering-hardware.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/registering-hardware.html">
+        註冊硬體
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安裝到機櫃或機架中"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 安裝到機櫃或機架中</div>-->
+         安裝到機櫃或機架中
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG100 與 SG1000"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html">
+        SG100 與 SG1000
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG5700"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html">
+        SG5700
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> SG6000</div>-->
+         SG6000
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="將 SG6000 安裝到機櫃或機架中"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/installing-hardware-sg6000.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/storagegrid-appliances/installconfig/installing-hardware-sg6000.html">
+        總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安裝 60 個磁碟機櫃（ SG6060 ）"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/storagegrid-appliances/installconfig/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">
+        安裝 60 個磁碟機櫃（ SG6060 ）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安裝磁碟機（ SG6060 ）"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/sg6060-installing-drives.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/storagegrid-appliances/installconfig/sg6060-installing-drives.html">
+        安裝磁碟機（ SG6060 ）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安裝 24 個磁碟機櫃（ SGF6024 ）"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/storagegrid-appliances/installconfig/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html">
+        安裝 24 個磁碟機櫃（ SGF6024 ）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安裝 SG6000-CN 控制器（ SG6024 和 SG6060 ）"
+      data-li-level="5#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html">
+        安裝 SG6000-CN 控制器（ SG6024 和 SG6060 ）
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6100"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html">
+        SG6100
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="纜線應用裝置"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/cabling-appliance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/cabling-appliance.html">
+        纜線應用裝置
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="連接並供電"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/connecting-power-cords-and-applying-power.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/connecting-power-cords-and-applying-power.html">
+        連接並供電
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="檢視狀態指示燈和代碼"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/viewing-status-indicators.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/viewing-status-indicators.html">
+        檢視狀態指示燈和代碼
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定硬體"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 設定硬體</div>-->
+         設定硬體
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="總覽"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/configuring-hardware.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/configuring-hardware.html">
+        總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定 StorageGRID 連線"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 設定 StorageGRID 連線</div>-->
+         設定 StorageGRID 連線
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="存取StorageGRID 產品安裝程式"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/accessing-storagegrid-appliance-installer.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/accessing-storagegrid-appliance-installer.html">
+        存取StorageGRID 產品安裝程式
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="驗StorageGRID 證並升級版本的應用程式"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html">
+        驗StorageGRID 證並升級版本的應用程式
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定網路連結"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/configuring-network-links.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/configuring-network-links.html">
+        設定網路連結
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定StorageGRID 靜態IP位址"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/setting-ip-configuration.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/setting-ip-configuration.html">
+        設定StorageGRID 靜態IP位址
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="驗證網路連線"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/verifying-network-connections.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/verifying-network-connections.html">
+        驗證網路連線
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="驗證連接埠層級的網路連線"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/verifying-port-level-network-connections.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/verifying-port-level-network-connections.html">
+        驗證連接埠層級的網路連線
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定 SANtricity 系統管理員（ SG5700 和 SG6000 ）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/accessing-and-configuring-santricity-system-manager.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/accessing-and-configuring-santricity-system-manager.html">
+        設定 SANtricity 系統管理員（ SG5700 和 SG6000 ）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定 BMC 介面（ SG100 、 SG1000 、 SG6000 和 SG6100 ）"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 設定 BMC 介面（ SG100 、 SG1000 、 SG6000 和 SG6100 ）</div>-->
+         設定 BMC 介面（ SG100 、 SG1000 、 SG6000 和 SG6100 ）
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="總覽"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/configuring-bmc-interface.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/configuring-bmc-interface.html">
+        總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="變更 root 密碼"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/changing-root-password-for-bmc-interface.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/changing-root-password-for-bmc-interface.html">
+        變更 root 密碼
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定BMC管理連接埠的IP位址"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/setting-ip-address-for-bmc-management-port.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/setting-ip-address-for-bmc-management-port.html">
+        設定BMC管理連接埠的IP位址
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="存取BMC介面"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/accessing-bmc-interface.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/accessing-bmc-interface.html">
+        存取BMC介面
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定 SNMP 設定"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/configuring-snmp-settings-for-bmc.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/configuring-snmp-settings-for-bmc.html">
+        設定 SNMP 設定
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="設定電子郵件通知"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/setting-up-email-notifications-for-alerts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/installconfig/setting-up-email-notifications-for-alerts.html">
+        設定電子郵件通知
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="選用：啟用節點或磁碟機加密"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/optional-enabling-node-encryption.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/optional-enabling-node-encryption.html">
+        選用：啟用節點或磁碟機加密
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="選用：變更 RAID 模式（ SG5760 和 SG6000 ）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/optional-changing-raid-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/optional-changing-raid-mode.html">
+        選用：變更 RAID 模式（ SG5760 和 SG6000 ）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="選用：重新對應網路連接埠"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/optional-remapping-network-ports-for-appliance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/optional-remapping-network-ports-for-appliance.html">
+        選用：重新對應網路連接埠
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="部署應用裝置節點"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/landing-deploy-appliance/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/storagegrid-appliances/landing-deploy-appliance/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 部署應用裝置節點</div>-->
+         部署應用裝置節點
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="部署應用裝置儲存節點"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/deploying-appliance-storage-node.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/deploying-appliance-storage-node.html">
+        部署應用裝置儲存節點
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="部署服務應用裝置節點"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/deploying-services-appliance-node.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/deploying-services-appliance-node.html">
+        部署服務應用裝置節點
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="監控應用裝置安裝"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/monitoring-appliance-installation.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/monitoring-appliance-installation.html">
+        監控應用裝置安裝
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID 應用裝置安裝程式正在執行時、請重新啟動應用裝置"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html">
+        StorageGRID 應用裝置安裝程式正在執行時、請重新啟動應用裝置
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="疑難排解安裝（ SG100 和 SG1000 ）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html">
+        疑難排解安裝（ SG100 和 SG1000 ）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="疑難排解安裝（ SG5700 或 SG6000 ）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/troubleshooting-hardware-installation.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/troubleshooting-hardware-installation.html">
+        疑難排解安裝（ SG5700 或 SG6000 ）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="疑難排解安裝（ SG6100 ）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/installconfig/troubleshooting-hardware-installation-sg6100.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/installconfig/troubleshooting-hardware-installation-sg6100.html">
+        疑難排解安裝（ SG6100 ）
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="維護應用裝置硬體"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/landing-maintain-hdwr/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/storagegrid-appliances/landing-maintain-hdwr/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 維護應用裝置硬體</div>-->
+         維護應用裝置硬體
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="維護應用裝置組態"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 維護應用裝置組態</div>-->
+         維護應用裝置組態
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="維護應用裝置組態（所有節點）"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/commonhardware/index.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/commonhardware/index.html">
+        總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="將應用裝置置於維護模式"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/commonhardware/placing-appliance-into-maintenance-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/commonhardware/placing-appliance-into-maintenance-mode.html">
+        將應用裝置置於維護模式
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="變更MTU設定"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/commonhardware/changing-mtu-setting.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/commonhardware/changing-mtu-setting.html">
+        變更MTU設定
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="檢查DNS伺服器組態"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/commonhardware/checking-dns-server-configuration.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/commonhardware/checking-dns-server-configuration.html">
+        檢查DNS伺服器組態
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更新 MAC 位址參照"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/commonhardware/locate-mac-address.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/commonhardware/locate-mac-address.html">
+        更新 MAC 位址參照
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在維護模式中監控節點加密"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/commonhardware/monitoring-node-encryption-in-maintenance-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/commonhardware/monitoring-node-encryption-in-maintenance-mode.html">
+        在維護模式中監控節點加密
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="應用裝置節點複製"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 應用裝置節點複製</div>-->
+         應用裝置節點複製
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="應用裝置節點複製"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/commonhardware/how-appliance-node-cloning-works.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/commonhardware/how-appliance-node-cloning-works.html">
+        總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="應用裝置節點複製的考量與要求"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/commonhardware/considerations-and-requirements-for-appliance-node-cloning.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/commonhardware/considerations-and-requirements-for-appliance-node-cloning.html">
+        應用裝置節點複製的考量與要求
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="複製應用裝置節點"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/commonhardware/appliance-node-cloning-procedure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/commonhardware/appliance-node-cloning-procedure.html">
+        複製應用裝置節點
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="維護 SG100 和 SG1000 硬體"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/landing-maintain-sg1000-100/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/storagegrid-appliances/landing-maintain-sg1000-100/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 維護 SG100 和 SG1000 硬體</div>-->
+         維護 SG100 和 SG1000 硬體
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG100 和 SG1000 硬體維護"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg100-1000/index.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/sg100-1000/index.html">
+        總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="維護組態程序： SG100 和 SG1000"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 維護組態程序</div>-->
+         維護組態程序
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="開啟和關閉識別 LED"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg100-1000/turning-controller-identify-led-on-and-off.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg100-1000/turning-controller-identify-led-on-and-off.html">
+        開啟和關閉識別 LED
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在資料中心找到控制器"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg100-1000/locating-controller-in-data-center.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg100-1000/locating-controller-in-data-center.html">
+        在資料中心找到控制器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="關閉應用裝置"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg100-1000/shut-down-sg100-and-sg1000.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg100-1000/shut-down-sg100-and-sg1000.html">
+        關閉應用裝置
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="變更連結組態"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg100-1000/changing-link-configuration-of-services-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg100-1000/changing-link-configuration-of-services-appliance.html">
+        變更連結組態
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="硬體程序： SG100 和 SG1000"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 硬體程序</div>-->
+         硬體程序
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換一個或兩個電源供應器"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html">
+        更換一個或兩個電源供應器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換風扇"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg100-1000/replacing-fan-in-services-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg100-1000/replacing-fan-in-services-appliance.html">
+        更換風扇
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換磁碟機"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg100-1000/replacing-drive-in-services-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg100-1000/replacing-drive-in-services-appliance.html">
+        更換磁碟機
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換產品"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg100-1000/replacing-services-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg100-1000/replacing-services-appliance.html">
+        更換產品
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="維護 SG5600 硬體"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 維護 SG5600 硬體</div>-->
+         維護 SG5600 硬體
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="sg6100 硬體維護"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg5600/index.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/sg5600/index.html">
+        總覽
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="維護 SG5700 硬體"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/landing-maintain-sg5700/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/storagegrid-appliances/landing-maintain-sg5700/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 維護 SG5700 硬體</div>-->
+         維護 SG5700 硬體
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG5700 硬體維護"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg5700/index.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/sg5700/index.html">
+        總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="維護組態程序 - SG5700"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 維護組態程序</div>-->
+         維護組態程序
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="升級SANtricity 儲存控制器上的作業系統"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg5700/upgrading-santricity-os-on-storage-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg5700/upgrading-santricity-os-on-storage-controller.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 升級SANtricity 儲存控制器上的作業系統</div>-->
+         升級SANtricity 儲存控制器上的作業系統
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用SANtricity Grid Manager升級儲存控制器上的作業系統"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/storagegrid-appliances/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html">
+        使用SANtricity Grid Manager升級儲存控制器上的作業系統
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用SANtricity 維護模式升級E2800控制器上的作業系統"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg5700/upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/storagegrid-appliances/sg5700/upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html">
+        使用SANtricity 維護模式升級E2800控制器上的作業系統
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用SANtricity 《支援系統管理程式》升級磁碟機韌體"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg5700/upgrading-drive-firmware-using-santricity-system-manager.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg5700/upgrading-drive-firmware-using-santricity-system-manager.html">
+        使用SANtricity 《支援系統管理程式》升級磁碟機韌體
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="變更E5700SG控制器的連結組態"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg5700/changing-link-configuration-of-e5700sg-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg5700/changing-link-configuration-of-e5700sg-controller.html">
+        變更E5700SG控制器的連結組態
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="硬體程序 - SG5700"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 硬體程序</div>-->
+         硬體程序
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換 E2800 儲存控制器"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg5700/replacing-e2800-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg5700/replacing-e2800-controller.html">
+        更換 E2800 儲存控制器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換 E5700SG 運算控制器"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg5700/replacing-e5700sg-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg5700/replacing-e5700sg-controller.html">
+        更換 E5700SG 運算控制器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換其他硬體元件"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg5700/replacing-other-hardware-components-sg5700.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg5700/replacing-other-hardware-components-sg5700.html">
+        更換其他硬體元件
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="維護 SG6000 硬體"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/landing-maintain-sg6000/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/storagegrid-appliances/landing-maintain-sg6000/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 維護 SG6000 硬體</div>-->
+         維護 SG6000 硬體
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6000 硬體維護"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/index.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/sg6000/index.html">
+        總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="維護組態程序 - SG6000"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 維護組態程序</div>-->
+         維護組態程序
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="升級SANtricity 儲存控制器上的作業系統"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/upgrading-santricity-os-on-storage-controllers.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/upgrading-santricity-os-on-storage-controllers.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 升級SANtricity 儲存控制器上的作業系統</div>-->
+         升級SANtricity 儲存控制器上的作業系統
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用SANtricity Grid Manager升級儲存控制器上的作業系統"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/storagegrid-appliances/sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html">
+        使用SANtricity Grid Manager升級儲存控制器上的作業系統
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用SANtricity 維護模式升級儲存控制器上的作業系統"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-tw/storagegrid-appliances/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html">
+        使用SANtricity 維護模式升級儲存控制器上的作業系統
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用SANtricity 《支援系統管理程式》升級磁碟機韌體"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/upgrading-drive-firmware-using-santricity-system-manager.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/upgrading-drive-firmware-using-santricity-system-manager.html">
+        使用SANtricity 《支援系統管理程式》升級磁碟機韌體
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="開啟和關閉控制器識別LED"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/turning-controller-identify-led-on-and-off.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/turning-controller-identify-led-on-and-off.html">
+        開啟和關閉控制器識別LED
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在資料中心找到控制器"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/locating-controller-in-data-center.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/locating-controller-in-data-center.html">
+        在資料中心找到控制器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="關閉和開啟控制器電源"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/power-sg6000-cn-controller-off-on.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/power-sg6000-cn-controller-off-on.html">
+        關閉和開啟控制器電源
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="變更SG6000-CN-控制器的連結組態"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/changing-link-configuration-of-sg6000-cn-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/changing-link-configuration-of-sg6000-cn-controller.html">
+        變更SG6000-CN-控制器的連結組態
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="硬體程序 - SG6000"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 硬體程序</div>-->
+         硬體程序
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新增擴充櫃至已部署的SG6060"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/adding-expansion-shelf-to-deployed-sg6060.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/adding-expansion-shelf-to-deployed-sg6060.html">
+        新增擴充櫃至已部署的SG6060
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換儲存控制器"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/replacing-storage-controller-sg6000.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/replacing-storage-controller-sg6000.html">
+        更換儲存控制器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換儲存控制器機櫃中的硬體元件"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/replacing-hardware-components-in-storage-controller-shelf.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/replacing-hardware-components-in-storage-controller-shelf.html">
+        更換儲存控制器機櫃中的硬體元件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換選購的60磁碟機擴充櫃中的硬體元件"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html">
+        更換選購的60磁碟機擴充櫃中的硬體元件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換 SG6000-CN 控制器"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/replacing-sg6000-cn-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/replacing-sg6000-cn-controller.html">
+        更換 SG6000-CN 控制器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在SG6000-CN-控制器中更換一個或兩個電源供應器"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html">
+        在SG6000-CN-控制器中更換一個或兩個電源供應器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換機架中的控制器"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html">
+        更換機架中的控制器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換控制器護蓋"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/reinstalling-sg6000-cn-controller-cover.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/reinstalling-sg6000-cn-controller-cover.html">
+        更換控制器護蓋
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換SG6000-CN-控制器中的Fibre Channel HBA"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6000/reinstalling-fibre-channel-hba.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6000/reinstalling-fibre-channel-hba.html">
+        更換SG6000-CN-控制器中的Fibre Channel HBA
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="維護 SG6100 硬體"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/landing-maintain-sgf6112/index.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/storagegrid-appliances/landing-maintain-sgf6112/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 維護 SG6100 硬體</div>-->
+         維護 SG6100 硬體
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SG6100 硬體維護"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/index.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/storagegrid-appliances/sg6100/index.html">
+        總覽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="組態維護程序 - SG6100"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 組態維護程序</div>-->
+         組態維護程序
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用管理磁碟機索引標籤"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/manage-drives-tab.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/manage-drives-tab.html">
+        使用管理磁碟機索引標籤
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="開啟和關閉識別 LED"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/turning-sgf6112-identify-led-on-and-off.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/turning-sgf6112-identify-led-on-and-off.html">
+        開啟和關閉識別 LED
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在資料中心找到應用裝置"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/locating-sgf6112-in-data-center.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/locating-sgf6112-in-data-center.html">
+        在資料中心找到應用裝置
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="關閉並開啟產品電源"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/power-sgf6112-off-on.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/power-sgf6112-off-on.html">
+        關閉並開啟產品電源
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="變更連結組態"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/changing-link-configuration-of-sgf6112-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/changing-link-configuration-of-sgf6112-appliance.html">
+        變更連結組態
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="硬體維護程序 - SG6100"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/storagegrid-appliances/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/storagegrid-appliances/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 硬體維護程序</div>-->
+         硬體維護程序
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="確認要更換的元件"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/verify-component-to-replace.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/verify-component-to-replace.html">
+        確認要更換的元件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換一或多個電源供應器"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html">
+        更換一或多個電源供應器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換風扇"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/replacing-fan-in-sgf6112.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/replacing-fan-in-sgf6112.html">
+        更換風扇
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換磁碟機"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/replacing-drive-in-sgf6112.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/replacing-drive-in-sgf6112.html">
+        更換磁碟機
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換 NIC"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/replace-nic-in-sgf6112.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/replace-nic-in-sgf6112.html">
+        更換 NIC
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換 CMOS 電池"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/replace-cmos-in-sgf6112.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/replace-cmos-in-sgf6112.html">
+        更換 CMOS 電池
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="裝回機箱蓋"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/reinstalling-sgf6112-cover.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/reinstalling-sgf6112-cover.html">
+        裝回機箱蓋
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="更換 SGF6112 應用裝置"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/replacing-sgf6112-appliance.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/replacing-sgf6112-appliance.html">
+        更換 SGF6112 應用裝置
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="將 SGF6112 重新放置在機架中"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-tw/storagegrid-appliances/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html">
+        將 SGF6112 重新放置在機架中
+      </a></li></ul></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="啟用StorageGRID 功能"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/storagegrid-enable.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/storagegrid-appliances/storagegrid-enable.html">
+        啟用StorageGRID 功能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律聲明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/storagegrid-appliances/legal-notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-tw/storagegrid-appliances"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-tw/storagegrid-appliances"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-tw/storagegrid-appliances/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">安裝 SG6000-CN 控制器（ SG6060 和 SG6024 ）</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-02-14 20:04:10 +0000">02/14/2024</time>
+        
+    
+    
+        <span>貢獻者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-tw/storagegrid-appliances/images/discuss-sm.svg" alt="" class="github-icon" />建議變更</span>
+        <img src="/zh-tw/storagegrid-appliances/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-tw/storagegrid-appliances/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/storagegrid-appliances.zh-tw/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-tw/storagegrid-appliances/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html&page-title=安裝 SG6000-CN 控制器（ SG6060 和 SG6024 ）" class="page-nav-contribute-link" role="button">請求文件變更</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/storagegrid-appliances/blob/main/installconfig/sg6000-cn-installing-into-cabinet-or-rack.adoc" class="page-nav-contribute-link" role="button">編輯本頁</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >瞭解如何貢獻</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-tw/storagegrid-appliances/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-tw/storagegrid-appliances/pdfs/fullsite-sidebar/StorageGRID_應用裝置文件.pdf" >
+                    <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>此文件 PDF 的網站</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/開始使用.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            開始使用
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/瞭解_StorageGRID_應用裝置.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            瞭解 StorageGRID 應用裝置
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/安裝應用裝置.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            安裝應用裝置
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/準備安裝.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            準備安裝
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/收集網路資訊.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            收集網路資訊
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/安裝應用裝置硬體.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            安裝應用裝置硬體
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/安裝到機櫃或機架中.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            安裝到機櫃或機架中
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/SG6000.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            SG6000
+          </a>
+          
+
+
+
+
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/設定硬體.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            設定硬體
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/設定_StorageGRID_連線.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            設定 StorageGRID 連線
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/設定_BMC_介面__SG100___SG1000___SG6000_和_SG6100__.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            設定 BMC 介面（ SG100 、 SG1000 、 SG6000 和 SG6100 ）
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/部署應用裝置節點.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            部署應用裝置節點
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/維護應用裝置硬體.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            維護應用裝置硬體
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/維護應用裝置組態.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            維護應用裝置組態
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/應用裝置節點複製.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            應用裝置節點複製
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/維護_SG100_和_SG1000_硬體.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            維護 SG100 和 SG1000 硬體
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/維護組態程序__SG100_和_SG1000.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            維護組態程序
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/硬體程序__SG100_和_SG1000.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            硬體程序
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/維護_SG5600_硬體.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            維護 SG5600 硬體
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/維護_SG5700_硬體.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            維護 SG5700 硬體
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/維護組態程序___SG5700.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            維護組態程序
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/升級SANtricity_儲存控制器上的作業系統.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            升級SANtricity 儲存控制器上的作業系統
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/硬體程序___SG5700.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            硬體程序
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/維護_SG6000_硬體.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            維護 SG6000 硬體
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/維護組態程序___SG6000.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            維護組態程序
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/升級SANtricity_儲存控制器上的作業系統.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            升級SANtricity 儲存控制器上的作業系統
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/硬體程序___SG6000.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            硬體程序
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/維護_SG6100_硬體.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            維護 SG6100 硬體
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/組態維護程序___SG6100.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            組態維護程序
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/storagegrid-appliances/pdfs/sidebar/硬體維護程序___SG6100.pdf" 
+            
+          >
+            <img src="/zh-tw/storagegrid-appliances/images/pdf-icon.png" alt="" width="16" height="16"/>
+            硬體維護程序
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-tw/storagegrid-appliances/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>個別的 PDF 文件集合<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div class="paragraph lead">
+<p>您可以在機櫃或機架中安裝一組 SG6000-CN 控制器的滑軌、然後將控制器滑到滑軌上。</p>
+</div>
+<div class="ulist">
+<div class="title">開始之前</div>
+<ul>
+<li>
+<p>您已閱讀包裝盒中的「安全注意事項」文件、並瞭解移動和安裝硬體的預防措施。</p>
+</li>
+<li>
+<p>您已取得軌道套件隨附的說明。</p>
+</li>
+<li>
+<p>您已安裝E2860控制器機櫃和磁碟機或EF570控制器機櫃。</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>請小心遵循軌道套件的指示、將軌道安裝在機櫃或機架中。</p>
+</li>
+<li>
+<p>在機櫃或機架中安裝的兩個滑軌上、將滑軌的可移動部分展開、直到聽到「喀」一聲為止。</p>
+<div class="imageblock">
+<div class="content">
+<img src="../media/rails_extended_out.gif" alt="SG6000導軌">
+</div>
+</div>
+</li>
+<li>
+<p>將SG6000-CN-控制器插入軌道。</p>
+</li>
+<li>
+<p>將控制器滑入機櫃或機架。</p>
+<div class="paragraph">
+<p>如果您無法進一步移動控制器、請拉動機箱兩側的藍色閂鎖、將控制器完全滑入。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/sg6000_cn_rails_blue_button.gif" alt="SG6000滑軌">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/storagegrid-appliances/images/note.svg" alt="註">
+</td>
+<td class="content">
+在您開啟控制器電源之前、請勿連接前擋板。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>鎖緊控制器前面板上的緊固螺絲、將控制器固定在機架中。</p>
+<div class="imageblock">
+<div class="content">
+<img src="../media/sg6060_rack_retaining_screws.png" alt="SG6060機架固定螺絲">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-tw/storagegrid-appliances/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-tw/storagegrid-appliances/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本頁</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用條款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隱私權政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">傳送有關本網頁的意見反應</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/storagegrid-appliances/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/storagegrid-appliances/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/storagegrid-appliances/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/storagegrid-appliances/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-tw/storagegrid-appliances/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
