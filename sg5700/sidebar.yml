@@ -17,7 +17,13 @@ entries:
     - title: 使用SANtricity 維護模式升級E2800控制器上的作業系統
       url: "/sg5700/upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html"
   - title: 使用SANtricity 《支援系統管理程式》升級磁碟機韌體
-    url: "/sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+    entries:
+    - title: 使用線上方法、使用 SANtricity 系統管理員升級磁碟機韌體
+      url: "/sg5700/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 使用離線方法、使用 SANtricity 系統管理員升級磁碟機韌體
+      url: "/sg5700/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
+    - title: 疑難排解磁碟機韌體升級錯誤
+      url: "/sg5700/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
   - title: 變更E5700SG控制器的連結組態
     url: "/sg5700/changing-link-configuration-of-e5700sg-controller.html"
 - title: 硬體程序

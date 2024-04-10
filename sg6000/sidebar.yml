@@ -17,7 +17,13 @@ entries:
     - title: 使用SANtricity 維護模式升級儲存控制器上的作業系統
       url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html"
   - title: 使用SANtricity 《支援系統管理程式》升級磁碟機韌體
-    url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager.html"
+    entries:
+    - title: 使用線上方法、使用 SANtricity 系統管理員升級 SG6000 磁碟機韌體
+      url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 使用離線方法、使用 SANtricity System Manager 升級 SG6000 磁碟機韌體
+      url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
+    - title: 疑難排解磁碟機韌體升級錯誤
+      url: "/sg6000/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
   - title: 開啟和關閉控制器識別LED
     url: "/sg6000/turning-controller-identify-led-on-and-off.html"
   - title: 在資料中心找到控制器

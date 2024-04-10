@@ -90,7 +90,11 @@ KVM
 +
 .. 使用BMC IP位址和登入認證連線至IPMI SOL。
 +
-`ipmitool -I lanplus -H _BMC_Port_IP_ -U root -P _Password_ sol activate`
+`ipmitool -I lanplus -H _BMC_Port_IP_ -U admin -P _Password_ sol activate`
+
++
+
+NOTE: 在某些情況下、 SG6000 應用裝置的預設使用者名稱可能是 `root` 而非 `admin`。
 
 .. 檢視虛擬序列終端機上的代碼。
 
