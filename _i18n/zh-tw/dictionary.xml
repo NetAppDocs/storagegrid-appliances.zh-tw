@@ -245,13 +245,10 @@
   <block id="1ff855ab55729ae4063274c6d17a385f" category="list-text">或者、若要安裝StorageGRID 不同版本的更新版的更新版本、請依照下列步驟操作：</block>
   <block id="dbe5f4e4fad5c126ea669e2f792699b4" category="list-text">下載安裝歸檔：</block>
   <block id="523d60582e8bbde2c5ff4ae6f84b599e" category="inline-link">NetApp下載：StorageGRID NetApp產品</block>
-  <block id="08f7204e1ce8ade983fb10a402400949" category="paragraph"><block ref="08f7204e1ce8ade983fb10a402400949" category="inline-link-rx"></block></block>
   <block id="3befe165a449c2011ecba00696c3f4ab" category="list-text">擷取歸檔。</block>
   <block id="1d24290d8f4a79eeaafbecffc1f4a350" category="list-text">從《Sile Appliance Installer》StorageGRID （英文）中、選取*進階*&gt;*上傳StorageGRID 《Some Software*》（英文）。</block>
   <block id="6fd2b0d88a0ea6f057348837593e1cf4" category="list-text">按一下「*移除*」以移除目前的軟體套件。</block>
   <block id="1f288c0ba3f88bf0912012d36eb9d7dd" category="image-alt">應用裝置安裝程式-移除目前的軟體</block>
-  <block id="712777b5e9d637ccfae5b04a415653d3" category="list-text">按一下*瀏覽*以取得您下載並解壓縮的軟體套件、然後按一下*瀏覽*以取得Checksum檔案。</block>
-  <block id="79e56e0389e10379e27bca8568ffa4c6" category="image-alt">應用裝置安裝程式-上傳SG軟體</block>
   <block id="59773e84f2479ffeb34ba9422edf9f9c" category="list-text">選擇*主頁*返回主頁。</block>
   <block id="2d636e90bd2e05a13f9a7e54cc9ff4de" category="list-text">確認目前狀態為「Ready to start installation of primary Admin Node name with software version x.y」（已準備好開始安裝軟體版本x.y的主管理節點名稱）、且已啟用* Start Installation*（開始安裝）按鈕。</block>
   <block id="34aaa9f52a702ada229db511977b71dd" category="inline-link-macro">節點複製程序</block>
@@ -268,7 +265,6 @@
   <block id="64ad6f3be04a1b5eb460f6b5171db9c3" category="paragraph">若要在StorageGRID 服務應用裝置節點上安裝支援：</block>
   <block id="81a6c5934583a0f8023199782ebc17af" category="list-text">您可以指定或確認主要管理節點的IP位址、以及應用裝置節點的名稱。</block>
   <block id="06ecae27d7a22c2772946f8e600bf743" category="list-text">您開始安裝、並等待軟體安裝完成。</block>
-  <block id="ca5a02495af6bdb0a0ecd42075778723" category="paragraph">在設備閘道節點的安裝工作中、安裝會暫停一段時間。若要繼續安裝、請登入Grid Manager、核准所有網格節點、並完成StorageGRID 安裝程序。安裝非主要管理節點不需要您的核准。</block>
   <block id="0ce5a69d66d806ec63dd1df1ede0f5ee" category="admonition">請勿在同一個站台部署 SG100 和 SG1000 服務應用裝置。可能會導致無法預測的效能。</block>
   <block id="7ce1391a56490e2996e89e8be0e35f46" category="inline-link-macro">自動化應用裝置的安裝與組態</block>
   <block id="70b1698e02b884a3301d0682ae742bcc" category="admonition">如果您需要一次部署多個應用裝置節點、您可以將安裝程序自動化。請參閱 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
@@ -292,7 +288,6 @@
   <block id="859aba5803f535249e29a8ffe2c32c6d" category="paragraph">此處顯示的名稱將是應用裝置節點的系統名稱。內部 StorageGRID 作業需要系統名稱、因此無法變更。</block>
   <block id="06f9cb221f1c7b35766aeb533e33b69c" category="list-text">在「安裝」區段中、確認目前狀態為「準備開始安裝<block ref="b63eb060814c4999e77b01e66538f258" prefix=" " category="inline-code"></block> 使用主要管理節點進入網格<block ref="2f9ba536b02b69b5417cd803edfcffc0" prefix=" " category="inline-code"></block> "且已啟用*開始安裝*按鈕。</block>
   <block id="94ec460361fb2b4faa500cbfe2736123" category="paragraph">如果*開始安裝*按鈕未啟用、您可能需要變更網路組態或連接埠設定。如需相關指示、請參閱產品的維護指示。</block>
-  <block id="dd3c49a5e1ad35a1fcdc49631b4a489a" category="image-alt">應用裝置安裝程式首頁-安裝非主要管理節點</block>
   <block id="7219d53a2c987afebdf600ccc504d1ab" category="list-text">如果網格包含多個應用裝置節點、請針對每個應用裝置重複上述步驟。</block>
   <block id="c3354d84393c7f9e023fdee83bcf8cef" category="summary">在某些應用裝置機型上、您可以變更為應用裝置上的不同 RAID 模式、以符合您的儲存和還原需求。您只能在部署應用裝置儲存節點之前變更模式。</block>
   <block id="b622ae5ae8ee031b50aeb341c3285846" category="doc">選用：變更 RAID 模式（ SG5760 和 SG6000 ）</block>
@@ -541,7 +536,6 @@
   <block id="ace910911ef51c55674dbf6f48ce7fcd" category="list-text"><block ref="19ad89bc3e3c9d7ef68b89523eff1987" prefix="" category="inline-code"></block> 以開始StorageGRID 執行安裝</block>
   <block id="6d7f123732611773aab7984540e31afb" category="list-text"><block ref="08b5411f848a2581a41672a759c87380" prefix="" category="inline-code"></block> 用於監控StorageGRID 安裝</block>
   <block id="1ef8ccf581606e90386c341184ef576d" category="list-text"><block ref="2b755b30293f2f9f79ec1c86ab0943f2" prefix="" category="inline-code"></block> 以重新啟動應用裝置</block>
-  <block id="f13b14db9b01252edf0db47324d40bf1" category="paragraph">如果您輸入子命令（進階、設定、安裝、監控或重新開機）引數、然後輸入<block ref="0c113ca6d57519b559ba5a426be3c6b6" prefix=" " category="inline-code"></block> 選項您將會看到不同的說明文字、詳細說明該子命令中可用的選項：+<block ref="3baa4d8695a2207be4bec335382496cf" prefix=" " category="inline-code"></block></block>
   <block id="2daf25e905cf2b4f568f33c41d07fc54" category="inline-xref">將應用裝置組態備份至 JSON 檔案</block>
   <block id="52c400008e7d7e44e433cef62ee51f8c" category="paragraph">如果您願意 <block ref="7c894e4a9f4c54a88d21d72ba2ad4233" category="inline-xref-macro-rx"></block>，確保節點名稱符合以下要求：</block>
   <block id="2ca0bbbd7ba6b72c27e210190991793b" category="list-text">如果您想要使用 JSON 檔案自動設定所有應用裝置節點、則每個節點名稱都是唯一的。</block>
@@ -549,16 +543,9 @@
   <block id="b9bac70b4e160b588ff797b4dd555d64" category="list-text">可以使用字母、數字和連字號。</block>
   <block id="4741eb6218531a2c54badadb3f2e570f" category="list-text">無法以連字號開始或結束。</block>
   <block id="f357f23d1a01d52046c340be89709e6f" category="list-text">不能只包含數字。</block>
-  <block id="ef82d471d6b50961b884d7aa1b26102c" category="list-text">若要將 JSON 檔案的組態套用至應用裝置、請輸入下列內容、其中所示<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> 是應用裝置的管理網路 IP 位址、<block ref="6ddaad86d9b9bcc4f4c3330c86c0c105" prefix=" " category="inline-code"></block> 是 JSON 檔案的名稱、和<block ref="5580062b816d365977f30d4d41f98fb3" prefix=" " category="inline-code"></block> 為套用組態的節點名稱： +<block ref="040ff3550a0b6f11b7460ac4e31970ed" prefix=" " category="inline-code"></block></block>
-  <block id="db62ec11b4b43c3342d18ffab91804f9" category="list-text">若要確認應用裝置節點的目前組態、請輸入下列位置<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> 是應用裝置的管理網路 IP 位址： +<block ref="3fb681cb4749044501b9ad23526cdd73" prefix=" " category="inline-code"></block></block>
   <block id="b93f3c962c043bc12c18889a1269cb5a" category="paragraph">結果顯示設備的目前IP資訊、包括主要管理節點的IP位址、以及管理、網格和用戶端網路的相關資訊。</block>
   <block id="7cac38cc118871061c8dce3db7f75d40" category="list-text">如果您需要變更目前組態中的任何值、請使用<block ref="e2d5a00791bce9a01f99bc6fd613a39d" prefix=" " category="inline-code"></block> 子命令進行更新。例如、如果您想要將應用裝置用於連線至主要管理節點的IP位址變更為<block ref="af76ef14733d250246586b58ebb85e3c" prefix=" " category="inline-code"></block>，輸入以下內容：</block>
-  <block id="026fd20bc8239191cee6649680d8c461" category="paragraph"><block ref="e8639c293a4dafb411d7f6edac1ea3dc" prefix="" category="inline-code"></block></block>
-  <block id="de0b47054a413aea610d4cd3a1bfff4c" category="list-text">[[備 份應用裝置組態 ]] 如果您要將應用裝置組態備份至 JSON 檔案、請使用進階和<block ref="8ae932c4bc181b3a98531442ef226cf8" prefix=" " category="inline-code"></block> 子命令。例如、如果您要使用IP位址備份設備的組態<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> 至名為的檔案<block ref="99920c0d232edb12e461dfac6571fe76" prefix=" " category="inline-code"></block>、輸入下列命令：+<block ref="84dd9435ce5db7632c67ee7a6e4298d6" prefix=" " category="inline-code"></block></block>
-  <block id="e53aecfa06819693ed2430744f8362d7" category="paragraph">包含組態資訊的Json檔案會寫入執行指令碼的相同目錄。</block>
   <block id="153a65bebff9401a2458b1201a2b601c" category="admonition">檢查所產生Json檔案中的頂層節點名稱是否與應用裝置名稱相符。除非您是經驗豐富的使用者、且對 StorageGRID API 有深入瞭解、否則請勿對此檔案進行任何變更。</block>
-  <block id="4c7861efb51e2ffd5c6238cbfd8aa793" category="list-text">當您對應用裝置組態感到滿意時、請使用<block ref="19ad89bc3e3c9d7ef68b89523eff1987" prefix=" " category="inline-code"></block> 和<block ref="08b5411f848a2581a41672a759c87380" prefix=" " category="inline-code"></block> 安裝應用裝置的子命令：+<block ref="288c5b1187d2f3aee29b2d8b74b6c709" prefix=" " category="inline-code"></block></block>
-  <block id="68a5e627b481792d9346927bcbb09b79" category="list-text">如果您要重新啟動設備、請輸入下列命令：+<block ref="df863f526a7c46aa917c77164b61ecce" prefix=" " category="inline-code"></block></block>
   <block id="0de1a3196dd60bc820a86bf37f8d4fa1" category="summary">您可以設定用於將應用裝置連線至Grid Network、用戶端網路和管理網路的連接埠網路連結。您可以設定連結速度、連接埠和網路連結模式。</block>
   <block id="ec1ee0ee02ad6851c9644ca45c776776" category="admonition">如果您使用 ConfigBuilder 來產生 JSON 檔案、則可以自動設定網路連結。請參閱 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="dde0e2ccbf0ec5a8bfed2d3b9519cb4e" category="inline-link-macro">已取得額外設備</block>
@@ -1156,10 +1143,7 @@
   <block id="c9336d7080bc57d338b2bad2efe38313" category="list-text">檢閱前兩個安裝階段的進度。</block>
   <block id="ca24497a603bbc47076b2ca3cbe5a2ac" category="paragraph">在此階段中、安裝程式會清除應用裝置中磁碟機的任何現有組態、並設定主機設定。</block>
   <block id="90f6370ccbecc973aa1553afa395b729" category="list-text">繼續監控安裝進度、直到下列其中一個程序發生為止：</block>
-  <block id="247f3d17e4317101acecf503110544b0" category="list-text">除了主要管理節點之外、所有應用裝置節點的「Install StorageGRID 」（安裝）階段都會暫停、並在內嵌式主控台顯示訊息、提示您使用Grid Manager在管理節點上核准此節點。前往下一步。</block>
   <block id="8a8aaccc64167e205ae2e772ed0fe5b4" category="list-text">對於應用裝置主要管理節點安裝、您不需要核准節點。設備隨即重新開機。您可以跳過下一步。</block>
-  <block id="ca2089a4125ab586b2ca81b4d4a9340b" category="admonition">在安裝應用裝置主要管理節點期間、會出現第五階段（請參閱顯示四個階段的範例擷取畫面）。如果第五階段進行超過10分鐘、請手動重新整理網頁。</block>
-  <block id="a502699e7fa49618892585a8980922d7" category="list-text">前往「主要管理」節點的Grid Manager、核准擱置的GRID節點、然後完成StorageGRID 整套安裝程序。</block>
   <block id="6ac1a7d9832a500687085e0cf66a46ec" category="paragraph">當您從Grid Manager按一下* Install*時、階段3完成、階段4 *完成安裝*開始。當階段4完成時、即會重新啟動應用裝置。</block>
   <block id="5f29d84a72d56fbb6bc236e691044453" category="summary">連接網路纜線之後、您就可以開始為應用裝置供電了。</block>
   <block id="bcc960cf3e9ec18999ff121dde627158" category="doc">連接電源線並接上電源</block>
@@ -2614,7 +2598,6 @@
   <block id="39477ba4c8468b4da04da4f855e9785e" category="list-text">您可以指定或確認主管理節點的IP位址和儲存節點的名稱。</block>
   <block id="d5c1f2658aaba7f3605752bb1f4cfa22" category="list-text">您可以開始部署、並在磁碟區已設定且已安裝軟體的情況下等待。</block>
   <block id="26ea01749d8fe9ba54d34006d7b711eb" category="list-text">當安裝在設備安裝工作中暫停一段時間時、您可以登入Grid Manager、核准所有網格節點、並完成StorageGRID 還原安裝和部署程序、以繼續安裝。</block>
-  <block id="4e4a7a07939d8db1c2a9cc0463cd01b6" category="admonition">如果您需要一次部署多個應用裝置節點、可以使用將安裝程序自動化<block ref="287394aa9bc3d5a7764ce106a0aaf10d" prefix=" " category="inline-code"></block> 應用裝置安裝指令碼。</block>
   <block id="3da6a7d0bb47cd64f8de58da564ed961" category="list-text">如果您要執行擴充或還原作業、請遵循適當的指示：</block>
   <block id="3b485651b0f8c9bae0428480b41d029a" category="inline-link">新增網格節點</block>
   <block id="99ff77ddad436b4aa4cfe20cc0b05ade" category="list-text">若要將應用裝置儲存節點新增至現有的 StorageGRID 系統、請參閱的指示<block ref="f2b9f2a623f458b464404f68e70d646c" category="inline-link-rx"></block>。</block>
@@ -2628,7 +2611,6 @@
 <block ref="87d967605804492a459cd5cfc0edb4e9" category="inline-link-macro-rx"></block>。</block>
   <block id="0205d951b300647dabcd3e7f7910a010" category="admonition">如果您需要手動存取「監視器安裝」頁面、請按一下「*監視器安裝*」。</block>
   <block id="6782fad0edf81ef678da67ab11346ff5" category="list-text">如果您的網格包含多個應用裝置儲存節點、請針對每個應用裝置重複這些步驟。</block>
-  <block id="4e2e50dcffb626790688f13c3a94265b" category="admonition">如果您需要一次部署多個應用裝置儲存節點、可以使用將安裝程序自動化<block ref="287394aa9bc3d5a7764ce106a0aaf10d" prefix=" " category="inline-code"></block> 應用裝置安裝指令碼。</block>
   <block id="2e091809aa4488fefb86c669cb8f1914" category="summary">您可以在機櫃或機架中安裝一組 E2860 控制器機櫃的滑軌、然後將控制器機櫃滑到滑軌上。如果您要安裝60個磁碟機擴充磁碟櫃、同樣的程序也適用。</block>
   <block id="554505334c66fad08a4452516a02e8f6" category="doc">安裝 60 個磁碟機櫃（ SG6060 ）</block>
   <block id="0835dd05e1a77d417056577f207cbfb1" category="admonition">每個60個磁碟機的磁碟櫃重量約為132磅（60公斤）、不需安裝磁碟機。需要四人或機械式起重設備、才能安全搬移機櫃。</block>
@@ -3068,7 +3050,6 @@
   <block id="3cffdaddf1d95ec3c052fcf96560a030" category="paragraph">當*開始複製*啟用時、*目前狀態*會指出StorageGRID 選擇用於複製流量的物件網路、以及使用該網路連線的相關資訊。請參閱 <block ref="54e13ce1c122f0b18d12f8e7a211ecbf" category="inline-link-macro-rx"></block>。</block>
   <block id="d081af9c1bc1822369d68ca6df434792" category="list-text">在來源節點上選取*開始複製*。</block>
   <block id="41f39a54349270e6f7a3ec7e34353a95" category="list-text">在StorageGRID 來源節點或目標節點上、使用《不實設備安裝程式」來監控複製進度。</block>
-  <block id="9ea8162d17432f7b9bc858b79e65f413" category="paragraph">來源節點和目標節點上的Some Appliance Installer會指出相同的狀態。StorageGRID</block>
   <block id="f19c0dcdf0806f3540561c4ac08be4b4" category="image-alt">複製進度</block>
   <block id="98c6d1132a15d72d0dc9e50596f25fb1" category="paragraph">「監控複製」頁面提供複製程序每個階段的詳細進度：</block>
   <block id="b2fdb0b814b9eb6027f8fdbc3554f684" category="list-text">*建立複製對等關係*可顯示複製設定與組態的進度。</block>
@@ -3086,8 +3067,6 @@
   <block id="7b94aafd236e4ceea865c931a85dfffa" category="list-text">目標節點會退出維護模式並加入StorageGRID 以取代來源節點的功能。</block>
   <block id="2d19d406fa4b8c7f970985fd245d9c26" category="inline-link">已準備好重新安裝</block>
   <block id="11f0130e9caa644f96bf62e2f723dca8" category="list-text">來源應用裝置處於預先安裝狀態、如同您已安裝<block ref="9808e60ae6558350cc51bc72520015f6" category="inline-link-rx"></block>。</block>
-  <block id="5cd537a6dae618d366a854e49d455bba" category="admonition">如果應用裝置未重新加入網格、請前往StorageGRID 來源節點的「畫面設備安裝程式」首頁、選擇*進階*&gt;*重新開機控制器*、然後選擇*重新開機進入維護模式*。在維護模式下重新啟動來源節點之後、請重複執行節點複製程序。</block>
-  <block id="b39d313e6b319e6703372c12e765f24f" category="list-text">如果目標節點發生非預期的問題、使用者資料仍會保留在來源應用裝置上作為還原選項。在目標節點成功重新加入StorageGRID 時、來源應用裝置上的使用者資料已經過時、不再需要。</block>
   <block id="7943ed1a95e98b8db345a9a611617fc2" category="paragraph">當您將來源應用裝置安裝或擴充為其他網格中的新節點時、過時的使用者資料會被覆寫。</block>
   <block id="e2e3ccf7097647279c88916257208b9b" category="paragraph">您也可以重設來源應用裝置上的控制器組態、使此資料無法存取：</block>
   <block id="b96c8101a1845adc76ac9c16a415d845" category="inline-link-macro">應用程式安裝程式StorageGRID</block>
@@ -3178,9 +3157,7 @@
   <block id="af11eea53677ab5b08aa19cdcafd56ee" category="list-text">來源節點（正在更換的應用裝置）和目標（新）應用裝置必須是相同類型的應用裝置：</block>
   <block id="2dfbae24004209154659df1bc8fa2a85" category="list-text">您只能將管理節點應用裝置或閘道節點應用裝置複製到新的服務應用裝置。</block>
   <block id="3ed00b5839a316ad99941cddc347868b" category="list-text">您只能將儲存節點應用裝置複製到新的儲存應用裝置。</block>
-  <block id="0734b0f73d20ce09674f65cd7aa84344" category="list-text">對於管理節點或閘道節點應用裝置、來源節點應用裝置和目標應用裝置不需要是相同類型的應用裝置；不過、變更應用裝置類型可能需要更換纜線或 SFP 模組。</block>
   <block id="481d4b10597e9f9335c607d5115fd3db" category="paragraph">例如、您可以用SG100來取代SG1000節點應用裝置、或是用SG1000應用裝置來取代SG100應用裝置。</block>
-  <block id="a75ead1838e1da94925b9f44a527a0d7" category="list-text">對於 Storage Node 應用裝置、來源節點應用裝置和目標應用裝置不需要是相同類型的應用裝置、但目標應用裝置的儲存容量必須大於來源應用裝置。</block>
   <block id="ad3b23cccdc3e368ff647e8b569cfd36" category="paragraph">例如、您可以使用 SG6000 應用裝置來更換 SG5700 節點應用裝置。</block>
   <block id="aabbed64734c33f6c7a61d74e334625a" category="paragraph">請聯絡StorageGRID 您的銷售代表、以協助您選擇相容的替換設備、以便在StorageGRID 安裝時複製特定的應用裝置節點。</block>
   <block id="832fb35230dc87b9117894fb35395cc7" category="section-title">準備複製應用裝置節點</block>
@@ -3191,7 +3168,6 @@
   <block id="abfec6d1f524b72ccd15f918c923008f" category="inline-link-macro">啟用節點加密</block>
   <block id="8d4954f7887339a90dbe76578b481ffe" category="list-text">判斷目標應用裝置是否會使用金鑰管理伺服器（KMS）進行節點加密、以便在初始目標應用裝置安裝期間啟用節點加密、然後再進行複製。您可以檢查來源應用裝置節點上是否已啟用節點加密、如中所述 <block ref="6bd92e423fc3e97f612a11738e3a3c13" category="inline-link-macro-rx"></block>。</block>
   <block id="f3547558aa9eeb591224d3b73c6fe1f6" category="paragraph">來源節點和目標應用裝置可以有不同的節點加密設定。資料解密與加密會在資料傳輸期間、以及當目標節點重新啟動並加入網格時自動執行。</block>
-  <block id="da6305932b07f9de0f22a2c5db4c22a5" category="list-text">判斷目標應用裝置上的RAID模式是否應從預設設定變更、以便在複製前於初始目標應用裝置安裝期間指定此資訊。您可以在Grid Manager的「*節點*」頁面上、檢視來源應用裝置節點目前RAID模式的相關資訊。選取應用裝置的「*儲存設備*」索引標籤。</block>
   <block id="760f793060ea29dfdd18f4fc69ab4f9d" category="paragraph">來源節點和目標應用裝置可以有不同的RAID設定。</block>
   <block id="665b2ee84b3ce1addec753e47812a753" category="list-text">規劃足夠的時間來完成節點複製程序。可能需要數天的時間、才能將資料從運作中的儲存節點傳輸到目標應用裝置。排定複製時間、將對貴企業的影響降至最低。</block>
   <block id="ed44cdb4d3e080dee6b895b78592b4b8" category="list-text">一次只能複製一個應用裝置節點。複製可防止您StorageGRID 同時執行其他的還原維護功能。</block>
@@ -4250,4 +4226,35 @@
   <block id="0007bed3a39900ca535cccaada9a4349" category="sidebar">使用離線方法、使用 SANtricity 系統管理員升級磁碟機韌體</block>
   <block id="9429703a81cb2b5231db7d0db68e388d" category="sidebar">使用線上方法、使用 SANtricity 系統管理員升級 SG6000 磁碟機韌體</block>
   <block id="afcfd0f4a9cd1a59c01ff3ab1b52a9b5" category="sidebar">使用離線方法、使用 SANtricity System Manager 升級 SG6000 磁碟機韌體</block>
+  <block id="08f1abb5178bd37fc6e2a13d8dcd8107" category="inline-link">NetApp下載StorageGRID</block>
+  <block id="f40a09f3e194689e4082cf7a66952b7f" category="paragraph"><block ref="f40a09f3e194689e4082cf7a66952b7f" category="inline-link-rx"></block></block>
+  <block id="df0509510227d21cac530cb79de147a1" category="list-text">按一下 * 瀏覽 * 以取得您下載及解壓縮的軟體套件。選取<block ref="058f15d63233f30a1fbded9223deceff" prefix=" " category="inline-code"></block> 套件：</block>
+  <block id="78f7e8f6f1fdf69e2de119bb3d1ffa87" category="paragraph">在設備閘道節點的安裝工作中、安裝會暫停一段時間。若要繼續安裝、請登入Grid Manager、核准所有網格節點、並完成StorageGRID 安裝程序。</block>
+  <block id="d244eb2a1ebf7c5e6ddf7ea8d3527359" category="inline-link-macro">監控安裝頁面</block>
+  <block id="5b15e37bf7099b2456b9ab4c777b6be1" category="paragraph">目前狀態會變更為「正在安裝」、和 <block ref="2cfee2cef53c21fa5832e8cabef926ef" category="inline-link-macro-rx"></block> 即會顯示。</block>
+  <block id="0bb60b0faed71ce3cf81fbafd38b6eae" category="admonition">如果您需要一次部署多個應用裝置節點、可以使用下列連結來自動化安裝程序： ../installconfig/uniallye-applie-install-install-and 組態 .html#unially-with -configure-Sga-py-script<block ref="287394aa9bc3d5a7764ce106a0aaf10d" prefix="[" category="inline-code"></block> 應用裝置安裝指令碼 ] 。</block>
+  <block id="be0e8fe07ca77469afbcaeb6936ac72e" category="admonition">如果您需要一次部署多個應用裝置儲存節點、可以使用下列連結來自動化安裝程序： ../installconfig/unially-applie-install-install-configuration.html#unially-with -configure-Sga-py-script<block ref="287394aa9bc3d5a7764ce106a0aaf10d" prefix="[" category="inline-code"></block> 應用裝置安裝指令碼 ] 。</block>
+  <block id="1ea73989dbbe2cb9ac1b4778d6cb6df2" category="paragraph">如果您輸入子命令（進階、設定、安裝、監控或重新開機）引數、然後輸入<block ref="0c113ca6d57519b559ba5a426be3c6b6" prefix=" " category="inline-code"></block> 選項您將會看到不同的說明文字、詳細說明該子命令中可用的選項：+<block ref="03f70e4532276b94a664b1d785b02c4e" prefix=" " category="inline-code"></block></block>
+  <block id="55d7a1be3a048285630cdbdf27b5ba9a" category="list-text">若要將 JSON 檔案的組態套用至應用裝置、請輸入下列內容、其中所示<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> 是應用裝置的管理網路 IP 位址、<block ref="6ddaad86d9b9bcc4f4c3330c86c0c105" prefix=" " category="inline-code"></block> 是 JSON 檔案的名稱、和<block ref="5580062b816d365977f30d4d41f98fb3" prefix=" " category="inline-code"></block> 為套用組態的節點名稱： +<block ref="72f183908dc340cee1fdefb7e5840ddd" prefix=" " category="inline-code"></block></block>
+  <block id="0462f7fa69ff4f54c3348f93f3720a04" category="list-text">若要確認應用裝置節點的目前組態、請輸入下列位置<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> 是應用裝置的管理網路 IP 位址： +<block ref="dac188db9f50e30c0f7f05f233f8d5f2" prefix=" " category="inline-code"></block></block>
+  <block id="6f3d4af284a7a3940430119fbf61e17f" category="paragraph"><block ref="e369ddd0be0bded8e17f8b7cb2011be2" prefix="" category="inline-code"></block></block>
+  <block id="f5a6ca817f28eecc69c2db93975bef5b" category="list-text">[[備 份應用裝置組態 ]] 如果您要將應用裝置組態備份至 JSON 檔案、請使用進階和<block ref="8ae932c4bc181b3a98531442ef226cf8" prefix=" " category="inline-code"></block> 子命令。例如、如果您要使用IP位址備份設備的組態<block ref="6fcd902b181116b4384138a170399d93" prefix=" " category="inline-code"></block> 至名為的檔案<block ref="99920c0d232edb12e461dfac6571fe76" prefix=" " category="inline-code"></block>、輸入下列命令：+<block ref="eb560d2a69d32904f571582f5bed3014" prefix=" " category="inline-code"></block></block>
+  <block id="69b9312512cdc6f76fc57562e424544e" category="paragraph">包含組態資訊的 JSON 檔案會寫入指定輸出檔案的路徑、在此情況下是檔案的相對路徑<block ref="99920c0d232edb12e461dfac6571fe76" prefix=" " category="inline-code"></block>。</block>
+  <block id="fd5bba691683ef3a201e310f70f6d8e4" category="list-text">當您對應用裝置組態感到滿意時、請使用<block ref="19ad89bc3e3c9d7ef68b89523eff1987" prefix=" " category="inline-code"></block> 和<block ref="08b5411f848a2581a41672a759c87380" prefix=" " category="inline-code"></block> 安裝應用裝置的子命令：+<block ref="cb22ba99985d4320f9b56e53345a6646" prefix=" " category="inline-code"></block> +<block ref="09148fb6c91acb8535552973f29c5302" prefix=" " category="inline-code"></block></block>
+  <block id="c931565ed17682d74235819a1b30dffd" category="list-text">如果您要重新啟動設備、請輸入下列命令：+<block ref="8c1be57a6b5e4d6606e9b616bc4b786c" prefix=" " category="inline-code"></block></block>
+  <block id="21f8809422673987244d000d11281874" category="paragraph">完成所有安裝階段後、請關閉視窗。</block>
+  <block id="a7beb022c93acd3d0673dc51befd93b8" category="list-text">對於主要管理節點以外的所有應用裝置節點、「安裝 StorageGRID 」階段會暫停、並在內嵌主控台上顯示訊息、提示您使用核准管理節點上的此節點<block ref="e3d100a9dd7fc524c056b793772558c8" category="inline-link-rx"></block>。前往下一步。</block>
+  <block id="42af9b60b35d6bca9c17ff477c884ccc" category="admonition">在安裝應用裝置主要管理節點期間、會出現第五個階段以載入 StorageGRID 安裝程式（範例螢幕擷取畫面僅顯示前四個階段）。如果正在載入 StorageGRID 安裝程式（第五階段）超過 10 分鐘、請手動重新整理網頁。</block>
+  <block id="cc6d0074c1cc81f39341600a31c22eea" category="inline-link">前往 Grid Manager</block>
+  <block id="2402f41c48e7f4bce703c793014a7f2b" category="list-text"><block ref="6f57cab9a4fe2b585805d3a0181ee3a1" category="inline-link-rx"></block> 在主要管理節點上、核准擱置的網格節點、然後完成 StorageGRID 安裝程序。</block>
+  <block id="cc721c163db74d07c83f165fac1cbd51" category="list-text">對於管理節點或閘道節點應用裝置、來源節點應用裝置和目標應用裝置不需要使用相同的應用裝置機型、但變更應用裝置機型可能需要更換纜線或 SFP 模組。</block>
+  <block id="186e64d4b1a267ec9b06d82dfc3ea37a" category="list-text">對於 Storage Node 應用裝置、來源節點應用裝置和目標應用裝置不需要是相同類型的應用裝置；不過：</block>
+  <block id="28cb9e1a7b17557df2dab7da635677b4" category="list-text">目標應用裝置的儲存容量必須大於來源應用裝置。</block>
+  <block id="765e8dcfe93408233d1db737b46e3c4b" category="list-text">目標應用裝置的物件儲存磁碟區數量必須等於或大於來源應用裝置。</block>
+  <block id="a407ca9605b77abba5ba2f3dd9568e9b" category="paragraph">例如、您無法將 SG6000 節點應用裝置（ 16 個物件儲存區磁碟區）更換為 SGF6112 應用裝置（ 12 個物件儲存區磁碟區）。</block>
+  <block id="544c640a61781fbf87772d3bf0e70c8b" category="list-text">判斷目標應用裝置上的RAID模式是否應從預設設定變更、以便在複製前於初始目標應用裝置安裝期間指定此資訊。您可以在Grid Manager的「*節點*」頁面上、檢視來源應用裝置節點目前RAID模式的相關資訊。選取應用裝置的 * 硬體 * 標籤。</block>
+  <block id="d5d17dfc38d13ef9b05b43e504f88d75" category="list-text">目標儲存設備中的磁碟區數量必須大於或等於來源節點中的磁碟區數量。即使目標應用裝置的容量大於來源節點、您也無法將具有 16 個物件儲存區（ rangedb ）的來源節點複製到具有 12 個物件儲存區的目標儲存應用裝置。除了 SFF6112 儲存設備只有 12 個物件儲存磁碟區之外、大部分的儲存設備都有 16 個物件儲存磁碟區。</block>
+  <block id="f90f2ceee9e0e6f2c8dc65452c0e826d" category="paragraph">來源節點和目標節點上的 StorageGRID 應用裝置安裝程式會指示類似的狀態。</block>
+  <block id="dbfeead225216a2d779b955a8689e759" category="admonition">如果目標應用裝置未加入網格、請前往來源節點的 StorageGRID 應用裝置安裝程式首頁、選取 * 進階 * &gt; * 重新開機控制器 * 、然後選取 * 重新開機至維護模式 * 。在維護模式下重新啟動來源節點之後、請重複執行節點複製程序。</block>
+  <block id="49bf1a3f02b06cc3de5eca98cee41dba" category="list-text">如果目標節點發生非預期的問題、使用者資料仍會保留在來源應用裝置上作為還原選項。在目標節點成功加入 StorageGRID 之後、來源應用裝置上的使用者資料已過期、不再需要。</block>
 </blocks>

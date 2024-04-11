@@ -49,7 +49,7 @@ summary: 您可以將服務應用裝置部署為主要管理節點、非主要�
 +
 .. 下載安裝歸檔：
 +
-https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp下載StorageGRID"^]
 
 .. 擷取歸檔。
 .. 從《Sile Appliance Installer》StorageGRID （英文）中、選取*進階*>*上傳StorageGRID 《Some Software*》（英文）。
@@ -57,10 +57,7 @@ https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/dow
 +
 image::../media/appliance_installer_rmv_current_software.png[應用裝置安裝程式-移除目前的軟體]
 
-.. 按一下*瀏覽*以取得您下載並解壓縮的軟體套件、然後按一下*瀏覽*以取得Checksum檔案。
-+
-image::../media/appliance_installer_upload_sg_software.png[應用裝置安裝程式-上傳SG軟體]
-
+.. 按一下 * 瀏覽 * 以取得您下載及解壓縮的軟體套件。選取 `storagegrid-webscale-images-_version_.deb` 套件：
 .. 選擇*主頁*返回主頁。
 
 
@@ -103,7 +100,7 @@ NOTE: 如果您需要手動存取「監視器安裝」頁面、請從功能表�
 * 您可以指定或確認主要管理節點的IP位址、以及應用裝置節點的名稱。
 * 您開始安裝、並等待軟體安裝完成。
 +
-在設備閘道節點的安裝工作中、安裝會暫停一段時間。若要繼續安裝、請登入Grid Manager、核准所有網格節點、並完成StorageGRID 安裝程序。安裝非主要管理節點不需要您的核准。
+在設備閘道節點的安裝工作中、安裝會暫停一段時間。若要繼續安裝、請登入Grid Manager、核准所有網格節點、並完成StorageGRID 安裝程序。
 
 
 
@@ -162,7 +159,7 @@ NOTE: 如果您需要一次部署多個應用裝置節點、您可以將安裝�
 +
 .. 下載安裝歸檔：
 +
-https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp下載StorageGRID"^]
 
 .. 擷取歸檔。
 .. 從《Sile Appliance Installer》StorageGRID （英文）中、選取*進階*>*上傳StorageGRID 《Some Software*》（英文）。
@@ -170,10 +167,7 @@ https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/dow
 +
 image::../media/appliance_installer_rmv_current_software.png[應用裝置安裝程式-移除目前的軟體]
 
-.. 按一下*瀏覽*以取得您下載並解壓縮的軟體套件、然後按一下*瀏覽*以取得Checksum檔案。
-+
-image::../media/appliance_installer_upload_sg_software.png[應用裝置安裝程式-上傳SG軟體]
-
+.. 按一下 * 瀏覽 * 以取得您下載及解壓縮的軟體套件。選取 `storagegrid-webscale-images-_version_.deb` 套件：
 .. 選擇*主頁*返回主頁。
 
 
@@ -183,10 +177,7 @@ image::../media/appliance_installer_upload_sg_software.png[應用裝置安裝程
 
 . 從「the Some Appliance Installer」首頁、按一下StorageGRID 「*開始安裝*」。
 +
-image::../media/appliance_installer_services_appliance_non_pan.png[應用裝置安裝程式首頁-安裝非主要管理節點]
-
-+
-目前狀態會變更為「Installation is in progress、」、並顯示「Monitor Installation（監控安裝）」頁面。
+目前狀態會變更為「正在安裝」、和 link:../installconfig/monitoring-appliance-installation.html["監控安裝頁面"] 即會顯示。
 
 +
 

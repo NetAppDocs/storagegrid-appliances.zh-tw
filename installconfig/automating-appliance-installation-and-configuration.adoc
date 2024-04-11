@@ -134,7 +134,7 @@ NOTE: 此程序適用於具有使用命令列介面的經驗的進階使用者�
 +
 [listing]
 ----
-configure-sga.py --help
+./configure-sga.py --help
 ----
 +
 。 `configure-sga.py` 指令碼使用五個子命令：
@@ -147,7 +147,7 @@ configure-sga.py --help
 ** `reboot` 以重新啟動應用裝置
 +
 如果您輸入子命令（進階、設定、安裝、監控或重新開機）引數、然後輸入 `--help` 選項您將會看到不同的說明文字、詳細說明該子命令中可用的選項：+
-`configure-sga.py _subcommand_ --help`
+`./configure-sga.py _subcommand_ --help`
 
 +
 如果您願意 <<back-up-appliance-config,將應用裝置組態備份至 JSON 檔案>>，確保節點名稱符合以下要求：
@@ -163,9 +163,9 @@ configure-sga.py --help
 
 
 . 若要將 JSON 檔案的組態套用至應用裝置、請輸入下列內容、其中所示 `_SGA-INSTALL-IP_` 是應用裝置的管理網路 IP 位址、 `_json-file-name_` 是 JSON 檔案的名稱、和 `_node-name-inside-json-file_` 為套用組態的節點名稱： +
-`configure-sga.py advanced --restore-file _json-file-name_ --restore-node _node-name-inside-json-file_ _SGA-INSTALL-IP_`
+`./configure-sga.py advanced --restore-file _json-file-name_ --restore-node _node-name-inside-json-file_ _SGA-INSTALL-IP_`
 . 若要確認應用裝置節點的目前組態、請輸入下列位置 `_SGA-INSTALL-IP_` 是應用裝置的管理網路 IP 位址： +
-`configure-sga.py configure _SGA-INSTALL-IP_`
+`./configure-sga.py configure _SGA-INSTALL-IP_`
 +
 結果顯示設備的目前IP資訊、包括主要管理節點的IP位址、以及管理、網格和用戶端網路的相關資訊。
 
@@ -250,19 +250,20 @@ Connecting to +https://10.224.2.30:8443+ (Checking version and connectivity.)
 ----
 . 如果您需要變更目前組態中的任何值、請使用 `configure` 子命令進行更新。例如、如果您想要將應用裝置用於連線至主要管理節點的IP位址變更為 `172.16.2.99`，輸入以下內容：
 +
-`configure-sga.py configure --admin-ip 172.16.2.99 _SGA-INSTALL-IP_`
+`./configure-sga.py configure --admin-ip 172.16.2.99 _SGA-INSTALL-IP_`
 
 . [[備 份應用裝置組態 ]] 如果您要將應用裝置組態備份至 JSON 檔案、請使用進階和 `backup-file` 子命令。例如、如果您要使用IP位址備份設備的組態 `_SGA-INSTALL-IP_` 至名為的檔案 `appliance-SG1000.json`、輸入下列命令：+
-`configure-sga.py advanced --backup-file appliance-SG1000.json _SGA-INSTALL-IP_`
+`./configure-sga.py advanced --backup-file appliance-SG1000.json _SGA-INSTALL-IP_`
 +
-包含組態資訊的Json檔案會寫入執行指令碼的相同目錄。
+包含組態資訊的 JSON 檔案會寫入指定輸出檔案的路徑、在此情況下是檔案的相對路徑 `appliance-SG1000.json`。
 
 +
 
 CAUTION: 檢查所產生Json檔案中的頂層節點名稱是否與應用裝置名稱相符。除非您是經驗豐富的使用者、且對 StorageGRID API 有深入瞭解、否則請勿對此檔案進行任何變更。
 
 . 當您對應用裝置組態感到滿意時、請使用 `install` 和 `monitor` 安裝應用裝置的子命令：+
-`configure-sga.py install --monitor _SGA-INSTALL-IP_`
+`./configure-sga.py install --monitor _SGA-INSTALL-IP_` +
+`./configure-sga.py monitor --monitor-storagegrid-install _SGA-INSTALL-IP_`
 . 如果您要重新啟動設備、請輸入下列命令：+
-`configure-sga.py reboot _SGA-INSTALL-IP_`
+`./configure-sga.py reboot _SGA-INSTALL-IP_`
 

@@ -55,6 +55,8 @@ image::../media/monitor_installation_install_sgws.gif[此影像由周邊文字�
 
 
 
+完成所有安裝階段後、請關閉視窗。
+
 --
 .服務應用裝置
 --
@@ -86,22 +88,24 @@ NOTE: 安裝程式可確保先前安裝中完成的工作不會重新執行。�
 
 . 繼續監控安裝進度、直到下列其中一個程序發生為止：
 +
-** 除了主要管理節點之外、所有應用裝置節點的「Install StorageGRID 」（安裝）階段都會暫停、並在內嵌式主控台顯示訊息、提示您使用Grid Manager在管理節點上核准此節點。前往下一步。
+** 對於主要管理節點以外的所有應用裝置節點、「安裝 StorageGRID 」階段會暫停、並在內嵌主控台上顯示訊息、提示您使用核准管理節點上的此節點 https://docs.netapp.com/us-en/storagegrid-118/admin/signing-in-to-grid-manager.html["網格管理程式"^]。前往下一步。
 ** 對於應用裝置主要管理節點安裝、您不需要核准節點。設備隨即重新開機。您可以跳過下一步。
 +
 
-NOTE: 在安裝應用裝置主要管理節點期間、會出現第五階段（請參閱顯示四個階段的範例擷取畫面）。如果第五階段進行超過10分鐘、請手動重新整理網頁。
+NOTE: 在安裝應用裝置主要管理節點期間、會出現第五個階段以載入 StorageGRID 安裝程式（範例螢幕擷取畫面僅顯示前四個階段）。如果正在載入 StorageGRID 安裝程式（第五階段）超過 10 分鐘、請手動重新整理網頁。
 
 +
 image::../media/monitor_installation_install_sgws.gif[此影像由周邊文字說明。]
 
 
 
-. 前往「主要管理」節點的Grid Manager、核准擱置的GRID節點、然後完成StorageGRID 整套安裝程序。
+. https://docs.netapp.com/us-en/storagegrid-118/admin/signing-in-to-grid-manager.html["前往 Grid Manager"^] 在主要管理節點上、核准擱置的網格節點、然後完成 StorageGRID 安裝程序。
 +
 當您從Grid Manager按一下* Install*時、階段3完成、階段4 *完成安裝*開始。當階段4完成時、即會重新啟動應用裝置。
 
 
+
+完成所有安裝階段後、請關閉視窗。
 
 --
 ====

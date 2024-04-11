@@ -34,7 +34,7 @@ summary: 安裝及設定儲存應用裝置之後、您可以將其部署為Stora
 
 
 
-NOTE: 如果您需要一次部署多個應用裝置節點、可以使用將安裝程序自動化 `configure-sga.py` 應用裝置安裝指令碼。
+NOTE: 如果您需要一次部署多個應用裝置節點、可以使用下列連結來自動化安裝程序： ../installconfig/uniallye-applie-install-install-and 組態 .html#unially-with -configure-Sga-py-script[`configure-sga.py` 應用裝置安裝指令碼 ] 。
 
 * 如果您要執行擴充或還原作業、請遵循適當的指示：
 +
@@ -101,7 +101,7 @@ link:../commonhardware/appliance-node-cloning-procedure.html["節點複製程序
 
 . 從「the Some Appliance Installer」首頁、按一下StorageGRID 「*開始安裝*」。
 +
-目前狀態會變更為「Installation is in progress、」、並顯示「Monitor Installation（監控安裝）」頁面。
+目前狀態會變更為「正在安裝」、和 link:../installconfig/monitoring-appliance-installation.html["監控安裝頁面"] 即會顯示。
 
 +
 
@@ -110,6 +110,6 @@ NOTE: 如果您需要手動存取「監視器安裝」頁面、請按一下「*�
 . 如果您的網格包含多個應用裝置儲存節點、請針對每個應用裝置重複這些步驟。
 +
 
-NOTE: 如果您需要一次部署多個應用裝置儲存節點、可以使用將安裝程序自動化 `configure-sga.py` 應用裝置安裝指令碼。
+NOTE: 如果您需要一次部署多個應用裝置儲存節點、可以使用下列連結來自動化安裝程序： ../installconfig/unially-applie-install-install-configuration.html#unially-with -configure-Sga-py-script[`configure-sga.py` 應用裝置安裝指令碼 ] 。
 
 
