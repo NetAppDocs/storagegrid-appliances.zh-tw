@@ -77,7 +77,7 @@ image::../media/SGF6112-battery-cmos.png[CMOS 電池夾]
 +
 image::../media/sgf6112_two-slot-riser_alignment_hole.png[大型擴充卡組件上的對齊孔]
 
-. 找到主機板上的導引針。
+. 找到主機板上的導引針
 +
 image::../media/sgf6112_two-slot-riser_guide-pin.png[主機板上的雙插槽擴充卡組件導引插腳]
 
@@ -99,7 +99,7 @@ image::../media/sgf6112_two-slot-riser_guide-pin.png[主機板上的雙插槽擴
 .. 輸入中所列的密碼 `Passwords.txt` 檔案：
 
 
-. 使用下列其中一個選項還原應用裝置的 BMC 網路連線：
+. 還原應用裝置的 BMC 網路連線能力。有兩種選擇：
 +
 ** 使用靜態 IP 、網路遮罩和閘道
 ** 使用 DHCP 取得 IP 、網路遮罩和閘道

@@ -50,6 +50,47 @@ image::../media/power_cords.gif[電源線]
 
 
 --
+.SG110 和 SG1100
+--
+* *硬體*
++
+SG110 或 SG1100::
++
+--
+image::../media/sgf6112_front_with_ssds.png[前置磁碟機 SG110 和 SG1100 應用裝置]
+
+--
+附說明的軌道套件::
++
+--
+image::../media/rail_kit.gif[軌道套件]
+
+--
+前擋板::
++
+--
+image::../media/sgf_6112_front_bezel.png[前擋板]
+
+--
+
+
+* * 電源線 *
++
+
+TIP: 您的機櫃可能有特殊的電源線、您可以使用這些電源線、而非產品隨附的電源線。
+
++
+適用於您所在國家 / 地區的兩條電源線::
++
+--
+image::../media/power_cords.gif[電源線]
+
+--
+
+
+
+
+--
 .SG5700
 --
 * *硬體*

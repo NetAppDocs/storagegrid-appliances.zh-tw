@@ -6,8 +6,8 @@ entries:
 - title: 總覽
   pdf-filename: SG6100 硬體維護
   url: "/sg6100/index.html"
-- title: 組態維護程序
-  pdf-filename: 組態維護程序 - SG6100
+- title: 維護組態程序
+  pdf-filename: 維護組態程序 - SG6100
   entries:
   - title: 使用管理磁碟機索引標籤
     url: "/sg6100/manage-drives-tab.html"

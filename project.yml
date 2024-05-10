@@ -25,6 +25,8 @@ sidebar:
       entries:
       - title: SG100與SG1000服務應用裝置
         url: "/installconfig/hardware-description-sg100-and-1000.html"
+      - title: SG110 和 SG1100 服務應用裝置
+        url: "/installconfig/hardware-description-sg110-and-1100.html"
       - title: SG5700 儲存設備
         url: "/installconfig/hardware-description-sg5700.html"
       - title: SG6000儲存設備
@@ -46,6 +48,7 @@ sidebar:
       - title: 複製應用裝置節點
         url: "/commonhardware/appliance-node-cloning-procedure.html"
     - section: sg100-1000
+    - section: sg110-1100
     - section: sg5600
     - section: sg5700
     - section: sg6000

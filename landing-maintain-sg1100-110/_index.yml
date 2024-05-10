@@ -1,0 +1,33 @@
+---
+indexpage:
+  tiles:
+  - title: 經常執行的程序
+    links:
+    - title: 開啟或關閉位置 LED
+      url: "../sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html"
+    - title: 在資料中心找到應用裝置
+      url: "../sg110-1100/locating-sg110-and-sg1100-in-data-center.html"
+    - title: 關閉和開啟產品電源
+      url: "../sg110-1100/power-sg110-and-sg1100-off-on.html"
+    - title: 變更連結組態
+      url: "../sg110-1100/changing-link-configuration-of-sg110-and-sg1100-appliance.html"
+  - title: 機架程序
+    links:
+    - title: 更換 SG110 或 SG1100 設備
+      url: "../sg110-1100/replacing-sg110-and-sg1100-appliance.html"
+    - title: 將 SG110 或 SG1100 重新放置在機架中
+      url: "../sg110-1100/reinstalling-sg110-and-sg1100-into-cabinet-or-rack.html"
+  - title: 硬體程序
+    links:
+    - title: 裝回機箱蓋
+      url: "../sg110-1100/reinstalling-sg110-and-sg1100-cover.html"
+    - title: 更換電源供應器
+      url: "../sg110-1100/replacing-one-or-more-power-supplies-in-sg110-and-sg1100-appliance.html"
+    - title: 更換風扇
+      url: "../sg110-1100/replacing-fan-in-sg110-and-sg1100.html"
+    - title: 更換磁碟機
+      url: "../sg110-1100/replacing-drive-in-sg110-and-sg1100.html"
+    - title: 更換 NIC
+      url: "../sg110-1100/replace-nic-in-sg110-and-sg1100.html"
+    - title: 更換 CMOS 電池
+      url: "../sg110-1100/replace-cmos-in-sg110-and-sg1100.html"

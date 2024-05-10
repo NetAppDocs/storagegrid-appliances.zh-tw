@@ -15,7 +15,7 @@ summary: 您可能需要在裝置上執行維護程序。本節將說明維護 S
 
 本節中的程序假設應用裝置已部署為StorageGRID 位於整個系統的儲存節點。
 
-* 組態維護程序 * 是使用設備安裝程式、 Grid Manager 或 BMC 介面來執行。這些程序包括：
+* 維護組態程序 * 是使用 Appliance Installer 、 Grid Manager 或 BMC 介面來執行。這些程序包括：
 
 * link:turning-sgf6112-identify-led-on-and-off.html["開啟和關閉產品識別 LED"]
 * link:locating-sgf6112-in-data-center.html["在資料中心找到應用裝置"]

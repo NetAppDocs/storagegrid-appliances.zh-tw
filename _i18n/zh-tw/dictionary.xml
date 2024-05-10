@@ -3,9 +3,6 @@
   <block id="daad4dadeda8cd86f01c8ad7f2a30465" category="summary">瞭解本文件網站的新功能。</block>
   <block id="896ec268e957d3c662f84637cbe5cff2" category="doc">應用裝置的新功能</block>
   <block id="72537bf3eb1f84421991e3c2fd3c6510" category="paragraph">瞭解 StorageGRID 應用裝置的新功能。</block>
-  <block id="46e6e53b63575cf1827147a48464a879" category="section-title">SGF6112 All Flash 應用裝置</block>
-  <block id="0893c8e93b9a4b4059d6e5940b5fd595" category="inline-link-macro">SGF6112 應用裝置：綜覽</block>
-  <block id="88d0d4b73239c3f30645fd45a0392d6a" category="paragraph">全新的 StorageGRID SGF6112 儲存設備採用精巧設計、並將運算控制器和儲存控制器整合至 1U 機箱中。此應用裝置支援 12 個 SSD NVMe 磁碟機、每個磁碟機的儲存容量最高可達 15.3 TB 。SSD 磁碟機位於 RAID 中、可提供彈性的物件儲存設備。請參閱 <block ref="80483d1684bda77797911f6b469313f1" category="inline-link-macro-rx"></block>。</block>
   <block id="4e2d1b46d32d63f7b20c891a226971a0" category="summary">您可以變更服務應用裝置的乙太網路連結組態。您可以變更連接埠連結模式、網路連結模式及連結速度。</block>
   <block id="e4d7bc194db0f2b04796f28dca2cb07d" category="doc">變更 SG100 或 SG1000 的連結組態</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">開始之前</block>
@@ -265,7 +262,6 @@
   <block id="64ad6f3be04a1b5eb460f6b5171db9c3" category="paragraph">若要在StorageGRID 服務應用裝置節點上安裝支援：</block>
   <block id="81a6c5934583a0f8023199782ebc17af" category="list-text">您可以指定或確認主要管理節點的IP位址、以及應用裝置節點的名稱。</block>
   <block id="06ecae27d7a22c2772946f8e600bf743" category="list-text">您開始安裝、並等待軟體安裝完成。</block>
-  <block id="0ce5a69d66d806ec63dd1df1ede0f5ee" category="admonition">請勿在同一個站台部署 SG100 和 SG1000 服務應用裝置。可能會導致無法預測的效能。</block>
   <block id="7ce1391a56490e2996e89e8be0e35f46" category="inline-link-macro">自動化應用裝置的安裝與組態</block>
   <block id="70b1698e02b884a3301d0682ae742bcc" category="admonition">如果您需要一次部署多個應用裝置節點、您可以將安裝程序自動化。請參閱 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="71993e8ea93f8d02397504df8a2f696f" category="list-text">開啟瀏覽器、然後輸入應用裝置的IP位址。</block>
@@ -1178,7 +1174,6 @@
   <block id="5b06ccc1c03f3b182fcc3f498ea6ed33" category="list-text">檢查每個儲存控制器背面的七段顯示。如需詳細資訊、請參閱檢視開機狀態代碼的相關文章。</block>
   <block id="4c879409f52a908e9d590c416599dad7" category="list-text">驗證SG6000-CN-控制器正面的電源按鈕是否亮起。</block>
   <block id="9354327818f8e50e42cf51da6c8e515f" category="list-text">將前擋板連接至SG6000-CN-控制器（如果已卸下）。</block>
-  <block id="1c7c4d0e82f24664cd89fa8aceb51d56" category="list-text">如果 SG6100-CN 產品正面的電源按鈕目前未亮起藍色燈號、請按下按鈕以開啟產品電源。</block>
   <block id="d33b4aba25cf9772af1dbcbe99d64d41" category="paragraph">電源供應器上的 LED 應亮起綠色而不閃爍。</block>
   <block id="2f2db283f5abc325514875d486abdc79" category="paragraph"><block ref="2f2db283f5abc325514875d486abdc79" category="inline-link-macro-rx"></block></block>
   <block id="c0dcb6db5300484aab9ea95a8e1d1bdd" category="summary">安裝StorageGRID 此產品之前、請先打開所有包裝箱的包裝、然後比較包裝單上的物品。</block>
@@ -1347,7 +1342,6 @@
   <block id="a84b5f1afdd502c061024370bfc6a952" category="section-title">SG100和SG1000圖表</block>
   <block id="0b818dd339956b64673c11bfeffba91c" category="paragraph">此圖顯示SG100和SG1000的正面、並已卸下擋板。從正面來說、除了擋板上的產品名稱之外、這兩種產品完全相同。</block>
   <block id="28989aff1888ad2b7678074c0b2967d1" category="image-alt">正面搭載SSD SG100和SG1000</block>
-  <block id="dfcfdfb340da954210315d11a2bd0c61" category="paragraph">兩個固態硬碟（ SSD ）以橘色外框表示、可用於儲存 StorageGRID 作業系統、並使用 RAID 1 進行鏡射以提供備援。當SG100或SG1000服務應用裝置設定為管理節點時、這些磁碟機會用來儲存稽核記錄、度量和資料庫表格。</block>
   <block id="6610dc47f2f5383953ec2a1621ffb22e" category="paragraph">其餘磁碟機插槽為空白。</block>
   <block id="e2df10e153cb8c16dadcf714811ec619" category="section-title">SG100 連接器</block>
   <block id="d6e5389fc7987a2d5338515d74fde402" category="paragraph">此圖顯示SG100背面的連接器。</block>
@@ -1449,9 +1443,7 @@
   <block id="259f7ff6cc8d64b66cba93a17304c3d6" category="inline-link-macro">驗證連接埠層級的網路連線</block>
   <block id="b2d8ae65d08c0fc7e0d796288b2adabe" category="list-text"><block ref="b2d8ae65d08c0fc7e0d796288b2adabe" category="inline-link-macro-rx"></block></block>
   <block id="c02e34b6a88ae18cf515d08b091effd3" category="inline-link-macro">存取及設定 SANtricity 系統管理員</block>
-  <block id="54c6ec78161cbcd94d065b290ed99d0d" category="list-text"><block ref="0c770b188189664197ca2af9c5ce06a6" category="inline-link-macro-rx"></block> （ SG6000 和 SG5700 ）</block>
   <block id="b24644fb0cb0d2175187599360704730" category="inline-link-macro">設定 BMC 介面</block>
-  <block id="cf7c4bd5320fcf86408777d5f9a4fe0c" category="list-text"><block ref="e010cba544d581fc50562d9eaf281bf3" category="inline-link-macro-rx"></block> （ SG100 、 SG1000 、 SG6000 和 SG6100 ）</block>
   <block id="6efb63c9dddb08a981caced6ecaa7231" category="list-text">執行選用的設定步驟</block>
   <block id="1769437c445032226853842293627464" category="inline-link-macro">啟用節點或磁碟機加密</block>
   <block id="0dce870abc630014d0799a7b47dfd01e" category="list-text"><block ref="0dce870abc630014d0799a7b47dfd01e" category="inline-link-macro-rx"></block></block>
@@ -1507,7 +1499,6 @@
   <block id="d9f435cb7a4ab03ce6a9dd9556ec754d" category="list-text">變更 RAID 模式</block>
   <block id="8bcdd04428a0e463b5d2942eb52fa7a4" category="list-text">存取 SG6000-CN 控制器的 BMC 介面</block>
   <block id="bf6a9db479978eb4f9d757484d56488a" category="list-text">服務應用裝置</block>
-  <block id="ac941add132fd73a9ca0fd82f948c217" category="list-text">存取 SG100 或 SG1000 的 BMC 介面</block>
   <block id="d66b55cd8d763d06c15eb0e4ec520f0a" category="doc">疑難排解硬體安裝（SG100和SG1000）</block>
   <block id="2fe63d2b3f22e322fc5a2471a0057de8" category="list-text">您知道如何 <block ref="de1e0aa09b9ef96e751421d7f7e86d04" category="inline-link-macro-rx"></block>。</block>
   <block id="114f2dd347c68bd8b5310e02290324cd" category="list-text">連接到應用裝置背面的DB-9序列連接埠。</block>
@@ -1642,7 +1633,6 @@
   <block id="edc8f42c5d3c1c2a2922bf75112aa76a" category="list-text">*《StorageGRID Administration Network for S供 參考*：管理網路》是一種封閉網路、用於系統管理與維護。管理網路通常是私有網路、不需要在站台之間進行路由傳送。管理網路為選用網路。</block>
   <block id="a43ab4ec6314775efb16fdcbad06d69a" category="list-text">* StorageGRID Client Network for Sfor Sfor Sfor *用戶端網路是開放式網路、用於存取用戶端應用程式、包括S3和Swift。用戶端網路可提供用戶端傳輸協定存取網格、因此網格網路可以隔離及保護。您可以設定用戶端網路、以便只使用您選擇開啟的連接埠、透過此網路存取應用裝置。用戶端網路為選用項目。</block>
   <block id="7ac9f844973adf1cc467bcd4a52f52d5" category="list-text">* SANtricity 管理網路 * （儲存設備選用、 SG6100 不需要）：此網路可讓您存取 SANtricity 系統管理員、讓您監控及管理應用裝置和儲存控制器機櫃中的硬體元件。此管理網路可以與管理員網路StorageGRID 相同、也可以是獨立的管理網路。</block>
-  <block id="28a542bc07290f8a1b1447961bf9fa60" category="list-text">* BMC 管理網路 * （ SG100 、 SG1000 、 SG6000 和 SG6100 可選用）：此網路可讓您存取 SG100 、 SG1000 、 SG6000 和 SG6100 應用裝置中的主機板管理控制器、以便監控和管理應用裝置中的硬體元件。此管理網路可以與管理員網路StorageGRID 相同、也可以是獨立的管理網路。</block>
   <block id="660fc24fc18dd99919bb0bc5149a6c14" category="paragraph">如果未連接選用的BMC管理網路、則部分支援與維護程序將更難執行。您可以讓BMC管理網路保持未連線、除非是為了支援目的而需要。</block>
   <block id="735397a80f406e1834aa096854796f06" category="admonition">如需 StorageGRID 網路的詳細資訊、請參閱<block ref="37d143d6aa4e97202e0da5da8774331d" category="inline-link-rx"></block>。</block>
   <block id="536913eab1d549cf61908a5576a405e6" category="summary">安裝並設定網格節點之後、您可以自動化 StorageGRID 系統的組態。</block>
@@ -1731,7 +1721,6 @@
   <block id="d5db6ba99ab0efffe356662c3fc55f4c" category="list-text">如果您有擴充櫃、請重複這些步驟、將12個HDD磁碟機安裝到每個擴充櫃的各個抽屜中。</block>
   <block id="9cdf68498d339fb0d7d4e4972e1695ce" category="list-text">請依照指示將SG6000-CN-安裝至機櫃或機架。</block>
   <block id="875693c8e94a9b6f2e275d5162bb0123" category="summary">SG6100 、 SG6000 或服務應用裝置上的主機板管理控制器（ BMC ）使用者介面提供硬體的狀態資訊、並可讓您設定應用裝置的 SNMP 設定和其他選項。</block>
-  <block id="ed9644f5ceef6febeee33082dacb1a73" category="doc">BMC 介面：概觀（ SG100 、 SG1000 、 SG6000 和 SG6100 ）</block>
   <block id="ee36a41933a8c47ba8eb1d5246ea022f" category="paragraph">SG6100 、 SG6000 或服務應用裝置上的主機板管理控制器（ BMC ）使用者介面、可提供硬體的狀態資訊、並可讓您設定應用裝置的 SNMP 設定和其他選項。</block>
   <block id="81f3a517925abf11c2bf8f4ed6207237" category="paragraph">安裝應用裝置時、請使用本節中的下列程序來設定 BMC ：</block>
   <block id="961d7f5d7663b6dc951b5e5c4774580d" category="list-text"><block ref="961d7f5d7663b6dc951b5e5c4774580d" category="inline-link-macro-rx"></block></block>
@@ -2449,7 +2438,6 @@
   <block id="622dedd3d9518bbe8333a11e6a3906f0" category="list-text">設備隨附四條光纖纜線、可將兩個儲存控制器連接至SG6000-CN.控制器。</block>
   <block id="482c49b0c4f478c3a53f43e2d9354ea9" category="list-text">您有RJ-45乙太網路纜線（至少四條）可用來連接管理連接埠。</block>
   <block id="c7aa0392cfcfae7f9063e19db3429311" category="list-text">一至四個SFP+或SFP28收發器、如果您打算將光纖纜線用於連接埠。</block>
-  <block id="40cc77eb24c46b897428cdf99359f949" category="paragraph">下圖顯示 SG6060 和 SG6060X 設備中的三個控制器、其中 SG6000-CN 運算控制器位於上方、兩個 E2800 儲存控制器位於底部。SG6060 使用 E2800A 控制器、而 SG6060X 則使用 E2800B 控制器。</block>
   <block id="c5da69b0daeee585efd14cbdcd95f9c0" category="admonition">E2800控制器的兩個版本都有相同的規格和功能、但互連連接埠的位置除外。</block>
   <block id="85ac648b274fe5b9984597982dd7afad" category="admonition">請勿在同一個應用裝置中使用 E2800A 和 E2800B 控制器。</block>
   <block id="2c921c8eaa2b387f856a217c368c4a73" category="paragraph">SG6060 連線：</block>
@@ -2900,7 +2888,6 @@
   <block id="f2f4d90ef6566a91f0d4ee0f2bd0c0cf" category="list-text">向前或向下轉動機箱蓋栓鎖、直到其停止、並將機箱蓋完全裝入機箱。確認機箱蓋前緣沒有任何間隙。</block>
   <block id="68abdeb4de4c03b18880696414098033" category="paragraph">如果機箱蓋未完全就位、您可能無法將產品滑入機架。</block>
   <block id="bad1c962977ca3ccc3125850f38447b4" category="list-text">選用：將藍色的塑膠鎖栓鎖朝鎖定方向轉動四分之一圈、如鎖銷鎖上所示、即可將其鎖定。</block>
-  <block id="d786a607ae8af0f0cd8359b84322ac13" category="admonition">在應用裝置處於維護模式時所做的 IP 組態變更不會套用至已安裝的 StorageGRID 環境。執行下列連結： ../Mainte/changing-nodes-network-configuration.html<block ref="921c87cca9b14f15a73f4570ad9f3247" prefix="[" category="inline-code"></block> 命令 ] 將應用裝置重新開機至 StorageGRID 後。</block>
   <block id="1b87de5ab81f4f92cfa077be2e09d040" category="admonition">如果您變更所連線的網路或連結、可能會失去連線。如果您在 1 分鐘內未重新連線、請使用指派給應用裝置的其他 IP 位址之一、重新輸入 StorageGRID 應用裝置安裝程式的 URL ：<block ref="7cb9429482151be5ab9338810b072fc0" prefix=" " category="inline-code"></block></block>
   <block id="b318d18a01124d748f6ccb12b914c2dc" category="paragraph">除了您選擇執行的任何其他測試之外、請確認您可以ping主管理節點的Grid Network IP位址、以及至少一個其他節點的Grid Network IP位址。如有必要、請返回設定網路連結的指示、並修正任何問題。</block>
   <block id="f127bf70eac06d5cd43bc646d9b61a11" category="list-text">當您確定連結組態變更是否正常運作後、請重新啟動節點。從「the Sof the Sof the Some Installer」選取「*進階*&gt;*重新開機控制器*」StorageGRID 、然後選取下列其中一個選項：</block>
@@ -2910,9 +2897,7 @@
   <block id="c97a80297e486669f93485561c3164ed" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程維護期間更換風扇。否則、在此程序期間、您可能會暫時失去對這些物件的存取權。請參閱相關資訊<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
   <block id="aa7a430b5102e55ec29d486c5165e7ba" category="paragraph">相片顯示產品的風扇。電子接頭會反白顯示。將產品的頂蓋從產品上卸下後、即可接觸到冷卻風扇。</block>
   <block id="dc55836577fc02b16cce59c34c0bd0f3" category="admonition">兩個電源供應器單元中的每個單元都有一個風扇。此程序不包含電源供應器風扇。</block>
-  <block id="714a2b4dc29fd72668c8e5e36bf4b8c8" category="image-alt">風扇 SGF6112 FRU</block>
   <block id="c36b4cc7c715c27cf89053ed16076b2a" category="list-text">找到您需要更換的風扇。</block>
-  <block id="d7e7ea11b214fe9c3389d9e2bb1a9335" category="paragraph">機箱中的八個風扇位於以下位置（圖示爲 SGF6112 的前半部分，其中卸下了頂蓋）：</block>
   <block id="faaae5a36ccc39581b4a36a48818db1a" category="image-alt">風扇位置</block>
   <block id="9fc41f5c47cf13c3dacfca6f1e20a227" category="cell">風扇單元</block>
   <block id="20466611954593695b4f1b6b35f973bf" category="paragraph">FAN_SYS0</block>
@@ -2946,7 +2931,6 @@
   <block id="c9c36506fb741805088a0cbb00459a23" category="list-text">從其包裝中取出 CMOS 電池。</block>
   <block id="3e165c924e3bd4588b57bd761d4f07e0" category="list-text">將替換電池按入主機板上的空插槽、使正極（ + ）面朝上、直到電池卡入定位。</block>
   <block id="9cf7c93fc766c56873c1ddd46447d057" category="list-text">找到雙插槽擴充卡組件（圈選）上的定位孔、使其與主機板上的導引插針對齊、以確保正確放置擴充卡組件。</block>
-  <block id="f9df26f43e7cbb8a8facb5017b47ccbe" category="list-text">找到主機板上的導引針。</block>
   <block id="e2ca2c1368ac8b9d1d8e5571f1857efd" category="image-alt">主機板上的雙插槽擴充卡組件導引插腳</block>
   <block id="f456f175997595ccbac05b05c7dbc0d8" category="inline-link-macro">輸入磁碟機加密密碼</block>
   <block id="46f19b3ee8dedf83d42c3a4ff5d0c6bb" category="list-text">如果您更換的應用裝置使用金鑰管理伺服器（ KMS ）來管理節點加密的加密金鑰、則可能需要額外的組態、節點才能加入網格。如果節點未自動加入網格、請確定這些組態設定已傳輸至新應用裝置、並手動設定任何沒有預期組態的設定：</block>
@@ -2954,7 +2938,6 @@
   <block id="5d5e7579cc415f2940c02cee9b12c42d" category="inline-link">設定應用裝置的節點加密</block>
   <block id="0a5611066cc6dfa6acb00a3c98785ae8" category="list-text"><block ref="0a5611066cc6dfa6acb00a3c98785ae8" category="inline-link-rx"></block></block>
   <block id="6c60c1ebcaf910de2a51a8c828bc0f5e" category="list-text">登入應用裝置：</block>
-  <block id="173a66e0398614aa76b044a28acb6ae2" category="list-text">使用下列其中一個選項還原應用裝置的 BMC 網路連線：</block>
   <block id="350f00799e345da9d8437a6755232692" category="paragraph">您擁有要識別的應用裝置的 BMC IP 位址。</block>
   <block id="12d42de975e694d332bec59aed70bded" category="inline-link-macro">存取應用裝置 BMC 介面</block>
   <block id="8b999a1febaa917ddad3d11fc533934c" category="list-text"><block ref="255c862e8a70f96afa658300e7161668" category="inline-link-macro-rx"></block>。</block>
@@ -3096,9 +3079,6 @@
   <block id="e8d170c1d01b5214a9b97ee8fbc40398" category="section-title">目標應用裝置相容性</block>
   <block id="6cca792a53335169aad8581043148997" category="paragraph">更換設備必須與要更換的來源節點類型相同、而且兩者都必須屬於同一個邏輯StorageGRID 版的站台。</block>
   <block id="3514507af11b532760b83d61e1cfa58d" category="list-text">替換服務應用裝置可能與所取代的管理節點或閘道節點不同。</block>
-  <block id="53128132390930a1f8d6c6d9519248df" category="list-text">您可以將SG100來源節點應用裝置複製到SG1000服務目標應用裝置、讓管理節點或閘道節點擁有更大的功能。</block>
-  <block id="0ed5f431751e37ac1ff96feb9134f783" category="list-text">您可以將SG1000來源節點應用裝置複製到SG100服務目標應用裝置、以便重新部署SG1000以滿足更嚴苛的應用程式需求。</block>
-  <block id="55f00cb7cf66e41ad1054fc5507a2e0a" category="paragraph">例如、如果SG1000來源節點應用裝置做為管理節點、而您想要將其用作專屬的負載平衡節點。</block>
   <block id="8853412a153551cfcaa29f811be54d2a" category="list-text">以SG100服務目標應用裝置取代SG1000來源節點應用裝置、可將網路連接埠的最大速度從100-GbE降低至25-GbE。</block>
   <block id="953cb2571b5956e3ac9d0120f56a1235" category="list-text">服務應用裝置有不同的網路連接器。變更應用裝置類型可能需要更換纜線或SFP模組。</block>
   <block id="f99ba690ef7c0b4d695af7ef97254d6b" category="list-text">更換儲存設備的容量必須大於正在更換的儲存節點。</block>
@@ -3374,7 +3354,6 @@
   <block id="c5e193e61c8068cebd4cb4fba2c27866" category="inline-link-macro">重新連接控制器電源線</block>
   <block id="b6b0dd970889f43cc1c52597b7622743" category="list-text"><block ref="6f9f5a65c301bc92abf7bdeee5c6a76d" category="inline-link-macro-rx"></block>。</block>
   <block id="37abf98b4de9f33857b199b4587f5694" category="inline-link-macro">重新啟動應用裝置</block>
-  <block id="e5286716c2baaaba3a8565ab8ef46806" category="paragraph"><block ref="1dd8d3f4f8b694bd6a574f797efa8d57" category="inline-link-macro-rx"></block>。</block>
   <block id="75a0a5a5fe162a7f9fdba4837463d44f" category="summary">產品正面的藍色識別 LED 可開啟、協助您在資料中心找到產品。</block>
   <block id="6f0e600a24fecbdf20f99f186e630c00" category="doc">開啟和關閉 SGF6112 應用裝置識別 LED</block>
   <block id="debdd98b0f5a40d3b21e412c9c782a4d" category="paragraph">產品正面和背面的藍色識別 LED 可開啟、協助您將產品定位在資料中心。</block>
@@ -3382,7 +3361,6 @@
   <block id="48ce381161753a96507e349f7aa77165" category="paragraph"><block ref="48ce381161753a96507e349f7aa77165" category="inline-link-macro-rx"></block></block>
   <block id="93fbb9aaa73dda71ec648251dcaa9967" category="summary">您可能需要在裝置上執行維護程序。本節將說明維護 SG6100 應用裝置的特定程序。</block>
   <block id="64afa9c486f46d037a09b05e70cd8b61" category="paragraph">本節中的程序假設應用裝置已部署為StorageGRID 位於整個系統的儲存節點。</block>
-  <block id="1a8829c74e638f60318ff0a8272ab9bb" category="paragraph">* 組態維護程序 * 是使用設備安裝程式、 Grid Manager 或 BMC 介面來執行。這些程序包括：</block>
   <block id="3b7a76fa87690a443242d6944757d7d3" category="inline-link-macro">開啟和關閉產品識別 LED</block>
   <block id="6f322a9b2088ce2fcdc4d2570ab4bd4a" category="list-text"><block ref="6f322a9b2088ce2fcdc4d2570ab4bd4a" category="inline-link-macro-rx"></block></block>
   <block id="68f44a5f426fd13a4802cb01ac1d7315" category="list-text"><block ref="68f44a5f426fd13a4802cb01ac1d7315" category="inline-link-macro-rx"></block></block>
@@ -4079,7 +4057,6 @@
   <block id="31e40175f2d3fefac38304e359c80e94" category="sidebar">節點複製</block>
   <block id="bf4407ec23ea65719897cbdb78263587" category="sidebar">節點複製需求</block>
   <block id="ff5cd15e6095aa49c820a70173a97926" category="sidebar">應用裝置專屬維護</block>
-  <block id="bc496fc4f5adb6c66aa628a721d4b883" category="sidebar">SG1000 和 SG100</block>
   <block id="b82ff6cc8b54f013ccfe94afdb37a599" category="sidebar">SG5600</block>
   <block id="f36d580564cf2b56f88491948411d4ab" category="sidebar">將儲存設備安裝在機櫃或機架中</block>
   <block id="701c74b841bd25ba8469d3424654b5c9" category="sidebar">在機櫃或機架中安裝服務應用裝置</block>
@@ -4095,7 +4072,6 @@
   <block id="5e77e4e9d10272660f06e394cf1f9698" category="sidebar">應用裝置安裝快速入門</block>
   <block id="dbafed3b69ea2c476ecca29b838eebf3" category="sidebar">自動化安裝與組態</block>
   <block id="a8b2e04cc6d2b7928d150b7f392c761a" category="sidebar">應用裝置總覽</block>
-  <block id="6ea6a276a0e2f68264ddca0d8045ae5e" category="sidebar">SG6100 （新）</block>
   <block id="f9f44cf635afea4827c5ef9038b46622" category="sidebar">部署應用裝置節點</block>
   <block id="2d4f4568ad652ff08727bc044f1373cc" category="sidebar">軟件StorageGRID</block>
   <block id="7bb5d1e21ca0bacc168d63d7155d3755" category="sidebar">StorageGRID 11.8 文件</block>
@@ -4124,7 +4100,6 @@
   <block id="0862353a6639a2cdaca55ba2fcbb8033" category="sidebar">將 SG6000 安裝到機櫃或機架中</block>
   <block id="1779ca6984a3582b9c1a3c02d22c730c" category="sidebar">安裝 SG6000-CN 控制器（ SG6024 和 SG6060 ）</block>
   <block id="345a844566607ddc6e73586a30452787" category="sidebar">設定 SANtricity 系統管理員（ SG5700 和 SG6000 ）</block>
-  <block id="1c4078edbfed6cccf640c5627c0c0678" category="sidebar">設定 BMC 介面（ SG100 、 SG1000 、 SG6000 和 SG6100 ）</block>
   <block id="682329c411688c214c3b69d3c9177018" category="sidebar">變更 root 密碼</block>
   <block id="f1ddfd50d289ca1496b137a55f34fd6d" category="sidebar">設定電子郵件通知</block>
   <block id="99f776141c73b268838def5e1fcf8f15" category="sidebar">選用：重新對應網路連接埠</block>
@@ -4135,8 +4110,6 @@
   <block id="77d2b0ac8e200595c2f4d240b0c80f51" category="sidebar">維護應用裝置組態（所有節點）</block>
   <block id="48889e269a4d7fca4c265f4a2f877e26" category="sidebar">維護 SG6100 硬體</block>
   <block id="14975bfde92215c95436649cec8f726d" category="sidebar">SG6100 硬體維護</block>
-  <block id="4629e39933bc05a37d7d157d0c146d88" category="sidebar">組態維護程序</block>
-  <block id="2e2721e5bb6cda8413dddd5a3a61b1c0" category="sidebar">組態維護程序 - SG6100</block>
   <block id="43669fdd9ce1157a7238aa25102bb3ab" category="sidebar">使用管理磁碟機索引標籤</block>
   <block id="26b6d36b296274fea73c7b0861022842" category="sidebar">關閉並開啟產品電源</block>
   <block id="f038cfedcecfda2c0df73e7e4b3e5a5f" category="sidebar">硬體維護程序</block>
@@ -4257,4 +4230,214 @@
   <block id="f90f2ceee9e0e6f2c8dc65452c0e826d" category="paragraph">來源節點和目標節點上的 StorageGRID 應用裝置安裝程式會指示類似的狀態。</block>
   <block id="dbfeead225216a2d779b955a8689e759" category="admonition">如果目標應用裝置未加入網格、請前往來源節點的 StorageGRID 應用裝置安裝程式首頁、選取 * 進階 * &gt; * 重新開機控制器 * 、然後選取 * 重新開機至維護模式 * 。在維護模式下重新啟動來源節點之後、請重複執行節點複製程序。</block>
   <block id="49bf1a3f02b06cc3de5eca98cee41dba" category="list-text">如果目標節點發生非預期的問題、使用者資料仍會保留在來源應用裝置上作為還原選項。在目標節點成功加入 StorageGRID 之後、來源應用裝置上的使用者資料已過期、不再需要。</block>
+  <block id="3b5a3c695e5378023df688e790ada7b4" category="summary">維護 SG1100 和 SG110 服務應用裝置的硬體。</block>
+  <block id="d751b295bd431b789da8da77d91a8a1d" category="doc">維護 SG1100 和 SG110 服務應用裝置硬體</block>
+  <block id="70bca0055a2d38054af0059da4e459ed" category="inline-link-macro">SG110 和 SG1100</block>
+  <block id="9310c6e3b94e3baa60a2b31f7b80cc71" category="list-text"><block ref="9310c6e3b94e3baa60a2b31f7b80cc71" category="inline-link-macro-rx"></block></block>
+  <block id="f1c7efda23b762cfe6e972e421fb54f8" category="list-text"><block ref="0c770b188189664197ca2af9c5ce06a6" category="inline-link-macro-rx"></block> （ SG5700 和 SG6000 ）</block>
+  <block id="e3654db4a646d23dc2d3d64204192d91" category="list-text"><block ref="e010cba544d581fc50562d9eaf281bf3" category="inline-link-macro-rx"></block> （ SG6000 、 SG6100 和服務應用裝置）</block>
+  <block id="aadf1dcd60cf75ec60913a8a677fcd35" category="list-text">對於 SG110 、如果您打算使用光纖纜線連接埠、則需要一至四個 SFP+ 或 SFP28 收發器。</block>
+  <block id="11a92f98e01c18d06291aad0e993ba9b" category="list-text">對於 SG1100 、如果您打算將光纖纜線用於連接埠、請使用一至四個 QSFP+ 或 QSFP28 收發器。</block>
+  <block id="7be200e96b3561254643e0c9ae88d200" category="paragraph">SG110 連接埠連線：</block>
+  <block id="4847cd73c56bfcf0a81879e0f8566e03" category="image-alt">SG110 後置連接器</block>
+  <block id="efa56b23619be44c1edbb8104e56aee7" category="paragraph">SG1100 連接埠連線：</block>
+  <block id="d12ed4a582d120ead36ad1003ad9be52" category="list-text">SG110 ： 10/25-GbE</block>
+  <block id="5a7820dde5654ab76fc1cbd150870c79" category="list-text">SG1100 ： 10/25/40/100-GbE</block>
+  <block id="d8eb0a72dfa8ed2d5ab5e115e3517823" category="inline-link-macro">連接埠連結模式（ SG110 和 SG1100 ）</block>
+  <block id="2bf13c0d2115d6f9d68cd07ae8122eba" category="paragraph">連線到Grid Network和Client Network for StorageGRID the請參閱 <block ref="2d94b3a29297ea0d5c8d287ca16f56f8" category="inline-link-macro-rx"></block></block>
+  <block id="105b9ed0aaa84d2bba41a7b8dbff5bf2" category="paragraph">應用裝置上的管理網路連接埠</block>
+  <block id="81947e39c5dfaeb209b9d5d46a5f214e" category="cell">SG110 連結速度（ GbE ）</block>
+  <block id="dce2124d604851b9d974b519c3d112b3" category="cell">SG1100 連結速度（ GbE ）</block>
+  <block id="b7b297cde875bcc6e3d13f1b9826b7ba" category="paragraph">下圖顯示 SG6060 和 SG6060X 設備中的三個控制器、其中 SG6000-CN 運算控制器位於上方、兩個 E2800 儲存控制器位於底部。SG6060 使用 E2800A 控制器、而 SG6060X 則使用兩種 E2800B 控制器版本中的其中一種。</block>
+  <block id="d4b36e25c7ff304278d8f8203382ad65" category="list-text">版本 1</block>
+  <block id="425d8e1e777a03c3e220dfaac38dbf1f" category="list-text">版本 2</block>
+  <block id="b47d572334b5a2d49d83db2f13386984" category="admonition">如果 E2800B 控制器中的 FC 收發器安裝在上方 FC 連線連接埠（ 6 ）中、請將其移至右下方 FC 連線連接埠（ 7 ）。</block>
+  <block id="6eeb10812f878395fd42337316644656" category="admonition">在相同站台中混合使用不同效能等級的服務應用裝置、例如 SG100 或 SG110 搭配 SG1000 或 SG1100 、可能會在高可用度群組中使用多個節點、或在多個服務應用裝置之間平衡用戶端負載時、導致無法預測且不一致的結果。</block>
+  <block id="9624989f81bd52d3ffbdafbb5e213112" category="list-text">SG110</block>
+  <block id="f067c1ad51f888c421e417d3c8174d73" category="list-text">SG1100</block>
+  <block id="7372a975d9635ea096cdb2e16635d786" category="list-text">存取 SG100 、 SG110 、 SG1000 和 SG1100 的 BMC 介面</block>
+  <block id="db9ca1297cfefe282f7bf704613373d2" category="inline-link-macro">變更 SG110 或 SG1100 服務應用裝置的連結組態</block>
+  <block id="819eab2ae3e43020e15c4fc95f7ca327" category="list-text"><block ref="819eab2ae3e43020e15c4fc95f7ca327" category="inline-link-macro-rx"></block></block>
+  <block id="fdb721fb29bb12d395a4c90d75692893" category="doc">硬體安裝疑難排解（ SG110 和 SG1100 ）</block>
+  <block id="1c8c4e98a896cf2ad92d989eaeee5a54" category="doc">BMC 介面：概觀（ SG100 、 SG110 、 SG1000 、 SG1100 、 SG6000 、 和 SG6100 ）</block>
+  <block id="65e3a43d7f14275aee46dca655a5201f" category="list-text"><block ref="8a17bb4a8f8c3bd8049fbe657de9b51a" category="inline-xref-macro-rx"></block></block>
+  <block id="7265f603fb8b474e3a419ac242490013" category="list-text"><block ref="b6a11a205501ec5e39f6cf064746681c" category="inline-xref-macro-rx"></block></block>
+  <block id="7844be79442a1f1fad55f9da176b627e" category="list-text"><block ref="be6fab1e0dd362a8d9a11399bc350f55" category="inline-xref-macro-rx"></block></block>
+  <block id="f968bb219612a257c41171656737117f" category="inline-link-macro">SG110 和 SG1100 硬體安裝疑難排解</block>
+  <block id="c0a584d4f9599ff521011752760b603a" category="paragraph">請使用此資訊來提供協助 <block ref="948381f0a6f9865418651bea4346a2f1" category="inline-link-macro-rx"></block>。</block>
+  <block id="c46d134b23d9b2e563bf4be88b43e659" category="paragraph">下圖顯示 SG110 和 SG1100 設備上的指示燈和按鈕。</block>
+  <block id="387739340ec21ff77eb9e92d094b5b92" category="image-alt">正面指示燈 - SG110 和 SG1100</block>
+  <block id="587a73f22155129c5ce79bff0c6b56b1" category="paragraph">SG110 和 SG1100 設備並未使用此燈號、因此燈號會持續熄滅。</block>
+  <block id="d01d11481ba69485897f98be94d33893" category="paragraph">下圖顯示 SG110 和 SG1100 應用裝置上的 SSD 指示燈。</block>
+  <block id="4c37ef1bac30cedcc77f06e0f26cd9f3" category="image-alt">BMC 管理連接埠 SG110</block>
+  <block id="746d15603774fdc0343b8559c77603d4" category="image-alt">BMC 管理連接埠 SG1100</block>
+  <block id="12f4c4afd397818417fc7cbaedce23b1" category="doc">安裝至機櫃或機架（ SG110 或 SG1100 ）</block>
+  <block id="3a57cd1d68c79d483d99967be7f6a359" category="paragraph">兩個固態硬碟（ SSD ）以橘色外框表示、用於儲存 StorageGRID 作業系統、並使用 RAID 1 進行鏡射以提供備援。當 SG100 或 SG1000 服務應用裝置設定為管理節點時、這些磁碟機可能會用於儲存稽核記錄、度量和資料庫表格。</block>
+  <block id="63f4b50949264b8c54be43e2d12d082a" category="list-text">SG110 或 SG1100</block>
+  <block id="bd6d0b79af19a1baecedcd634248d8ca" category="image-alt">前置磁碟機 SG110 和 SG1100 應用裝置</block>
+  <block id="e7d8a7ce9695b24defc169611f51402a" category="paragraph">您需要下列額外設備來安裝和設定 SG110 和 SG1100 硬體。</block>
+  <block id="54677e4039d0ef7ec9f667d1a0b1e5b5" category="list-text">SG110 ：</block>
+  <block id="f33bc3cfe65a7ad9e2f916e1e041e2f3" category="list-text">SG1100 ：</block>
+  <block id="668eaf0ed65ab4f0d90cd720e98d9d72" category="image-alt">SG110 上的管理網路連接埠</block>
+  <block id="572cea252186930a48e6e3b0a64c66ed" category="image-alt">SG1100 上的管理網路連接埠</block>
+  <block id="c72b64687a9901d2377088780c852eff" category="image-alt">SG110 連結本機連線</block>
+  <block id="9f50808e83017a9133e8e051bc4983f5" category="image-alt">SG1100 連結本機連線</block>
+  <block id="a2c99ec32793e479a6a8a0fb11c9666c" category="doc">收集網路資訊（ SG110 和 SG1100 ）</block>
+  <block id="3fa963c883b33f97f091fbe72cafd26f" category="paragraph">安裝 SG110 或 SG1100 服務應用裝置之前、請先確認您的 StorageGRID 系統使用的是所需版本的 StorageGRID 軟體。</block>
+  <block id="80cd4249fb4b0334ac9e988dbddb3264" category="paragraph">11.8 或更新版本（建議使用最新的 Hotfix ）</block>
+  <block id="8eed5380e537614403b29f3539b7e10c" category="paragraph">管理員網路for支援功能是選用的網路、可用於系統管理和維護。StorageGRID應用裝置使用應用裝置上的下列 1/10-GbE 管理連接埠、連接到管理網路。</block>
+  <block id="6e6f13400a266a546c81f256261d260b" category="paragraph">SG110 RJ-45 連接埠：</block>
+  <block id="5765a003071d8a52fe1398512d9a0660" category="image-alt">SG110 RJ-45 連接埠</block>
+  <block id="c89838a603eec3f35d1d564f51a40bf9" category="paragraph">SG1100 RJ-45 連接埠：</block>
+  <block id="87374a5b7dbfb66091224d376a30f504" category="image-alt">SG1100 RJ-45 連接埠</block>
+  <block id="2de7b7510b1c4bfe9a42f08f29fcdb3e" category="paragraph">對於 SG110 、請選擇下列其中一項：</block>
+  <block id="018082e73303eec037357829ab824960" category="paragraph">對於 SG1100 、請選擇下列其中一項：</block>
+  <block id="1734c22548c1f8c417968d3230def1c7" category="paragraph">* 注意： * 對於 SG1100 、 10 和 25 GbE 的速度需要使用 QSA 介面卡。</block>
+  <block id="3a63d3bfca1f636e9168549b70448dfd" category="paragraph">SG110 BMC 管理連接埠：</block>
+  <block id="8d77651c88354a545de5eea514584e78" category="image-alt">SG110 管理連接埠</block>
+  <block id="f5bb16f206fe60b4fdf497ea0a247e69" category="paragraph">SG1100 BMC 管理連接埠：</block>
+  <block id="2bd36acac8c427d3e8157e7f4617b910" category="image-alt">SG1100 BMC 管理連接埠</block>
+  <block id="45ae167275a7d0d42250b6c67ac9acf0" category="paragraph">何時 <block ref="a60a1925451f4c518cadfb0c9a8cb902" category="inline-link-macro-rx"></block> 對於 SG110 和 SG1100 應用裝置、您可以將連接埠連結用於連接至 Grid Network 和選用 Client Network 的連接埠、以及連接至選用管理網路的 1-GbE1/10-GbE 管理連接埠。連接埠連結功能可在StorageGRID 各個解決方案之間提供備援路徑、協助您保護資料。</block>
+  <block id="a1ec886f8bef1af4f3a70a46a71936a8" category="paragraph">固定連接埠連結模式是網路連接埠的預設組態。下圖顯示 SG1100 或 SG110 上的網路連接埠如何以固定連接埠連結模式連結。</block>
+  <block id="e68ddbf32fa99f85ac9b7a4a58b4fa76" category="image-alt">SG110 固定連接埠綁定模式</block>
+  <block id="32f1865bf059fbc469deeb7f0c0161c0" category="image-alt">SG1100 固定連接埠綁定模式</block>
+  <block id="7d95a56d60a171f803b8979c4bf9792b" category="image-alt">SG110 集合連接埠連結模式</block>
+  <block id="5cea30664daee040c14b5ec48038f7da" category="image-alt">SG1100 Aggregate Port Bond Mode</block>
+  <block id="653b7502ed464480d71004eb29fd5de2" category="paragraph">對於服務應用裝置上的兩個 1/10-GbE 管理連接埠、您可以選擇「自主網路連結」模式或「主動式備份」網路連結模式、以連線至選用的管理網路。這些圖顯示設備上的管理連接埠如何在管理網路的網路連結模式中連結。</block>
+  <block id="81e02a1fa6feb949b023cf2108d992a3" category="image-alt">SG110 連結式網路管理連接埠</block>
+  <block id="3bebac3facc24bea11ba81197af806d2" category="image-alt">SG1100 連結式網路管理連接埠</block>
+  <block id="ae5a3f5cb9b3ba960a1cb2e38d2c9290" category="admonition">如果您需要在將 1/10-GbE 管理連接埠設定為「主動式備份」模式時、暫時與服務應用裝置建立本機連線、請從兩個管理連接埠拔下纜線、將暫時纜線插入右側的管理連接埠、然後使用 IP 位址 169.254.0.1 存取應用裝置。</block>
+  <block id="d71dc8061014a17250a68fccf3957c0c" category="inline-link-macro">連接埠連結模式（ SG1100 和 SG110 ）</block>
+  <block id="3646dc64c9984fb8e4916b069a738c4d" category="list-text"><block ref="3646dc64c9984fb8e4916b069a738c4d" category="inline-link-macro-rx"></block></block>
+  <block id="1eb5174a3405ee92fa2cb06763568414" category="paragraph">下圖顯示 SG1100 或 SG110 上的四個網路連接埠如何以固定連接埠連結模式（預設組態）連結。</block>
+  <block id="80373303baca203e4e14cdd9e3730d3a" category="image-alt">Aggregate Port Bond Mode SG1100</block>
+  <block id="d724879fa330fae85100664fb33bd284" category="image-alt">SG110 集合式連接埠綁定模式</block>
+  <block id="c185e2af57eb486402a7055cd7b9584b" category="image-alt">管理網路連接埠連結 SG1100</block>
+  <block id="168fbbc8217ae40bd5086de4e4935611" category="image-alt">管理網路連接埠連結 SG110</block>
+  <block id="835d59e48069a93606ecd047daaf1f61" category="summary">StorageGRID SG110 服務應用裝置和 SG1100 服務應用裝置可作為閘道節點和管理節點運作、在 StorageGRID 系統中提供高可用度負載平衡服務。這兩種應用裝置可同時做為閘道節點和管理節點（主要或非主要）。</block>
+  <block id="075d750e820c89a48b3bccebaab0e9e8" category="doc">SG110 與 SG1100 應用裝置：概覽</block>
+  <block id="df039f5a970acf6d438e3773b9545296" category="paragraph">StorageGRID SG110 服務應用裝置和 SG1100 服務應用裝置可作為閘道節點和管理節點運作、在 StorageGRID 系統中提供高可用度負載平衡服務。這兩種設備可同時做為閘道節點和管理節點（主要或非主要）運作。</block>
+  <block id="78fe9ec70c03c307edaf827b55bf78d3" category="list-text">SG110 最多支援四個 10 或 25 GbE 連線至 Grid Network 和 Client Network 。</block>
+  <block id="da5b95c24564c9b901b35d67fe3e06f9" category="list-text">SG1100 最多可支援四個 10 、 25 、 40 或 100 GbE 連線至 Grid Network 和 Client Network 。</block>
+  <block id="6cc7f3972c4008dfe1cc07845c3a6c08" category="section-title">SG110 和 SG1100 圖表</block>
+  <block id="cf8400ebfb22d05446dbafa234f560eb" category="paragraph">此圖顯示 SG110 和 SG1100 的正面、並已卸下擋板。從正面來說、除了擋板上的產品名稱之外、這兩種產品完全相同。</block>
+  <block id="3d2ca047e0ba231007c711e0159fd543" category="image-alt">前端搭載 SSD SG110 和 SG1100</block>
+  <block id="c65113663b1f6da1bdea3bae1199295d" category="paragraph">兩個固態硬碟（ SSD ）以橘色外框表示、用於儲存 StorageGRID 作業系統、並使用 RAID 1 進行鏡射以提供備援。當 SG110 或 SG1100 服務應用裝置設定為管理節點時、這些磁碟機可能會用於儲存稽核記錄、度量和資料庫表格。</block>
+  <block id="529bc7fbe0727a465d63ca1b960f8d1b" category="section-title">SG110 連接器</block>
+  <block id="4884d8655bcd090c55821574a69f257f" category="paragraph">此圖顯示 SG110 的背面、包括連接埠、風扇和電源供應器。</block>
+  <block id="3f116d8147ca3ee2a9deec5a3615b60a" category="image-alt">後端連接器 SG110</block>
+  <block id="7f545ec0012cd3730868130cc2cc32d8" category="section-title">SG1100 連接器</block>
+  <block id="161a3a39166d6d7e69ea53a1220a4857" category="paragraph">此圖顯示 SG1100 背面的連接器。</block>
+  <block id="21d670fa0cbf4d6ef41c014fe84e9791" category="image-alt">背面連接器 SG1100</block>
+  <block id="2352b2130f44ff234de0d0ef0c2249d0" category="paragraph">10/25/40/100-GbE、取決於纜線或收發器類型、交換器速度及設定的連結速度。原生支援 QSFP56 （限於 100GbE/port ）、 QSFP28 （ 100GbE ）和 QSFP+ （ 40GbE ）。選購的 SFP+ （ 10GbE ）或 SFP28 （ 25GbE ）收發器可搭配 QSA （另售）使用。</block>
+  <block id="f0454101a72342bdb68e3f847866df68" category="section-title">SG110 和 SG1100 應用程式</block>
+  <block id="2becee645abbd8209a2519e1ba8c9610" category="list-text">使用兩個 SG110 或兩個 SG1100 設備、將閘道服務設定為閘道節點、以提供閘道服務。</block>
+  <block id="6f0a69f03c1ff183d86866b1f99ec9db" category="admonition">請勿在同一個站台部署 SG110 和 SG1100 服務應用裝置。可能會導致無法預測的效能。</block>
+  <block id="8ea4bf911293cfb2bf04ca96e05c3f41" category="list-text">使用兩個 SG110 或兩個 SG1100 設備、為某些網格管理服務提供備援。請將每個應用裝置設定為管理節點、以達成此目標。</block>
+  <block id="9a36aee0eed152f42afba806fe379d97" category="list-text">使用兩個 SG110 或兩個 SG1100 應用裝置、提供透過一或多個虛擬 IP 位址存取的高可用度負載平衡和流量調整服務。將設備設定為管理節點或閘道節點的任意組合、並將兩個節點新增至同一個HA群組、即可達成此目標。</block>
+  <block id="d8a93d72c559dd827dcc442c95aad95b" category="paragraph">當與 StorageGRID 儲存設備搭配使用時、 SG110 和 SG1100 服務應用裝置都能部署僅應用裝置的網格、而不需依賴外部 Hypervisor 或運算硬體。</block>
+  <block id="c477d61bbefb3230a904489ee2393a0c" category="list-text"><block ref="c477d61bbefb3230a904489ee2393a0c" category="inline-link-macro-rx"></block></block>
+  <block id="174d39beebf966f8b0fd97a60a1b64fd" category="list-text">* BMC 管理網路 * （ SG100 、 SG110 、 SG1000 、 SG1100 、 SG6000 、 和 SG6100 ）：此網路可讓您存取 SG100 、 SG1000 、 SG6000 和 SG6100 應用裝置中的主機板管理控制器、讓您監控和管理應用裝置中的硬體元件。此管理網路可以與管理員網路StorageGRID 相同、也可以是獨立的管理網路。</block>
+  <block id="768c56127fcc2636d57e4635785f71f3" category="section-title">SG110 和 SG1100 服務應用裝置</block>
+  <block id="cb8480a76ca9faf13ba8cdaa026a4115" category="inline-link-macro">SG110 與 SG1100 服務應用裝置：概觀</block>
+  <block id="a6db1221b7bb3dbe5285ed10748c73b9" category="paragraph">全新的 StorageGRID SG110 和 SG1100 服務應用裝置是一項革命性的硬體更新、可提供更優異的管理與負載平衡效能。請參閱 <block ref="3c058555c619096548fbed1bbe78e3c7" category="inline-link-macro-rx"></block>。</block>
+  <block id="a83eeae8b6fd32d08a2347f7444c21ee" category="admonition">在應用裝置處於維護模式時所做的 IP 組態變更不會套用至已安裝的 StorageGRID 環境。執行
+<block ref="cca79d77d4e26ceed98b8b75d018051a" category="inline-link-rx"></block><block ref="921c87cca9b14f15a73f4570ad9f3247" prefix="[" category="inline-code"></block> 命令 ] 將應用裝置重新開機至 StorageGRID 後。</block>
+  <block id="673f51a198147ee01f0eda8def081663" category="paragraph">機箱中的八個風扇位於下列位置（圖示為卸下頂蓋的 StorageGRID 應用裝置前半部）：</block>
+  <block id="3bd0d1998d06f546858be89f67dafb1c" category="inline-link-macro">維護 SG110 和 SG1100 設備</block>
+  <block id="e18debed2185f73ee8477857562ba4ee" category="list-text"><block ref="e18debed2185f73ee8477857562ba4ee" category="inline-link-macro-rx"></block></block>
+  <block id="6632e86febb1a2e603ec2700897f8a86" category="list-text">您可以將 SG100 來源節點應用裝置複製到 SG110 、 SG1000 或 SG1100 服務目標應用裝置。將 SG100 複製到 SG1000 或 SG1100 服務目標應用裝置、可讓管理節點或閘道節點擁有更大的功能。</block>
+  <block id="b4dbdb727139e5ead70576ff4386d050" category="list-text">您可以將 SG110 來源節點應用裝置複製到 SG1100 服務應用裝置目標、讓管理節點或閘道節點擁有更大的功能。</block>
+  <block id="977b528f03583de0752d1521f2d8acb9" category="list-text">您可以將 SG1000 來源節點應用裝置複製到 SG100 、 SG110 或 SG1100 服務目標應用裝置。將 SG1000 複製到 SG100 或 SG110 服務目標應用裝置、可讓您重新部署 SG1000 、以滿足要求更嚴苛的應用程式。</block>
+  <block id="3c893022293982e3947a5e3e05078f75" category="list-text">您可以將 SG1100 來源節點應用裝置複製到 SG110 服務目標應用裝置、以便重新部署 SG1100 、以滿足要求更嚴苛的應用程式。</block>
+  <block id="59830b85779f0e0f99f6eae5dedae7e3" category="paragraph">例如、如果使用 SG1100 或 SG1000 來源節點應用裝置做為管理節點、而您想要將其用作專用的負載平衡節點。</block>
+  <block id="b35c0ef428ec255e038f1521fe8a0683" category="list-text">以 SG110 服務目標應用裝置取代 SG1100 來源節點應用裝置、可將網路連接埠的最大速度從 100-GbE 降低到 25-GbE 。</block>
+  <block id="e84c89730f464a482aef94ee1a675b10" category="paragraph">本節將說明維護 SG110 或 SG1100 應用裝置的特定程序。</block>
+  <block id="ac7d3872004b0a65fa2be33e24e28d8a" category="doc">在資料中心找到 SG110 或 SG1100</block>
+  <block id="a1e0a0113c7c2f260e12a69fe64a56b2" category="list-text">為了協助您在資料中心找到應用裝置、 <block ref="1e7dd4d78109ffd028df0a51c4910e28" category="inline-link-macro-rx"></block>。</block>
+  <block id="b147ebaef0a74f708dd546b7388657fd" category="paragraph"><block ref="2ccd8ceb91ba9a831109d5a1ebd5a69c" category="inline-link-macro-rx"></block> 如果您使用它來尋找產品。
+ ** 按下產品前面板上的識別 LED 開關。
+ ** 使用應用裝置 BMC 介面。</block>
+  <block id="56a38c5f6e46ea3c7a67a98527c13b47" category="doc">變更 SG110 或 SG1100 的連結組態</block>
+  <block id="8420ab9ffa9537cb869e227077bc2a34" category="summary">SG110 和 SG1100 設備有兩個電源供應器、可提供備援功能。如果其中一個電源供應器故障、您必須儘快更換、以確保產品具備備援電力。在本產品中操作的兩個電源供應器必須使用相同的機型和瓦數。</block>
+  <block id="35695e12e3087be52ef18cb96aa963a0" category="doc">更換 SG110 或 SG1100 中的一個或兩個電源供應器</block>
+  <block id="5c7db8d9add126ce8969ab1fd5b370da" category="paragraph">SG110 和 SG1100 設備有兩個電源供應器、可提供備援功能。如果其中一個電源供應器故障、您必須儘快更換、以確保產品具備備援電力。在本產品中操作的兩個電源供應器必須使用相同的機型和瓦數。</block>
+  <block id="5d7e2394702b960f6f58e47acfbb6e8c" category="list-text">您有 <block ref="8e10515474ef3f5b51856ef8da6b6d0a" category="inline-link-macro-rx"></block> 更換電源供應器。</block>
+  <block id="ac1d7d8e6dc26d2f34601663e52a791c" category="paragraph">圖中顯示 SG110 和 SG1100 的兩個電源供應器單元。電源供應器可從產品背面存取。</block>
+  <block id="1677ee8d1b36f438876e123069f4cb74" category="list-text"><block ref="66bdba46c0a2351ab6d6f47ffff23afb" category="inline-link-macro-rx"></block>。</block>
+  <block id="5e9137c2571f75b78aa98161fa9f0946" category="doc">驗證要在 SG110 或 SG1100 中更換的元件</block>
+  <block id="f6cc4cce76198c3fc89a8df4d287eb8f" category="paragraph"><block ref="f6cc4cce76198c3fc89a8df4d287eb8f" category="inline-link-macro-rx"></block></block>
+  <block id="d6b9a24ded15866ec7ccfd9dc123e9f1" category="summary">SG110 和 SG1100 服務應用裝置包含兩個 SSD 磁碟機。磁碟機使用RAID1進行鏡射、以提供備援功能。如果其中一個磁碟機故障、您必須儘快更換、以確保備援。</block>
+  <block id="b7e2329725f0e8436052c511156f3748" category="doc">更換 SG110 或 SG1100 中的磁碟機</block>
+  <block id="42c7a1dda62ababf4cb674eb7c39cc2a" category="list-text">您有 <block ref="8e10515474ef3f5b51856ef8da6b6d0a" category="inline-link-macro-rx"></block>。</block>
+  <block id="de9b0cfebec70b4730ede733544adadc" category="paragraph">磁碟機位於機箱中的下列位置（圖示為卸下擋板的機箱正面）：</block>
+  <block id="66104298dc21ba6c0533bc9d0b9b6bf8" category="image-alt">SG110 和 SG1100 磁碟機位置</block>
+  <block id="bd7f3d409571f64d9e17003a1374da04" category="paragraph">更換的磁碟機會自動重建、並使用工作磁碟機中的鏡射資料。  您可以使用Grid Manager來檢查重新建置的狀態。前往 * 節點 * &gt;<block ref="dde8ded2884e27f868b3a8c4b5416bb3" prefix=" " category="inline-code"></block> &gt;*硬體*。「 Storage RAID Mode 」（儲存 RAID 模式）欄位包含「 Rebuilding 」（重建）訊息、直到磁碟機完全重建為止。</block>
+  <block id="dc707ffba727d12356011f9f73a992eb" category="doc">更換 SG110 或 SG110 設備</block>
+  <block id="f2a5a8758ca15c3a23a2ddbd079a95ee" category="list-text"><block ref="e02d1a5e1dc87cd7778b4a75e2317828" category="inline-link-macro-rx"></block>。</block>
+  <block id="5409d0965e779fcc5620d3cd745ab01f" category="list-text"><block ref="4fa0895d2a03c9ce7010299dc730cc37" category="inline-link-macro-rx"></block>。</block>
+  <block id="a48af9b61164e86b2280ebe2bd272712" category="list-text">請注意故障設備中可更換元件（兩個電源供應器、八個冷卻風扇、三個 NIC 和兩個 SSD ）的位置。</block>
+  <block id="8b1659eb1302c159af7985a2c22fa27e" category="paragraph">兩個磁碟機位於機箱中的下列位置（圖示為卸下擋板的機箱正面）：</block>
+  <block id="c2b15088afc135982ed6160ae5eac813" category="list-text"><block ref="f6c9cca69a348acd8905bc371eb6fc7a" category="inline-link-macro-rx"></block>。</block>
+  <block id="94be36ec44c8318cfab0eec6871e7823" category="list-text">如果您更換的應用裝置已啟用 SED 磁碟機的硬碟機加密、則您必須 <block ref="8ca8505552d3e0acf0b7c638e20906f9" category="inline-link-macro-rx"></block> 可在第一次啓動更換設備時訪問加密的驅動器。</block>
+  <block id="0a5b0b97f6329c71c665a41fb8e50546" category="paragraph"><block ref="0a5b0b97f6329c71c665a41fb8e50546" category="inline-link-macro-rx"></block></block>
+  <block id="77a3632ce069e04667f3c07729bc12e6" category="doc">更換 SG110 和 SG1100 護蓋</block>
+  <block id="17f139a2fd45164bf31db4cbc506794e" category="paragraph"><block ref="94283cdb05b445a973e84301f97caf0b" category="inline-link-macro-rx"></block> 以存取頂蓋。</block>
+  <block id="a216695ce5b47cfaec12a1b19ae3fb60" category="paragraph"><block ref="1b46dbdc1359715fefc31e850941339c" category="inline-link-macro-rx"></block>。</block>
+  <block id="4cac03fe582c6e9c7b00f6150d8de44e" category="summary">如果 SG110 或 SG1100 中的網路介面卡無法正常運作或故障、您可能需要更換其中的網路介面卡（ NIC ）。</block>
+  <block id="4d5c7b30a4d19a46b8aa8fb041a11e07" category="doc">更換 SG110 或 SG1100 中的 NIC</block>
+  <block id="4c68b0943e79e049731958e525193bbd" category="paragraph">如果 SG110 或 SG1100 中的網路介面卡（ NIC ）無法正常運作或故障、您可能需要更換該卡。</block>
+  <block id="927be83d9035c123f8d7d9e8cfafeb94" category="inline-link-macro">實體放置 SG110 或 SG1100 應用裝置</block>
+  <block id="24bf7ce85a6fb58803cea8f5c88ca74b" category="list-text">您有 <block ref="452dbc820d5040c6f7a26972163c857d" category="inline-link-macro-rx"></block> 您要更換資料中心內 NIC 的位置。</block>
+  <block id="73a2518b7d3a736d59aa912a57abda34" category="admonition">答 <block ref="937f3ef5575067c7f2242672e77298dc" category="inline-link-macro-rx"></block> 從機架中取出產品之前、必須先完成此步驟。</block>
+  <block id="6c5d9be04e7c66d804e9922fc591088c" category="list-text">您已拔下所有纜線和 <block ref="dc7225cbd8d4b68386891f4f43bfe53f" category="inline-link-macro-rx"></block>。</block>
+  <block id="f9cae9b628024fbe396a0cbabe539188" category="doc">更換 SG110 或 SG1100 中的 CMOS 電池</block>
+  <block id="bfe3df71e69779f16f86cfe5c2c8630c" category="inline-link-macro">已驗證需要更換 CMOS 電池的 SG110 或 SG1100</block>
+  <block id="41b96317eb4b5bdaa763cb01901ab31a" category="list-text">您有 <block ref="f820af276921202483c4883b0f3a4d39" category="inline-link-macro-rx"></block>。</block>
+  <block id="0da2eb69068c217b0fc7a5d5adde18dc" category="list-text">您有 <block ref="452dbc820d5040c6f7a26972163c857d" category="inline-link-macro-rx"></block> 您要在資料中心更換 CMOS 電池的位置。</block>
+  <block id="ccee7529d7d175aca9c5b67b93650e4d" category="admonition">答 <block ref="af671dbc17aabf78e439327329fcfaf5" category="inline-link-macro-rx"></block> 從機架中取出產品之前、必須先完成此步驟。</block>
+  <block id="f37e66e07e00675fdcc0bb5b4a2d2431" category="doc">開啟和關閉 SG110 或 SG1100 識別 LED</block>
+  <block id="93ae44b8461554818c19394aec7564fa" category="paragraph"><block ref="93ae44b8461554818c19394aec7564fa" category="inline-link-macro-rx"></block></block>
+  <block id="3a71c03d18843882d300afa68c266c13" category="summary">將 SG110 或 SG1100 從機櫃或機架上取下、即可拆裝機箱頂蓋或將產品移至其他位置、然後在硬體維護完成時、將產品重新安裝到機櫃或機架中。</block>
+  <block id="bc9596d6807bde2e993c410c91269350" category="doc">將 SG110 和 SG1100 重新放置在機櫃或機架中</block>
+  <block id="d6621ea2246b016be3984fe3722f717a" category="section-title">從機櫃或機架上卸下 SG110 或 SG1100</block>
+  <block id="2a18f9c740fdc38db3054f80b5148df0" category="list-text">您可以使用標籤來識別連接到 SG110 或 SG1100 的每條纜線。</block>
+  <block id="e8a36eefffb270e7fdfcbe70cfae02c8" category="inline-link-macro">實體放置 SG110 或 SG1100</block>
+  <block id="da293f6803f9457d5e25775b4d7ba62c" category="list-text">您有 <block ref="cbbe557358a36c0ce95c8f4a10b6af30" category="inline-link-macro-rx"></block> 您在資料中心執行維護的位置。</block>
+  <block id="c9c52f1bbaf493c0bd060f99e9b4d31b" category="inline-link-macro">關閉 SG110 或 SG1100</block>
+  <block id="a356c4d9c1948b8dc45c1ffca6f88115" category="list-text">您有 <block ref="7c024e7b821ea2605c8d62e2c8b78fe4" category="inline-link-macro-rx"></block>。</block>
+  <block id="654b557c64cf80df53d669b5e931d3da" category="image-alt">SG110 或 SG1100 機架固定螺絲</block>
+  <block id="4187702a620626981506c308f62e0442" category="list-text">將 SG110 或 SG1100 從機架中向前滑出、直到安裝滑軌完全展開、而且您會聽到兩側的卡榫發出卡嗒聲。</block>
+  <block id="609dfb79180e75d183414141ff1c7699" category="section-title">將 SG110 或 SG1100 重新安裝到機櫃或機架中</block>
+  <block id="30c3e76ee9fe69a1db3394d21116aa18" category="paragraph">您已重新安裝產品護蓋。</block>
+  <block id="2779825f63604db4b27b188f2d03737b" category="inline-link-macro">重新安裝 SG110 或 SG1100 護蓋</block>
+  <block id="c95bfc841349ab8679294cc677e88c9d" category="paragraph"><block ref="c95bfc841349ab8679294cc677e88c9d" category="inline-link-macro-rx"></block></block>
+  <block id="e19587ca009fb28c16d995c5edbd1fa5" category="list-text">同時按下藍色滑軌可同時釋放兩個機架滑軌、並將 SG110 或 SG1100 滑入機架、直到完全就位。</block>
+  <block id="22dc184830c2cbda4b043ab5a3cce6bb" category="image-alt">SG110 或 SG1100 滑軌</block>
+  <block id="74c2ea6aca800b8766b877c2b16a7728" category="paragraph"><block ref="c8ee67fa13b2b241963a60e9659d4d7f" category="inline-link-macro-rx"></block>。</block>
+  <block id="b4b1ae13ff19104a2638fac1e91cf92f" category="doc">關閉和開啟 SG110 或 SG1100 電源</block>
+  <block id="b9240936ed31e305085463f5cce2c053" category="paragraph">您可以關閉 SG110 或 SG1100 應用裝置、然後重新開機以執行維護。</block>
+  <block id="b1c1dfb471a6f1f3fd2166422e5ee696" category="section-title">關閉 SG110 或 SG1100 應用裝置</block>
+  <block id="ac7ab9bcfd9ccd7d72e4ad0c7e3ecfd4" category="section-title">開啟 SG110 或 SG1100 電源、並驗證作業</block>
+  <block id="2288cb67d86668be6f1a261840ed0916" category="list-text">您有 <block ref="c78043e4d899bb99da1fcc488bba84ed" category="inline-link-macro-rx"></block> 並已連接資料纜線和電源線。</block>
+  <block id="fa2af59b6156d0aec104e44663ccb746" category="list-text">您有 <block ref="1d434378bf19f38d94d6718c8351074c" category="inline-link-macro-rx"></block>。</block>
+  <block id="6a580be7135080b681d4be92c03ad758" category="summary">SG110 或 SG1100 設備有八個冷卻風扇。如果其中一個風扇故障、您必須儘快更換、以確保產品具有適當的冷卻效果。</block>
+  <block id="2f565a1c76f8655ee5b895b48fdd9868" category="doc">更換 SG110 或 SG1100 中的風扇</block>
+  <block id="651fc7ecc07d3c5589bcdbf86900528e" category="list-text">您有 <block ref="452dbc820d5040c6f7a26972163c857d" category="inline-link-macro-rx"></block> 您要在資料中心更換風扇的位置。</block>
+  <block id="a494d05ff2448de4863300634404b00e" category="list-text"><block ref="7605313cc83fe468541967e7fefdaac9" category="inline-link-macro-rx"></block>，然後向下按閂鎖以將主機蓋固定到位。</block>
+  <block id="2b714c159ee37bfcda3d8997dbf8c34a" category="list-text"><block ref="d562fca429c3ba3818e1a9ce8be74798" category="inline-link-macro-rx"></block> 並監控應用裝置 LED 和開機代碼。</block>
+  <block id="b337d01c3682624445d3043b34d4f142" category="paragraph">* 維護組態程序 * 是使用 Appliance Installer 、 Grid Manager 或 BMC 介面來執行。這些程序包括：</block>
+  <block id="e26ffb539a1b2a0b29867450005b8bee" category="paragraph"><block ref="e6765e58c61518e3539dcb7717155370" category="inline-link-macro-rx"></block>。</block>
+  <block id="e7e49b9f955135fd24f83c367558f704" category="sidebar">更換 SG110 或 SG1100 設備</block>
+  <block id="b2f29fa8f4a845926f04c6b42a76608e" category="sidebar">將 SG110 或 SG1100 重新放置在機架中</block>
+  <block id="05e5b945264ec2a7a4fb43cd609f1363" category="sidebar">SG110 和 SG1100 網路資訊</block>
+  <block id="74c62c67c3d6082d54f23ecf0b6db84a" category="sidebar">SG110 和 SG1100 （新）</block>
+  <block id="d6fca2602ac9cbcfb8a14dfb1f7739de" category="sidebar">設定 BMC 介面（ SG100 、 SG110 、 SG1000 、 SG1100 、 SG6000 、 和 SG6100 ）</block>
+  <block id="3cedc3146b91b16ed8ebb1fee915113d" category="sidebar">疑難排解安裝（ SG110 和 SG1100 ）</block>
+  <block id="a2e2012b6b8c458228b1e15b454770f0" category="sidebar">維護 SG110 和 SG1100 硬體</block>
+  <block id="d1a3d5a511aaa49a39568a8f65ac6b29" category="sidebar">SG110 和 SG1100 硬體維護</block>
+  <block id="9cb56d535a16391a544c46fd4d91e6ba" category="sidebar">維護組態程序： SG110 和 SG1100</block>
+  <block id="c8815aa195405d61f92fd38ffbcf2c8c" category="sidebar">硬體維護程序： SG110 和 SG1100</block>
+  <block id="8234ee9f46864ecf847ef0ef05ff4451" category="sidebar">將應用裝置重新放置在機架中</block>
+  <block id="824ffb105357c984745978d4f897102d" category="sidebar">維護組態程序 - SG6100</block>
 </blocks>

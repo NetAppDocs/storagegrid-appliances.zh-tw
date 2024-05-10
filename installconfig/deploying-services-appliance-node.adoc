@@ -1,7 +1,7 @@
 ---
 permalink: installconfig/deploying-services-appliance-node.html 
 sidebar: sidebar 
-keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
+keywords: storagegrid, sg110, sg1100, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
 summary: 您可以將服務應用裝置部署為主要管理節點、非主要管理節點或閘道節點。所有服務應用裝置都可以同時做為閘道節點和管理節點 \ （主要或非主要 \ ）運作。 
 ---
 = 部署服務應用裝置節點
@@ -105,7 +105,7 @@ NOTE: 如果您需要手動存取「監視器安裝」頁面、請從功能表�
 
 
 
-NOTE: 請勿在同一個站台部署 SG100 和 SG1000 服務應用裝置。可能會導致無法預測的效能。
+IMPORTANT: 在相同站台中混合使用不同效能等級的服務應用裝置、例如 SG100 或 SG110 搭配 SG1000 或 SG1100 、可能會在高可用度群組中使用多個節點、或在多個服務應用裝置之間平衡用戶端負載時、導致無法預測且不一致的結果。
 
 
 NOTE: 如果您需要一次部署多個應用裝置節點、您可以將安裝程序自動化。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。

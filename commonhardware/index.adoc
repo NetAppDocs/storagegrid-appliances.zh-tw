@@ -41,5 +41,6 @@ NOTE: 在這些說明中， "Linux " 指的是 Red Hat ® Enterprise Linux ® �
 * link:../sg6100/index.html["維護 SG6100 應用裝置"]
 * link:../sg6000/index.html["維護 SG6000 應用裝置"]
 * link:../sg5700/index.html["維護SG5700應用裝置"]
+* link:../sg110-1100/index.html["維護 SG110 和 SG1100 設備"]
 * link:../sg100-1000/index.html["維護 SG100 和 SG1000 設備"]
 

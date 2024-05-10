@@ -21,8 +21,10 @@ indexpage:
       url: "../commonhardware/appliance-node-cloning-procedure.html"
   - title: 應用裝置專屬維護
     links:
-    - title: SG1000 和 SG100
+    - title: SG100 與 SG1000
       url: "../landing-maintain-sg1000-100/index.html"
+    - title: SG110 和 SG1100
+      url: "../landing-maintain-sg1100-110/index.html"
     - title: SG5600
       url: "../sg5600/index.html"
     - title: SG5700

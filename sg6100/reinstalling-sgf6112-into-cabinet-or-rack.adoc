@@ -81,4 +81,4 @@ NOTE: 為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或踩�
 
 
 .完成後
-link:powering-on-sgf6112-and-verifying-operation.html["重新啟動應用裝置"]。
+link:power-sgf6112-off-on.html#power-on-sgf6112-and-verify-operation["重新啟動應用裝置"]。

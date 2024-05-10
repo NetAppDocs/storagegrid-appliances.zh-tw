@@ -1,0 +1,228 @@
+---
+permalink: installconfig/hardware-description-sg110-and-1100.html 
+sidebar: sidebar 
+keywords: storagegrid, sg110, sg1100, service appliance, services appliance, gateway Node, admin node, overview, models, features, applications, how to use, services 
+summary: StorageGRID SG110 服務應用裝置和 SG1100 服務應用裝置可作為閘道節點和管理節點運作、在 StorageGRID 系統中提供高可用度負載平衡服務。這兩種應用裝置可同時做為閘道節點和管理節點（主要或非主要）。 
+---
+= SG110 與 SG1100 應用裝置：概覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID SG110 服務應用裝置和 SG1100 服務應用裝置可作為閘道節點和管理節點運作、在 StorageGRID 系統中提供高可用度負載平衡服務。這兩種設備可同時做為閘道節點和管理節點（主要或非主要）運作。
+
+
+
+== 應用裝置功能
+
+服務應用裝置的兩種機型都提供下列功能：
+
+* 閘道節點或管理節點功能StorageGRID 適用於一個不全系統。
+* 旨在簡化節點部署與組態的《產品安裝程式（the StorageGRID
+* 部署後、即可從StorageGRID 現有的管理節點或從下載到本機磁碟機的軟體存取此功能。為了進一步簡化部署程序、最新版軟體會在製造期間預先載入應用裝置。
+* 用於監控和診斷部分應用裝置硬體的基礎板管理控制器（BMC）。
+* 連線到所有三StorageGRID 個不完整網路的能力、包括Grid Network、管理網路和用戶端網路：
++
+** SG110 最多支援四個 10 或 25 GbE 連線至 Grid Network 和 Client Network 。
+** SG1100 最多可支援四個 10 、 25 、 40 或 100 GbE 連線至 Grid Network 和 Client Network 。
+
+
+
+
+
+
+== SG110 和 SG1100 圖表
+
+此圖顯示 SG110 和 SG1100 的正面、並已卸下擋板。從正面來說、除了擋板上的產品名稱之外、這兩種產品完全相同。
+
+image::../media/sg1100_front_with_ssds.png[前端搭載 SSD SG110 和 SG1100]
+
+兩個固態硬碟（ SSD ）以橘色外框表示、用於儲存 StorageGRID 作業系統、並使用 RAID 1 進行鏡射以提供備援。當 SG110 或 SG1100 服務應用裝置設定為管理節點時、這些磁碟機可能會用於儲存稽核記錄、度量和資料庫表格。
+
+其餘磁碟機插槽為空白。
+
+
+
+== SG110 連接器
+
+此圖顯示 SG110 的背面、包括連接埠、風扇和電源供應器。
+
+image::../media/sg110_rear_view.png[後端連接器 SG110]
+
+[cols="1a,2a,2a,2a"]
+|===
+| 標註 | 連接埠 | 類型 | 使用 
+
+
+ a| 
+1.
+ a| 
+網路連接埠1-4
+ a| 
+10/25-GbE、根據纜線或SFP收發器類型（支援SFP28和SFP+模組）、交換器速度和設定的連結速度
+ a| 
+連線到Grid Network和Client Network for StorageGRID the
+
+
+
+ a| 
+2.
+ a| 
+BMC管理連接埠
+ a| 
+1-GbE（RJ-45）
+ a| 
+連接至應用裝置基板管理控制器。
+
+
+
+ a| 
+3.
+ a| 
+診斷與支援連接埠
+ a| 
+* VGA
+* USB
+* Micro-USB 主控台連接埠
+* Micro-SD 插槽模組
+
+ a| 
+保留以供技術支援使用。
+
+
+
+ a| 
+4.
+ a| 
+管理網路連接埠1
+ a| 
+1/10-GbE （ RJ-45 ）
+ a| 
+將應用裝置連接至管理網路StorageGRID 以供其使用。
+
+
+
+ a| 
+5.
+ a| 
+管理網路連接埠2.
+ a| 
+1/10-GbE （ RJ-45 ）
+ a| 
+選項：
+
+* 與管理連接埠1連結、以建立與管理網路StorageGRID 的備援連線、以利執行支援。
+* 保持中斷連線、可用於暫用本機存取（IP 169.254.0.1）。
+* 安裝期間、如果 DHCP 指派的 IP 位址無法使用、請使用連接埠 2 進行 IP 組態。
+
+
+|===
+
+
+== SG1100 連接器
+
+此圖顯示 SG1100 背面的連接器。
+
+image::../media/sg1100_rear_view.png[背面連接器 SG1100]
+
+[cols="1a,2a,2a,2a"]
+|===
+| 標註 | 連接埠 | 類型 | 使用 
+
+
+ a| 
+1.
+ a| 
+網路連接埠1-4
+ a| 
+10/25/40/100-GbE、取決於纜線或收發器類型、交換器速度及設定的連結速度。原生支援 QSFP56 （限於 100GbE/port ）、 QSFP28 （ 100GbE ）和 QSFP+ （ 40GbE ）。選購的 SFP+ （ 10GbE ）或 SFP28 （ 25GbE ）收發器可搭配 QSA （另售）使用。
+ a| 
+連線到Grid Network和Client Network for StorageGRID the
+
+
+
+ a| 
+2.
+ a| 
+BMC管理連接埠
+ a| 
+1-GbE（RJ-45）
+ a| 
+連接至應用裝置基板管理控制器。
+
+
+
+ a| 
+3.
+ a| 
+診斷與支援連接埠
+ a| 
+* VGA
+* USB
+* Micro-USB 主控台連接埠
+* Micro-SD 插槽模組
+
+ a| 
+保留以供技術支援使用。
+
+
+
+ a| 
+4.
+ a| 
+管理網路連接埠1
+ a| 
+1/10-GbE （ RJ-45 ）
+ a| 
+將應用裝置連接至管理網路StorageGRID 以供其使用。
+
+
+
+ a| 
+5.
+ a| 
+管理網路連接埠2.
+ a| 
+1/10-GbE （ RJ-45 ）
+ a| 
+選項：
+
+* 與管理連接埠1連結、以建立與管理網路StorageGRID 的備援連線、以利執行支援。
+* 保持中斷連線、可用於暫用本機存取（IP 169.254.0.1）。
+* 安裝期間、如果 DHCP 指派的 IP 位址無法使用、請使用連接埠 2 進行 IP 組態。
+
+
+|===
+
+
+== SG110 和 SG1100 應用程式
+
+您可以StorageGRID 透過多種方式設定支援服務應用裝置、以提供閘道服務、以及某些網格管理服務的備援功能。
+
+應用裝置的部署方式如下：
+
+* 將新的或現有的網格新增為閘道節點
+* 將新網格新增為主要或非主要管理節點、或新增至現有網格作為非主要管理節點
+* 同時以閘道節點和管理節點（主要或非主要）的形式運作
+
+
+應用裝置可協助使用高可用度（HA）群組、並為S3或Swift資料路徑連線提供智慧型負載平衡。
+
+下列範例說明如何最大化應用裝置的功能：
+
+* 使用兩個 SG110 或兩個 SG1100 設備、將閘道服務設定為閘道節點、以提供閘道服務。
++
+
+IMPORTANT: 請勿在同一個站台部署 SG110 和 SG1100 服務應用裝置。可能會導致無法預測的效能。
+
+* 使用兩個 SG110 或兩個 SG1100 設備、為某些網格管理服務提供備援。請將每個應用裝置設定為管理節點、以達成此目標。
+* 使用兩個 SG110 或兩個 SG1100 應用裝置、提供透過一或多個虛擬 IP 位址存取的高可用度負載平衡和流量調整服務。將設備設定為管理節點或閘道節點的任意組合、並將兩個節點新增至同一個HA群組、即可達成此目標。
++
+
+IMPORTANT: 如果您在同一個 HA 群組中使用管理節點和閘道節點、則僅管理節點連接埠不會容錯移轉。請參閱的說明 https://docs.netapp.com/us-en/storagegrid-118/admin/configure-high-availability-group.html["設定 HA 群組"^]。
+
+
+
+當與 StorageGRID 儲存設備搭配使用時、 SG110 和 SG1100 服務應用裝置都能部署僅應用裝置的網格、而不需依賴外部 Hypervisor 或運算硬體。

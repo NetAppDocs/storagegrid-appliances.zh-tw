@@ -27,9 +27,19 @@ summary: 存取 BMC 介面之前、您必須先設定 SG6000-CN 控制器或服�
 image::../media/sg100_bmc_management_port.png[SG100 BMC 管理連接埠]
 
 --
+.SG110
+--
+image::../media/sgf6112_cn_bmc_management_port.png[BMC 管理連接埠 SG110]
+
+--
 .SG1000
 --
 image::../media/sg1000_bmc_management_port.png[SG1000 BMC管理連接埠]
+
+--
+.SG1100
+--
+image::../media/sg1100_bmc_management_port.png[BMC 管理連接埠 SG1100]
 
 --
 .SG6000

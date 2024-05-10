@@ -14,7 +14,9 @@ summary: 您可以使用 DHCP 或靜態 IP 位址、在下列應用裝置機型�
 您可以使用 DHCP 或靜態 IP 位址、在下列應用裝置機型上存取 BMC 介面：
 
 * SG100
+* SG110
 * SG1000
+* SG1100
 * SG6000
 * SG6100
 
@@ -30,9 +32,19 @@ summary: 您可以使用 DHCP 或靜態 IP 位址、在下列應用裝置機型�
 image::../media/sg100_bmc_management_port.png[SG100 BMC 管理連接埠]
 
 --
+.SG110
+--
+image::../media/sgf6112_cn_bmc_management_port.png[BMC 管理連接埠 SG110]
+
+--
 .SG1000
 --
 image::../media/sg1000_bmc_management_port.png[SG1000 BMC管理連接埠]
+
+--
+.SG1100
+--
+image::../media/sg1100_bmc_management_port.png[BMC 管理連接埠 SG1100]
 
 --
 .SG6000

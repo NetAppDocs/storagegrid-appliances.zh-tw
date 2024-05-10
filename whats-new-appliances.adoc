@@ -18,6 +18,6 @@ summary: 瞭解本文件網站的新功能。
 
 
 
-== SGF6112 All Flash 應用裝置
+== SG110 和 SG1100 服務應用裝置
 
-全新的 StorageGRID SGF6112 儲存設備採用精巧設計、並將運算控制器和儲存控制器整合至 1U 機箱中。此應用裝置支援 12 個 SSD NVMe 磁碟機、每個磁碟機的儲存容量最高可達 15.3 TB 。SSD 磁碟機位於 RAID 中、可提供彈性的物件儲存設備。請參閱 link:installconfig/hardware-description-sg6100.html["SGF6112 應用裝置：綜覽"]。
+全新的 StorageGRID SG110 和 SG1100 服務應用裝置是一項革命性的硬體更新、可提供更優異的管理與負載平衡效能。請參閱 link:./installconfig/hardware-description-sg110-and-1100.html["SG110 與 SG1100 服務應用裝置：概觀"]。

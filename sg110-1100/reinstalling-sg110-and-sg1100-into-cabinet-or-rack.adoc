@@ -1,0 +1,86 @@
+---
+permalink: sg110-1100/reinstalling-sg110-and-sg1100-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg110, sg1100, admin node, admin appliance, install, installing, installation, cabinet, rack 
+summary: 將 SG110 或 SG1100 從機櫃或機架上取下、即可拆裝機箱頂蓋或將產品移至其他位置、然後在硬體維護完成時、將產品重新安裝到機櫃或機架中。 
+---
+= 將 SG110 和 SG1100 重新放置在機櫃或機架中
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+將 SG110 或 SG1100 從機櫃或機架上取下、即可拆裝機箱頂蓋或將產品移至其他位置、然後在硬體維護完成時、將產品重新安裝到機櫃或機架中。
+
+
+
+== 從機櫃或機架上卸下 SG110 或 SG1100
+
+.開始之前
+* 您可以使用標籤來識別連接到 SG110 或 SG1100 的每條纜線。
+* 您有 link:locating-sg110-and-sg1100-in-data-center.html["實體放置 SG110 或 SG1100"] 您在資料中心執行維護的位置。
+* 您有 link:power-sg110-and-sg1100-off-on.html#shut-down-the-appliance["關閉 SG110 或 SG1100"]。
++
+
+CAUTION: 請勿使用電源開關關閉產品。
+
+
+
+.步驟
+. 標示產品電源纜線、然後拔下產品電源纜線。
+. 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
+. 標記並拔下應用裝置資料纜線和任何 SFP+ 或 SFP28 收發器。
++
+
+IMPORTANT: 為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或踩踏。
+
+. 鬆開產品前面板上的兩顆緊固螺絲。
++
+image::../media/sg6060_rack_retaining_screws.png[SG110 或 SG1100 機架固定螺絲]
+
+. 將 SG110 或 SG1100 從機架中向前滑出、直到安裝滑軌完全展開、而且您會聽到兩側的卡榫發出卡嗒聲。
++
+產品頂蓋可供使用。
+
+. 選用：如果您要從機櫃或機架中完全移除產品、請遵循軌道套件的指示、將產品從軌道中移除。
+
+
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+
+
+
+== 將 SG110 或 SG1100 重新安裝到機櫃或機架中
+
+.開始之前
+您已重新安裝產品護蓋。
+
+link:reinstalling-sg110-and-sg1100-cover.html["重新安裝 SG110 或 SG1100 護蓋"]
+
+.步驟
+. 同時按下藍色滑軌可同時釋放兩個機架滑軌、並將 SG110 或 SG1100 滑入機架、直到完全就位。
++
+如果您無法進一步移動控制器、請拉動機箱兩側的藍色閂鎖、將控制器完全滑入。
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[SG110 或 SG1100 滑軌]
+
++
+
+NOTE: 在您開啟控制器電源之前、請勿連接前擋板。
+
+. 鎖緊控制器前面板上的緊固螺絲、將控制器固定在機架中。
++
+image::../media/sg6060_rack_retaining_screws.png[SG110 或 SG1100 機架固定螺絲]
+
+. 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
+. link:../installconfig/cabling-appliance.html["重新連接控制器資料纜線和任何 SFP+ 或 SFP28 收發器"]。
++
+
+IMPORTANT: 為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或踩踏。
+
+. link:../installconfig/connecting-power-cords-and-applying-power.html["重新連接控制器電源線"]。
+
+
+.完成後
+link:power-sg110-and-sg1100-off-on.html#power-on-sg110-or-sg1100-and-verify-operation.html["重新啟動應用裝置"]。
