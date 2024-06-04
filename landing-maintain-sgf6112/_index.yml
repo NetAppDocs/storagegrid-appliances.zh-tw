@@ -36,7 +36,7 @@ indexpage:
     - title: 更換電源供應器
       url: "../sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
     - title: 更換儲存控制器機櫃或擴充機櫃中的電源供應器（ SG6160 ）
-      url: "/sg6100/replace-6100-cn-power-canister.html"
+      url: "../sg6100/replace-6100-cn-power-canister.html"
     - title: 更換 SGF6112 或 SG6100-CN 中的風扇（ SG6160 ）
       url: "../sg6100/replacing-fan-in-sgf6112.html"
     - title: 更換儲存控制器機櫃或擴充機櫃中的風扇（ SG6160 ）
@@ -48,14 +48,15 @@ indexpage:
     - title: 更換儲存控制器機櫃或擴充機櫃中的磁碟機（ SG6160 ）
       url: "../sg6100/replace-6160-drives-60.html"
     - title: 更換內部 NIC （ SGF6112 和 SG6160 ）
-      url: "/sg6100/replace-nic-in-sgf6112.html"
+      url: "../sg6100/replace-nic-in-sgf6112.html"
     - title: 更換外部 NIC （ SG6160 ）
-      url: "/sg6100/replace-ocp-nic-in-sg6100-cn.html"
+      url: "../sg6100/replace-ocp-nic-in-sg6100-cn.html"
     - title: 更換 DIMM （ SG6160 ）
-      url: "/sg6100/replace-dimms-e4000.html"
+      url: "../sg6100/replace-dimms-e4000.html"
     - title: 更換電池（ SG6160 ）
-      url: "/sg6100/replace-battery-e4000.html"
+      url: "../sg6100/replace-battery-e4000.html"
     - title: 裝回機箱蓋
+      url: "../sg6100/reinstalling-sgf6112-cover.html"
     - title: 更換 CMOS 電池
       url: "../sg6100/replace-cmos-in-sgf6112.html"
     - title: 將擴充機櫃新增至部署的 SG6160
