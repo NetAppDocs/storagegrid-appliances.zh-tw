@@ -670,17 +670,8 @@ EP
 --
 .SG5800
 --
-應用裝置控制器包含可協助您判斷應用裝置控制器狀態的指示燈：
+應用裝置控制器包含可協助您判斷應用裝置控制器狀態的指示燈。請使用此資訊來提供協助 link:troubleshooting-hardware-installation.html["疑難排解 SG5800 硬體安裝"]。
 
-* <<status_indicators_SG5800_controller,SG5800 控制器上的狀態指示燈>>
-* <<general_boot_codes_sg5800,一般開機代碼>>
-* <<boot_codes_SG5800_controller,SG5800 控制器開機代碼>>
-* <<error_codes_SG5800_controller,SG5800 控制器錯誤代碼>>
-
-
-請使用此資訊來提供協助 link:troubleshooting-hardware-installation.html["疑難排解 SG5800 硬體安裝"]。
-
-[[status_indicators_SG5800_controller]]
 SG5800 控制器上的狀態指示燈::
 +
 --

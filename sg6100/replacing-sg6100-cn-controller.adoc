@@ -18,7 +18,7 @@ summary: 如果 SG6100-CN 控制器無法以最佳方式運作或發生故障、
 * 您可以使用標籤來識別連接至控制器的每條纜線。
 * 您已實際找到要在資料中心更換的控制器。
 +
-link:locating-controller-in-data-center.html["在資料中心找到控制器"]
+link:locating-sgf6112-in-data-center.html["在資料中心找到控制器"]
 
 
 
@@ -45,7 +45,7 @@ NOTE: 如果您在安裝StorageGRID 完此程序之前更換控制器、可能St
 .. 輸入： `*run-host-command ipmitool lan print*` 顯示應用裝置目前的 BMC 組態。
 
 
-. 如果 SG6100-CN 控制器運作良好、可進行控制關機、 link:power-sg6100-cn-controller-off-on.html#shut-down-sg6100-cn-controller["關閉 SG6100-CN 控制器"]。
+. 如果 SG6100-CN 控制器運作良好、可進行控制關機、 link:power-sgf6112-off-on.html["關閉 SG6100-CN 控制器"]。
 . 如果此 StorageGRID 應用裝置上的任何網路介面都設定為使用 DHCP 、您可能需要更新 DHCP 伺服器上的永久 DHCP 租用指派、以參照替換應用裝置的 MAC 位址。此更新可確保設備已指派預期的 IP 位址。
 . 移除並更換 SG6100-CN 控制器：
 +

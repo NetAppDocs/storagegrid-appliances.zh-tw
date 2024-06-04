@@ -5061,14 +5061,7 @@
   <block id="e6c11d6c727d6af4a15aadeb9c8d765c" category="list-text">將前擋板連接到 SG6100-CN 控制器（如果已卸下）。</block>
   <block id="784b225f130f7d41e24cfeb95e8faec4" category="doc">設定 SANtricity 系統管理員（ SG6160 、 SG6000 、 SG5700 和 SG5800 ）</block>
   <block id="e9b0f91353e7e92b0bdad4d600bf8aad" category="inline-xref">SG5800 控制器上的狀態指示燈</block>
-  <block id="33142c71ffb7a820e39e2d8b9b87c90d" category="list-text"><block ref="562ba6ab1f9a30f1dbd536755e8030f3" category="inline-xref-macro-rx"></block></block>
-  <block id="6e2ca3456886b60923634ed7eb9c8d7f" category="list-text"><block ref="4602dd8dedea945665f66e0efb09332c" category="inline-xref-macro-rx"></block></block>
-  <block id="f536acc32b97ad90a5740f9c6acd9249" category="inline-xref">SG5800 控制器開機代碼</block>
-  <block id="5576c47c21553b6c80a9811f4546218f" category="list-text"><block ref="f285587c275058bc7d3d747c12066f52" category="inline-xref-macro-rx"></block></block>
-  <block id="540f46aeae603c2f4426ce72f569d476" category="inline-xref">SG5800 控制器錯誤代碼</block>
-  <block id="4657bcb798d90e371448f17714c8c9f9" category="list-text"><block ref="3e9e4f9184270725588680504bdaec1d" category="inline-xref-macro-rx"></block></block>
   <block id="ee0d7ce7f3f04a927e4972f514fd99c9" category="inline-link-macro">疑難排解 SG5800 硬體安裝</block>
-  <block id="274d64f0b9bfee260adbb6408672a4b0" category="paragraph">請使用此資訊來提供協助 <block ref="e0e94668a35b0e62f1c3c83bc6a3960d" category="inline-link-macro-rx"></block>。</block>
   <block id="6e11a1131d9974f2fd0c9ec0f8b70da1" category="paragraph">StorageGRID 應用裝置安裝程式啟動後、您應該定期檢閱 SG5800 控制器上的狀態指示燈。</block>
   <block id="043b3b7e7d1cab87dcb9bbe4e09747f6" category="paragraph">下圖顯示 SG5800 控制器上的狀態指示燈。</block>
   <block id="ee19c832192b29abe3714f9cd076b86b" category="paragraph">下圖顯示 SG6100 應用裝置上的指示燈和按鈕。</block>
@@ -5322,19 +5315,7 @@
   <block id="002c473abb16ba8030a796dbd755e33d" category="list-text">使用風扇箱把手將風扇箱從產品中拉出。</block>
   <block id="64c29ebf8cd32413c80f6ffda96405ee" category="list-text">將更換的風扇箱完全滑入產品、然後移動風扇箱把手、直到卡入橘色卡舌為止。</block>
   <block id="37a36b8523adcf2cc0873f9e2f41ca9c" category="doc">更換 SGF6112 或 SG6100-CN 護蓋</block>
-  <block id="854c7629d35948a4df812750dec127ee" category="summary">從機櫃或機架中卸下 SG6100-CN 控制器、以拆裝機箱頂蓋或將產品移至不同位置、然後在硬體維護完成時、將控制器重新安裝到機櫃或機架中。</block>
-  <block id="5fb243f0f549e18d4924ebf22621bb48" category="doc">將 SG6100-CN 控制器重新放置在機櫃或機架中</block>
-  <block id="abc84ec80690dbc94a66ecc51074d3c0" category="section-title">從機櫃或機架上卸下 SG6100-cn 控制器</block>
-  <block id="881b8f310c4263d181dbaedf240d3d2d" category="paragraph">從機櫃或機架中卸下 SG6100-CN 控制器、以存取頂蓋或將控制器移至其他位置。</block>
-  <block id="907fea185972d8e2b273ebea2808d7f1" category="list-text">您可以使用標籤來識別連接到 SG6100-CN 控制器的每條纜線。</block>
-  <block id="fda31ec860925354771998211c7831af" category="list-text">您已實際找到 SG6100-CN 控制器、在其中執行資料中心的維護作業。</block>
   <block id="fbc4a37098bcf763b9f98fd0a2884283" category="inline-link-macro">關閉 SG6100-CN 控制器</block>
-  <block id="5f63238f202a5cd936c6942641733c6e" category="list-text">您有 <block ref="d00266d0f93b386e66854bd4e0adc388" category="inline-link-macro-rx"></block>。</block>
-  <block id="7e50f59ca73ccb860aa814cfd32bc021" category="list-text">將 SG6100-CN 控制器向前滑出機架、直到安裝滑軌完全展開、同時聽到兩側的卡榫發出喀噠聲。</block>
-  <block id="76d74a3c6e61e29e13b8b398f522989d" category="section-title">將 SG6100-cn 控制器重新安裝到機櫃或機架中</block>
-  <block id="27eee63b8f274f92b6fd34ad72eda57f" category="inline-link-macro">重新安裝 SG6100-CN 控制器護蓋</block>
-  <block id="8f7788c169aa50f1f1d939333d3f4bcc" category="paragraph"><block ref="8f7788c169aa50f1f1d939333d3f4bcc" category="inline-link-macro-rx"></block></block>
-  <block id="e555012dca3572d0bab17db35a4008d4" category="paragraph"><block ref="e555012dca3572d0bab17db35a4008d4" category="inline-link-macro-rx"></block></block>
   <block id="4cc27b1800a32240f555e0ec4afc5cde" category="summary">將 E4000 中的磁碟機更換為 60 個磁碟機櫃。</block>
   <block id="125aeb33ae4459fc8222ee9ed2b717aa" category="doc">更換儲存控制器機櫃或擴充機櫃中的磁碟機（ SG6160 ）</block>
   <block id="5ee472a2b6b33fddd49024587c88b2f3" category="paragraph">您可以更換 SG6160 儲存控制器機櫃或擴充機櫃（ DE460C ）中的磁碟機。</block>
@@ -5466,7 +5447,6 @@
   <block id="75bae77bd5a1e5d5a3fa60c2123780ca" category="summary">如果 SG6100-CN 控制器無法以最佳方式運作或發生故障、您可能需要更換該控制器。</block>
   <block id="34219e12808cfaa75a6d668403e35db8" category="doc">更換 SG6100-cn 控制器</block>
   <block id="001591654095885fb8e8bae93eba4b37" category="paragraph">更換 SG6100-CN 控制器時、將無法存取應用裝置儲存節點。如果 SG6100-CN 控制器運作正常、您可以在本程序開始時執行管制關機。</block>
-  <block id="10f53149eec912e3988fa735d632dcc9" category="list-text">如果 SG6100-CN 控制器運作良好、可進行控制關機、 <block ref="06019beeec02ceba6236461f5eafd019" category="inline-link-macro-rx"></block>。</block>
   <block id="c360904142c30f58300519e8c01b32d0" category="list-text">如果此 StorageGRID 應用裝置上的任何網路介面都設定為使用 DHCP 、您可能需要更新 DHCP 伺服器上的永久 DHCP 租用指派、以參照替換應用裝置的 MAC 位址。此更新可確保設備已指派預期的 IP 位址。</block>
   <block id="bc15f2ba1d2a4b957f06af9c2cc3e6d9" category="list-text">移除並更換 SG6100-CN 控制器：</block>
   <block id="8145cbfa0e5fc59eb5093d29f4de5483" category="list-text">標記纜線、然後拔下纜線。</block>
@@ -5524,4 +5504,6 @@
   <block id="0c5b49805cedde0be71bd8e1248caea5" category="sidebar">SG6100-CN 控制器（ SG6160 ）</block>
   <block id="109cfb866393048721520c64b6a72dcd" category="sidebar">E4000 控制器（ SG6160 ）</block>
   <block id="1b137b50e38b53f7a19b8ae2f6114d7d" category="sidebar">重新放置在機架中</block>
+  <block id="d1fc100be07ba82ec7383450a44baff8" category="list-text">如果 SG6100-CN 控制器運作良好、可進行控制關機、 <block ref="0a3cf65437375f485bddbc72eccdb305" category="inline-link-macro-rx"></block>。</block>
+  <block id="d0f113fd26d2007a359ab568d6af75eb" category="paragraph">應用裝置控制器包含可協助您判斷應用裝置控制器狀態的指示燈。請使用此資訊來提供協助 <block ref="e0e94668a35b0e62f1c3c83bc6a3960d" category="inline-link-macro-rx"></block>。</block>
 </blocks>
