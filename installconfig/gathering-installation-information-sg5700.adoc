@@ -258,7 +258,7 @@ NOTE: 請參閱 link:gathering-installation-information-sg5700.html#port-bond-mo
 
 
  a| 
-VLAN標記（如果已啟用VLAN標記）
+VLAN 標記（如果已啟用 VLAN 標記）
  a| 
 輸入介於0和4095之間的值：
 

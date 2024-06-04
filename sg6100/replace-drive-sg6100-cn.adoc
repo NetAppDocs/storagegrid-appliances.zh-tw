@@ -1,0 +1,64 @@
+---
+permalink: sg6100/replace-drive-sg6100-cn.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6160, sg6100, service appliance, services appliance, gateway Node, admin node, Replacing, replace, drive, remove, removing, removal, install, installing, installation 
+summary: SG6160 應用裝置在 SG6100-CN 控制器中包含兩個 SSD 磁碟機、可作為讀取快取。如果其中一個磁碟機故障、您必須儘快更換、以將可能的效能影響降至最低。 
+---
+= 更換 SG6100-cn 中的磁碟機
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6160 應用裝置在 SG6100-CN 控制器中包含兩個 SSD 磁碟機、可作為讀取快取。如果其中一個磁碟機故障、您必須儘快更換、以將可能的效能影響降至最低。
+
+.開始之前
+* 您有 link:locating-sgf6112-in-data-center.html["實際放置設備"]。
+* 您已確認哪個磁碟機發生故障、方法是注意其左側 LED 持續亮起琥珀色燈、或使用 Grid Manager 來 link:verify-component-to-replace.html["檢視故障磁碟機所造成的警示"]。
+* 您已取得替換磁碟機。
+* 您已獲得適當的電子軟碟保護。
+
+
+.步驟
+. 驗證磁碟機的左側故障 LED 是否為琥珀色、或使用警示中的磁碟機插槽 ID 來找出磁碟機。
++
+磁碟機位於機箱中的下列位置（圖示為卸下擋板的機箱正面）。
+
++
+image::../media/sg6160_front_with_ssds.png[SSD 的位置在 SG6160 中]
+
+. 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
+. 打開備用磁碟機的包裝、並將其放在產品附近無靜電且水平的表面上。
++
+儲存所有包裝材料。
+
+. 按下故障磁碟機上的釋放按鈕。
++
+image::../media/h600s_driveremoval.gif[移除磁碟機]
+
++
+磁碟機上的握把會部分開啟、而磁碟機會從插槽中釋放。
+
+. 打開握把、將磁碟機滑出、然後將其放在無靜電且水平的表面上。
+. 在將替換磁碟機插入磁碟機插槽之前、請先按下釋放按鈕。
++
+栓鎖會彈開。
+
++
+image::../media/h600s_driveinstall.gif[磁碟機安裝]
+
+. 將替換磁碟機插入插槽、然後關閉磁碟機握把。
++
+
+CAUTION: 請勿在關閉握把時過度施力。
+
++
+當磁碟機完全插入時、您會聽到「喀」一聲。
+
++
+當兩個 SSD 磁碟機都正常運作時、系統會自動還原讀取快取功能。您可以 https://docs.netapp.com/us-en/storagegrid-118/monitor/running-diagnostics.html["執行診斷"^] 監控讀取快取命中率。由於快取是剛重建的、因此最初的命中率可能很低、但隨著存取物件資料的用戶端重新填入快取、快取應該會隨著時間而增加。
+
+
+
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。

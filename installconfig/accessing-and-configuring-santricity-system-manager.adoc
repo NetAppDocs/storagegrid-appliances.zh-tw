@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, SANtricity System Manager, SANtricity, System Manager, configure, configuring, setup, set up, setting up, access, accessing, E-Series AutoSupport, autosupport, configure, configuring, setup, set up, setting up, access, accessing, hardware, status, diagnostic, environment drives, drive, temperature, IP, IP address, management port, Appliance Installer 
 summary: 您可以使用SANtricity NetApp系統管理程式來監控儲存控制器櫃中的儲存控制器、儲存磁碟及其他硬體元件狀態。您也可以設定E系列AutoSupport 支援的Proxy、讓您不AutoSupport 需使用管理連接埠、就能從應用裝置傳送靜態訊息。 
 ---
-= 設定 SANtricity 系統管理員（ SG6000 和 SG5700 ）
+= 設定 SANtricity 系統管理員（ SG6160 、 SG6000 、 SG5700 和 SG5800 ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -9,6 +9,20 @@ entries:
 - title: 維護組態程序
   pdf-filename: 維護組態程序 - SG6100
   entries:
+  - title: 升級 SANtricity （ SG6160 ）
+    entries:
+    - title: 使用SANtricity Grid Manager升級儲存控制器上的作業系統
+      url: "/sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html"
+    - title: 使用維護模式升級 SG6160 控制器上的 SANtricity OS
+      url: "/sg6100/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6160.html"
+  - title: 使用 SANtricity 系統管理員（ SG6160 ）升級磁碟機韌體
+    entries:
+    - title: 使用 SANtricity System Manager 線上方法升級 SG6100 磁碟機韌體
+      url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 使用 SANtricity System Manager 離線方法升級 SG6100 磁碟機韌體
+      url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
+    - title: 疑難排解磁碟機韌體升級錯誤
+      url: "/sg6100/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
   - title: 使用管理磁碟機索引標籤
     url: "/sg6100/manage-drives-tab.html"
   - title: 開啟和關閉識別 LED
@@ -24,19 +38,53 @@ entries:
   entries:
   - title: 確認要更換的元件
     url: "/sg6100/verify-component-to-replace.html"
-  - title: 更換一或多個電源供應器
-    url: "/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
   - title: 更換風扇
-    url: "/sg6100/replacing-fan-in-sgf6112.html"
+    entries:
+    - title: SGF6112 或 SG6100-CN （ SG6160 ）
+      url: "/sg6100/replacing-fan-in-sgf6112.html"
+    - title: 儲存控制器機櫃或擴充機櫃（ SG6160 ）
+      url: "/sg6100/replace-e4000-fan-canister.html"
+  - title: 更換電源供應器
+    entries:
+    - title: SGF6112 或 SG6100-CN （ SG6160 ）
+      url: "/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
+    - title: 儲存控制器機櫃或擴充機櫃（ SG6160 ）
+      url: "/sg6100/replace-6100-cn-power-canister.html"
   - title: 更換磁碟機
-    url: "/sg6100/replacing-drive-in-sgf6112.html"
+    entries:
+    - title: SGF6112
+      url: "/sg6100/replacing-drive-in-sgf6112.html"
+    - title: SG6100-CN （ SG6160 ）
+      url: "/sg6100/replace-drive-sg6100-cn.html"
+    - title: 儲存控制器機櫃或擴充機櫃（ SG6160 ）
+      url: "/sg6100/replace-6160-drives-60.html"
   - title: 更換 NIC
-    url: "/sg6100/replace-nic-in-sgf6112.html"
+    entries:
+    - title: 內部 NIC （ SGF6112 和 SG6160 ）
+      url: "/sg6100/replace-nic-in-sgf6112.html"
+    - title: 外部 NIC （ SG6160 ）
+      url: "/sg6100/replace-ocp-nic-in-sg6100-cn.html"
   - title: 更換 CMOS 電池
     url: "/sg6100/replace-cmos-in-sgf6112.html"
+  - title: 更換DIMM
+    url: "/sg6100/replace-dimms-e4000.html"
+  - title: 更換電池
+    url: "/sg6100/replace-battery-e4000.html"
   - title: 裝回機箱蓋
     url: "/sg6100/reinstalling-sgf6112-cover.html"
-  - title: 更換 SGF6112 應用裝置
-    url: "/sg6100/replacing-sgf6112-appliance.html"
-  - title: 將 SGF6112 重新放置在機架中
-    url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
+  - title: 將擴充機櫃新增至部署的 SG6160
+    url: "/sg6100/adding-expansion-shelf-to-deployed-sg6160.html"
+  - title: 更換產品
+    entries:
+    - title: SGF6112
+      url: "/sg6100/replacing-sgf6112-appliance.html"
+    - title: SG6100-CN 控制器（ SG6160 ）
+      url: "/sg6100/replacing-sg6100-cn-controller.html"
+    - title: E4000 控制器（ SG6160 ）
+      url: "/sg6100/replace-controller-e4000-duplex.html"
+  - title: 重新放置在機架中
+    entries:
+    - title: SGF6112
+      url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
+    - title: SG6100-CN 控制器（ SG6160 ）
+      url: "/sg6100/reinstalling-sg6100-cn-controller-into-cabinet-or-rack.html"

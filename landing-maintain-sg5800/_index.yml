@@ -1,0 +1,29 @@
+---
+indexpage:
+  tiles:
+  - title: 經常執行的程序
+    links:
+    - title: 變更連結組態
+      url: "../sg5800/changing-link-configuration-of-sg5800-controller.html"
+    - title: 升級 SANtricity
+      url: "../sg5800/upgrading-santricity-os-on-storage-controller.html"
+    - title: 升級磁碟機韌體
+      url: "../sg5800/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: 硬體程序
+    links:
+    - title: 更換 SG5800 運算控制器
+      url: "../sg5800/replace-controller-sg5800.html"
+    - title: 更換 E4000 儲存控制器
+      url: "../sg5800/replace-controller-e4000-simplex.html"
+    - title: 更換風扇箱
+      url: "../sg5800/replace-fan-canister.html"
+    - title: 更換動力箱
+      url: "../sg5800/replace-power-canister.html"
+    - title: 更換電池
+      url: "../sg5800/replace-battery-e4000.html"
+    - title: 更換DIMM
+      url: "../sg5800/replace-dimms-e4000.html"
+    - title: 更換磁碟機
+      url: "../sg5800/replace-drive-e4000.html"
+    - title: 電源供應器
+      url: "../sg5800/replace-power-supply.html"

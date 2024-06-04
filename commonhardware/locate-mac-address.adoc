@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, mac, mac address 
 summary: 在某些情況下、您可能需要在更換設備後更新 MAC 位址參照。 
 ---
-= 更新 MAC 位址參照
+= 更新 MAC 位址參照（ SG100 、 SG1000 、 SGF6024 和 SG6060 ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

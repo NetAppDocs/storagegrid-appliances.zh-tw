@@ -1,0 +1,53 @@
+---
+section: sg5800
+title: 維護 SG5800 硬體
+url: "/landing-maintain-sg5800/index.html"
+entries:
+- title: 總覽
+  pdf-filename: SG5800 硬體維護
+  url: "/sg5800/index.html"
+- title: 維護組態程序
+  pdf-filename: 維護組態程序 - SG5800
+  entries:
+  - title: 升級SANtricity 儲存控制器上的作業系統
+    url: "/sg5800/upgrading-santricity-os-on-storage-controller.html"
+    entries:
+    - title: 使用SANtricity Grid Manager升級儲存控制器上的作業系統
+      url: "/sg5800/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html"
+    - title: 使用維護模式升級 E4000 控制器上的 SANtricity OS
+      url: "/sg5800/upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html"
+  - title: 使用SANtricity 《支援系統管理程式》升級磁碟機韌體
+    entries:
+    - title: 使用 SANtricity System Manager 線上方法升級 SG5800 磁碟機韌體
+      url: "/sg5800/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 使用 SANtricity System Manager 離線方法升級 SG5800 磁碟機韌體
+      url: "/sg5800/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
+    - title: 疑難排解磁碟機韌體升級錯誤
+      url: "/sg5800/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: 變更 SG5800 控制器的連結組態
+    url: "/sg5800/changing-link-configuration-of-sg5800-controller.html"
+- title: 硬體程序
+  pdf-filename: 硬體程序 - SG5800
+  entries:
+  - title: 更換 SG5800 控制器
+    url: "/sg5800/replace-controller-sg5800.html"
+  - title: 更換 E4000 控制器
+    url: "/sg5800/replace-controller-e4000-simplex.html"
+  - title: 更換風扇（ SG5860 ）
+    url: "/sg5800/replace-fan-canister.html"
+  - title: 更換電源供應器（ SG5812 ）
+    url: "/sg5800/replace-power-supply.html"
+  - title: 更換動力箱（ SG5860 ）
+    url: "/sg5800/replace-power-canister.html"
+  - title: 更換電池
+    url: "/sg5800/replace-battery-e4000.html"
+  - title: 更換DIMM
+    url: "/sg5800/replace-dimms-e4000.html"
+  - title: 更換磁碟機
+    entries:
+    - title: 總覽與需求
+      url: "/sg5800/replace-drive-e4000.html"
+    - title: SG5812
+      url: "/sg5800/replace-drives-12-24.html"
+    - title: SG5860
+      url: "/sg5800/replace-drives-60.html"

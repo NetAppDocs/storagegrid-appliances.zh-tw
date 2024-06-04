@@ -29,6 +29,8 @@ sidebar:
         url: "/installconfig/hardware-description-sg110-and-1100.html"
       - title: SG5700 儲存設備
         url: "/installconfig/hardware-description-sg5700.html"
+      - title: SG5800 儲存設備
+        url: "/installconfig/hardware-description-sg5800.html"
       - title: SG6000儲存設備
         url: "/installconfig/hardware-description-sg6000.html"
       - title: SG6100 儲存設備
@@ -51,6 +53,7 @@ sidebar:
     - section: sg110-1100
     - section: sg5600
     - section: sg5700
+    - section: sg5800
     - section: sg6000
     - section: sg6100
   - title: 啟用StorageGRID 功能

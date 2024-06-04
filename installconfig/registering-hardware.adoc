@@ -25,7 +25,7 @@ image::../media/appliance_label.gif[標籤、包括序號]
 
 NOTE: SG6000 儲存設備上有數個序號。儲存控制器機櫃上的序號是當您致電 SG6000 應用裝置尋求服務或支援時、必須註冊及使用的序號。
 
-. 前往 NetApp 支援網站： http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 前往 http://mysupport.netapp.com/["NetApp 支援網站"^]。
 . 判斷您是否需要註冊硬體：
 +
 [cols="1a,2a"]

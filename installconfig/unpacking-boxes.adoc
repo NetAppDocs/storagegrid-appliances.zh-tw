@@ -166,6 +166,80 @@ image::../media/fc_cable_and_sfp.gif[光纖纜線與SFP]
 
 
 --
+.SG5800
+--
+* *硬體*
++
+SG5812 應用裝置、安裝 12 個磁碟機::
++
+--
+image::../media/de212c_table_size.gif[SG5812 2U 應用裝置]
+
+--
+SG5860 應用裝置、未安裝磁碟機::
++
+--
+image::../media/de460c_table_size.gif[SG5860 4U 應用裝置]
+
+--
+產品前擋板::
++
+--
+image::../media/sg5700_front_bezels.gif[面板為 SG5812 和 SG5860]
+
+
+NOTE: 您的擋板看起來可能不同。
+
+--
+附說明的軌道套件::
++
+--
+image::../media/rail_kit.gif[軌道套件]
+
+--
+SG5860 ： 60 個 NL-SAS 磁碟機::
++
+--
+image::../media/sg5760_drive.gif[磁碟機]
+
+--
+SG5860 ：握把::
++
+--
+image::../media/handles.gif[SG5860 握把]
+
+--
+SG5860 ：用於方孔機架安裝的後支架和鎖緊螺帽::
++
+--
+image::../media/back_brackets_table_size.gif[SG5860 的後支架和鎖緊螺帽]
+
+--
+
+
+* * 纜線與連接器 *
++
+
+TIP: 您的機櫃可能有特殊的電源線、您可以使用這些電源線、而非產品隨附的電源線。
+
++
+適用於您所在國家 / 地區的兩條電源線::
++
+--
+image::../media/power_cords.gif[電源線]
+
+--
+兩條 25GbE SFP28 纜線、用於控制器互連（ iSCSI ）::
++
+--
+image::../media/sg5800_25gbe_sfp28_cable.png[25GbE SFP28 纜線]
+
+--
+
+
+
+
+--
 .SG6000
 --
 * * SG6060 硬體 *
@@ -323,7 +397,108 @@ image::../media/sas_cable.gif[SAS纜線]
 --
 .SG6100
 --
-* *硬體*
+* * SG6160 硬體 *
++
+SG6100-CN 控制器::
++
+--
+image::../media/sg6000_cn_front_without_bezel.gif[SG6100-CN 控制器]
+
+--
+E4000 控制器機櫃、未安裝磁碟機::
++
+--
+image::../media/de460c_table_size.gif[SG5860 4U 應用裝置]
+
+--
+兩個前擋板::
++
+--
+image::../media/sg6000_front_bezels_for_table.gif[前擋板]
+
+
+NOTE: 您的擋板看起來可能不同。
+
+--
+附說明的兩個軌道套件::
++
+--
+image::../media/rail_kit.gif[軌道套件]
+
+--
+60 個 NL-SAS 磁碟機::
++
+--
+image::../media/sg5760_drive.gif[磁碟機]
+
+--
+四個控制點::
++
+--
+image::../media/handles.gif[SG5860 握把]
+
+--
+用於方孔機架安裝的後支架和鎖緊螺帽::
++
+--
+image::../media/back_brackets_table_size.gif[SG5860 的後支架和鎖緊螺帽]
+
+--
+一條 100 GbE 至 4x25GbE 中斷互連纜線::
++
+--
+image::../media/sg6100_4x25gbe_spf28_cable.png[100 GbE 至 4x25GbE 中斷纜線]
+
+--
+適用於您所在國家 / 地區的四條電源線::
++
+--
+image::../media/power_cords.gif[電源線]
+
+--
+
+
+* * SG6160 擴充機櫃 *
++
+未安裝磁碟機的擴充機櫃::
++
+--
+image::../media/de460c_table_size.gif[SG5860 4U 應用裝置]
+
+--
+前擋板::
++
+--
+image::../media/front_bezel_for_table_de460c.gif[前擋板DE460C]
+
+--
+60 個 NL-SAS 磁碟機::
++
+--
+image::../media/sg5760_drive.gif[磁碟機]
+
+--
+附說明的一種軌道套件::
++
+--
+image::../media/rail_kit.gif[軌道套件]
+
+--
+四個控制點::
++
+--
+image::../media/handles.gif[SG5860 握把]
+
+--
+用於方孔機架安裝的後支架和鎖緊螺帽::
++
+--
+image::../media/back_brackets_table_size.gif[SG5860 的後支架和鎖緊螺帽]
+
+--
+
+
+* * SGF6112 硬體 *
 +
 SGF6112::
 +

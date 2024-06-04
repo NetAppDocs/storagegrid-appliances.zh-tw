@@ -11,7 +11,7 @@ summary: 存取 BMC 介面之前、您必須先設定 SG6000-CN 控制器或服�
 
 
 [role="lead"]
-存取 BMC 介面之前、請先設定 SGF6112 、 SG6000-CN 控制器或服務應用裝置上 BMC 管理連接埠的 IP 位址。
+存取 BMC 介面之前、請先設定 SGF6112 、 SG6000-CN 控制器、 SG6100-CN 控制器或服務應用裝置上 BMC 管理連接埠的 IP 位址。
 
 如果您使用 ConfigBuilder 來產生 JSON 檔案、則可以自動設定 IP 位址。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
 
@@ -49,7 +49,13 @@ image::../media/sg6000_cn_bmc_management_port.gif[SG6000-CN-控制器上的BMC�
 --
 .SG6100
 --
+_SGF6112_ ：
+
 image::../media/sgf6112_cn_bmc_management_port.png[BMC 管理連接埠 SGF6112]
+
+_SG6100-CN_ ：
+
+image::../media/sg6100_cn_bmc_management_port.png[BMC 管理連接埠 SG610-CN]
 
 --
 ====

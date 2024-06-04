@@ -31,7 +31,7 @@ CAUTION: 如果您移除工作正常的磁碟機、就會關閉應用裝置節�
 
 
 .步驟
-. 驗證要更換的磁碟機的左側 LED 是否閃爍琥珀色。如果 Grid Manager 或 BMC UI 中回報磁碟機問題、 HDD02 或 HDD2 會參考上插槽中的磁碟機、而 HDD03 或 HDD3 則會參考下插槽中的磁碟機。
+. 驗證要更換的磁碟機的左側 LED 是否閃爍琥珀色。如果 Grid Manager 或 BMC 使用者介面中回報磁碟機問題、 HDD02 或 HDD2 會參考上插槽中的磁碟機、而 HDD03 或 HDD3 則會參考下插槽中的磁碟機。
 +
 您也可以使用Grid Manager來監控SSD的狀態。選擇*節點*。然後選取 `*Appliance Node*` >*硬體*。如果磁碟機故障、「Storage RAID Mode（儲存RAID模式）」欄位會顯示關於哪個磁碟機故障的訊息。
 

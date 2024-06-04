@@ -15,6 +15,8 @@ indexpage:
     links:
     - title: SG5700 儲存設備
       url: "../installconfig/hardware-description-sg5700.html"
+    - title: SG5800 儲存設備
+      url: "../installconfig/hardware-description-sg5800.html"
     - title: SG6000儲存設備
       url: "../installconfig/hardware-description-sg6000.html"
     - title: SG6100 儲存設備

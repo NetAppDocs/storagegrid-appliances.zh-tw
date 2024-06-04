@@ -74,9 +74,19 @@ NOTE: 如果無法使用DHCP指派IP位址、則會顯示0．0．0．0。
 
 
 --
+.SG5800
+--
+image::../media/sg5800_admin_network_port.png[SG5800 控制器上的管理網路連接埠]
+
+--
 .SG6000-CN
 --
 image::../media/sg6000_cn_admin_network_port.png[SG6000-CN-控制器上的管理網路連接埠]
+
+--
+.SG6100-CN
+--
+image::../media/sg6100_cn_admin_network_port.png[SG6000-CN-控制器上的管理網路連接埠]
 
 --
 .SGF6112
@@ -143,11 +153,25 @@ image::../media/sg1100_link_local_port.png[SG1100 連結本機連線]
 image::../media/e5700sg_mgmt_port_2.gif[管理連接埠2在E5700SG控制器上的位置]
 
 --
+.SG5800
+--
+使用乙太網路纜線、將服務筆記型電腦連接到 SG5800 控制器上的管理連接埠 1 。
+
+image::../media/sg5800_mgmt_port.png[SG5800 控制器上管理連接埠 1 的位置]
+
+--
 .SG6000-CN
 --
 使用乙太網路纜線、將服務型筆記型電腦直接連接至SG6000-CN-控制器最右側的RJ-45連接埠。
 
 image::../media/sg6000_cn_link_local_port.png[SG6000-CN.管理連接埠的位置]
+
+--
+.SG6100-CN
+--
+使用乙太網路纜線、將服務筆記型電腦直接連接到 SG6100-CN 控制器最右側的 RJ-45 連接埠。
+
+image::../media/sg6100_cn_link_local_port.png[SG6100-CN 的管理連接埠位置]
 
 --
 .SGF6112

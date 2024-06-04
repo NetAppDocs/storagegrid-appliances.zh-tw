@@ -11,7 +11,7 @@ entries:
   url: "/commonhardware/changing-mtu-setting.html"
 - title: 檢查DNS伺服器組態
   url: "/commonhardware/checking-dns-server-configuration.html"
-- title: 更新 MAC 位址參照
+- title: 更新 MAC 位址參照（ SG100 、 SG1000 、 SGF6024 和 SG6060 ）
   url: "/commonhardware/locate-mac-address.html"
 - title: 在維護模式中監控節點加密
   url: "/commonhardware/monitoring-node-encryption-in-maintenance-mode.html"

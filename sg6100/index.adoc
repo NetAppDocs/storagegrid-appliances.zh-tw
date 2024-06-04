@@ -23,7 +23,7 @@ summary: 您可能需要在裝置上執行維護程序。本節將說明維護 S
 * link:changing-link-configuration-of-sgf6112-appliance.html["變更應用裝置的連結組態"]
 
 
-* 硬體維護程序 * 需要實際操作特定 SGF6112 元件。
+* 硬體維護程序 * 需要實際操作特定 SGF6112 或 SG6160 元件。
 
 
 

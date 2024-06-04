@@ -14,15 +14,14 @@ summary: 對於目前使用SANtricity 更新版本的儲存控制器、您必須
 對於目前使用SANtricity 不支援更新版本的儲存控制器、您必須使用Grid Manager進行升級。
 
 .開始之前
-* 您已諮詢 https://imt.netapp.com/matrix/#welcome["NetApp互通性對照表工具IMT （不含）"^] 確認您用於升級的 SANtricity 作業系統版本與您的應用裝置相容。
+* 如果您沒有取得想要從升級至的 SANtricity OS 版本 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]、您已諮詢過 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^] 或 https://imt.netapp.com/matrix/#welcome["NetApp互通性對照表工具IMT （不含）"^] 確認您用於升級的 SANtricity 作業系統版本與您的應用裝置相容。
 * 您擁有 https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["維護或根存取權限"^]。
 * 您將使用登入Grid Manager https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
 * 您有資源配置通關密碼。
-* 您可以存取 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]。
 
 
 .關於這項工作
-在完成 SANtricity OS 升級程序之前、您無法執行其他軟體更新（ StorageGRID 軟體升級或 Hotfix ）。如果您在StorageGRID 完成更新程序之前嘗試啟動修補程式或更新版的功能、SANtricity 您會被重新導向SANtricity 到「更新版更新版」頁面。
+SANtricity OS 升級進行期間、您無法執行其他軟體更新（ StorageGRID 軟體升級或 Hotfix ）。如果您在StorageGRID 完成更新程序之前嘗試啟動修補程式或更新版的功能、SANtricity 您會被重新導向SANtricity 到「更新版更新版」頁面。
 
 直到成功將更新套用至所有已選擇進行升級的適用節點為止、此程序才會完成SANtricity 。在SANtricity 每個節點上（依序）載入不一致的作業系統可能需要30分鐘以上、而重新啟動StorageGRID 每個不一致的儲存設備可能需要90分鐘。您網格中任何不使用 SANtricity OS 的節點都不會受到此程序的影響。
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sgf6112, manage drives tab, locate drive, fail drive, logically replace drive 
 summary: 您可以使用 Grid Manager 中的「管理磁碟機」標籤、在 SGF6112 應用裝置中執行磁碟機的疑難排解和維護工作。 
 ---
-= 使用管理磁碟機索引標籤
+= 使用管理磁碟機索引標籤（ SGF6112 ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

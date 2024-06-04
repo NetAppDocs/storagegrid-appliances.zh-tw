@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, link configuration, link, configure, configuring, ethernet, port bond mode, port bond, network bond mode, network bond, link speed, vlan tagging, vlan tag 
 summary: 您可以變更應用裝置的乙太網路連結組態、包括連接埠連結模式、網路連結模式和連結速度。 
 ---
-= 變更 SGF6112 應用裝置的連結組態
+= 變更 SGF6112 應用裝置或 SG6100-cn 控制器的連結組態
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

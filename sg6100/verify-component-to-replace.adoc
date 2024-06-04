@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sgf6112 
 summary: 如果您不確定要在應用裝置中更換哪個硬體元件、請完成此程序、以識別產品在資料中心的元件和位置。 
 ---
-= 驗證要在 SGF6112 中更換的元件
+= 驗證要在 SGF6112 或 SG6100-CN 中更換的元件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

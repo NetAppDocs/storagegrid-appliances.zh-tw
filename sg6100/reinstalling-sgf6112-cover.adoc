@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, sgf6112, storage node, storage appliance, cover, install, installing, installation, reinstall, reinstalling, reinstallation 
 summary: 取下產品外蓋以檢修內部組件以進行維護、完成後請裝回外蓋。 
 ---
-= 裝回 SGF6112 護蓋
+= 更換 SGF6112 或 SG6100-CN 護蓋
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

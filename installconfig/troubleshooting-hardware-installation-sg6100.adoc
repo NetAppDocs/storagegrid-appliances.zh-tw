@@ -1,10 +1,10 @@
 ---
 permalink: installconfig/troubleshooting-hardware-installation-sg6100.html 
 sidebar: sidebar 
-keywords: storagegrid, sg6100, sgf6112,troubleshoot, troubleshooting, hardware, install, installation, boot codes, boot-up codes, start codes, codes, boot, start, bmc, error codes, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck, connection 
+keywords: storagegrid, sg6100, sgf6112, troubleshoot, troubleshooting, hardware, install, installation, boot codes, boot-up codes, start codes, codes, boot, start, bmc, error codes, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck, connection, sg6160, sg5800, e4000 
 summary: 如果在安裝期間遇到問題、您可能會發現檢閱與硬體設定和連線問題相關的疑難排解資訊很有幫助。 
 ---
-= 硬體安裝疑難排解（ SG6100 ）
+= 硬體安裝疑難排解（ SG5800 或 SG6100 ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,7 +15,7 @@ summary: 如果在安裝期間遇到問題、您可能會發現檢閱與硬體�
 
 
 
-== 檢視開機代碼
+== 檢視開機代碼（僅限 SGF6112 和 SG6160 ）
 
 當您為應用裝置供電時、BMC會記錄一系列開機代碼。您可以在連接至BMC管理連接埠的圖形化主控台上檢視這些代碼。
 
@@ -52,7 +52,7 @@ KVM
  a| 
 序列連接埠
  a| 
-** DB-9序列纜線
+** USB 傳輸線
 ** 虛擬序列終端機
 
 
@@ -91,6 +91,10 @@ KVM
 .. 使用BMC IP位址和登入認證連線至IPMI SOL。
 +
 `ipmitool -I lanplus -H _BMC_Port_IP_ -U admin -P _Password_ sol activate`
+
++
+
+NOTE: 在某些情況下、預設使用者名稱可能是「 root 」、而非「 admin 」。
 
 .. 檢視虛擬序列終端機上的代碼。
 
@@ -131,6 +135,22 @@ FP
 
 
  a| 
+他
+ a| 
+僅限 SG6160 ：
+
+系統正在等待與儲存控制器連線、並與SANtricity 該作業系統同步。
+
+* 附註 * ：如果開機程序未在此階段進行、請執行下列步驟：
+
+.. 確認 SG6100-CN 控制器與兩個儲存控制器之間的四條互連纜線已穩固連接。
+.. 視需要更換一或多條纜線、然後再試一次。
+.. 如果這無法解決問題、請聯絡技術支援部門。
+
+
+
+
+ a| 
 硬拷貝
  a| 
 系統正在檢查現有StorageGRID 的安裝資料。
@@ -154,7 +174,7 @@ HA
 
 
 
-== 檢視錯誤代碼
+== 檢視錯誤代碼（僅限 SGF6112 和 SG6160 ）
 
 如果設備開機時發生硬體錯誤、BMC會記錄錯誤代碼。視需要、您可以使用BMC介面檢視這些錯誤代碼、然後與技術支援部門合作以解決問題。
 
@@ -525,7 +545,7 @@ MRC：ERR_Interlet_ferress
 如果硬體故障或纜線錯誤導致應用裝置無法完成開機處理、則可能無法使用《支援產品安裝程式」StorageGRID 。
 
 .步驟
-. 檢閱應用裝置上的LED、以及BMC中顯示的開機和錯誤代碼。
+. 查看設備上的 LED 和 / 或 BMC （如果配備）中顯示的開機和錯誤代碼。
 . 如果您需要解決問題的協助、請聯絡技術支援部門。
 
 
@@ -533,11 +553,41 @@ MRC：ERR_Interlet_ferress
 
 == 連線問題
 
-如果您無法連線至應用裝置、可能是網路問題、或是硬體安裝可能未成功完成。
+
+
+=== 應用裝置安裝程式中未出現擴充架（ SG6160 ）
+
+如果您已安裝擴充機櫃、但這些擴充機櫃並未出現在 StorageGRID 應用裝置安裝程式中、則應確認機櫃已完全安裝並開啟電源。
+
+.關於這項工作
+您可以在StorageGRID 《NetApp應用裝置安裝程式：
+
+* 「*首頁*」頁面包含擴充櫃的相關訊息。
++
+image::../media/expansion_shelf_home_page_msg.png[擴充櫃訊息]
+
+* 「*進階*>* RAID模式*」頁面會依磁碟機數量指出設備是否包含擴充櫃。
+
+
+如果 StorageGRID 應用裝置安裝程式頁面沒有顯示擴充機櫃、請遵循此程序。
+
+.步驟
+. 確認所有必要的纜線均已穩固連接。請參閱 link:cabling-appliance.html["纜線應用裝置"]。
+. 確認您已開啟擴充櫃的電源。請參閱 link:connecting-power-cords-and-applying-power.html["連接電源線並接上電源（ SG6100 ）"]。
+. 如果您需要解決問題的協助、請聯絡技術支援部門。
+
+
+
+
+=== 無法連線至應用裝置
+
+如果您無法連線至儲存設備、可能是網路問題、或是硬體安裝可能未成功完成。
 
 .步驟
 . 嘗試使用應用裝置的IP位址ping應用裝置：+
-`*ping _appliance_IP_*`
++
+`*ping _appliance/controller_IP_*`
+
 . 如果ping沒有回應、請確認您使用的是正確的IP位址。
 +
 您可以在Grid Network、管理網路或用戶端網路上使用應用裝置的IP位址。
@@ -548,7 +598,7 @@ MRC：ERR_Interlet_ferress
 如果仍無法解決問題、請聯絡技術支援部門。
 
 . 如果ping成功、請開啟網頁瀏覽器。
-. 輸入StorageGRID 「The URL for the URL for the不支援應用程式安裝程式：+」
+. 輸入 StorageGRID 應用裝置安裝程式或 SANtricity 系統管理員的 URL ： +
 `*https://_appliances_controller_IP_:8443*`
 +
 隨即顯示首頁。

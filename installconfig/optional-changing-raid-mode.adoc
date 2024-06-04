@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, raid, raid mode, change, changing, modify, DDP, ddp16, RAID 6 
 summary: 在某些應用裝置機型上、您可以變更為應用裝置上的不同 RAID 模式、以符合您的儲存和還原需求。您只能在部署應用裝置儲存節點之前變更模式。 
 ---
-= 選用：變更 RAID 模式（ SG5760 和 SG6000 ）
+= 選用：變更 RAID 模式（ SG5760 、 SG5860 、 SG6000 和 SG6160 ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -18,7 +18,7 @@ summary: 在某些應用裝置機型上、您可以變更為應用裝置上的�
 .關於這項工作
 如果您的應用裝置支援、您可以選擇下列其中一個 Volume 組態選項：
 
-* * 動態磁碟集區（ DDP ） * ：此模式每八個資料磁碟機使用兩個同位元磁碟機。這是所有應用裝置的預設和建議模式。相較於 RAID 6 、 DDP 可提供更好的系統效能、減少磁碟機故障後的重建時間、並簡化管理。DDP 也在 SG5760 應用裝置中提供藥屜遺失保護。
+* * 動態磁碟集區（ DDP ） * ：此模式每八個資料磁碟機使用兩個同位元磁碟機。這是所有應用裝置的預設和建議模式。相較於 RAID 6 、 DDP 可提供更好的系統效能、減少磁碟機故障後的重建時間、並簡化管理。DDP 也提供 SG5760 、 SG5860 和 SG6160 應用裝置的抽屜遺失保護。
 +
 
 NOTE: 由於兩個 SSD 、 DDP 無法在 SG6060 設備中提供抽屜遺失保護。任何新增至 SG6060 的擴充機櫃都能有效保護抽屜遺失。
@@ -52,7 +52,51 @@ CAUTION: 如果已設定任何磁碟區、或StorageGRID 先前安裝了支援�
 
 
 --
+.SG5860
+--
+.開始之前
+* 您有一個 SG5860 、內含 60 個磁碟機。如果您有 SG5812 、則必須使用預設 DDP 模式。
+* 您正在使用任何可連線StorageGRID 到該功能的用戶端。
+* 用戶端有 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+
+
+.步驟
+. 使用服務型筆記型電腦開啟網頁瀏覽器、然後存取StorageGRID 《The》《The Service laptop》（《The Service laptop》）：+
+`*https://_SG5800_Controller_IP_:8443*`
++
+其中 `_SG5800_Controller_IP_` 為 SG5800 控制器的任何 IP 位址。
+
+. 選擇*進階*>* RAID模式*。
+. 在「*組態RAID模式*」頁面上、從「模式」下拉式清單中選取所需的RAID模式。
+. 按一下「 * 儲存 * 」。
+
+
+--
 .SG6000
+--
+.開始之前
+* 您正在使用任何可連線StorageGRID 到該功能的用戶端。
+* 用戶端有  https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+
+
+.步驟
+. 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個IP位址。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
+
++
+畫面會出現「the不再安裝StorageGRID 程式」首頁。
+
+. 選擇*進階*>* RAID模式*。
+. 在「*組態RAID模式*」頁面上、從「模式」下拉式清單中選取所需的RAID模式。
+. 按一下「 * 儲存 * 」。
+
+
+--
+.SG6160
 --
 .開始之前
 * 您正在使用任何可連線StorageGRID 到該功能的用戶端。

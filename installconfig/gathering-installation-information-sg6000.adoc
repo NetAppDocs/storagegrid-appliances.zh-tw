@@ -293,7 +293,7 @@ Grid Network for StorageGRID 效能不只是一項必要的網路、可用於所
 
 
  a| 
-VLAN標記（如果已啟用VLAN標記）
+VLAN 標記（如果已啟用 VLAN 標記）
  a| 
 輸入介於0和4095之間的值：
 
@@ -369,7 +369,7 @@ Client Network for StorageGRID 推銷是選用的網路、通常用於提供用�
 
 
  a| 
-VLAN標記（如果啟用VLAN標記）
+VLAN 標記（如果已啟用 VLAN 標記）
  a| 
 輸入介於0和4095之間的值：
 

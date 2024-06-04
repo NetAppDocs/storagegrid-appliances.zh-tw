@@ -4,18 +4,18 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, power off, turn off, shut off, shutdown, shut down, power on, turn on, start 
 summary: 您可以關閉 SGF6112 應用裝置、然後重新開啟電源以執行維護。 
 ---
-= 關閉和開啟 SGF6112 應用裝置電源
+= 關閉和開啟 SGF6112 應用裝置或 SG6100-CN 控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以關閉 SGF6112 應用裝置、然後重新開啟電源以執行維護。
+您可以關閉 SGF6112 應用裝置或 SG6100-CN 控制器、然後重新開啟電源以執行維護。
 
 
 
-== 關閉 SGF6112 應用裝置
+== 關閉 SGF6112 應用裝置或 SG6100-CN 控制器
 
 關閉設備以執行硬體維護。
 
@@ -61,7 +61,7 @@ CAUTION: 您必須輸入下列指定的命令、以控制裝置的關機。最�
 
 
 
-== 開啟 SGF6112 並驗證作業
+== 開啟 SGF6112 或 SG6100-cn 電源、並驗證作業
 
 完成維護後、開啟控制器電源。
 
@@ -71,14 +71,13 @@ CAUTION: 您必須輸入下列指定的命令、以控制裝置的關機。最�
 
 
 .步驟
-. 開啟產品電源。
+. 開啟產品電源：
++
+** 選項 1 ：按下控制器正面的電源開關。
 +
 您可能必須卸下擋板才能使用電源開關；如果是、請記得在之後重新安裝。
 
-. 使用下列其中一種方法來監控控制器 LED 和開機代碼：
-+
-** 按下控制器正面的電源開關。
-** 使用控制器BMC介面：
+** 選項 2 ：使用控制器 BMC 介面：
 +
 ... link:../installconfig/accessing-bmc-interface.html["存取控制器 BMC 介面"]。
 ... 選擇*電源控制*。

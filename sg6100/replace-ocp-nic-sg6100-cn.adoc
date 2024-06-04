@@ -1,0 +1,71 @@
+---
+permalink: sg6100/replace-ocp-nic-in-sg6100-cn.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, storage node, storage appliance, Replacing, replace, NIC, network interface card 
+summary: 如果網路介面卡無法正常運作或故障、您可能需要更換 SG6100-CN 中的網路介面卡（ NIC\ ）。 
+---
+= 更換 SG6100-cn 中的外部 NIC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果 SG6100-CN 中的外部網路介面卡（ NIC ）無法正常運作或故障、您可能需要更換該卡。
+
+請使用下列程序：
+
+* 移除 NIC
+* 重新安裝 NIC
+
+
+.開始之前
+* 您擁有正確的替換 NIC 。
+* 您已決定 link:verify-component-to-replace.html["要更換的 NIC 的位置"]。
++
+image::../media/sg6100_cn_ocp_nic_location.png[NIC 面板。]
+
+* 您有 link:locating-sgf6112-in-data-center.html["實體放置 SG6100-CN 控制器"] 您要更換資料中心內 NIC 的位置。
++
+
+NOTE: 此程序 * 不 * 支援熱交換。答 link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["受控制的產品關機"] 在拔下纜線和移除 NIC 之前、必須先執行此步驟。
+
+* 您已拔下所有纜線、包括 SG6100-CN 上的兩條電源線。
+* * 可選 * ：如果當地法規要求，您已將控制器從機架中移除。由於 NIC 可從外部存取、因此不需要移除。
+
+
+.關於這項工作
+為避免服務中斷、請在開始更換網路介面卡（ NIC ）之前、確認所有其他儲存節點都已連接至網格、或在可接受服務中斷期間的排程維護期間更換 NIC 。請參閱相關資訊 link:https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["繫泊節點連線狀態"]。
+
+
+CAUTION: 如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程的維護期間更換 NIC 、因為在此程序期間可能會暫時失去這些物件的存取權。請參閱相關資訊 link:https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["為何不應使用單一複本複寫"]。
+
+
+
+== 卸下外部 NIC
+
+.步驟
+. 將 ESD 腕帶的束帶端繞在手腕上、並將扣具端點固定在金屬接地上、以防止靜電釋放。
+. 使用螺絲起子鬆開 NIC 面板上的螺絲。
++
+
+CAUTION: 此程序 * 不 * 支援熱交換。移除 NIC 之前、必須先中斷控制器的電源。
+
+. 拉住面板把手、小心地取下 NIC 。將 NIC 放置在平坦的防靜電表面上。
+
+
+
+
+== 重新安裝外部 NIC
+
+.步驟
+. 將 ESD 腕帶的束帶端繞在手腕上、並將扣具端點固定在金屬接地上、以防止靜電釋放。
+. 從包裝中取出更換的 NIC 。
+. 將 NIC 與機箱中的開口對齊、然後小心地將其推入、直到完全就位。
+. 旋緊 NIC 面板上的螺絲。
+
+
+.完成後
+如果您沒有其他維護程序可在產品中執行、請在產品移除後將產品送回機架、連接纜線並接上電源。
+
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。

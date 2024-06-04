@@ -41,8 +41,9 @@ NOTE: LACP 傳輸雜湊原則為第 2+3 層。
 * link:gathering-installation-information-sg100-and-sg1000.html#port-bond-modes["連接埠連結模式（ SG1000 和 SG100 ）"]
 * link:gathering-installation-information-sg110-and-sg1100.html#port-bond-modes["連接埠連結模式（ SG1100 和 SG110 ）"]
 * link:gathering-installation-information-sg5700.html#port-bond-modes["連接埠連結模式（ E5700SG ）"]
+* link:gathering-installation-information-sg5800.html#port-bond-modes["連接埠連結模式（ SG5800 ）"]
 * link:gathering-installation-information-sg6000.html#port-bond-modes["連接埠連結模式（ SG6000-CN ）"]
-* link:gathering-installation-information-sg6100.html#port-bond-modes["連接埠連結模式（ SGF6112 ）"]
+* link:gathering-installation-information-sg6100.html#port-bond-modes["連接埠連結模式（ SGF6112 和 SG6100-CN ）"]
 
 
 [role="tabbed-block"]
@@ -422,6 +423,111 @@ image::../media/e5700sg_bonded_management_ports.gif[E5700SG 連結式管理連�
 
 
 --
+.SG5800
+--
+固定連接埠連結模式（預設）::
++
+--
+此圖顯示四個10/25-GbE連接埠如何以固定連接埠繫結模式（預設組態）連結。
+
+image::../media/sg5800_fixed_port.png[顯示 SG5800 控制器上的 10/25-GbE 連接埠如何以固定模式連結的影像]
+
+[cols="1a,3a"]
+|===
+| 標註 | 連結哪些連接埠 
+
+
+ a| 
+c
+ a| 
+如果使用此網路、用戶端網路的連接埠1和3會連結在一起。
+
+
+
+ a| 
+G
+ a| 
+連接埠2和4會連結至Grid Network。
+
+|===
+下表摘要說明設定四個10/25-GbE連接埠的選項。如果您要使用非預設設定、只需要在「連結組態」頁面上設定設定。
+
+[cols="1a,2a,2a"]
+|===
+| 網路連結模式 | 用戶端網路已停用（預設） | 用戶端網路已啟用 
+
+
+ a| 
+雙主動備份（預設）
+ a| 
+* 連接埠2和4使用適用於Grid Network的主動備份連結。
+* 不使用連接埠 1 和 3 。
+* VLAN標記為選用項目。
+
+ a| 
+* 連接埠2和4使用適用於Grid Network的主動備份連結。
+* 連接埠1和3使用用戶端網路的主動備份連結。
+* 為方便網路管理員、可為兩個網路指定VLAN標記。
+
+
+
+
+ a| 
+LACP（802.3ad）
+ a| 
+* 連接埠2和4使用LACP連結來連接網格網路。
+* 不使用連接埠 1 和 3 。
+* VLAN標記為選用項目。
+
+ a| 
+* 連接埠2和4使用LACP連結來連接網格網路。
+* 連接埠1和3使用LACP連結連接至用戶端網路。
+* 為方便網路管理員、可為兩個網路指定VLAN標記。
+
+
+|===
+--
+Aggregate連接埠連結模式::
++
+--
+此圖顯示如何在Aggregate連接埠連結模式中連結四個10/25-GbE連接埠。
+
+image::../media/sg5800_aggregate_port.png[顯示 SG5800 控制器上的 10/25-GbE 連接埠如何以彙總模式連結的影像]
+
+[cols="1a,3a"]
+|===
+| 標註 | 連結哪些連接埠 
+
+
+ a| 
+1.
+ a| 
+所有四個連接埠都集中在單一LACP連結中、因此所有連接埠都可用於Grid Network和Client Network流量。
+
+|===
+下表摘要說明設定四個10/25-GbE連接埠的選項。如果您要使用非預設設定、只需要在「連結組態」頁面上設定設定。
+
+[cols="1a,2a,2a"]
+|===
+| 網路連結模式 | 用戶端網路已停用（預設） | 用戶端網路已啟用 
+
+
+ a| 
+僅適用於LACP（802.3ad）
+ a| 
+* 連接埠1-4使用單一LACP連結來連接網格網路。
+* 單一VLAN標記可識別Grid Network封包。
+
+ a| 
+* 連接埠1-4使用單一LACP連結來連接網格網路和用戶端網路。
+* 兩個VLAN標記可讓Grid Network封包與Client Network封包隔離。
+
+
+|===
+--
+
+
+--
 .SG6000
 --
 固定連接埠連結模式（預設）::
@@ -535,14 +641,20 @@ image::../media/sg6000_cn_bonded_managemente_ports.png[已連結管理網路連�
 
 
 --
-.SGF6112
+.SG6100
 --
 固定連接埠連結模式（預設）::
 +
 --
 圖中顯示四個網路連接埠如何以固定連接埠連結模式（預設組態）連結。
 
+*SGF6112* ：
+
 image::../media/sgf6112_fixed_port.png[SGF6112 固定連接埠綁定模式]
+
+*SG6100* ：
+
+image::../media/sg6100_cn_fixed_port.png[SG6100-CN 固定連接埠綁定模式]
 
 [cols="1a,3a"]
 |===
@@ -604,7 +716,13 @@ Aggregate連接埠連結模式::
 --
 圖中顯示四個網路連接埠如何以集合連接埠連結模式連結。
 
+*SGF6112* ：
+
 image::../media/sgf6112_aggregate_ports.png[SGF6112 集合式連接埠綁定模式]
+
+*SG6100* ：
+
+image::../media/sg6100_cn_aggregate_ports.png[SG6100-CN Aggregate 連接埠綁定模式]
 
 [cols="1a,3a"]
 |===
@@ -640,9 +758,15 @@ image::../media/sgf6112_aggregate_ports.png[SGF6112 集合式連接埠綁定模�
 管理連接埠的雙主動式備份網路連結模式::
 +
 --
-此圖顯示 SGF6112 上的兩個 1-GbE 管理連接埠如何在管理網路的「主動式備份」網路連結模式中連結。
+此圖顯示兩個 1-GbE 管理連接埠如何在管理網路的「主動式備份」網路連結模式中連結。
+
+*SGF6112* ：
 
 image::../media/sgf6112_bonded_management_ports.png[管理網路連接埠連結 SGF6112]
+
+*SG6100* ：
+
+image::../media/sg6100_cn_bonded_management_ports.png[管理網路連接埠連結 SG6100-cn]
 
 --
 
@@ -673,12 +797,12 @@ image::../media/sgf6112_bonded_management_ports.png[管理網路連接埠連結 
 您用於Grid Network和用戶端網路的網路交換器也必須支援並設定此速度。您必須使用適當的介面卡或收發器來設定連結速度。如果可能、請使用自動連結速度、因為此選項會與連結合作夥伴協調連結速度和轉送錯誤修正（FEC）模式。
 
 +
-如果您打算使用 25-GbE 連結速度來連接 SG6000 或 SG5700 網路連接埠：
+如果您打算使用 25-GbE 連結速度來連接 SG6100 、 SG6000 、 SG5800 或 SG5700 網路連接埠：
 
 +
 ** 使用 SFP28 收發器和 SFP28 雙軸纜線或光纖纜線。
 ** 對於 SG5700 ，請從 *Link spe* 下拉列表中選擇 *25GBE* 。
-** 對於 SG6000 ，請從 *Link spee* 下拉列表中選擇 *Auto* 。
+** 對於 SG5800 、 SG6000 或 SG6100 ，請從 *Link spee* 下拉列表中選擇 *Auto* 。
 
 
 . 啟用或停用StorageGRID 您計畫使用的支援網。

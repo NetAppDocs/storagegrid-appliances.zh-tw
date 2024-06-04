@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sgf6112, locate, find, locating, finding, identify, blue led, blue light 
 summary: 產品正面的藍色識別 LED 可開啟、協助您在資料中心找到產品。 
 ---
-= 開啟和關閉 SGF6112 應用裝置識別 LED
+= 開啟和關閉 SGF6112 應用裝置或 SG6100-CN 控制器識別 LED
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

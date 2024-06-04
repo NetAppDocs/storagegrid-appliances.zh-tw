@@ -1,0 +1,34 @@
+---
+permalink: sg6100/upgrading-santricity-os-on-storage-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5800, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
+summary: 為了確保儲存控制器發揮最佳功能、您必須升級SANtricity 至符合StorageGRID 您的不合格產品資格的最新版作業系統維護版本。 
+---
+= 升級 SG6160 儲存控制器上的 SANtricity OS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+為了確保儲存控制器發揮最佳功能、您必須升級SANtricity 至符合StorageGRID 您的不合格產品資格的最新版作業系統維護版本。
+
+請諮詢、判斷符合 StorageGRID 應用裝置使用資格的最新 SANtricity 作業系統版本 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"] 並視需要下載。
+
+從下載新的 SANtricity OS 軟體檔案 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]。
+
+根據SANtricity 目前安裝的版本、使用下列其中一個程序：
+
+* 您可以使用 Grid Manager 來執行升級。
++
+link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["使用SANtricity Grid Manager升級儲存控制器上的作業系統"]
+
+* 您可以使用維護模式來執行升級。
++
+link:upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html["使用維護模式升級 E4000 控制器上的 SANtricity OS"]
+
++
+
+NOTE: 若儲存控制器目前使用的 SANtricity OS 版本低於 08.42.20.00 （ 11.42 ）、建議使用 link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["使用 Grid Manager 來套用升級"]。不過、如果您偏好使用維護模式程序、或是技術支援人員指示您使用維護模式程序。
+
+

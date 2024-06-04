@@ -326,7 +326,7 @@ image::../media/e5700sg_controller_with_callouts.gif[E5700SG控制器上的連�
  a| 
 12Gb/s SAS
  a| 
-未使用。StorageGRID 設備不支援擴充磁碟機櫃。
+未使用。
 
 
 
@@ -421,7 +421,7 @@ image::../media/e2800B_controller_with_callouts.gif[E2800B 控制器上的連接
 * 連接埠1選項：
 +
 ** 連線至管理網路、即可直接從TCP/IP存取SANtricity 到「支援系統管理程式」
-** 保留無線以儲存交換器連接埠和IP位址。  使用Grid Manager或Storage Grid Appliance Installer UI存取SANtricity 《系統管理程式》。
+** 保留無線以儲存交換器連接埠和IP位址。  使用 Grid Manager 或 Storage Grid Appliance 安裝程式存取 SANtricity 系統管理員。
 
 
 

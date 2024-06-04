@@ -169,7 +169,6 @@
   <block id="e1ec3ca4383d70e901b8fee0dd291bc6" category="admonition">如果您移除工作正常的磁碟機、就會關閉應用裝置節點。請參閱檢視狀態指標以驗證故障的相關資訊。</block>
   <block id="66388744d1c9eb2deda697d2bcc596ea" category="list-text">您已取得替換磁碟機。</block>
   <block id="c382ba50c846f544d2eb1c1502e7b340" category="list-text">您已獲得適當的電子軟碟保護。</block>
-  <block id="e07d83495dbaa2badd7d150ebffd564d" category="list-text">驗證要更換的磁碟機的左側 LED 是否閃爍琥珀色。如果 Grid Manager 或 BMC UI 中回報磁碟機問題、 HDD02 或 HDD2 會參考上插槽中的磁碟機、而 HDD03 或 HDD3 則會參考下插槽中的磁碟機。</block>
   <block id="ea65cbd3780404d3a0a11908397b8a70" category="paragraph">您也可以使用Grid Manager來監控SSD的狀態。選擇*節點*。然後選取<block ref="dde8ded2884e27f868b3a8c4b5416bb3" prefix=" " category="inline-code"></block> &gt;*硬體*。如果磁碟機故障、「Storage RAID Mode（儲存RAID模式）」欄位會顯示關於哪個磁碟機故障的訊息。</block>
   <block id="76fee4ac20a9a6bc637a1a53c9f866c8" category="list-text">將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。</block>
   <block id="e8e12ce61c5a10cc4c5d368b079b1d32" category="list-text">打開備用磁碟機的包裝、並將其放在產品附近無靜電且水平的表面上。</block>
@@ -286,10 +285,8 @@
   <block id="94ec460361fb2b4faa500cbfe2736123" category="paragraph">如果*開始安裝*按鈕未啟用、您可能需要變更網路組態或連接埠設定。如需相關指示、請參閱產品的維護指示。</block>
   <block id="7219d53a2c987afebdf600ccc504d1ab" category="list-text">如果網格包含多個應用裝置節點、請針對每個應用裝置重複上述步驟。</block>
   <block id="c3354d84393c7f9e023fdee83bcf8cef" category="summary">在某些應用裝置機型上、您可以變更為應用裝置上的不同 RAID 模式、以符合您的儲存和還原需求。您只能在部署應用裝置儲存節點之前變更模式。</block>
-  <block id="b622ae5ae8ee031b50aeb341c3285846" category="doc">選用：變更 RAID 模式（ SG5760 和 SG6000 ）</block>
   <block id="a65525d2672da7612dd2225d09c7630d" category="paragraph">如果您使用 ConfigBuilder 來產生 JSON 檔案、則可以自動變更 RAID 模式。請參閱 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="dcd58c6c307af73eb2d54c28eb5aece3" category="paragraph">如果您的應用裝置支援、您可以選擇下列其中一個 Volume 組態選項：</block>
-  <block id="3c49796e3ca70c275eccd166521db3a8" category="list-text">* 動態磁碟集區（ DDP ） * ：此模式每八個資料磁碟機使用兩個同位元磁碟機。這是所有應用裝置的預設和建議模式。相較於 RAID 6 、 DDP 可提供更好的系統效能、減少磁碟機故障後的重建時間、並簡化管理。DDP 也在 SG5760 應用裝置中提供藥屜遺失保護。</block>
   <block id="614ac3bc6b71e66c8c790d54848fdcae" category="admonition">由於兩個 SSD 、 DDP 無法在 SG6060 設備中提供抽屜遺失保護。任何新增至 SG6060 的擴充機櫃都能有效保護抽屜遺失。</block>
   <block id="5717f9383a4d8109c6b2573864de8a9d" category="list-text">* DDP16*：此模式每16個資料磁碟機使用兩個同位元檢查磁碟機、相較於DDP、可提高儲存效率。相較於 RAID 6 、 DDP16 可提供更好的系統效能、減少磁碟機故障後的重新建置時間、易於管理、以及可媲美的儲存效率。若要使用DDP16模式、您的組態必須包含至少20個磁碟機。DDP16不提供藥櫃遺失保護。</block>
   <block id="353ce17a6b113e0d3e118b781dec37fe" category="list-text">* RAID6*：此模式每16個或更多資料磁碟機使用兩個同位元檢查磁碟機。這是一種硬體保護方案、使用每個磁碟上的同位元區塊、並允許在遺失任何資料之前、在 RAID 組內發生兩個磁碟故障。若要使用RAID 6模式、您的組態必須包含至少20個磁碟機。雖然與 DDP 相比、 RAID 6 可以提高應用裝置的儲存效率、但不建議在大多數 StorageGRID 環境中使用。</block>
@@ -364,7 +361,6 @@
   <block id="c0e0208fd9ff7a124f9f09f68e11e627" category="list-text">RJ-45 （ Cat5/Cat5e/Cat6 ）</block>
   <block id="7723561bef9572a7d986fe25e58a85af" category="list-text">60個磁碟機櫃的機械式起重</block>
   <block id="c33dd574af6de69373bec97cc709ade1" category="open-title">SG6100</block>
-  <block id="1dd2ba0061f018972f786a6014e6d9bb" category="paragraph">您需要下列額外設備來安裝和設定 SGF6112 硬體。</block>
   <block id="a84eec93e893fadf2d8ab7a8d588ddbb" category="summary">您可以在機櫃或機架中安裝產品的滑軌組、然後將產品滑到滑軌上。</block>
   <block id="867aaffd62f4541bca34095b90796def" category="doc">安裝至機櫃或機架（ SG100 和 SG1000 ）</block>
   <block id="68dfe6c342417b20bb690f11deb80f37" category="list-text">您已閱讀包裝盒中的「安全注意事項」文件、並瞭解移動和安裝硬體的預防措施。</block>
@@ -407,33 +403,21 @@
   <block id="a9e94f60b5eb886323796e07026907bf" category="list-text">*update-config* ：更新 StorageGRID 應用裝置組態的作業。</block>
   <block id="b9bec2bc097b778763100b1976a7e1f0" category="list-text">* 升級 * ：與設備韌體升級相關的作業。</block>
   <block id="a58012521c15f43417da292eaf155dbe" category="list-text">* 上傳 sg* ：上傳 StorageGRID 安裝檔案的作業。</block>
-  <block id="4dda46d1d22ce3bea40ae5cbf41b9689" category="summary">StorageGRID SGF6112 應用裝置在 StorageGRID 系統中作為儲存節點運作。此應用裝置可在混合式網格環境中使用、此環境結合了應用裝置儲存節點和虛擬（軟體型）儲存節點。</block>
   <block id="c5fd46ce6c68907eeb45ddbf6b35bfe1" category="doc">SG6100 應用裝置：總覽</block>
-  <block id="d4022ee3b7647dd78f09a07e6cdbe0dd" category="paragraph">SGF6112 應用裝置提供下列功能：</block>
-  <block id="f37bdba66261c6c365235146f0709e61" category="list-text">12 個 NVMe （非揮發性記憶體高速） SSD 磁碟機、內建整合式運算與儲存控制器。</block>
   <block id="b76ce93bf6ca287234a665e92353fb93" category="list-text">整合StorageGRID 了適用於整個過程的儲存與運算元素。</block>
   <block id="1c081deed581bb5340c5d00274870fc1" category="list-text">包含StorageGRID 旨在簡化儲存節點部署與組態的《不再》應用裝置安裝程式。</block>
   <block id="29d23fa3930085d7f944a243a8d3f2a8" category="list-text">內含用於監控及診斷運算控制器硬體的基礎板管理控制器（ BMC ）。</block>
-  <block id="a38674a00d77eee3881fa291c32107a9" category="list-text">支援最多四個10-GbE或25-GbE連線至StorageGRID 「支援網格網」和「用戶端網路」。</block>
-  <block id="918897523e2d35414348449134f8cae6" category="section-title">SGF6112 硬體說明</block>
-  <block id="8652c449ac68dd38a5e5e20cd7b34c42" category="paragraph">StorageGRID SGF6112 是一款全快閃應用裝置、採用精巧設計、並將運算控制器和儲存控制器整合至 1U 機箱中。此應用裝置支援 12 個 SSD NVMe 磁碟機、每個磁碟機的儲存容量最高可達 15.3 TB 。</block>
-  <block id="dba9b738a6e56e147df2c18de142bda9" category="section-title">彈性物件儲存</block>
-  <block id="5291d98100164be5fbd17012f7852808" category="paragraph">SGF6112 的 RAID 設計採用 SSD 、提供下列資料保護功能：</block>
   <block id="dbe489034cc7fcf7572f185592c2d31a" category="list-text">在單一 SSD 故障後仍能運作、不會影響物件可用度。</block>
   <block id="8cb060546c4f09a0bca7b87d7091a83c" category="list-text">可在多個 SSD 故障後運作、並將物件可用度降至最低（根據基礎 RAID 配置的設計）。</block>
   <block id="40f91c12c6ee6ba6f451c23ee7ec6e1a" category="list-text">在服務期間、 SSD 故障不會對節點根磁碟區（ StorageGRID 作業系統）的 RAID 外殼造成嚴重損壞、因此可完全恢復。</block>
-  <block id="5cd6d10a967f6b36afdf533d89ceb00b" category="section-title">SGF6112 硬體元件</block>
   <block id="e983f2d83d29a8a3545c8a9501dc2628" category="paragraph">SGF6112 應用裝置包含下列元件：</block>
   <block id="d2191c969a8b84534da7f6e1ddebac0d" category="list-text">運算與儲存平台</block>
   <block id="1a11db6265e76fb9960c0993763da06b" category="list-text">單機架單元（ 1U ）伺服器、包括：</block>
-  <block id="cd8878aeafd9b9700c81eaff089c24f5" category="list-text">兩個 2.1/2.6 GHz 165 W 處理器、提供 48 核心</block>
   <block id="2907b386b6969a2dd1b7d5b358e4ef78" category="list-text">256 GB RAM</block>
   <block id="c2b8df76405ca5fc769f29364c7f843f" category="list-text">2 個 1/10 GBase-T 連接埠</block>
-  <block id="ea25050f7162c125bfcc5ecd116eff61" category="list-text">4 個 10/25 GbE 乙太網路連接埠</block>
   <block id="5b4a4e8df59cd61b26e9993b7a389dd2" category="list-text">1 個 256 GB 內部開機磁碟機（包括 StorageGRID 軟體）</block>
   <block id="4e838a74ff1273d4b01455a7501ea6ce" category="list-text">基礎板管理控制器（BMC）、可簡化硬體管理</block>
   <block id="25cb755f9f6a313f7fabdaf6f5e4503d" category="list-text">備援電源供應器與風扇</block>
-  <block id="d97f0a36ee79a137f97fefba56f234c4" category="section-title">SGF6112 圖表</block>
   <block id="b0c97c66c591bdfb50719c031abe196d" category="section-title">SGF6112 正面視圖</block>
   <block id="ae8af963c28e2f39aa9fbe7fd454ff94" category="paragraph">此圖顯示 SGF6112 的正面、不含擋板。此應用裝置包含 1U 運算與儲存平台、內含 12 個 SSD 磁碟機。</block>
   <block id="54496c6a1e8d064136da730c597b365e" category="image-alt">SGF6112 正面視圖</block>
@@ -562,8 +546,6 @@
   <block id="6c75bd09c11f936edb17b315fc941be5" category="list-text"><block ref="6c75bd09c11f936edb17b315fc941be5" category="inline-link-macro-rx"></block></block>
   <block id="6691045eb86b01f78f3bce30a4265321" category="inline-link-macro">連接埠連結模式（ SG6000-CN ）</block>
   <block id="8cea42e060032cb343553f49b2e95012" category="list-text"><block ref="8cea42e060032cb343553f49b2e95012" category="inline-link-macro-rx"></block></block>
-  <block id="d1f4e92b6883ff59e83a2373daf63dca" category="inline-link-macro">連接埠連結模式（ SGF6112 ）</block>
-  <block id="9b0ebbd0b18d5ca191d887f476200053" category="list-text"><block ref="9b0ebbd0b18d5ca191d887f476200053" category="inline-link-macro-rx"></block></block>
   <block id="22a64cabc2a1afe256cd224d73dba465" category="list-text">固定連接埠連結模式（預設）</block>
   <block id="8dd8a56f8e51f799ba29f6263c6495df" category="paragraph">下圖顯示 SG1000 或 SG100 上的四個網路連接埠如何以固定連接埠連結模式（預設組態）連結。</block>
   <block id="7fb46bfc2583b909d20e3797aa8fd7ee" category="image-alt">SG1000 固定連接埠綁定模式</block>
@@ -618,7 +600,6 @@
   <block id="9ee14927da820774398c3df40695487e" category="image-alt">SGF6112 固定連接埠綁定模式</block>
   <block id="38c9a563fec2225ed2a9f5d6933738cf" category="paragraph">圖中顯示四個網路連接埠如何以集合連接埠連結模式連結。</block>
   <block id="7a94e0e125ccb659b8287a71266ad626" category="image-alt">SGF6112 集合式連接埠綁定模式</block>
-  <block id="2cebeedbf57a7ef9a760e11e50316d17" category="paragraph">此圖顯示 SGF6112 上的兩個 1-GbE 管理連接埠如何在管理網路的「主動式備份」網路連結模式中連結。</block>
   <block id="911e75012e8614cfd0f98a9d0a4a1ded" category="image-alt">管理網路連接埠連結 SGF6112</block>
   <block id="0739ae8aa2b43e4e7e5a0617281bed7e" category="list-text">從「SectionAppliance安裝程式」的功能表列StorageGRID 中、按一下「*組態網路*」&gt;「*連結組態*」。</block>
   <block id="243a7c2280790d37c7a538bdc19d52a0" category="paragraph">「網路連結組態」頁面會顯示設備的圖表、其中的網路和管理連接埠編號為。</block>
@@ -631,10 +612,8 @@
   <block id="db11999d9ac559043dba87eeefc4ba89" category="list-text">*用戶端網路*已停用。</block>
   <block id="678a14800d0067fb610b6fe26abe74fa" category="list-text">從「*連結速度*」下拉式清單中選取網路連接埠的連結速度。</block>
   <block id="fd97c4115309fef0e4ee36ad4e9340d6" category="paragraph">您用於Grid Network和用戶端網路的網路交換器也必須支援並設定此速度。您必須使用適當的介面卡或收發器來設定連結速度。如果可能、請使用自動連結速度、因為此選項會與連結合作夥伴協調連結速度和轉送錯誤修正（FEC）模式。</block>
-  <block id="c2009c26723ec6bf9c3870976238a3c2" category="paragraph">如果您打算使用 25-GbE 連結速度來連接 SG6000 或 SG5700 網路連接埠：</block>
   <block id="db4e395504590bb6b4cbf1c602935822" category="list-text">使用 SFP28 收發器和 SFP28 雙軸纜線或光纖纜線。</block>
   <block id="943eca0a0ec70d9873c04fe6562c5ddc" category="list-text">對於 SG5700 ，請從 *Link spe* 下拉列表中選擇 *25GBE* 。</block>
-  <block id="0d66ba83241fc57100b4d4cadfc5e320" category="list-text">對於 SG6000 ，請從 *Link spee* 下拉列表中選擇 *Auto* 。</block>
   <block id="293039487f4ff4fec5ef4f4e1f81a512" category="list-text">啟用或停用StorageGRID 您計畫使用的支援網。</block>
   <block id="b4b15e0360dc41c75803bf144f19e54b" category="paragraph">網格網路為必填項目。您無法停用此網路。</block>
   <block id="19a606bbcfd9d697186c901ac498b423" category="list-text">如果應用裝置未連線至管理網路、請清除管理網路的 * 啟用網路 * 核取方塊。</block>
@@ -778,7 +757,6 @@
   <block id="409518502f498e2f7386c13c28afd133" category="paragraph">保留以供技術支援使用。</block>
   <block id="a3c2e9c3b48291bc9734d0c1b885aa30" category="paragraph">磁碟機擴充連接埠</block>
   <block id="aa0bafdae785d4f2422dc1a6a888f4b7" category="paragraph">12Gb/s SAS</block>
-  <block id="ff48285588947ff8725ec473cd26df82" category="paragraph">未使用。StorageGRID 設備不支援擴充磁碟機櫃。</block>
   <block id="06ed9ee45aab646d00c6a47ee8b90ffe" category="paragraph">10-GbE或25-GbE、取決於SFP收發器類型、交換器速度及設定的連結速度</block>
   <block id="4e2b09a1fa9fcd053bbdc5ebae541ca0" category="paragraph">管理連接埠1</block>
   <block id="4aa8083b084b160ad8827a22e670a4d9" category="paragraph">1-GB（RJ-45）乙太網路</block>
@@ -805,7 +783,6 @@
   <block id="1502133888ca1a046c43773f1575521a" category="paragraph">管理連接埠1和2</block>
   <block id="36226a7a2a27e4f84f1ed99d92fa07cf" category="list-text">連接埠1選項：</block>
   <block id="f85698500a7a113f4e9140593482c3a1" category="list-text">連線至管理網路、即可直接從TCP/IP存取SANtricity 到「支援系統管理程式」</block>
-  <block id="ac518f9824218a27c509c57c01a096e5" category="list-text">保留無線以儲存交換器連接埠和IP位址。  使用Grid Manager或Storage Grid Appliance Installer UI存取SANtricity 《系統管理程式》。</block>
   <block id="1cec8ae87e0bd505bcf105a15eb2c06f" category="paragraph">*附註*：當SANtricity 您選擇不有線連接連接埠1時、某些選用功能（例如NTP同步以取得準確的記錄時間戳記）無法使用。</block>
   <block id="62ae5513520dd9eba331169cfd4484f8" category="paragraph">*附註*：StorageGRID 若SANtricity 您離開連接埠1時、需要使用支援支援支援支援功能才能使用支援功能的支援功能。</block>
   <block id="54d7ecac4234801a52c82cee53356b93" category="list-text">連接埠2保留供技術支援使用。</block>
@@ -835,7 +812,6 @@
   <block id="5fef26ef683a39ed6954fa895ac53b4d" category="inline-link-macro">安裝 SG6000-CN 控制器</block>
   <block id="17c0654717b4e7d0d44152528385a909" category="paragraph"><block ref="17c0654717b4e7d0d44152528385a909" category="inline-link-macro-rx"></block></block>
   <block id="7158d0b342b9df748aabed9724a46956" category="summary">如果在安裝期間遇到問題、您可能會發現檢閱與硬體設定和連線問題相關的疑難排解資訊很有幫助。</block>
-  <block id="c1f567e2f991e5c870a934470ab32e92" category="doc">硬體安裝疑難排解（ SG6100 ）</block>
   <block id="1623cc08e936426539174ca039acfaed" category="section-title">檢視開機代碼</block>
   <block id="ce3da88b75bc4cbd8a74f7c849adb0b7" category="paragraph">當您為應用裝置供電時、BMC會記錄一系列開機代碼。您可以在連接至BMC管理連接埠的圖形化主控台上檢視這些代碼。</block>
   <block id="0df9eb6a7ff156539314214fde5159be" category="inline-link-macro">存取 BMC 儀表板</block>
@@ -1008,13 +984,11 @@
   <block id="cb4ef4231649cb4b0718cd4e27e3fa6a" category="doc">收集網路資訊（ SG6100 ）</block>
   <block id="e3d1640dd700181eb82dd410e4e1731a" category="admonition">請使用 ConfigBuilder 隨附的活頁簿、而非使用表格。使用 ConfigBuilder 活頁簿可讓您上傳系統資訊並產生 JSON 檔案、以自動完成 StorageGRID 應用裝置安裝程式中的某些組態步驟。請參閱 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="0db2b068aedd000d2d3d218a0ae0a1e6" category="section-title">檢查 StorageGRID 版本</block>
-  <block id="750d8a108fcc57ee12d8ac5ab05f1a40" category="paragraph">安裝 SGF6112 應用裝置之前、請先確認您的 StorageGRID 系統使用的是所需版本的 StorageGRID 軟體。</block>
   <block id="e1ccceb981912f891d16090816e66855" category="cell">應用裝置</block>
   <block id="094510e337dd8b7cf5e9b586c9b86a0e" category="cell">必要StorageGRID 的版本</block>
   <block id="9c2db6e29835733367bc3f9076281543" category="paragraph">11.7 或更新版本（建議使用最新的 Hotfix ）</block>
   <block id="e9b7bfe71840258365702506beff7cd0" category="section-title">系統管理與維護連接埠</block>
   <block id="ea10391af2a32087f90c6ff79a86e6bc" category="paragraph">管理員網路for支援功能是選用的網路、可用於系統管理和維護。StorageGRID此應用裝置使用應用裝置上的下列 1/10-GbE 連接埠連線至管理網路。</block>
-  <block id="d8436b8cae46fa17c26dad63a545fb30" category="paragraph">下圖顯示 SGF6112 應用裝置上的 RJ-45 連接埠。</block>
   <block id="349f328e067e3be47c6f19aa1a0b01cd" category="image-alt">SGF6112 RJ-45 連接埠</block>
   <block id="9d5a474aaa552210ff0298949aeb6c0a" category="cell">所需資訊</block>
   <block id="d9fa81fca11f55d9fd9f33b399ab9cd6" category="cell">您的價值</block>
@@ -1035,7 +1009,6 @@
   <block id="8463b5a7085cd08b9e93773d3c709e1f" category="paragraph">管理網路子網路（CIDR）</block>
   <block id="c950c6d6cd726e9a640171a878985491" category="section-title">網路連接埠</block>
   <block id="2179b952cffe7642e0de347c4590d01f" category="paragraph">應用裝置上的四個網路連接埠可連接StorageGRID 至「知識網」和選用的「用戶端網路」。</block>
-  <block id="cc9a4ad7d31358f928bae9bb4a33613b" category="paragraph">對於 SGF6112 、請選擇下列其中一項：</block>
   <block id="e1f83090b2078f423f101834d3d15b12" category="list-text">自動（預設）</block>
   <block id="f813d4c41b3987dfffdcc0cea30c64cf" category="list-text">10 GbE</block>
   <block id="fc3a2ebf23f49d31d4cc8ebf98f3d78d" category="list-text">25 GbE</block>
@@ -1058,7 +1031,6 @@
   <block id="cb8ba60b20f3e1667de2b6935a3540dc" category="paragraph">最大傳輸單元（ MTU ）設定（選用）。您可以使用預設值 1500 、或是將 MTU 設定為適用於巨型框架的值、例如 9000 。</block>
   <block id="6b30f656d46a465f8db91a1defcc8c8d" category="section-title">用戶端網路連接埠</block>
   <block id="d6e4e9fa690498b90a5163b942fac7e5" category="paragraph">Client Network for StorageGRID 推銷是選用的網路、通常用於提供用戶端傳輸協定存取網格。應用裝置使用四個網路連接埠連線至用戶端網路。</block>
-  <block id="6d1b996756115fe391cc6a06a3d19642" category="paragraph">VLAN標記（如果啟用VLAN標記）</block>
   <block id="d005d81994f4a96e4df41e7cba4f805d" category="paragraph">用戶端網路的DHCP指派IP位址（如果在開機後可用）</block>
   <block id="c36a0c61942163d855d04f2103fdc8aa" category="paragraph">您計畫用於用戶端網路上應用裝置節點的靜態IP位址</block>
   <block id="e04677e2409768cf633618ce7181b62e" category="paragraph">*附註：*如果已啟用用戶端網路、則應用裝置上的預設路由將使用此處指定的閘道。</block>
@@ -1067,8 +1039,6 @@
   <block id="33c0b049c0bccf3ab91d22433109ae7e" category="admonition">您可以為所有包含 BMC 的應用裝置啟用或停用遠端 IPMI 存取。遠端 IPMI 介面可讓任何擁有 BMC 帳戶和密碼的人、對您的 StorageGRID 應用裝置進行低階硬體存取。如果您不需要遠端 IPMI 存取 BMC 、請使用下列其中一種方法停用此選項： +
 在 Grid Manager 中、移至 * 組態 * &gt; * 安全性 * &gt; * 安全性設定 * &gt; * 設備 * 、然後清除 * 啟用遠端 IPMI 存取 * 核取方塊。+
 在 Grid 管理 API 中、使用私有端點：<block ref="d6808dc8cc1c60c95e071354ada4bc8c" prefix=" " category="inline-code"></block>。</block>
-  <block id="3bfc9bd3f176055cffe69251500f4bbd" category="paragraph">下圖顯示 SGF6112 應用裝置上的 BMC 管理連接埠。</block>
-  <block id="a8d7cddea4464dbb5c3eb0898c3fb04f" category="image-alt">SG6100 管理連接埠</block>
   <block id="51c140f323da093598081071afea4181" category="paragraph">乙太網路交換器連接埠、您將連接至BMC管理連接埠（圖中圈出）</block>
   <block id="5a1ebb8b6e4d7c3bc47620863a4fc96b" category="paragraph">BMC管理網路的DHCP指派IP位址（如果在開機後可用）</block>
   <block id="0f7eb2a76b0ce24c9e72f6c7907ed38c" category="paragraph">您計畫用於BMC管理連接埠的靜態IP位址</block>
@@ -1084,7 +1054,6 @@
   <block id="74a55bacb2e20611a4a73e9f937bed8b" category="list-text">在 LACP 模式中、每對連接埠都會在應用裝置和網路之間形成邏輯通道、以提高處理量。如果一個連接埠故障、另一個連接埠會繼續提供該通道。處理量減少、但連線能力不受影響。</block>
   <block id="21a87ba73483af58b0348b72c4237e7b" category="admonition">如果您不需要備援連線、則每個網路只能使用一個連接埠。不過、請注意、 * 儲存設備連結中斷 * 警示可能會在安裝 StorageGRID 後在 Grid Manager 中觸發、表示纜線已拔下。您可以安全地停用此警示規則。</block>
   <block id="4477c879f95b73024934aaba13f56ed2" category="paragraph">Aggregate連接埠連結模式可大幅增加每StorageGRID 個支援網的處理量、並提供額外的容錯移轉路徑。</block>
-  <block id="4d9c6d43ab37eb26d4ed7688ae594e9b" category="image-alt">SGF6100 集合式連接埠連結模式</block>
   <block id="aff79d28b632c02204ecfa744ce4895a" category="paragraph">所有連接的連接埠都集中在單一LACP連結中、允許所有連接埠用於Grid Network和Client Network流量。</block>
   <block id="658a9f4de5f7af284e7bb13dc74702fc" category="paragraph">如果您打算使用Aggregate連接埠連結模式：</block>
   <block id="84b2266dd5dac9711d4f260122e952ab" category="list-text">您必須使用LACP網路連結模式。</block>
@@ -1095,7 +1064,6 @@
   <block id="fa1dccee9e01ab88c820bbc42906f0d6" category="admonition">如果您選擇使用少於四個網路連接埠、請注意、安裝應用裝置節點後、可能會在Grid Manager中觸發*服務應用裝置連結中斷*警示、表示纜線已拔下。您可以安全地停用觸發警示的此警示規則。</block>
   <block id="b39b3693b75b01cd27c8bdb491378387" category="section-title">管理連接埠的網路連結模式</block>
   <block id="bd37c44540caa04018c17a19daaacf7f" category="paragraph">對於兩個 1/10-GbE 管理連接埠、您可以選擇「自主網路連結」模式或「主動式備份」網路連結模式、以連線至選用的管理網路。</block>
-  <block id="663234e202eef4146b6768b7b7c5fc80" category="image-alt">網路管理連接埠</block>
   <block id="7fc56270e7a70fa81a5935b72eacbe29" category="paragraph">答</block>
   <block id="cd15447dc546bbcb7bfce61830b9b2a3" category="paragraph">主動備份模式。這兩個管理連接埠都連結至連接至管理網路的一個邏輯管理連接埠。</block>
   <block id="dd7536794b63bf90eccfd37f9b147d7f" category="paragraph">我</block>
@@ -1232,7 +1200,6 @@
   <block id="1d60b1c3bec03095c7a89434de069936" category="image-alt">SAS纜線</block>
   <block id="a341749d56d3ee79417f703ffe47db20" category="image-alt">前置磁碟機 SGF6112 應用裝置</block>
   <block id="aa91301685926dd0c6c99a07550217f5" category="summary">您可以使用SANtricity NetApp系統管理程式來監控儲存控制器櫃中的儲存控制器、儲存磁碟及其他硬體元件狀態。您也可以設定E系列AutoSupport 支援的Proxy、讓您不AutoSupport 需使用管理連接埠、就能從應用裝置傳送靜態訊息。</block>
-  <block id="cc20c757d179de69cba1c2a5f571a9c1" category="doc">設定 SANtricity 系統管理員（ SG6000 和 SG5700 ）</block>
   <block id="cbc817df49c13d2739e53c6f3ab21240" category="section-title">設定及存取SANtricity 《整套系統管理程式》</block>
   <block id="61781e904419d0ca3e48179b7b7cfa09" category="paragraph">您可能需要存取SANtricity 儲存控制器上的「靜態系統管理程式」、才能監控儲存控制器機櫃中的硬體、或是設定E系列AutoSupport 支援。</block>
   <block id="ba653269166989e83e8fe34212db15e5" category="list-text">您使用的是<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
@@ -1387,7 +1354,6 @@
   <block id="a551b5cc1f477d04e84ffc68af0a73a3" category="list-text">40 GbE</block>
   <block id="edcd3f3adc6d51b309e9115847fa497f" category="list-text">100 GbE</block>
   <block id="eabd43664e79e5045a1c26a5206953b2" category="paragraph">*附註：* SG1000、10和25 GbE速度需要使用QSA介面卡。</block>
-  <block id="d96faa3d987703978fcbe242df4026b8" category="paragraph">VLAN標記（如果已啟用VLAN標記）</block>
   <block id="ccbcbffde785af5096552d69adac97c6" category="paragraph">最大傳輸單位（MTU）設定（選用）您可以使用預設值1500、或將MTU設為適合巨型框架（例如9000）的值。</block>
   <block id="171ba11db5127b269e7702fe4cd50c57" category="paragraph">VLAN 標記（如果已啟用 VLAN 標記）</block>
   <block id="fcaf09fb0540e3464838550131eda295" category="paragraph">您可以使用圖中圈出的1-GbE管理連接埠、存取服務應用裝置上的BMC介面。此連接埠支援使用智慧型平台管理介面（IPMI）標準、透過乙太網路遠端管理控制器硬體。</block>
@@ -1430,7 +1396,6 @@
   <block id="a249f76c4095ddefa881f715710d7147" category="list-text"><block ref="a249f76c4095ddefa881f715710d7147" category="inline-link-macro-rx"></block></block>
   <block id="74f59abb934ce0fab097a3c4810df887" category="list-text"><block ref="74f59abb934ce0fab097a3c4810df887" category="inline-link-macro-rx"></block></block>
   <block id="484c457202709de0c10023810d8ba95d" category="list-text"><block ref="484c457202709de0c10023810d8ba95d" category="inline-link-macro-rx"></block></block>
-  <block id="099ef61ced960c926bea30d356db05aa" category="list-text"><block ref="099ef61ced960c926bea30d356db05aa" category="inline-link-macro-rx"></block></block>
   <block id="37762f3f6eccda100a7d19e1d6a9b5d1" category="list-text"><block ref="37762f3f6eccda100a7d19e1d6a9b5d1" category="inline-link-macro-rx"></block></block>
   <block id="d2ac588ca1c2e36ed5fe68add0ef2b5b" category="inline-link-macro">檢視狀態指示燈和代碼</block>
   <block id="a858da9bda9e3877715430e0088bb5dc" category="list-text"><block ref="a858da9bda9e3877715430e0088bb5dc" category="inline-link-macro-rx"></block></block>
@@ -1447,8 +1412,6 @@
   <block id="6efb63c9dddb08a981caced6ecaa7231" category="list-text">執行選用的設定步驟</block>
   <block id="1769437c445032226853842293627464" category="inline-link-macro">啟用節點或磁碟機加密</block>
   <block id="0dce870abc630014d0799a7b47dfd01e" category="list-text"><block ref="0dce870abc630014d0799a7b47dfd01e" category="inline-link-macro-rx"></block></block>
-  <block id="9bc92d9bcd0a9a4123abce2e3b74b23f" category="inline-link-macro">變更 RAID 模式（ SG6000 和 SG5700 ）</block>
-  <block id="d394ab81383f158df594aa9f15a8fabf" category="list-text"><block ref="d394ab81383f158df594aa9f15a8fabf" category="inline-link-macro-rx"></block></block>
   <block id="2171ee6f1f3ccc6f315dabf2a4d9915c" category="inline-link-macro">重新對應網路連接埠</block>
   <block id="c34a1892850e29f57586c61eaab0d8f1" category="list-text"><block ref="c34a1892850e29f57586c61eaab0d8f1" category="inline-link-macro-rx"></block></block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
@@ -1465,7 +1428,6 @@
   <block id="fbd59588f47c4e2c25882a72c72679b5" category="image-alt">應用裝置機架固定螺絲</block>
   <block id="128fde5f6e9c46ed83a600d039a96904" category="summary">存取 BMC 介面之前、您必須先設定 SG6000-CN 控制器或服務應用裝置上 BMC 管理連接埠的 IP 位址。</block>
   <block id="b5d159ceaea94c3a2732ad570aa10c96" category="doc">設定BMC管理連接埠的IP位址</block>
-  <block id="1b8b4a41d1597c32bcd7a2bcf7c00671" category="paragraph">存取 BMC 介面之前、請先設定 SGF6112 、 SG6000-CN 控制器或服務應用裝置上 BMC 管理連接埠的 IP 位址。</block>
   <block id="bd59b1bc2cc811b2a0ca0896cdeea21b" category="paragraph">如果您使用 ConfigBuilder 來產生 JSON 檔案、則可以自動設定 IP 位址。請參閱 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="9933d496288dd877d141fe78728ec679" category="list-text">您正在使用任何可連線StorageGRID 至該網路的管理用戶端。</block>
   <block id="7c5322ec774181b7e300e2cdb66d49c7" category="list-text">BMC管理連接埠會連線至您打算使用的管理網路。</block>
@@ -1491,13 +1453,10 @@
   <block id="4f8aff5bf9c167b3649d77f8f2b7630a" category="section-title">可能需要的其他組態</block>
   <block id="faef9df60e0cd7e1478b3e4ad0380aee" category="paragraph">視您要設定的應用裝置類型而定、可能需要額外的硬體組態。</block>
   <block id="0472921e1ddce2239a2bd92ea276d1c2" category="section-title">系統管理程式SANtricity</block>
-  <block id="de2f6147f0c57c469e5f87e76070fd78" category="paragraph">對於 SG6000 和 SG5700 、您可以設定 SANtricity 系統管理員。SANtricity 軟體用於監控這些應用裝置的硬體。</block>
   <block id="16d7e4f3a9455e7a1d4ebf93499e7caf" category="paragraph">下列應用裝置具有必須設定的 BMC 介面：</block>
   <block id="b37b765ff94c3854a8ad86e1f6de7f50" category="section-title">選用組態</block>
   <block id="3bd3245617e11aba80c015534ac948df" category="list-text">儲存設備</block>
-  <block id="f8f415ceb19b46c9a19a3b54ba7e76c4" category="list-text">設定 SANtricity 系統管理員（ SG5700 和 SG6000 ）您將用於監控硬體的軟體</block>
   <block id="d9f435cb7a4ab03ce6a9dd9556ec754d" category="list-text">變更 RAID 模式</block>
-  <block id="8bcdd04428a0e463b5d2942eb52fa7a4" category="list-text">存取 SG6000-CN 控制器的 BMC 介面</block>
   <block id="bf6a9db479978eb4f9d757484d56488a" category="list-text">服務應用裝置</block>
   <block id="d66b55cd8d763d06c15eb0e4ec520f0a" category="doc">疑難排解硬體安裝（SG100和SG1000）</block>
   <block id="2fe63d2b3f22e322fc5a2471a0057de8" category="list-text">您知道如何 <block ref="de1e0aa09b9ef96e751421d7f7e86d04" category="inline-link-macro-rx"></block>。</block>
@@ -1508,8 +1467,6 @@
   <block id="ad378d13a25060b034dd7edf024bc628" category="paragraph">您可以在包裝單、確認電子郵件或打開產品包裝後、在產品上找到編號。</block>
   <block id="3c05344cb7e95d3d6df4a369dcfb2edc" category="image-alt">標籤、包括序號</block>
   <block id="066d12054d9afc9be3247ab0f9594247" category="admonition">SG6000 儲存設備上有數個序號。儲存控制器機櫃上的序號是當您致電 SG6000 應用裝置尋求服務或支援時、必須註冊及使用的序號。</block>
-  <block id="0373910e51252c7b97dcbea9f4942604" category="inline-link">mysupport.netapp.com</block>
-  <block id="8a7ac8ffae90ca0a1caaddb0f33069c2" category="list-text">前往 NetApp 支援網站：<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block>。</block>
   <block id="90ed358c469bf87198e7e8c7b3e6f8c3" category="list-text">判斷您是否需要註冊硬體：</block>
   <block id="8f45a9f1fcb944bee42c078bdeacd8ac" category="cell">如果您是...</block>
   <block id="e3df4624e4d36502b5d044730eab97cc" category="cell">請遵循下列步驟...</block>
@@ -1583,7 +1540,6 @@
   <block id="2883e46b0cc053610a740a38d3926f04" category="list-text">應用裝置上的 BMC 管理連接埠會連線至您打算使用的管理網路。</block>
   <block id="4be2dcfae6d0da21daf5c0d492c93112" category="image-alt">SG100 BMC 管理連接埠</block>
   <block id="e268e4a4acdc321676d16061eda7533c" category="image-alt">SG6000-CN 控制器 BMC 管理連接埠</block>
-  <block id="b991cbbe78507a1cbaaa0361904f49b8" category="image-alt">SGF6112 BMC 管理連接埠</block>
   <block id="ec6bf1f67dead298c99ce0571160fd25" category="list-text">輸入BMC介面的URL：+<block ref="c45ccdbad45f36f8255e32c006fb43d6" prefix=" " category="inline-code"></block></block>
   <block id="e7e2d74588d8e30d494c305e6ac60d1b" category="paragraph">適用於<block ref="37cdf1f6d41153f195b1ddcfaf1f1663" prefix=" " category="inline-code"></block>中的DHCP或靜態IP位址。</block>
   <block id="62413447713cd833c89ad46c5d87fa3f" category="paragraph">此時會出現BMC登入頁面。</block>
@@ -1832,7 +1788,6 @@
   <block id="ba0ecb8ca50d0a071c2da3a1974578b8" category="admonition">設備一開始會設定指派給每個磁碟區的隨機非KMS加密金鑰。磁碟會使用這種不安全的暫時加密金鑰進行加密、直到啟用節點加密的應用裝置存取針對StorageGRID 您的站台所設定的KMS金鑰為止。</block>
   <block id="66bb499d1d6e9c0a4e1c872e5a1742db" category="inline-link-macro">在維護模式中監控節點加密</block>
   <block id="57fc37510182888ed4e833d1dc9f83cf" category="paragraph">當應用裝置節點處於維護模式時、您可以檢視節點加密狀態、KMS詳細資料及使用中的憑證。請參閱 <block ref="04852d1b427afc14d010bc081f44a3aa" category="inline-link-macro-rx"></block> 以取得資訊。</block>
-  <block id="2832880200f34929d647aedeb713836a" category="paragraph">磁碟機加密是在寫入和讀取程序期間、在自我加密磁碟機（ SED ）硬體上進行管理。存取這些磁碟機上的資料是由使用者定義的複雜密碼所控制。磁碟機加密用於直接附加的固態硬碟（ SSD ）、這些硬碟用於 StorageGRID 應用裝置中的快取。</block>
   <block id="f4b6f694a5501888787381e6a815ab2e" category="paragraph">加密的 SED 會在設備關機或從應用裝置移除磁碟機時自動鎖定。加密的 SED 會在電源恢復後保持鎖定、直到輸入正確的密碼。若要在不手動重新輸入複雜密碼的情況下存取磁碟機、複雜密碼會儲存在 StorageGRID 應用裝置上、以便在應用裝置重新啟動時、解除鎖定仍留在應用裝置中的加密磁碟機。任何知道密碼短語的人都可以存取使用 SED 密碼短語加密的磁碟機。</block>
   <block id="0ffb3b992e7b67a3cf4b6e86c5e6d58e" category="paragraph">磁碟機加密不適用於 SANtricity 管理的磁碟機。如果您的 StorageGRID 應用裝置具有 SED 和 SANtricity 控制器、則可以在中啟用磁碟機安全性 <block ref="26de6fd427efcc81f7ad7cd6aad9003d" category="inline-link-macro-rx"></block>。</block>
   <block id="0fb0c001659e1b8d7876247f8c4b3eac" category="paragraph">您可以在初始應用裝置安裝期間啟用磁碟機加密、然後再載入 Grid Manager 。您也可以將應用裝置設為維護模式、以啟用節點加密或變更密碼。</block>
@@ -2134,7 +2089,6 @@
   <block id="7c11696f8a89324a0a84b1e0e9a2c1f0" category="paragraph">（ 19.88 公斤）</block>
   <block id="d66a2d3c2473926cbdbb165b80ee050d" category="list-text">決定裝置的安裝位置。</block>
   <block id="d522d9fa8f508f9779ce05b04b6dc540" category="admonition">安裝E2860控制器櫃或選購的擴充櫃時、請從機架或機櫃的底部到頂端安裝硬體、以免設備翻倒。為確保最重的設備位於機櫃或機架底部、請將SG6000-CN-控制器安裝在E2860控制器機櫃和擴充櫃上方。</block>
-  <block id="173e7168d9427e3b2082275b33f711f4" category="admonition">在進行安裝之前、請確認 SG6000 設備隨附的 0.5 公尺光纖纜線或您所提供的纜線、是否足以符合規劃的配置。</block>
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link-macro">NetApp 互通性對照表工具</block>
   <block id="872650c62b79ac38d6d4c1c99abea812" category="list-text">安裝所有必要的網路交換器。請參閱 <block ref="8929420574d68b861547fa3bcafe0ff2" category="inline-link-macro-rx"></block> 以取得相容性資訊。</block>
   <block id="e77da1726171f3aa08bb5fc1f71dc800" category="summary">您可能需要在 StorageGRID 應用裝置安裝程式執行時重新啟動應用裝置。例如、如果安裝失敗、您可能需要重新啟動應用裝置。</block>
@@ -2309,14 +2263,10 @@
   <block id="4445740b227c0fab6714a5dc6d461362" category="list-text"><block ref="b265e0b5fffc61b47b31ece88f0b4844" category="inline-xref-macro-rx"></block></block>
   <block id="3ae8c90121d0857c2ae8443a54079364" category="inline-link-macro">SG6100 硬體安裝疑難排解</block>
   <block id="05add9c695fc95936748b4b0a0deaf4b" category="paragraph">請使用此資訊來提供協助 <block ref="df1ebcf70953f742cf1b1c09a759550c" category="inline-link-macro-rx"></block>。</block>
-  <block id="814e3b8c84ea3fb51b5ba352bf7679c8" category="paragraph">下圖顯示 SGF6112 應用裝置上的指示燈和按鈕。</block>
   <block id="7b0547b6e0a4787d71392966bc16aede" category="image-alt">正面指示燈 - SGF6112</block>
   <block id="a21a2d74e5547c0a476918f276fe3e07" category="paragraph">使用 BMC 時、此按鈕可設定為閃爍、開啟（穩定）或關閉。</block>
   <block id="e3e29abcd624744c82654d9487f70f59" category="paragraph">狀態 LED</block>
   <block id="847ee3e0bee9bb87fba5038e760ea661" category="paragraph">PFR</block>
-  <block id="118b92bf670a92f374463a9c605f1ed7" category="paragraph">SGF6112 產品並未使用此燈號、且燈號會持續熄滅。</block>
-  <block id="24c136181835541bd378e1827c0efe92" category="paragraph">下圖顯示 SGF6112 應用裝置上的 SSD 指示燈。</block>
-  <block id="45be24e41c97c465d4fffc9e82155d17" category="paragraph">* 附註： * 如果新的正常運作 SSD 插入正在運作的 SGF6112 StorageGRID 節點、 SSD 上的 LED 應會開始閃爍、但一旦系統判斷磁碟機有足夠容量且正常運作、就會停止閃爍。</block>
   <block id="8a45423f8adbe098ac885748535aaf6f" category="summary">應用裝置上的《產品安裝程式版本」必須與安裝在您的支援系統上的軟體版本相符、才能確保支援所有的功能。StorageGRID StorageGRID StorageGRID</block>
   <block id="606e00686a271ec524993d6d2cb4c972" category="paragraph">您已存取StorageGRID 了《應用程式安裝程式：</block>
   <block id="3a80b8476efec1a81aee27516564f0d0" category="paragraph">來自原廠預先安裝的不含不含「功能」的應用程式。StorageGRID StorageGRID如果您要將應用裝置新增至最近升級StorageGRID 的更新的版本、可能需要手動升級StorageGRID 該應用裝置的安裝程式、才能將應用裝置安裝為新節點。</block>
@@ -2358,7 +2308,6 @@
   <block id="36730302c17f9a3c1ffb4404a3438513" category="inline-link-macro">連接埠連結模式（連接埠連結模式（ SG100 和 SG1000 ）</block>
   <block id="462782717f8211566b806515959d2f38" category="paragraph">連線到Grid Network和Client Network for StorageGRID the  請參閱 <block ref="8eb6ab3cbcda082d7a3ac7b6881bb3e1" category="inline-link-macro-rx"></block>。</block>
   <block id="5c9fce84b3316e461d0e55bf0f1b9021" category="paragraph">應用裝置上的管理網路連接埠（圖中標示為 P1 ）</block>
-  <block id="c206bdfe04c51c21c00c8a4c1bc14e20" category="paragraph">*重要事項：*此連接埠僅以1000 BaseT/完整運作、不支援10或100 MB的速度。</block>
   <block id="46a8c6d986e87c118da8bab5c7c2ba30" category="paragraph">將應用裝置連接至管理網路StorageGRID 以供其使用。</block>
   <block id="65f494b4f7f3c3b65eb0e0866a69854e" category="paragraph">設備上最適當的RJ-45連接埠</block>
   <block id="eba5fb90416b4d1ec056dd96b4b9a9bb" category="list-text">如果您想要與管理網路建立備援連線、可以與管理連接埠1連結。</block>
@@ -2470,13 +2419,10 @@
   <block id="4f7d5e619dc65fe215954d5458e7e074" category="list-text">如果您打算使用管理網路來執行SANtricity 《支援不支援的系統管理程式》、SANtricity 請使用乙太網路纜線、將每個儲存控制器（左側RJ-45連接埠）上的管理連接埠1（P1）連接至管理網路、以利執行《支援系統管理程式》。</block>
   <block id="c48e37c33b3b64bcfffb6634abeafeb3" category="paragraph">請勿在儲存控制器（右側的 RJ-45 連接埠）上使用管理連接埠 2 （ P2 ）。此連接埠保留供技術支援使用。</block>
   <block id="d66f84f8e94e7c39e383d1e8706f4a47" category="paragraph">您可以將應用裝置上的管理連接埠連接到服務筆記型電腦、並將應用裝置上的網路連接埠連接到 Grid Network 和選用的 Client Network for StorageGRID 。</block>
-  <block id="f0fd692a09237cf70e134f18c5d64796" category="paragraph">下圖顯示 SGF6112 背面的連接埠。</block>
   <block id="a4f7730074c9e36fee91bd59b70a43c1" category="image-alt">SGF6112 後方接頭</block>
   <block id="5390b04f587d3d8b299cab003e0bc1d3" category="paragraph">裝置上有四個 10/25-GbE 網路連接埠</block>
-  <block id="0eec1dd29f2897adcc04d84072d23ee2" category="paragraph">連線到Grid Network和Client Network for StorageGRID the請參閱 <block ref="9b0ebbd0b18d5ca191d887f476200053" category="inline-link-macro-rx"></block></block>
   <block id="64b481bec9898505a800273caa538e25" category="paragraph">應用裝置上的管理網路連接埠（圖中標示為 P1 ）</block>
   <block id="e177c7b09068894de2f987e316384da1" category="paragraph">* 重要： * 此連接埠僅以 1/10-GbE （ RJ-45 ）運作、不支援 100 Mb 速度。</block>
-  <block id="03d481b126b21369824686b0e93eb56e" category="cell">SGF6112 連結速度（ GbE ）</block>
   <block id="e7be1c6b52ba09c1eb4e355e967d6301" category="summary">《SESSG6060與SG60X應用裝置：StorageGRID 運算控制器與儲存控制器櫃、包含兩個儲存控制器與60個磁碟機。</block>
   <block id="c6bb48a5e2b12907db4236e02760c83b" category="doc">SG6060 和 SG6060X 設備：總覽</block>
   <block id="9f57a291c7878fbe1e18768e6d319065" category="paragraph">您也可以選擇將60個磁碟機擴充櫃新增至這兩個應用裝置。SG6060 與 SG6060X 之間沒有規格或功能上的差異、儲存控制器上的互連連接埠位置除外。</block>
@@ -2755,8 +2701,6 @@
   <block id="82828b75bd7c1299c73c3da5ba0b0b2d" category="inline-link">維護或根存取權限</block>
   <block id="f444b7c02a193b7d5b0e553d416d92ca" category="list-text">您擁有<block ref="b0a3545f40488f39b71de1f5af9d2d3f" category="inline-link-rx"></block>。</block>
   <block id="9a4832beec51f38ad760c485e07c9b9c" category="list-text">您有資源配置通關密碼。</block>
-  <block id="4feabd1224720084f0948b83e5581c8c" category="list-text">您可以存取<block ref="17b838622e0459e6c950b0d070de6b4f" category="inline-link-rx"></block>。</block>
-  <block id="ced1f953e4c152c3ceaf07cb81d38318" category="paragraph">在完成 SANtricity OS 升級程序之前、您無法執行其他軟體更新（ StorageGRID 軟體升級或 Hotfix ）。如果您在StorageGRID 完成更新程序之前嘗試啟動修補程式或更新版的功能、SANtricity 您會被重新導向SANtricity 到「更新版更新版」頁面。</block>
   <block id="5973629dedc46aea0b358220d599bfbd" category="paragraph">直到成功將更新套用至所有已選擇進行升級的適用節點為止、此程序才會完成SANtricity 。在SANtricity 每個節點上（依序）載入不一致的作業系統可能需要30分鐘以上、而重新啟動StorageGRID 每個不一致的儲存設備可能需要90分鐘。您網格中任何不使用 SANtricity OS 的節點都不會受到此程序的影響。</block>
   <block id="78b2a3316e8d5167c09213c366ccdf88" category="admonition">下列步驟僅適用於使用Grid Manager執行升級的情況。當控制器使用早於 08.42.20.00 （ 11.42 ）的 SANtricity 作業系統時、無法使用 Grid Manager 來升級應用裝置中的儲存控制器。</block>
   <block id="61d38d1cdbd76386b6ca992b9d0137ee" category="admonition">此程序會自動將NVSRAM升級 至SANtricity 與更新版有關的最新版本。您不需要套用個別的 NVSRAM 升級檔案。</block>
@@ -2832,7 +2776,6 @@
   <block id="c0ce89e53f48ad69404bd79d5a7f6151" category="inline-link">監控節點連線狀態</block>
   <block id="7879a141f29939fce0aabd7f2fee03d9" category="paragraph">為避免服務中斷、請在開始更換網路介面卡（ NIC ）之前、確認所有其他儲存節點都已連線至網格、或在可接受服務中斷期間的排程維護期間更換 NIC 。請參閱相關資訊<block ref="742191401cce2d2da7992b41915ad587" category="inline-link-rx"></block>。</block>
   <block id="2476382d1fb7937c6e08639e92e9d711" category="inline-link">為何不應使用單一複本複寫</block>
-  <block id="c088c9cc12b660bfa52420bd26057d24" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程維護期間更換 NIC 。否則、在此程序期間、您可能會暫時失去對這些物件的存取權。請參閱相關資訊<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
   <block id="4a878637c5e3724ecaa541f40a4bef16" category="list-text">找到設備背面包含 NIC 的擴充卡組件。</block>
   <block id="6075a4acaf64fb38fadff43698028748" category="paragraph">裝置中的三個 NIC 位於機箱中的兩個立管組件中、如圖所示（圖中所示為卸下頂蓋的產品背面）：</block>
   <block id="cc2287c439832d9034040c5e68171067" category="image-alt">NIC 位置</block>
@@ -2894,7 +2837,6 @@
   <block id="9bab1ecdd4bd4e687b0585e9cdb2dce3" category="list-text">選取 * 重新開機至 StorageGRID * 、以重新啟動節點重新加入網格的運算控制器。如果您已在維護模式下完成工作、並準備好讓節點恢復正常作業、請選取此選項。</block>
   <block id="08c9cceee0a6966bea233700fc31e63c" category="list-text">選取 * 重新開機至維護模式 * 、以重新啟動運算控制器、使節點保持在維護模式。（此選項僅在控制器處於維護模式時可用。） 如果在節點重新加入網格之前、需要在節點上執行其他維護作業、請選取此選項。</block>
   <block id="9a18cbee573ae5e0a81c57565a8239d3" category="paragraph">為避免服務中斷、請確認所有其他儲存節點均已連接至網格、然後再開始更換風扇、或在可接受服務中斷期間的排程維護期間更換風扇。請參閱相關資訊<block ref="742191401cce2d2da7992b41915ad587" category="inline-link-rx"></block>。</block>
-  <block id="c97a80297e486669f93485561c3164ed" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程維護期間更換風扇。否則、在此程序期間、您可能會暫時失去對這些物件的存取權。請參閱相關資訊<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
   <block id="aa7a430b5102e55ec29d486c5165e7ba" category="paragraph">相片顯示產品的風扇。電子接頭會反白顯示。將產品的頂蓋從產品上卸下後、即可接觸到冷卻風扇。</block>
   <block id="dc55836577fc02b16cce59c34c0bd0f3" category="admonition">兩個電源供應器單元中的每個單元都有一個風扇。此程序不包含電源供應器風扇。</block>
   <block id="c36b4cc7c715c27cf89053ed16076b2a" category="list-text">找到您需要更換的風扇。</block>
@@ -2915,7 +2857,6 @@
   <block id="25d33805c4fc3fc9ef5848f3d1c76650" category="list-text">將風扇的接頭穩固地按入電路板（突出顯示插槽）。</block>
   <block id="28e41029e41676fc4c53ea6a68e37bf2" category="doc">重新安裝 CMOS 電池</block>
   <block id="d52f3d0f799abea307b13972c0f9af3d" category="paragraph">為避免服務中斷、請在開始更換 CMOS 電池之前、確認所有其他儲存節點均已連接至網格、或在可接受服務中斷期間的排程維護期間更換電池。請參閱相關資訊<block ref="742191401cce2d2da7992b41915ad587" category="inline-link-rx"></block>。</block>
-  <block id="4e2cdcfe3a4b1681a1b963cdb8dcd4ce" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程的維護期間更換電池。否則、在此程序期間、您可能會暫時失去對這些物件的存取權。請參閱相關資訊<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
   <block id="37d27b84d37ca2c4710cb9b17554424e" category="list-text">找到產品背面的雙插槽擴充卡組件。</block>
   <block id="76245833024f1d80f06ad708ab46663e" category="image-alt">雙插槽擴充卡位置</block>
   <block id="a9d1558f7b5cfc455393c7b1b00db64c" category="list-text">抓住提昇部件的藍色標記孔、然後小心地將其向上提起。將提升板部件向機箱正面移動，以便將其安裝的 NIC 中的外部連接器清空機箱。</block>
@@ -3009,7 +2950,6 @@
   <block id="2dfb9b9fe663376184bfd65a4deb94fd" category="doc">複製應用裝置節點</block>
   <block id="0235e20f203c294d37deda19de63884d" category="paragraph">複製程序可能需要數天的時間、才能在來源節點（正在更換的應用裝置）和目標（新）應用裝置之間傳輸資料。</block>
   <block id="47e8652b2101615daf061495f94fd6e3" category="list-text">您已將相容的目標應用裝置安裝在機櫃或機架中、連接所有纜線並接上電力。</block>
-  <block id="b7722230be9c3a0be5217dd393c7efbd" category="list-text">您已確認替換應用裝置上的 StorageGRID 應用裝置安裝程式版本與 StorageGRID 系統的軟體版本相符、如有必要、請升級及降級 StorageGRID 應用裝置安裝程式韌體。</block>
   <block id="ae239f2fb8648e11883911dabd54bc37" category="list-text">您已設定目標應用裝置、包括設定StorageGRID 支援鏈路、SANtricity 支援系統管理程式（僅限儲存應用裝置）和BMC介面。</block>
   <block id="79b3f1e1ebc3d2879bdcd94690df1dc3" category="list-text">設定StorageGRID 靜態連線時、請使用暫用IP位址。</block>
   <block id="049c3cbb547687df35cb55b59ea14493" category="list-text">設定網路連結時、請使用最終的連結組態。</block>
@@ -3285,13 +3225,10 @@
   <block id="1d633b4a689ee09de3a2f149c37d8cbe" category="list-text">工具與應用程式指南。</block>
   <block id="e2ac36e2f684920c9531933bf719a29d" category="list-text">使用StorageGRID S3加密和S3物件鎖定等功能的API範例。</block>
   <block id="c00b09ca8266731695ca7354c39a081e" category="summary">請使用此程序更換主機板上的 CMOS 幣式電池。</block>
-  <block id="3ecd1a81adab4943e9d94e2ecbaf1196" category="doc">更換 SGF6112 CMOS 電池</block>
   <block id="fccb2f1404a4eed86cb8922307a28817" category="paragraph">請使用下列程序：</block>
   <block id="813a6c9c907e3a4df132a8b9f28e3f44" category="list-text">取出 CMOS 電池</block>
   <block id="e9eeb29aa106609d6de499c60a1bb7ab" category="inline-link-macro">已驗證需要更換 CMOS 電池的設備</block>
   <block id="ea70b6ae5e8e6000f846a5a8a6fee1d9" category="list-text">您有 <block ref="5813a66984e2f107697524f5da800ff8" category="inline-link-macro-rx"></block>。</block>
-  <block id="345eac6a65830f825b350873a3dd7c4e" category="inline-link-macro">實體放置 SGF6112 應用裝置</block>
-  <block id="9ed73a654971521613c63837160ff2bc" category="list-text">您有 <block ref="00821d5f694e2cda98ac91386ea14109" category="inline-link-macro-rx"></block> 您要在資料中心更換 CMOS 電池的位置。</block>
   <block id="af649bc3ca89bac5478860bada27d6ff" category="inline-link-macro">受控制的產品關機</block>
   <block id="b58cf6331a388f8ca4d6c2d9ba4dcb68" category="admonition">答 <block ref="6bb1c156f9acfcc4bd439f64de9f6179" category="inline-link-macro-rx"></block> 從機架中取出產品之前、必須先完成此步驟。</block>
   <block id="f53242e4269fef805877f4a607bfeb25" category="inline-link-macro">已取下產品護蓋</block>
@@ -3330,22 +3267,12 @@
   <block id="a7c99d1b44c3cfef060bab2387eba42e" category="admonition">為了避免資料遺失、如果 Appliance Installer 指出需要變更實體硬體、例如將磁碟機移至不同的插槽、請先關閉應用裝置電源、再進行硬體變更。</block>
   <block id="ca2048aa7418bfc8c45e3193b5be5e0d" category="paragraph"><block ref="ca2048aa7418bfc8c45e3193b5be5e0d" category="inline-link-macro-rx"></block></block>
   <block id="5c7a2a67a862c92aebc2865b7c819287" category="summary">將 SGF6112 從機櫃或機架中取出、以便拆裝機箱頂蓋或將產品移至其他位置、然後在硬體維護完成時、將產品重新安裝到機櫃或機架中。</block>
-  <block id="300e8e19b9e2e45c90302375ce28b7a8" category="doc">將 SGF6112 重新放置在機櫃或機架中</block>
-  <block id="60a141d85a78d29c21c8ff85d6f4e75b" category="section-title">從機櫃或機架上卸下 SGF6112</block>
-  <block id="c86980c3f1e6fdf92dacf934f0b3a41a" category="list-text">您可以使用標籤來識別連接至 SGF6112 的每條纜線。</block>
-  <block id="0f46aa757907bd6392db75ca07da26b5" category="inline-link-macro">實體放置 SGF6112</block>
-  <block id="9453d7b8e3922629c80ac307d5d14b07" category="list-text">您有 <block ref="938d7d20a1744aa10188878a82514e13" category="inline-link-macro-rx"></block> 您在資料中心執行維護的位置。</block>
-  <block id="66def294b43eebe4fb645ba52950032e" category="inline-link-macro">關閉 SGF6112</block>
-  <block id="30419c23a6253f21b51bb61fc2aef76c" category="list-text">您有 <block ref="89c84054dc38e373ad0db762668e9149" category="inline-link-macro-rx"></block>。</block>
   <block id="e7398e21823a1d6850d98f9f0adb90af" category="admonition">請勿使用電源開關關閉產品。</block>
   <block id="dc4aada9d719c5cd8b6b1b2e23cb1371" category="list-text">標示產品電源纜線、然後拔下產品電源纜線。</block>
   <block id="46a5d9c5224c1f02cb53e7a335b4fe9b" category="list-text">標記並拔下應用裝置資料纜線和任何 SFP+ 或 SFP28 收發器。</block>
   <block id="11fbf7140ce91c9398bb7a3a99d464d5" category="list-text">鬆開產品前面板上的兩顆緊固螺絲。</block>
-  <block id="5e299afaeda648888902a2a730be13db" category="image-alt">SGF6112 機架固定螺絲</block>
-  <block id="82f2ae91ed5c451cfd5be69fcf2497a2" category="list-text">將 SGF6112 向前滑出機架、直到安裝滑軌完全展開、同時聽到兩側的卡榫發出卡嗒聲。</block>
   <block id="a5014ece3e0b4c6a877190120ac581e6" category="paragraph">產品頂蓋可供使用。</block>
   <block id="c5588a15f8fd3f7a84bfbfe6b1b7860c" category="list-text">選用：如果您要從機櫃或機架中完全移除產品、請遵循軌道套件的指示、將產品從軌道中移除。</block>
-  <block id="6a6201f83a68a1db88b33697ab1df327" category="section-title">將 SGF6112 重新安裝到機櫃或機架中</block>
   <block id="f877f0b0d80902a6ea00046835516bf1" category="inline-link-macro">已重新安裝設備護蓋</block>
   <block id="906d0bc273dc1ab148591cab0d5e0322" category="paragraph">您有 <block ref="812bded95bac7a3d6c89698c2c6bbb85" category="inline-link-macro-rx"></block>。</block>
   <block id="e93b1583c46e1a5ba07d37941f32ba05" category="list-text">同時按下藍色滑軌可同時釋放兩個機架滑軌、並將 SGF6112 滑入機架、直到完全就位。</block>
@@ -3355,7 +3282,6 @@
   <block id="b6b0dd970889f43cc1c52597b7622743" category="list-text"><block ref="6f9f5a65c301bc92abf7bdeee5c6a76d" category="inline-link-macro-rx"></block>。</block>
   <block id="37abf98b4de9f33857b199b4587f5694" category="inline-link-macro">重新啟動應用裝置</block>
   <block id="75a0a5a5fe162a7f9fdba4837463d44f" category="summary">產品正面的藍色識別 LED 可開啟、協助您在資料中心找到產品。</block>
-  <block id="6f0e600a24fecbdf20f99f186e630c00" category="doc">開啟和關閉 SGF6112 應用裝置識別 LED</block>
   <block id="debdd98b0f5a40d3b21e412c9c782a4d" category="paragraph">產品正面和背面的藍色識別 LED 可開啟、協助您將產品定位在資料中心。</block>
   <block id="8d0a484f63561e569cf5b352c5be813a" category="inline-link-macro">在資料中心找到應用裝置</block>
   <block id="48ce381161753a96507e349f7aa77165" category="paragraph"><block ref="48ce381161753a96507e349f7aa77165" category="inline-link-macro-rx"></block></block>
@@ -3366,7 +3292,6 @@
   <block id="68f44a5f426fd13a4802cb01ac1d7315" category="list-text"><block ref="68f44a5f426fd13a4802cb01ac1d7315" category="inline-link-macro-rx"></block></block>
   <block id="ce138546c4022c5f921151b040de7835" category="inline-link-macro">變更應用裝置的連結組態</block>
   <block id="0ce844c740cb34e864fd34c6b3920227" category="list-text"><block ref="0ce844c740cb34e864fd34c6b3920227" category="inline-link-macro-rx"></block></block>
-  <block id="9c277b9d4e0b5ac149e40e5818d10086" category="paragraph">* 硬體維護程序 * 需要實際操作特定 SGF6112 元件。</block>
   <block id="dae4c8cdf2413509b051569aaef1535c" category="section-title">磁碟機韌體升級</block>
   <block id="f702bc271368da9c279da8cc99ca78ae" category="paragraph">每次設備重新開機時、會自動檢查 SGF6112 磁碟機上的韌體。必要時、韌體會自動升級至目前 StorageGRID 版本所預期的版本。通常、韌體升級會在 StorageGRID 軟體升級期間進行。現有 StorageGRID 版本的任何必要磁碟機韌體升級都會包含在 Hotfix 中。請遵循每個 Hotfix 所提供的指示、以確保升級套用至所有能從中受益的磁碟機。</block>
   <block id="913744aa387347bb97ed58db27844401" category="admonition">您不需要 SANtricity 系統管理員來維護 SGF6112 應用裝置。</block>
@@ -3376,32 +3301,22 @@
   <block id="bedad9eb7073e36d2a9801e1f83bb9c2" category="inline-link-macro">設定應用裝置硬體</block>
   <block id="d757f062e4dd3e97541f93ae20ef76ca" category="paragraph">請參閱 <block ref="3cd3c544186dbcf1311ef99e8c33e378" category="inline-link-macro-rx"></block> 應用裝置的維護程序、也可在初始應用裝置安裝和組態期間執行。</block>
   <block id="aa5b4a664b48fc6039396dbf6f10486b" category="summary">如果您不確定要在應用裝置中更換哪個硬體元件、請完成此程序、以識別產品在資料中心的元件和位置。</block>
-  <block id="379b6a7882368dc9fffe26042c02c51e" category="doc">驗證要在 SGF6112 中更換的元件</block>
   <block id="1ddca222131e2e7a1fe36974cc7025bf" category="inline-link-macro">開啟產品識別 LED</block>
   <block id="96ec9d51ace6abd77b19710012ce9d4e" category="paragraph"><block ref="96ec9d51ace6abd77b19710012ce9d4e" category="inline-link-macro-rx"></block></block>
   <block id="21d2ff879b67e11501789f8f13e5700c" category="summary">找到應用裝置、以便執行硬體維護或升級。</block>
-  <block id="ad7d42647423cd1858d80364dd943ba0" category="doc">在資料中心找到 SGF6112 應用裝置</block>
   <block id="8606cc570590a2189f69f69e26043a3b" category="list-text">您已確定哪些應用裝置需要維護。</block>
   <block id="866b15b03fdf944555cf7f78376576ba" category="list-text">為了協助您在資料中心找到應用裝置、 <block ref="240f345dc5f5d7ec029eceedab147612" category="inline-link-macro-rx"></block>。</block>
-  <block id="d86df602cd64abf596df72b86b4a71c3" category="paragraph"><block ref="106db197e8d447cef2c47289a65f4849" category="inline-link-macro-rx"></block> 如果您使用它來尋找產品。
- ** 按下產品前面板上的識別 LED 開關。
- ** 使用應用裝置 BMC 介面。</block>
   <block id="ca6d054017ddc79964c73649d3345c2e" category="summary">取下產品外蓋以檢修內部組件以進行維護、完成後請裝回外蓋。</block>
-  <block id="eb27927b26f4dd87960733fa996147db" category="doc">裝回 SGF6112 護蓋</block>
   <block id="504ea1dc7cbee2bb02688ab4f6b875df" category="section-title">取下外蓋</block>
   <block id="dbdfc4926c16b4a6710c780a5aad8b8c" category="inline-link-macro">將產品從機櫃或機架中取出</block>
   <block id="96f6f15ac7ad0dd45987f16104111758" category="paragraph"><block ref="42a2d6b0d73946dcd45ead6b696360e6" category="inline-link-macro-rx"></block> 以存取頂蓋。</block>
   <block id="a2147742ad28587c900f8f87f3c433be" category="inline-link-macro">將產品重新安裝在機櫃或機架中</block>
   <block id="ef828ae2127fdbc868554a276a999dad" category="paragraph"><block ref="f0359c93df12c07c3a6d76b5ea5bf519" category="inline-link-macro-rx"></block>。</block>
   <block id="99d35ad57a73187b3b59a3f678e4e6bd" category="summary">您可以變更應用裝置的乙太網路連結組態、包括連接埠連結模式、網路連結模式和連結速度。</block>
-  <block id="231edcc2bffb3d826964bfb2dc152c9a" category="doc">變更 SGF6112 應用裝置的連結組態</block>
   <block id="0294d9f47cdfbdf9a8a7f630c62dddc8" category="summary">您可以關閉 SGF6112 應用裝置、然後重新開啟電源以執行維護。</block>
-  <block id="ac464b1cbe6c7bf4af461f022dd98d6d" category="doc">關閉和開啟 SGF6112 應用裝置電源</block>
-  <block id="e8b9f61abcbc8c83af03dff6bcab5043" category="section-title">關閉 SGF6112 應用裝置</block>
   <block id="70e0bb99f410a6dd79a141ee6c4ba565" category="paragraph">關閉設備以執行硬體維護。</block>
   <block id="7bd91ce90f1ed194c393882922e9c42d" category="paragraph">為避免服務中斷、請在可接受服務中斷期間的排程維護期間、關閉設備。</block>
   <block id="6f8205cfaf19dfd3696b0f6316d5a5a7" category="list-text">關閉產品電源：+<block ref="fc4ea1f1e2486ddf4a90174ec40b0013" prefix=" " category="inline-code"></block></block>
-  <block id="4583ff79788e6bd1db97d3af9a7b1827" category="section-title">開啟 SGF6112 並驗證作業</block>
   <block id="6f75a286f9dd807f8ba67d389d3f5934" category="paragraph">完成維護後、開啟控制器電源。</block>
   <block id="0fb44348ddd801d3b1bced4a330cddb0" category="inline-link-macro">已將控制器安裝在機櫃或機架中</block>
   <block id="770c5278577f08ae9bc74149d7ed7dac" category="list-text">您有 <block ref="3e7843b480908664dcf443ccde2ddacb" category="inline-link-macro-rx"></block> 並已連接資料纜線和電源線。</block>
@@ -3423,7 +3338,6 @@
   <block id="11462fb2917b851e5fb3f96bec8ba764" category="list-text">使用 Putty 或其他 ssh 用戶端登入網格節點、確認新應用裝置完全正常運作：</block>
   <block id="8a319d9f1f8fa62d913f59ab432b8f1a" category="list-text">輸入下列命令：<block ref="604b3aa6831925c337f9cec38597d65a" prefix=" " category="inline-code"></block></block>
   <block id="4a4df9fcde02f4c20df662c4d87783a1" category="summary">您可以使用 Grid Manager 中的「管理磁碟機」標籤、在 SGF6112 應用裝置中執行磁碟機的疑難排解和維護工作。</block>
-  <block id="e525b6b4f718b6369b2fa00ac33b215b" category="doc">使用管理磁碟機索引標籤</block>
   <block id="bf8542827bf52ff1d2d3ca74de649b6a" category="inline-link">儲存設備管理員或根存取權限</block>
   <block id="bf5f327428f0175033f3cbe43e6e7b3e" category="paragraph">管理磁碟機索引標籤包含下列檢視：</block>
   <block id="ebd9bec4d70abc789d439c1f136b0538" category="list-text">配置</block>
@@ -3457,13 +3371,9 @@
   <block id="b155bc7bcf505aff195bd370a9c66a49" category="list-text">選擇 * 故障磁碟機 * 。</block>
   <block id="0503c6a17709afa30e321515a671cc4c" category="inline-xref">以邏輯方式更換磁碟機</block>
   <block id="75ab776ec3d69066ad731b2976ead875" category="paragraph">磁碟機故障後、您必須實際更換磁碟機或 <block ref="2b756841d969c4bf8f7f4523c91e29ba" category="inline-xref-macro-rx"></block>。</block>
-  <block id="6e12d2b51af194180cfa6181d7aa386d" category="summary">SG6100 系列設備有兩個電源供應器、可提供備援。如果其中一個電源供應器故障、您必須儘快更換、以確保產品具備備援電力。在本產品中操作的兩個電源供應器必須使用相同的機型和瓦數。</block>
-  <block id="ebcee23adf66aefa512dab5a727e987c" category="doc">更換 SGF6112 中的一個或兩個電源供應器</block>
-  <block id="2015b06333e97552ffb14e0ff800394b" category="paragraph">SGF6112 應用裝置有兩個電源供應器、可提供備援功能。如果其中一個電源供應器故障、您必須儘快更換、以確保產品具備備援電力。在本產品中操作的兩個電源供應器必須使用相同的機型和瓦數。</block>
   <block id="21c20a60aef134fe4844b7863238cc62" category="list-text">您有 <block ref="5ae0b19c26e1799f1a1f36587bc3c697" category="inline-link-macro-rx"></block> 更換電源供應器。</block>
   <block id="42928a49b52d5c63d01891c29be24fcd" category="inline-link-macro">已確定要更換的電源的位置</block>
   <block id="67cb15c24e3f11a79e492d24bd1a36ef" category="list-text">您有 <block ref="3f87d3899d1e937c5ab71f93f4b1094d" category="inline-link-macro-rx"></block>。</block>
-  <block id="0148b618d5cfcb74d71a6d5807783f97" category="paragraph">圖中顯示 SGF6112 的兩個電源供應器單元。電源供應器可從產品背面存取。</block>
   <block id="20ba337feb638d326a67a2659467dddc" category="image-alt">SGF6112 背面、附兩個電源供應器</block>
   <block id="e79ffaa46a9eac9da0887c44b78a5e76" category="admonition">如果您曾經使用 ILM 規則、只建立一個物件複本、同時更換兩個電源供應器、則必須在排程維護期間更換電源供應器。否則、在此程序期間、您可能會暫時失去對這些物件的存取權。請參閱相關資訊<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
   <block id="3977df58bd7e96da4f405bc4b0f8539e" category="paragraph">從產品背面看、電源 A （ PSU0 ）位於右側、電源 B （ PSU1 ）位於左側。</block>
@@ -3488,23 +3398,17 @@
   <block id="cfd238f31c00876df93805add562cd91" category="paragraph">您可以使用Grid Manager來檢查重新建置的狀態。</block>
   <block id="482b41099d0009e92536750186f9cf92" category="list-text">如果有多個磁碟機發生故障並已更換、您可能會收到警示、表示某些磁碟區需要還原資料。如果您收到警示、請在嘗試磁碟區恢復之前、選取 * 節點 * &gt;<block ref="21f42a4f88dddd2b0d2ffb02368a6a92" prefix=" " category="inline-code"></block> &gt;*硬體*。在頁面的 StorageGRID 應用程式區段中、確認儲存 RAID 模式正常或正在重建。如果狀態列出一或多個故障磁碟機、請在嘗試磁碟區還原之前修正此狀況。</block>
   <block id="ac6405a3b470b3f892663eb1e22e56ef" category="list-text">在 Grid Manager 中、前往 * 節點 * &gt;<block ref="21f42a4f88dddd2b0d2ffb02368a6a92" prefix=" " category="inline-code"></block> &gt;*硬體*。在頁面的 StorageGRID 應用裝置區段中、確認儲存 RAID 模式正常。</block>
-  <block id="d70e515aed41700919c4ec7bf2b0f983" category="summary">SGF6112 產品具有八個冷卻風扇。如果其中一個風扇故障、您必須儘快更換、以確保產品具有適當的冷卻效果。</block>
-  <block id="18ddc47a72346388a2046c547cd42eda" category="doc">更換 SGF6112 中的風扇</block>
   <block id="09ac38e9a484d4831d14a05ed89222c0" category="list-text">您擁有正確的更換風扇。</block>
   <block id="02b9dd35c0ce0958cedcea20114fc8f1" category="inline-link-macro">已確定要更換的風扇的位置</block>
   <block id="6268c376243af0eda45ac1ba0c21ee71" category="list-text">您有 <block ref="38c4f9da9c528517a47552427274d191" category="inline-link-macro-rx"></block>。</block>
-  <block id="93bba10e5e1fff69e62ea773fe3971e9" category="list-text">您有 <block ref="00821d5f694e2cda98ac91386ea14109" category="inline-link-macro-rx"></block> 您要在資料中心更換風扇的位置。</block>
   <block id="1766c9b66630f0d974452b3a9b024143" category="inline-link-macro">將頂蓋裝回產品上</block>
   <block id="4ebeeaa7ee87ac8b2673d03aa209528d" category="list-text"><block ref="44281fb68d37f427e8563b8bb64bc984" category="inline-link-macro-rx"></block>，然後向下按閂鎖以將主機蓋固定到位。</block>
   <block id="e8cbcebfd4a0149b15a9fe6fe6bfb926" category="inline-link-macro">開啟產品電源</block>
   <block id="1b0eb2545518d0e0366e6b971f537a44" category="list-text"><block ref="417f185b431b470ffef7aa3d838054f4" category="inline-link-macro-rx"></block> 並監控應用裝置 LED 和開機代碼。</block>
   <block id="bf04cfba5d2cd0ba1be7c4d7cde79fba" category="summary">如果網路介面卡無法正常運作或故障、您可能需要更換 SGF6112 中的網路介面卡（ NIC\ ）。</block>
-  <block id="d29cbbbc9955da652b181667c53ccd75" category="doc">更換 SGF6112 中的 NIC</block>
-  <block id="8c088bcedd8df5fd658d18dd1f766f49" category="paragraph">如果 SGF6112 中的網路介面卡（ NIC ）無法正常運作或故障、您可能需要更換該卡。</block>
   <block id="025553a609b217df0cc104ad958d9e8c" category="list-text">移除 NIC</block>
   <block id="d492c7ad8ff60caffa0e7efaeedbb9a4" category="inline-link-macro">要更換的 NIC 的位置</block>
   <block id="54f61529cc51ad6624acceb851e19e96" category="list-text">您已決定 <block ref="157fb39ae4912c0305e48246cdfc5cc6" category="inline-link-macro-rx"></block>。</block>
-  <block id="92a0c26a539f85ffc551d97551f85607" category="list-text">您有 <block ref="00821d5f694e2cda98ac91386ea14109" category="inline-link-macro-rx"></block> 您要更換資料中心內 NIC 的位置。</block>
   <block id="04f443d3ca6faf93f2dc11deb9ce6f72" category="summary">SG5600 應用裝置已達到支援終止。如需硬體更新選項、請聯絡您的 NetApp 銷售代表。</block>
   <block id="6df5db2beb11b54d5d52c10ce6792046" category="doc">維護 SG5600 應用裝置</block>
   <block id="3645999a212db12122a0446a162ce8f6" category="inline-link">StorageGRID 11.6 說明</block>
@@ -4099,13 +4003,11 @@
   <block id="ad42ccfe395187227d3aea3aae3e52cd" category="sidebar">更換一個或兩個電源供應器</block>
   <block id="0862353a6639a2cdaca55ba2fcbb8033" category="sidebar">將 SG6000 安裝到機櫃或機架中</block>
   <block id="1779ca6984a3582b9c1a3c02d22c730c" category="sidebar">安裝 SG6000-CN 控制器（ SG6024 和 SG6060 ）</block>
-  <block id="345a844566607ddc6e73586a30452787" category="sidebar">設定 SANtricity 系統管理員（ SG5700 和 SG6000 ）</block>
   <block id="682329c411688c214c3b69d3c9177018" category="sidebar">變更 root 密碼</block>
   <block id="f1ddfd50d289ca1496b137a55f34fd6d" category="sidebar">設定電子郵件通知</block>
   <block id="99f776141c73b268838def5e1fcf8f15" category="sidebar">選用：重新對應網路連接埠</block>
   <block id="ace5f203898ba6dd323feb33b1c6cc2c" category="sidebar">疑難排解安裝（ SG100 和 SG1000 ）</block>
   <block id="3c8c8fe576a18c93c3f7865366948f51" category="sidebar">疑難排解安裝（ SG5700 或 SG6000 ）</block>
-  <block id="d8bc0dde6c2e0a78c076dfa0af8e6fad" category="sidebar">疑難排解安裝（ SG6100 ）</block>
   <block id="51cd128b8f2aecb61d4cffff56af80c7" category="sidebar">維護應用裝置組態</block>
   <block id="77d2b0ac8e200595c2f4d240b0c80f51" category="sidebar">維護應用裝置組態（所有節點）</block>
   <block id="48889e269a4d7fca4c265f4a2f877e26" category="sidebar">維護 SG6100 硬體</block>
@@ -4115,7 +4017,6 @@
   <block id="f038cfedcecfda2c0df73e7e4b3e5a5f" category="sidebar">硬體維護程序</block>
   <block id="04151f4bdc7338545b601e95ffdb3628" category="sidebar">硬體維護程序 - SG6100</block>
   <block id="1e0e5392056d33a5b609e7bf58631cd9" category="sidebar">更換一或多個電源供應器</block>
-  <block id="4d8e02c8338b6c75a518f63d0b68d253" category="sidebar">將 SGF6112 重新放置在機架中</block>
   <block id="f179f827ef60ba0d2427c768a3bfacaa" category="sidebar">維護 SG5600 硬體</block>
   <block id="37b9a1bff8c7d3371fe07573c818df01" category="sidebar">sg6100 硬體維護</block>
   <block id="0ed5a3e6e8aaa78554efe81ceb847607" category="sidebar">維護 SG5700 硬體</block>
@@ -4139,7 +4040,6 @@
   <block id="46621f49f52b2e7735202aeadc8627bc" category="paragraph"><block ref="46621f49f52b2e7735202aeadc8627bc" category="inline-link-rx"></block></block>
   <block id="39822573479d4d01c9fc52445e6f90d4" category="paragraph">請參閱<block ref="182f5524fe0d353d40aacb3022a6d00c" category="inline-link-rx"></block> 如需 StorageGRID 應用裝置所有可用加密方法的相關資訊、</block>
   <block id="38863f5650b2800fa51be4d3a390b203" category="paragraph">檢閱相關資訊<block ref="182f5524fe0d353d40aacb3022a6d00c" category="inline-link-rx"></block>。</block>
-  <block id="8982aaa194b18d24402b49fbe219e3e5" category="list-text">保留無線以儲存交換器連接埠和IP位址。使用Grid Manager或Storage Grid Appliance Installer UI存取SANtricity 《系統管理程式》。</block>
   <block id="c114b6896b71306b6ff5217eebf1d7eb" category="doc">步驟 4 ：將電池移至新的控制器</block>
   <block id="eed22a946ecb2d3652178906c8adb5c5" category="paragraph">從故障控制器中取出電池、然後將其安裝到更換控制器中。</block>
   <block id="a9c0cea0fa970dd78f5c9b732ed7af82" category="doc">步驟 3 ：移除控制器</block>
@@ -4234,7 +4134,6 @@
   <block id="d751b295bd431b789da8da77d91a8a1d" category="doc">維護 SG1100 和 SG110 服務應用裝置硬體</block>
   <block id="70bca0055a2d38054af0059da4e459ed" category="inline-link-macro">SG110 和 SG1100</block>
   <block id="9310c6e3b94e3baa60a2b31f7b80cc71" category="list-text"><block ref="9310c6e3b94e3baa60a2b31f7b80cc71" category="inline-link-macro-rx"></block></block>
-  <block id="f1c7efda23b762cfe6e972e421fb54f8" category="list-text"><block ref="0c770b188189664197ca2af9c5ce06a6" category="inline-link-macro-rx"></block> （ SG5700 和 SG6000 ）</block>
   <block id="e3654db4a646d23dc2d3d64204192d91" category="list-text"><block ref="e010cba544d581fc50562d9eaf281bf3" category="inline-link-macro-rx"></block> （ SG6000 、 SG6100 和服務應用裝置）</block>
   <block id="aadf1dcd60cf75ec60913a8a677fcd35" category="list-text">對於 SG110 、如果您打算使用光纖纜線連接埠、則需要一至四個 SFP+ 或 SFP28 收發器。</block>
   <block id="11a92f98e01c18d06291aad0e993ba9b" category="list-text">對於 SG1100 、如果您打算將光纖纜線用於連接埠、請使用一至四個 QSFP+ 或 QSFP28 收發器。</block>
@@ -4340,7 +4239,6 @@
   <block id="174d39beebf966f8b0fd97a60a1b64fd" category="list-text">* BMC 管理網路 * （ SG100 、 SG110 、 SG1000 、 SG1100 、 SG6000 、 和 SG6100 ）：此網路可讓您存取 SG100 、 SG1000 、 SG6000 和 SG6100 應用裝置中的主機板管理控制器、讓您監控和管理應用裝置中的硬體元件。此管理網路可以與管理員網路StorageGRID 相同、也可以是獨立的管理網路。</block>
   <block id="768c56127fcc2636d57e4635785f71f3" category="section-title">SG110 和 SG1100 服務應用裝置</block>
   <block id="cb8480a76ca9faf13ba8cdaa026a4115" category="inline-link-macro">SG110 與 SG1100 服務應用裝置：概觀</block>
-  <block id="a6db1221b7bb3dbe5285ed10748c73b9" category="paragraph">全新的 StorageGRID SG110 和 SG1100 服務應用裝置是一項革命性的硬體更新、可提供更優異的管理與負載平衡效能。請參閱 <block ref="3c058555c619096548fbed1bbe78e3c7" category="inline-link-macro-rx"></block>。</block>
   <block id="a83eeae8b6fd32d08a2347f7444c21ee" category="admonition">在應用裝置處於維護模式時所做的 IP 組態變更不會套用至已安裝的 StorageGRID 環境。執行
 <block ref="cca79d77d4e26ceed98b8b75d018051a" category="inline-link-rx"></block><block ref="921c87cca9b14f15a73f4570ad9f3247" prefix="[" category="inline-code"></block> 命令 ] 將應用裝置重新開機至 StorageGRID 後。</block>
   <block id="673f51a198147ee01f0eda8def081663" category="paragraph">機箱中的八個風扇位於下列位置（圖示為卸下頂蓋的 StorageGRID 應用裝置前半部）：</block>
@@ -4440,4 +4338,1190 @@
   <block id="c8815aa195405d61f92fd38ffbcf2c8c" category="sidebar">硬體維護程序： SG110 和 SG1100</block>
   <block id="8234ee9f46864ecf847ef0ef05ff4451" category="sidebar">將應用裝置重新放置在機架中</block>
   <block id="824ffb105357c984745978d4f897102d" category="sidebar">維護組態程序 - SG6100</block>
+  <block id="e3437990cc7315452043deb47cf5a10b" category="doc">維護 SG5800 應用裝置</block>
+  <block id="0d4fe316a6db3ecb82ecf45eb783cd65" category="paragraph">您可能需要升級 E4000 控制器上的 SANtricity OS 軟體、變更 SG5800 控制器的乙太網路連結組態、更換 E4000 控制器或 SG5800 控制器、或更換特定元件。本節中的程序假設應用裝置已部署為StorageGRID 位於整個系統的儲存節點。</block>
+  <block id="197af1869ad562c270a57a17c056482b" category="paragraph">本節將說明維護 SG5800 應用裝置的特定程序。</block>
+  <block id="5cf9ffe7d95502981205b5aaf455d357" category="doc">變更 SG5800 控制器的連結組態</block>
+  <block id="6ed7493114d71377fd7d619dafa96cc7" category="paragraph">您可以變更 SG5800 控制器的乙太網路連結組態。您可以變更連接埠連結模式、網路連結模式及連結速度。</block>
+  <block id="4da6652281141f0cdd6c4cae0cbe0ce5" category="inline-link-macro">將 SG5800 控制器置於維護模式</block>
+  <block id="8f6e35822d24f89960bbb5ff496d8e40" category="paragraph"><block ref="313062d351841f57612facc2d8c69409" category="inline-link-macro-rx"></block>。</block>
+  <block id="a707bd37e47adc5b69570036bfe75ce1" category="paragraph">變更 SG5800 控制器乙太網路連結組態的選項包括：</block>
+  <block id="33cd482ba7e7ca3ccd224afd284a3a4f" category="list-text">[[change_link_configuration_sg5800, start=2]] 對連結組態進行所需的變更。</block>
+  <block id="0aaa200da15eef314cc58661a9f6a8f5" category="admonition">如果您變更所連線的網路或連結、可能會失去連線。如果您在 1 分鐘內未重新連線、請使用指派給應用裝置的其他 IP 位址之一、重新輸入 StorageGRID 應用裝置安裝程式的 URL ： +<block ref="543c5eba2770d8d7b78d53a6e96eec12" prefix=" " category="inline-code"></block></block>
+  <block id="0c17831291a391ef62705bcc5541ea7b" category="list-text">一旦您確信連結組態變更正常運作、請重新啟動節點。從「the Some Appliance Installer」StorageGRID 選取「*進階*&gt;*重新開機控制器*」、然後選取「*重新開機至StorageGRID *」。</block>
+  <block id="b2be65b1932f210c80267c88d6342e33" category="doc">更換 E4000 中的 DIMM （ SG5800 ）</block>
+  <block id="4ca43ac7b85849e3d8c68daa367655d9" category="paragraph">如果 E4000 中的 DIMM 發生故障、您可以更換該 DIMM 。</block>
+  <block id="e8bc418a1334db89f56000cf271db6e1" category="paragraph">若要更換DIMM、您必須驗證控制器的快取大小、將控制器離線、移除控制器、移除DIMM、並在控制器中安裝新的DIMM。然後、您可以將控制器重新連線、並確認儲存陣列是否正常運作。</block>
+  <block id="87c905ec3a46dd8e6370bcef6edb3d5f" category="inline-link-macro">將 SG5800 控制器置於維護模式</block>
+  <block id="37a2200fdd7269b6a97ed975117f62dd" category="paragraph">更換控制器時、可能無法存取應用裝置儲存節點。如果 E4000 系列控制器運作正常、您可以 <block ref="45eb8ae3547827d3139587c622038371" category="inline-link-macro-rx"></block>。</block>
+  <block id="ddd0020a0684c14dbd50622f84d8917a" category="list-text">請確定您擁有下列項目：</block>
+  <block id="156139404f5d55fe216385d591bf007c" category="list-text">更換DIMM。</block>
+  <block id="43e59340f688872e8e59addf7d2b1e46" category="list-text">或您已採取其他防靜電預防措施。</block>
+  <block id="7391cee60913a1be3569f5f591a25588" category="list-text">無靜電工作區。</block>
+  <block id="824c69f392afac52cf0df413bba182db" category="list-text">用於識別連接至控制器容器的每條纜線的標籤。</block>
+  <block id="7205b64f3f16e1d51e7a5571ef199fc1" category="list-text">存取 SANtricity 系統管理員：</block>
+  <block id="5bae71ef74f18a1eafb4dd38d03179fc" category="inline-link">SANtricity 系統管理員標籤</block>
+  <block id="f1bc9a7acb92fc530debe4876b5fa6f8" category="list-text">從 Grid Manager 中、選取 * 節點 * &gt; * 應用裝置節點 * &gt; * SANtricity 系統管理員 * 。控制器資訊位於<block ref="8cda1b10cdeda80d8878af8201ad4b36" category="inline-link-rx"></block>。</block>
+  <block id="ee2e86ae661f8d5f1b2929908e487683" category="admonition">在本程序的某些步驟中、您可能無法使用 Grid Manager 存取 SANtricity 系統管理員。如果 SG5800 控制器關閉、您將需要使用瀏覽器存取 SANtricity 系統管理員。</block>
+  <block id="748a16873acefe7987ba1df0537fdde0" category="list-text">將 Management Station 中的瀏覽器指向控制器的網域名稱或 IP 位址。</block>
+  <block id="580a98b407c693e5484cd51c02eb9563" category="section-title">步驟1：判斷您是否需要更換DIMM</block>
+  <block id="69d695d0d839860f9c7b6f01bd3566ad" category="paragraph">更換DIMM之前、請先確認控制器的快取大小。</block>
+  <block id="8c51219e2caaf178bb447412fef51ea1" category="list-text">存取控制器的儲存陣列設定檔。從 SANtricity System Manager 移至 * 支援 * › * 支援中心 * 。從Support Resources（支援資源）頁面中、選取* Storage Array Profile*（儲存陣列設定檔）。</block>
+  <block id="533acd1e69c72c46e96a7a69224b6fc4" category="list-text">向下捲動或使用搜尋欄位來尋找*資料快取模組*資訊。</block>
+  <block id="5d49ddf4656ad463174a6920734488c8" category="list-text">如果出現故障的 DIMM 或報告 * 資料快取模組 * 並非最佳的 DIMM 、請記下 DIMM 的位置、然後繼續更換控制器上的 DIMM 。</block>
+  <block id="a0baa5b62871290bfb63c25caca2884a" category="section-title">步驟 2 ：關閉控制器機櫃的電源</block>
+  <block id="677aef13a9e2750e4973f73fe296627e" category="paragraph">關閉控制器電源、以便安全地移除和更換 DIMM 。</block>
+  <block id="94ca60cdc5c96fb394d95c04f30e0e4a" category="list-text">從「還原系統管理程式」檢閱Recovery Guru中的詳細資料、確認記憶體不相符有問題、並確保不需要先處理其他項目。SANtricity</block>
+  <block id="e4014303d413853c486c790981aa3d96" category="list-text">從Recovery Guru的「Details（詳細資料）」區域中、判斷要更換的DIMM。</block>
+  <block id="3df752ee7e92a3dba58c1061c5d0a4a6" category="list-text">使用 SANtricity System Manager 備份儲存陣列的組態資料庫。</block>
+  <block id="4873ef2869663b0ba0c9c623cf40e556" category="paragraph">如果移除控制器時發生問題、您可以使用儲存的檔案來還原組態。系統會儲存RAID組態資料庫的目前狀態、其中包含控制器上磁碟區群組和磁碟集區的所有資料。</block>
+  <block id="2a4168f98eab387eeedb6e73fe05aa56" category="list-text">從系統管理員：</block>
+  <block id="654a61d9a5e1b3845170185b185b333e" category="list-text">選擇 * 支援›支援中心›診斷 * 。</block>
+  <block id="d8e4c021bc315491caec7f6b627523cc" category="list-text">選擇*收集組態資料*。</block>
+  <block id="2bbeac77ef24f838dd8df2a70e1afb30" category="list-text">按一下「* Collect*」。</block>
+  <block id="d8cd310cbfe46f405b486740609f5bb5" category="paragraph">檔案會儲存在瀏覽器的 Downloads 資料夾中、名稱為 * 組態資料 -
+&lt;arrayName&gt; &lt;dateTime&gt; 。 7z* 。</block>
+  <block id="dd43ea4c31625bdce31d7a84aa4bb80b" category="list-text">關閉 SG5800 控制器。</block>
+  <block id="7ab312ca5a1a861c068d26ddf35a51b5" category="list-text">輸入下列命令：<block ref="077971bd1b22c3ff23038a751fa65614" prefix=" " category="inline-code"></block></block>
+  <block id="46a4fa59869c20bb440885f834ae43e5" category="list-text">關閉 SG5800 控制器：</block>
+  <block id="1478562ce782a871697d35205fb7fa71" category="paragraph"><block ref="9960d9237c92d9efd1ab4f4c0c346db6" prefix="*" category="inline-code"></block>*</block>
+  <block id="5dcb86425ad93a8f8c2187002e168dab" category="paragraph">當需要將快取資料寫入磁碟機時、 E4000 控制器背面的綠色快取作用中 LED 會亮起。您必須等待此LED燈關閉。</block>
+  <block id="c98cf85d863f7a9fdd847fa341bcb3b5" category="list-text">請確認所有作業均已完成、然後再繼續下一步。</block>
+  <block id="9ef3070549a6acd21c0e5e3dbac1f122" category="list-text">關閉控制器機櫃上的兩個電源開關。</block>
+  <block id="4b54f1b9c8d39d2d9f2defb7dcf2fddc" category="list-text">等待控制器機櫃上的所有LED關閉。</block>
+  <block id="b1eb986bc3025f15861e9fc66eeda1ba" category="section-title">步驟 3 ：取下控制器箱</block>
+  <block id="a83cef8fc29028a54f5aef3e4856ba56" category="paragraph">從系統中取下控制器圓筒、然後取下控制器圓筒蓋。</block>
+  <block id="30ba799d12bc55203e3416a6ec482bf4" category="list-text">如果您尚未接地、請正確接地。</block>
+  <block id="baf2fab337c63ad806283496f1f5f018" category="list-text">鬆開將纜線固定至纜線管理裝置的掛鉤和迴圈束帶、然後從控制器圓筒拔下系統纜線和 SFP （如有需要）、追蹤纜線的連接位置。</block>
+  <block id="73ffa1532dd710d7eb1520cb730fb392" category="paragraph">將纜線留在纜線管理裝置中、以便在重新安裝纜線管理裝置時、整理好纜線。</block>
+  <block id="35a1be9199b071169d110d282870f0fb" category="list-text">從控制器容器的左右兩側取下纜線管理裝置、並將其放在一旁。</block>
+  <block id="2366043fe47b2c8394283b77c8c150f2" category="list-text">壓下凸輪把手上的閂鎖、直到鬆開為止、完全打開凸輪把手、從中間背板釋放控制器圓筒、然後用雙手將控制器圓筒拉出機箱。</block>
+  <block id="f78f9de067ba4d2d5faffe9d852d2853" category="list-text">將控制器圓筒翻轉過來、放在平穩的平面上。</block>
+  <block id="e736e0feebb836b66e1fb38039c0f710" category="list-text">按下控制器圓筒兩側的藍色按鈕以打開蓋子、然後向上或向外旋轉控制器圓筒的蓋子。</block>
+  <block id="94a2e0c65376d1ce60e1fad109aafd77" category="image-alt">打開控制器圓筒蓋。</block>
+  <block id="e3940ca0d9fb1456d1705aca4a7a1595" category="section-title">步驟 4 ：更換 DIMM</block>
+  <block id="8caaa86fafbf22c9627e97fb31c1eea5" category="paragraph">找到控制器內的 DIMM 、將其卸下並裝回。</block>
+  <block id="e0b60dd28c2f4641ee16b3861e8ea8b0" category="list-text">在更換系統元件之前、您必須執行乾淨的系統關機、以避免在非揮發性記憶體（NVMEM）中遺失未寫入的資料。LED 位於控制器圓筒的背面。</block>
+  <block id="7fc9c28875c33b71c57dca88d46c06f5" category="list-text">如果NVMEM LED未更新、則在NVMEM中沒有任何內容；您可以跳過下列步驟、繼續執行本程序中的下一個工作。</block>
+  <block id="1bfb1175d15687b3de74a4e057e796f8" category="list-text">如果NVMEM LED正在閃燈、則表示NVMEM中有資料、您必須中斷電池連線以清除記憶體：</block>
+  <block id="262d238a154b92a07b70b28f654206f4" category="list-text">按下控制器圓筒側邊的藍色按鈕、將電池從控制器圓筒中取出。</block>
+  <block id="8052fe196080d02f5047d00d2707a93e" category="list-text">將電池向上滑動、直到其脫離固定支架、然後將電池從控制器圓筒中取出。</block>
+  <block id="e460f960683865692d03871b47a39fd8" category="list-text">找到電池纜線、按下電池插頭上的固定夾、將鎖定夾從插頭插槽中鬆開、然後從插槽拔下電池纜線。</block>
+  <block id="9d80f287709beea4f34371644025d541" category="list-text">確認NVMEM LED不再亮起。</block>
+  <block id="5f2a29b0970aac5a4425f7cf26343e24" category="list-text">重新連接電池連接器、然後重新檢查控制器背面的 LED 。</block>
+  <block id="2bb5a458e01d43f7e5641661b16f0d46" category="list-text">拔下電池纜線。</block>
+  <block id="3457c893d87e61872e31a5b44f745b78" category="list-text">找到控制器圓筒上的 DIMM 。</block>
+  <block id="82b2c56e53a487cba16496c5167ec489" category="list-text">請注意 DIMM 在插槽中的方向和位置、以便以正確的方向插入替換 DIMM 。</block>
+  <block id="d8d22bf5365e49bbf734d6be5f6e5d1f" category="list-text">緩慢地將DIMM兩側的兩個DIMM彈出彈片分開、然後將DIMM從插槽中滑出、藉此將DIMM從插槽中退出。</block>
+  <block id="dc1bab551db9ce9e5c5fe8cabfa84a76" category="paragraph">DIMM 會稍微向上旋轉。</block>
+  <block id="685636dc5350b778abfb785eaf60ca39" category="list-text">儘量旋轉 DIMM 、然後將 DIMM 滑出插槽。</block>
+  <block id="bc6f68ddb18a2f2b33244b2f8f11420b" category="admonition">小心拿住DIMM的邊緣、避免對DIMM電路板上的元件施加壓力。</block>
+  <block id="e4f96ad3979c5e1ad029cfb1aef791cc" category="image-alt">移除 DIMM 。</block>
+  <block id="9e64f9f7a827c26fc2d5c89975330a4c" category="image-alt">圖例圖示 01</block>
+  <block id="cfc8a707905d308742a0633fefb9ba76" category="cell">DIMM推出式彈片</block>
+  <block id="cd8fc17dc540949d4a2220442f92f1e4" category="image-alt">圖例圖示02</block>
+  <block id="5550b5c21becc525ad89172c3f6562a7" category="cell">DIMM</block>
+  <block id="780061b11a4f33cc8eecc0c1fd85c471" category="list-text">從防靜電包裝袋中取出備用DIMM、拿住DIMM的邊角、然後將其對準插槽。</block>
+  <block id="54c4ac61314c29265db975e7abc3e29f" category="paragraph">DIMM插針之間的槽口應與插槽中的卡舌對齊。</block>
+  <block id="93e811c8fd302bbdb07d50cb5ed0ad55" category="list-text">將 DIMM 正向插入插槽。</block>
+  <block id="57039cb2390eecb92a630c064d752a84" category="paragraph">DIMM可緊密插入插槽、但應該很容易就能裝入。如果沒有、請重新將DIMM與插槽對齊、然後重新插入。</block>
+  <block id="10eefdb7bfc0ddc5c2bcb819e1fd02a4" category="admonition">目視檢查DIMM、確認其對齊並完全插入插槽。</block>
+  <block id="07a1495b75de55dde311b89c9fa4d86b" category="list-text">在DIMM頂端邊緣小心地推入、但穩固地推入、直到彈出彈出彈片卡入DIMM兩端的槽口。</block>
+  <block id="47a8f2de74abe1d24744d864e33a1997" category="list-text">重新連接電池：</block>
+  <block id="fe4d4b767e7a1187d2e60985479214b8" category="list-text">插入電池。</block>
+  <block id="52171524851f62cb3baf11036da62cb6" category="list-text">請確定插頭已鎖入主機板上的電池電源插槽。</block>
+  <block id="44e9bf23cac339f1a46833e07d1be621" category="list-text">將電池與金屬板側壁上的固定支架對齊。</block>
+  <block id="2b4753778df73e034bbfe714d2d4741f" category="list-text">向下滑動電池組、直到電池卡榫卡入、然後卡入側牆的開口。</block>
+  <block id="1ea4267c90825f4bf9c52932b0bd8e1a" category="list-text">重新安裝控制器圓筒蓋。</block>
+  <block id="48a57bdd7334ad13cd1585ba2a663c46" category="section-title">步驟 5 ：重新安裝控制器容器</block>
+  <block id="af32241ae4a2afd71e33a8646b775b1f" category="paragraph">將控制器圓筒重新安裝到機箱中。</block>
+  <block id="954c99d35fff8ed108602add34a47b93" category="list-text">如果您尚未更換、請更換控制器圓筒上的蓋子。</block>
+  <block id="9c17c595e56b6b01c7d703a94b943e71" category="list-text">將控制器圓筒翻轉過來、並將末端對齊機箱的開口。</block>
+  <block id="0a5704c96cc972ac4c49e76417f83282" category="list-text">將控制器圓筒輕輕推入系統的一半。將控制器圓筒的末端對準機箱的開口、然後將控制器圓筒輕輕推入系統的一半。</block>
+  <block id="40d0d24050f8aac90dc03655f2738fb3" category="admonition">在接到指示之前、請勿將控制器圓筒完全插入機箱。</block>
+  <block id="4e4cd7bd59f82bab02590366f27be3e5" category="list-text">視需要重新安裝系統。</block>
+  <block id="5d971d684708429fbfc1d12fc0823b1c" category="list-text">完成控制器箱的重新安裝：</block>
+  <block id="b34c1b37f135bc5b382d7862f82e025c" category="list-text">當凸輪把手處於開啟位置時、用力推入控制器圓筒、直到它與中間背板接觸並完全就位、然後將凸輪把手關閉至鎖定位置。</block>
+  <block id="69008785977983cf8a33f9f78ff2b7c9" category="admonition">將控制器圓筒滑入機箱時、請勿過度施力、以免損壞連接器。</block>
+  <block id="0332f86520cc7552e1fb152e32977600" category="paragraph">控制器一旦安裝在機箱中、就會開始開機。</block>
+  <block id="1245c13fabc810ad6fbb6f05277ad356" category="list-text">如果您尚未重新安裝纜線管理裝置、請重新安裝。</block>
+  <block id="82cd534d691845f1af190a9df38d753d" category="list-text">使用掛勾和迴圈固定帶將纜線綁定至纜線管理裝置。</block>
+  <block id="e7f0ec8580a00776f7682d3a55be4c90" category="list-text">開啟控制器機櫃上的兩個電源開關。</block>
+  <block id="660a0f2c7dddd5ead3b175899a5d429c" category="section-title">步驟 6 ：完全更換 DIMM</block>
+  <block id="5980bdc50df2b4e8d5dc863570ed34f0" category="paragraph">將控制器置於線上、收集支援資料並恢復作業。</block>
+  <block id="9f4b2a2e95ff24b3a1faf6aa4e4583be" category="list-text">控制器開機時、請檢查控制器LED。</block>
+  <block id="8037294be4e5e170cd073a286bf70019" category="paragraph">重新建立與其他控制器的通訊時：</block>
+  <block id="2c256ff3735b7eded6ec172bfccc73fd" category="list-text">黃色警示LED會持續亮起。</block>
+  <block id="3d38390455b74dc415adce1d1398fb37" category="list-text">主機連結LED可能會亮起、閃爍或關閉、視主機介面而定。</block>
+  <block id="315927c4ed1f1d8b1d0b704a5a67026e" category="list-text">控制器重新連線時、請確認其狀態為最佳狀態、並檢查控制器機櫃的注意 LED 。</block>
+  <block id="805863d0c877d6358a86a2607e79ed0d" category="paragraph">如果狀態不是最佳、或是有任何警示LED亮起、請確認所有纜線都已正確安裝、且控制器機箱已正確安裝。如有必要、請移除並重新安裝控制器容器。
+附註：如果您無法解決問題、請聯絡技術支援部門。</block>
+  <block id="380123042491bcae0dd2a0a161797913" category="list-text">使用SANtricity NetApp System Manager收集儲存陣列的支援資料。</block>
+  <block id="d029fbc0df9ff497084580115c77f756" category="list-text">選擇*收集支援資料*。</block>
+  <block id="29a68d61d60066cd588a1db699936685" category="paragraph">檔案會以* support-data.7z*的名稱儲存在瀏覽器的「下載」資料夾中。</block>
+  <block id="6a1a2ebdb9dbf1f40191fb7d4e47648e" category="list-text">確認重新開機已完成、且節點已重新加入網格。在 Grid Manager 中、確認「 * 節點 * 」頁面顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號）、表示沒有作用中警示、且節點已連線至網格。</block>
+  <block id="3f1422be48953516b5581d5164f4380a" category="admonition">從開啟電源開關到節點重新加入網格並在 Grid Manager 中顯示正常狀態、可能需要 20 分鐘。」</block>
+  <block id="73b88ee21321ff50111268d79d4120b8" category="doc">使用離線方法、使用 SANtricity System Manager 升級 SG5800 磁碟機韌體</block>
+  <block id="1464eb966468f8e80ec78f5cd52b8139" category="summary">如果 E4000 控制器無法正常運作或故障、您可能需要更換它。</block>
+  <block id="c595b95dcefcc7a1bb5de535ba5fd773" category="doc">更換 E4000 控制器（ SG5800 ）</block>
+  <block id="6e08763db3826f8c66338c02202737a2" category="list-text">替換控制器、其零件編號與您要更換的控制器相同。</block>
+  <block id="fc9b32c3a06be606f0407ce62d9b3119" category="list-text">ESD 腕帶、或您已採取防靜電預防措施。</block>
+  <block id="ec53246c8d4b9555b117535b4d0a8177" category="list-text">用於識別連接至控制器的每條纜線的標籤。</block>
+  <block id="b596e5973d668b995fbb36b7378de820" category="list-text">特定存取權限。</block>
+  <block id="7b8fc651eecaa64234378f436b13fb88" category="list-text">Grid Manager 警示會指出儲存控制器故障、而 SANtricity 系統管理員中的 Grid Manager 或 Recovery Guru 會指示您更換控制器。</block>
+  <block id="c3e6fcf73b86ee612a671bf9590f6855" category="inline-link-macro">將 SG5800 應用裝置置於維護模式</block>
+  <block id="a6baabf70d4ff08dcd0669adfb42ca5f" category="paragraph">當您更換控制器時、將無法存取應用裝置儲存節點。如果 E4000 系列控制器運作正常、您可以 <block ref="e8f039d7be5bbd3336201fc2805c299b" category="inline-link-macro-rx"></block>。</block>
+  <block id="5b4e9b33142171d8b1c0463e456e5e69" category="section-title">步驟1：準備更換控制器</block>
+  <block id="4743ab4ef45d8970e356191bf39b6837" category="paragraph">儲存磁碟機安全金鑰、備份組態及收集支援資料、以準備更換控制器機箱。然後、您可以停止主機I/O作業、並關閉控制器機櫃的電源。</block>
+  <block id="caa3a3591f6d698c5ed46758b613ddc9" category="list-text">如有可能、請記下SANtricity 控制器上目前安裝的是哪個版本的作業系統軟體。開啟 SANtricity System Manager 並選取 * 支援›升級中心›檢視軟體與韌體庫存 * 。</block>
+  <block id="72e01406289bcc06963b1c1ccaab2b29" category="list-text">記下目前安裝的是哪個版本的 NVSRAM 。</block>
+  <block id="e7cb5e8c9d80c2b2a37a79582b1339a5" category="inline-link">E 系列文件</block>
+  <block id="108f7ab773e5fa03a87f8e101b459b22" category="admonition">* 資料存取可能中斷 * —如果儲存陣列中的所有磁碟機都已啟用安全功能、則新的控制器將無法存取儲存陣列、除非您使用 CLI 解除鎖定安全磁碟機。如需 CLI 的詳細資訊、請參閱<block ref="13d54e3fb5b13dc8a61edb1cb15d27b8" category="inline-link-rx"></block>。</block>
+  <block id="876398e763a63389803824f38ab5e2c6" category="paragraph">若要儲存金鑰（視控制器狀態而定、可能無法儲存金鑰）：</block>
+  <block id="77e85808e83d484a7ea217e908138022" category="list-text">從 SANtricity 系統管理員中、選取 * 設定›系統 * 。</block>
+  <block id="547fdf43cb9f177d78e8bddfa4fc9ca7" category="list-text">在*磁碟機安全金鑰管理*下、選取*備份金鑰*。</block>
+  <block id="b79bd45b13bd17911d2f853fe0b45794" category="list-text">在*定義密碼/重新輸入密碼*欄位中、輸入並確認此備份複本的密碼。</block>
+  <block id="96dd2bdaca6a007b13c9f42158b860a6" category="list-text">按一下*備份*。</block>
+  <block id="15debc7268a220b1b73a59120110b1dd" category="list-text">將金鑰資訊記錄在安全位置、然後按一下*關閉*。</block>
+  <block id="9907789c6bb0493a2fc17ae7cbcaa08f" category="list-text">使用SANtricity NetApp System Manager備份儲存陣列的組態資料庫。</block>
+  <block id="46c329949a8bc388db1172e5feb48567" category="list-text">* 選擇支援›支援中心›診斷 * 。</block>
+  <block id="7e7469fcf233f5093d2905d7c506be61" category="paragraph">檔案會以*組態Data-&lt;arrayName&gt;-&lt;DateTimer&gt;.7z*的名稱儲存在瀏覽器的「下載」資料夾中。</block>
+  <block id="c3df6dd79c618496e2723d5570ffe7eb" category="list-text">或者、您也可以使用下列CLI命令來備份組態資料庫：</block>
+  <block id="7e4f86d195c3fb0bf1102f3840abd5e2" category="paragraph"><block ref="adbaef2684e9a2dae5e7d925aa5e62b4" prefix="" category="inline-code"></block></block>
+  <block id="daaa40549da9ec101d522edf624078ad" category="paragraph">如果移除控制器時發生問題、您可以使用儲存的檔案來疑難排解問題。系統會將儲存陣列的庫存、狀態和效能資料儲存在單一檔案中。</block>
+  <block id="ae28e006d886fe6332498f4bda14e9bc" category="section-title">步驟 2 ：將控制器離線</block>
+  <block id="179b5cb9a426bdf36af40ff3af16f315" category="list-text">如果StorageGRID 該產品在StorageGRID 一個不完善的系統中執行、 <block ref="7e1e4060774e5ff9cb2b883f10bf74c0" category="inline-link-macro-rx"></block>。</block>
+  <block id="715052d6dc9168fc97a5c3079f5b1d98" category="list-text">如果 E4000 控制器的運作足以允許控制關機、請確認所有作業都已完成。</block>
+  <block id="076870cfc21f5c5545ae5dec49d2ddb9" category="paragraph">當需要將快取資料寫入磁碟機時、控制器背面的綠色快取作用中LED會亮起。您必須等待此LED燈關閉。</block>
+  <block id="01274801c42638bccf220a5744e4f113" category="section-title">步驟 3 ：取下 E4000 控制器箱</block>
+  <block id="2bcf27a6c59830152d05c59952ef0044" category="paragraph">取下 E4000 控制器箱。</block>
+  <block id="504a064b75bd241fb7f0bef9a51c97c0" category="list-text">標示連接至控制器容器的每條纜線。</block>
+  <block id="865b5419bc39f5168e92eadbb173c423" category="list-text">從控制器容器拔下所有纜線。</block>
+  <block id="a8f84b584f326bb48cbda73cc904bb0e" category="admonition">為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線。</block>
+  <block id="315a591b74bc0ec3ce5c813d4424806b" category="section-title">步驟 4 ：確定要傳輸到更換控制器的零件</block>
+  <block id="a90a6f6ab79462169f51f1ee513bea63" category="paragraph">您的更換控制器可能已預先安裝零件。確定必須將哪些零件轉移到更換控制器圓筒。</block>
+  <block id="ab9c4442e35b281175e69a4f3f892b40" category="list-text">將替換控制器放在平坦、無靜電的表面上、可拆式外蓋朝上。</block>
+  <block id="80bc5722481cfdc5269708f410bb0201" category="inline-xref">步驟 8 ：更換控制器</block>
+  <block id="2637a6556fb315b5379c91c35e090424" category="list-text">確定更換的控制器是否包含電池和（或） DIMM 。如果有、請重新安裝控制器護蓋、然後前往 <block ref="54d7d9735da61fcc2e40425ae28c1039" category="inline-xref-macro-rx"></block>。否則：</block>
+  <block id="1563e99e4c936f4d492b8865ee75a50b" category="inline-xref">步驟 5 ：取出電池</block>
+  <block id="d22afca4103d7f5fab6ddd2ae2046347" category="list-text">如果更換的控制器不含電池或 DIMM 、請前往 <block ref="cc27ee50aa7f1207cd553c94e3075e91" category="inline-xref-macro-rx"></block>。</block>
+  <block id="2263a4202dc3f47e21b796046fdb14e0" category="inline-xref">步驟 6 ：移動 DIMM</block>
+  <block id="106143a754eb807e03e750594a050249" category="list-text">如果更換的控制器包含電池、但不是 DIMM 、請前往 <block ref="082173376aca6125382e82e8894192d8" category="inline-xref-macro-rx"></block>。</block>
+  <block id="3b74823be32ece89c92dc540872040cd" category="paragraph">已從受損的控制器中取出電池、並將其安裝在替換控制器中。</block>
+  <block id="d3bdc5b682418aa5703c51a0475307d4" category="list-text">從控制器電池箱中取出電池：</block>
+  <block id="842ac70db0bb3677c6d9e00771c6b303" category="list-text">按下控制器圓筒側邊的藍色按鈕。</block>
+  <block id="8583fb4771a40b0c84c5bda299897d93" category="list-text">擠壓電池插頭正面的固定夾、將插頭從插槽中拔下、然後從插槽拔下電池纜線。</block>
+  <block id="ce0abb3cebc606d81082868268c9463c" category="image-alt">取出 NVMEM 電池。</block>
+  <block id="168d99dab7a9fe08ab26290312dd16e7" category="cell">電池釋放彈片</block>
+  <block id="33d1a8451c69f74459695562e91ceef8" category="cell">電池電源接頭</block>
+  <block id="d9b7dd82da1892f13b03a8cef70d4a95" category="list-text">將電池移至更換的控制器圓筒：</block>
+  <block id="1021c7e983f618699e9e0fb912c10c72" category="list-text">將電池與金屬板側牆上的固定支架對齊、但請勿連接電池。將其餘元件移至更換控制器圓筒之後、您就可以將其插入。</block>
+  <block id="47eb89ceab6b7b405a8261e8d7007c22" category="inline-xref">步驟 7 ：安裝電池</block>
+  <block id="8c74047bb94bef2d5b200c39096f6673" category="list-text">如果更換的控制器已預先安裝 DIMM 、請前往 <block ref="403a9efcd48236a241b3e5e26cd097c0" category="inline-xref-macro-rx"></block>。否則、請繼續下一步。</block>
+  <block id="50e379688fb1f7c8a858111c9c7cf465" category="paragraph">從受損的控制器圓筒中取出 DIMM 、並將其安裝到更換的控制器圓筒中。</block>
+  <block id="0d53b8cdbca81bffaf667d2e8ae026b5" category="admonition">請注意 DIMM 在插槽中的位置、以便您可以將 DIMM 插入更換控制器圓筒中的相同位置、並以正確的方向插入。
+從受損的控制器容器中取出 DIMM ：</block>
+  <block id="870ee50e7b3cc6d93b98e9ec6a8ab100" category="list-text">慢慢地將 DIMM 兩側的兩個 DIMM 彈出彈片往外推、將 DIMM 從插槽中退出。</block>
+  <block id="7aec79522326e603b9598edc1e6ac62d" category="list-text">確認電池未插入更換的控制器圓筒。</block>
+  <block id="f70897638195a2f326f7183edf6a3cf8" category="list-text">將 DIMM 安裝在替換控制器中、其位置與受損控制器相同：</block>
+  <block id="3ef62fc6a162d755622021a1d6a1ed56" category="list-text">對其他 DIMM 重複這些步驟。</block>
+  <block id="ffd59d7e88b4fba3fa9fb6a0eb288237" category="list-text">如果更換的控制器有預先安裝的電池、請前往 <block ref="54d7d9735da61fcc2e40425ae28c1039" category="inline-xref-macro-rx"></block>。否則、請繼續下一步。</block>
+  <block id="2b2badbfe1e2ed398acaa7934073316f" category="paragraph">將電池裝入更換的控制器容器中。</block>
+  <block id="8b437c04ad3963de0fa964423d9cd495" category="list-text">將電池插頭插回控制器圓筒上的插槽。</block>
+  <block id="1c7abce2557996fd20076d25e06502f1" category="paragraph">請確定插頭已鎖入主機板上的電池插槽。</block>
+  <block id="7eed6664ecacefe81e2b660f47a5cfaf" category="list-text">重新安裝控制器圓筒蓋並將其鎖定到位。</block>
+  <block id="f849c6cb0876a3d830e217694538d546" category="paragraph">安裝替換控制器、並確認節點已重新加入網格。</block>
+  <block id="85caa39a88f7091fb2db841ad6b83ffd" category="list-text">更換纜線。</block>
+  <block id="4b55c79852e2203088ca03f4c8fb4b3c" category="list-text">等待 E4000 控制器重新開機。</block>
+  <block id="4653a1b73be70919c131a440c6ed89eb" category="admonition">將 IP 位址指派給替換控制器的步驟、取決於您是否使用 DHCP 伺服器將管理連接埠連接到網路、以及是否所有磁碟機都受到保護。</block>
+  <block id="53fd578ea1b212e62d361f4d8a1df730" category="list-text">如果儲存陣列有安全磁碟機、請匯入磁碟機安全金鑰；否則、請執行下一步。請依照下列適當程序、以處理所有安全磁碟機的儲存陣列、或是混合使用安全磁碟機和不安全磁碟機的儲存陣列。</block>
+  <block id="c44f71230de99444f20ec14a127445ca" category="admonition">_不安全磁碟機_是未指派的磁碟機、全域熱備援磁碟機、或是磁碟區群組或集區中未受磁碟機安全功能保護的磁碟機。安全磁碟機是指派給屬於安全磁碟區群組或磁碟集區的磁碟機、使用磁碟機安全性。</block>
+  <block id="419894324696b5a1560291ba89188486" category="list-text">*僅限安全磁碟機（無不安全磁碟機）*：</block>
+  <block id="13e6ae4aaa84cb739fd2d723d03b9c6b" category="list-text">存取儲存陣列的命令列介面（CLI）。如需 CLI 的詳細資訊、請參閱<block ref="13d54e3fb5b13dc8a61edb1cb15d27b8" category="inline-link-rx"></block>。</block>
+  <block id="1eb3c9fcf95e4f825d103aab0b31d252" category="list-text">在控制器上載入適當的單工 NVSRAM 。</block>
+  <block id="c27d51e8cbaa35bb14c7591899b2849f" category="paragraph">例如：<block ref="fe6a2effd529cd30668dc8022c99c51c" prefix=" " category="inline-code"></block></block>
+  <block id="11fc3117cb8fed1a58f545325904a360" category="list-text">載入單工 NVSRAM 後、確認控制器為 * 最佳 * 。</block>
+  <block id="ff8919ffa5847c173c6e4c5672905f40" category="inline-link">在控制器上設定外部金鑰管理</block>
+  <block id="48791feb21e3542cf87533579e87486d" category="list-text">如果使用外部安全金鑰管理、<block ref="7b20d81d157e23c4f48d6304a2ca9c7d" category="inline-link-rx"></block>。</block>
+  <block id="eaf91df8718983f62d826ec7d6aef936" category="list-text">如果使用內部安全金鑰管理、請輸入下列命令以匯入安全金鑰：</block>
+  <block id="5976be1a3647c1d1d6df4ce77cd4c6de" category="paragraph">其中：</block>
+  <block id="d4f6055bb9775b50722454e4a5cca307" category="list-text"><block ref="ef13ed8a85463b44f0ba3943e5714987" prefix="" category="inline-code"></block> 代表磁碟機安全金鑰的目錄位置和名稱</block>
+  <block id="c4d2c7e97c15c06e9291b6114828c45d" category="list-text"><block ref="c6cec8c6caa9a579644664f0575db2f5" prefix="" category="inline-code"></block> 是解除鎖定檔案所需的密碼。在匯入安全金鑰之後、控制器會重新開機、而新控制器會採用儲存陣列的設定。</block>
+  <block id="d3b7b7ea126c14f6389e4681452cf66e" category="list-text">請前往下一個步驟、確認新的控制器處於最佳狀態。</block>
+  <block id="115fa6c62d0b2d875d0add073a6a0763" category="list-text">*混合使用安全和不安全的磁碟機*：</block>
+  <block id="6759d2c513c8f6019a5170528a3f57dc" category="list-text">收集支援產品組合、然後開啟儲存陣列設定檔。</block>
+  <block id="888594407e39a658fdbfddcc4fbd2eb1" category="list-text">尋找並記錄所有不安全磁碟機的位置、這些位置可在支援套裝組合中找到。</block>
+  <block id="95cff1ff1ae2f45b33b8028aaf92c204" category="list-text">關閉系統電源。</block>
+  <block id="1e591de8b9ef48860f8b36b0cb0b5323" category="list-text">移除不安全的磁碟機。</block>
+  <block id="01ce5287df0a3b51968ecaba3926eefd" category="list-text">更換控制器。</block>
+  <block id="3a430bb5df4ab0f01bdb271a340ca296" category="list-text">開啟系統電源、並等待七段顯示器顯示紙匣編號。</block>
+  <block id="0993d370b242b887abc374aecaad1e8a" category="list-text">在安全金鑰管理區段中、選取*建立/變更金鑰*以建立新的安全金鑰。</block>
+  <block id="543ddd1ae837613c2d535e99e5c08bb0" category="list-text">選取*解除鎖定安全磁碟機*以匯入您儲存的安全金鑰。</block>
+  <block id="04d65cce045c78c8ce27db877dbb7cfc" category="list-text">執行<block ref="66131a22d885314a8385d34d18407d77" prefix=" " category="inline-code"></block> CLI命令。</block>
+  <block id="382ea49ca8d96d5e1ec221ae8b35a749" category="list-text">控制器將自動重新開機。</block>
+  <block id="c8e00997a275968a39c40e90324fc13e" category="list-text">等待控制器開機、並讓七段顯示器顯示紙匣號碼或快閃L5。</block>
+  <block id="e9a1d694f740ed158bb62c1375f3371c" category="list-text">重新安裝不安全的磁碟機。</block>
+  <block id="0e8285623167a95116ad0093a2e0ee97" category="list-text">使用SANtricity 《Sytricity System Manager》重設控制器。</block>
+  <block id="5db744d0290a68a085007b8b9690bd51" category="list-text">如果您在此程序期間將產品置於維護模式、請將產品恢復至正常操作模式。從「the Some Appliance Installer」StorageGRID 選取「*進階*&gt;*重新開機控制器*」、然後選取「*重新開機至StorageGRID *」。</block>
+  <block id="e6aab7b2b4ef955eb3fd6098925f8817" category="list-text">在「系統管理程式」中、確認新的控制器是最佳的。SANtricity</block>
+  <block id="53af163a04bf13d29352e7cdfa2fc10d" category="list-text">對於控制器機櫃、請選取*顯示機櫃背面*。</block>
+  <block id="1bcec38c0cec2ead05222fe4ab0b56cf" category="list-text">選取您更換的控制器容器。</block>
+  <block id="8005ddf9d9a882308737cefbd84478f5" category="list-text">選取*檢視設定*。</block>
+  <block id="cd559f9f0ec5cb16e2c3fc317ffd52c6" category="list-text">確認控制器的*狀態*為最佳狀態。</block>
+  <block id="68eaa22945ab2090d408704dc0d8dec5" category="list-text">如果狀態不是「最佳」、請反白顯示控制器、然後選取*「線上放置」*。</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">接下來呢？</block>
+  <block id="6d1301daba7c4d86320f9426f853364c" category="summary">您可以在 SG5860 中更換磁碟機。</block>
+  <block id="f8297cdaee253b5b4ff4d06c2a555f2c" category="doc">更換 SG5860 中的磁碟機</block>
+  <block id="6e384ca384c34222bd8ad4aa70f3f257" category="paragraph">您可以在 SG5860 中更換磁碟機。</block>
+  <block id="2e956eb750fac3ab1e8f101119d472fe" category="paragraph">StorageGRID Grid Manager 可監控應用裝置狀態、並在發生磁碟機故障時發出警示。  當 Grid Manager 發出警示、或是在任何時候、您都可以使用 SANtricity 系統管理員中的 Recovery Guru 來取得故障特定磁碟機的詳細資訊。  磁碟機故障時、其黃色警示LED會亮起。您可以在儲存陣列接收I/O時熱交換故障磁碟機</block>
+  <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">本程序適用於資料中心管理員和DCM2磁碟機櫃。</block>
+  <block id="e813fd422366d0dc5a37186d7430e09a" category="list-text">檢閱磁碟機處理需求。</block>
+  <block id="f1563c8d87cc2966328e9cb0166c5704" category="list-text">由NetApp為您的控制器櫃或磁碟機櫃提供支援的更換磁碟機。</block>
+  <block id="12cb93ac5470b7b9ed9a176553005bef" category="list-text">管理站、具備瀏覽器、可存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）</block>
+  <block id="d9de1ae5a4126bb7bbc28768a5dd593d" category="section-title">步驟1：準備更換磁碟機</block>
+  <block id="38ee00be25940e25c51d24be5c9b1598" category="paragraph">請檢查SANtricity 「恢復大師」（Recovery Guru）以準備更換磁碟機、並完成所有必要步驟。然後、您可以找到故障元件。</block>
+  <block id="fd781fa19cba325b3cc9ca7a79f8d928" category="list-text">如果在還原系統管理程式中的Recovery Guru SANtricity 已通知您_即將發生磁碟機故障_、但磁碟機尚未故障、請遵循Recovery Guru中的指示、將磁碟機故障。</block>
+  <block id="c270fc0b59ba9d1762090676216c05ca" category="list-text">如有需要、請使用SANtricity 「支援系統管理程式」確認您有合適的更換磁碟機。</block>
+  <block id="2b34ff7b94b6915d7fe36a0451d9e7e0" category="list-text">選取機櫃圖形上的故障磁碟機。</block>
+  <block id="e5cd41bbe6c7c290113bedec7819010c" category="list-text">按一下磁碟機以顯示其內容功能表、然後選取*檢視設定*。</block>
+  <block id="72ab5ffd61905e654f19dc64b867a605" category="list-text">確認更換磁碟機的容量等於或大於您要更換的磁碟機、而且具有您所期望的功能。</block>
+  <block id="455e5c608963880a8ee1aed547bc0963" category="paragraph">例如、請勿嘗試以固態磁碟（SSD）取代硬碟機（HDD）。同樣地、如果您要更換具有安全功能的磁碟機、請確定更換的磁碟機也具有安全功能。</block>
+  <block id="ee7607d86da8b65c01da2ac652fe4964" category="list-text">如有需要、請使用SANtricity 「支援系統管理程式」在儲存陣列中找到磁碟機。</block>
+  <block id="b6a12ef99e8b336ab9462d700e1e8a99" category="list-text">如果磁碟櫃有擋板、請將其取下、以便看到LED。</block>
+  <block id="b5524c42961e4cb39436d596734756bc" category="list-text">從磁碟機的內容功能表中、選取*開啟定位器指示燈*。</block>
+  <block id="80ec99c0cab09e567838a3b9d4c43092" category="paragraph">磁碟機匣的警示LED（黃色）會開始閃爍、以便您開啟正確的磁碟機抽屜、以識別要更換的磁碟機。</block>
+  <block id="5634899087a56c70bc067f8cca0cb264" category="list-text">拉動兩個拉桿、以解開磁碟機抽屜。</block>
+  <block id="6ce7d1bbad4dca7506ddf2778bdcff75" category="list-text">使用延伸槓桿、小心地將磁碟機抽屜拉出、直到它停止為止。</block>
+  <block id="aa20ca01c48f6030d2ae948d71fd3514" category="list-text">查看磁碟機匣頂端、找出每個磁碟機前面的警示LED。</block>
+  <block id="7fbdbd84b8effa3f92774995dd1a2df4" category="paragraph">磁碟機匣警示LED位於每個磁碟機的左側、磁碟機握把上的警示圖示就在LED後面。</block>
+  <block id="afc538814e7e75b26d932dfaec6f611f" category="section-title">步驟2：移除故障磁碟機</block>
+  <block id="a470a5045901bd59cb2fdb8ed748d8f2" category="paragraph">移除故障磁碟機、以新磁碟機取代。</block>
+  <block id="91c8d402eb0aad791a5ead76509f0d75" category="list-text">打開備用磁碟機的包裝、並將其放在磁碟櫃附近的無靜電平面上。</block>
+  <block id="e8531c68280206213c84fda291c4dc08" category="paragraph">請保留所有包裝材料、以便下次需要送回磁碟機時使用。</block>
+  <block id="7cc6ee9ff911962f27b60537d254d17c" category="list-text">將磁碟機抽取器拉桿從適當磁碟機抽取器的中央拉出、將兩者向抽取器的兩側拉出。</block>
+  <block id="b20e76aa36162d9a8af0dc1a928003a0" category="list-text">小心拉動延伸磁碟機抽取器拉桿、將磁碟機抽取器拉至其完整擴充位置、而不需將其從機箱中取出。</block>
+  <block id="e42c19e11077bb09d5a36d3d6a01cda9" category="list-text">將欲移除之磁碟機前方的橘色釋放卡鎖輕輕拉回。</block>
+  <block id="6f9d4d15416fb93cac9c12f94e1257b4" category="paragraph">磁碟機彈簧上的CAM握把部分開啟、磁碟機從抽屜中釋放。</block>
+  <block id="48cb4c1c5e18eec97fe2c35a66b8047c" category="list-text">打開CAM握把、然後稍微拉出磁碟機。</block>
+  <block id="764a62532760f655a4934a835eafa280" category="list-text">等待30秒。</block>
+  <block id="9ac98f01c6ecb5cd4bd8bdd44dc99f6e" category="list-text">使用CAM握把將磁碟機從磁碟櫃中提出。</block>
+  <block id="27f99f15ab3f6c5b5bf7e94d09452f30" category="list-text">將磁碟機放在防靜電、緩衝的表面上、遠離磁區。</block>
+  <block id="b2b027585e97a980fbb188d3cb760162" category="list-text">等待30秒、讓軟體辨識磁碟機已移除。</block>
+  <block id="ecb2588400cc7a0643de0981496f600d" category="admonition">如果您不小心移除作用中的磁碟機、請等待至少30秒、然後重新安裝。如需恢復程序、請參閱儲存管理軟體。</block>
+  <block id="4150c15e6973b44368151ec0f2ad801d" category="section-title">步驟3：安裝新磁碟機</block>
+  <block id="fd5b261b4dddb8e148a328cae1d2f1b1" category="paragraph">安裝新磁碟機以更換故障磁碟機。</block>
+  <block id="015f72387622e8d8e9832059673d7bfc" category="admonition">卸下故障磁碟機後、請儘快安裝替換磁碟機。否則、設備可能會過熱。</block>
+  <block id="22d9e12dfa979e0b65311fef724ee0c4" category="admonition">*可能會遺失資料存取*-將磁碟機抽屜推回機箱時、請勿將抽屜關機。緩慢推入抽屜、以避免抽屜震動、並造成儲存陣列損壞。</block>
+  <block id="d82cedbc037a62d2e2c1e9a97841e4d9" category="list-text">將新磁碟機上的CAM握把垂直提起。</block>
+  <block id="fb6f1f4c493441e6a7683a024fb3ec5d" category="list-text">將磁碟機承載器兩側的兩個凸起按鈕對齊磁碟機承載器上磁碟機通道的對應間隙。</block>
+  <block id="93f6c5f348acabea66206d901bc5c525" category="list-text">垂直放下磁碟機、然後向下轉動CAM握把、直到磁碟機卡入橘色釋放栓鎖下方。</block>
+  <block id="eb47c3772fe7d456895444a1693a3a8d" category="list-text">小心地將磁碟機抽屜推回機箱。緩慢推入抽屜、以避免抽屜震動、並造成儲存陣列損壞。</block>
+  <block id="0afb1c54f30f3813473eb3b220fdfe91" category="list-text">將兩個拉桿推向中央、以關閉磁碟機抽取器。</block>
+  <block id="8b4e3dcdc00b4445d079701f61415a87" category="paragraph">正確插入磁碟機時、磁碟機匣正面更換磁碟機的綠色活動LED會亮起。</block>
+  <block id="e1e4a95cedf4602c5b57322e8c693a93" category="paragraph">根據您的組態、控制器可能會自動將資料重新建構至新磁碟機。如果磁碟櫃使用熱備援磁碟機、則控制器可能需要在熱備援磁碟機上執行完整的重建、才能將資料複製到更換的磁碟機。此重建程序會增加完成此程序所需的時間。</block>
+  <block id="4bd8635c136db6ac816d0e9266d6037a" category="section-title">步驟4：完成磁碟機更換</block>
+  <block id="96767137a81a7de9e618dc872138fc3c" category="paragraph">確認新磁碟機運作正常。</block>
+  <block id="f351a77cc39dfc4db4a4cc279e285fb1" category="list-text">檢查您更換的磁碟機上的電源LED和警示LED。（首次插入磁碟機時、其注意LED可能亮起。不過、LED應會在一分鐘內熄滅。）</block>
+  <block id="4194823c2ca01ed74ce8ee5ba61b6438" category="list-text">電源LED亮起或不停閃、警示LED燈熄滅：表示新磁碟機運作正常。</block>
+  <block id="f249209744d1d4a200ed151b9f5583d9" category="list-text">電源LED燈不亮：表示磁碟機可能未正確安裝。卸下磁碟機、等待30秒、然後重新安裝。</block>
+  <block id="b1e84fd580a47e5a1f37aa54e124f475" category="list-text">警示LED亮起：表示新磁碟機可能有故障。請更換另一個新磁碟機。</block>
+  <block id="6e94f9284791fd6d7a86dcbf42216210" category="list-text">如果SANtricity 「還原系統管理程式」中的Recovery Guru仍顯示問題、請選取* Recheck*以確保問題已解決。</block>
+  <block id="9168e842c9c203032d83f8b539bc472d" category="list-text">如果Recovery Guru指出磁碟機重建並未自動開始、請手動開始重建、如下所示：</block>
+  <block id="57cc859adf3837f7d73b47f900e27e9c" category="admonition">只有在技術支援或Recovery Guru指示下、才執行此作業。</block>
+  <block id="c4aa113ac71255313bbf9fdec032166b" category="list-text">按一下您更換的磁碟機。</block>
+  <block id="b4f14732ea4415db252ff401dbfb21c7" category="list-text">從磁碟機的內容功能表中、選取* Reconstronstron*。</block>
+  <block id="4897f540776b12cbfa289aa666bad205" category="list-text">確認您要執行此作業。</block>
+  <block id="8243bcc7701d03c1130993165da30861" category="paragraph">磁碟機重建完成後、磁碟區群組會處於最佳狀態。</block>
+  <block id="9f77af0e7972bfdecb6f34dbdd11935a" category="list-text">視需要重新安裝擋板。</block>
+  <block id="a8280a793d4f574a1e8ec9fdeff29427" category="list-text">如套件隨附的RMA指示所述、將故障零件退回NetApp。</block>
+  <block id="f27a51e52396250dd0e307a338bce1ce" category="paragraph">您的磁碟機更換已完成。您可以恢復正常作業。</block>
+  <block id="e657353167b7b7a6da41a36147304c86" category="doc">使用 Grid Manager 升級 SG5800 儲存控制器上的 SANtricity OS</block>
+  <block id="c1384d3ff02a8e2651cc279071aaf78f" category="inline-link-macro">使用維護模式來套用升級</block>
+  <block id="eac7709175724ff9ce34a221fb35263b" category="paragraph">對於目前使用 SANtricity OS 08.42.20.00 （ 11.42 ）或更新版本的儲存控制器、您可以使用 Grid Manager 來套用升級。您也可以 <block ref="4323f393687527a635818a4063ecc7b0" category="inline-link-macro-rx"></block>。</block>
+  <block id="c5813a8aa6ff77bce2821e79dbdddaa4" category="list-text">如果您沒有取得想要從升級至的 SANtricity OS 版本<block ref="17b838622e0459e6c950b0d070de6b4f" category="inline-link-rx"></block>、您已諮詢過<block ref="17b838622e0459e6c950b0d070de6b4f" category="inline-link-rx"></block> 或<block ref="59eff0a7409a2083b143c03284b14f62" category="inline-link-rx"></block> 確認您用於升級的 SANtricity 作業系統版本與您的應用裝置相容。</block>
+  <block id="b5070a9ebd69d67446f8ba887ce01d81" category="paragraph">SANtricity OS 升級進行期間、您無法執行其他軟體更新（ StorageGRID 軟體升級或 Hotfix ）。如果您在StorageGRID 完成更新程序之前嘗試啟動修補程式或更新版的功能、SANtricity 您會被重新導向SANtricity 到「更新版更新版」頁面。</block>
+  <block id="14f85712f73f076c405698b9eda9b27f" category="inline-link-macro">使用維護模式升級 E4000 控制器上的 SANtricity OS</block>
+  <block id="675e5de60cb9bf47aca27e00928a95f7" category="paragraph"><block ref="675e5de60cb9bf47aca27e00928a95f7" category="inline-link-macro-rx"></block></block>
+  <block id="54ca0b6c4a7ea258e02f5a0270bc708c" category="paragraph">您可以使用維護模式來升級 E4000 控制器上的 SANtricity OS 。</block>
+  <block id="bfd3121140b51e5225c742b6c1a8855d" category="inline-link-macro">使用 Grid Manager 來套用升級</block>
+  <block id="4ee96b51b0b1b4f01e2af9afc9bc1ca2" category="admonition">若儲存控制器目前使用的 SANtricity OS 版本低於 08.42.20.00 （ 11.42 ）、建議使用 <block ref="84add73b54e056d7cc409d19b2621556" category="inline-link-macro-rx"></block>。不過、如果您偏好使用維護模式程序、或是技術支援人員指示您使用維護模式程序。</block>
+  <block id="7d89acc46dd310b10933ef52e057b958" category="list-text">您必須將 SG5800 控制器放入 <block ref="66517df9b2a708b9947fc0143b4273f5" category="inline-link-macro-rx"></block>，中斷與 E4000 控制器的連線。</block>
+  <block id="9329a6134fa78d1c2589fec1fd2fd0ae" category="list-text">請遵循 SANtricity 軟體與韌體升級指南 _ 或 SANtricity 系統管理員線上說明中的指示、以升級 E4000 控制器的韌體與 NVSRAM 。</block>
+  <block id="b002d4df92c2e0cff2145858a8d51fde" category="paragraph"><block ref="b002d4df92c2e0cff2145858a8d51fde" category="inline-link-macro-rx"></block></block>
+  <block id="233671ff585fa202c9fea38b278ed22d" category="doc">使用 SANtricity System Manager 線上方法升級 SG5800 磁碟機韌體</block>
+  <block id="0a16752dda40f74073b67a15b505a4f7" category="paragraph">屬於沒有備援磁碟區的磁碟機必須使用更新 <block ref="179e42b86c56e7fde01fd62621c30190" category="inline-link-macro-rx"></block>。離線方法應用於目前降級的任何集區或磁碟區群組。</block>
+  <block id="0c8782a9cf6221119041fcc0d8ca5d63" category="doc">更換 E4000 中的電池（ SG5800 ）</block>
+  <block id="51de125e739119b7f357a997c6d2efeb" category="paragraph">如果 Grid Manager 發出儲存控制器電池故障警示、或 SANtricity 系統管理員中的 Recovery Guru 顯示「電池故障」或「需要更換電池」狀態、您必須在 E4000 控制器中更換受影響的電池。為了保護您的資料、必須盡快更換電池。</block>
+  <block id="bd6cfd355d7173da276f24157a1481ca" category="paragraph">從「還原系統管理程式」檢閱Recovery Guru中的詳細資料、確認電池有問題、並確保不需要先處理其他項目。SANtricity</block>
+  <block id="7e6bf0538a1689eacb3091a1694f8c9a" category="paragraph">如果您打算更換故障電池、則必須具備：</block>
+  <block id="0e39ff318b12678e1f22e5f337b7aa18" category="list-text">替換電池。</block>
+  <block id="ec6e5e75653734bb428b87afb93f7f41" category="section-title">步驟 1 ：準備更換電池</block>
+  <block id="5ca582da244b3fae8f12ada03bba8d47" category="paragraph">關閉控制器機櫃電源、以便安全取出故障電池。</block>
+  <block id="33941f1f00d766c403d4508aad1d4c5f" category="section-title">步驟 2 ：取下 E4000 控制器箱</block>
+  <block id="972e983ac66ba64cc0037a9f8736b122" category="paragraph">您需要從控制器機櫃中取出控制器機箱、以便取出電池。</block>
+  <block id="95256a81923e03bf7457314d6f4277cf" category="list-text">如果控制器容器上的主機連接埠使用SFP+收發器、請保留安裝狀態。</block>
+  <block id="65dbea465f8ab258fd9acb2ca9257126" category="list-text">確認控制器背面的快取作用中LED已關閉。</block>
+  <block id="d1775ca2e6b9de8e2cb06187c01c6edb" category="list-text">壓下凸輪把手上的閂鎖、直到鬆開為止、完全打開凸輪把手、從中間背板釋放控制器圓筒、然後用雙手將控制器圓筒拉出機箱。</block>
+  <block id="01154a62b14d9e8695cc99224fe584c7" category="section-title">步驟 3 ：安裝新電池</block>
+  <block id="2637cf0b9dfbd57db2c2425a5fb535e8" category="paragraph">您必須取出故障電池並更換。</block>
+  <block id="1d2fa253d394f6157685a15fa66aa977" category="list-text">打開新電池的包裝、放在平坦、無靜電的表面上。</block>
+  <block id="a336d4eb5ea250b86a6c6d3f2a04bd06" category="admonition">為符合IATA安全法規、更換電池的充電狀態（SoC）為30%以下。當您重新接上電源時、請記住、在更換電池充滿電且已完成初始記憶週期之前、寫入快取不會恢復。</block>
+  <block id="d92d6ba15b8b63cf4ad19d75aaf4c5e1" category="list-text">從機箱中取出控制器圓筒。</block>
+  <block id="f8f8b579dfb0950941b37fe3cd50edc5" category="image-alt">打開控制器模組護蓋。</block>
+  <block id="3ba39ebb3161ccca8d67a1b37fc8de0b" category="list-text">將電池放在控制器箱中。</block>
+  <block id="d59458bbc2344e3ef00ed14c17f27644" category="list-text">從控制器箱中取出故障電池：</block>
+  <block id="e0d627d24969309d1ec10ac28afa39d3" category="list-text">將電池從控制器圓筒上拔下。</block>
+  <block id="c818381b38e5f0ac4563930dfe15be2d" category="list-text">從包裝中取出替換電池。安裝替換電池：</block>
+  <block id="f6a2cb187ccfea7a245701cac5bb9714" category="section-title">步驟4：重新安裝控制器容器</block>
+  <block id="aa4ecd2631b0a57f27425bbdf9cc91b7" category="paragraph">更換控制器箱中的元件後、請將其重新安裝到機箱中。</block>
+  <block id="44df050c94969c9c5f783babbd55fb7e" category="list-text">將控制器圓筒的末端對準機箱的開口、然後將控制器圓筒輕輕推入系統的一半。</block>
+  <block id="91418c565341bd8a889226a195dd2fa2" category="section-title">步驟 5 ：完成電池更換</block>
+  <block id="b51e694ef3ac6b65a402ce1cf0a014da" category="paragraph">開啟控制器電源。</block>
+  <block id="156669a67abecdf1e57e82c2fb8e68b5" category="list-text">開啟控制器機櫃背面的兩個電源開關。</block>
+  <block id="1c823c6f02537cbd216950a909aa1507" category="list-text">請勿在開機程序期間關閉電源開關、通常需要90秒或更短時間才能完成。</block>
+  <block id="93bd79c8d2b5d27bc807986f8a360024" category="list-text">每個機櫃中的風扇在初次啟動時聲音非常大。開機期間的大聲雜訊是正常現象。</block>
+  <block id="b8f02e336f9eae3bbc52a995d97cb197" category="list-text">控制器重新上線時、請檢查控制器機櫃的注意 LED 。</block>
+  <block id="9770e30440ee897adc5299d8c3a301e7" category="paragraph">如果狀態不是「最佳」、或是有任何警示LED亮起、請確認所有纜線均已正確安裝、並檢查電池和控制器機箱是否已正確安裝。如有必要、請移除並重新安裝控制器容器和電池。</block>
+  <block id="469b4f63a056981e4c2fcbf91477d76d" category="admonition">如果您無法解決問題、請聯絡技術支援部門。
+如有需要、請使用SANtricity 《支援系統管理程式》為儲存陣列收集支援資料。</block>
+  <block id="0a0e11a593a1ae795c58a7ea1751517a" category="list-text">選取收集支援資料。</block>
+  <block id="b54c595bb71cefacd0ee6e5a4d68dc02" category="list-text">按一下「收集」。</block>
+  <block id="efd279df83f7980b63864ad37d922c7b" category="paragraph">電池更換完成。您可以恢復正常作業。</block>
+  <block id="18933f9d2ebf6f8bf7e7947ab0bce7d7" category="doc">升級 SG5800 儲存控制器上的 SANtricity OS</block>
+  <block id="5ea91833755ea0a0d17e74ee434bf41d" category="paragraph">請諮詢、判斷符合 StorageGRID 應用裝置使用資格的最新 SANtricity 作業系統版本<block ref="e7b75487549954e00354c6731ea3ca9e" category="inline-link-rx"></block> 並視需要下載。</block>
+  <block id="cd39d2cd100c7fba2f06debd14ee7b94" category="doc">疑難排解 SG5800 磁碟機韌體升級錯誤</block>
+  <block id="432fc9ca6a732f41755849d144322681" category="summary">更換60個磁碟機控制器磁碟櫃或磁碟機磁碟櫃、其中包含兩個電源插座以提供電源備援。</block>
+  <block id="fc9d2a7031883dd4802020b9492deded" category="doc">請更換 SG5860 中的電源箱</block>
+  <block id="1782ead0cc9652bb82ce7ab727d710cc" category="paragraph">您可以在 SG5860 中更換電源箱。</block>
+  <block id="00d60d9325a7207a3539cb29a78b3b16" category="paragraph">每個應用裝置都有兩個電源迴廊、可提供電力備援。如果電力箱故障、您必須儘快更換、以確保機櫃具有備援電源。</block>
+  <block id="40c9ae25c0f1b00d53ce58b51e2f3dc0" category="paragraph">您可以在產品電源開啟並執行主機 I/O 作業時更換電源箱、 只要機櫃中的第二個電源箱狀態為「最佳」、且 SANtricity 系統管理員之 Recovery Guru 的「詳細資料」區域中的「確定要移除 * 」欄位會顯示 * 「是」 * 。</block>
+  <block id="0c64e548bc30a13c389ee64ebf927d1f" category="paragraph">執行此工作時、另一個電源箱會為兩個風扇供電、以確保設備不會過熱。</block>
+  <block id="4f113b2dc0a590b47eaebbf00c57ec4f" category="list-text">請檢閱Recovery Guru中的詳細資料、確認電力容器有問題、並從Recovery Guru選取* Recheck*、以確保不需要先處理其他項目。</block>
+  <block id="381cbd258ae93a82582aabf3264857bc" category="list-text">檢查電源箱上的黃色警示LED是否亮起、表示該機箱有故障。如果機櫃中的兩個電源容器都亮起黃色注意LED、請聯絡技術支援部門以尋求協助。</block>
+  <block id="34aa0da45d1e2ee765a0ad63b9d22d01" category="list-text">本產品支援的備用電源箱。</block>
+  <block id="705faac0bd59d35c3edd9c78acd2916d" category="section-title">步驟1：準備更換電力箱</block>
+  <block id="35dad50be3b954e82fa1f029dca60fb0" category="paragraph">準備更換動力箱。</block>
+  <block id="715982174e7e4dcda393bbe2bb35e421" category="list-text">選取功能表：Support（支援）[Support Center（支援中心）&gt; Diagnostics（診斷）]。</block>
+  <block id="893ab1ae5c17160128a9140e253794ab" category="list-text">從「支援系統管理程式」中、判斷哪個電力容器故障。SANtricity</block>
+  <block id="61840a278143b576453579e28a6c98f6" category="list-text">請看效能 <block ref="5c179093712741c1ac6d83d8605b855b" category="inline-image-macro-rx" type="image"></block> *機櫃*下拉式清單右側的圖示、用於判斷哪個機櫃有故障的電力箱。</block>
+  <block id="8092906792979c8b780953ad0d13e083" category="paragraph">如果某個元件故障、此圖示為紅色。</block>
+  <block id="e902c8e51932ed0636fb1d2879d9372d" category="list-text">當您找到帶有紅色圖示的機櫃時、請選取*顯示機櫃背面*。</block>
+  <block id="d41778d835aaa9f2630fdeb56c8cfe13" category="list-text">選取「電力箱」或「紅色電力」圖示。</block>
+  <block id="0dd674dce0acc421175844a5cb6c03f1" category="list-text">在「*電源供應器*」索引標籤上、查看電源箱的狀態、以判斷哪些電源箱必須更換。</block>
+  <block id="afe20fdbf5e98fdfd4c4ca0212cfca2a" category="paragraph">必須更換狀態為「*失敗*」的元件。</block>
+  <block id="01921d56013dbe9d045b89c3a25e5bb4" category="admonition">如果機櫃中的第二個電源箱沒有*最佳*狀態、請勿嘗試熱交換故障的電源箱。請聯絡技術支援部門以取得協助。</block>
+  <block id="503547e4d85df2600c1278c6e6743b84" category="admonition">您也可以在Recovery Guru的「詳細資料」區域中、找到故障電源箱的相關資訊、或是檢閱顯示的機櫃資訊、或是檢閱「Support（支援）」下方的「Event Log（事件記錄）」、然後依元件類型進行篩選。</block>
+  <block id="b6ee58a8a1f85eac2955b23a28a722bd" category="list-text">從儲存陣列背面查看警示LED、找出您需要移除的電源箱。</block>
+  <block id="bedca2dd7da3025b9e6c0d1b3058e7ca" category="paragraph">您必須更換注意LED亮起的電力箱。</block>
+  <block id="b42fb82db6c494a05db90621a76ec860" category="section-title">步驟2：移除故障的電力箱</block>
+  <block id="a2785602898f38d6d34999210d452bfc" category="paragraph">移除故障的電力容器、以便更換為新的電源容器。</block>
+  <block id="a300fbfd884ff458fb7de4f74e2cc07c" category="list-text">提供防靜電保護。</block>
+  <block id="cd2fa38f8351cff7e20591b92edde348" category="list-text">打開新的電力容器、並將其放在靠近機櫃的水平表面上。</block>
+  <block id="4532f144f600ec2e6a0bb95318c3aad4" category="paragraph">請保留所有包裝材料、以便在退回故障的電力箱時使用。</block>
+  <block id="ae53bb8bc2e27a220e377af53c591c1f" category="list-text">關閉您需要移除的電源箱上的電源開關。</block>
+  <block id="eea86b91ab84bc3386fb0b9d8c349df4" category="list-text">打開您需要移除的電源箱的電源線固定器、然後從電源箱拔下電源線。</block>
+  <block id="70b384acdcd98a073a2c43c9943988fe" category="list-text">按下動力箱CAM握把上的橘色栓鎖、然後打開CAM握把、從中間平面完全釋放動力箱。</block>
+  <block id="25d87bb212fb67bef48f78d4c2c8acf3" category="list-text">使用CAM握把將電力箱滑出機櫃。</block>
+  <block id="884e594e07cd890956b848cd6c2839b0" category="admonition">移除電力容器時、請務必用兩隻手支撐其重量。</block>
+  <block id="f146ffcce7995552c6eb787596589521" category="section-title">步驟3：安裝新的動力箱</block>
+  <block id="2ea46767f6d32834167307689c71503c" category="paragraph">安裝新的電力容器以更換故障的電源箱。</block>
+  <block id="a5e2e57edd78fc0befb948090251a61e" category="list-text">確定新的電源箱的開關處於關閉位置。</block>
+  <block id="2f53b4e3d194d8d58a0e184791e3df80" category="list-text">用兩隻手支撐並將電源箱的邊緣與系統機箱的開孔對齊、然後使用CAM握把將電源箱輕推入機箱、直到卡入定位。</block>
+  <block id="666e5d04f163cf0e9df0ae08b2c721c7" category="admonition">將動力箱滑入系統時、請勿過度施力、否則可能會損壞連接器。</block>
+  <block id="c502225aaa34d6017ec436654d2c3d55" category="list-text">關閉CAM握把、使栓鎖卡入鎖定位置、且電力箱完全就位。</block>
+  <block id="1f8c00f73f266741fb369e49e712fdaf" category="list-text">將電源線重新連接至電源箱、並使用電源線固定器將電源線固定至電源箱。</block>
+  <block id="9308e3d99bdf042ec87837763f63b802" category="list-text">開啟新電力箱的電源。</block>
+  <block id="783790570812d129405777a4da2f9d5c" category="section-title">步驟4：完整更換電力箱</block>
+  <block id="df7f4585d74148e9ffaba5a89842149b" category="paragraph">確認新的電力容器運作正常、收集支援資料、並恢復正常作業。</block>
+  <block id="14e33dcb987f14454ae68109b93efba7" category="list-text">在新的電源箱上、檢查綠色電源LED是否亮起、且黃色警示LED是否熄滅。</block>
+  <block id="a320ceabc99151b468bbfc423c22bfdf" category="list-text">從「還原系統管理程式」的「恢復大師SANtricity 」中、選取「*重新檢查*」以確保問題已解決。</block>
+  <block id="fa89f08543b6ca518071711a3bd8ae93" category="list-text">如果仍有報告電力容器故障、請重複中的步驟 <block ref="c5e4ac8ffd3690740ad7837d610d213f" category="inline-xref-macro-rx"></block> 和 <block ref="0d240e4a1e9b2ac9c0cbe94c4248016d" category="inline-xref-macro-rx"></block>。如果問題持續發生、請聯絡技術支援部門。</block>
+  <block id="8d50e29d2dbe5c9bd78247f7b1bdb86f" category="list-text">移除防靜電保護。</block>
+  <block id="63eb0ab9c5f8ba589cfaff743b11a8d7" category="paragraph">您的電力箱更換已完成。您可以恢復正常作業。</block>
+  <block id="67e61ec95be7440ca50351a3be0bc2a7" category="doc">更換 SG5800 控制器</block>
+  <block id="364650f21807adee20cde64ae4a5d3e9" category="paragraph">如果 SG5800 控制器無法正常運作或故障、您可能需要更換它。</block>
+  <block id="d5ceae45ad71c42a4ef35fb1c37197d2" category="paragraph">當您更換控制器時、將無法存取應用裝置儲存節點。如果 SG5800 控制器運作正常、您可以在本程序開始時執行控制關機。</block>
+  <block id="caa1c5d5fd1e7ba64de8d71286bb8318" category="admonition">如果您在安裝StorageGRID 完此程序之前更換控制器、可能StorageGRID 無法在完成此程序後立即存取《產品安裝程式（到此程序）」。雖然您可以從與應用裝置位於同一子網路的其他主機存取 StorageGRID 應用裝置安裝程式、但您無法從其他子網路上的主機存取。此情況應在15分鐘內自行解決（當原始控制器的任何ARP快取項目逾時時）、或者您可以從本機路由器或閘道手動清除任何舊的ARP快取項目、以立即清除此狀況。</block>
+  <block id="ff4a4cfe4d47b7b6bc9984272252afd0" category="list-text">從 SANtricity 系統管理員首頁、選取檢視進行中的作業。</block>
+  <block id="aafe5c594f12727470503cdf24758823" category="admonition">為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或踩踏。
+擠壓CAM握把上的栓鎖直到釋放為止、然後打開右側的CAM握把、即可從產品中釋放控制器。</block>
+  <block id="116708dbf8cbcdd4ed3a0eaa59b210d5" category="list-text">開啟產品電源、並監控控制器 LED 。</block>
+  <block id="dc6b37d166611f437c69e6665f804874" category="paragraph">更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱<block ref="4fc2cab5a4eb2f6a408378b0d596ae42" category="inline-link-rx"></block> 頁面以取得更多資訊。</block>
+  <block id="af263895971d2bc4de76ea61e8f007e4" category="summary">檢閱 E4000 活性碳罐類型和要求。</block>
+  <block id="3d9e5773b68ef87e500a23bf5751a364" category="doc">更換 SG5860 中的風扇箱</block>
+  <block id="d64096c1e2f9db519f76aac2cf8f503f" category="paragraph">您可以在 SG5860 中更換風扇箱。</block>
+  <block id="c5c5d656e9a7f1f7efe66e8d773dcddb" category="paragraph">每個產品都有兩個風扇迴廊。如果風扇容器故障、您必須儘快更換、以確保機櫃有足夠的冷卻效果。</block>
+  <block id="5ef30dc2086a2e975a5dd817ce908664" category="admonition">*可能的設備損壞*-如果您在開啟電源的情況下執行此程序、則必須在30分鐘內完成此程序、以避免設備過熱。</block>
+  <block id="3c0ec434e5b59c0655d9d7c87460f5d7" category="list-text">檢閱Recovery Guru中的詳細資料、確認風扇容器有問題、並從Recovery Guru選取* Recheck*、以確保不需要先處理其他項目。</block>
+  <block id="031d0c873e3f18918745d5ccb59635fb" category="list-text">檢查風扇容器上的黃色警示LED是否亮起、表示風扇故障。如果磁碟櫃中的兩個風扇容器都亮起黃色注意LED、請聯絡技術支援部門以尋求協助。</block>
+  <block id="a0248e71bbe58379acadf3146938c298" category="list-text">適用於您的產品機型的備用風扇箱（風扇）。</block>
+  <block id="773c2723d6a9a0d160532312c104863d" category="section-title">步驟1：準備更換風扇容器</block>
+  <block id="83eeb9945d1dc6f7b70309d62a09af0b" category="paragraph">準備更換風扇箱、方法是收集儲存陣列的支援資料、並找出故障元件。</block>
+  <block id="a70c638aa6442dd0cd4bd489333586ac" category="list-text">從「系統管理程式」中、判斷哪個風扇容器故障。SANtricity</block>
+  <block id="a53ae7e73bae0d5966dfe3f672b56332" category="list-text">看看風扇 <block ref="05e710a523d2bede5c636c5e4f922688" category="inline-image-macro-rx" type="image"></block> *機櫃*下拉式清單右側的圖示、用於判斷哪個機櫃有故障的風扇機箱。</block>
+  <block id="50cc8192e748bb17a8df770d5a32cf75" category="list-text">選取風扇容器或紅色風扇圖示。</block>
+  <block id="54f2a1ff285dde23857c41e5f7c6ec19" category="list-text">在「*風扇*」索引標籤上、查看風扇容器的狀態、以判斷必須更換哪個風扇容器。</block>
+  <block id="7c04b30a180a09ed131bbe1dd9ccbb51" category="admonition">如果磁碟櫃中的第二個風扇磁碟櫃沒有*最佳*狀態、請勿嘗試熱交換故障的風扇磁碟櫃。請聯絡技術支援部門以取得協助。</block>
+  <block id="185a4610d4c324c2e9f451074779958e" category="paragraph">您也可以在Recovery Guru的「詳細資料」區域中找到故障風扇容器的相關資訊、或是在「Support（支援）」下檢閱「Event Log（事件記錄）」、然後依元件類型篩選。</block>
+  <block id="09e082351e8a338cf6bfd0095fb1f8af" category="list-text">從儲存陣列背面查看警示LED、找出您需要移除的風扇容器。</block>
+  <block id="2cac84101d9b299c4c226a94f6f661f0" category="paragraph">您必須更換亮起警示LED的風扇容器。</block>
+  <block id="51fc89e821471889e40cd4135f83489e" category="section-title">步驟2：移除故障的風扇容器、然後安裝新的</block>
+  <block id="65c75d1e1d9634dd6438218357f8e620" category="paragraph">移除故障的風扇容器、以便更換新的風扇容器。</block>
+  <block id="a89e6694bd9bcc966b1a6470db134e2c" category="admonition">如果您未關閉儲存陣列的電源、請務必在30分鐘內取出並更換風扇箱、以免系統過熱。</block>
+  <block id="6d56edf70c477eddd79bd332e5baee1e" category="list-text">打開新的風扇容器的包裝、並將其放在靠近機櫃的水平表面上。</block>
+  <block id="263c7d60489662b08bc168e30ef43797" category="paragraph">請保存所有包裝材料、以便在退回故障風扇時使用。</block>
+  <block id="9dee690b5b01dff344ccbf07d78a7f26" category="list-text">按下橘色彈片以釋放風扇容器握把。</block>
+  <block id="dbfadb968050a930cd614eca2fb31c3e" category="list-text">使用風扇容器握把將風扇容器拉出機櫃。</block>
+  <block id="2fc2dc383011d670b5deccc3b760edd7" category="list-text">將替換風扇容器完全滑入機櫃、然後移動風扇容器握把、直到其鎖住橘色彈片為止。</block>
+  <block id="f8fe0ac4d4f3dde3b5e57bf57efc74a7" category="section-title">步驟3：完整更換風扇容器</block>
+  <block id="b14b91e17d1e3e961bdbb6344fbe9ec0" category="paragraph">確認新的風扇容器運作正常、收集支援資料、並恢復正常作業。</block>
+  <block id="07c217ceb46d242a958a17a10798211a" category="list-text">檢查新風扇容器上的黃色警示LED。</block>
+  <block id="e91b8be29ac3a7947585c867772cb06f" category="admonition">更換風扇容器後、警示LED會持續亮起（持續亮起黃色燈）、同時韌體會檢查風扇容器是否安裝正確。此程序完成後、LED會熄滅。</block>
+  <block id="a573301b0c752c44a69e3a31525936a9" category="list-text">如果仍報告故障的風扇容器、請重複中的步驟 <block ref="fd0ce20d013aacb925fdbb8fc87dffd2" category="inline-xref-macro-rx"></block>。如果問題持續發生、請聯絡技術支援部門。</block>
+  <block id="1e8e67942242258fa3559bd1c3bc3ad5" category="paragraph">您的風扇容器更換完成。您可以恢復正常作業。</block>
+  <block id="025b6cb41a1f6a83330ebd9f00816666" category="summary">您可以在 SG5812 中更換電源供應器。</block>
+  <block id="a15b7259c4d23ba2071945358500cfb5" category="doc">更換 SG5812 中的電源供應器</block>
+  <block id="a082c8fffd0ceeeadab84d9be8534d44" category="paragraph">您可以在 SG5812 中更換電源供應器。</block>
+  <block id="0422758c4e0e6137dc956aa2c2473dd2" category="paragraph">如果您打算更換電源供應器、請謹記下列需求。</block>
+  <block id="92dbaa954f32ae22554561d30467e104" category="list-text">您必須擁有產品支援的替換電源供應器。</block>
+  <block id="5da886f43fb65b9ea93fce5008997703" category="admonition">請勿混合使用不同電壓類型的 PSU 。永遠像這樣更換。</block>
+  <block id="eb2f4b76f9038a436060f3cd723b8ba3" category="list-text">檢閱Recovery Guru中的詳細資料、確認電源供應器有問題。從Recovery Guru中選取* Recheck*、以確保不需要先處理其他項目。</block>
+  <block id="ea3a064bc0cfbd1180920d14c09e9739" category="list-text">檢查電源供應器上的黃色警示LED是否亮起、表示電源供應器或其整合式風扇故障。如果機櫃中的兩個電源供應器都亮起黃色注意LED、請聯絡技術支援部門以尋求協助。</block>
+  <block id="94bd50006844af74a28b50dd0afeabf5" category="list-text">控制器應用裝置機型支援的替換電源供應器。</block>
+  <block id="f51c04719efd371cd7f31390c06ddca3" category="section-title">步驟1：準備更換電源供應器</block>
+  <block id="a7406e0b4fa8a05ec8e0d320d50f88c1" category="paragraph">準備更換電源供應器。</block>
+  <block id="152913b57dc0f6847aa70f4ee84c4c44" category="list-text">選取 * 支援 &gt; 支援中心 &gt; 診斷 * 。</block>
+  <block id="2c38f05e53de6004289a3631a4250cc8" category="list-text">從「支援系統管理程式」中、判斷哪個電源供應器故障。SANtricity</block>
+  <block id="209efedd4d6d66610471d4b9281405e1" category="paragraph">您可以在Recovery Guru的「Details（詳細資料）」區域中找到此資訊、也可以檢閱顯示的機櫃資訊。</block>
+  <block id="05c53e0ddd1f2e97904a4e7a0715bee0" category="list-text">請看效能 <block ref="5c179093712741c1ac6d83d8605b855b" category="inline-image-macro-rx" type="image"></block> 和FAN <block ref="05e710a523d2bede5c636c5e4f922688" category="inline-image-macro-rx" type="image"></block> *機櫃*下拉式清單右側的圖示、用於判斷哪個機櫃的電源供應器故障。</block>
+  <block id="b4cf459575f55b9522f5a3df6c095dce" category="paragraph">如果某個元件發生故障、這些圖示中有一個或兩個都是紅色的。</block>
+  <block id="60f50fc085055091f055cf0f3bf2fb86" category="list-text">選取任一電源供應器。</block>
+  <block id="10c055892271a83993e7398f73245393" category="list-text">在*電源供應器*和*風扇*索引標籤上、查看電源風扇迴圈、電源供應器和風扇的狀態、以判斷必須更換哪個電源供應器。</block>
+  <block id="239e7cf50ff441875c207480256578ee" category="admonition">如果磁碟櫃中的第二個電源供應器磁碟櫃沒有*最佳*狀態、請勿嘗試熱交換故障的電源供應器。請聯絡技術支援部門以取得協助。</block>
+  <block id="c76cd69c46c48e0900822dbc3f7d9bcb" category="list-text">從儲存陣列背面查看警示LED、找出您需要移除的電源供應器。</block>
+  <block id="a67828998045687c25d872b3d5db64b3" category="paragraph">您必須更換注意LED亮起的電源供應器。</block>
+  <block id="7716568ef8f3c67c33420b5629fd8dca" category="section-title">步驟2：移除故障的電源供應器</block>
+  <block id="0e66e595f8c85111bea3a5eea0829eb3" category="paragraph">移除故障的電源供應器、以便更換為新的電源供應器。</block>
+  <block id="7776ef03953b08b93b6fe9f283da9e9d" category="list-text">打開新電源供應器的包裝、並將其放在磁碟機櫃附近的水平面上。</block>
+  <block id="6d419f45622b2671a1c131cee99e48c8" category="paragraph">請保留所有包裝材料、以便在退回故障電源供應器時使用。</block>
+  <block id="26a7f110cdea223941fce9ce7dbd56b5" category="list-text">關閉電源供應器並拔下電源線：</block>
+  <block id="e2d603ea2447fc94b7ed66fef5638db9" category="list-text">關閉電源供應器上的電源開關。</block>
+  <block id="6f6be6b27d319a6e1a3bbbcf1c37968c" category="list-text">打開電源線固定器、然後從電源供應器拔下電源線。</block>
+  <block id="8ca8a28d3a4fcaa7628298761c8c87ef" category="list-text">從電源拔下電源線。</block>
+  <block id="1905d900d953685708ba58017a550170" category="list-text">擠壓電源供應器CAM握把上的栓鎖、然後打開CAM握把、從中間面完全釋放電源供應器。</block>
+  <block id="09e0f63b4f7c47cb245e8bd4d3254d48" category="list-text">使用CAM握把將電源供應器滑出系統。</block>
+  <block id="cccad29bab38be38d924d641d62479d7" category="admonition">移除電源供應器時、請務必用兩隻手支撐其重量。</block>
+  <block id="503b4b0a7232b85e8b6d679cdd2f002d" category="section-title">步驟3：安裝新的電源供應器</block>
+  <block id="c412657842f4c0e9afcd243493d69690" category="paragraph">安裝新的電源供應器以更換故障的電源供應器。</block>
+  <block id="61301520dc6955c4cab2e50a4acb72f9" category="list-text">確定新電源供應器的開關位於*關閉*位置。</block>
+  <block id="cb2262205cc2fa45942af95ff78a8060" category="list-text">用兩隻手支撐電源供應器邊緣、並將其與系統機箱的開孔對齊、然後使用CAM握把將電源供應器輕推入機箱。</block>
+  <block id="0254339bdfce7d2570df5a7c76a7aec1" category="paragraph">電源供應器採用鎖定式設計、只能以單一方式安裝。</block>
+  <block id="6e72cc282e7b9cd6a1105f4868871d2d" category="admonition">將電源供應器滑入系統時、請勿過度施力、否則可能會損壞連接器。</block>
+  <block id="e432c2bc41b7f99dd47f85f51c2f7959" category="list-text">關閉CAM握把、使栓鎖卡入鎖定位置、且電源供應器已完全就位。</block>
+  <block id="b93feae264747df3207fa8db06df964b" category="list-text">重新連接電源供應器纜線：</block>
+  <block id="52523653fed01f0ffa4b1e16809d67ff" category="list-text">將電源線重新連接至電源供應器和電源。</block>
+  <block id="f3611b88fb54d8743451fc28437f2ebd" category="list-text">使用電源線固定器將電源線固定至電源供應器。</block>
+  <block id="5690c288fe78365b4b2835474067048e" category="list-text">開啟新電源供應器箱的電源。</block>
+  <block id="60b1f96fdbd973ea98d91f99cd75004d" category="section-title">步驟4：完成電源供應器更換</block>
+  <block id="28ea136824e85c41fc685d11525d1800" category="paragraph">確認新的電源供應器運作正常、收集支援資料、並恢復正常作業。</block>
+  <block id="4db5612899baeb72b408d84a29366396" category="list-text">在新的電源供應器上、檢查綠色電源LED是否亮起、且黃色警示LED是否熄滅。</block>
+  <block id="5d7f2934067cdb10efee34ca92c39bf2" category="list-text">如果仍報告故障的電源供應器、請重複中的步驟 <block ref="ea8874311efff004f4ccf043a598fb2e" category="inline-xref-macro-rx"></block>和 <block ref="1b7a0d310d8da3d5c98eb62f6d26c34f" category="inline-xref-macro-rx"></block>。如果問題持續發生、請聯絡技術支援部門。</block>
+  <block id="3dbc4b1fda3f7e5b612f7b6c5b1c62db" category="paragraph">您的電源供應器更換已完成。您可以恢復正常作業。</block>
+  <block id="6dbddbea1164992cf10e5c7521447401" category="summary">您可以在 SG5812 中更換磁碟機。</block>
+  <block id="12e9b4a71b9de4e3e37c77d6f19a2018" category="doc">更換 SG5812 中的磁碟機</block>
+  <block id="51e92be88caea335982d2e0fc88a7ccd" category="paragraph">您可以在 SG5812 中更換磁碟機。</block>
+  <block id="76a8baa79570b1682739daf4ff94fb5a" category="list-text">檢閱磁碟機處理需求</block>
+  <block id="9e669e83806f0079c03e075cb9261645" category="list-text">如有需要、請使用SANtricity 「支援系統管理程式」在儲存陣列中找到磁碟機。從硬體頁面的磁碟機內容功能表中、選取*開啟定位器指示燈*。</block>
+  <block id="c9f87acb2508bc5aed9b287fa89e0354" category="paragraph">磁碟機的警示LED（黃色）會閃爍、以便您識別要更換的磁碟機。</block>
+  <block id="a65c24130000d6908502c1c320c2302c" category="admonition">如果您要更換機櫃中有擋板的磁碟機、則必須卸下擋板、才能看到磁碟機LED。</block>
+  <block id="de244cb3260b6d306f2126a809489ad3" category="list-text">打開CAM握把、然後稍微滑出磁碟機。</block>
+  <block id="6b9687e539f8d330465058ef0330d409" category="list-text">用兩隻手將磁碟機從磁碟櫃中取出。</block>
+  <block id="cbf47c22fa96f8c5c190268aeb6f9c57" category="list-text">打開CAM握把。</block>
+  <block id="c7ec4fa044b7a528474174b9aba081a9" category="list-text">用兩隻手將更換的磁碟機插入開啟的磁碟機槽、然後穩固推入、直到磁碟機停止為止。</block>
+  <block id="5e5b1955fa752b78b42e37e306215a7a" category="list-text">緩慢合上CAM握把、直到磁碟機完全固定在中間背板上、且握把卡入定位為止。</block>
+  <block id="30fa332941d00ffdbd124cd0198762f9" category="paragraph">正確插入磁碟機時、磁碟機上的綠色LED會亮起。</block>
+  <block id="ff2bc06fec8afad4f4fef6613d515032" category="paragraph">完成更換磁碟機、確認新磁碟機運作正常。</block>
+  <block id="77f64ccfe76fc0c283c1c32cbb1dba46" category="summary">更換 E4000 磁碟機之前、請先檢閱需求與考量事項。</block>
+  <block id="e37b15205fc2e6ae505da5b8997ce297" category="doc">更換 SG5800 磁碟機總覽</block>
+  <block id="f37c7247853d3a76aa2e4dd318881ec1" category="paragraph">在 SG5812 或 SG5860 中更換磁碟機之前、請先檢閱需求與考量事項。</block>
+  <block id="95d290c7c8680af128bf09d62a8aa6c0" category="section-title">磁碟機處理</block>
+  <block id="33c70c725840ad2a8816376c92fffa8b" category="paragraph">產品中的磁碟機易碎。不當的磁碟機處理是導致磁碟機故障的主要原因。</block>
+  <block id="8bf743d2b01e922c2beea9b6f528211c" category="paragraph">請遵循下列規則、以免損壞儲存陣列中的磁碟機：</block>
+  <block id="b5304f8e1c2fe7dd643a8a5ff191537b" category="list-text">防止靜電釋放（ESD）：</block>
+  <block id="44f9cec2f1a55d1d6436b9afd85faa6e" category="list-text">請將磁碟機放在防靜電袋中、直到準備好安裝為止。</block>
+  <block id="0c03fb247c8bb85a717d43d5091a6825" category="list-text">請勿將金屬工具或刀插入電子設備保護袋。</block>
+  <block id="919ccf3cf67b246a2f479f9d66472da1" category="paragraph">用手打開電子安全袋、或用一把剪器剪下頂端。</block>
+  <block id="984b3fa0055eb75e049d872d60b79a0c" category="list-text">請保留防靜電保護袋及任何包裝材料、以防日後必須歸還磁碟機。</block>
+  <block id="e1db19bb765dce7a521ec095764a2419" category="list-text">請務必戴上接地於儲存機箱機箱上未上漆表面的防靜電腕帶。</block>
+  <block id="dcbce33fe7746e9768cb613eda6c473e" category="paragraph">如果無法使用腕帶、請在拿著磁碟機之前、先觸摸儲存機箱機箱上未上漆的表面。</block>
+  <block id="f57fc031dec71e9dab6702c958c01624" category="list-text">小心處理磁碟機：</block>
+  <block id="27e99a51f43da728bc44782f6c53d5b5" category="list-text">在移除、安裝或攜帶磁碟機時、請務必使用兩隻手。</block>
+  <block id="c961a182f4601e9e9be0dac37340e87d" category="list-text">切勿將磁碟機強制放入磁碟櫃、並以溫和、穩固的壓力將磁碟機栓鎖完全卡入。</block>
+  <block id="e41e0fe768ce5edef67c877fd930bf5e" category="list-text">將磁碟機放在軟墊表面上、切勿將磁碟機堆疊在彼此上面。</block>
+  <block id="04e5024fbef1beb5ec49c84374ad36d8" category="list-text">請勿將磁碟機碰到其他表面。</block>
+  <block id="c23b6f5f113d908a8df8486dcac4e19d" category="list-text">從磁碟櫃中取出磁碟機之前、請先解開握把、然後等待30秒、讓磁碟機減少磁碟機轉速。</block>
+  <block id="0da38a4c1bf9c24fec42f8ce1309c4e1" category="list-text">在運送磁碟機時、請務必使用核准的包裝。</block>
+  <block id="b35ee31644277b926d6f67755bed8262" category="list-text">避免使用磁性欄位：</block>
+  <block id="4f6fd854157171bc29496e1302686c0d" category="list-text">請將磁碟機遠離磁性裝置。</block>
+  <block id="f66258d021b41e6fa19a1649533ef172" category="paragraph">磁區可能會破壞磁碟機上的所有資料、並對磁碟機電路造成無法修復的損害。</block>
+  <block id="c43f428e44c60919263219fc69f78b27" category="doc">使用 SANtricity System Manager 升級 SG5800 磁碟機韌體</block>
+  <block id="f92e54d30593fb7cc6d4478240b8477c" category="paragraph">升級應用裝置磁碟機上的韌體、確保您擁有所有最新功能和錯誤修正。</block>
+  <block id="cc65b159b524b20be43aac2014954759" category="paragraph">&lt;stdin&gt; 中未解決的指令 - 包括： ..//_INCLUDE / 升級磁碟機韌體 - 使用 -SANtricity - system-manager.adoc []</block>
+  <block id="03dcfd6af80c1707e647b3cee9c7ee65" category="list-text">驗證要更換的磁碟機的左側 LED 是否閃爍琥珀色。如果 Grid Manager 或 BMC 使用者介面中回報磁碟機問題、 HDD02 或 HDD2 會參考上插槽中的磁碟機、而 HDD03 或 HDD3 則會參考下插槽中的磁碟機。</block>
+  <block id="445e825246156afbf483be98791c154f" category="inline-link-macro">SG5800</block>
+  <block id="9cef5aeb63436914780167a988745b83" category="list-text"><block ref="9cef5aeb63436914780167a988745b83" category="inline-link-macro-rx"></block></block>
+  <block id="4a0e08b64a0e99d9fc5718e02a3dbd6e" category="list-text"><block ref="4a0e08b64a0e99d9fc5718e02a3dbd6e" category="inline-link-macro-rx"></block></block>
+  <block id="21a58e1a4af032d001a27795db0d1991" category="list-text">SG6160 ：</block>
+  <block id="4826002acc5c2cf0bc57ac17b7533776" category="inline-link-macro">SG6100-CN 控制器</block>
+  <block id="d94471324a10ec4feaf9b5aba8950585" category="list-text"><block ref="d94471324a10ec4feaf9b5aba8950585" category="inline-link-macro-rx"></block></block>
+  <block id="f71cc57d77d2d28a9aca8f82d8285cec" category="inline-link-macro">60 個磁碟機櫃</block>
+  <block id="0f28c7a7bebdc4296b957c50f5109e27" category="list-text"><block ref="0f28c7a7bebdc4296b957c50f5109e27" category="inline-link-macro-rx"></block></block>
+  <block id="35a1de9a120ee7b7ee17d87136161686" category="list-text"><block ref="0c770b188189664197ca2af9c5ce06a6" category="inline-link-macro-rx"></block> （ SG6160 、 SG5700 、 SG5800 和 SG6000 ）</block>
+  <block id="a90ef8c0f438b2f18dae8cadf3f093ea" category="inline-link-macro">變更 RAID 模式（ SG6160 、 SG6000 、 SG5860 和 SG5760 ）</block>
+  <block id="7cec8a0453cf8f9f184906051a721920" category="list-text"><block ref="7cec8a0453cf8f9f184906051a721920" category="inline-link-macro-rx"></block></block>
+  <block id="493b4e01f5d0ba6fa14d635216670fad" category="paragraph">* 注意： * 此連接埠僅以 1000 BaseT/Full 運作、不支援 10 或 100 Mb 速度。</block>
+  <block id="9f8cbfcd9b08b755e492d9775cf65135" category="paragraph">您可以將兩個控制器彼此連接、連接每個控制器上的管理連接埠、並將 SG5800 控制器上的 10/25-GbE 連接埠連接到 Grid Network 和 StorageGRID 的選用用戶端網路。</block>
+  <block id="d3ae0923263593a3dae4281c804c96bb" category="list-text">控制器上 iSCSI 互連連接埠的兩條纜線。</block>
+  <block id="1f84a70037aeca9efe66f9ee5c63354c" category="list-text">一至四條光纖或銅線、用於您計畫使用的 10/25-GbE 連接埠。</block>
+  <block id="014f403d4da6994f9dbcbdc7782d0a07" category="list-text">一至八個 SFP+ 收發器、如果您打算使用光纖纜線和 10-GbE 連結速度。</block>
+  <block id="09cf71682e6bba9ea0a1f4efaf27fa29" category="list-text">一至八個 SFP28 收發器、如果您打算使用光纖纜線和 25-GbE 連結速度。</block>
+  <block id="7ec347e25da3f7c4132a1242a70b44f4" category="paragraph">圖中顯示 SG5860 中的兩個控制器、其中 E4000 系列儲存控制器位於頂端、而 SG5800 控制器位於底部。在 SG5812 中、從背面觀看時、 E4000 系列儲存控制器位於 SG5800 控制器的左側。</block>
+  <block id="3953c6985f5e8c363a9e5f948436d3eb" category="paragraph">SG5860 連線：</block>
+  <block id="216441afe855aeed41d02c263a94997e" category="image-alt">SG5860 應用裝置上的連接</block>
+  <block id="b9a35b22ea7db2db510dbf3545b4ec2e" category="paragraph">25GbE iSCSI （ SFP28 ）</block>
+  <block id="0489640320bacaf5a7e0c569d6eec0a1" category="paragraph">E4000 系列控制器上的管理連接埠 1</block>
+  <block id="30fbb254af1e11ecc60570defa22013d" category="paragraph">SG5800 控制器上的管理連接埠 1</block>
+  <block id="29a48a4bbabbf4bee5d3ca938192f401" category="paragraph">將 SG5800 控制器連接至 StorageGRID 的管理網路。</block>
+  <block id="92172e228f5b3a578f197ebe5aa6738a" category="paragraph">SG5800 控制器上的 10/25-GbE 連接埠 1-4</block>
+  <block id="3cc50e8cafc48aa053771144f281699c" category="inline-link-macro">連接埠連結模式（ SG5800 控制器）</block>
+  <block id="38d4fcf4658c11f785b18065dfd5fcf7" category="paragraph">連線到Grid Network和Client Network for StorageGRID the請參閱 <block ref="b37aca179ce5c7c105c2b7a7315da3f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="ab847ee66ad1147ba10bd7d7a39a01e7" category="list-text">使用提供的兩條纜線、將 E4000 控制器連接至 SG5800 控制器。</block>
+  <block id="04036d868019660e1a9141cddf4cabe6" category="paragraph">E4000 控制器上的互連連接埠 1</block>
+  <block id="ec273f2c4b0f449cd62a938927cc9588" category="paragraph">SG5800 控制器上的互連連接埠 1</block>
+  <block id="c68f476ecae4eb3f89903cd365dc88d7" category="paragraph">E4000 控制器上的互連連接埠 2</block>
+  <block id="ef9751a02cf333b0d447ca70d14a5db6" category="paragraph">SG5800 控制器上的互連連接埠 2</block>
+  <block id="0867cdb713b2b71973fb8640731f9347" category="list-text">或者、使用乙太網路纜線、將 E4000 控制器（左側的 RJ-45 連接埠）上的管理連接埠 1 （ P1 ）連接到 SANtricity 系統管理員的管理網路。</block>
+  <block id="9fc71c5c05450746770f53d6c20f5f9d" category="list-text">如果您打算使用 StorageGRID 管理網路、請使用乙太網路纜線、將 SG5800 控制器上的管理連接埠 1 （左側的 RJ-45 連接埠）連接到管理網路。</block>
+  <block id="203fa8a1eba3b235e99908244e9c7002" category="list-text">使用銅線或光纖纜線、 SFP+ 或 SFP28 收發器、將 SG5800 控制器上的 10/25-GbE 連接埠連接至適當的網路交換器。</block>
+  <block id="1c555c75cdf94deab633063dc9036cb8" category="list-text">僅限 SG6160 ：本產品隨附 100GbE 至 4x25GbE 中斷纜線、可將兩個儲存控制器連接至 SG6100-CN 控制器。</block>
+  <block id="fd17af9d28534f6ca8f964fe18401f64" category="list-text">您有 RJ-45 乙太網路纜線：</block>
+  <block id="77c6860ed2c92033b479f43908e01808" category="list-text">一條 RJ-45 纜線、用於連接管理連接埠。</block>
+  <block id="5613d81a9b155da620ad8cdf3ae19fe2" category="list-text">僅限 SG6160 ：最多四條額外的 RJ-45 乙太網路纜線、用於您打算使用的選用連接埠、包括 SG6100-CN 上的第二個管理連接埠和 BMC 連接埠、以及兩個 E4000 控制器上的每個維護連接埠。</block>
+  <block id="4671734c5b43ba4f62a2a49f4171dd93" category="list-text">如果您打算使用光纖纜線連接埠、則需要一至八個 SFP+ 或 SFP28 收發器。</block>
+  <block id="acc53c761be11c0f493572024850cda9" category="paragraph">下圖顯示 SGF6112 背面的連接埠、以及 SG6160 應用裝置中的三個控制器。SG6160 應用裝置的頂端包含 SG6100-CN 運算控制器、底部則有兩個 E4000 儲存控制器。</block>
+  <block id="aa5a37d619030be2069c78fbbe5dc91c" category="paragraph">SGF6112 連線：</block>
+  <block id="26e50274c9af299db6da8475855e4ef1" category="paragraph">SG6160 連線：</block>
+  <block id="1b76c6aaf0642075d64799b6c8740797" category="image-alt">SG6100-CN 至 E4000 連線</block>
+  <block id="6ab773af627cd2e4069eeefd54581da0" category="inline-link-macro">連接埠連結模式（ SG6100 ）</block>
+  <block id="f69170eb1a433f6cac9957fb924efe7c" category="paragraph">連線到Grid Network和Client Network for StorageGRID the請參閱 <block ref="487a927382a39f582e4489b1d4d5d06f" category="inline-link-macro-rx"></block></block>
+  <block id="f925ca4691ecb966cdd67a2478c00175" category="paragraph">* 注意： * 此連接埠僅以 1/10-GbE （ RJ-45 ）運作、不支援 100 Mb 速度。</block>
+  <block id="0bcb432f3e62f50edee02960a09909e0" category="paragraph">4 （僅限 SG6160 ）</block>
+  <block id="9a6ddd1ee571b9fcb9b605ec128f5d27" category="paragraph">總共五個連線連接埠</block>
+  <block id="7bd38b606b8bc9e11ca6663353a066a3" category="list-text">SG6100-CN 上有一個 100GbE 連接埠</block>
+  <block id="f3a0ab2289e5d894b80255c441fc9f46" category="list-text">每個儲存控制器上有兩個 10/25GbE 連接埠</block>
+  <block id="2e869104086dd4cd2c4b722cc80e77b6" category="paragraph">將每個儲存控制器連接至 SG6100-CN 控制器。</block>
+  <block id="776053d9d5cca53346c2eb33c73396bf" category="paragraph">5 （僅限 SG6160 ）</block>
+  <block id="d14bfbc5b95f245a7cd1ac38c7f3ce2d" category="list-text">使用一條 100-GbE GSFP28 至 4x25-GbE SFP28 纜線、將每個儲存控制器上的兩個互連連接埠連接到 SG6100-CN 控制器上的 100GbE 連接埠。</block>
+  <block id="fcb7aea9a14248650fc2b4195b723923" category="cell">連結速度（GbE）</block>
+  <block id="20d4ad7302d59cc00a8fda9a9f549883" category="list-text">只有在選擇自動協商作為連結速度時、網格和用戶端網路連接埠才能以不同的速度執行、而固定則被選取為連接埠連結模式。否則、所有四個連接埠都會以相同的速度執行。</block>
+  <block id="76caeddfbf7a30108ac0c230c0790b19" category="paragraph">對於 SG6160 、 SG6000 、 SG5800 和 SG5700 、您可以設定 SANtricity 系統管理員。SANtricity 軟體用於監控這些應用裝置的硬體。</block>
+  <block id="e1625de3f6c73370d4238f76e2d7c923" category="list-text">設定 SANtricity 系統管理員（ SG5700 、 SG5800 、 SG6000 和 SG6100 ）您將用於監控硬體的軟體</block>
+  <block id="5c805d9f17dbca3e765899fe3c79ad03" category="list-text">存取 SG6000-CN 或 SG6100-CN 控制器的 BMC 介面</block>
+  <block id="d50073bc1f70506eed0240c89301c447" category="summary">StorageGRID SG6100 系列應用裝置在 StorageGRID 系統中作為儲存節點運作。  就像所有 StorageGRID 應用裝置一樣、它們可以在單一部署中自由地與其他應用裝置機型和純軟體節點混用。</block>
+  <block id="238b2f6f0befef83f791adc9c97aab03" category="paragraph">StorageGRID SG6160 應用裝置包含一組 NVMe SSD 作為讀取快取的運算控制器、以及包含兩個儲存控制器和 60 個 NL-SAS 硬碟的儲存控制器機櫃。最多可新增兩個選購的擴充機櫃、擴充至最多 180 個 NL-SAS 硬碟。StorageGRID SGF6112 應用裝置是一款全快閃應用裝置、採用 12 個 NVMe SSD 的小型 1U 尺寸規格。</block>
+  <block id="77783d17070c097b0b2bdefcf60a58a8" category="paragraph">SGF6112 和 SG6160 應用裝置提供下列功能：</block>
+  <block id="ce1f6a8cf019ec8c60cffb67c07e819e" category="paragraph">SGF6112 提供下列資料保護功能：</block>
+  <block id="405f70d505fa7fe0e67dd11273997e90" category="admonition">視您設定的 ILM 原則而定、對本機不可用物件的要求可由其他節點提供服務、因此可用度通常不會降低。</block>
+  <block id="295ebe6dd7287581ea22479320784acd" category="list-text">如果多個 SSD 故障導致本機資料遺失、則可從其他節點上的複本或刪除編碼區塊自動還原物件資料。</block>
+  <block id="b73d2693feb4cdcbd83da55e9b4d606a" category="paragraph">SG6160 提供下列資料保護功能：</block>
+  <block id="b375a526626a22659931eae826ee39c1" category="list-text">在任何兩個硬碟機（ HDD ）故障後都能正常運作、不會影響物件可用度。</block>
+  <block id="ea9faf809538efa56a3c6fe828627fca" category="list-text">在故障和更換事件期間（在安裝期間為 DDP 或 DDP16 設定）、快速清空和重建 HDD 、以改善資料與標準 RAID6 的耐用度。</block>
+  <block id="82dc704f56d62ae53663879dba3265d5" category="list-text">在服務期間、可完全從任何兩個 HDD 故障恢復。</block>
+  <block id="0bb581307f52d4a5e7f1fb51168208e6" category="list-text">如果多個 HDD 故障導致本機資料遺失、則可從其他節點上的複本或刪除編碼區塊自動還原物件資料。</block>
+  <block id="b7645452c29f67e64ee084de593370ee" category="section-title">SG6100 硬體元件</block>
+  <block id="795b7865a5be354d83c77df73e078577" category="section-title">SGF6112 應用裝置</block>
+  <block id="097164d4c80dcfdcb5ff321d7c171470" category="list-text">兩個 2.1/2.6 GHz 165 W 處理器、提供 48 核心（ 96 執行緒）</block>
+  <block id="bb7ca1e9d117884d805b61c952a30a30" category="list-text">4 個 10/25 GbE 乙太網路連接埠、用於網格 / 用戶端網路流量</block>
+  <block id="9e44cf0708c138328568afc4389c7903" category="section-title">SG6160 應用裝置</block>
+  <block id="2ae2bdda650bfae816cc7afd8823d0ca" category="paragraph">SG6160 應用裝置包含下列元件：</block>
+  <block id="9d7a48fa143553ccd61e265081856e31" category="list-text">SG6100-CN 控制器是單機架單元（ 1U ）伺服器、其中包括：</block>
+  <block id="e05805b4471168a98d3482e5bb9cf2c7" category="list-text">48 核心（ 96 執行緒）</block>
+  <block id="268adb6821b5406047da854e16d015f6" category="list-text">最高 4 × 25 GbE 聚合式乙太網路頻寬（或 4 x 100 GbE 搭配選購的 100 g NIC SKU ）</block>
+  <block id="27c19538d63eeda47aec57858249b326" category="list-text">1 x 100 GbE 互連</block>
+  <block id="ae55a09689fe55a19a01a912f194451e" category="list-text">E 系列 E4000 控制器機櫃（儲存陣列）是 4U 機櫃、包括：</block>
+  <block id="7c3c7f28fda9fe058596b7601e3dd90f" category="list-text">兩個 E4000 系列控制器（雙工組態）、可提供儲存控制器容錯移轉支援</block>
+  <block id="b43941c866e9d5500711f1c5922e6f7c" category="list-text">五個抽屜的磁碟機櫃、可容納 60 個 3.5 吋 NL-SAS 磁碟機</block>
+  <block id="9be6ecb8d890fa319d32ec48b098355f" category="list-text">每個 SG6160 應用裝置都可以有一個或兩個擴充櫃、總共可容納 180 個磁碟機。</block>
+  <block id="e45f3b5e3410dcc81998d1251e3e5ca1" category="admonition">擴充機櫃可在初始部署期間安裝、或稍後再新增。</block>
+  <block id="759ff9942f1ed763ffc406931b78e7c0" category="section-title">SGF6112 和 SG6160 圖表</block>
+  <block id="66f3c9abfccb1aa7624a6d4e5d12244f" category="section-title">SG6160 正面視圖</block>
+  <block id="296bc4a82446a5f8710e7b4dee99ad4b" category="paragraph">此圖顯示 SG6160 的正面、其中包括 1U 運算控制器和 4U 機櫃、其中包含兩個儲存控制器和 60 個磁碟機、位於五個磁碟機抽屜中。</block>
+  <block id="efe8c44a3d0d66940f9562ab071be0ca" category="image-alt">SG6160 正面檢視</block>
+  <block id="8d7a92ab1ad25129ece02e73dfedcc37" category="paragraph">SG6100-CN 運算控制器、前擋板已移除</block>
+  <block id="1f6b85984fcf1cc84529509c89eabf59" category="paragraph">E4000 控制器機櫃、已卸下前擋板（選購的擴充機櫃看起來相同）</block>
+  <block id="38d1d25549b0864ca6ae13dd8d5627ae" category="section-title">SG6160 後視圖</block>
+  <block id="cad5562ff57160bbe7f660131338b953" category="paragraph">此圖顯示 SG6160 的背面、包括運算與儲存控制器、風扇和電源供應器。</block>
+  <block id="982324e85f0ccc8ccba525af7236e121" category="image-alt">SG6160 後視圖</block>
+  <block id="023a03630e96cd25b69d134411531e8c" category="paragraph">SG6100-CN 運算控制器的電源供應器（第 1 / 2 ）</block>
+  <block id="471615f4f3a518f7bbbe1d1ef8f319de" category="paragraph">SG6100-CN 運算控制器的連接器</block>
+  <block id="cc53c11094cddf3f51bd4537e9e7158b" category="paragraph">E4000 控制器機櫃的風扇（第 1 / 2 ）</block>
+  <block id="e5a8c894ca52500bc6bcb77e429cb813" category="paragraph">E 系列 E400 儲存控制器（圖 1 ）和連接器</block>
+  <block id="8e6dd71ab1d82f641fffaf74f1a6f6b8" category="paragraph">E4000 控制器機櫃的電源供應器（第 1 / 2 ）</block>
+  <block id="7f515b7b271e2f2650ab9205041ae23a" category="section-title">SG6100 控制器</block>
+  <block id="e095a9ee88152254e105acb911c6ddc3" category="section-title">SG6100-CN 運算控制器</block>
+  <block id="9e6efa9cf5cab14b623ece7b4484e851" category="image-alt">SG6100-CN 後置連接器</block>
+  <block id="fc001ab6e2d7a82822431bab29184e34" category="paragraph">10-GbE 、 25-GbE 或 100-GbE 、取決於纜線或 SFP 收發器類型、交換器速度和設定的連結速度</block>
+  <block id="adf89afa6fb2cb5790764d361c1197ad" category="paragraph">連線至 SG6100-CN 主機板管理控制器。</block>
+  <block id="eecadf3f4a72170ab05bbffe174574b6" category="paragraph">將 SG6100-CN 連接至 StorageGRID 的管理網路。</block>
+  <block id="c32f651c9723102d4736cde6f2380926" category="paragraph">互連連接埠</block>
+  <block id="fdaf70487a05ab036a90fbd403202a6c" category="paragraph">100-GbE</block>
+  <block id="20af386f6d396b77888c2fa0e5c5b4a3" category="paragraph">將 SG6100-CN 控制器連接至 E4000 控制器。</block>
+  <block id="442e5ba385f857426159de970ca78647" category="section-title">SG6160 ： E4000 儲存控制器</block>
+  <block id="c18c4965ecc524fa12e5fa919c790b45" category="list-text">連接 SG6100-CN 控制器、即可存取儲存設備。</block>
+  <block id="f57923eebbc8c0b8fd28d05f36e78318" category="image-alt">E4000 控制器上的連接器</block>
+  <block id="c86d68b085e0bb1c4d673f75f867a386" category="list-text">保留無線以儲存交換器連接埠和IP位址。  使用 Grid Manager 或 Storage Grid Appliance 安裝程式存取 SANtricity 系統管理員。</block>
+  <block id="1d6216974a161f5c630b267caa9c0f40" category="paragraph">* 附註 * ：當您選擇不使用連接埠 1 時、某些選用的 SANtricity 功能（例如 NTP 同步以取得準確的記錄時間戳記）將無法使用。</block>
+  <block id="17fb3cda61aca7a2ec2004f10c7e54bf" category="paragraph">25GbE iSCSI</block>
+  <block id="ce208c9a8422eed3365fa4532a95be9d" category="paragraph">將每個 E4000 控制器連接到 SG6100-CN 控制器。</block>
+  <block id="035d2e1b2037594153fd16f91d7f0b57" category="paragraph">SG6100-CN 控制器有四個連線（每個 E4000 有兩個連線）。</block>
+  <block id="effea41f4ea7c11f861c238fb5539830" category="section-title">SG6160 ：適用於選購擴充機櫃的 IOM</block>
+  <block id="293da95c049def797cf65413f2c4cb43" category="summary">您可以在機櫃或機架中安裝一組 E4000 控制器機櫃的滑軌、然後將控制器機櫃滑到滑軌上。如果您要安裝60個磁碟機擴充磁碟櫃、同樣的程序也適用。</block>
+  <block id="656693f237b80f1c87c4450103100705" category="doc">安裝 60 個磁碟機櫃（ SG6160 ）</block>
+  <block id="dfdc73d42700a9c3fdaeacd939a51a4f" category="inline-link">安全注意事項</block>
+  <block id="d16cf603cb32eac428390b20c7d08f11" category="list-text">您已檢閱<block ref="8c47f64a0b2720e9b32669186a53a9df" category="inline-link-rx"></block> 請記錄隨附於包裝盒中、並瞭解移動和安裝硬體的預防措施。</block>
+  <block id="252051602fda0c5a7c531d0469f5c08f" category="admonition">安裝 E4000 控制器機櫃或選購的擴充機櫃時、請從底部安裝硬體至機架或機櫃頂端、以免設備翻倒。為確保最繁重的設備位於機櫃或機架的底部、請將 SG6100-cn 控制器安裝在 E4000 控制器機櫃和擴充機櫃上方。</block>
+  <block id="bd546817aa098e47dd982a50f11071ba" category="admonition">在進行安裝之前、請確認隨附的纜線或您提供的纜線、長度足以符合規劃的配置。</block>
+  <block id="4f8502f4165232d67985ab24dfb9175b" category="list-text">在五個磁碟機抽屜中的每個分別安裝 12 個 NL-SAS 磁碟機。</block>
+  <block id="fb36ad92cf9da03f26fd0ccf7e044c45" category="list-text">將 12 個 NL-SAS 磁碟機安裝至頂部抽屜。</block>
+  <block id="ebbc13c38fa61e832f3a8d88b72a8d02" category="list-text">重複這些步驟、將 NL-SAS 磁碟機安裝到其他四個抽屜中。</block>
+  <block id="ed7ea0626b8b7c71ae26c491849fbaa2" category="list-text">將前擋板連接至機架（如果有）。</block>
+  <block id="df1b95911c4f6882e45d24f2259a56e6" category="list-text">如果您有擴充機櫃、請重複這些步驟、將 12 個 NL-SAS 磁碟機安裝到每個擴充機櫃的每個抽屜中。</block>
+  <block id="b218bef4cfb11040fa05a34d90fae202" category="list-text">請繼續執行將 SG6100-CN 安裝至機櫃或機架的指示。</block>
+  <block id="f80088ee28f7604e9f8592d90fa6728a" category="inline-link-macro">變更 SG5800 控制器的連結組態</block>
+  <block id="06670f0887e1e6231759b0c18c236453" category="list-text"><block ref="06670f0887e1e6231759b0c18c236453" category="inline-link-macro-rx"></block></block>
+  <block id="55c62a33f4c4845aa583cada0c7c5cc2" category="doc">硬體安裝疑難排解（ SG5800 或 SG6100 ）</block>
+  <block id="67829ca668814889b20e11dd7ae1278b" category="section-title">檢視開機代碼（僅限 SGF6112 和 SG6160 ）</block>
+  <block id="223443ade3977f88b0b9803a5b6b9269" category="list-text">USB 傳輸線</block>
+  <block id="545471d8f02ab7e136641a52e51a2a01" category="admonition">在某些情況下、預設使用者名稱可能是「 root 」、而非「 admin 」。</block>
+  <block id="c93ea9c6b3ac300738245274f885b4b1" category="paragraph">僅限 SG6160 ：</block>
+  <block id="43e28363ded43d73ad8ac28a6111392d" category="paragraph">* 附註 * ：如果開機程序未在此階段進行、請執行下列步驟：</block>
+  <block id="fca532d96db500a0a69be39e5b335bdb" category="list-text">確認 SG6100-CN 控制器與兩個儲存控制器之間的四條互連纜線已穩固連接。</block>
+  <block id="9b7f2dc0ae072f34841a60d1d7640cc8" category="section-title">檢視錯誤代碼（僅限 SGF6112 和 SG6160 ）</block>
+  <block id="d42295299a1cbc4cb6230b793ee6e5da" category="list-text">查看設備上的 LED 和 / 或 BMC （如果配備）中顯示的開機和錯誤代碼。</block>
+  <block id="9ae5b4acced88571bf83d9099f626ab3" category="section-title">應用裝置安裝程式中未出現擴充架（ SG6160 ）</block>
+  <block id="cbcf875f9db88c03ec6dd7149506babb" category="paragraph">如果您已安裝擴充機櫃、但這些擴充機櫃並未出現在 StorageGRID 應用裝置安裝程式中、則應確認機櫃已完全安裝並開啟電源。</block>
+  <block id="f3bec55163fd3b991b78112042bd864f" category="list-text">「*進階*&gt;* RAID模式*」頁面會依磁碟機數量指出設備是否包含擴充櫃。</block>
+  <block id="d3fcf07a3efa59323e2d79760253f511" category="inline-link-macro">連接電源線並接上電源（ SG6100 ）</block>
+  <block id="8479c93226845d045b39cd9d43ac680e" category="list-text">確認您已開啟擴充櫃的電源。請參閱 <block ref="6efa983458a470e20e2942d0fabf5e2d" category="inline-link-macro-rx"></block>。</block>
+  <block id="11b108f29e0e476009dfaf52d2e18fe5" category="section-title">無法連線至應用裝置</block>
+  <block id="e2c3df4a8828d9ceab27ebdc959d64a9" category="paragraph">如果您無法連線至儲存設備、可能是網路問題、或是硬體安裝可能未成功完成。</block>
+  <block id="e46b57f74e432efb4d079374debd3d51" category="list-text">嘗試使用應用裝置的IP位址ping應用裝置：+</block>
+  <block id="36a3eb1b25865e67ed6c2f9e6620ca44" category="paragraph"><block ref="52932b152f3dbbeb8257256f839af6f7" prefix="" category="inline-code"></block></block>
+  <block id="85eb70754c5f0ad5fbf951f0ca8dcad8" category="list-text">輸入 StorageGRID 應用裝置安裝程式或 SANtricity 系統管理員的 URL ： +<block ref="22fd6dcb3021548b3a8b2d73f3bae788" prefix=" " category="inline-code"></block></block>
+  <block id="91a1d991bcc126986f469bdc62d3f859" category="summary">您可以在機櫃或機架中安裝一組 SG6100-CN 控制器的滑軌、然後將控制器滑到滑軌上。</block>
+  <block id="c06040516b8899d3e494b167383d4957" category="doc">安裝 SG6100-CN 控制器（ SG6160 ）</block>
+  <block id="cc0aa0539933e760d1019ce19010829c" category="list-text">您已安裝 E4000 控制器機櫃和磁碟機。</block>
+  <block id="1bd4f5fa98906fabc5f89af0491df776" category="image-alt">SG6100 導軌</block>
+  <block id="eaa4ce6fd33bdcd3eadf45f497d40e4f" category="list-text">將 SG6100-CN 控制器插入軌道。</block>
+  <block id="32ffda78ae2a587b5d8e5c836a950931" category="image-alt">SG6100 滑軌</block>
+  <block id="820701e6693a357bbb41eaa4bab830d0" category="image-alt">SG6160 機架固定螺絲</block>
+  <block id="beec78facd678008d6aba848431e2f9b" category="doc">選用：變更 RAID 模式（ SG5760 、 SG5860 、 SG6000 和 SG6160 ）</block>
+  <block id="9c4a3ebc6e3cc35cf21692e17aaa9763" category="list-text">* 動態磁碟集區（ DDP ） * ：此模式每八個資料磁碟機使用兩個同位元磁碟機。這是所有應用裝置的預設和建議模式。相較於 RAID 6 、 DDP 可提供更好的系統效能、減少磁碟機故障後的重建時間、並簡化管理。DDP 也提供 SG5760 、 SG5860 和 SG6160 應用裝置的抽屜遺失保護。</block>
+  <block id="89d7713591083db229780baef1fd7a93" category="open-title">SG5860</block>
+  <block id="8097e6b5736f5902818ddcd581b46b25" category="list-text">您有一個 SG5860 、內含 60 個磁碟機。如果您有 SG5812 、則必須使用預設 DDP 模式。</block>
+  <block id="644a9662bfc608c4e24ec9f9d1c53dc6" category="list-text">使用服務型筆記型電腦開啟網頁瀏覽器、然後存取StorageGRID 《The》《The Service laptop》（《The Service laptop》）：+<block ref="543c5eba2770d8d7b78d53a6e96eec12" prefix=" " category="inline-code"></block></block>
+  <block id="b6f63a4f7cfcc0978a1a1f4f8b7aeb11" category="paragraph">其中<block ref="726733a116f2259ce88ee1798fe39abe" prefix=" " category="inline-code"></block> 為 SG5800 控制器的任何 IP 位址。</block>
+  <block id="3d653a616afd117e668b1ec6d4cda21b" category="open-title">SG6160</block>
+  <block id="775f6b0048fbceb18d7f41b02acdea77" category="doc">收集網路資訊（ SG5800 ）</block>
+  <block id="68e50a800ead536bd86a3fc0a67ac2f5" category="section-title">連線至 E4000 控制器上的 SANtricity 系統管理員所需的資訊</block>
+  <block id="2f6da5d536d70640a4182841cd7b586c" category="paragraph">您將使用 SANtricity 系統管理員將 E4000 系列控制器連接至管理網路。</block>
+  <block id="df069ae2a88efe87686ac36643a15cd5" category="paragraph">* 注意： * 如果您要連線至 E4000 控制器的網路包含 DHCP 伺服器、網路管理員可以使用 MAC 位址來判斷 DHCP 伺服器指派的 IP 位址。</block>
+  <block id="ebae744f8e7bb1f9d272cb75aea82d1c" category="list-text">E4000 控制器路由器 IP 位址：</block>
+  <block id="21605a3d879be9339fec9bf91bdf55ee" category="section-title">將 SG5800 控制器連接到管理網路所需的資訊</block>
+  <block id="32f5700cfe92a1651cc11fd872259162" category="paragraph">管理員網路for支援功能是選用的網路、可用於系統管理和維護。StorageGRID此應用裝置使用 SG5800 控制器上的 1-GbE 管理連接埠、連接到管理網路。</block>
+  <block id="ffacda560de22b3439a6a236ac7a927f" category="paragraph">* 附註： * 如果管理網路包含 DHCP 伺服器、您可以使用 MAC 位址來查詢指派的 IP 、藉此判斷 DHCP 指派的 IP 位址。</block>
+  <block id="b8e964ceaf6d38d135d64d2685e0746e" category="section-title">在 SG5800 控制器上連接和設定 10/25-GbE 連接埠所需的資訊</block>
+  <block id="1e9a930b6252d2ea5787598f09698276" category="paragraph">SG5800 控制器上的四個 10/25-GbE 連接埠可連接至 StorageGRID 網格網路和用戶端網路。</block>
+  <block id="f7637cda02aef526506afd909f1f9b5c" category="admonition">請參閱 <block ref="b37aca179ce5c7c105c2b7a7315da3f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="e6214b6d0adccec8d64985d7c045e3dd" category="section-title">將 SG5800 控制器連接至網格網路所需的資訊</block>
+  <block id="6a32fcd70761517f830fb1da58756def" category="paragraph">Grid Network for StorageGRID 效能不只是一項必要的網路、可用於所有內部StorageGRID 的資訊流量。此應用裝置使用 SG5800 控制器上的 10/25-GbE 連接埠、連接至 Grid Network 。</block>
+  <block id="b5a92465984b1ee4b69691a7bf9a8f57" category="section-title">將 SG5800 控制器連接至用戶端網路所需的資訊</block>
+  <block id="74afd2b80a659e0d4fb1b07c05517969" category="paragraph">Client Network for StorageGRID 推銷是選用的網路、通常用於提供用戶端傳輸協定存取網格。此應用裝置使用 SG5800 控制器上的 10/25-GbE 連接埠連接至用戶端網路。</block>
+  <block id="c909fc818077c5d3842f165f06969656" category="paragraph">何時 <block ref="a60a1925451f4c518cadfb0c9a8cb902" category="inline-link-macro-rx"></block> 對於 SG5800 控制器、您可以將連接埠連結用於連接至 Grid Network 和選用用戶端網路的 10/25-GbE 連接埠。連接埠連結功能可在StorageGRID 各個解決方案之間提供備援路徑、協助您保護資料。SG5800 控制器上的 10/25-GbE 網路連接埠支援固定連接埠連結模式或網格網路和用戶端網路連線的集合連接埠連結模式。</block>
+  <block id="a3e8083d0442011586bcf6da733d19fc" category="inline-link-macro">纜線應用裝置（ SG5800 ）</block>
+  <block id="c36daddf4bddb94512e35b104e308feb" category="list-text"><block ref="c36daddf4bddb94512e35b104e308feb" category="inline-link-macro-rx"></block></block>
+  <block id="b37aca179ce5c7c105c2b7a7315da3f4" category="list-text"><block ref="b37aca179ce5c7c105c2b7a7315da3f4" category="inline-link-macro-rx"></block></block>
+  <block id="931fd544263f9ff67d7e42906ed24ceb" category="inline-link-macro">設定硬體（ SG5800 ）</block>
+  <block id="8f33dac7a1c98315502062c85cca89a8" category="list-text"><block ref="8f33dac7a1c98315502062c85cca89a8" category="inline-link-macro-rx"></block></block>
+  <block id="97db59e2ae1f0cf7bff3e47eebb96e27" category="paragraph">*SGF6112* ：</block>
+  <block id="c516590c484f2b5bcc58e90e3dc34ba5" category="paragraph">* SG6160* ：</block>
+  <block id="1ba9218b14e2a1264122d46a4bb472e5" category="list-text">將電源線分別連接到 SG6100-CN 控制器中的兩個電源供應器單元。</block>
+  <block id="cc627e65e8de7d0141c5b123e3e3434d" category="list-text">如果 SG6100-CN 控制器正面的電源按鈕目前未亮起藍色燈號、請按下按鈕以開啟控制器的電源。</block>
+  <block id="61b94087db4c359d420b3f3708d146e3" category="list-text">元件開機後、請確認 SG6100-CN 控制器正面的電源按鈕亮起。</block>
+  <block id="e6c11d6c727d6af4a15aadeb9c8d765c" category="list-text">將前擋板連接到 SG6100-CN 控制器（如果已卸下）。</block>
+  <block id="784b225f130f7d41e24cfeb95e8faec4" category="doc">設定 SANtricity 系統管理員（ SG6160 、 SG6000 、 SG5700 和 SG5800 ）</block>
+  <block id="e9b0f91353e7e92b0bdad4d600bf8aad" category="inline-xref">SG5800 控制器上的狀態指示燈</block>
+  <block id="33142c71ffb7a820e39e2d8b9b87c90d" category="list-text"><block ref="562ba6ab1f9a30f1dbd536755e8030f3" category="inline-xref-macro-rx"></block></block>
+  <block id="6e2ca3456886b60923634ed7eb9c8d7f" category="list-text"><block ref="4602dd8dedea945665f66e0efb09332c" category="inline-xref-macro-rx"></block></block>
+  <block id="f536acc32b97ad90a5740f9c6acd9249" category="inline-xref">SG5800 控制器開機代碼</block>
+  <block id="5576c47c21553b6c80a9811f4546218f" category="list-text"><block ref="f285587c275058bc7d3d747c12066f52" category="inline-xref-macro-rx"></block></block>
+  <block id="540f46aeae603c2f4426ce72f569d476" category="inline-xref">SG5800 控制器錯誤代碼</block>
+  <block id="4657bcb798d90e371448f17714c8c9f9" category="list-text"><block ref="3e9e4f9184270725588680504bdaec1d" category="inline-xref-macro-rx"></block></block>
+  <block id="ee0d7ce7f3f04a927e4972f514fd99c9" category="inline-link-macro">疑難排解 SG5800 硬體安裝</block>
+  <block id="274d64f0b9bfee260adbb6408672a4b0" category="paragraph">請使用此資訊來提供協助 <block ref="e0e94668a35b0e62f1c3c83bc6a3960d" category="inline-link-macro-rx"></block>。</block>
+  <block id="6e11a1131d9974f2fd0c9ec0f8b70da1" category="paragraph">StorageGRID 應用裝置安裝程式啟動後、您應該定期檢閱 SG5800 控制器上的狀態指示燈。</block>
+  <block id="043b3b7e7d1cab87dcb9bbe4e09747f6" category="paragraph">下圖顯示 SG5800 控制器上的狀態指示燈。</block>
+  <block id="ee19c832192b29abe3714f9cd076b86b" category="paragraph">下圖顯示 SG6100 應用裝置上的指示燈和按鈕。</block>
+  <block id="a1d1c5c3d0d9a5f37b3e9c802075363c" category="paragraph">SG6100 產品不會使用此燈號、而且燈號會持續熄滅。</block>
+  <block id="26d3431ec32e39ad87b42dd94029fd5d" category="paragraph">下圖顯示 SGF6112 或 SG6160 應用裝置上的 SSD 指示燈。</block>
+  <block id="0b393e9e1f5538879c19f759d1a006f7" category="paragraph">* 附註： * 如果新的正常運作 SSD 插入正在運作的 SGF6112 或 SG6160 StorageGRID 節點、 SSD 上的 LED 應會開始閃爍、但一旦系統判斷磁碟機有足夠容量且正常運作、就會停止閃爍。</block>
+  <block id="d6b5e7b6fdc09e73b0ddc74ecfec50de" category="paragraph">存取 BMC 介面之前、請先設定 SGF6112 、 SG6000-CN 控制器、 SG6100-CN 控制器或服務應用裝置上 BMC 管理連接埠的 IP 位址。</block>
+  <block id="def73e6ee8865496b77b82d83ac9939e" category="paragraph">_SGF6112_ ：</block>
+  <block id="4160b566e2b0257b5dfffefd2384f77c" category="paragraph">_SG6100-CN_ ：</block>
+  <block id="aed446df8aaa21249226198cd1cca9fe" category="image-alt">BMC 管理連接埠 SG610-CN</block>
+  <block id="22b9fc52143e31e22d3bb188c9abbad4" category="doc">安裝至機櫃或機架（ SG5800 ）</block>
+  <block id="6ed6f57cc01c6a864b269d737a8a5499" category="paragraph">您可以在機櫃或機架中安裝一組軌道、然後將產品滑入軌道。如果您有 SG5860 、請在安裝應用裝置後安裝磁碟機。</block>
+  <block id="2bc0ebdd73325b23c3b85ab173c98f5b" category="section-title">安裝 SG5812</block>
+  <block id="c9ba29345d52755499012f07c2c70073" category="paragraph">請依照下列步驟、將 SG5812 應用裝置安裝到機架或機櫃中。</block>
+  <block id="250dbb8bacf1e66ca834441395dc0214" category="admonition">需要兩個人或一部機動升降機才能安全移動 SG5812 。</block>
+  <block id="720c265ebf00bfe2e658f648c3ce0cc0" category="section-title">安裝 SG5860</block>
+  <block id="33553b3d9c12ffcd86b88641a3de3afe" category="paragraph">請依照下列步驟、將 SG5860 應用裝置和任何擴充機櫃安裝到機架或機櫃中。</block>
+  <block id="4893c53fd8d16716b42f463676ee4837" category="admonition">需要四個人或一部機動升降機才能安全移動一部空的 SG5860 。</block>
+  <block id="22f39ae39630fbafac75d4b10d7eaf15" category="admonition">為避免損壞硬體、請勿在安裝磁碟機時移動 SG5860 。您必須先移除所有磁碟機、才能移動磁碟櫃。</block>
+  <block id="cf2d3208c0f062fcf398bbe8dd8c6ec9" category="list-text">如果您是用手提起 SG5860 、請將四個把手連接到機箱兩側。</block>
+  <block id="27f8e6eb82dbb4af0bbb3ca5cdaba024" category="list-text">如果機櫃有方孔、請安裝鎖緊螺帽、以便用螺絲固定機櫃的前後端。</block>
+  <block id="8801924eb0c67bef14b181af061dbfeb" category="list-text">連接前擋板（如果有）。</block>
+  <block id="2a17fc371dd994f1b620287b2f54184e" category="list-text">SG5812 應用裝置、安裝 12 個磁碟機</block>
+  <block id="af0bee945cc350a315037a7e072b3e24" category="image-alt">SG5812 2U 應用裝置</block>
+  <block id="7461b600fae9c010a035e1f2b1a16c62" category="list-text">SG5860 應用裝置、未安裝磁碟機</block>
+  <block id="e8ca549a879d691d156de55573e8cc57" category="image-alt">SG5860 4U 應用裝置</block>
+  <block id="48a202d2f7a9e42fee932e2658cba512" category="image-alt">面板為 SG5812 和 SG5860</block>
+  <block id="f812e8596841ecc478f434562e5f45e5" category="admonition">您的擋板看起來可能不同。</block>
+  <block id="aed2f1a85867905c9943f505fe003d2f" category="list-text">SG5860 ： 60 個 NL-SAS 磁碟機</block>
+  <block id="4ca632b41867d149e710589408987492" category="list-text">SG5860 ：握把</block>
+  <block id="b8178c21f4d66f12a4dce575afc9d102" category="image-alt">SG5860 握把</block>
+  <block id="8abb1813d9f05d9d008426f2364c5a97" category="list-text">SG5860 ：用於方孔機架安裝的後支架和鎖緊螺帽</block>
+  <block id="68c097492f2997d601d6f77037ad3425" category="image-alt">SG5860 的後支架和鎖緊螺帽</block>
+  <block id="3c10273508d229b772947c0e63fd6ce9" category="list-text">兩條 25GbE SFP28 纜線、用於控制器互連（ iSCSI ）</block>
+  <block id="0ed7f2918e65ddf790aee154328fa312" category="image-alt">25GbE SFP28 纜線</block>
+  <block id="78008d8a40c0bcb305e0ae6f686d6266" category="list-text">* SG6160 硬體 *</block>
+  <block id="368bbf87f7d4f56a804478d9a47afcba" category="list-text">E4000 控制器機櫃、未安裝磁碟機</block>
+  <block id="eaa0bf6cbac4663dc516575bc24754a4" category="list-text">一條 100 GbE 至 4x25GbE 中斷互連纜線</block>
+  <block id="937327c47c79d87630d4b379916a803e" category="image-alt">100 GbE 至 4x25GbE 中斷纜線</block>
+  <block id="cc67239e5de46f03eb9945b90f9e3e8a" category="list-text">* SG6160 擴充機櫃 *</block>
+  <block id="89dee6fd922902492036f50ce483fab7" category="list-text">* SGF6112 硬體 *</block>
+  <block id="c9966433a5da0e19783e55204ddc19e9" category="paragraph">您需要下列額外設備來安裝和設定 SG5800 硬體。</block>
+  <block id="3d9681f79eca45854b3d47706c1ef7f7" category="list-text">纜線和 SFP 收發器</block>
+  <block id="6c662e0b48f610dfd7855afc596d251d" category="list-text">您計畫使用的 10/25-GbE 連接埠纜線</block>
+  <block id="84eadf18c7c09fd10ec3722e6b9d6083" category="list-text">選用：如果您想要使用 25-GbE 的連結速度並使用光纖纜線、則可以使用 SFP28 收發器</block>
+  <block id="2a4e279dafc2a0ddd18cbf16ee89a843" category="list-text">選用： SFP+ 收發器、如果您想要使用 10-GbE 連結速度、並使用光纖纜線</block>
+  <block id="099dd0247c001cca7c40f42bbe77fa97" category="list-text">SG5860 的機械升降機</block>
+  <block id="bde91584a39be3001f204a7895e36074" category="paragraph">您需要下列額外設備來安裝及設定 SG6100 硬體。</block>
+  <block id="5ee3c3b897dfbb6276cc2f983522d000" category="list-text">纜線和收發器</block>
+  <block id="0a85753d4fd5563f3e4ad1fcabdea5e8" category="list-text">收發器 / 介面卡、每個介面卡 1 到 8 個、根據連結速度（不支援混合速度）：</block>
+  <block id="b311407ac8f1e864f5265bfcfbc86e13" category="list-text">100-GbE QSFP28</block>
+  <block id="a2561c0e281fe3a4373beff950cd8c01" category="paragraph">120 至 240 伏特交流電</block>
+  <block id="01db6415639d41cb635a63f3dd76ce67" category="paragraph">SG5812</block>
+  <block id="ee1ebf14afa6f51d0bdc0c7b7d95e0fd" category="paragraph">120 至 240 伏特交流電</block>
+  <block id="c645bb2671c75a31858237b9ef960e1d" category="paragraph">100 至 240 伏特交流電</block>
+  <block id="53c0fd4bf33a4f5209bcd292aca9cd4a" category="paragraph">3.4 吋</block>
+  <block id="8dcceeb66c6a4bd4aa5d09b0cca30d0a" category="paragraph">（ 8.6 公分）</block>
+  <block id="d6864ab259d3d42319bb56dbe4b90b65" category="paragraph">（ 44.8 公分）</block>
+  <block id="c8aeb956a7b545e261d1590098ec1f77" category="paragraph">64.92 磅</block>
+  <block id="c8239e4a7f5c6cfed0a3b3629f32aa7b" category="paragraph">（ 29.45 公斤）</block>
+  <block id="9bf3df95987690af6b500b2bac2f170e" category="paragraph">7.0 英寸</block>
+  <block id="2b3b3379ebeb092ca4688118bf4c9f87" category="paragraph">（ 17.8 公分）</block>
+  <block id="b65a47a089606ee428156d3eb6125cbb" category="paragraph">37.8 英寸</block>
+  <block id="8ea6bc9550778741c5a9d5f68767ac29" category="paragraph">（ 92.2 公分）</block>
+  <block id="fe5bca774a93b81844cd0e54c83e041c" category="paragraph">253.0 磅</block>
+  <block id="f89380c149b1ecae3d83e7702f72ec5b" category="paragraph">（ 114.76 公斤）</block>
+  <block id="e5dc46ff5c22dc27fefb3725e66ac371" category="cell">應用裝置機型 / 機櫃類型</block>
+  <block id="7f31135d4d9cddf1ecfb54001e6c2ea9" category="paragraph">SG6100-CN 運算控制器（ SG6160 ）</block>
+  <block id="02984992855c5b134aa35ac702ba837e" category="paragraph">40.98 磅</block>
+  <block id="a3dc95bb879eac862283559d08288dce" category="paragraph">（ 18.59 公斤）</block>
+  <block id="95734204f69a062fa6c04d71a8ffd414" category="paragraph">E4060 控制器機櫃（ SG6160 ）</block>
+  <block id="f600b8266dfe5a910d0a11f7e8b7167a" category="paragraph">（ 17.45 公分）</block>
+  <block id="2b7a6785007b60402a56074ad773bb91" category="paragraph">17.64 吋</block>
+  <block id="d5773429e0490a93557481a9de1372a3" category="paragraph">36.3 英寸</block>
+  <block id="b2026d38a1fd87039953e379303df57b" category="paragraph">223.58 磅</block>
+  <block id="f24c7e91801ac8190bfdfaa6e587b71f" category="paragraph">（ 101.42 公斤）</block>
+  <block id="21fc50e08c4109d2afeb9bf9bc39a58e" category="paragraph">擴充機櫃（ SG6160 ） - 選用</block>
+  <block id="b9257330509540dd0c7c7c6732a99d2e" category="admonition">安裝 E2860 或 E4000 控制器機櫃或選購的擴充機櫃時、請從底部安裝硬體至機架或機櫃頂端、以避免設備翻倒。為確保最繁重的設備位於機櫃或機架的底部、請在 E2860 或 E4000 控制器機櫃和擴充機櫃上方安裝 SG6000-CN 或 SG6100-CN 控制器。</block>
+  <block id="f6380292b948c8718e3a9939ddc50d27" category="admonition">在進行安裝之前、請確認 SG6000 或 SG6100 設備隨附的纜線或您所提供的纜線長度足以符合規劃的配置。</block>
+  <block id="1078dd5433fa8f63e2c22f5477c4a384" category="paragraph">安裝 SGF6112 或 SG6160 應用裝置之前、請先確認您的 StorageGRID 系統使用的是所需版本的 StorageGRID 軟體。</block>
+  <block id="149627d5ae57761237a4ac676712c88b" category="section-title">連線至 SANtricity 系統管理員</block>
+  <block id="40f97322a405ae3c1ea9b902f18196b6" category="paragraph">您可以將 SG6160 應用裝置中的兩個儲存控制器、連接到您要用於 SANtricity 系統管理員的管理網路。控制器 A 位於頂端、控制器 B 位於底部。</block>
+  <block id="7c0e533b1fd3b9713f05e467af37c977" category="paragraph">SGF6112 應用裝置上的 RJ-45 連接埠：</block>
+  <block id="a5454043f0284ee78b42af8a9db6f62e" category="paragraph">SG6100-CN 控制器上的 RJ-45 連接埠：</block>
+  <block id="fdc44a0739bffcfc325ab38dc44c33d5" category="image-alt">SG6100-CN RJ-45 連接埠</block>
+  <block id="9fa2de40932666835bd15f2f166c555a" category="list-text">100 GbE （僅限 SG6160 ）</block>
+  <block id="a513a1f0b91c38b75433cebeb6cca90f" category="paragraph">下圖顯示 SGF6112 和 SG6100-CN 上的 BMC 管理連接埠。</block>
+  <block id="b1f775ba863eddb7047c41952f99b7aa" category="paragraph">_SGF6112_</block>
+  <block id="bc872cc8e345e6cbd07f75299a5e8d39" category="image-alt">SGF6112 管理連接埠</block>
+  <block id="f6b176b09ce744a1e12fe54630cebed0" category="paragraph">_SG6100-CN_</block>
+  <block id="d6aef71829fecde0353c58e3efcd39c3" category="image-alt">SG6100-cn 管理連接埠</block>
+  <block id="a8c8afa88f44069ad5d869994b2bf075" category="paragraph">_SGF6112 ： _</block>
+  <block id="2b36a68fb620df8f2c4fef22133beb16" category="paragraph">_SG6100-CN:_</block>
+  <block id="56b6d58c8da0b8e5a97016fd8926e751" category="image-alt">SG6100-CN 固定連接埠綁定模式</block>
+  <block id="65cbdebb42c5bbb7df4d335f16023b6e" category="image-alt">SGF6112 集合連接埠連結模式</block>
+  <block id="65d32234370af997dd3f80d04fae0f93" category="image-alt">SG6100-cn 集合式連接埠連結模式</block>
+  <block id="8e6ec9184496eb0ff8dd97d2c5c17584" category="image-alt">SGF6112 網路管理連接埠</block>
+  <block id="e7a05e6341e2d073ca044e302240251a" category="image-alt">SG6100-CN 網路管理連接埠</block>
+  <block id="493b5d1c5d674b5fe7274955287fb9ee" category="list-text">保留無線以儲存交換器連接埠和IP位址。使用 Grid Manager 或 Storage Grid Appliance 安裝程式存取 SANtricity 系統管理員。</block>
+  <block id="7d094c578135f9cab6f37e5663eb31d8" category="image-alt">SG5800 控制器上的管理網路連接埠</block>
+  <block id="4b0b84ea1a93e86bc313dafc8ca0c684" category="open-title">SG6100-CN</block>
+  <block id="3dccb136e7a8404b69065ce062df8108" category="paragraph">使用乙太網路纜線、將服務筆記型電腦連接到 SG5800 控制器上的管理連接埠 1 。</block>
+  <block id="dde52de040d20ee4b776b7ec134fd779" category="image-alt">SG5800 控制器上管理連接埠 1 的位置</block>
+  <block id="b60545f33939c244caf8c60c486259ff" category="paragraph">使用乙太網路纜線、將服務筆記型電腦直接連接到 SG6100-CN 控制器最右側的 RJ-45 連接埠。</block>
+  <block id="c9866d8061d428532e65517cbc724d96" category="image-alt">SG6100-CN 的管理連接埠位置</block>
+  <block id="e54ffdd2199456e30c21afaf21e9e279" category="paragraph">磁碟機加密是在寫入和讀取程序期間、在自我加密磁碟機（ SED ）硬體上進行管理。存取這些磁碟機上的資料是由使用者定義的複雜密碼所控制。</block>
+  <block id="88d8af7877b2d05ad48363392cd41c71" category="paragraph">磁碟機加密可用於任何安裝在 SG100 、 SG1000 、 SG110 、 SG1100 、 SGF6112 、 或 SG6100-cn 運算節點或控制器。</block>
+  <block id="02bfe0d0dad115ff5e8d308e677e7d5f" category="list-text">對於服務應用裝置而言、 SSD 是節點根磁碟。</block>
+  <block id="d12130c42701266b5e528a32f2bafda3" category="list-text">在 SG6100-CN 控制器中、 SSD 用於快取。</block>
+  <block id="15f8560aa882ae205566163f54b28e99" category="list-text">在 SGF6112 中、 SSD 是節點根磁碟、用於物件資料的主要儲存。</block>
+  <block id="936dc86752490c923359d7d48b6e1231" category="inline-link-macro">連接埠連結模式（ SG5800 ）</block>
+  <block id="1ba870b69c3f29a0fe103ccb499d6642" category="list-text"><block ref="1ba870b69c3f29a0fe103ccb499d6642" category="inline-link-macro-rx"></block></block>
+  <block id="a2a35e6959ef9f94951535748a56335e" category="inline-link-macro">連接埠連結模式（ SGF6112 和 SG6100-CN ）</block>
+  <block id="f16c57a3caf18a0f03e0a658323ea36a" category="list-text"><block ref="f16c57a3caf18a0f03e0a658323ea36a" category="inline-link-macro-rx"></block></block>
+  <block id="6a39f57ac2d1612428addd88ffb4531c" category="image-alt">顯示 SG5800 控制器上的 10/25-GbE 連接埠如何以固定模式連結的影像</block>
+  <block id="4036333a04d1013d0a2ff245b1743cf3" category="image-alt">顯示 SG5800 控制器上的 10/25-GbE 連接埠如何以彙總模式連結的影像</block>
+  <block id="21beafac072af3624f5cf77d3c470a43" category="paragraph">*SG6100* ：</block>
+  <block id="0fdec1cb4e0f4aebdbf64754e3c5c26a" category="image-alt">SG6100-CN Aggregate 連接埠綁定模式</block>
+  <block id="cc5f703bb883e7b54c8db00321eecaae" category="paragraph">此圖顯示兩個 1-GbE 管理連接埠如何在管理網路的「主動式備份」網路連結模式中連結。</block>
+  <block id="6cb92c0d4f550369b07be209fb280050" category="image-alt">管理網路連接埠連結 SG6100-cn</block>
+  <block id="dc5df6ed37801dd73543ef70db9fc07c" category="paragraph">如果您打算使用 25-GbE 連結速度來連接 SG6100 、 SG6000 、 SG5800 或 SG5700 網路連接埠：</block>
+  <block id="f887919b93b68994cd6d9e7819b5afeb" category="list-text">對於 SG5800 、 SG6000 或 SG6100 ，請從 *Link spee* 下拉列表中選擇 *Auto* 。</block>
+  <block id="dcba35698266a429ba97a9df72d33ecb" category="summary">SG5800 StorageGRID 應用裝置是整合式儲存與運算平台、可在 StorageGRID 網格中作為儲存節點運作。此應用裝置可用於結合應用裝置儲存節點和虛擬（軟體型）儲存節點的混合式網格環境。</block>
+  <block id="64b3db60a66ac8bd04ca4a159cac1af8" category="doc">SG5800 應用裝置：總覽</block>
+  <block id="40b657fa8f8023ed6227dc3d31464c39" category="paragraph">SG5800 StorageGRID 應用裝置是整合式儲存與運算平台、可在 StorageGRID 網格中作為儲存節點運作。</block>
+  <block id="9f075e4e966103728835fe79072cf374" category="paragraph">StorageGRID SG5800 系列應用裝置提供下列功能：</block>
+  <block id="bc0affc4503a133a51781ca78ac8bdaa" category="paragraph">SG5800 應用裝置有兩種機型： SG5812 和 SG5860 。</block>
+  <block id="1d59ebac544f15dc4241a8a4af7a618d" category="section-title">SG5800 元件</block>
+  <block id="5581a20a3b85686c910dfa4dab223387" category="paragraph">SG5800 機型包括下列元件：</block>
+  <block id="8ab3afd22a8f9b03e24e676f5fce73ef" category="list-text">SG5800 控制器</block>
+  <block id="862baee921586a28ab8ab249b3684b0c" category="list-text">E4000 控制器</block>
+  <block id="7680d1adb116b057e7870f8fa02a2874" category="section-title">SG5800 圖表</block>
+  <block id="6df5b06b5bff5875211a8874a2792963" category="section-title">SG5812 前後視圖</block>
+  <block id="725180c207127c0b8fd9df3b18034dbb" category="paragraph">圖中顯示 SG5812 的前後方、這是一款 2U 機箱、可容納 12 個磁碟機。</block>
+  <block id="c83588029cbd756d7ddd751a3fed9f18" category="image-alt">SG5812 產品的前後方</block>
+  <block id="8bb6d26f8a9d2cc651bb925a35a31d90" category="section-title">SG5812 元件</block>
+  <block id="0688ebc4f342076cd828d5cc8648c559" category="paragraph">SG5812 包含兩個控制器和兩個電源風扇迴廊。</block>
+  <block id="d8f76a34fefb2637aff55feed17d454e" category="image-alt">SG5812 設備中的控制器和電源風扇迴廊</block>
+  <block id="c4e2bb0475123995b65abadb5396854e" category="paragraph">E4000 控制器（儲存控制器）</block>
+  <block id="53711add96008dd23b709a717b95bbf5" category="paragraph">SG5800 控制器（運算控制器）</block>
+  <block id="7a832d7f26d218f60a24b520ee914eb1" category="section-title">SG5860 前後視圖</block>
+  <block id="c84892494f8d6068945eb2abf819e35f" category="paragraph">圖中所示為 SG5860 機型的前後方、 4U 機箱可在 5 個磁碟機抽屜中容納 60 個磁碟機。</block>
+  <block id="78e10c1fe0b4c0434034d67fec8d644c" category="image-alt">SG5860 產品的前後方</block>
+  <block id="edf3f1980e6a61b0626012bdf1fb2bf0" category="section-title">SG5860 元件</block>
+  <block id="383a45e1bb331440c197cbb1ff3b6130" category="paragraph">SG5860 包含兩個控制器、兩個風扇迴廊和兩個電源迴廊。</block>
+  <block id="0226cc2b07c123ec8144abbc25d6b5de" category="paragraph">12 個磁碟機 SG5812 和 60 個磁碟機 SG5860 機型的 StorageGRID 應用裝置均包含 SG5800 運算控制器和 E 系列 E4000 儲存控制器。</block>
+  <block id="c385586f7b7738400911ceda1aa86543" category="section-title">SG5800 運算控制器</block>
+  <block id="b52232ba4f1bba98f39c623a8cc8fb18" category="list-text">連接至 E4000 控制器、並以啟動器的形式運作。</block>
+  <block id="04560c37f70fe12a104b5a31e51cf4cd" category="section-title">SG5800 連接器</block>
+  <block id="44facf39f9a4eeffa4dd90ca27ed28b1" category="image-alt">SG5800 控制器上的連接器</block>
+  <block id="66672799471d4890f63c6685a584ef67" category="list-text">USB-C 序列連接埠</block>
+  <block id="ebe786f9096b97382ae2e78efa43c1e2" category="paragraph">將 SG5800 控制器連接至 E4000 控制器。</block>
+  <block id="d09c87265806dca1bfd3be04f4c3b291" category="section-title">E4000 儲存控制器</block>
+  <block id="2804b3e6e30fa53231e7ef6bac3db861" category="paragraph">E4000 系列儲存控制器具有下列規格：</block>
+  <block id="d13e6cea1e71046029ee2f1d59acdb00" category="list-text">連接 SG5800 控制器並作為目標運作。</block>
+  <block id="362a442ab573fec9c4873345447ada6c" category="section-title">E4000 連接器</block>
+  <block id="cae298e716e001605fad8a0dfe2bee2a" category="paragraph">管理連接埠</block>
+  <block id="91de5107c8fd1713475e268e2e6db320" category="paragraph">連接埠選項：
+** 連線至管理網路、以啟用對 SANtricity 系統管理員的直接 TCP/IP 存取
+** 保留無線以儲存交換器連接埠和 IP 位址。  使用 Grid Manager 或 Storage Grid Appliance 安裝程式存取 SANtricity 系統管理員。</block>
+  <block id="fefcafe2d4912066a784d5c93bc050e1" category="paragraph">* 附註 * ：當您選擇不使用管理連接埠時、某些選擇性的 SANtricity 功能（例如 NTP 同步以取得準確的記錄時間戳記）將無法使用。</block>
+  <block id="57daf9148064308c448c842290992c39" category="paragraph">* 注意 * ：如果您不使用有線連線、則需要 StorageGRID 11.8 或更新版本、以及 SANtricity 11.8 或更新版本。</block>
+  <block id="b155aed19819ab0c2d1e71fc3d32850b" category="paragraph">將 E4000 控制器連接至 SG5800 控制器。</block>
+  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支援網站</block>
+  <block id="f5c45bcc73f02c7f2b1398ee78576a7a" category="list-text">前往<block ref="1850de052c61829b534b07ba1a2ca402" category="inline-link-rx"></block>。</block>
+  <block id="404ded1622e80d031e11aa467d7b5c0e" category="list-text"><block ref="404ded1622e80d031e11aa467d7b5c0e" category="inline-link-macro-rx"></block></block>
+  <block id="8c153a995614ef0a6ba70a818a49be84" category="summary">維護 SG5800 儲存設備的硬體。</block>
+  <block id="7d090f8d618279a3d149398716b33fdb" category="doc">維護 SG5800 儲存設備硬體</block>
+  <block id="f7e2b8e3d85d290dcca43cce02c80067" category="section-title">SG5812 和 SG5860 應用裝置</block>
+  <block id="d7efad05f54e12d8b229dc0d62771c27" category="paragraph">全新的 StorageGRID SG5812 和 SG5860 應用裝置是整合式儲存與運算平台、可在 StorageGRID 網格中作為儲存節點運作。請參閱<block ref="1734786df2c4f776b6423022989a975b" category="inline-link-rx"></block> 以深入瞭解。</block>
+  <block id="f9b87deff325082cc0a1f50f4e181511" category="inline-link-macro">SGF6100 應用裝置：總覽</block>
+  <block id="f188677f8280c9744bd1ef6fee35d5db" category="paragraph">全新的 StorageGRID SG6160 應用裝置包含運算控制器和儲存控制器機櫃、其中包含兩個儲存控制器和 60 個磁碟機、以及兩個用於快取的 NVMe SSD 磁碟機。您也可以選擇將 60 個磁碟機擴充機櫃新增至 SG6160 。請參閱 <block ref="dc1838b204cabed776c113546e2bd56a" category="inline-link-macro-rx"></block> 以深入瞭解。</block>
+  <block id="e12ebc016927211d63794de19e7cf124" category="paragraph">全新的 StorageGRID SG110 和 SG1100 服務應用裝置是一項革命性的硬體更新、可提供更優異的管理與負載平衡效能。請參閱 <block ref="3c058555c619096548fbed1bbe78e3c7" category="inline-link-macro-rx"></block>。</block>
+  <block id="f27ed0a94f9eee56d32bbb5c205f81eb" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程維護期間更換風扇、因為在此程序期間可能會暫時失去這些物件的存取權。請參閱相關資訊<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
+  <block id="b60e3f350dfafff923b7172d86b066de" category="doc">重新安裝內部 NIC</block>
+  <block id="94d010826f8f96b560725f0d09c13a79" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程的維護期間更換 NIC 、因為在此程序期間可能會暫時失去這些物件的存取權。請參閱相關資訊<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
+  <block id="e60a5d7fc05dc7aa04ee5e7026a49fa5" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程維護期間更換電池、因為在此程序期間可能會暫時失去這些物件的存取權。請參閱相關資訊<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
+  <block id="3f069ee729875ead128854e2d4b0be0c" category="list-text"><block ref="3f069ee729875ead128854e2d4b0be0c" category="inline-link-macro-rx"></block></block>
+  <block id="3f05f5216237fcf2b2bad4efa8026d10" category="list-text">您已確認替換應用裝置上的 StorageGRID 應用裝置安裝程式版本與 StorageGRID 系統的軟體版本相符、如有必要、可升級或降級 StorageGRID 應用裝置安裝程式韌體。</block>
+  <block id="476162db1ad0a3ccd8baf4c31ab26fb4" category="doc">更新 MAC 位址參照（ SG100 、 SG1000 、 SGF6024 和 SG6060 ）</block>
+  <block id="319a0b897c700ec42642d7ba68ee3afc" category="paragraph">* 硬體維護程序 * 需要實際操作特定 SGF6112 或 SG6160 元件。</block>
+  <block id="4d52b44cf5cd1974e156f7c9ea7bb14e" category="doc">更換 E4000 儲存控制器（ SG6160 ）</block>
+  <block id="4172e18c4b5f5ded61ea837b6d174a70" category="paragraph">如果 E4000 控制器無法以最佳方式運作或故障、您可能需要更換它。</block>
+  <block id="58bdf6822075a4522e563db052cfb6b5" category="list-text">Grid Manager 警示會指出儲存控制器故障狀況、而 SANtricity 系統管理員中的 Grid Manager 或 Recovery Guru 會引導您更換控制器。</block>
+  <block id="6699424a5a659b766310c519be0f253d" category="paragraph">準備更換 E4000 控制器。</block>
+  <block id="360f56d807bee32cc6fcc9d9bfb9b6f5" category="paragraph">準備移除故障控制器、並將其離線。您可以使用 SANtricity 系統管理員來執行這些步驟。</block>
+  <block id="fe4869120ffec76b394daa282d99bd5b" category="paragraph">移除控制器容器。</block>
+  <block id="1a2315b8628ae30414325b0eac31bb35" category="paragraph">從受損的控制器中取出電池、必要時將其安裝在替換控制器中。</block>
+  <block id="29f964bec5ac520e4a2bd92eb3884f71" category="list-text">將電池移至更換的控制器圓筒並安裝：</block>
+  <block id="d6974842c352301a8a23606fd8d04519" category="list-text">將電池與金屬板側壁上的固定支架對齊。</block>
+  <block id="b1757e798ad2f8a4caea14ce4ed9098f" category="list-text">如果圖形顯示磁碟機、請選取 * 控制器與元件 * 。</block>
+  <block id="4b1f4ab99c5f8c768c4c98333c437a11" category="list-text">除非發生錯誤、否則控制器上的黃色警示LED會開啟然後關閉。</block>
+  <block id="81511c16ac1c696901257fc0136ae1d1" category="list-text">當控制器重新連線時、請確認其狀態為最佳、並檢查控制器機櫃的注意LED。</block>
+  <block id="e11265286d3acc7518f4d458373d21d2" category="paragraph">如果狀態不是最佳、或是有任何警示LED亮起、請確認所有纜線都已正確安裝、且控制器機箱已正確安裝。如有必要、請移除並重新安裝控制器容器。</block>
+  <block id="976bcb4b489baae781e56376ec0a34cc" category="admonition">如果您無法解決問題、請聯絡技術支援部門。</block>
+  <block id="73b8548764adcb2d821a3a30eee387e8" category="list-text">如有需要、請使用SANtricity NetApp System Manager將所有磁碟區重新分配給偏好的擁有者。</block>
+  <block id="829a1819c04fe8b6abc000f5eaa2f3da" category="list-text">選擇 * 儲存› Volumes （磁碟區） * 。</block>
+  <block id="8a63702912777d73eaad4a55fa4ab3fc" category="list-text">選擇 * 更多›重新分配 Volume * 。</block>
+  <block id="a1ed4021c752a35d3fbd57d904dce03b" category="list-text">如果您在此程序期間將應用裝置置於維護模式、請結束維護模式、並等待節點重新開機並重新加入網格。此程序最多可能需要20分鐘。然後、在 Grid Manager 中、確認「節點」頁面顯示正常狀態（綠色核取記號圖示） <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。</block>
+  <block id="f64ac56cef1f5e4f7896043e6750dc53" category="paragraph">您的控制器更換已完成。您可以恢復正常作業。</block>
+  <block id="af8eaf0890f6f3a0074f43cec79c1e06" category="doc">更換儲存控制器機櫃中的 DIMM （ SG6160 ）</block>
+  <block id="7a49dba6d57fb82bb002544c4cff4173" category="paragraph">如果存在記憶體不符或 DIMM 故障、您可以更換 E4000 中的 DIMM 。</block>
+  <block id="59b00bc6c7e05f4ae8146c9567c108e6" category="list-text">如果出現以下任一情況、請記下 DIMM 的位置、然後繼續執行本節中的剩餘程序、以更換控制器上的 DIMM ：</block>
+  <block id="899d2852c9aec05e08abc1e4b2e391e9" category="list-text">故障的DIMM、或報告*資料快取模組*不理想的DIMM。</block>
+  <block id="6f5ff57a0b06d0995df16e9ffb9933ff" category="list-text">具有不相符*資料快取模組*容量的DIMM。</block>
+  <block id="4883780e15d0512220807b94e46324e8" category="section-title">步驟2：將控制器離線</block>
+  <block id="a793a3bb3985905f3388409b0b518fef" category="paragraph">將控制器離線、以便安全地移除和更換DIMM。</block>
+  <block id="5098d73a2aff3b50b78d3b878674438e" category="list-text">如果控制器尚未離線、請使用SANtricity 「系統管理程式」將其離線。</block>
+  <block id="46b49297e0c167d2fea0607d157b41ab" category="list-text">如果圖形顯示磁碟機、請選取*顯示磁碟櫃背面*以顯示控制器。</block>
+  <block id="f0546f1783fc998170803a67731c9e0b" category="list-text">選取您要離線的控制器。</block>
+  <block id="e8255a0d7fd71d092e2742063f9304a1" category="list-text">從內容功能表中選取*離線*、然後確認您要執行此作業。</block>
+  <block id="926c4ba4e9bb89ba02ab5656d123d989" category="admonition">如果您使用SANtricity 嘗試離線的控制器來存取「無法使用」功能、SANtricity 就會顯示「無法使用」訊息。選擇*連線至替代網路連線*、即可使用SANtricity 其他控制器自動存取《系統管理程式》。</block>
+  <block id="daf10491eeda068f969ac846c9108685" category="list-text">等待 SANtricity 系統管理員將控制器的狀態更新為離線。</block>
+  <block id="93ee464a853edbc633bb5a3414035c52" category="admonition">在更新狀態之前、請勿開始任何其他作業。</block>
+  <block id="5be02d2b365337fd0e656ee573b8b3dc" category="list-text">從 Recovery Guru 中選取 * Recheck* 、並確認「詳細資料」區域中的「確定要移除」欄位
+顯示「是」、表示可以安全移除此元件。</block>
+  <block id="3b4c02cc2f931aa9eb5a82df27df58d4" category="list-text">重新啟動控制器容器。</block>
+  <block id="c5b26d4fbf2e5e153f6f9aa188ea3a25" category="list-text">將控制器置於線上。</block>
+  <block id="3432288107671a3979ca23fdbe340b2d" category="list-text">在System Manager中、瀏覽至「Hardware（硬體）」頁面。</block>
+  <block id="c3ac6ac8d43a84654053e4ddce2984f4" category="list-text">選擇 * 控制器與元件 * 。</block>
+  <block id="a5df91b4b8dbc86494c1ea39cec2456d" category="list-text">選取內含更換DIMM的控制器。</block>
+  <block id="2f61253e0a7cff41599e7256b9331fb4" category="list-text">從下拉式清單中選取*線上放置*。</block>
+  <block id="7c48058d8013bfae2340365d66ab0d0a" category="list-text">按一下 * 硬體›支援›升級中心 * 、以確保已安裝最新版本的 SANtricity OS 。</block>
+  <block id="c65491c8c7503c1a6db7cfd16113b72a" category="paragraph">視需要安裝最新版本。</block>
+  <block id="a930fc75e69c5ac64da41c6abb10ae82" category="list-text">確認所有磁碟區都已歸還給偏好的擁有者。</block>
+  <block id="bff47434bd484307ee1b5dee9fdfa662" category="list-text">選擇 * 儲存› Volumes （磁碟區） * 。從「*所有磁碟區*」頁面、確認磁碟區已散佈至偏好的擁有者。選擇 * 更多›變更擁有者 * 以檢視 Volume 擁有者。</block>
+  <block id="7943c71d2d2814755b319febce08a1de" category="list-text">如果所有磁碟區均為慣用擁有者、請繼續執行步驟6。</block>
+  <block id="d8556df66e7a46b260ad707ecaedcf26" category="list-text">如果未傳回任何磁碟區、則必須手動傳回磁碟區。前往 * 更多›重新分配 Volume * 。</block>
+  <block id="d755fb949d94fb21eb05693749f9b364" category="list-text">如果沒有Recovery Guru存在、或遵循Recovery Guru步驟、磁碟區仍不會歸還給偏好的擁有者、請聯絡支援部門。</block>
+  <block id="d5debb5db4342f7c3ee4095bbb7c701d" category="doc">使用離線方法（ SG6160 ）、使用 SANtricity System Manager 升級 SG6100 磁碟機韌體</block>
+  <block id="80242bb57b9c3d7c3c5a86572c018227" category="admonition">此程序 * 不 * 適用於 SG6100-CN 中的 NVMe SSD 、此類 SSD 在 StorageGRID 軟體升級期間更新。只有 E4000 中的磁碟機才能使用此程序進行更新。</block>
+  <block id="696899b71cb5fbb88f0e1e30d655940c" category="summary">SG6160 應用裝置在 SG6100-CN 控制器中包含兩個 SSD 磁碟機、可作為讀取快取。如果其中一個磁碟機故障、您必須儘快更換、以將可能的效能影響降至最低。</block>
+  <block id="705dac394c8eb8ec154fc43b57442761" category="doc">更換 SG6100-cn 中的磁碟機</block>
+  <block id="7f8e7f41503ca5dba0082cbda867df5e" category="list-text">您已確認哪個磁碟機發生故障、方法是注意其左側 LED 持續亮起琥珀色燈、或使用 Grid Manager 來 <block ref="b649a3c42eab8e9b9acbcac003c8de8f" category="inline-link-macro-rx"></block>。</block>
+  <block id="1ecc95a39ea26f34e7268be87dbc3786" category="paragraph">磁碟機位於機箱中的下列位置（圖示為卸下擋板的機箱正面）。</block>
+  <block id="aed3a6e51582511fdf422c24d584d1a7" category="image-alt">SSD 的位置在 SG6160 中</block>
+  <block id="53edb80130864b9cb5a075e3fe5b3e03" category="inline-link">執行診斷</block>
+  <block id="becc5747410d6d3b9373c76a2c82269e" category="paragraph">當兩個 SSD 磁碟機都正常運作時、系統會自動還原讀取快取功能。您可以<block ref="49a773a5019753255d2d2b6f10a54073" category="inline-link-rx"></block> 監控讀取快取命中率。由於快取是剛重建的、因此最初的命中率可能很低、但隨著存取物件資料的用戶端重新填入快取、快取應該會隨著時間而增加。</block>
+  <block id="6afe076d745c28e67848c230c127f912" category="doc">驗證要在 SGF6112 或 SG6100-CN 中更換的元件</block>
+  <block id="99333dae3b0ba16106970b638ebd27fc" category="doc">更換儲存控制器機櫃或擴充機櫃中的風扇箱（ SG6160 ）</block>
+  <block id="d07f54da4fcb4b065be41f5c4be9a44d" category="paragraph">您可以在 SG6160 中更換風扇箱。</block>
+  <block id="8afda3d48cd4d6708a6cc5590c1404f4" category="paragraph">每個60個磁碟機控制器機櫃或磁碟機機櫃都包含兩個風扇容器。如果風扇容器故障、您必須儘快更換、以確保機櫃有足夠的冷卻效果。</block>
+  <block id="75894a4799fcc9a023e77b2d9bf388fa" category="list-text">瀏覽至「節點」頁面上的 SANtricity 系統管理員標籤、查看警示中列出的節點、通知您風扇故障。使用此索引標籤上顯示的 SANtricity UI 、檢閱 Recovery Guru 中的詳細資料、確認風扇圓筒有問題、然後從 Recovery Guru 中選取 * Recheck* 、以確保不需要先處理其他項目。</block>
+  <block id="21ca0a6d008a3f0d6fadcffb1f54e4ba" category="list-text">檢查風扇容器上的黃色警示LED是否亮起、表示風扇故障。如果產品中的兩個風扇迴廊的琥珀色警示 LED 亮起、請聯絡技術支援部門以取得協助。</block>
+  <block id="0ecdbc8b9a11e80bf7c8f9a74c14dc53" category="paragraph">準備更換風扇箱、方法是收集產品的相關支援資料、並找出故障元件。</block>
+  <block id="83aaf3642bbba28d36f4da51adfee35e" category="list-text">選取 * 支援中心 &gt; 診斷 * 。</block>
+  <block id="fc8caa2eed66d0f248d4ec071522cfc4" category="list-text">看看風扇 <block ref="05e710a523d2bede5c636c5e4f922688" category="inline-image-macro-rx" type="image"></block> * Shelf* 下拉式清單右側的圖示、可判斷哪個應用裝置的風扇箱故障。</block>
+  <block id="ec354b1258c06ae6583157f8ef2196b3" category="list-text">當您找到帶有紅色圖示的產品時、請選取 * 顯示機櫃背面 * 。</block>
+  <block id="f7adda54e6937a70013a89b48b669c86" category="admonition">如果產品中的第二個風扇容器沒有 * 最佳 * 狀態、請勿嘗試熱插拔故障的風扇容器。請聯絡技術支援部門以取得協助。</block>
+  <block id="3b33e5703e1569451a346dd29af50b51" category="list-text">打開新風扇箱的包裝、並將其放在產品附近的平坦表面上。</block>
+  <block id="002c473abb16ba8030a796dbd755e33d" category="list-text">使用風扇箱把手將風扇箱從產品中拉出。</block>
+  <block id="64c29ebf8cd32413c80f6ffda96405ee" category="list-text">將更換的風扇箱完全滑入產品、然後移動風扇箱把手、直到卡入橘色卡舌為止。</block>
+  <block id="37a36b8523adcf2cc0873f9e2f41ca9c" category="doc">更換 SGF6112 或 SG6100-CN 護蓋</block>
+  <block id="854c7629d35948a4df812750dec127ee" category="summary">從機櫃或機架中卸下 SG6100-CN 控制器、以拆裝機箱頂蓋或將產品移至不同位置、然後在硬體維護完成時、將控制器重新安裝到機櫃或機架中。</block>
+  <block id="5fb243f0f549e18d4924ebf22621bb48" category="doc">將 SG6100-CN 控制器重新放置在機櫃或機架中</block>
+  <block id="abc84ec80690dbc94a66ecc51074d3c0" category="section-title">從機櫃或機架上卸下 SG6100-cn 控制器</block>
+  <block id="881b8f310c4263d181dbaedf240d3d2d" category="paragraph">從機櫃或機架中卸下 SG6100-CN 控制器、以存取頂蓋或將控制器移至其他位置。</block>
+  <block id="907fea185972d8e2b273ebea2808d7f1" category="list-text">您可以使用標籤來識別連接到 SG6100-CN 控制器的每條纜線。</block>
+  <block id="fda31ec860925354771998211c7831af" category="list-text">您已實際找到 SG6100-CN 控制器、在其中執行資料中心的維護作業。</block>
+  <block id="fbc4a37098bcf763b9f98fd0a2884283" category="inline-link-macro">關閉 SG6100-CN 控制器</block>
+  <block id="5f63238f202a5cd936c6942641733c6e" category="list-text">您有 <block ref="d00266d0f93b386e66854bd4e0adc388" category="inline-link-macro-rx"></block>。</block>
+  <block id="7e50f59ca73ccb860aa814cfd32bc021" category="list-text">將 SG6100-CN 控制器向前滑出機架、直到安裝滑軌完全展開、同時聽到兩側的卡榫發出喀噠聲。</block>
+  <block id="76d74a3c6e61e29e13b8b398f522989d" category="section-title">將 SG6100-cn 控制器重新安裝到機櫃或機架中</block>
+  <block id="27eee63b8f274f92b6fd34ad72eda57f" category="inline-link-macro">重新安裝 SG6100-CN 控制器護蓋</block>
+  <block id="8f7788c169aa50f1f1d939333d3f4bcc" category="paragraph"><block ref="8f7788c169aa50f1f1d939333d3f4bcc" category="inline-link-macro-rx"></block></block>
+  <block id="e555012dca3572d0bab17db35a4008d4" category="paragraph"><block ref="e555012dca3572d0bab17db35a4008d4" category="inline-link-macro-rx"></block></block>
+  <block id="4cc27b1800a32240f555e0ec4afc5cde" category="summary">將 E4000 中的磁碟機更換為 60 個磁碟機櫃。</block>
+  <block id="125aeb33ae4459fc8222ee9ed2b717aa" category="doc">更換儲存控制器機櫃或擴充機櫃中的磁碟機（ SG6160 ）</block>
+  <block id="5ee472a2b6b33fddd49024587c88b2f3" category="paragraph">您可以更換 SG6160 儲存控制器機櫃或擴充機櫃（ DE460C ）中的磁碟機。</block>
+  <block id="e2b67368d81a86fe4528ce75a038bafd" category="paragraph">StorageGRID Grid Manager 可監控儲存陣列狀態、並在發生磁碟機故障時發出警示。  當 Grid Manager 發出警示、或是在任何時候、您都可以使用 SANtricity 系統管理員中的 Recovery Guru 來取得故障特定磁碟機的詳細資訊。  磁碟機故障時、其黃色警示LED會亮起。您可以在儲存陣列接收I/O時熱交換故障磁碟機</block>
+  <block id="1cdc03d12ae7d748296aee00f5109883" category="doc">使用 SANtricity System Manager 升級 SG6160 磁碟機韌體</block>
+  <block id="994ab9a6584338b6df623d7d022d41de" category="doc">使用維護模式（ SG6160 ）升級 E4000 控制器上的 SANtricity OS</block>
+  <block id="67ecfade4f78d4256e50f887e4676271" category="list-text">請遵循 _E4000 和 E5800 SANtricity 軟體與韌體升級指南 _ 或 SANtricity 系統管理員線上說明中的指示、以升級 E4000 控制器的韌體和 NVSRAM 。</block>
+  <block id="45f3c485a67ff8478a381e767f0f6661" category="doc">使用 SANtricity System Manager 線上方法（ SG6160 ）升級 SG6100 磁碟機韌體</block>
+  <block id="0fffbf3f6ca609f2235feeb611e2b964" category="doc">關閉和開啟 SGF6112 應用裝置或 SG6100-CN 控制器</block>
+  <block id="9381ca3034ce3f2fb2288678820f63cc" category="paragraph">您可以關閉 SGF6112 應用裝置或 SG6100-CN 控制器、然後重新開啟電源以執行維護。</block>
+  <block id="fdfdb8e286950903a0068df11f6bfd60" category="section-title">關閉 SGF6112 應用裝置或 SG6100-CN 控制器</block>
+  <block id="b73c727bf0e0959bf2997ef56dd0d8d3" category="section-title">開啟 SGF6112 或 SG6100-cn 電源、並驗證作業</block>
+  <block id="c886540e801e693ffe1823bad5d42614" category="list-text">開啟產品電源：</block>
+  <block id="c6d558b2d3299289c5693976570a619a" category="list-text">選項 1 ：按下控制器正面的電源開關。</block>
+  <block id="ea42267ae6b8a5b0ae068e0b165042c6" category="list-text">選項 2 ：使用控制器 BMC 介面：</block>
+  <block id="65f9575b4c73d3a79d19aa80e691aff7" category="doc">更換儲存控制器機櫃中的電源供應器（ SG6160 ）</block>
+  <block id="4d7a5664767423144166d1dfb202f18c" category="paragraph">您可以在 E4000 中更換電源供應器。</block>
+  <block id="92a8e5a68dee2a2df8de1337cfd37b9c" category="list-text">您必須擁有控制器櫃或磁碟機櫃模型所支援的替換電源供應器。</block>
+  <block id="62801e2ccb6f17e7f154aa3041cec885" category="list-text">控制器櫃或磁碟機櫃機型支援的替換電源供應器。</block>
+  <block id="0cb4ca1ebfa5befd772636297b219cb2" category="paragraph">準備更換12個磁碟機或24個磁碟機控制器機櫃或磁碟機櫃中的電源供應器。</block>
+  <block id="5397464cc0a533d559060bcb0c997b71" category="doc">更換儲存控制器機櫃中的電池（ SG6160 ）</block>
+  <block id="748697503413e5c402119f940780aa70" category="paragraph">如果 SANtricity 系統管理員中的 Recovery Guru 顯示「電池故障」或「電池需要更換」狀態、您必須更換 E4000 控制器中受影響的電池。為了保護您的資料、必須盡快更換電池。</block>
+  <block id="3aae92281d2c76bfdb03ce5a4ca9bcc5" category="list-text">確認所有使用這些磁碟區的主機上都未使用任何磁碟區、或安裝多重路徑驅動程式。</block>
+  <block id="861ad799d1b7bc40f73abce1365dd955" category="paragraph">您必須將受影響的控制器離線、以便安全地取出故障電池。您未離線的控制器必須處於線上狀態（處於最佳狀態）。</block>
+  <block id="6c0e27daa38c2454d6e36b3e5f192a36" category="list-text">從Recovery Guru的「Details（詳細資料）」區域中、判斷要更換的電池。</block>
+  <block id="9ac50bab7d872b7afc76e70a644219ed" category="paragraph">檔案會儲存在瀏覽器的 Downloads 資料夾中、其名稱為 support-data.7z 。</block>
+  <block id="d59db5a23cb336fc04e47b92ae9304b6" category="list-text">從《系統管理程式》：SANtricity</block>
+  <block id="2d4d3bee9f2e35cdd72b593ce7f8ee1c" category="list-text">或者、您也可以使用下列CLI命令將控制器離線：</block>
+  <block id="31af8cf3c364ef0721e22c79e63b47d0" category="paragraph">* 對於控制器 A* ：<block ref="9e02aca819e4970527b62fd35f9cc9ec" prefix=" " category="inline-code"></block></block>
+  <block id="c37d3d9443e25a97d64925af817282b0" category="paragraph">* 對於控制器 B* ：<block ref="68414166ffb645078598902542c6a3c0" prefix=" " category="inline-code"></block></block>
+  <block id="6aa2036b64d45cd3b278f4134bf600c4" category="list-text">從 Recovery Guru 中選擇 *Recheck* ，並確認 * Details （詳細資料） * 區域中的 *OK to remov* （確定要刪除 * ）字段顯示 * Yes （是） * 。這表示可以安全地移除控制器圓筒。</block>
+  <block id="8e5529245512581ce08228508830e96b" category="paragraph">將控制器置於線上。</block>
+  <block id="c0fc96399bd643fb52438e52c5f997b2" category="list-text">使用SANtricity NetApp System Manager讓控制器上線。</block>
+  <block id="218cce7e067353f1234928f71d8f0a6f" category="paragraph">系統會將控制器置於線上。</block>
+  <block id="3cb9d9f57ed810773de4b7e3295850c9" category="list-text">或者、您也可以使用下列CLI命令將控制器重新連線：</block>
+  <block id="0e47643d726a57dd5949d700c4043382" category="paragraph">* 對於控制器 A* ：<block ref="2dfcfa68e61dde8afe431514f21cc7df" prefix=" " category="inline-code"></block>；</block>
+  <block id="da72b82f32384ae32936e716323a69e1" category="paragraph">* 對於控制器 B* ：<block ref="4b778a8444511ed84d4a09fbd79467bb" prefix=" " category="inline-code"></block>；</block>
+  <block id="e5917c8b7ae11d456fbbf964f73d5ea5" category="list-text">如果磁碟區都是偏好的擁有者所擁有、請繼續執行步驟 4 。</block>
+  <block id="3c32d29a9ae3687bf14ce4b9c398f834" category="list-text">如果在自動發佈或手動發佈之後、只有部分磁碟區會傳回給偏好的擁有者、則必須檢查 Recovery Guru 以瞭解主機連線問題。</block>
+  <block id="03150d211b9a34e93428c62e012d6b34" category="list-text">如果沒有 Recovery Guru 、或是在執行 Recovery Guru 步驟之後、磁碟區仍未歸還給偏好的擁有者、請聯絡支援部門。</block>
+  <block id="81a7a45b93f9854a92cf5bd59de4bce2" category="summary">若要增加儲存容量、您可以在部署於 StorageGRID 系統的 SG6160 中新增一或兩個擴充機櫃。</block>
+  <block id="002c5b52cccb8df3acc3fed409d4cf3f" category="doc">將擴充機櫃新增至部署的 SG6160</block>
+  <block id="c328b3c5cc40787c431bb28abf23581f" category="paragraph">若要增加儲存容量、您可以將一或兩個擴充機櫃新增至已部署在 StorageGRID 系統中的 SG6160 。</block>
+  <block id="a8ed867a95d1ad6361e815f14df748e3" category="list-text">您必須執行 StorageGRID 11.8 或更新版本。</block>
+  <block id="2e605efbd786e723eeade7a5e25910e3" category="paragraph"><block ref="2e605efbd786e723eeade7a5e25910e3" category="inline-link-macro-rx"></block></block>
+  <block id="da7bec9148c7694d89c865375670c7bf" category="list-text">將 SG6160 置於維護模式。</block>
+  <block id="dcc5fdefb1e912d477062a4db6ca17b3" category="list-text">將擴充機櫃連接至 E4000 控制器機櫃或其他擴充機櫃。</block>
+  <block id="adc4eab44b1bb2492098926b78ecb98e" category="list-text">使用 StorageGRID 應用裝置安裝程式開始擴充。</block>
+  <block id="b0e9cfa584dd5448c66aea4f4843c8e4" category="paragraph">完成一或兩個擴充磁碟櫃的程序、每個應用裝置節點所需的時間應少於一小時。為了將停機時間降至最低、下列步驟會指示您在將 SG6160 置於維護模式之前、先安裝新的擴充櫃和磁碟機。每個應用裝置節點的其餘步驟約需20至30分鐘。</block>
+  <block id="f4a629f3dc0f3d3d1c612f5ac1b2ba3c" category="list-text">請依照的指示進行 <block ref="7c15bb1f801174c2873b8c6770940e7d" category="inline-link-macro-rx"></block>。</block>
+  <block id="def6961fb71067f856d0582f6091da1c" category="inline-link-macro">將 SG6100-CN 控制器置於維護模式</block>
+  <block id="0772c50bf93be84757d07727c00125c5" category="list-text">從Grid Manager、 <block ref="5ed9af1324813a493f23f2cf5f168150" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d37f698a46afccc4b49ff704e19bd89" category="list-text">如圖所示、將每個擴充機櫃連接至 E4000 控制器機櫃。</block>
+  <block id="5f3a8c3368173e015da9eb92bd80b554" category="image-alt">SG6160 擴充機櫃連線</block>
+  <block id="d6365fd9cecf9635a24d6e46d8d7250a" category="paragraph">E4000 控制器機櫃</block>
+  <block id="00e2fb134d0d61be66abe2d3d65ca79a" category="doc">升級 SG6160 儲存控制器上的 SANtricity OS</block>
+  <block id="89141e635a4fc4e7f765451ef89b3780" category="list-text">您可以使用 Grid Manager 來執行升級。</block>
+  <block id="5a85c07c10befd283c78c3e8e1cd4d51" category="list-text">您可以使用維護模式來執行升級。</block>
+  <block id="73b23fbde72d259e8090846b8b5a920b" category="doc">疑難排解磁碟機韌體升級錯誤（ SG6160 ）</block>
+  <block id="3799a86e5b2501a5e0778b0915fa9cbc" category="doc">更換 SGF6112 或 SG6100-CN 中的內部 NIC</block>
+  <block id="a0b8dc2f72b7fa0a7a9e2847b1bc6127" category="paragraph">如果 SGF6112 或 SG6100-CN 中的內部網路介面卡（ NIC ）無法正常運作或故障、您可能需要更換其中的內部網路介面卡（ NIC ）。</block>
+  <block id="9117d0edd9082c7e8935fe435a82d383" category="section-title">移除內部 NIC</block>
+  <block id="4e6e5a5917050904c9c2421b2030a536" category="inline-link-macro">實體放置 SGF6112 應用裝置或 SG6100-CN 控制器</block>
+  <block id="95cff60cffad0f5715137f9d67567b88" category="list-text">您有 <block ref="8a600a3d3695735e4213dc5c6fac3a3e" category="inline-link-macro-rx"></block> 您要更換資料中心內 NIC 的位置。</block>
+  <block id="0eeb264db6bbb6601799f5fa82043ca8" category="doc">將 SGF6112 或 SG6100-cn 重新放置在機櫃或機架中</block>
+  <block id="503868000e3b61237e02ad3b4d5b0a9c" category="paragraph">將 SGF6112 或 SG6100-CN 從機櫃或機架上取下、即可拆下機箱頂蓋、或將產品移至其他位置、然後在硬體維護完成時、將產品重新裝入機櫃或機架。</block>
+  <block id="2659f18d1e3bd284c467d2b63bbb4213" category="section-title">從機櫃或機架上卸下 SGF6112 或 SG6100-CN</block>
+  <block id="62e44ae04232b116a8d593e564953dc9" category="list-text">您有標籤可以識別連接至 SGF6112 或 SG6100-CN 的每條纜線。</block>
+  <block id="a1810e1ee9dc4a56e47017d6a63bd3d2" category="inline-link-macro">實體放置 SGF6112 或 SG6100-CN</block>
+  <block id="843764d471e95f5a4269bb5e6d2b145b" category="list-text">您有 <block ref="cf3c649780f1306d5adbe47d3f7a2d2c" category="inline-link-macro-rx"></block> 您在資料中心執行維護的位置。</block>
+  <block id="79a966caab2b12effdf2053e5e4f55d6" category="inline-link-macro">關閉 SGF6112 或 SG6100-cn</block>
+  <block id="3bf41c406f5766d1b62e764d78815006" category="list-text">您有 <block ref="49296b47acea766c5c7d891047bed3f2" category="inline-link-macro-rx"></block>。</block>
+  <block id="ceedd6bc488978da982637b521428bf5" category="image-alt">SGF6112 或 SG6100-CN 機架固定螺絲</block>
+  <block id="9b6b980304823e819d6a10f2887e228a" category="list-text">將 SGF6112 或 SG6100-CN 向前滑出機架、直到安裝滑軌完全展開、同時您會聽到兩側的卡榫發出喀噠聲。</block>
+  <block id="ea451a7e000e56ca9723a7327e0a5ee5" category="section-title">將 SGF6112 或 SG6100-cn 重新安裝到機櫃或機架中</block>
+  <block id="486637db4093d2e7f93d6c755fc52ef2" category="doc">使用管理磁碟機索引標籤（ SGF6112 ）</block>
+  <block id="e68af6822729f2d13a6e09c482933d41" category="doc">使用維護模式升級 SG6160 儲存控制器上的 SANtricity OS</block>
+  <block id="26057f35f4601a7c8747345c376102c0" category="paragraph">您可以使用維護模式來升級 SG6160 控制器上的 SANtricity OS 。</block>
+  <block id="60f3c8de41561e30c6a1bb54457dead2" category="admonition">若儲存控制器目前使用的 SANtricity OS 版本低於 08.42.20.00 （ 11.42 ）、建議使用 <block ref="676f8e0aaa6d1091bae102dc63249cf0" category="inline-link-macro-rx"></block>。不過、如果您偏好使用維護模式程序、或是技術支援人員指示您使用維護模式程序。</block>
+  <block id="f38ecc46820876c6f9987621443a127a" category="list-text">您必須將 SG6160 控制器放入 <block ref="66517df9b2a708b9947fc0143b4273f5" category="inline-link-macro-rx"></block>，停止所有對 E4000 儲存控制器的 I/O 。</block>
+  <block id="a6c263ff66310d54f9c57df23c404198" category="paragraph">請勿一次在多個 StorageGRID 應用裝置上的儲存控制器中升級 SANtricity OS 或 NVSRAM 。</block>
+  <block id="8976c897209f984485c59cc28ffeb064" category="paragraph"><block ref="8976c897209f984485c59cc28ffeb064" category="inline-link-macro-rx"></block></block>
+  <block id="978e5c1bd5b872afac1cb7555ca47968" category="doc">更換儲存控制器機櫃或擴充機櫃中的電源箱（ SG6160 ）</block>
+  <block id="02ed940a7d833ea1eceb3eaac1ffbb25" category="paragraph">您可以更換 SG6160 儲存控制器機櫃或擴充機櫃（ DE460C ）中的電源箱。</block>
+  <block id="46878814bf09455ee7eb9781d36a8b61" category="paragraph">每個60個磁碟機控制器機櫃或磁碟機機櫃都包含兩個電源迴路、以提供電源備援。如果電力箱故障、您必須儘快更換、以確保機櫃具有備援電源。</block>
+  <block id="b80d1bb7b0d283ae3a51aaf6c9ba66bf" category="paragraph">您可以在儲存陣列開機並執行主機I/O作業時、更換電源箱。 只要機櫃中的第二個電源箱狀態為「最佳」、SANtricity 且「恢復大師」的「詳細資料」區域中的「*可移除*」欄位顯示*「是」*。</block>
+  <block id="83a7edcd0ab09903c3ba396480ca4d18" category="list-text">針對通知您 PSU 故障的警示中所列節點、瀏覽至「節點」頁面的「 SANtricity 系統管理員」標籤。使用此索引標籤上顯示的 SANtricity UI 、檢閱 Recovery Guru 中的詳細資料、確認電源箱有問題、然後從 Recovery Guru 中選取 * Recheck* 、以確保不需要先處理其他項目。</block>
+  <block id="61e5dd556e5f83e74aa74867453869fe" category="list-text">控制器機櫃或磁碟機櫃機型支援的替換電源箱。</block>
+  <block id="f48d7a6f854d8e6df63eed9709c31f76" category="paragraph">準備更換60個磁碟機控制器櫃或磁碟機櫃中的電力箱。</block>
+  <block id="9344ddf3136b8fb13c7ef981b6844c42" category="summary">SGF6112 應用裝置和 SG6100-cn 運算節點有兩個電源供應器、可提供備援。如果其中一個電源供應器故障、您必須儘快更換、以確保產品具備備援電力。在本產品中操作的兩個電源供應器必須使用相同的機型和瓦數。</block>
+  <block id="77442a88ebd7cb0929276245bb6fa261" category="doc">更換 SGF6112 或 SG6100-CN 中的一個或兩個電源</block>
+  <block id="b40f48980b91f6eeeaca45a02098961f" category="paragraph">圖中顯示 SGF6112 應用裝置或 SG6100-CN 運算節點的兩個電源供應器單元。電源供應器可從產品背面存取。</block>
+  <block id="56347f82384b21f0e089b756280bf350" category="image-alt">SGF6112 或 SG6100-cn 背面、附兩個電源供應器</block>
+  <block id="dcbfe91a20e41ca1166b39996007957a" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、而且同時更換兩個電源供應器、則必須在排程維護期間更換電源供應器、因為在本程序期間、您可能會暫時失去這些物件的存取權。請參閱相關資訊<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>。</block>
+  <block id="45c26226adb5ac780361eb67562102b4" category="summary">如果網路介面卡無法正常運作或故障、您可能需要更換 SG6100-CN 中的網路介面卡（ NIC\ ）。</block>
+  <block id="b64bc50a417ed89b6f98a9cf7702f4c6" category="doc">更換 SG6100-cn 中的外部 NIC</block>
+  <block id="68389729ef500c851bd175b61c435629" category="paragraph">如果 SG6100-CN 中的外部網路介面卡（ NIC ）無法正常運作或故障、您可能需要更換該卡。</block>
+  <block id="873f4e1b6b1acfd0f6ea7fc4a7cee73c" category="image-alt">NIC 面板。</block>
+  <block id="a906778e494f0b40580e1e85dcb33e85" category="inline-link-macro">實體放置 SG6100-CN 控制器</block>
+  <block id="58e70c1ae42267f307cdffab0cdfbbe4" category="list-text">您有 <block ref="5c1fa18bafcc8d60bd46b368c02cb91a" category="inline-link-macro-rx"></block> 您要更換資料中心內 NIC 的位置。</block>
+  <block id="63f8fca3cb7c8b6c25c6c9a37f3c0e4a" category="admonition">此程序 * 不 * 支援熱交換。答 <block ref="6bb1c156f9acfcc4bd439f64de9f6179" category="inline-link-macro-rx"></block> 在拔下纜線和移除 NIC 之前、必須先執行此步驟。</block>
+  <block id="eaf231f4003aa68f6123cc0e6d604d87" category="list-text">您已拔下所有纜線、包括 SG6100-CN 上的兩條電源線。</block>
+  <block id="17b208d64aae491214f3782c0ff2d452" category="list-text">* 可選 * ：如果當地法規要求，您已將控制器從機架中移除。由於 NIC 可從外部存取、因此不需要移除。</block>
+  <block id="e2023a44c961f3f4470bb5e3006ff4cb" category="inline-link-macro">繫泊節點連線狀態</block>
+  <block id="37a4367f9d2138846d7d30345a9222b6" category="paragraph">為避免服務中斷、請在開始更換網路介面卡（ NIC ）之前、確認所有其他儲存節點都已連接至網格、或在可接受服務中斷期間的排程維護期間更換 NIC 。請參閱相關資訊 <block ref="d14796012b1b468838045204e28fa845" category="inline-link-macro-rx"></block>。</block>
+  <block id="d639274428f4ac031f1908faa6990c49" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程的維護期間更換 NIC 、因為在此程序期間可能會暫時失去這些物件的存取權。請參閱相關資訊 <block ref="4aae144d8fbb767d73fa7fd90a3dc263" category="inline-link-macro-rx"></block>。</block>
+  <block id="45aabce7da28d01db08ff5344a11d65d" category="section-title">卸下外部 NIC</block>
+  <block id="746181094439f6c85453dfb13c07c646" category="list-text">將 ESD 腕帶的束帶端繞在手腕上、並將扣具端點固定在金屬接地上、以防止靜電釋放。</block>
+  <block id="f06ce8aaa962b8310bab87422709eca7" category="list-text">使用螺絲起子鬆開 NIC 面板上的螺絲。</block>
+  <block id="a8074140644b84ee93729c1a82781cb6" category="admonition">此程序 * 不 * 支援熱交換。移除 NIC 之前、必須先中斷控制器的電源。</block>
+  <block id="e0c1afefc43d19c4c894b5b78613a214" category="list-text">拉住面板把手、小心地取下 NIC 。將 NIC 放置在平坦的防靜電表面上。</block>
+  <block id="50930740783c3dbf85d125bd00cfe6f3" category="section-title">重新安裝外部 NIC</block>
+  <block id="4d9f3d064b24995a76caf961fa125cf9" category="list-text">將 NIC 與機箱中的開口對齊、然後小心地將其推入、直到完全就位。</block>
+  <block id="7312d9d8ac375e0a9c4245d4e5ab2608" category="list-text">旋緊 NIC 面板上的螺絲。</block>
+  <block id="b362454c1b783a548faa935e3a1610de" category="paragraph">如果您沒有其他維護程序可在產品中執行、請在產品移除後將產品送回機架、連接纜線並接上電源。</block>
+  <block id="787d8857ce0db09ecbf6fe82bbf45a25" category="doc">開啟和關閉 SGF6112 應用裝置或 SG6100-CN 控制器識別 LED</block>
+  <block id="77291750fe959fd9ce173862b4055564" category="doc">在資料中心找到 SGF6112 應用裝置或 SG6100-cn 控制器</block>
+  <block id="71070479646e1da5a663f4b00abb5235" category="paragraph"><block ref="106db197e8d447cef2c47289a65f4849" category="inline-link-macro-rx"></block> 如果您使用下列其中一種方法來尋找應用裝置：
+ ** 按下產品前面板上的識別 LED 開關。
+ ** 使用應用裝置 BMC 介面。</block>
+  <block id="f40a968e022f47cf01d4d58ef9437f0c" category="summary">SGF6112 應用裝置和 SG6100-CN 控制器具有八個冷卻風扇。如果其中一個風扇故障、您必須儘快更換、以確保產品具有適當的冷卻效果。</block>
+  <block id="35354d3f59ef76da6c3d8d0aafc491e7" category="doc">更換 SGF6112 或 SG6100-CN 中的風扇（ SG6160 ）</block>
+  <block id="dff98198bff06709975037453d00df52" category="list-text">您有 <block ref="8a600a3d3695735e4213dc5c6fac3a3e" category="inline-link-macro-rx"></block> 您要在資料中心更換風扇的位置。</block>
+  <block id="7a70e2c3c98205b7029ea7982add5e80" category="summary">對於目前使用 SANtricity OS 08.42.20.00 （ 11.42\ ）或更新版本的儲存控制器、您可以使用 Grid Manager 或維護模式來套用升級。</block>
+  <block id="3b289339a5f46c375f3026b8b50cb446" category="doc">使用 Grid Manager 升級 SG6160 儲存控制器上的 SANtricity OS</block>
+  <block id="73b13828240be2d4ed9ff2f029c5ac9c" category="paragraph">對於目前使用 SANtricity OS 08.42.20.00 （ 11.42 ）或更新版本的儲存控制器、您可以使用 Grid Manager 或維護模式來套用升級。</block>
+  <block id="80bcdb369c1aaaea9daefaf6cf5773ae" category="inline-link-macro">使用維護模式升級 SG6160 控制器上的 SANtricity OS</block>
+  <block id="57ca482829cf5cc3cae5f2129c23fbb1" category="paragraph"><block ref="57ca482829cf5cc3cae5f2129c23fbb1" category="inline-link-macro-rx"></block></block>
+  <block id="75bae77bd5a1e5d5a3fa60c2123780ca" category="summary">如果 SG6100-CN 控制器無法以最佳方式運作或發生故障、您可能需要更換該控制器。</block>
+  <block id="34219e12808cfaa75a6d668403e35db8" category="doc">更換 SG6100-cn 控制器</block>
+  <block id="001591654095885fb8e8bae93eba4b37" category="paragraph">更換 SG6100-CN 控制器時、將無法存取應用裝置儲存節點。如果 SG6100-CN 控制器運作正常、您可以在本程序開始時執行管制關機。</block>
+  <block id="10f53149eec912e3988fa735d632dcc9" category="list-text">如果 SG6100-CN 控制器運作良好、可進行控制關機、 <block ref="06019beeec02ceba6236461f5eafd019" category="inline-link-macro-rx"></block>。</block>
+  <block id="c360904142c30f58300519e8c01b32d0" category="list-text">如果此 StorageGRID 應用裝置上的任何網路介面都設定為使用 DHCP 、您可能需要更新 DHCP 伺服器上的永久 DHCP 租用指派、以參照替換應用裝置的 MAC 位址。此更新可確保設備已指派預期的 IP 位址。</block>
+  <block id="bc15f2ba1d2a4b957f06af9c2cc3e6d9" category="list-text">移除並更換 SG6100-CN 控制器：</block>
+  <block id="8145cbfa0e5fc59eb5093d29f4de5483" category="list-text">標記纜線、然後拔下纜線。</block>
+  <block id="a0befebc0dc0ee85030d772d00f61688" category="list-text">開啟控制器電源並監控控制器 LED 。</block>
+  <block id="0d54b59311c1009cc33be8f5d906a7be" category="list-text">如果您更換的應用裝置已啟用 SED 磁碟機的硬碟機加密、則您必須<block ref="ab2a8c9957e8a2957d798cc8383d95cd" category="inline-link-rx"></block> 可在第一次啓動更換設備時訪問加密的驅動器。</block>
+  <block id="4b244b33c3beef1d75f4d756a21a49b4" category="doc">變更 SGF6112 應用裝置或 SG6100-cn 控制器的連結組態</block>
+  <block id="b37e91faf9694e646ed2a66472649c8c" category="doc">更換 SGF6112 或 SG6100-cn CMOS 電池</block>
+  <block id="d4a59520f6c0ce3d58600868472890fb" category="list-text">您有 <block ref="8a600a3d3695735e4213dc5c6fac3a3e" category="inline-link-macro-rx"></block> 您要在資料中心更換 CMOS 電池的位置。</block>
+  <block id="3e02af3c304f19676b1b10a12e9f4063" category="sidebar">SG5800 和 SG6100</block>
+  <block id="4601c8b581a95566a7b7ed4f3289d962" category="sidebar">更換 SG5800 運算控制器</block>
+  <block id="065028a88cccddb2cf716c7d06ef7def" category="sidebar">更換 E4000 儲存控制器</block>
+  <block id="29f6a2ad41115c33ec213902c1953bd1" category="sidebar">更換風扇箱</block>
+  <block id="a965dc5fc50069bcac91c3a191a34640" category="sidebar">更換動力箱</block>
+  <block id="1e4da5a75b5ff3d2667633afba9bcaa9" category="sidebar">更換電池</block>
+  <block id="df44d7e45332b82ddd2a2cb6eb3f7a38" category="sidebar">更換DIMM</block>
+  <block id="1240c4ee6e043de725a68cadbd32d470" category="sidebar">更換磁碟機</block>
+  <block id="7bdc6bfc27ce2c490464721b4f39c739" category="sidebar">電源供應器</block>
+  <block id="f3d66eb150682e2a60af093e5d16adc7" category="sidebar">SG5800 儲存設備</block>
+  <block id="6cce22fcbeb08d45ad6d5da04f7403d3" category="sidebar">SG5800 網路資訊</block>
+  <block id="f8d63b4eb5f7dd79754fe681c6077d13" category="sidebar">升級 SANtricity （ SG6160 ）</block>
+  <block id="bb16bf046b2fd7560a2b14a7f9ad9e54" category="sidebar">升級磁碟機韌體（ SG6160 ）</block>
+  <block id="1dc91b81c3c8c4d17ed44a4e5d4339f6" category="sidebar">更換 SG6100-CN 控制器（ SG6160 ）</block>
+  <block id="e96b749f34b2756fc2a0b8eac5a9e783" category="sidebar">更換儲存控制器控制器（ SG6160 ）</block>
+  <block id="21b373ec754df40d02f0cfeb18c105fe" category="sidebar">將 SG6100-cn 重新放置在機架中</block>
+  <block id="4b1c1ad38150ad91104a761cfb5a1382" category="sidebar">更換儲存控制器機櫃或擴充機櫃中的電源供應器（ SG6160 ）</block>
+  <block id="982ae3aea4734aa7e1eded70b7f60794" category="sidebar">更換 SGF6112 或 SG6100-CN 中的風扇（ SG6160 ）</block>
+  <block id="febcfd461af3265bdb47b88615490ba4" category="sidebar">更換儲存控制器機櫃或擴充機櫃中的風扇（ SG6160 ）</block>
+  <block id="cfdea9725f37741c5c465e1f99806049" category="sidebar">更換 SGF6112 中的磁碟機</block>
+  <block id="b5a370808976d26b5863b321417b9447" category="sidebar">更換內部 NIC （ SGF6112 和 SG6160 ）</block>
+  <block id="6160bc78506e7a4a802a5a71f5b0c192" category="sidebar">更換外部 NIC （ SG6160 ）</block>
+  <block id="63cba1504c48a2c26d4d599e250b651c" category="sidebar">更換 DIMM （ SG6160 ）</block>
+  <block id="de4454f572601b9993fa9bb1fdd12775" category="sidebar">更換電池（ SG6160 ）</block>
+  <block id="01ae44aaa848b714b27c4385be44170e" category="sidebar">維護 SG5800 硬體</block>
+  <block id="a52004ceedaf01dddcc71fceeb3b5134" category="sidebar">SG5800 硬體維護</block>
+  <block id="66db453d1fbfd54c6cd6227309339cf6" category="sidebar">維護組態程序 - SG5800</block>
+  <block id="998790f9ab6f4b8c9d5c5f4b8fe9fb04" category="sidebar">使用 SANtricity System Manager 離線方法升級 SG5800 磁碟機韌體</block>
+  <block id="be6a822c7c939a85f260e4c1b126877e" category="sidebar">硬體程序 - SG5800</block>
+  <block id="3a7e137bff919e7eb144afcb96534cd0" category="sidebar">更換 SG5800 控制器</block>
+  <block id="7e7251144a00e421936f34a8a2fccbc9" category="sidebar">更換 E4000 控制器</block>
+  <block id="d52b6b7bb1340659104ecf27f81d8465" category="sidebar">更換風扇（ SG5860 ）</block>
+  <block id="eabb04d32e9b0a5c85136275fc80f072" category="sidebar">更換電源供應器（ SG5812 ）</block>
+  <block id="bcf678475c6dda9b5ef513680dff3052" category="sidebar">更換動力箱（ SG5860 ）</block>
+  <block id="49274a22f777d8ee156d9a597e66731d" category="sidebar">總覽與需求</block>
+  <block id="df4fcbfb70ff24d37ca16e6fcbd9536e" category="sidebar">安裝 12 個磁碟機櫃（ SGF6112 ）</block>
+  <block id="f97b7a3e415eea7b9a452de77cc3405b" category="sidebar">設定 SANtricity 系統管理員（ SG5700 、 SG5800 、 SG6000 和 SG6100 ）</block>
+  <block id="1093da8a6d23bc50f1ac46e7305c04f9" category="sidebar">疑難排解安裝（ SG5800 或 SG6100 ）</block>
+  <block id="31cb4cd18f0b157246f637e618b45dc6" category="sidebar">使用 SANtricity 系統管理員（ SG6160 ）升級磁碟機韌體</block>
+  <block id="0f6f36dc2bf579a4fe0bcd94f0aae0d4" category="sidebar">使用 SANtricity System Manager 線上方法升級 SG6100 磁碟機韌體</block>
+  <block id="516eaa38d25580e59ed23d9eccdba702" category="sidebar">使用 SANtricity System Manager 離線方法升級 SG6100 磁碟機韌體</block>
+  <block id="b0672f12d96d0f38d95e03cbf80aa7bd" category="sidebar">SGF6112 或 SG6100-CN （ SG6160 ）</block>
+  <block id="2db9b7ed7075356c49f0fe44fb9558dd" category="sidebar">儲存控制器機櫃或擴充機櫃（ SG6160 ）</block>
+  <block id="c0c97c5cc95065f4fb2ce8f089b8b227" category="sidebar">SG6100-CN （ SG6160 ）</block>
+  <block id="febf161387f73ddb0423c5da500716cf" category="sidebar">內部 NIC （ SGF6112 和 SG6160 ）</block>
+  <block id="bfb27aa707c73a44d7c9a84b4f5892dc" category="sidebar">外部 NIC （ SG6160 ）</block>
+  <block id="0c5b49805cedde0be71bd8e1248caea5" category="sidebar">SG6100-CN 控制器（ SG6160 ）</block>
+  <block id="109cfb866393048721520c64b6a72dcd" category="sidebar">E4000 控制器（ SG6160 ）</block>
+  <block id="1b137b50e38b53f7a19b8ae2f6114d7d" category="sidebar">重新放置在機架中</block>
 </blocks>

@@ -668,6 +668,95 @@ EP
 
 
 --
+.SG5800
+--
+應用裝置控制器包含可協助您判斷應用裝置控制器狀態的指示燈：
+
+* <<status_indicators_SG5800_controller,SG5800 控制器上的狀態指示燈>>
+* <<general_boot_codes_sg5800,一般開機代碼>>
+* <<boot_codes_SG5800_controller,SG5800 控制器開機代碼>>
+* <<error_codes_SG5800_controller,SG5800 控制器錯誤代碼>>
+
+
+請使用此資訊來提供協助 link:troubleshooting-hardware-installation.html["疑難排解 SG5800 硬體安裝"]。
+
+[[status_indicators_SG5800_controller]]
+SG5800 控制器上的狀態指示燈::
++
+--
+StorageGRID 應用裝置安裝程式啟動後、您應該定期檢閱 SG5800 控制器上的狀態指示燈。
+
+下圖顯示 SG5800 控制器上的狀態指示燈。
+
+image::../media/sg5800_leds.png[SG5800 控制器上的狀態指示燈]
+
+[cols="1a,2a,2a"]
+|===
+| 標註 | 顯示 | 說明 
+
+
+ a| 
+1.
+ a| 
+注意LED
+ a| 
+黃色：控制器故障、需要操作員注意、或找不到安裝指令碼。
+
+不亮：控制器正常運作。
+
+
+
+ a| 
+2.
+ a| 
+擴充連接埠注意LED
+ a| 
+黃色：由於應用裝置不使用擴充連接埠、因此這些LED會一直呈黃色（未建立連結）。
+
+
+
+ a| 
+3.
+ a| 
+主機連接埠連結狀態LED
+ a| 
+綠色：連結已啟動。
+
+不亮：連結中斷。
+
+
+
+ a| 
+4.
+ a| 
+乙太網路連結狀態LED
+ a| 
+綠色：建立連結。
+
+不亮：未建立連結。
+
+
+
+ a| 
+5.
+ a| 
+乙太網路活動LED
+ a| 
+綠色：管理連接埠與所連接裝置（例如乙太網路交換器）之間的連結已開啟。
+
+不亮：控制器與連線裝置之間沒有連結。
+
+呈綠色持續亮起：有乙太網路活動。
+
+|===
+--
+
+
+.相關資訊
+* https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]
+
+
+--
 .SG6000
 --
 SG6000 應用裝置控制器包含可協助您判斷應用裝置控制器狀態的指示燈：
@@ -809,7 +898,7 @@ image::../media/seven_segment_display_codes_for_e2800.gif[E2800的七區段顯�
 產品指示燈和按鈕::
 +
 --
-下圖顯示 SGF6112 應用裝置上的指示燈和按鈕。
+下圖顯示 SG6100 應用裝置上的指示燈和按鈕。
 
 image::../media/sgf6112_front_indicators.png[正面指示燈 - SGF6112]
 
@@ -871,7 +960,7 @@ image::../media/sgf6112_front_indicators.png[正面指示燈 - SGF6112]
  a| 
 PFR
  a| 
-SGF6112 產品並未使用此燈號、且燈號會持續熄滅。
+SG6100 產品不會使用此燈號、而且燈號會持續熄滅。
 
 |===
 --
@@ -898,7 +987,7 @@ SGF6112 產品並未使用此燈號、且燈號會持續熄滅。
 SSD指示燈::
 +
 --
-下圖顯示 SGF6112 應用裝置上的 SSD 指示燈。
+下圖顯示 SGF6112 或 SG6160 應用裝置上的 SSD 指示燈。
 
 image::../media/ssd_indicators.png[SSD指示燈]
 
@@ -917,7 +1006,7 @@ image::../media/ssd_indicators.png[SSD指示燈]
 * 不亮：插槽已空
 
 
-* 附註： * 如果新的正常運作 SSD 插入正在運作的 SGF6112 StorageGRID 節點、 SSD 上的 LED 應會開始閃爍、但一旦系統判斷磁碟機有足夠容量且正常運作、就會停止閃爍。
+* 附註： * 如果新的正常運作 SSD 插入正在運作的 SGF6112 或 SG6160 StorageGRID 節點、 SSD 上的 LED 應會開始閃爍、但一旦系統判斷磁碟機有足夠容量且正常運作、就會停止閃爍。
 
 
 
@@ -930,6 +1019,10 @@ image::../media/ssd_indicators.png[SSD指示燈]
 
 |===
 --
+
+
+.相關資訊
+* https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]
 
 
 --

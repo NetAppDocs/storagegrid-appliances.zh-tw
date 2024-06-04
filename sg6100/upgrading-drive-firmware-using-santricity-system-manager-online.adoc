@@ -1,0 +1,136 @@
+---
+permalink: sg6100/upgrading-drive-firmware-using-santricity-system-manager-online.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, storage node, storage appliance, upgrade, upgrading, firmware, drive, disk, SANtricity System Manager, SANtricity 
+summary: 您可以升級磁碟機韌體、以確保擁有所有最新的功能和錯誤修復。 
+---
+= 使用 SANtricity System Manager 線上方法（ SG6160 ）升級 SG6100 磁碟機韌體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用 SANtricity 系統管理員線上方法來升級應用裝置磁碟機上的韌體、以確保您擁有所有最新功能和錯誤修正。
+
+
+NOTE: 此程序 * 不 * 適用於 SG6100-CN 中的 NVMe SSD 、此類 SSD 在 StorageGRID 軟體升級期間更新。只有 E4000 中的磁碟機才能使用此程序進行更新。
+
+.開始之前
+* 儲存應用裝置的狀態為「最佳」。
+* 所有磁碟機均處於最佳狀態。
+
+
+
+CAUTION: 請勿一次在多個 StorageGRID 應用裝置上升級磁碟機韌體。這樣做可能會導致資料無法使用、視您的部署模式和 ILM 原則而定。
+
+.關於這項工作
+當設備執行 I/O 時、每次升級一個磁碟機此方法不需要您將產品置於維護模式。不過、系統效能可能會受到影響、升級可能比離線方法花費數小時的時間。
+
+[NOTE]
+====
+屬於沒有備援磁碟區的磁碟機必須使用更新 link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["離線方法"]。離線方法應用於目前降級的任何集區或磁碟區群組。
+
+====
+.步驟
+. 使用SANtricity 下列其中一種方法來存取《系統管理程式》：
++
+** 使用StorageGRID 《Suse安裝程式》、然後選取*進階*>* SANtricity 《系統管理員*》
+** 使用 Grid Manager 並選擇 * 節點 * > *_Storage Node_* > * SANtricity System Manager*
+** 瀏覽至儲存控制器 IP 以使用 SANtricity 系統管理員：
++
+`*https://_Storage_Controller_IP_*`
+
+
+
+. 如SANtricity 有需要、請輸入「系統管理員」管理員使用者名稱和密碼。
+. 驗證儲存應用裝置中目前安裝的磁碟機韌體版本：
++
+.. 從「系統管理程式」選取*支援*>*升級中心*。SANtricity
+.. 在「磁碟機韌體升級」下、選取*「開始升級*」。
++
+「升級磁碟機韌體」頁面會顯示目前安裝的磁碟機韌體檔案。
+
+.. 請注意「目前磁碟機韌體」欄中的目前磁碟機韌體版本和磁碟機識別碼。
++
+image::../media/storagegrid_update_drive_firmware.png[升級磁碟機韌體]
+
++
+在此範例中：
+
++
+*** 磁碟機韌體版本為* MS02*。
+*** 磁碟機識別碼為* KPM51VUG800G*。
+
+
+.. 選取「Associated Drives（相關磁碟機）」欄中的「View drives*（檢視磁碟機*）」、以顯示這些磁碟機安裝在儲存設備中的位置。
+.. 關閉升級磁碟機韌體視窗。
+
+
+. 下載並準備可用的磁碟機韌體升級：
++
+.. 在「磁碟機韌體升級」下、選取「* NetApp支援*」。
+.. 在 NetApp 支援網站 上、選取 * 下載 * 索引標籤、然後選取 * E 系列磁碟機韌體 * 。
++
+隨即顯示E系列磁碟韌體頁面。
+
+.. 搜尋儲存設備中安裝的每個*磁碟機識別碼*、並確認每個磁碟機識別碼都有最新的韌體版本。
++
+*** 如果韌體版本不是連結、則此磁碟機識別碼具有最新的韌體版本。
+*** 如果列出一個磁碟機識別碼的一個或多個磁碟機零件編號、則這些磁碟機可以進行韌體升級。您可以選取任何連結來下載韌體檔案。
++
+image::../media/storagegrid_drive_firmware_download.png[E系列磁碟韌體頁面]
+
+
+
+.. 如果列出較新的韌體版本、請選取韌體版本中的連結（下載）欄下載 `.zip` 包含韌體檔案的歸檔。
+.. 從Support網站擷取（解壓縮）您下載的磁碟機韌體歸檔檔案。
+
+
+. 安裝磁碟機韌體升級：
++
+.. 在「驅動器韌體升級」下的「系統管理程式」中、選取「*開始升級*」SANtricity 。
+.. 選取*瀏覽*、然後選取您從Support網站下載的新磁碟機韌體檔案。
++
+磁碟機韌體檔案的檔案名稱與類似 `D_HUC101212CSS600_30602291_MS01_2800_0002.dlp`。
+
++
+您最多可以選取四個磁碟機韌體檔案、一次一個。如果多個磁碟機韌體檔案與同一個磁碟機相容、您會收到檔案衝突錯誤。決定要用於升級的磁碟機韌體檔案、然後移除另一個。
+
+.. 選擇*下一步*。
++
+*選取磁碟機*會列出您可以使用所選韌體檔案進行升級的磁碟機。
+
++
+僅顯示相容的磁碟機。
+
++
+所選磁碟機的韌體會出現在 * 建議的韌體 * 欄中。如果您必須變更此韌體、請選取*上一步*。
+
+.. 選擇 * 線上升級所有磁碟機 * —在儲存陣列處理 I/O 時、升級可支援韌體下載的磁碟機選擇此升級方法時、您不需要停止使用這些磁碟機的相關磁碟區 I/O 。
++
+
+NOTE: 線上升級所需時間可能比離線升級長幾小時。
+
+.. 在表格的第一欄中、選取您要升級的磁碟機。
++
+最佳實務做法是將同一機型的所有磁碟機升級至相同的韌體版本。
+
+.. 選取 * 開始 * 並確認您要執行升級。
++
+如果您需要停止升級、請選取*停止*。目前正在進行的任何韌體下載均已完成。任何尚未開始的韌體下載都會取消。
+
++
+
+CAUTION: 停止磁碟機韌體升級可能會導致資料遺失或磁碟機無法使用。
+
+.. （選用）若要查看已升級項目的清單、請選取*儲存記錄*。
++
+記錄檔會以名稱儲存在瀏覽器的下載資料夾中 `latest-upgrade-log-timestamp.txt`。
+
++
+link:troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html["如有必要、請疑難排解驅動程式韌體升級錯誤"]。
+
+
+
+

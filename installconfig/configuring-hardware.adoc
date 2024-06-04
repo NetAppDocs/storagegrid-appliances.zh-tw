@@ -34,7 +34,7 @@ summary: 為應用裝置加電後、您可以設定 StorageGRID 將使用的網�
 
 === 系統管理程式SANtricity
 
-對於 SG6000 和 SG5700 、您可以設定 SANtricity 系統管理員。SANtricity 軟體用於監控這些應用裝置的硬體。
+對於 SG6160 、 SG6000 、 SG5800 和 SG5700 、您可以設定 SANtricity 系統管理員。SANtricity 軟體用於監控這些應用裝置的硬體。
 
 
 
@@ -56,9 +56,9 @@ summary: 為應用裝置加電後、您可以設定 StorageGRID 將使用的網�
 
 * 儲存設備
 +
-** 設定 SANtricity 系統管理員（ SG5700 和 SG6000 ）您將用於監控硬體的軟體
+** 設定 SANtricity 系統管理員（ SG5700 、 SG5800 、 SG6000 和 SG6100 ）您將用於監控硬體的軟體
 ** 變更 RAID 模式
-** 存取 SG6000-CN 控制器的 BMC 介面
+** 存取 SG6000-CN 或 SG6100-CN 控制器的 BMC 介面
 
 
 * 服務應用裝置

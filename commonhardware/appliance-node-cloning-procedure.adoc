@@ -15,7 +15,7 @@ summary: 複製程序可能需要數天的時間、才能在來源節點（正�
 
 .開始之前
 * 您已將相容的目標應用裝置安裝在機櫃或機架中、連接所有纜線並接上電力。
-* 您已確認替換應用裝置上的 StorageGRID 應用裝置安裝程式版本與 StorageGRID 系統的軟體版本相符、如有必要、請升級及降級 StorageGRID 應用裝置安裝程式韌體。
+* 您已確認替換應用裝置上的 StorageGRID 應用裝置安裝程式版本與 StorageGRID 系統的軟體版本相符、如有必要、可升級或降級 StorageGRID 應用裝置安裝程式韌體。
 * 您已設定目標應用裝置、包括設定StorageGRID 支援鏈路、SANtricity 支援系統管理程式（僅限儲存應用裝置）和BMC介面。
 +
 ** 設定StorageGRID 靜態連線時、請使用暫用IP位址。
