@@ -4921,7 +4921,6 @@
   <block id="f3a0ab2289e5d894b80255c441fc9f46" category="list-text">每個儲存控制器上有兩個 10/25GbE 連接埠</block>
   <block id="2e869104086dd4cd2c4b722cc80e77b6" category="paragraph">將每個儲存控制器連接至 SG6100-CN 控制器。</block>
   <block id="776053d9d5cca53346c2eb33c73396bf" category="paragraph">5 （僅限 SG6160 ）</block>
-  <block id="d14bfbc5b95f245a7cd1ac38c7f3ce2d" category="list-text">使用一條 100-GbE GSFP28 至 4x25-GbE SFP28 纜線、將每個儲存控制器上的兩個互連連接埠連接到 SG6100-CN 控制器上的 100GbE 連接埠。</block>
   <block id="fcb7aea9a14248650fc2b4195b723923" category="cell">連結速度（GbE）</block>
   <block id="20d4ad7302d59cc00a8fda9a9f549883" category="list-text">只有在選擇自動協商作為連結速度時、網格和用戶端網路連接埠才能以不同的速度執行、而固定則被選取為連接埠連結模式。否則、所有四個連接埠都會以相同的速度執行。</block>
   <block id="76caeddfbf7a30108ac0c230c0790b19" category="paragraph">對於 SG6160 、 SG6000 、 SG5800 和 SG5700 、您可以設定 SANtricity 系統管理員。SANtricity 軟體用於監控這些應用裝置的硬體。</block>
@@ -5506,4 +5505,5 @@
   <block id="1b137b50e38b53f7a19b8ae2f6114d7d" category="sidebar">重新放置在機架中</block>
   <block id="d1fc100be07ba82ec7383450a44baff8" category="list-text">如果 SG6100-CN 控制器運作良好、可進行控制關機、 <block ref="0a3cf65437375f485bddbc72eccdb305" category="inline-link-macro-rx"></block>。</block>
   <block id="d0f113fd26d2007a359ab568d6af75eb" category="paragraph">應用裝置控制器包含可協助您判斷應用裝置控制器狀態的指示燈。請使用此資訊來提供協助 <block ref="e0e94668a35b0e62f1c3c83bc6a3960d" category="inline-link-macro-rx"></block>。</block>
+  <block id="a0fdf2c022cdb2b6d6cca277318ea2b2" category="list-text">使用一條 100-GbE QSFP28 至 4x25-GbE SFP28 纜線、將每個儲存控制器上的兩個互連連接埠連接到 SG6100-CN 控制器上的 100GbE 連接埠。</block>
 </blocks>
