@@ -67,6 +67,9 @@ entries:
         url: "/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
     - title: SG6100
       entries:
+      - title: 總覽
+        pdf-filename: 將 SG6100 安裝到機櫃或機架中
+        url: "/installconfig/installing-hardware-sg6100.html"
       - title: 安裝 60 個磁碟機櫃（ SG6160 ）
         url: "/installconfig/sg6160-installing-60-drive-shelves-into-cabinet-or-rack.html"
       - title: 安裝 12 個磁碟機櫃（ SGF6112 ）

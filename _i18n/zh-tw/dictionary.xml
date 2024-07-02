@@ -4870,12 +4870,7 @@
   <block id="03dcfd6af80c1707e647b3cee9c7ee65" category="list-text">驗證要更換的磁碟機的左側 LED 是否閃爍琥珀色。如果 Grid Manager 或 BMC 使用者介面中回報磁碟機問題、 HDD02 或 HDD2 會參考上插槽中的磁碟機、而 HDD03 或 HDD3 則會參考下插槽中的磁碟機。</block>
   <block id="445e825246156afbf483be98791c154f" category="inline-link-macro">SG5800</block>
   <block id="9cef5aeb63436914780167a988745b83" category="list-text"><block ref="9cef5aeb63436914780167a988745b83" category="inline-link-macro-rx"></block></block>
-  <block id="4a0e08b64a0e99d9fc5718e02a3dbd6e" category="list-text"><block ref="4a0e08b64a0e99d9fc5718e02a3dbd6e" category="inline-link-macro-rx"></block></block>
-  <block id="21a58e1a4af032d001a27795db0d1991" category="list-text">SG6160 ：</block>
   <block id="4826002acc5c2cf0bc57ac17b7533776" category="inline-link-macro">SG6100-CN 控制器</block>
-  <block id="d94471324a10ec4feaf9b5aba8950585" category="list-text"><block ref="d94471324a10ec4feaf9b5aba8950585" category="inline-link-macro-rx"></block></block>
-  <block id="f71cc57d77d2d28a9aca8f82d8285cec" category="inline-link-macro">60 個磁碟機櫃</block>
-  <block id="0f28c7a7bebdc4296b957c50f5109e27" category="list-text"><block ref="0f28c7a7bebdc4296b957c50f5109e27" category="inline-link-macro-rx"></block></block>
   <block id="35a1de9a120ee7b7ee17d87136161686" category="list-text"><block ref="0c770b188189664197ca2af9c5ce06a6" category="inline-link-macro-rx"></block> （ SG6160 、 SG5700 、 SG5800 和 SG6000 ）</block>
   <block id="a90ef8c0f438b2f18dae8cadf3f093ea" category="inline-link-macro">變更 RAID 模式（ SG6160 、 SG6000 、 SG5860 和 SG5760 ）</block>
   <block id="7cec8a0453cf8f9f184906051a721920" category="list-text"><block ref="7cec8a0453cf8f9f184906051a721920" category="inline-link-macro-rx"></block></block>
@@ -5506,4 +5501,15 @@
   <block id="d1fc100be07ba82ec7383450a44baff8" category="list-text">如果 SG6100-CN 控制器運作良好、可進行控制關機、 <block ref="0a3cf65437375f485bddbc72eccdb305" category="inline-link-macro-rx"></block>。</block>
   <block id="d0f113fd26d2007a359ab568d6af75eb" category="paragraph">應用裝置控制器包含可協助您判斷應用裝置控制器狀態的指示燈。請使用此資訊來提供協助 <block ref="e0e94668a35b0e62f1c3c83bc6a3960d" category="inline-link-macro-rx"></block>。</block>
   <block id="a0fdf2c022cdb2b6d6cca277318ea2b2" category="list-text">使用一條 100-GbE QSFP28 至 4x25-GbE SFP28 纜線、將每個儲存控制器上的兩個互連連接埠連接到 SG6100-CN 控制器上的 100GbE 連接埠。</block>
+  <block id="9e7dc5e50079b6110ec51cbca50d44fe" category="list-text"><block ref="9e7dc5e50079b6110ec51cbca50d44fe" category="inline-link-macro-rx"></block></block>
+  <block id="c4b1be700972bb7155f754b021cbfdf3" category="summary">對於 SG6160 和 SGF6112 、您可以在機櫃或機架中安裝滑軌、然後將控制器機櫃、任何擴充機櫃和運算控制器滑到滑軌上。</block>
+  <block id="2478d8f676c2270fca6568e32b435715" category="doc">安裝至機櫃或機架（ SG6100 ）</block>
+  <block id="3d43cb8b8779479b679e409a58a37b13" category="paragraph"><block ref="3d43cb8b8779479b679e409a58a37b13" category="inline-link-macro-rx"></block></block>
+  <block id="2dad6a8905ebee341d822de7647baebe" category="paragraph">SG6112</block>
+  <block id="75614aa894d0ca5e9fa6a08a4764411b" category="paragraph">12 個磁碟機的應用裝置機櫃</block>
+  <block id="839819d16f5099c0e2c98d685b4d857b" category="inline-link-macro">安裝 12 個磁碟機櫃</block>
+  <block id="d330ed5c95a514f37a8ada4a4e5c5e06" category="paragraph"><block ref="d330ed5c95a514f37a8ada4a4e5c5e06" category="inline-link-macro-rx"></block></block>
+  <block id="7c964abbff6a7b0bbf38565776b7d0b7" category="inline-link-macro">安裝 SG6100-CN 控制器</block>
+  <block id="0d86c1e5e36df2d42690db9bf7459e93" category="paragraph"><block ref="0d86c1e5e36df2d42690db9bf7459e93" category="inline-link-macro-rx"></block></block>
+  <block id="c587a2e85b76aabe41b2ff8e991a2c31" category="sidebar">將 SG6100 安裝到機櫃或機架中</block>
 </blocks>

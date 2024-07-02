@@ -10,7 +10,7 @@ indexpage:
     - title: SG6000
       url: "../installconfig/installing-hardware-sg6000.html"
     - title: SG6100
-      url: "../installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html"
+      url: "../installconfig/installing-hardware-sg6100.html"
   - title: 在機櫃或機架中安裝服務應用裝置
     links:
     - title: SG100 與 SG1000

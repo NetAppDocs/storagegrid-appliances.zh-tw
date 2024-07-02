@@ -1,0 +1,46 @@
+---
+permalink: installconfig/installing-hardware-sg6100.html 
+sidebar: sidebar 
+keywords: install, sg6100, sg6112, expansion shelf, cabinet, rack, drives 
+summary: 對於 SG6160 和 SGF6112 、您可以在機櫃或機架中安裝滑軌、然後將控制器機櫃、任何擴充機櫃和運算控制器滑到滑軌上。 
+---
+= 安裝至機櫃或機架（ SG6100 ）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於 SG6160 和 SGF6112 、您可以在機櫃或機架中安裝滑軌、然後將控制器機櫃、任何擴充機櫃和運算控制器滑到滑軌上。
+
+[cols="1a,2a,2a"]
+|===
+| 模型 | 安裝 | 以取得資訊 
+
+
+ a| 
+SG6160
+ a| 
+60 個磁碟機控制器機櫃和任何 60 個磁碟機擴充機櫃
+ a| 
+link:sg6160-installing-60-drive-shelves-into-cabinet-or-rack.html["安裝 60 個磁碟機櫃"]
+
+
+
+ a| 
+SG6112
+ a| 
+12 個磁碟機的應用裝置機櫃
+ a| 
+link:installing-appliance-in-cabinet-or-rack-sgf6112.html["安裝 12 個磁碟機櫃"]
+
+
+
+ a| 
+SG6160
+ a| 
+SG6100-CN 運算控制器
+ a| 
+link:sg6100-cn-installing-into-cabinet-or-rack.html["安裝 SG6100-CN 控制器"]
+
+|===
