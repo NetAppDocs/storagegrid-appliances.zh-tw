@@ -4134,7 +4134,6 @@
   <block id="d751b295bd431b789da8da77d91a8a1d" category="doc">維護 SG1100 和 SG110 服務應用裝置硬體</block>
   <block id="70bca0055a2d38054af0059da4e459ed" category="inline-link-macro">SG110 和 SG1100</block>
   <block id="9310c6e3b94e3baa60a2b31f7b80cc71" category="list-text"><block ref="9310c6e3b94e3baa60a2b31f7b80cc71" category="inline-link-macro-rx"></block></block>
-  <block id="e3654db4a646d23dc2d3d64204192d91" category="list-text"><block ref="e010cba544d581fc50562d9eaf281bf3" category="inline-link-macro-rx"></block> （ SG6000 、 SG6100 和服務應用裝置）</block>
   <block id="aadf1dcd60cf75ec60913a8a677fcd35" category="list-text">對於 SG110 、如果您打算使用光纖纜線連接埠、則需要一至四個 SFP+ 或 SFP28 收發器。</block>
   <block id="11a92f98e01c18d06291aad0e993ba9b" category="list-text">對於 SG1100 、如果您打算將光纖纜線用於連接埠、請使用一至四個 QSFP+ 或 QSFP28 收發器。</block>
   <block id="7be200e96b3561254643e0c9ae88d200" category="paragraph">SG110 連接埠連線：</block>
@@ -4577,7 +4576,6 @@
   <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">本程序適用於資料中心管理員和DCM2磁碟機櫃。</block>
   <block id="e813fd422366d0dc5a37186d7430e09a" category="list-text">檢閱磁碟機處理需求。</block>
   <block id="f1563c8d87cc2966328e9cb0166c5704" category="list-text">由NetApp為您的控制器櫃或磁碟機櫃提供支援的更換磁碟機。</block>
-  <block id="12cb93ac5470b7b9ed9a176553005bef" category="list-text">管理站、具備瀏覽器、可存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）</block>
   <block id="d9de1ae5a4126bb7bbc28768a5dd593d" category="section-title">步驟1：準備更換磁碟機</block>
   <block id="38ee00be25940e25c51d24be5c9b1598" category="paragraph">請檢查SANtricity 「恢復大師」（Recovery Guru）以準備更換磁碟機、並完成所有必要步驟。然後、您可以找到故障元件。</block>
   <block id="fd781fa19cba325b3cc9ca7a79f8d928" category="list-text">如果在還原系統管理程式中的Recovery Guru SANtricity 已通知您_即將發生磁碟機故障_、但磁碟機尚未故障、請遵循Recovery Guru中的指示、將磁碟機故障。</block>
@@ -5180,8 +5178,6 @@
   <block id="f887919b93b68994cd6d9e7819b5afeb" category="list-text">對於 SG5800 、 SG6000 或 SG6100 ，請從 *Link spee* 下拉列表中選擇 *Auto* 。</block>
   <block id="dcba35698266a429ba97a9df72d33ecb" category="summary">SG5800 StorageGRID 應用裝置是整合式儲存與運算平台、可在 StorageGRID 網格中作為儲存節點運作。此應用裝置可用於結合應用裝置儲存節點和虛擬（軟體型）儲存節點的混合式網格環境。</block>
   <block id="64b3db60a66ac8bd04ca4a159cac1af8" category="doc">SG5800 應用裝置：總覽</block>
-  <block id="40b657fa8f8023ed6227dc3d31464c39" category="paragraph">SG5800 StorageGRID 應用裝置是整合式儲存與運算平台、可在 StorageGRID 網格中作為儲存節點運作。</block>
-  <block id="9f075e4e966103728835fe79072cf374" category="paragraph">StorageGRID SG5800 系列應用裝置提供下列功能：</block>
   <block id="bc0affc4503a133a51781ca78ac8bdaa" category="paragraph">SG5800 應用裝置有兩種機型： SG5812 和 SG5860 。</block>
   <block id="1d59ebac544f15dc4241a8a4af7a618d" category="section-title">SG5800 元件</block>
   <block id="5581a20a3b85686c910dfa4dab223387" category="paragraph">SG5800 機型包括下列元件：</block>
@@ -5217,7 +5213,6 @@
 ** 連線至管理網路、以啟用對 SANtricity 系統管理員的直接 TCP/IP 存取
 ** 保留無線以儲存交換器連接埠和 IP 位址。  使用 Grid Manager 或 Storage Grid Appliance 安裝程式存取 SANtricity 系統管理員。</block>
   <block id="fefcafe2d4912066a784d5c93bc050e1" category="paragraph">* 附註 * ：當您選擇不使用管理連接埠時、某些選擇性的 SANtricity 功能（例如 NTP 同步以取得準確的記錄時間戳記）將無法使用。</block>
-  <block id="57daf9148064308c448c842290992c39" category="paragraph">* 注意 * ：如果您不使用有線連線、則需要 StorageGRID 11.8 或更新版本、以及 SANtricity 11.8 或更新版本。</block>
   <block id="b155aed19819ab0c2d1e71fc3d32850b" category="paragraph">將 E4000 控制器連接至 SG5800 控制器。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支援網站</block>
   <block id="f5c45bcc73f02c7f2b1398ee78576a7a" category="list-text">前往<block ref="1850de052c61829b534b07ba1a2ca402" category="inline-link-rx"></block>。</block>
@@ -5427,9 +5422,6 @@
   <block id="b362454c1b783a548faa935e3a1610de" category="paragraph">如果您沒有其他維護程序可在產品中執行、請在產品移除後將產品送回機架、連接纜線並接上電源。</block>
   <block id="787d8857ce0db09ecbf6fe82bbf45a25" category="doc">開啟和關閉 SGF6112 應用裝置或 SG6100-CN 控制器識別 LED</block>
   <block id="77291750fe959fd9ce173862b4055564" category="doc">在資料中心找到 SGF6112 應用裝置或 SG6100-cn 控制器</block>
-  <block id="71070479646e1da5a663f4b00abb5235" category="paragraph"><block ref="106db197e8d447cef2c47289a65f4849" category="inline-link-macro-rx"></block> 如果您使用下列其中一種方法來尋找應用裝置：
- ** 按下產品前面板上的識別 LED 開關。
- ** 使用應用裝置 BMC 介面。</block>
   <block id="f40a968e022f47cf01d4d58ef9437f0c" category="summary">SGF6112 應用裝置和 SG6100-CN 控制器具有八個冷卻風扇。如果其中一個風扇故障、您必須儘快更換、以確保產品具有適當的冷卻效果。</block>
   <block id="35354d3f59ef76da6c3d8d0aafc491e7" category="doc">更換 SGF6112 或 SG6100-CN 中的風扇（ SG6160 ）</block>
   <block id="dff98198bff06709975037453d00df52" category="list-text">您有 <block ref="8a600a3d3695735e4213dc5c6fac3a3e" category="inline-link-macro-rx"></block> 您要在資料中心更換風扇的位置。</block>
@@ -5512,4 +5504,17 @@
   <block id="7c964abbff6a7b0bbf38565776b7d0b7" category="inline-link-macro">安裝 SG6100-CN 控制器</block>
   <block id="0d86c1e5e36df2d42690db9bf7459e93" category="paragraph"><block ref="0d86c1e5e36df2d42690db9bf7459e93" category="inline-link-macro-rx"></block></block>
   <block id="c587a2e85b76aabe41b2ff8e991a2c31" category="sidebar">將 SG6100 安裝到機櫃或機架中</block>
+  <block id="8a1c3c9cb6907d54c29c5857f2f86c34" category="paragraph">SG5800 系列 StorageGRID 應用裝置是整合式儲存與運算平台、可在 StorageGRID 網格中作為儲存節點運作。</block>
+  <block id="ce9252228bd4540f9b37b3a78a50b7d7" category="paragraph">StorageGRID SG5800 系列應用裝置提供下列功能：</block>
+  <block id="0c83dd3ac0dc38df69e11e248214a5fe" category="list-text">包括 E 系列 SANtricity 系統管理程式、用於硬體管理與監控。</block>
+  <block id="3127ae9dd7481eac7423d4d4aca523f1" category="paragraph">* 附註 * ：如果您不使用有線連線離開管理連接埠、則需要 StorageGRID 11.8 或更新版本、以及 SANtricity 11.8 或更新版本。</block>
+  <block id="e6f818c1056fce47a0d96a7d0f54d3da" category="list-text">兩個用於讀取快取的 NVMe SSD</block>
+  <block id="53b6162c6d4ba02de60c3ea016e48c8f" category="list-text"><block ref="e010cba544d581fc50562d9eaf281bf3" category="inline-link-macro-rx"></block> （ SG6100 、 SG6000 和服務應用裝置）</block>
+  <block id="752e943e864c331f809892c284e5fb33" category="list-text">將連結速度變更為 Auto （自動）（建議）、 10-GbE 或 25-GbE 。</block>
+  <block id="4918ef1e8a9f60c807f69545e97d3b6f" category="paragraph">屬於沒有備援磁碟區的磁碟機必須使用更新 <block ref="179e42b86c56e7fde01fd62621c30190" category="inline-link-macro-rx"></block>。</block>
+  <block id="8770dfe1902bd96b773d5b6fc8f4cf06" category="list-text">您必須將 SG5800 控制器放入 <block ref="66517df9b2a708b9947fc0143b4273f5" category="inline-link-macro-rx"></block>、以停止 E4000 控制器的所有 I/O 。</block>
+  <block id="94ac91ca1245e36b962d4e80494dde09" category="paragraph"><block ref="106db197e8d447cef2c47289a65f4849" category="inline-link-macro-rx"></block> 如果您使用下列其中一種方法來尋找應用裝置：</block>
+  <block id="32560f7f516484a70333e63586d49ee8" category="list-text">按下產品前面板上的識別 LED 開關。</block>
+  <block id="84f9f6b07fa3b7c2043dcb10969d9836" category="list-text">使用應用裝置 BMC 介面。</block>
+  <block id="c3767fd24594af27204c85f38e6485de" category="admonition">當應用裝置處於維護模式時、會停止儲存控制器的 I/O （輸入 / 輸出）活動、以確保破壞性儲存作業的安全。</block>
 </blocks>

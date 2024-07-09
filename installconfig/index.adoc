@@ -59,7 +59,7 @@ summary: 請遵循這些高階步驟來安裝和設定 StorageGRID 應用裝置�
 
 
 . link:accessing-and-configuring-santricity-system-manager.html["存取及設定 SANtricity 系統管理員"] （ SG6160 、 SG5700 、 SG5800 和 SG6000 ）
-. link:configuring-bmc-interface.html["設定 BMC 介面"] （ SG6000 、 SG6100 和服務應用裝置）
+. link:configuring-bmc-interface.html["設定 BMC 介面"] （ SG6100 、 SG6000 和服務應用裝置）
 . 執行選用的設定步驟
 +
 ** link:optional-enabling-node-encryption.html["啟用節點或磁碟機加密"]

@@ -11,13 +11,13 @@ summary: SG5800 StorageGRID 應用裝置是整合式儲存與運算平台、可�
 
 
 [role="lead"]
-SG5800 StorageGRID 應用裝置是整合式儲存與運算平台、可在 StorageGRID 網格中作為儲存節點運作。
+SG5800 系列 StorageGRID 應用裝置是整合式儲存與運算平台、可在 StorageGRID 網格中作為儲存節點運作。
 
 StorageGRID SG5800 系列應用裝置提供下列功能：
 
 * 整合StorageGRID 適用於整個過程的儲存與運算元素。
 * 包含StorageGRID 用來簡化儲存節點部署和組態的《不再》應用裝置安裝程式。
-* 包含E系列SANtricity 的《支援硬體管理與監控的系統管理程式》。
+* 包括 E 系列 SANtricity 系統管理程式、用於硬體管理與監控。
 * 支援最多四個10-GbE或25-GbE連線至StorageGRID 「支援網格網」和「用戶端網路」。
 * 支援全磁碟加密（ FDE ）磁碟機或 FIPS 磁碟機。當這些磁碟機搭配SANtricity 使用時、無法在未經授權的情況下存取資料。
 
@@ -274,7 +274,7 @@ image::../media/e4000_controller_with_callouts.png[E4000 控制器上的連接�
 
 * 附註 * ：當您選擇不使用管理連接埠時、某些選擇性的 SANtricity 功能（例如 NTP 同步以取得準確的記錄時間戳記）將無法使用。
 
-* 注意 * ：如果您不使用有線連線、則需要 StorageGRID 11.8 或更新版本、以及 SANtricity 11.8 或更新版本。
+* 附註 * ：如果您不使用有線連線離開管理連接埠、則需要 StorageGRID 11.8 或更新版本、以及 SANtricity 11.8 或更新版本。
 
 
 

@@ -26,9 +26,7 @@ CAUTION: 請勿一次在多個 StorageGRID 應用裝置上升級磁碟機韌體�
 
 [NOTE]
 ====
-屬於沒有備援磁碟區的磁碟機必須使用更新 link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["離線方法"]。離線方法應用於目前降級的任何集區或磁碟區群組。
-
-您必須使用 link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["離線方法"] 升級 SSD 磁碟機時。
+屬於沒有備援磁碟區的磁碟機必須使用更新 link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["離線方法"]。
 
 ====
 .步驟

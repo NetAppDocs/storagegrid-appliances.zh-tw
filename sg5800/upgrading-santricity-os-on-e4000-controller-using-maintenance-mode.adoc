@@ -19,8 +19,8 @@ summary: 若儲存控制器目前使用SANtricity 的是08.42.20.00之前的版�
 NOTE: 若儲存控制器目前使用的 SANtricity OS 版本低於 08.42.20.00 （ 11.42 ）、建議使用 link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["使用 Grid Manager 來套用升級"]。不過、如果您偏好使用維護模式程序、或是技術支援人員指示您使用維護模式程序。
 
 .開始之前
-* 您已諮詢 https://imt.netapp.com/matrix/#welcome["NetApp互通性對照表工具IMT （不含）"^] 確認您用於升級的 SANtricity 作業系統版本與您的應用裝置相容。
-* 您必須將 SG5800 控制器放入 link:../commonhardware/placing-appliance-into-maintenance-mode.html["維護模式"]，中斷與 E4000 控制器的連線。
+* 如果您沒有取得想要從升級至的 SANtricity OS 版本 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]、您已諮詢過 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^] 或 https://imt.netapp.com/matrix/#welcome["NetApp互通性對照表工具IMT （不含）"^] 確認您用於升級的 SANtricity 作業系統版本與您的應用裝置相容。
+* 您必須將 SG5800 控制器放入 link:../commonhardware/placing-appliance-into-maintenance-mode.html["維護模式"]、以停止 E4000 控制器的所有 I/O 。
 +
 
 NOTE: 在極少數情況StorageGRID 下、將某個應用程式置於維護模式可能會使應用裝置無法遠端存取。

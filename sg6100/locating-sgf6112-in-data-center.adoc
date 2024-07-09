@@ -39,5 +39,7 @@ image::../media/sgf6112_front_panel_service_led_on.png[正面識別LED -亮起]
 
 .完成後
 link:turning-sgf6112-identify-led-on-and-off.html["關閉藍色識別 LED"] 如果您使用下列其中一種方法來尋找應用裝置：
- ** 按下產品前面板上的識別 LED 開關。
- ** 使用應用裝置 BMC 介面。
+
+* 按下產品前面板上的識別 LED 開關。
+* 使用應用裝置 BMC 介面。
+
