@@ -1,0 +1,63 @@
+---
+permalink: sg100-1000/reinstalling-sg100-and-sg1000-controller-cover.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, cover, install, installing, installation, reinstall, reinstalling, reinstallation, remove, removing, removal 
+summary: 取下產品外蓋以檢修內部組件以進行維護、完成後請裝回外蓋。 
+---
+= 更換 SG100 或 SG1000 設備護蓋
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+取下產品外蓋以檢修內部組件以進行維護、完成後請裝回外蓋。
+
+
+
+== 取下 SG100 或 SG1000 設備護蓋
+
+取下產品外蓋、即可存取內部元件進行維護。
+
+.開始之前
+從機櫃或機架中取出產品、以檢修頂蓋。
+
+link:reinstalling-sg100-and-sg1000-into-cabinet-or-rack.html["從機櫃或機架上卸下 SG100 或 SG1000 設備"]
+
+.步驟
+. 請確定產品外蓋栓鎖未鎖定。如有必要、請將藍色的塑膠栓鎖鎖朝解除鎖定方向轉動四分之一圈、如鎖銷鎖上所示。
+. 將閂鎖朝產品機箱的後端向上或向後轉動、直到卡入定位為止、然後小心地將機箱蓋從機箱中提出、並將其放在一邊。
++
+image::../media/sg6060_cover_latch_open.jpg[主機蓋閂鎖開啟]
+
++
+
+CAUTION: 將 ESD 腕帶的束帶端繞在手腕上、並將扣具端點固定在金屬地面上、以防止在產品內部工作時發生靜電釋放。
+
+
+
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+
+
+
+== 重新安裝 SG100 或 SG1000 設備護蓋
+
+完成內部硬體維護後、請重新安裝產品護蓋。
+
+.開始之前
+您已完成產品內部的所有維護程序。
+
+.步驟
+. 打開機箱蓋栓鎖時、將機箱上方的機箱蓋固定、並將機箱頂蓋栓鎖上的孔對準機箱中的插銷。將機箱蓋對齊後、將其放低到機箱上。
++
+image::../media/sg6060_cover_latch_alignment_pin.jpg[護蓋栓鎖定位銷]
+
+. 向前或向下轉動機箱蓋栓鎖、直到其停止、並將機箱蓋完全裝入機箱。確認機箱蓋前緣沒有任何間隙。
++
+如果機箱蓋未完全就位、您可能無法將產品滑入機架。
+
+. 選用：將藍色的塑膠鎖栓鎖朝鎖定方向轉動四分之一圈、如鎖銷鎖上所示、即可將其鎖定。
+
+
+.完成後
+link:reinstalling-sg100-and-sg1000-into-cabinet-or-rack.html["將產品重新安裝在機櫃或機架中。"]

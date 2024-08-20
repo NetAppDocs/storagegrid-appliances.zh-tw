@@ -20,11 +20,19 @@ entries:
 - title: 硬體程序
   pdf-filename: 硬體程序： SG100 和 SG1000
   entries:
+  - title: 確認要更換的元件
+    url: "/sg100-1000/verify-component-to-replace-sg100-and-sg1000.html"
+  - title: 裝回機箱蓋
+    url: "/sg100-1000/reinstalling-sg100-and-sg1000-controller-cover.html"
   - title: 更換一個或兩個電源供應器
     url: "/sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
   - title: 更換風扇
     url: "/sg100-1000/replacing-fan-in-services-appliance.html"
   - title: 更換磁碟機
     url: "/sg100-1000/replacing-drive-in-services-appliance.html"
+  - title: 更換 CMOS 電池
+    url: "/sg100-1000/replace-cmos-in-sg100-and-sg1000.html"
   - title: 更換產品
     url: "/sg100-1000/replacing-services-appliance.html"
+  - title: 將應用裝置重新放置在機架中
+    url: "/sg100-1000/reinstalling-sg100-and-sg1000-into-cabinet-or-rack.html"

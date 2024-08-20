@@ -2650,7 +2650,6 @@
   <block id="c7c19b3cb79ee9f5fdbc22cfac916b00" category="paragraph">裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。節點頁面應顯示正常狀態（綠色核取記號圖示） <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。</block>
   <block id="5d4d9bbd71eda7ec2ba074c8e6717b0b" category="list-text">您擁有需要更換元件的儲存設備序號。</block>
   <block id="fe96bb389ae099a3c5dcdd5b5427e3bc" category="list-text">您將使用登入Grid Manager<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>。</block>
-  <block id="7aa733436808f3ef7dbb843f0bfd7537" category="paragraph">使用此程序來識別硬體故障的應用裝置、以及哪些可更換硬體元件無法正常運作。可識別以進行更換的元件包括：</block>
   <block id="620e2edf2db0c3c3cad57aeb246c6bfe" category="list-text">電源供應器</block>
   <block id="4604f841b0b16d3013cac1e2078e5b1b" category="list-text">風扇</block>
   <block id="3907a0fffff4b13006f3069d9186c0d5" category="list-text">固態硬碟（ SSD ）</block>
@@ -5517,4 +5516,58 @@
   <block id="32560f7f516484a70333e63586d49ee8" category="list-text">按下產品前面板上的識別 LED 開關。</block>
   <block id="84f9f6b07fa3b7c2043dcb10969d9836" category="list-text">使用應用裝置 BMC 介面。</block>
   <block id="c3767fd24594af27204c85f38e6485de" category="admonition">當應用裝置處於維護模式時、會停止儲存控制器的 I/O （輸入 / 輸出）活動、以確保破壞性儲存作業的安全。</block>
+  <block id="a5c480dfbb1146eeb42a0bcc0d8bbbb4" category="paragraph">使用此程序來識別硬體故障的應用裝置、以及哪些可更換硬體元件無法正常運作。可識別以進行更換的元件包括：</block>
+  <block id="a26cdf0f1745cbb76eb5328668e38b6f" category="image-alt">提升板組件位置</block>
+  <block id="48588d23b204532125483be8736cc62b" category="list-text">使用手指或塑膠撬起工具、將固定夾從電池上壓下、即可將其從插槽中彈出。</block>
+  <block id="65dc474701428334be6aca7529908454" category="image-alt">提升板組件上的定位孔</block>
+  <block id="665f25079cb5accd5eb43f2913b6c37f" category="doc">更換 SG100 或 SG1000 設備護蓋</block>
+  <block id="f1d6d43707540812eb946d45ccef5ec4" category="section-title">取下 SG100 或 SG1000 設備護蓋</block>
+  <block id="64e8eab7438cec59cd0671f1a5e3dbb6" category="paragraph">取下產品外蓋、即可存取內部元件進行維護。</block>
+  <block id="b1d5df074b99621759036a9121b85e98" category="paragraph">從機櫃或機架中取出產品、以檢修頂蓋。</block>
+  <block id="511c877284f772f66774598abeeea6f5" category="inline-link-macro">從機櫃或機架上卸下 SG100 或 SG1000 設備</block>
+  <block id="2285eddd6702074129ac0f1ecda4b2f4" category="paragraph"><block ref="2285eddd6702074129ac0f1ecda4b2f4" category="inline-link-macro-rx"></block></block>
+  <block id="b0e7c1ff76e24cb7116c6fb8b809271c" category="image-alt">主機蓋閂鎖開啟</block>
+  <block id="827c9e961d14d7b5f5337e655b29df10" category="section-title">重新安裝 SG100 或 SG1000 設備護蓋</block>
+  <block id="e1095c022f98a1bb69eb7e440dbb0ced" category="paragraph">完成內部硬體維護後、請重新安裝產品護蓋。</block>
+  <block id="7b6a35b28349993ccb044f99d3cb9c05" category="image-alt">護蓋栓鎖定位銷</block>
+  <block id="77e20811baef645173a9afd272aed5f2" category="inline-link-macro">將產品重新安裝在機櫃或機架中。</block>
+  <block id="fee143211358506f5958deb39267a94d" category="paragraph"><block ref="fee143211358506f5958deb39267a94d" category="inline-link-macro-rx"></block></block>
+  <block id="8d74142d0d3a9120da2ba9c70236cdd6" category="summary">將 SG100 或 SG1000 從機櫃或機架上取下、即可拆下機箱頂蓋、或將產品移至其他位置、然後在硬體維護完成時、將產品重新裝入機櫃或機架。</block>
+  <block id="a5b8a777a1b08a83ca76ba17d2003033" category="doc">將 SG100 或 SG1000 重新放置在機櫃或機架中</block>
+  <block id="5fc59c0417d710999eccabc5f2b53e54" category="paragraph">從機櫃或機架中取出 SG100 或 SG1000 設備、以便拆裝機箱頂蓋或將產品移至不同位置、然後在硬體維護完成時、將產品重新安裝到機櫃或機架中。</block>
+  <block id="4faf0e30b4acd7fb71c04eecc674f9bb" category="section-title">從機櫃或機架上卸下 SG100 或 SG1000</block>
+  <block id="1e2dad3dc1303cb9c34342a08ac369c2" category="paragraph">將 SG100 或 SG1000 從機櫃或機架上取下、即可裝上機箱頂蓋、或將產品移至其他位置。</block>
+  <block id="fd4bc1e04629aac76e335abbe4b95110" category="list-text">您有標籤可以識別連接到 SG100 或 SG1000 設備的每條纜線。</block>
+  <block id="00265604d07e83e9fa37acfb58aea0a6" category="list-text">您已實際找到 SG100 或 SG1000 設備、以便在資料中心執行維護。</block>
+  <block id="e062f7e106df68638e79abdb18fac222" category="paragraph"><block ref="e062f7e106df68638e79abdb18fac222" category="inline-link-macro-rx"></block></block>
+  <block id="0fcf830f0c15b1400c1db9718be45ada" category="inline-link-macro">關閉 SG100 或 SG1000 應用裝置</block>
+  <block id="5c1320f429c4112c2bba2f8f6cb8fa01" category="list-text">您有 <block ref="f1505d4606b132b8853f29fe0a332652" category="inline-link-macro-rx"></block>。</block>
+  <block id="9b0bec7300d43ef7de3808046f83438c" category="list-text">將產品向前滑出機架、直到安裝滑軌完全展開、同時聽到兩側的卡榫發出喀噠聲。</block>
+  <block id="72c93dbd5f5d24a30424f10682ce2429" category="section-title">將 SG100 或 SG1000 重新安裝到機櫃或機架中</block>
+  <block id="605201180c8af58706d2950dc2815425" category="paragraph">硬體維護完成後、請將產品重新安裝到機櫃或機架中。</block>
+  <block id="185e5b18a157d76176305c8be330d521" category="inline-link-macro">重新安裝 SG100 或 SG1000 護蓋</block>
+  <block id="134ec335795fdd11457bc3cf0025baf5" category="paragraph"><block ref="134ec335795fdd11457bc3cf0025baf5" category="inline-link-macro-rx"></block></block>
+  <block id="e3cda821d00824f87e103cfa79fa642c" category="list-text">同時按下藍色軌道、即可同時鬆開兩個機架軌道、並將產品滑入機架、直到完全就位為止。</block>
+  <block id="684fc7e3b4be959ee39744c82078ef0c" category="image-alt">機架固定螺絲</block>
+  <block id="c934d158cd3ec0bfbf3cbdd7b7827955" category="list-text">重新連接產品電源線。</block>
+  <block id="05c9535932e03bb8444cfbfc967af3e2" category="inline-link-macro">連接電源線並接上電源（ SG100 或 SG1000 ）</block>
+  <block id="a76302d15eb6041c12b94bdbf80ddf79" category="paragraph"><block ref="a76302d15eb6041c12b94bdbf80ddf79" category="inline-link-macro-rx"></block></block>
+  <block id="bbbfb5089b20d2a9a438d1f300dc3951" category="paragraph">產品可以重新啟動。</block>
+  <block id="1aab7af93e422001302d3d72d844aa68" category="doc">更換 SG100 或 SG1000 中的 CMOS 電池</block>
+  <block id="2de23f109c4b7a2ebaf85dfa94d803d2" category="inline-link-macro">已驗證需要更換 CMOS 電池的 SG100 或 SG1000</block>
+  <block id="d31100686fc52b53392732b7d3ae0dbb" category="list-text">您有 <block ref="fcfad0bf3ec87a01189dcc7ef62e31e5" category="inline-link-macro-rx"></block>。</block>
+  <block id="76dc6b7b32167d9bd3a9ee4280cd472c" category="inline-link-macro">實體放置 SG100 或 SG1000 應用裝置</block>
+  <block id="295f39bc37ea49d39fdef10ffc386a4d" category="list-text">您可以 <block ref="1c34acfb2667f43feb9d3c66f2b8ed39" category="inline-link-macro-rx"></block> 在資料中心更換 CMOS 電池。</block>
+  <block id="7d406e9712f1c209336e5e697cc447ef" category="admonition"><block ref="db7c721060dced196b796faf173aec6a" category="inline-link-macro-rx"></block>從機架中取出產品之前、必須先使用。</block>
+  <block id="126a827d213a0e5e13049b3f4047c548" category="list-text">您已拔下所有纜線和 <block ref="b4ae088a94cfd6b68a1d3b21b7e66f50" category="inline-link-macro-rx"></block>。</block>
+  <block id="20015455ab5d561bb2f053becbe04427" category="doc">驗證要在 SG100 或 SG1000 中更換的元件</block>
+  <block id="155f05305b468da8a62a625c5bb46d08" category="paragraph"><block ref="155f05305b468da8a62a625c5bb46d08" category="inline-link-macro-rx"></block></block>
+  <block id="a3920e91582773914df89ce69b0b4103" category="doc">更換 SG6000-CN CMOS 電池</block>
+  <block id="b3b2dfaac1200c3b68a403bd40179bdf" category="list-text">您有 <block ref="1ec8c115f0c3870ab94b38ffe7b9d363" category="inline-link-macro-rx"></block>。</block>
+  <block id="52f39f79f4d9a5685bc2024f2a087065" category="list-text">您可以 <block ref="f706bf55d44d59c0b4f06acfce2f61ee" category="inline-link-macro-rx"></block> 在資料中心更換 CMOS 電池。</block>
+  <block id="a1294f5ec4aea9551adb3b8c8723fea7" category="admonition"><block ref="01cb3624578c0b6333a3e47dc48ec415" category="inline-link-macro-rx"></block>從機架中取出產品之前、必須先使用。</block>
+  <block id="27a168d0228d72534f07ee949d2796ff" category="list-text">您已拔下所有纜線和 <block ref="15196f495d147a32d6ddc13b14aad025" category="inline-link-macro-rx"></block>。</block>
+  <block id="10fa39edb4e5d5fc91498d5271535f37" category="doc">驗證要在 SG6000-CN 中更換的元件</block>
+  <block id="ca37341c514b082d1be600ae89827bce" category="sidebar">將 SG100 或 SG1000 重新放置在機架中</block>
+  <block id="530a7cab0d75789e4984b34660953995" category="sidebar">更換 SG6000-CN 控制器中的 CMOS 電池</block>
 </blocks>
