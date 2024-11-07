@@ -1,10 +1,14 @@
 ---
 indexpage:
+  title: 維護 SG5800 儲存設備硬體
+  summary: 維護 SG5800 儲存設備的硬體。
+  keywords: maintain storagegrid sg5800
+  lead: 維護 SG5800 儲存設備的硬體。
   tiles:
   - title: 經常執行的程序
     links:
     - title: 變更連結組態
-      url: "../sg5800/changing-link-configuration-of-sg5800-controller.html"
+      url: "../sg5800/changing-link-configuration-of-e5800sg-controller.html"
     - title: 升級 SANtricity
       url: "../sg5800/upgrading-santricity-os-on-storage-controller.html"
     - title: 升級磁碟機韌體
@@ -12,7 +16,7 @@ indexpage:
   - title: 硬體程序
     links:
     - title: 更換 SG5800 運算控制器
-      url: "../sg5800/replace-controller-sg5800.html"
+      url: "../sg5800/replace-controller-5800sg.html"
     - title: 更換 E4000 儲存控制器
       url: "../sg5800/replace-controller-e4000-simplex.html"
     - title: 更換風扇箱

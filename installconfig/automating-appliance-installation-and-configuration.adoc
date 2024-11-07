@@ -62,7 +62,7 @@ NOTE: 您可以使用相同的 JSON 檔案來設定多個應用裝置。
 
 +
 
-NOTE: 您可以StorageGRID 直接使用自動化Python指令碼、也可以將其作為範例、說明如何在StorageGRID 網格部署和自行開發的組態工具中使用「靜態安裝REST API」。請參閱的說明 https://docs.netapp.com/us-en/storagegrid-118/maintain/downloading-and-extracting-storagegrid-installation-files.html["下載及解壓縮StorageGRID 安裝文件"^]。
+NOTE: 您可以StorageGRID 直接使用自動化Python指令碼、也可以將其作為範例、說明如何在StorageGRID 網格部署和自行開發的組態工具中使用「靜態安裝REST API」。請參閱的說明 https://docs.netapp.com/us-en/storagegrid/maintain/downloading-and-extracting-storagegrid-installation-files.html["下載及解壓縮StorageGRID 安裝文件"^]。
 
 
 
@@ -76,7 +76,7 @@ NOTE: 您可以StorageGRID 直接使用自動化Python指令碼、也可以將�
 * 應用裝置已安裝在機架中、連接至您的網路、並已開啟電源。
 * 您有 <<automation-options,已產生 JSON 檔案>> 在 NetApp 專業服務顧問的指導下、
 * 您的應用裝置包含與 StorageGRID 11.5 或更新版本相容的最新韌體。
-* 您已連線至正在使用設定的應用裝置上的 StorageGRID 應用裝置安裝程式 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 您已連線至正在使用設定的應用裝置上的 StorageGRID 應用裝置安裝程式 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
 
 
 .步驟

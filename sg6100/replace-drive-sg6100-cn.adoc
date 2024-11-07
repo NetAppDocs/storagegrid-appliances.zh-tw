@@ -57,7 +57,7 @@ CAUTION: 請勿在關閉握把時過度施力。
 當磁碟機完全插入時、您會聽到「喀」一聲。
 
 +
-當兩個 SSD 磁碟機都正常運作時、系統會自動還原讀取快取功能。您可以 https://docs.netapp.com/us-en/storagegrid-118/monitor/running-diagnostics.html["執行診斷"^] 監控讀取快取命中率。由於快取是剛重建的、因此最初的命中率可能很低、但隨著存取物件資料的用戶端重新填入快取、快取應該會隨著時間而增加。
+當兩個 SSD 磁碟機都正常運作時、系統會自動還原讀取快取功能。您可以 https://docs.netapp.com/us-en/storagegrid/monitor/running-diagnostics.html["執行診斷"^]監控讀取快取命中率。由於快取是剛重建的、因此最初的命中率可能很低、但隨著存取物件資料的用戶端重新填入快取、快取應該會隨著時間而增加。
 
 
 

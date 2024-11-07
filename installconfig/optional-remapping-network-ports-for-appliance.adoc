@@ -14,11 +14,10 @@ summary: 您可以選擇性地將應用裝置節點上的內部連接埠重新�
 您可以選擇性地將應用裝置節點上的內部連接埠重新對應至不同的外部連接埠。例如、由於防火牆問題、您可能需要重新對應連接埠。
 
 .開始之前
-* 您先前曾存取StorageGRID 過《不再使用的應用程式」。
-
+您先前曾存取StorageGRID 過《不再使用的應用程式」。
 
 .關於這項工作
-您無法為負載平衡器端點使用重新對應的連接埠。如果您需要移除重新對應的連接埠、請遵循中的步驟 https://docs.netapp.com/us-en/storagegrid-118/maintain/removing-port-remaps.html["移除連接埠重新對應"^]。
+您無法為負載平衡器端點使用重新對應的連接埠。如果您需要移除重新對應的連接埠，請遵循中的步驟 https://docs.netapp.com/us-en/storagegrid/maintain/removing-port-remaps.html["移除連接埠重新對應"^]。
 
 .步驟
 . 從 StorageGRID 設備安裝程式中、選取 * 設定網路 * > * 重新對應連接埠 * 。

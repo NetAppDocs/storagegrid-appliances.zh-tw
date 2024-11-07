@@ -17,7 +17,7 @@ summary: 控制器正面和背面的藍色識別LED可開啟、以協助在資�
 您擁有要識別的控制器的 BMC IP 位址。
 
 .步驟
-. 存取應用裝置 BMC 介面。
+. link:../installconfig/accessing-bmc-interface.html["存取應用裝置 BMC 介面"]。
 . 選擇*伺服器識別*。
 +
 已選取識別 LED 的目前狀態。
@@ -37,6 +37,6 @@ NOTE: 如果控制器上安裝了擋板、可能很難看到正面的識別LED�
 
 
 .相關資訊
-link:locating-controller-in-data-center.html["在資料中心找到控制器"]
+* link:locating-controller-in-data-center.html["在資料中心找到控制器"]
+* link:../installconfig/accessing-bmc-interface.html["存取BMC介面"]
 
-link:../installconfig/accessing-bmc-interface.html["存取BMC介面"]

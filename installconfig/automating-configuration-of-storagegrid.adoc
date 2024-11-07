@@ -42,7 +42,7 @@ Python指令碼用於自動化組態
 您可以使用 `configure-storagegrid.py` Python指令碼和 `configure-storagegrid.json` 組態檔、以自動化StorageGRID 您的整個系統組態。
 
 
-NOTE: 您也可以使用設定系統 https://docs.netapp.com/us-en/storagegrid-118/primer/exploring-grid-manager.html["網格管理程式"^] 或 link:overview-of-installation-rest-apis.html["安裝API"]。
+NOTE: 您也可以使用或來設定系統 https://docs.netapp.com/us-en/storagegrid/primer/exploring-grid-manager.html["網格管理程式"^]link:overview-of-installation-rest-apis.html["安裝API"]。
 
 .步驟
 . 登入您用來執行Python指令碼的Linux機器。

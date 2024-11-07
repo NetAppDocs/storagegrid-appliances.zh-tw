@@ -26,14 +26,11 @@ NOTE: 答 link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-
 
 
 .關於這項工作
-為避免服務中斷、請確認所有其他儲存節點均已連接至網格、然後再開始更換風扇、或在可接受服務中斷期間的排程維護期間更換風扇。請參閱相關資訊 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["監控節點連線狀態"^]。
-
-
-CAUTION: 如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程維護期間更換風扇、因為在此程序期間可能會暫時失去這些物件的存取權。請參閱相關資訊 https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["為何不應使用單一複本複寫"^]。
+為避免服務中斷、請確認所有其他儲存節點均已連接至網格、然後再開始更換風扇、或在可接受服務中斷期間的排程維護期間更換風扇。請參閱的相關資訊 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["監控節點連線狀態"^]。
 
 更換風扇時、無法存取應用裝置節點。
 
-相片顯示產品的風扇。電子接頭會反白顯示。將產品的頂蓋從產品上卸下後、即可接觸到冷卻風扇。
+圖中所示為產品的風扇、並反白顯示電氣接頭。將產品的頂蓋從產品上卸下後、即可接觸到冷卻風扇。
 
 
 NOTE: 兩個電源供應器單元中的每個單元都有一個風扇。此程序不包含電源供應器風扇。
@@ -49,11 +46,8 @@ image::../media/sgf6112_fan_fru.png[風扇FRU]
 +
 image::../media/SGF6112-fan-locations.png[風扇位置]
 
-
-
++
 |===
-
-
 |  | 風扇單元 
 
 

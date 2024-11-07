@@ -4,8 +4,8 @@
 
 .開始之前
 * 如果您沒有取得想要從升級至的 SANtricity OS 版本 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]、您已諮詢過 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^] 或 https://imt.netapp.com/matrix/#welcome["NetApp互通性對照表工具IMT （不含）"^] 確認您用於升級的 SANtricity 作業系統版本與您的應用裝置相容。
-* 您擁有 https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["維護或根存取權限"^]。
-* 您將使用登入Grid Manager https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 您有 https://docs.netapp.com/us-en/storagegrid/admin/admin-group-permissions.html["維護或根存取權限"^]。
+* 您已使用登入 Grid Manager https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^] 。
 * 您有資源配置通關密碼。
 
 
@@ -21,7 +21,7 @@ CAUTION: 下列步驟僅適用於使用Grid Manager執行升級的情況。當�
 NOTE: 此程序會自動將NVSRAM升級 至SANtricity 與更新版有關的最新版本。您不需要套用個別的 NVSRAM 升級檔案。
 
 
-NOTE: 在開始此程序之前、請務必套用最新的 StorageGRID Hotfix 。請參閱 https://docs.netapp.com/us-en/storagegrid-118/maintain/storagegrid-hotfix-procedure.html["修復程序StorageGRID"^] 以取得詳細資料。
+NOTE: 在開始此程序之前、請務必套用最新的 StorageGRID Hotfix 。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/storagegrid/maintain/storagegrid-hotfix-procedure.html["修復程序StorageGRID"^]。
 
 .步驟
 . [[download-SANtricity -OS]] 從下載新的 SANtricity OS 軟體檔案 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]。

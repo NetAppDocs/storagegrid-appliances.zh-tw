@@ -1,24 +1,26 @@
 ---
-permalink: sg6100/manage-drives-tab.html 
+permalink: commonhardware/manage-drives-tab.html 
 sidebar: sidebar 
-keywords: sgf6112, manage drives tab, locate drive, fail drive, logically replace drive 
-summary: 您可以使用 Grid Manager 中的「管理磁碟機」標籤、在 SGF6112 應用裝置中執行磁碟機的疑難排解和維護工作。 
+keywords: sgf6112, sg110, sg1100, sg6160, manage drives tab, locate drive, fail drive, logically replace drive 
+summary: 您可以使用 Grid Manager 中的「管理磁碟機」索引標籤、針對支援此功能的應用裝置、在磁碟機上執行疑難排解和維護工作。 
 ---
-= 使用管理磁碟機索引標籤（ SGF6112 ）
+= 使用管理磁碟機索引標籤（ SG110 、 SG1100 、 SGF6112 和 SG6160 ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以使用 Grid Manager 中的「管理磁碟機」標籤、在 SGF6112 應用裝置中執行磁碟機的疑難排解和維護工作。
+您可以使用 Grid Manager 中的「管理磁碟機」索引標籤、針對支援此功能的應用裝置、在磁碟機上執行疑難排解和維護工作。
 
 .開始之前
-* 您將使用登入Grid Manager https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
-
+您已使用登入 Grid Manager https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^] 。
 
 .關於這項工作
-如果您有 SGF6112 應用裝置、且 https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["儲存設備管理員或根存取權限"^]的「管理磁碟機」索引標籤會出現在應用裝置詳細資料頁面上。
+如果您的應用裝置支援此功能、而且 https://docs.netapp.com/us-en/storagegrid/admin/admin-group-permissions.html["儲存設備管理員或根存取權限"^]設備詳細資料頁面上會出現「管理磁碟機」索引標籤。
+
+
+NOTE: 對於 StorageGRID 11.8 、只有 SGF6112 應用裝置支援「管理磁碟機」標籤。
 
 管理磁碟機索引標籤包含下列檢視：
 

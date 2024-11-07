@@ -14,8 +14,7 @@ summary: 您可以變更應用裝置的乙太網路連結組態、包括連接�
 您可以變更應用裝置的乙太網路連結組態、包括連接埠連結模式、網路連結模式和連結速度。
 
 .開始之前
-* 您有 link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
-
+您有 link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
 
 
 NOTE: 在極少數情況StorageGRID 下、將某個應用程式置於維護模式可能會使應用裝置無法遠端存取。
@@ -28,8 +27,7 @@ NOTE: 在極少數情況StorageGRID 下、將某個應用程式置於維護模�
 
 +
 
-NOTE: 在應用裝置處於維護模式時所做的 IP 組態變更不會套用至已安裝的 StorageGRID 環境。執行
-[`change-ip` 命令 ] 將應用裝置重新開機至 StorageGRID 後。
+NOTE: 在應用裝置處於維護模式時所做的 IP 組態變更不會套用至已安裝的 StorageGRID 環境。執行[`change-ip`將應用裝置重新開機至 StorageGRID 後、請命令 ] 。
 
 . 當您對所選項目感到滿意時、請按一下「*儲存*」。
 +

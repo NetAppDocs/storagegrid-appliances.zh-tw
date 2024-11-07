@@ -50,7 +50,7 @@ CAUTION: *可能的設備損壞*-如果您在開啟電源的情況下執行此�
 . 從「系統管理程式」中、判斷哪個風扇容器故障。SANtricity
 +
 .. 選取*硬體*。
-.. 看看風扇 image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[""] * Shelf* 下拉式清單右側的圖示、可判斷哪個應用裝置的風扇箱故障。
+.. 查看 * Shelf* 下拉式清單右側的風扇圖示、判斷哪個產品的風扇image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["風扇圖示"]箱故障。
 +
 如果某個元件故障、此圖示為紅色。
 

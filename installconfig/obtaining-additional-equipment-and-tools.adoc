@@ -30,7 +30,7 @@ summary: 安裝 StorageGRID 應用裝置之前、請確認您擁有所需的所�
 ESD腕帶::
 +
 --
-* https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]
+* https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]
 * SSH用戶端、例如Putty
 * 1-GbE（RJ-45）連接埠
 

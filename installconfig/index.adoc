@@ -22,7 +22,7 @@ summary: 請遵循這些高階步驟來安裝和設定 StorageGRID 應用裝置�
 . link:preparing-site.html["準備網站"]
 . link:unpacking-boxes.html["打開包裝盒"]
 . link:obtaining-additional-equipment-and-tools.html["取得其他設備和工具"]
-. https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["檢閱網頁瀏覽器需求"^]
+. https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["檢閱網頁瀏覽器需求"^]
 . link:reviewing-appliance-network-connections.html["收集網路資訊"]
 
 

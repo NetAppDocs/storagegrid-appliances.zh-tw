@@ -1,5 +1,5 @@
 ---
-permalink: sg6100/replace-power-supply-e4000.html 
+permalink: sg6100/replace-power-supply-sg6100-e4000.html 
 sidebar: sidebar 
 keywords: E4000 replace canister, replacing E4000 canister, E4000 replace power supply, replacing E4000 power supply, E4000 replace fan, replacing E4000 fan, E4000, E-Series, eseries 
 summary: 檢閱 E4000 活性碳罐類型和要求。 
@@ -33,7 +33,7 @@ NOTE: 請勿混合使用不同電壓類型的 PSU 。永遠像這樣更換。
 ** 或您已採取其他防靜電預防措施。
 ** 存取 SANtricity 系統管理員：
 +
-*** 從 Grid Manager 中、選取 * 節點 * > * 應用裝置節點 * > * SANtricity 系統管理員 * 。控制器資訊位於 https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["SANtricity 系統管理員標籤"]。
+*** 從 Grid Manager 中、選取 * 節點 * > * 應用裝置節點 * > * SANtricity 系統管理員 * 。控制器資訊位於 https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricity 系統管理員標籤"]。
 *** 將 Management Station 中的瀏覽器指向控制器的網域名稱或 IP 位址。
 
 
@@ -64,7 +64,7 @@ NOTE: 請勿混合使用不同電壓類型的 PSU 。永遠像這樣更換。
 
 +
 .. 選取*硬體*。
-.. 請看效能 image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[""] 和FAN image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[""] *機櫃*下拉式清單右側的圖示、用於判斷哪個機櫃的電源供應器故障。
+.. 查看 * 機櫃 * 下拉式清單右側的電源image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["電源圖示"]和風扇image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["風扇圖示"]圖示、以判斷哪個機櫃的電源供應器故障。
 +
 如果某個元件發生故障、這些圖示中有一個或兩個都是紅色的。
 

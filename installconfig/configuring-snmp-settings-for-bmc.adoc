@@ -13,8 +13,57 @@ summary: 如果您熟悉硬體的 SNMP 設定、可以使用 BMC 介面來設定
 [role="lead"]
 如果您熟悉硬體的 SNMP 設定、可以使用 BMC 介面來設定 SG6100 、 SG6000 和服務應用裝置的 SNMP 設定。您可以提供安全的社群字串、啟用SNMP設陷、以及指定最多五個SNMP目的地。
 
+[role="tabbed-block"]
+====
+.SG110 、 SG1100 、 SG6100-CN 、 SGF6112
+--
 .開始之前
-* 您知道如何存取BMC儀表板。
+* 您知道如何 link:../installconfig/accessing-bmc-interface.html["存取 BMC 儀表板"]。
+* 您有設定 SNMPv3 設備 SNMP 設定的經驗。
+
+
+
+NOTE: 如果設備故障且必須更換、則此程序所做的BMC設定可能無法保留。  請務必記錄您套用的所有設定、以便在必要時更換硬體後、輕鬆重新套用。
+
+這些指示顯示適用於某些 StorageGRID 應用裝置的最新版 BMC 韌體。您的 StorageGRID 應用裝置可能有稍微不同的 BMC 韌體版本。
+
+* 最新版本的 BMC 韌體僅支援 SNMPv3 。
+* BMC 韌體會在 StorageGRID 軟體升級期間更新。如果您未執行最新版的 StorageGRID 軟體，可以將您的應用裝置更新至最新的 StorageGRID 版本，以安裝 https://docs.netapp.com/us-en/storagegrid/upgrade/how-your-system-is-affected-during-upgrade.html#appliance-firmware-is-upgraded["適用於您的應用裝置的最新 BMC 韌體版本"]。
+* 如果您的 BMC 在 StorageGRID 更新之前或之後出現不同的情況：
++
+** 請參閱 SG100 、 SG1000 、 SG6000-CN 標籤上的說明。
+** link:../commonhardware/use-bmc.html["使用 StorageGRID BMC"]可能也會提供相關資訊、協助您針對 BMC 版本調整這些指示。
+
+
+
+
+.步驟
+. 將 SNMP 設陷設定為一或多個 LAN 目的地。
++
+.. 從 BMC 儀表板中、選取 * 設定 * > * 平台事件篩選器 * > * 區域網路目的地 * 。
+.. 對於目的地類型、請選取 * SNMP Trap * 。
+.. 針對 SNMP 目的地位址、輸入目標 IP 位址。
++
+
+NOTE: 使用 IP 位址作為 SNMP 目的地位址。不支援 DNS 名稱。
+
+.. 選擇*保存*。
+
+
+. 如果您使用 SNMP 設陷來傳送警示通知、請參閱的「平台事件篩選器」一節 https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMC 使用者指南"^]、以取得使用 BMC 來設定警示原則和事件篩選器的相關資訊。
+. （選用）為 BMC 使用者啟用和設定 SNMP 。
++
+.. 從 BMC 儀表板選取 * 設定 * > * 使用者管理 * 、然後選取 BMC 使用者。
+.. 如需設定 BMC 使用者的 SNMP 設定的相關資訊、請參閱的「使用者管理」一節 https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMC 使用者指南"^]。
+
+
+
+
+--
+.SG100 、 SG1000 、 SG6000-CN
+--
+.開始之前
+* 您知道如何 link:../installconfig/accessing-bmc-interface.html["存取 BMC 儀表板"]。
 * 您有設定SNMP v1-v2c設備的SNMP設定經驗。
 
 
@@ -38,3 +87,6 @@ NOTE: 使用IP位址輸入每個SNMP設陷的目的地IP。不支援 DNS 名稱�
 . （可選）單擊*發送測試陷阱*以測試您的設置。
 . 如果設定正確、請按一下「*儲存*」。
 
+
+--
+====

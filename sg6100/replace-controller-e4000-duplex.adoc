@@ -161,12 +161,12 @@ image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[取出 NVMEM 電池。
 
 
  a| 
-image::../media/legend_icon_01.png[圖例圖示 01]
+image::../media/legend_icon_01.png[圖說文字參考 1.]
 | 電池釋放彈片 
 
 
  a| 
-image::../media/legend_icon_02.png[圖例圖示02]
+image::../media/legend_icon_02.png[圖說文字參考 2.]
 | 電池電源接頭 
 |===
 
@@ -210,12 +210,12 @@ image::../media/drw_E4000_replace_dimms_IEOPS-865.png[移除 DIMM 。]
 
 
  a| 
-image::../media/legend_icon_01.png[圖例圖示 01]
+image::../media/legend_icon_01.png[圖說文字參考 1.]
 | DIMM推出式彈片 
 
 
  a| 
-image::../media/legend_icon_02.png[圖例圖示02]
+image::../media/legend_icon_02.png[圖說文字參考 2.]
 | DIMM 
 |===
 

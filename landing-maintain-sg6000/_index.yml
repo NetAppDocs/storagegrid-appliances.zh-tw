@@ -1,9 +1,13 @@
 ---
 indexpage:
+  title: 維護 SG6000 儲存設備硬體
+  summary: 維護 SG6000 儲存設備的硬體。
+  keywords: maintain storagegrid sg6000
+  lead: 維護 SG6000 儲存設備的硬體。
   tiles:
   - title: 經常執行的程序
     links:
-    - title: 開啟或關閉位置 LED
+    - title: 開啟或關閉識別 LED
       url: "../sg6000/turning-controller-identify-led-on-and-off.html"
     - title: 在資料中心找到應用裝置
       url: "../sg6000/locating-controller-in-data-center.html"
@@ -13,8 +17,10 @@ indexpage:
       url: "../sg6000/changing-link-configuration-of-sg6000-cn-controller.html"
     - title: 升級 SANtricity
       url: "../sg6000/upgrading-santricity-os-on-storage-controllers.html"
-    - title: 升級磁碟機韌體
-      url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager.html"
+    - title: 升級磁碟機韌體（線上方法）
+      url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 升級磁碟機韌體（離線方法）
+      url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
   - title: 機架程序
     links:
     - title: 更換機架中的控制器

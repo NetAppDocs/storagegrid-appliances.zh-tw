@@ -16,7 +16,7 @@ summary: 存取 BMC 介面之前、您必須先設定 SG6000-CN 控制器或服�
 如果您使用 ConfigBuilder 來產生 JSON 檔案、則可以自動設定 IP 位址。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
 
 .開始之前
-* 管理用戶端使用 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 管理用戶端使用的 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]是。
 * 您正在使用任何可連線StorageGRID 至該網路的管理用戶端。
 * BMC管理連接埠會連線至您打算使用的管理網路。
 +

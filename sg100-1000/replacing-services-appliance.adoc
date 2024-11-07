@@ -14,7 +14,7 @@ summary: 如果設備無法正常運作或故障、您可能需要更換設備�
 如果設備無法正常運作或故障、您可能需要更換設備。
 
 .開始之前
-* 您的替換產品的零件編號與您要更換的產品相同。
+* 您的替換產品的零件編號與您要更換的產品相同。檢查產品正面的標籤、確認產品編號相符。
 * 您有標籤可識別連接至本產品的每條纜線。
 * 您有 link:locating-controller-in-data-center.html["實際放置設備"]。
 
@@ -112,6 +112,6 @@ HDD02 或 HDD2 指的是上插槽中的磁碟機、 HDD03 或 HDD3 指的是下�
 更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
 
 .相關資訊
-link:../installconfig/viewing-status-indicators.html["檢視狀態指標"]
+* link:../installconfig/viewing-status-indicators.html["檢視狀態指標"]
+* link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html#view-boot-codes["檢視應用裝置的開機代碼"]
 
-link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html#view-boot-codes["檢視應用裝置的開機代碼"]

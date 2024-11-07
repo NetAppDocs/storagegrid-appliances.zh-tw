@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: 維護應用裝置硬體
+  summary: 維護儲存設備或服務應用裝置的硬體。
+  keywords: maintain storagegrid hardware
+  lead: 維護儲存設備或服務應用裝置的硬體。
   tiles:
   - title: 經常執行的程序
     links:
@@ -11,6 +15,8 @@ indexpage:
       url: "../commonhardware/checking-dns-server-configuration.html"
     - title: 更新 MAC 位址
       url: "../commonhardware/locate-mac-address.html"
+    - title: 管理磁碟機
+      url: "../commonhardware/manage-drives-tab.html"
     - title: 監控節點加密
       url: "../commonhardware/monitoring-node-encryption-in-maintenance-mode.html"
   - title: 節點複製

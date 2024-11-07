@@ -14,8 +14,7 @@ summary: 關閉服務應用裝置以執行硬體維護。
 關閉服務應用裝置以執行硬體維護。
 
 .開始之前
-* 您的實際狀況 link:locating-controller-in-data-center.html["已找到服務應用裝置"] 需要維護資料中心。
-
+您的實際狀況 link:locating-controller-in-data-center.html["已找到服務應用裝置"] 需要維護資料中心。
 
 .關於這項工作
 為避免服務中斷、請在可接受服務中斷期間的排程維護期間、關閉服務應用裝置。

@@ -7,7 +7,7 @@ summary:
 = 法律聲明
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -48,3 +48,5 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。
 
 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886898[]
+
+https://library.netapp.com/ecm/ecm_download_file/3330669[]

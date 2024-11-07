@@ -23,8 +23,6 @@ entries:
       url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
     - title: 疑難排解磁碟機韌體升級錯誤
       url: "/sg6100/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
-  - title: 使用管理磁碟機索引標籤
-    url: "/sg6100/manage-drives-tab.html"
   - title: 開啟和關閉識別 LED
     url: "/sg6100/turning-sgf6112-identify-led-on-and-off.html"
   - title: 在資料中心找到應用裝置
@@ -63,7 +61,7 @@ entries:
     - title: 內部 NIC （ SGF6112 和 SG6160 ）
       url: "/sg6100/replace-nic-in-sgf6112.html"
     - title: 外部 NIC （ SG6160 ）
-      url: "/sg6100/replace-ocp-nic-in-sg6100-cn.html"
+      url: "/sg6100/replace-ocp-nic-sg6100-cn.html"
   - title: 更換 CMOS 電池
     url: "/sg6100/replace-cmos-in-sgf6112.html"
   - title: 更換DIMM

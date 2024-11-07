@@ -18,13 +18,36 @@ summary: 在某些應用裝置機型上、您可以變更為應用裝置上的�
 .關於這項工作
 如果您的應用裝置支援、您可以選擇下列其中一個 Volume 組態選項：
 
-* * 動態磁碟集區（ DDP ） * ：此模式每八個資料磁碟機使用兩個同位元磁碟機。這是所有應用裝置的預設和建議模式。相較於 RAID 6 、 DDP 可提供更好的系統效能、減少磁碟機故障後的重建時間、並簡化管理。DDP 也提供 SG5760 、 SG5860 和 SG6160 應用裝置的抽屜遺失保護。
+
+NOTE: 所有 DDP 和 RAID 類型的磁碟區大小不一致。DDP 和 RAID6 運作方式的差異會導致不同的磁碟區大小。
+
+* * 動態磁碟集區（ DDP ） * ：此模式每八個資料磁碟機使用兩個同位元磁碟機。這是所有應用裝置的預設和建議模式。
++
+** 相較於 RAID 6 、 DDP 可提供更好的系統效能、減少磁碟機故障後的重建時間、並簡化管理。
+** 每個儲存設備或擴充機櫃都會建立一個磁碟集區。
+** DDP 在 SG5760 、 SG5860 和 SG6160 應用裝置中提供抽屜遺失保護。
 +
 
-NOTE: 由於兩個 SSD 、 DDP 無法在 SG6060 設備中提供抽屜遺失保護。任何新增至 SG6060 的擴充機櫃都能有效保護抽屜遺失。
+NOTE: 由於有兩個 SSD 、 DDP 無法在 SG6060 設備中提供抽屜遺失保護。任何新增至 SG6060 的擴充機櫃都能有效保護抽屜遺失。
 
-* * DDP16*：此模式每16個資料磁碟機使用兩個同位元檢查磁碟機、相較於DDP、可提高儲存效率。相較於 RAID 6 、 DDP16 可提供更好的系統效能、減少磁碟機故障後的重新建置時間、易於管理、以及可媲美的儲存效率。若要使用DDP16模式、您的組態必須包含至少20個磁碟機。DDP16不提供藥櫃遺失保護。
+
+
+* * DDP16*：此模式每16個資料磁碟機使用兩個同位元檢查磁碟機、相較於DDP、可提高儲存效率。
++
+** 相較於 RAID 6 、 DDP16 可提供更好的系統效能、減少磁碟機故障後的重建時間、易於管理、以及可媲美的儲存效率。
+** 若要使用 DDP16 模式、您的儲存設備必須至少包含 20 個磁碟機。
+** 每個儲存設備或擴充機櫃都會建立一個磁碟集區。
+** DDP16 不提供藥屜遺失保護。
+
+
 * * RAID6*：此模式每16個或更多資料磁碟機使用兩個同位元檢查磁碟機。這是一種硬體保護方案、使用每個磁碟上的同位元區塊、並允許在遺失任何資料之前、在 RAID 組內發生兩個磁碟故障。若要使用RAID 6模式、您的組態必須包含至少20個磁碟機。雖然與 DDP 相比、 RAID 6 可以提高應用裝置的儲存效率、但不建議在大多數 StorageGRID 環境中使用。
++
+** RAID 6 為每個擴充機櫃提供一個全域熱備援磁碟機。例如、兩個擴充機櫃的 SG6160 有三個熱備援磁碟機。
+** 在 60 個磁碟機的儲存設備上、 StorageGRID 會建立三個磁碟區群組、每個磁碟區群組至少有 18 個磁碟機（ 16+2 ）、最大磁碟區大小為 21 個（ 19+2 ）。
+** 在 SGF6024 上、 RAID 6 磁區群組是 23 個磁碟機、其中有一個熱備援磁碟機。
+** RAID 6 磁碟區稍大、在許多情況下都允許從 DDP16 進行節點複製。在 RAID 6 組態中、磁碟區大小可能會因磁碟區群組而異。
+
+
 
 
 
@@ -37,7 +60,7 @@ CAUTION: 如果已設定任何磁碟區、或StorageGRID 先前安裝了支援�
 .開始之前
 * 您的 SG5760 內含 60 個磁碟機。如果您有 SG5712 、則必須使用預設 DDP 模式。
 * 您正在使用任何可連線StorageGRID 到該功能的用戶端。
-* 用戶端有 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 用戶端具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
 
 
 .步驟
@@ -57,7 +80,7 @@ CAUTION: 如果已設定任何磁碟區、或StorageGRID 先前安裝了支援�
 .開始之前
 * 您有一個 SG5860 、內含 60 個磁碟機。如果您有 SG5812 、則必須使用預設 DDP 模式。
 * 您正在使用任何可連線StorageGRID 到該功能的用戶端。
-* 用戶端有 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 用戶端具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
 
 
 .步驟
@@ -76,7 +99,7 @@ CAUTION: 如果已設定任何磁碟區、或StorageGRID 先前安裝了支援�
 --
 .開始之前
 * 您正在使用任何可連線StorageGRID 到該功能的用戶端。
-* 用戶端有  https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 用戶端具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
 
 
 .步驟
@@ -100,7 +123,7 @@ CAUTION: 如果已設定任何磁碟區、或StorageGRID 先前安裝了支援�
 --
 .開始之前
 * 您正在使用任何可連線StorageGRID 到該功能的用戶端。
-* 用戶端有  https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 用戶端具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
 
 
 .步驟

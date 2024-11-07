@@ -43,8 +43,7 @@ image::../media/sg6060_front_panel_service_led_on.jpg[正面識別LED -亮起]
 
 
 .相關資訊
-link:reinstalling-fibre-channel-hba.html#remove-fibre-channel-hba["移除Fibre Channel HBA"]
+* link:reinstalling-fibre-channel-hba.html#remove-fibre-channel-hba["移除Fibre Channel HBA"]
+* link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html#remove-sg6000-cn-controller-from-cabinet-or-rack["從機櫃或機架上卸下SG6000-CN.控制器"]
+* link:power-sg6000-cn-controller-off-on.html#shut-down-sg6000-cn-controller["關閉SG6000-CN.控制器"]
 
-link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html#remove-sg6000-cn-controller-from-cabinet-or-rack["從機櫃或機架上卸下SG6000-CN.控制器"]
-
-link:power-sg6000-cn-controller-off-on.html#shut-down-sg6000-cn-controller["關閉SG6000-CN.控制器"]

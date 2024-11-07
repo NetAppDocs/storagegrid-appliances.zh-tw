@@ -20,7 +20,7 @@ summary: 將 SG110 或 SG1100 從機櫃或機架上取下、即可拆裝機箱�
 .開始之前
 * 您可以使用標籤來識別連接到 SG110 或 SG1100 的每條纜線。
 * 您有 link:locating-sg110-and-sg1100-in-data-center.html["實體放置 SG110 或 SG1100"] 您在資料中心執行維護的位置。
-* 您有 link:power-sg110-and-sg1100-off-on.html#shut-down-the-appliance["關閉 SG110 或 SG1100"]。
+* 您有 link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-appliance["關閉 SG110 或 SG1100"]。
 +
 
 CAUTION: 請勿使用電源開關關閉產品。
@@ -83,4 +83,4 @@ IMPORTANT: 為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或
 
 
 .完成後
-link:power-sg110-and-sg1100-off-on.html#power-on-sg110-or-sg1100-and-verify-operation.html["重新啟動應用裝置"]。
+link:power-sg110-and-sg1100-off-on.html#power-on-sg110-or-sg1100-and-verify-operation["重新啟動應用裝置"]。

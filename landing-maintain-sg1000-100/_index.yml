@@ -1,9 +1,13 @@
 ---
 indexpage:
+  title: 維護 SG1000 和 SG100 服務應用裝置硬體
+  summary: 維護 SG1000 和 SG100 服務應用裝置的硬體。
+  keywords: maintain storagegrid sg100, maintain storagegrid sg1000
+  lead: 維護 SG1000 和 SG100 服務應用裝置的硬體。
   tiles:
   - title: 經常執行的程序
     links:
-    - title: 開啟或關閉位置 LED
+    - title: 開啟或關閉識別 LED
       url: "../sg100-1000/turning-controller-identify-led-on-and-off.html"
     - title: 在資料中心找到應用裝置
       url: "../sg100-1000/locating-controller-in-data-center.html"

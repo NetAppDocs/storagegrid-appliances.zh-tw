@@ -20,7 +20,7 @@ summary: 將 SGF6112 從機櫃或機架中取出、以便拆裝機箱頂蓋或�
 .開始之前
 * 您有標籤可以識別連接至 SGF6112 或 SG6100-CN 的每條纜線。
 * 您有 link:locating-sgf6112-in-data-center.html["實體放置 SGF6112 或 SG6100-CN"] 您在資料中心執行維護的位置。
-* 您有 link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["關閉 SGF6112 或 SG6100-cn"]。
+* 您有 link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["關閉 SGF6112 或 SG6100-cn"]。
 +
 
 CAUTION: 請勿使用電源開關關閉產品。
@@ -81,4 +81,4 @@ NOTE: 為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或踩�
 
 
 .完成後
-link:power-sgf6112-off-on.html#power-on-sgf6112-and-verify-operation["重新啟動應用裝置"]。
+link:power-sgf6112-off-on.html#power-on-sgf6112-or-sg6100-cn-and-verify-operation["重新啟動應用裝置"]。

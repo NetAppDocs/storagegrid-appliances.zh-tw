@@ -20,8 +20,7 @@ summary: 您可以關閉 SGF6112 應用裝置、然後重新開啟電源以執�
 關閉設備以執行硬體維護。
 
 .開始之前
-* 您有 link:locating-sgf6112-in-data-center.html["實際放置設備"]。
-
+您有 link:locating-sgf6112-in-data-center.html["實際放置設備"]。
 
 .關於這項工作
 為避免服務中斷、請在可接受服務中斷期間的排程維護期間、關閉設備。

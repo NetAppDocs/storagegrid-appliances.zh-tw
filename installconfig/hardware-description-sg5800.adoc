@@ -314,4 +314,4 @@ image::../media/e4000_controller_with_callouts.png[E4000 控制器上的連接�
 
 |===
 .相關資訊
-http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E系列系統文件網站"^]
+https://docs.netapp.com/us-en/e-series-family/index.html["NetApp E 系列文件"^]

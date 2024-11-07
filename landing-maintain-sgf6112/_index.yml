@@ -1,13 +1,17 @@
 ---
 indexpage:
+  title: 維護 SG6100 儲存設備硬體
+  summary: 維護 SG6100 儲存設備的硬體。
+  keywords: maintain storagegrid sg6100
+  lead: 維護 SG6100 儲存設備的硬體。
   tiles:
   - title: 經常執行的程序
     links:
-    - title: 升級 SANtricity （ SG6160 ）
+    - title: 升級 SANtricity
       url: "../sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html"
     - title: 升級磁碟機韌體（ SG6160 ）
-      url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager.html"
-    - title: 開啟或關閉位置 LED
+      url: "../sg6100/upgrade-drive-firmware-using-santricity-system-manager.html"
+    - title: 開啟或關閉識別 LED
       url: "../sg6100/turning-sgf6112-identify-led-on-and-off.html"
     - title: 在資料中心找到應用裝置
       url: "../sg6100/locating-sgf6112-in-data-center.html"
@@ -25,10 +29,8 @@ indexpage:
       url: "../sg6100/replacing-sg6100-cn-controller.html"
     - title: 更換儲存控制器控制器（ SG6160 ）
       url: "../sg6100/replace-controller-e4000-duplex.html"
-    - title: 將 SGF6112 重新放置在機架中
+    - title: 將 SGF6112 或 SG6100-CN 重新放置在機架中
       url: "../sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
-    - title: 將 SG6100-cn 重新放置在機架中
-      url: "../sg6100/reinstalling-sg6100-cn-controller-into-cabinet-or-rack.html"
   - title: 硬體程序
     links:
     - title: 裝回機箱蓋
@@ -50,7 +52,7 @@ indexpage:
     - title: 更換內部 NIC （ SGF6112 和 SG6160 ）
       url: "../sg6100/replace-nic-in-sgf6112.html"
     - title: 更換外部 NIC （ SG6160 ）
-      url: "../sg6100/replace-ocp-nic-in-sg6100-cn.html"
+      url: "../sg6100/replace-ocp-nic-sg6100-cn.html"
     - title: 更換 DIMM （ SG6160 ）
       url: "../sg6100/replace-dimms-e4000.html"
     - title: 更換電池（ SG6160 ）

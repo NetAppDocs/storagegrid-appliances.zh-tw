@@ -29,7 +29,7 @@ summary:
 
 * 存取 SANtricity 系統管理員：
 +
-** 從 Grid Manager 中、選取 * 節點 * > * 應用裝置節點 * > * SANtricity 系統管理員 * 。控制器資訊位於 https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["SANtricity 系統管理員標籤"]。
+** 從 Grid Manager 中、選取 * 節點 * > * 應用裝置節點 * > * SANtricity 系統管理員 * 。控制器資訊位於 https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricity 系統管理員標籤"]。
 +
 
 NOTE: 在本程序的某些步驟中、您可能無法使用 Grid Manager 存取 SANtricity 系統管理員。如果 SG5800 控制器關閉、您將需要使用瀏覽器存取 SANtricity 系統管理員。
@@ -167,12 +167,12 @@ image::../media/drw_E4000_replace_dimms_IEOPS-865.png[移除 DIMM 。]
 
 
  a| 
-image::../media/legend_icon_01.png[圖例圖示 01]
+image::../media/legend_icon_01.png[圖說文字參考 1.]
 | DIMM推出式彈片 
 
 
  a| 
-image::../media/legend_icon_02.png[圖例圖示02]
+image::../media/legend_icon_02.png[圖說文字參考 2.]
 | DIMM 
 |===
 . 從防靜電包裝袋中取出備用DIMM、拿住DIMM的邊角、然後將其對準插槽。

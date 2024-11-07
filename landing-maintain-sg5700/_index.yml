@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: 維護 SG5700 儲存設備硬體
+  summary: 維護 SG5700 儲存設備的硬體。
+  keywords: maintain storagegrid sg5700
+  lead: 維護 SG5700 儲存設備的硬體。
   tiles:
   - title: 經常執行的程序
     links:
@@ -7,8 +11,10 @@ indexpage:
       url: "../sg5700/changing-link-configuration-of-e5700sg-controller.html"
     - title: 升級 SANtricity
       url: "../sg5700/upgrading-santricity-os-on-storage-controller.html"
-    - title: 升級磁碟機韌體
-      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+    - title: 升級磁碟機韌體（線上方法）
+      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 升級磁碟機韌體（離線方法）
+      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
   - title: 硬體程序
     links:
     - title: 更換 E2800 系列儲存控制器

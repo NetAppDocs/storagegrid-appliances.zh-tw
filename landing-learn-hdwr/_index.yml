@@ -1,14 +1,18 @@
 ---
 indexpage:
+  title: 開始使用 StorageGRID 應用裝置
+  summary: 瞭解 StorageGRID 系統中的儲存設備或服務應用裝置。
+  keywords: learn storagegrid appliances
+  lead: 瞭解 StorageGRID 系統中的儲存設備或服務應用裝置。
   tiles:
   - title: 開始使用
     links:
     - title: 應用裝置的新功能
       url: "../whats-new-appliances.html"
     - title: 深入瞭解StorageGRID
-      url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
+      url: https://docs.netapp.com/us-en/storagegrid/primer/index.html
     - title: StorageGRID 快速入門
-      url: https://docs.netapp.com/us-en/storagegrid-118/primer/quick-start.html
+      url: https://docs.netapp.com/us-en/storagegrid/primer/quick-start.html
     - title: 裝置安裝快速入門
       url: "../installconfig/index.html"
   - title: 瞭解儲存設備

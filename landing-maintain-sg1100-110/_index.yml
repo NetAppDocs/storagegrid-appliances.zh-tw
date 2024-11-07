@@ -1,9 +1,13 @@
 ---
 indexpage:
+  title: 維護 SG1100 和 SG110 服務應用裝置硬體
+  summary: 維護 SG1100 和 SG110 服務應用裝置的硬體。
+  keywords: maintain storagegrid sg110, maintain storagegrid sg1100
+  lead: 維護 SG1100 和 SG110 服務應用裝置的硬體。
   tiles:
   - title: 經常執行的程序
     links:
-    - title: 開啟或關閉位置 LED
+    - title: 開啟或關閉識別 LED
       url: "../sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html"
     - title: 在資料中心找到應用裝置
       url: "../sg110-1100/locating-sg110-and-sg1100-in-data-center.html"

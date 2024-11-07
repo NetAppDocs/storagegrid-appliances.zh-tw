@@ -19,7 +19,7 @@ summary: 您可能需要在SG6000應用裝置上執行維護程序。本節中�
 
 請參閱 link:../installconfig/configuring-hardware.html["設定硬體"] 適用於在初始應用裝置安裝和組態期間也會執行的維護程序。
 
-若要避免服務中斷、請在關閉設備之前確認所有其他儲存節點已連接至網格、或在可接受服務中斷期間、於排程維護期間關閉設備。請參閱相關資訊 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["監控節點連線狀態"^]。
+若要避免服務中斷、請在關閉設備之前確認所有其他儲存節點已連接至網格、或在可接受服務中斷期間、於排程維護期間關閉設備。請參閱的相關資訊 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["監控節點連線狀態"^]。
 
 
-CAUTION: 如果您曾經使用過僅建立物件複本的ILM規則、則必須在排程的維護期間關閉應用裝置。否則、您可能會在任何使儲存節點停止服務的維護程序期間、暫時失去對這些物件的存取權。請參閱相關資訊 https://docs.netapp.com/us-en/storagegrid-118/ilm/index.html["利用資訊生命週期管理來管理物件"^]。
+CAUTION: 如果您曾經使用過僅建立物件複本的ILM規則、則必須在排程的維護期間關閉應用裝置。否則、您可能會在任何使儲存節點停止服務的維護程序期間、暫時失去對這些物件的存取權。請參閱的相關資訊 https://docs.netapp.com/us-en/storagegrid/ilm/index.html["利用資訊生命週期管理來管理物件"^]。

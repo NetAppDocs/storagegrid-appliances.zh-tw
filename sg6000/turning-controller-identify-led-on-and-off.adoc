@@ -37,8 +37,7 @@ NOTE: 如果控制器上安裝了擋板、可能很難看到正面的識別LED�
 
 
 .相關資訊
-link:reinstalling-fibre-channel-hba.html#verify-fibre-channel-hba-to-replace["驗證要更換的Fibre Channel HBA"]
+* link:reinstalling-fibre-channel-hba.html#verify-fibre-channel-hba-to-replace["驗證要更換的Fibre Channel HBA"]
+* link:locating-controller-in-data-center.html["在資料中心找到控制器"]
+* link:../installconfig/accessing-bmc-interface.html["存取BMC介面"]
 
-link:locating-controller-in-data-center.html["在資料中心找到控制器"]
-
-link:../installconfig/accessing-bmc-interface.html["存取BMC介面"]

@@ -987,8 +987,11 @@ image::../media/sg6100_e4000_connections.png[SG6100-CN 至 E4000 連線]
  a| 
 2.
  a| 
-裝置上有四個 10/25-GbE 網路連接埠
+SG6100-CN控制器上有四個網路連接埠
  a| 
+* 裝置上有四個 10/25-GbE 網路連接埠
+* 四個 10/25/40/100-GbE 網路連接埠、可選購 100g NIC SKU （僅限 SG6160 ）
+
  a| 
 連線到Grid Network和Client Network for StorageGRID the請參閱 link:gathering-installation-information-sg6100.html#port-bond-modes["連接埠連結模式（ SG6100 ）"]
 

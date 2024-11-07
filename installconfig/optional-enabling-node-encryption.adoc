@@ -19,7 +19,7 @@ summary: 您可以在節點和磁碟層級啟用加密、以保護應用裝置�
 
 您可以在支援的磁碟機上執行這兩種加密層級、以提高安全性。
 
-請參閱 https://docs.netapp.com/us-en/storagegrid-118/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID 加密方法"^] 如需 StorageGRID 應用裝置所有可用加密方法的相關資訊、
+如需 StorageGRID 應用裝置所有可用加密方法的相關資訊、請參閱 https://docs.netapp.com/us-en/storagegrid/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID 加密方法"^]。
 
 
 
@@ -30,7 +30,7 @@ summary: 您可以在節點和磁碟層級啟用加密、以保護應用裝置�
 如果您使用 ConfigBuilder 來產生 JSON 檔案、則可以自動啟用節點加密。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
 
 .開始之前
-檢閱相關資訊 https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["設定 KMS"^]。
+查看有關的信息 https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["設定 KMS"^]。
 
 .關於這項工作
 啟用節點加密的應用裝置會連線至為StorageGRID 該站台設定的外部金鑰管理伺服器（KMS）。每個KMS（或KMS叢集）都會管理站台所有應用裝置節點的加密金鑰。這些金鑰可加密及解密應用裝置中每個磁碟上已啟用節點加密的資料。
@@ -42,7 +42,7 @@ KMS可在應用StorageGRID 程式安裝於原地之前或之後、在Grid Manage
 
 
 
-CAUTION: 當裝置安裝時啟用節點加密時、會指派一個暫存金鑰。在應用裝置連線至金鑰管理系統（ KMS ）並設定 KMS 安全金鑰之前、應用裝置上的資料不會受到保護。請參閱 https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html["KMS 應用裝置組態總覽"^] 以取得更多資訊。
+CAUTION: 當裝置安裝時啟用節點加密時、會指派一個暫存金鑰。在應用裝置連線至金鑰管理系統（ KMS ）並設定 KMS 安全金鑰之前、應用裝置上的資料不會受到保護。如需其他資訊、請參閱 https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html["KMS 應用裝置組態總覽"^]。
 
 如果沒有解密磁碟所需的 KMS 金鑰、設備上的資料就無法擷取、而且會有效遺失。當解密金鑰無法從 KMS 擷取時、就會發生這種情況。如果客戶清除KMS組態、KMS金鑰過期、與KMS的連線中斷、或是設備從StorageGRID 安裝KMS金鑰的作業系統中移除、金鑰就無法存取。
 
@@ -107,7 +107,7 @@ NOTE: 設備一開始會設定指派給每個磁碟區的隨機非KMS加密金�
 您可以在初始應用裝置安裝期間啟用磁碟機加密、然後再載入 Grid Manager 。您也可以將應用裝置設為維護模式、以啟用節點加密或變更密碼。
 
 .開始之前
-檢閱相關資訊 https://docs.netapp.com/us-en/storagegrid-118/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID 加密方法"^]。
+查看有關的信息 https://docs.netapp.com/us-en/storagegrid/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID 加密方法"^]。
 
 .關於這項工作
 一開始啟用磁碟機加密時、會設定複雜密碼。如果更換運算節點、或將加密的 SED 移至新的運算節點、您必須手動重新輸入複雜密碼。

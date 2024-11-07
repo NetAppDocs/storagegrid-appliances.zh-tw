@@ -58,12 +58,12 @@ summary: 為應用裝置加電後、您可以設定 StorageGRID 將使用的網�
 +
 ** 設定 SANtricity 系統管理員（ SG5700 、 SG5800 、 SG6000 和 SG6100 ）您將用於監控硬體的軟體
 ** 變更 RAID 模式
-** 存取 SG6000-CN 或 SG6100-CN 控制器的 BMC 介面
+** link:../installconfig/accessing-bmc-interface.html["存取 BMC 介面"]適用於 SG6000-CN 或 SG6100-CN 控制器
 
 
 * 服務應用裝置
 +
-** 存取 SG100 、 SG110 、 SG1000 和 SG1100 的 BMC 介面
+** link:../installconfig/accessing-bmc-interface.html["存取 BMC 介面"]適用於 SG100 、 SG110 、 SG1000 和 SG1100
 
 
 

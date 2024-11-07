@@ -14,7 +14,7 @@ summary: 瞭解如何設定及使用 StorageGRID 系統。
 
 
 [role="lead"]
-前往 https://docs.netapp.com/us-en/storagegrid-118/index.html["StorageGRID 11.8 文件"^] 以瞭解如何設定及使用 StorageGRID 11.8 系統。
+請移至 https://docs.netapp.com/us-en/storagegrid/index.html["StorageGRID 11.9 文件"^]以瞭解如何設定及使用 StorageGRID 11.9 系統。
 
 StorageGRID 文件網站包含下列資訊：
 
@@ -33,6 +33,7 @@ StorageGRID 文件網站包含下列資訊：
 
 您可以在這裡找到其他 NetApp StorageGRID 軟體版本的文件：
 
+* https://docs.netapp.com/us-en/storagegrid-118/index.html["StorageGRID 11.8 文件"^]
 * https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRID 11.7 文件"^]
 * https://docs.netapp.com/us-en/storagegrid-116/index.html["StorageGRID 11.6 文件"^]
 * https://docs.netapp.com/us-en/storagegrid-115/index.html["本文檔的內容StorageGRID"^]

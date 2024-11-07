@@ -196,7 +196,7 @@ image::../media/appliance_installer_reboot_complete.png[重新開機完成]
 +
 .. 在 Grid Manager 中、選取 * 節點 * 、並確認應用裝置儲存節點有綠色的核取記號圖示。
 +
-綠色核取標記圖示表示沒有作用中的警示、而且節點已連線至網格。如需節點圖示的說明、請參閱 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["監控節點連線狀態"^]。
+綠色核取標記圖示表示沒有作用中的警示、而且節點已連線至網格。有關節點圖標的說明，請參閱 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["監控節點連線狀態"^]。
 
 .. 選取「*儲存設備*」索引標籤、確認您新增的每個擴充櫃的「物件儲存設備」表格中都會顯示16個新的物件存放區。
 .. 驗證每個新擴充櫃的機櫃狀態是否為「名目」、以及「已設定」的組態狀態。

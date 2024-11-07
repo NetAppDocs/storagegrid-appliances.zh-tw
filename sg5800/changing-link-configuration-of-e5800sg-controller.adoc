@@ -47,7 +47,7 @@ NOTE: 如果您變更所連線的網路或連結、可能會失去連線。如�
 如果您變更了VLAN設定、裝置的子網路可能已經變更。如果您需要變更應用裝置的IP位址、請遵循 link:../installconfig/setting-ip-configuration.html["設定 StorageGRID IP 位址"] 說明。
 
 . 從《SectionAppliance安裝程式》StorageGRID 中、選取*「Configure Networking」（設定網路）*>「* Ping Test」（* Ping測試）*。
-. 使用Ping測試工具來檢查任何網路上的IP位址連線能力、這些網路可能會受到您在中所做的連結組態變更的影響  <<change_link_configuration_sg5700,變更連結組態>> 步驟。
+. 使用 Ping 測試工具檢查任何網路上的 IP 位址連線、這些網路可能會受到您在步驟中所做的連結組態變更影響<<change_link_configuration_sg5800,變更連結組態>>。
 +
 除了您選擇執行的任何其他測試之外、請確認您可以ping通主要管理節點的網格IP位址、以及至少一個其他儲存節點的網格IP位址。如有必要、請修正任何連結組態問題。
 

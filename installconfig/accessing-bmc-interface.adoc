@@ -22,7 +22,7 @@ summary: 您可以使用 DHCP 或靜態 IP 位址、在下列應用裝置機型�
 
 
 .開始之前
-* 管理用戶端使用 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 管理用戶端使用的 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]是。
 * 應用裝置上的 BMC 管理連接埠會連線至您打算使用的管理網路。
 +
 [role="tabbed-block"]

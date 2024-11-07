@@ -41,7 +41,7 @@ image::../media/sg6060_riser_alignment_hole.jpg[提升板組件上的定位孔]
 . 如果您更換的應用裝置使用金鑰管理伺服器（ KMS ）來管理節點加密的加密金鑰、則可能需要額外的組態、節點才能加入網格。如果節點未自動加入網格、請確定這些組態設定已傳輸至新應用裝置、並手動設定任何沒有預期組態的設定：
 +
 ** link:../installconfig/accessing-storagegrid-appliance-installer.html["設定 StorageGRID 連線"]
-** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["設定應用裝置的節點加密"^]
+** https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["設定應用裝置的節點加密"^]
 
 
 . 登入應用裝置：

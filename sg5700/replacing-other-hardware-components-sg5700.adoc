@@ -21,7 +21,7 @@ summary: 您可能需要更換StorageGRID 處理器內的控制器電池、磁�
 .關於這項工作
 若要更換 E2800 控制器中的電池、請參閱這些說明中的說明 link:replacing-e2800-controller.html["裝回 E2800 控制器"]。這些指示說明如何從產品中取出控制器、從控制器中取出電池、安裝電池、以及更換控制器。
 
-若要更換產品中的磁碟機、電源風扇箱、風扇箱、電源箱或磁碟抽屜、請存取 http://mysupport.netapp.com/info/web/ECMP1658252.html["E 系列維護 E2800 硬體的程序"^]。
+若要更換產品中的磁碟機、電源風扇箱、風扇箱、電源箱或磁碟抽屜、請存取 https://docs.netapp.com/us-en/e-series-family/index.html["E 系列維護 E2800 硬體的程序"^]。
 
 
 

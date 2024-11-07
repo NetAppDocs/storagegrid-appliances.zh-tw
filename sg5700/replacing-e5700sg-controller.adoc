@@ -114,4 +114,4 @@ CAUTION: 請務必用兩隻手支撐控制器的重量。
 更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
 
 .相關資訊
-http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E系列系統文件網站"^]
+https://docs.netapp.com/us-en/e-series-family/index.html["NetApp E 系列文件"^]

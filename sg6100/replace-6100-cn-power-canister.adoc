@@ -52,7 +52,7 @@ summary: 更換60個磁碟機控制器磁碟櫃或磁碟機磁碟櫃、其中包
 . 從「支援系統管理程式」中、判斷哪個電力容器故障。SANtricity
 +
 .. 選取*硬體*。
-.. 請看效能 image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[""] *機櫃*下拉式清單右側的圖示、用於判斷哪個機櫃有故障的電力箱。
+.. 查看 * 機櫃 * 下拉式清單右側的電源圖示、判斷哪個機櫃的電源image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["電源圖示"]箱故障。
 +
 如果某個元件故障、此圖示為紅色。
 

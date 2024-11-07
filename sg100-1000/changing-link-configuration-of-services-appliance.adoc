@@ -14,8 +14,7 @@ summary: 您可以變更服務應用裝置的乙太網路連結組態。您可�
 您可以變更服務應用裝置的乙太網路連結組態。您可以變更連接埠連結模式、網路連結模式及連結速度。
 
 .開始之前
-* 您有 link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
-
+您有 link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
 
 
 NOTE: 在極少數情況StorageGRID 下、將某個應用程式置於維護模式可能會使應用裝置無法遠端存取。

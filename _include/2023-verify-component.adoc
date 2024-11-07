@@ -4,7 +4,7 @@
 
 .開始之前
 * 您擁有需要更換元件的儲存設備序號。
-* 您將使用登入Grid Manager https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 您已使用登入 Grid Manager https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^] 。
 
 
 .關於這項工作
@@ -31,7 +31,7 @@ NOTE: 選取警示、而非警示群組的標題。
 
 .. 記錄故障元件的節點名稱和唯一識別標籤。
 +
-image::../media/nic-alert-sgf6112.jpg[元件 ID 警示]
+image::../media/nic-alert-sgf6112.png[元件 ID 警示]
 
 
 

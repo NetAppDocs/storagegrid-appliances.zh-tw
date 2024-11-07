@@ -35,7 +35,7 @@ image::../media/ping_test_start.png[以擷取畫面擷取StorageGRID 畫面顯�
 如果網路連線有效、會出現「Ping test passed」（Ping測試通過）訊息、並列出ping命令輸出。
 
 +
-image::../media/ping_test_passed.png[以畫面擷取畫面顯示StorageGRID 的Ping測試結果]
+image::../media/ping_test_passed.png[StorageGRID 應用裝置安裝程式中的 Ping 測試結果螢幕擷取畫面]
 
 
 

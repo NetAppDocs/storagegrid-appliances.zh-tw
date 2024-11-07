@@ -15,7 +15,7 @@ summary: 您必須存取StorageGRID 《RideseAppliance安裝程式》、以驗�
 
 .開始之前
 * 您正在使用任何可連線StorageGRID 至「管理員網路」的管理用戶端、或是您有一台服務用筆記型電腦。
-* 用戶端或服務筆記型電腦有 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 用戶端或服務型筆記型電腦具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
 * 服務應用裝置或儲存設備控制器會連線至您打算使用的所有 StorageGRID 網路。
 * 您知道這些網路上服務應用裝置或儲存設備控制器的 IP 位址、閘道和子網路。
 * 您已設定要使用的網路交換器。
@@ -110,7 +110,7 @@ image::../media/sg6100_admin_network_port.png[SGF6112 上的管理網路連接�
 畫面會出現「the不再安裝StorageGRID 程式」首頁。第一次存取此頁面時顯示的資訊和訊息、取決於您的應用裝置目前如何連線StorageGRID 至各個網站。可能會出現錯誤訊息、稍後將予以解決。
 
 +
-image::../media/appliance_installer_home_5700_5600.png[《關於》的頁面擷取畫面：StorageGRID 《關於》的頁面]
+image::../media/appliance_installer_home_5700_5600.png[StorageGRID 應用裝置安裝程式首頁頂端的螢幕擷取畫面]
 
 
 

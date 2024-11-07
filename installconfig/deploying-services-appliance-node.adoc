@@ -22,7 +22,7 @@ summary: 您可以將服務應用裝置部署為主要管理節點、非主要�
 .開始之前
 * 設備已安裝在機架或機櫃中、並已連接至您的網路、並已開啟電源。
 * 網路連結、IP位址和連接埠重新對應（如有必要）已使用StorageGRID 《應用程式安裝程式》為應用裝置設定。
-* 您的服務型筆記型電腦配備 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 您的服務型筆記型電腦配備 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
 * 您知道指派給應用裝置的其中一個IP位址。您可以將IP位址用於任何附加StorageGRID 的靜態網路。
 
 
@@ -90,7 +90,7 @@ NOTE: 如果您需要手動存取「監視器安裝」頁面、請從功能表�
 * 網路連結、IP位址和連接埠重新對應（如有必要）已使用StorageGRID 《應用程式安裝程式》為應用裝置設定。
 * 已部署適用於此系統的主要管理節點StorageGRID 。
 * 列出在《IP組態》頁面StorageGRID 上的所有Grid Network子網路、均已在主要管理節點的Grid Network Subnet List（網格網路子網路清單）中定義。
-* 您的服務型筆記型電腦配備 https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 您的服務型筆記型電腦配備 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
 * 您知道指派給應用裝置的IP位址。您可以將IP位址用於任何附加StorageGRID 的靜態網路。
 
 

@@ -14,7 +14,7 @@ summary: 如果設備無法正常運作或故障、您可能需要更換設備�
 如果設備無法正常運作或故障、您可能需要更換設備。
 
 .開始之前
-* 您的替換產品的零件編號與您要更換的產品相同。
+* 您的替換產品的零件編號與您要更換的產品相同。檢查產品正面的標籤、確認產品編號相符。
 * 您有標籤可識別連接至本產品的每條纜線。
 * 您有 link:locating-sg110-and-sg1100-in-data-center.html["實際放置設備"]。
 
@@ -42,7 +42,7 @@ NOTE: 如果您要在安裝StorageGRID 完更新功能之前更換產品、Stora
 .. 輸入： `*run-host-command ipmitool lan print*` 顯示應用裝置目前的 BMC 組態。
 
 
-. link:power-sg110-and-sg1100-off-on.html#shut-down-the-sgf6112-appliance["關閉產品電源"]。
+. link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-appliance["關閉產品電源"]。
 . 如果此 StorageGRID 應用裝置上的任何網路介面都設定為使用 DHCP 、則您需要更新 DHCP 伺服器上的永久 DHCP 租用指派、以參照替換應用裝置的 MAC 位址。如此可確保設備已指派預期的 IP 位址。
 +
 請聯絡您的網路或 DHCP 伺服器管理員、以更新永久的 DHCP 租用指派。系統管理員可以從 DHCP 伺服器記錄檔中判斷更換設備的 MAC 位址、或是檢查裝置乙太網路連接埠所連接之交換器中的 MAC 位址表。
@@ -93,7 +93,7 @@ CAUTION: 如果您想要保留磁碟機上的資料、請務必將 SSD 磁碟機
 
 
 . 開啟產品電源。
-. 如果您更換的應用裝置已啟用 SED 磁碟機的硬碟機加密、則您必須 link:optional-enabling-node-encryption.html#access-an-encrypted-drive["輸入磁碟機加密密碼"] 可在第一次啓動更換設備時訪問加密的驅動器。
+. 如果您更換的應用裝置已啟用 SED 磁碟機的硬碟機加密、則您必須 link:../installconfig/optional-enabling-node-encryption.html#access-an-encrypted-drive["輸入磁碟機加密密碼"] 可在第一次啓動更換設備時訪問加密的驅動器。
 . 請等待產品重新加入網格。如果應用裝置未重新加入網格、請遵循 StorageGRID 應用裝置安裝程式首頁上的指示來解決任何問題。
 +
 
@@ -102,7 +102,7 @@ WARNING: 為了避免資料遺失、如果 Appliance Installer 指出需要變�
 . 如果您更換的應用裝置使用金鑰管理伺服器（ KMS ）來管理節點加密的加密金鑰、則可能需要額外的組態、節點才能加入網格。如果節點未自動加入網格、請確定這些組態設定已傳輸至新應用裝置、並手動設定任何沒有預期組態的設定：
 +
 ** link:../installconfig/accessing-storagegrid-appliance-installer.html["設定 StorageGRID 連線"]
-** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["設定應用裝置的節點加密"^]
+** https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["設定應用裝置的節點加密"^]
 
 
 . 登入更換的應用裝置：
@@ -141,8 +141,8 @@ WARNING: 為了避免資料遺失、如果 Appliance Installer 指出需要變�
 
 
 .相關資訊
-link:../installconfig/viewing-status-indicators.html["檢視狀態指標"]
+* link:../installconfig/viewing-status-indicators.html["檢視狀態指標"]
+* link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html#view-error-codes["檢視應用裝置的開機代碼"]
 
-link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html#view-error-codes["檢視應用裝置的開機代碼"]
 
 更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。

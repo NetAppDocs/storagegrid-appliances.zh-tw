@@ -98,7 +98,7 @@ image::../media/cloning_progress.png[複製進度]
 
 
 * 目標節點會退出維護模式並加入StorageGRID 以取代來源節點的功能。
-* 來源應用裝置處於預先安裝狀態、如同您已安裝 https://docs.netapp.com/us-en/storagegrid-118/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["已準備好重新安裝"^]。
+* 來源應用裝置處於預先安裝狀態、就像您擁有的一樣 https://docs.netapp.com/us-en/storagegrid/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["已準備好重新安裝"^]。
 
 
 

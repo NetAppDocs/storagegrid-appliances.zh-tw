@@ -32,7 +32,7 @@ NOTE: 為獲得最佳網路效能、所有節點都應在其Grid Network介面�
 您擁有 `Passwords.txt` 使用變更 IP 工具的檔案。
 
 .步驟
-存取變更IP工具、並依照所述更新MTU設定 https://docs.netapp.com/us-en/storagegrid-118/maintain/changing-nodes-network-configuration.html["變更節點網路組態"^]。
+存取變更 IP 工具並更新 MTU 設定、如所述 https://docs.netapp.com/us-en/storagegrid/maintain/changing-nodes-network-configuration.html["變更節點網路組態"^]。
 
 
 

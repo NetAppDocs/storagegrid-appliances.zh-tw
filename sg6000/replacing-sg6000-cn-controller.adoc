@@ -14,7 +14,7 @@ summary: 如果SG6000-CN-控制器無法以最佳方式運作、或是發生故�
 如果SG6000-CN-控制器無法以最佳方式運作、或是發生故障、您可能需要更換該控制器。
 
 .開始之前
-* 您的更換控制器的零件編號與您要更換的控制器相同。
+* 您的更換控制器的零件編號與您要更換的控制器相同。檢查控制器正面的標籤、確認零件編號相符。
 * 您可以使用標籤來識別連接至控制器的每條纜線。
 * 您已實際找到要在資料中心更換的控制器。
 +
@@ -78,7 +78,7 @@ NOTE: 服務筆記型電腦連線可能在安裝程序的某些階段無法使�
 +
 ** link:../installconfig/configuring-network-links.html["設定網路連結"]
 ** link:../installconfig/setting-ip-configuration.html["設定StorageGRID 靜態IP位址"]
-** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["設定應用裝置的節點加密"^]
+** https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["設定應用裝置的節點加密"^]
 
 
 . 使用更換的控制器登入應用裝置：
@@ -122,8 +122,7 @@ NOTE: 服務筆記型電腦連線可能在安裝程序的某些階段無法使�
 更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
 
 .相關資訊
-link:../installconfig/sg6000-cn-installing-into-cabinet-or-rack.html["將 SG6000-CN 安裝到機櫃或機架中"]
+* link:../installconfig/sg6000-cn-installing-into-cabinet-or-rack.html["將 SG6000-CN 安裝到機櫃或機架中"]
+* link:../installconfig/viewing-status-indicators.html["檢視狀態指標"]
+* link:../installconfig/troubleshooting-hardware-installation.html#view-boot-codes["檢視SG6000-CN-控制器的開機代碼"]
 
-link:../installconfig/viewing-status-indicators.html["檢視狀態指標"]
-
-link:../installconfig/troubleshooting-hardware-installation.html#view-boot-codes["檢視SG6000-CN-控制器的開機代碼"]

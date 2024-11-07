@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: 部署應用裝置節點
+  summary: 部署 StorageGRID 應用裝置節點並驗證其運作。
+  keywords: storagegrid deployment, deploy storagegrid
+  lead: 部署 StorageGRID 應用裝置節點並驗證其運作。
   tiles:
   - title: 部署應用裝置
     links:

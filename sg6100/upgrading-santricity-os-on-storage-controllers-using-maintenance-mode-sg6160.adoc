@@ -41,7 +41,7 @@ CAUTION: 視StorageGRID 部署模式和ILM原則而定、一次升級多個不�
 
 CAUTION: NVSRAM/SRAM/SRAM/VRAM/VRAM/VRAM/VRA StorageGRID請勿使用標準的 NVSRAM 下載。
 
-. 請遵循_升級SANtricity 支援資訊指南或SANtricity 《支援支援支援服務》中的說明、升級韌體和NVSRAM.
+. 請遵循或 SANtricity 系統管理員線上說明中的指示 https://docs.netapp.com/us-en/e-series-santricity/sm-support/upgrade-controller-software-and-firmware.html["升級 SANtricity OS_ 指南"^]、以升級韌體和 NVSRAM 。
 +
 
 NOTE: 立即啟動升級檔案。請勿延遲啟動。

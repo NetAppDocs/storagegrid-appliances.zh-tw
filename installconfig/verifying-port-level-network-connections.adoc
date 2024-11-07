@@ -16,7 +16,7 @@ summary: 為了確保StorageGRID 不受防火牆阻礙、請確認StorageGRID �
 .關於這項工作
 您可以使用StorageGRID 《解決方案安裝程式》中提供的連接埠清單、測試應用裝置與Grid Network中其他節點之間的連線能力。
 
-此外、您也可以在管理網路和用戶端網路上、以及在諸如外部NFS或DNS伺服器所使用的udp連接埠上測試連線能力。如需這些連接埠的清單、請參閱 https://docs.netapp.com/us-en/storagegrid-118/network/network-port-reference.html["網路連接埠參考"^]。
+此外、您也可以在管理網路和用戶端網路上、以及在諸如外部NFS或DNS伺服器所使用的udp連接埠上測試連線能力。如需這些連接埠的清單，請參閱 https://docs.netapp.com/us-en/storagegrid/network/network-port-reference.html["網路連接埠參考"^]。
 
 
 NOTE: 連接埠連線表中列出的網格網路連接埠僅適用於 StorageGRID 11.7 版或更新版本。若要驗證每種節點類型的連接埠是否正確、請務必參閱StorageGRID 您的版本的《網路指南》。

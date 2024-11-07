@@ -24,10 +24,10 @@ NOTE: 請勿仰賴 E 系列指示來更換 StorageGRID 應用裝置中的控制�
 * ESD 腕帶、或您已採取防靜電預防措施。
 * 用於識別連接至控制器的每條纜線的標籤。
 * 特定存取權限。
-* 您必須使用登入Grid Manager https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 您必須使用登入 Grid Manager https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^] 。
 * 存取 SANtricity 系統管理員：
 +
-** 從 Grid Manager 中、選取 * 節點 * > * 應用裝置節點 * > * SANtricity 系統管理員 * 。控制器資訊位於 https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["SANtricity 系統管理員標籤"]。
+** 從 Grid Manager 中、選取 * 節點 * > * 應用裝置節點 * > * SANtricity 系統管理員 * 。控制器資訊位於 https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricity 系統管理員標籤"^]。
 ** 將 Management Station 中的瀏覽器指向控制器的網域名稱或 IP 位址。
 
 
@@ -180,12 +180,12 @@ image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[取出 NVMEM 電池。
 
 
  a| 
-image::../media/legend_icon_01.png[圖例圖示 01]
+image::../media/legend_icon_01.png[圖說文字參考 1.]
 | 電池釋放彈片 
 
 
  a| 
-image::../media/legend_icon_02.png[圖例圖示02]
+image::../media/legend_icon_02.png[圖說文字參考 2.]
 | 電池電源接頭 
 |===
 
@@ -229,12 +229,12 @@ image::../media/drw_E4000_replace_dimms_IEOPS-865.png[移除 DIMM 。]
 
 
  a| 
-image::../media/legend_icon_01.png[圖例圖示 01]
+image::../media/legend_icon_01.png[圖說文字參考 1.]
 | DIMM推出式彈片 
 
 
  a| 
-image::../media/legend_icon_02.png[圖例圖示02]
+image::../media/legend_icon_02.png[圖說文字參考 2.]
 | DIMM 
 |===
 

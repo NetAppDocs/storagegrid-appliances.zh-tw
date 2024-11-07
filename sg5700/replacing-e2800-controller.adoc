@@ -26,7 +26,7 @@ NOTE: 請勿仰賴 E 系列指示來更換 StorageGRID 應用裝置中的控制�
 CAUTION: 使用儲存的金鑰解除磁碟機鎖定之前、您將無法使用本設備。
 
 * 您必須擁有特定的存取權限。
-* 您必須使用登入Grid Manager https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 您必須使用登入 Grid Manager https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^] 。
 
 
 .關於這項工作

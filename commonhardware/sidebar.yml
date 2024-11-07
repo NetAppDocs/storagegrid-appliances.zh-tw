@@ -13,5 +13,9 @@ entries:
   url: "/commonhardware/checking-dns-server-configuration.html"
 - title: 更新 MAC 位址參照（ SG100 、 SG1000 、 SGF6024 和 SG6060 ）
   url: "/commonhardware/locate-mac-address.html"
+- title: 管理磁碟機（ SG110 、 SG1100 、 SGF6112 和 SG6160 ）
+  url: "/commonhardware/manage-drives-tab.html"
 - title: 在維護模式中監控節點加密
   url: "/commonhardware/monitoring-node-encryption-in-maintenance-mode.html"
+- title: 使用 BMC 介面
+  url: "/commonhardware/use-bmc.html"

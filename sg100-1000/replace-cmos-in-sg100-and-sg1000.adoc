@@ -34,7 +34,7 @@ NOTE: link:shut-down-sg100-and-sg1000.html["受控制的產品關機"]從機架�
 
 
 .關於這項工作
-為避免服務中斷、請在開始更換 CMOS 電池之前、確認所有其他儲存節點均已連接至網格、或在可接受服務中斷期間的排程維護期間更換電池。請參閱相關資訊 https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["監控節點連線狀態"^]。
+為避免服務中斷、請在開始更換 CMOS 電池之前、確認所有其他儲存節點均已連接至網格、或在可接受服務中斷期間的排程維護期間更換電池。請參閱的相關資訊 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["監控節點連線狀態"^]。
 
 .步驟
 . 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
@@ -75,7 +75,7 @@ image::../media/sg6060_riser_alignment_hole.jpg[提升板組件上的定位孔]
 . 如果您更換的應用裝置使用金鑰管理伺服器（ KMS ）來管理節點加密的加密金鑰、則可能需要額外的組態、節點才能加入網格。如果節點未自動加入網格、請確定這些組態設定已傳輸至新應用裝置、並手動設定任何沒有預期組態的設定：
 +
 ** link:../installconfig/accessing-storagegrid-appliance-installer.html["設定 StorageGRID 連線"]
-** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["設定應用裝置的節點加密"^]
+** https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["設定應用裝置的節點加密"^]
 
 
 . 登入應用裝置：

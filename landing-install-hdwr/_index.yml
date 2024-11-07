@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: 安裝應用裝置硬體
+  summary: 在您的站台安裝應用裝置硬體。
+  keywords: storagegrid install hardware, storagegrid install appliance
+  lead: 在您的站台安裝應用裝置硬體。
   tiles:
   - title: 將儲存設備安裝在機櫃或機架中
     links:

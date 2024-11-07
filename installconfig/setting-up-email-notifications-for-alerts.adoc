@@ -14,10 +14,51 @@ summary: 如果您希望在警示發生時傳送電子郵件通知、請使用 B
 如果您希望在警示發生時傳送電子郵件通知、請使用 BMC 介面來設定 SMTP 設定、使用者、 LAN 目的地、警示原則和事件篩選器。
 
 
-NOTE: 如果 SG6000-CN 控制器或服務應用裝置故障且必須更換、則此程序所做的 BMC 設定可能無法保留。請務必記錄您套用的所有設定、以便在必要時更換硬體後、輕鬆重新套用。
+NOTE: 如果控制器或應用裝置故障且必須更換、則此程序所做的 BMC 設定可能無法保留。請務必記錄您套用的所有設定、以便在必要時更換硬體後、輕鬆重新套用。
 
+[role="tabbed-block"]
+====
+.StorageGRID 11.9 及更新版本
+--
 .開始之前
-您知道如何存取BMC儀表板。
+您知道如何 link:../installconfig/accessing-bmc-interface.html["存取 BMC 儀表板"]。
+
+.關於這項工作
+在 BMC 介面中、使用「設定」頁面上的 * 使用者管理 * 和 * 平台事件篩選器 * 選項來設定電子郵件通知。
+
+這些指示顯示適用於某些 StorageGRID 應用裝置的最新版 BMC 韌體。您的 StorageGRID 應用裝置可能有稍微不同的 BMC 韌體版本。
+
+* BMC 韌體會在 StorageGRID 軟體升級期間更新。如果您未執行最新版的 StorageGRID 軟體，可以將您的應用裝置更新至最新的 StorageGRID 版本，以安裝 https://docs.netapp.com/us-en/storagegrid/upgrade/how-your-system-is-affected-during-upgrade.html#appliance-firmware-is-upgraded["適用於您的應用裝置的最新 BMC 韌體版本"]。
+* 如果您的 BMC 在 StorageGRID 更新之前或之後出現不同的情況：
++
+** 請參閱 StorageGRID 11.8 標籤上的指示。
+** link:../commonhardware/use-bmc.html["使用 StorageGRID BMC"]可能也會提供相關資訊、協助您針對 BMC 版本調整這些指示。
+
+
+
+
+.步驟
+. 將電子郵件通知設定為一或多個 LAN 目的地。
++
+.. 從 BMC 儀表板中、選取 * 設定 * > * 平台事件篩選器 * > * 區域網路目的地 * 。
+.. 對於目的地類型、請選取 * 電子郵件 * 。
+.. 選取 BMC 使用者名稱、從 BMC 使用者清單接收電子郵件警示。警示電子郵件會傳送至為此使用者設定的電子郵件地址。附註：若要設定 BMC 使用者、請選取 * 設定 * > * 使用者管理 * 。如需詳細資訊、請參閱的「使用者管理」一節 https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMC 使用者指南"^]。
+.. 輸入電子郵件警示的「主旨」和「電子郵件訊息」。
++
+
+NOTE: AMI 格式電子郵件使用者不使用電子郵件主旨和電子郵件訊息。
+
+.. 選擇*保存*。
+
+
+. 如需使用 BMC 設定警示原則和事件篩選器的相關資訊、請參閱的平台事件篩選器一節 https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMC 使用者指南"^]。
+
+
+--
+.StorageGRID 11.8
+--
+.開始之前
+您知道如何 link:../installconfig/accessing-bmc-interface.html["存取 BMC 儀表板"]。
 
 .關於這項工作
 在BMC介面中、您可以使用「設定」頁面上的*「SMTP設定」*、*「使用者管理」*和*「平台事件篩選器」*選項來設定電子郵件通知。
@@ -25,7 +66,7 @@ NOTE: 如果 SG6000-CN 控制器或服務應用裝置故障且必須更換、則
 image::../media/bmc_settings_menu.png[BMC設定功能表]
 
 .步驟
-. link:configuring-snmp-settings-for-bmc.html["設定 BMC 的 SNMP 設定"]。
+. 設定 BMC 的 SMTP 設定。
 +
 .. 選擇*設定*>* SMTP設定*。
 .. 針對寄件者電子郵件ID、請輸入有效的電子郵件地址。
@@ -82,3 +123,6 @@ BMC傳送電子郵件時、會以寄件者地址的形式提供此電子郵件�
 
 
 
+
+--
+====

@@ -10,8 +10,9 @@ entries:
   pdf-filename: 維護組態程序 - SG5800
   entries:
   - title: 升級SANtricity 儲存控制器上的作業系統
-    url: "/sg5800/upgrading-santricity-os-on-storage-controller.html"
     entries:
+    - title: 關於在 SG5800 儲存控制器上升級 SANtricity OS
+      url: "/sg5800/upgrading-santricity-os-on-storage-controller.html"
     - title: 使用SANtricity Grid Manager升級儲存控制器上的作業系統
       url: "/sg5800/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html"
     - title: 使用維護模式升級 E4000 控制器上的 SANtricity OS
@@ -30,7 +31,7 @@ entries:
   pdf-filename: 硬體程序 - SG5800
   entries:
   - title: 更換 SG5800 控制器
-    url: "/sg5800/replace-controller-sg5800.html"
+    url: "/sg5800/replace-controller-5800sg.html"
   - title: 更換 E4000 控制器
     url: "/sg5800/replace-controller-e4000-simplex.html"
   - title: 更換風扇（ SG5860 ）

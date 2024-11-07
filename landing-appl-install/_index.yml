@@ -1,5 +1,10 @@
 ---
 indexpage:
+  title: 安裝 StorageGRID 應用裝置硬體
+  summary: 若要將儲存設備或服務應用裝置新增至 StorageGRID 系統、請安裝並設定應用裝置硬體。然後、在每個應用裝置上安裝 StorageGRID
+    軟體、並將應用裝置節點連接至網格。
+  keywords: storagegrid appliance install, storagegrid hardware install
+  lead: 若要將儲存設備或服務應用裝置新增至 StorageGRID 系統、請安裝並設定應用裝置硬體。然後、在每個應用裝置上安裝 StorageGRID 軟體、並將應用裝置節點連接至網格。
   tiles:
   - title: 快速入門
     links:

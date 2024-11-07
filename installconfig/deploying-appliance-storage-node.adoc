@@ -38,8 +38,8 @@ NOTE: 如果您需要一次部署多個應用裝置節點、可以使用下列�
 
 * 如果您要執行擴充或還原作業、請遵循適當的指示：
 +
-** 若要將應用裝置儲存節點新增至現有的 StorageGRID 系統、請參閱的指示 https://docs.netapp.com/us-en/storagegrid-118/expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html["新增網格節點"^]。
-** 若要將應用裝置儲存節點部署為還原作業的一部分、請參閱說明 https://docs.netapp.com/us-en/storagegrid-118/maintain/recovering-storagegrid-appliance-storage-node.html["恢復應用裝置儲存節點"^]。
+** 若要將應用裝置儲存節點新增至現有的 StorageGRID 系統、請參閱的說明 https://docs.netapp.com/us-en/storagegrid/expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html["新增網格節點"^]。
+** 若要將應用裝置儲存節點部署為還原作業的一部分、請參閱說明 https://docs.netapp.com/us-en/storagegrid/maintain/recovering-storagegrid-appliance-storage-node.html["恢復應用裝置儲存節點"^]。
 
 
 
@@ -50,8 +50,14 @@ NOTE: 如果您需要一次部署多個應用裝置節點、可以使用下列�
 +
 畫面會出現「the不再安裝StorageGRID 程式」首頁。
 
+. 選擇 * 節點類型 * 。如需更多資訊、請參閱 https://docs.netapp.com/us-en/storagegrid/primer/what-storage-node-is.html#types-of-storage-nodes["儲存節點類型"]。
 +
-image::../media/appliance_installer_home_start_installation_enabled.gif[其他節點類型的應用裝置安裝程式首頁（管理節點除外）]
+
+NOTE: 中繼資料 - 只能在應用裝置部署期間選取。如果選取中繼資料專屬作為儲存節點類型、則在部署應用裝置之後無法變更。
+
+. 在 * 節點名稱 * 欄位中、提供您要用於此應用裝置節點的系統名稱、然後按一下 * 儲存 * 。
++
+此處顯示的名稱將是應用裝置節點的系統名稱。內部 StorageGRID 作業需要系統名稱、因此無法變更。
 
 . 在「*主要管理節點連線*」區段中、判斷您是否需要指定主要管理節點的IP位址。
 +
@@ -86,10 +92,6 @@ image::../media/appliance_installer_home_start_installation_enabled.gif[其他�
 
 
 |===
-. 在 * 節點名稱 * 欄位中、提供您要用於此應用裝置節點的系統名稱、然後按一下 * 儲存 * 。
-+
-此處顯示的名稱將是應用裝置節點的系統名稱。內部 StorageGRID 作業需要系統名稱、因此無法變更。
-
 . 在* Installation*區段中、確認目前狀態為「Ready to start installation `_node name_` 使用主要管理節點進入網格 `_admin_ip_` "且已啟用*開始安裝*按鈕。
 +
 如果*開始安裝*按鈕未啟用、您可能需要變更網路組態或連接埠設定。如需相關指示、請參閱產品的維護指示。

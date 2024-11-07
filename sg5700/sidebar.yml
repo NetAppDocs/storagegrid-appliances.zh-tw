@@ -10,8 +10,9 @@ entries:
   pdf-filename: 維護組態程序 - SG5700
   entries:
   - title: 升級SANtricity 儲存控制器上的作業系統
-    url: "/sg5700/upgrading-santricity-os-on-storage-controller.html"
     entries:
+    - title: 關於在 SG5700 儲存控制器上升級 SANtricity OS
+      url: "/sg5700/upgrading-santricity-os-on-storage-controller.html"
     - title: 使用SANtricity Grid Manager升級儲存控制器上的作業系統
       url: "/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html"
     - title: 使用SANtricity 維護模式升級E2800控制器上的作業系統
