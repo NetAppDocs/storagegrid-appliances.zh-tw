@@ -5691,7 +5691,6 @@
   <block id="6caee75b38d61d4801420e3aec0b9ea6" category="paragraph">下圖顯示 SG6100 應用裝置正面的指示燈和按鈕。</block>
   <block id="fe624da545a0997cc5d2c3d30f369af3" category="paragraph">下圖顯示電源供應器的位置、並識別 SGF6112 和 SG6100-CN 背面的 LED 。其他狀態和活動 LED 位於應用裝置連接埠上。這些 LED 可能會因產品型號而異。</block>
   <block id="f95ca0912808abe2270cd1f418b6e89a" category="image-alt">後置 LED SGF6112 和 SG6100-CN</block>
-  <block id="0f47986745ce840c10499664283d7b6b" category="paragraph"><block ref="0f47986745ce840c10499664283d7b6b" category="inline-link-rx"></block></block>
   <block id="810b48be331213357ad3b610c2ba8a84" category="paragraph">為避免服務中斷、請在開始更換 CMOS 電池之前、確認所有其他儲存節點均已連接至網格、或在可接受服務中斷期間的排程維護期間更換電池。請參閱的相關資訊<block ref="b3f58d00ee93c32201d0681addeea5ad" category="inline-link-rx"></block>。</block>
   <block id="ae08639bb3ed33f2b9c5b58d9cddd031" category="list-text">您的替換產品的零件編號與您要更換的產品相同。檢查產品正面的標籤、確認產品編號相符。</block>
   <block id="4a9949b1653a4c2d26a04be273526cc5" category="list-text">您有 <block ref="1f3a73fe731b4a5896a19ff9b9d6fda4" category="inline-link-macro-rx"></block>。</block>
@@ -5761,4 +5760,5 @@
   <block id="51130a506eed4d61508de06399ef34da" category="sidebar">將 SGF6112 或 SG6100-CN 重新放置在機架中</block>
   <block id="4f45c0c0b55884bea7e7649654813e35" category="sidebar">管理磁碟機（ SG110 、 SG1100 、 SGF6112 和 SG6160 ）</block>
   <block id="3f7fe61f120f9ba5cf2d622ad7597a37" category="sidebar">使用 BMC 介面</block>
+  <block id="6aa2cc2f099a383774f35aa72c7c8c6d" category="paragraph"><block ref="6aa2cc2f099a383774f35aa72c7c8c6d" category="inline-link-rx"></block></block>
 </blocks>
