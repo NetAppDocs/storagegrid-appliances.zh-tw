@@ -5648,7 +5648,6 @@
   <block id="2060996e4ea036c84fe524f4bb640ff0" category="list-text">* SANtricity 管理網路 * （儲存設備選用、 SGF6112 不需要）：此網路可讓您存取 SANtricity 系統管理員、讓您監控及管理應用裝置和儲存控制器機櫃中的硬體元件。此管理網路可以與管理員網路StorageGRID 相同、也可以是獨立的管理網路。</block>
   <block id="e6b3f8c787f110e738041acfec63cd45" category="admonition">如需 StorageGRID 網路的詳細資訊，請參閱<block ref="c9a67c39cb366102345c95ea9d802249" category="inline-link-rx"></block>。</block>
   <block id="79ffe998f527a3998a83d054ff067c7e" category="list-text"><block ref="79ffe998f527a3998a83d054ff067c7e" category="inline-link-macro-rx"></block></block>
-  <block id="44ef269732748f70c763abafc0361990" category="list-text"><block ref="44ef269732748f70c763abafc0361990" category="inline-link-macro-rx"></block></block>
   <block id="2b5994be0ad1518a670726d49503aef3" category="admonition">如果控制器或應用裝置故障且必須更換、則此程序所做的 BMC 設定可能無法保留。請務必記錄您套用的所有設定、以便在必要時更換硬體後、輕鬆重新套用。</block>
   <block id="156e455630a4e49e7afff2a829c35531" category="open-title">StorageGRID 11.9 及更新版本</block>
   <block id="1433f3dea3005561ee1f9e94e4de877d" category="paragraph">在 BMC 介面中、使用「設定」頁面上的 * 使用者管理 * 和 * 平台事件篩選器 * 選項來設定電子郵件通知。</block>
@@ -5761,4 +5760,5 @@
   <block id="4f45c0c0b55884bea7e7649654813e35" category="sidebar">管理磁碟機（ SG110 、 SG1100 、 SGF6112 和 SG6160 ）</block>
   <block id="3f7fe61f120f9ba5cf2d622ad7597a37" category="sidebar">使用 BMC 介面</block>
   <block id="6aa2cc2f099a383774f35aa72c7c8c6d" category="paragraph"><block ref="6aa2cc2f099a383774f35aa72c7c8c6d" category="inline-link-rx"></block></block>
+  <block id="06670f0887e1e6231759b0c18c236453" category="list-text"><block ref="06670f0887e1e6231759b0c18c236453" category="inline-link-macro-rx"></block></block>
 </blocks>

@@ -23,7 +23,7 @@ summary: 您可以使用 StorageGRID 應用裝置安裝程式來設定用於 Sto
 * link:../sg100-1000/changing-link-configuration-of-services-appliance.html["變更 SG100 或 SG1000 服務應用裝置的連結組態"]
 * link:../sg110-1100/changing-link-configuration-of-sg110-and-sg1100-appliance.html["變更 SG110 或 SG1100 服務應用裝置的連結組態"]
 * link:../sg5700/changing-link-configuration-of-e5700sg-controller.html["變更E5700SG控制器的連結組態"]
-* link:../sg5800/changing-link-configuration-of-e5800sg-controller.html["變更 SG5800 控制器的連結組態"]
+* link:../sg5800/changing-link-configuration-of-sg5800-controller.html["變更 SG5800 控制器的連結組態"]
 * link:../sg6000/changing-link-configuration-of-sg6000-cn-controller.html["變更 SG6000-CN 控制器的連結組態"]
 * link:../sg6100/changing-link-configuration-of-sgf6112-appliance.html["變更 SG6100 應用裝置的連結組態"]
 
