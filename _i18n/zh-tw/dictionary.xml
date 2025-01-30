@@ -5763,4 +5763,6 @@
   <block id="06670f0887e1e6231759b0c18c236453" category="list-text"><block ref="06670f0887e1e6231759b0c18c236453" category="inline-link-macro-rx"></block></block>
   <block id="125c3dfed61415188958ef328818fc0b" category="inline-link-macro">將擴充機櫃新增至部署的 SG6160 的說明</block>
   <block id="813eb6e57b4706c7df0e13ae0defacd8" category="list-text">如果您的應用裝置包含擴充機櫃，請參閱<block ref="ba1bb7195a934f0a465563dc7e705dd7" category="inline-link-macro-rx"></block>以取得纜線資訊。</block>
+  <block id="c6ce792d1a06c8b72936713f0001140a" category="list-text">您已記錄應用裝置目前的 BMC 組態（如果仍可用）。</block>
+  <block id="df5c8b40026819d555dd6dbdc002fb3e" category="list-text">輸入：<block ref="73a1c7bb6f54767f7e51d6973cad4923" prefix=" " category="inline-code"></block>顯示應用裝置目前的 BMC 組態。</block>
 </blocks>

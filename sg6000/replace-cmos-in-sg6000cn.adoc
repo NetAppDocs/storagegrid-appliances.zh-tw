@@ -26,9 +26,25 @@ summary: 請使用此程序更換主機板上的 CMOS 幣式電池。
 .開始之前
 * 您有 link:verify-component-to-replace-sg6000cn.html["已驗證需要更換 CMOS 電池的設備"]。
 * 您可以 link:locating-controller-in-data-center.html["實體放置 SG6000-CN 控制器"] 在資料中心更換 CMOS 電池。
+* 您已記錄應用裝置目前的 BMC 組態（如果仍可用）。
++
+.. 登入要更換的應用裝置：
++
+... 輸入下列命令： `ssh admin@_grid_node_IP_`
+... 輸入中所列的密碼 `Passwords.txt` 檔案：
+... 輸入下列命令以切換至root： `su -`
+... 輸入中所列的密碼 `Passwords.txt` 檔案：
++
+當您以root登入時、提示會從變更 `$` 至 `#`。
+
+
+
+.. 輸入： `*run-host-command ipmitool lan print*`顯示應用裝置目前的 BMC 組態。
 +
 
 NOTE: link:power-sg6000-cn-controller-off-on.html["受控制的產品關機"]從機架中取出產品之前、必須先使用。
+
+
 
 * 您已拔下所有纜線和 link:reinstalling-sg6000-cn-controller-cover.html["已取下產品護蓋"]。
 
