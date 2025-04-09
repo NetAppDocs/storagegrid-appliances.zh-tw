@@ -40,7 +40,7 @@ NOTE: 如果您變更所連線的網路或連結、可能會失去連線。如�
 image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
 
 +
-裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。節點頁面應顯示正常狀態（綠色核取記號圖示） image:../media/icon_alert_green_checkmark.png["綠色核取記號"] 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。
+裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。節點頁面應顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾選圖示image:../media/icon_alert_green_checkmark.png["綠色核取記號"]），表示沒有作用中警示，且節點已連線至網格。
 
 +
 image::../media/nodes_menu.png[應用裝置節點重新加入網格]

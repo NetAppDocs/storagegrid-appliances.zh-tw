@@ -114,7 +114,7 @@ image::../media/sg5860_front_and_back_views.png[SG5860 產品的前後方]
 
 SG5860 包含兩個控制器、兩個風扇迴廊和兩個電源迴廊。
 
-image::../media/sg5860_with_callouts.png[控制器,fan canisters,and power canisters in SG5860 appliance]
+image::../media/sg5860_with_callouts.png[SG5860 產品中的控制器，風扇迴廊和動力迴廊]
 
 [cols="1a,2a"]
 |===

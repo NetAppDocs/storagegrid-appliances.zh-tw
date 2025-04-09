@@ -34,7 +34,6 @@
   <block id="16e036b76973c9fbae0f82be319571c0" category="list-text">選取*重新開機進入維護模式*、以重新啟動控制器、使節點保持維護模式。（此選項僅在控制器處於維護模式時可用。） 如果在重新加入網格之前需要在節點上執行其他維護作業、請選取此選項。</block>
   <block id="abae4054ff73709d783731ccc01cb620" category="image-alt">以維護模式重新啟動控制器</block>
   <block id="3626aefc9cb2effa31b269c155b93cb3" category="inline-image-macro">綠色核取記號</block>
-  <block id="4a7896c4df016b109cb969cdc361c49f" category="paragraph">裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。「 * 節點 * 」頁面應顯示正常狀態（綠色核取記號圖示） <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。</block>
   <block id="4a7717f111c2730f0f856e7f7bce4120" category="image-alt">應用裝置節點重新加入網格</block>
   <block id="d302ab60418523bd0761c847d8a30df9" category="summary">找到控制器、以便執行硬體維護或升級。</block>
   <block id="5a98db7f59331b6532861044538d04ed" category="doc">在資料中心找到 SG100 或 SG1000</block>
@@ -586,7 +585,6 @@
   <block id="d3b48700951a0b8b77b211e773016d08" category="paragraph">圖中顯示四個網路連接埠如何以固定連接埠連結模式（預設組態）連結。</block>
   <block id="9ee14927da820774398c3df40695487e" category="image-alt">SGF6112 固定連接埠綁定模式</block>
   <block id="38c9a563fec2225ed2a9f5d6933738cf" category="paragraph">圖中顯示四個網路連接埠如何以集合連接埠連結模式連結。</block>
-  <block id="7a94e0e125ccb659b8287a71266ad626" category="image-alt">SGF6112 集合式連接埠綁定模式</block>
   <block id="911e75012e8614cfd0f98a9d0a4a1ded" category="image-alt">管理網路連接埠連結 SGF6112</block>
   <block id="0739ae8aa2b43e4e7e5a0617281bed7e" category="list-text">從「SectionAppliance安裝程式」的功能表列StorageGRID 中、按一下「*組態網路*」&gt;「*連結組態*」。</block>
   <block id="243a7c2280790d37c7a538bdc19d52a0" category="paragraph">「網路連結組態」頁面會顯示設備的圖表、其中的網路和管理連接埠編號為。</block>
@@ -710,7 +708,6 @@
   <block id="0e152e55698c28ee0f75725b3f0f1f3a" category="image-alt">SG5760應用裝置的正面和背面</block>
   <block id="0e9c6b4af603c29f7da7a818c51d0535" category="section-title">SG5760 元件</block>
   <block id="cee3e5c26f498528ac4a0236cc79321a" category="paragraph">SG5760包含兩個控制器、兩個風扇迴管和兩個電源迴管。</block>
-  <block id="cbfb14f470701bf93424d757c624369a" category="image-alt">控制器</block>
   <block id="e14810f3f4c905323dafce88216fa5cc" category="paragraph">風扇容器（第1個、共2個）</block>
   <block id="a063d58fb5fae2bdfac1676614f7ee07" category="paragraph">電力箱（第1頁、共2頁）</block>
   <block id="6b2b65ea7978b5b9a25b2cb94431e653" category="section-title">SG5760X 前後視圖</block>
@@ -1070,7 +1067,6 @@
   <block id="f4f8856aa71072c7ffcae15cdd730581" category="open-title">儲存設備</block>
   <block id="2294b3e981e790cc87d4da57bd1cbbfb" category="list-text">若要監控安裝進度、請按一下*監控安裝*。</block>
   <block id="5180436222e4cab27793145585243c85" category="paragraph">「監視器安裝」頁面會顯示安裝進度。</block>
-  <block id="137110384a36d8791ecfd822e2cec069" category="image-alt">此影像由周邊文字說明。</block>
   <block id="de54811cbfae5b1dad2e97b4d2bc5d37" category="paragraph">藍色狀態列會指出目前正在進行的工作。綠色狀態列表示已成功完成的工作。</block>
   <block id="242b3abd41f6ed6b0544bfba71c75862" category="admonition">安裝程式可確保先前安裝中完成的工作不會重新執行。如果您正在重新執行安裝、任何不需要重新執行的工作都會顯示綠色狀態列和「已中斷」狀態。</block>
   <block id="500b135abdc51d28fdb66659c88a91cb" category="list-text">檢閱前兩個安裝階段的進度。</block>
@@ -1346,7 +1342,6 @@
   <block id="f961c0bd93f3e244eccfb936f758a1b9" category="summary">請遵循這些高階步驟來安裝和設定 StorageGRID 應用裝置、並將其部署為 StorageGRID 系統中的節點。</block>
   <block id="93524d04199bd4798a3fe31a7af76e9b" category="doc">裝置安裝快速入門</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
-  <block id="61d7360b301a1cb885e62542da3bb7d4" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 準備安裝</block>
   <block id="729465e8ee73495ad13bac2190f3bf21" category="list-text">與 NetApp 專業服務顧問合作、自動化安裝與組態。請參閱 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="61a31f57e1f0397cc5e4b75b9e9a8235" category="paragraph">此步驟為選用步驟。不過、簡化及自動化組態步驟可節省時間、並在多個應用裝置的組態中提供一致性。</block>
   <block id="908d6500c8720fda63973247d6cf6dd8" category="inline-link-macro">準備網站</block>
@@ -1357,7 +1352,6 @@
   <block id="5b3bc2041b779a6eb06cd20122f89cea" category="inline-link-macro">收集網路資訊</block>
   <block id="adb08abc85034bf5521a8cf194dd40f7" category="list-text"><block ref="adb08abc85034bf5521a8cf194dd40f7" category="inline-link-macro-rx"></block></block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
-  <block id="8277df7af5b96bf4a80b559c3ba178a8" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 安裝硬體</block>
   <block id="5a4d04406745c2904f6018d2e497f94e" category="inline-link-macro">註冊硬體</block>
   <block id="4f29770bc91ba4e0ac93deb8a75d6ab4" category="list-text"><block ref="4f29770bc91ba4e0ac93deb8a75d6ab4" category="inline-link-macro-rx"></block></block>
   <block id="925131ecbd4fcd6869a82902a137f0f5" category="list-text">安裝到機櫃或機架中</block>
@@ -1368,7 +1362,6 @@
   <block id="d2ac588ca1c2e36ed5fe68add0ef2b5b" category="inline-link-macro">檢視狀態指示燈和代碼</block>
   <block id="a858da9bda9e3877715430e0088bb5dc" category="list-text"><block ref="a858da9bda9e3877715430e0088bb5dc" category="inline-link-macro-rx"></block></block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
-  <block id="c0d04cbe5d2a655bbb5f1f3f1e6451d9" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 設定硬體</block>
   <block id="2accf2cbaee75c29a846d3926d71c01a" category="paragraph">如果您要設定和部署多個應用裝置、請使用 NetApp ConfigBuilder 工具來自動化下列組態和部署步驟。如需相關指引、請聯絡您的 NetApp 專業服務顧問。請參閱 <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="689516ae21d375042165861bc9946283" category="list-text">設定 StorageGRID 連線</block>
   <block id="7d96b927cf251ec29cb794b34748cc6f" category="list-text"><block ref="91a798f25e7b04bd5397635b1ec1a030" category="inline-link-macro-rx"></block> 並確認您執行的是最新版本</block>
@@ -1383,7 +1376,6 @@
   <block id="2171ee6f1f3ccc6f315dabf2a4d9915c" category="inline-link-macro">重新對應網路連接埠</block>
   <block id="c34a1892850e29f57586c61eaab0d8f1" category="list-text"><block ref="c34a1892850e29f57586c61eaab0d8f1" category="inline-link-macro-rx"></block></block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
-  <block id="75be3472a8a2dba2c67b3d12a39d8714" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 部署應用裝置節點</block>
   <block id="007b9954a5c681c7ea309c9471bd96d1" category="paragraph">將應用裝置部署為 StorageGRID 系統中的新節點。</block>
   <block id="34fa5050343060315a25cd328438a2ce" category="inline-link-macro">部署應用裝置儲存節點</block>
   <block id="c1d39a1019e538dbace4710b28fbd450" category="list-text"><block ref="c1d39a1019e538dbace4710b28fbd450" category="inline-link-macro-rx"></block></block>
@@ -1475,9 +1467,7 @@
   <block id="1e5525a7408a5f05eab0a28d87fbf2b2" category="paragraph">如果您有網格子網路、則需要網格網路閘道。指定的所有網格子網路都必須透過此閘道才能連線。當您開始StorageGRID 安裝時、也必須在主要管理節點的Grid Network Subnet List（網格網路子網路清單）中定義這些Grid Network子網路。</block>
   <block id="95c601a1b60eb13cd59109591804d00a" category="admonition">未列出預設路由。如果未啟用用戶端網路、則預設路由將使用Grid Network閘道。</block>
   <block id="408ea845582fc67ccb1d6fd994905d7e" category="inline-image-macro">插入圖示</block>
-  <block id="625b1517f7fc50c8790976add6a30b85" category="list-text">若要新增子網路、請按一下插入圖示 <block ref="0e4a78bb3476d4c9221dc56813d32390" category="inline-image-macro-rx" type="image"></block> 最後一項的右側。</block>
   <block id="5f11c7889df3330ff1f653f5e5702931" category="inline-image-macro">刪除圖示</block>
-  <block id="20d1f9afba77fd8b189e95eebc04fa3c" category="list-text">若要移除未使用的子網路、請按一下刪除圖示 <block ref="ae4b0d0edca14814d378e9b1121d1fb3" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="a46bbb4dd037b68158879e9e446ba4ab" category="list-text">如果您選取* DHcp*、請依照下列步驟設定Grid Network：</block>
   <block id="140b4bda6d38a9f86842d22758d11a13" category="list-text">選擇* DHcp*單選按鈕後，單擊*保存*。</block>
   <block id="a1563c17c233f64f135160e3aaf751c8" category="paragraph">系統會自動填入「* IPV4位址*」、「*閘道*」及「*子網路*」欄位。如果DHCP伺服器設定為指派MTU值、則* MTU *欄位會填入該值、且欄位會變成唯讀。</block>
@@ -2596,7 +2586,6 @@
   <block id="235328827141e650f44c482c6868c490" category="list-text">*過去7天內有4個以上的重要MEL項目*</block>
   <block id="6b108eb8b08f0ff8a5a6e884a1ac6474" category="list-text">* 重新開機至 StorageGRID * 。</block>
   <block id="ff893ef835261129935a9f82f297a8d3" category="list-text">* 重新開機進入維護模式 * 。重新啟動控制器、並將節點保持在維護模式。如果程序期間發生任何故障、而您想重新開始、請選取此選項。節點完成重新開機至維護模式後、請從失敗程序的適當步驟重新啟動。</block>
-  <block id="c7c19b3cb79ee9f5fdbc22cfac916b00" category="paragraph">裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。節點頁面應顯示正常狀態（綠色核取記號圖示） <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。</block>
   <block id="5d4d9bbd71eda7ec2ba074c8e6717b0b" category="list-text">您擁有需要更換元件的儲存設備序號。</block>
   <block id="620e2edf2db0c3c3cad57aeb246c6bfe" category="list-text">電源供應器</block>
   <block id="4604f841b0b16d3013cac1e2078e5b1b" category="list-text">風扇</block>
@@ -3255,15 +3244,12 @@
   <block id="ebd9bec4d70abc789d439c1f136b0538" category="list-text">配置</block>
   <block id="a92cd291617f14a6abada995fa7b9a3f" category="list-text">應用裝置中的資料儲存磁碟機配置。選取磁碟機以檢視磁碟機詳細資料。</block>
   <block id="802e7305dd85cea6e2113cfcd28efcc4" category="inline-image-macro">管理磁碟機索引標籤配置檢視</block>
-  <block id="d27c8e7332b9c04db30add2b10a3b985" category="paragraph"><block ref="d27c8e7332b9c04db30add2b10a3b985" category="inline-image-macro-rx" type="image"></block></block>
   <block id="51c45b795d5d18a3e4e0c37e8b20a141" category="list-text">表</block>
   <block id="bb9b3538a9d87d44908bc9e32d8d569f" category="list-text">列出每個磁碟機的資訊。選取磁碟機以檢視磁碟機詳細資料。</block>
   <block id="a3dca7d34e55df93c7cde51419b56b4d" category="inline-image-macro">管理磁碟機索引標籤表格檢視</block>
-  <block id="c6a460c7204d47ea03281d6c34b4082c" category="paragraph"><block ref="c6a460c7204d47ea03281d6c34b4082c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7839b3083725aa9cf29f17e556f51b13" category="list-text">磁碟機詳細資料</block>
   <block id="f1fcb7890d507bd18507b76b7fac911e" category="list-text">每個磁碟機的摘要。選取適當的工作按鈕、如下面的步驟所述。</block>
   <block id="41bba69dcc44894611fbb8408556ecf0" category="inline-image-macro">管理磁碟機索引標籤磁碟機詳細資料</block>
-  <block id="b20d6e66b629a10a6645afcf7cdaea19" category="paragraph"><block ref="b20d6e66b629a10a6645afcf7cdaea19" category="inline-image-macro-rx" type="image"></block></block>
   <block id="75388568d69331a73edddf1bb8200063" category="section-title">開啟或關閉定位燈</block>
   <block id="eee8e9d047abcc6f2a1bd835ce94940f" category="paragraph">若要在應用裝置中實際找到磁碟機：</block>
   <block id="c32ef8b996f19c9a382163fff2884c3e" category="list-text">從 Grid Manager 中、選取 * 節點 * &gt; * 資料中心 * 。</block>
@@ -3271,7 +3257,6 @@
   <block id="2ec674c0e23e478f263eb7f0dd38dcfa" category="paragraph">出現磁碟機詳細資料面板。</block>
   <block id="91a78dae50662df15b3511db31bb992d" category="list-text">選擇 * 開啟定位燈 * 。</block>
   <block id="4b2ae8cd6761e598cde2ed97ebfc2c52" category="inline-image-macro">駕駛燈泡</block>
-  <block id="7702526375f4228115e6c43395e88831" category="list-text">燈泡圖示 <block ref="94ab247b1d8795573f258b884cbb3205" category="inline-image-macro-rx" type="image"></block> 出現在磁碟機上。</block>
   <block id="388c626a588c91ea293598aef2749584" category="list-text">實體磁碟機上的琥珀色 LED 會閃爍。</block>
   <block id="1abcc8c99c25daaf0201a5a5f9f76f0c" category="list-text">若要關閉定位燈、請選取 * 關閉定位燈 * 。</block>
   <block id="936feabbf1d089b08420a3d98b966130" category="section-title">[[邏輯 置換式磁碟機 ]] 邏輯置換磁碟機</block>
@@ -3367,7 +3352,6 @@
   <block id="d795e8cd8371a6b73f2b41ac93cd4af7" category="list-text">讓產品恢復正常運作模式。從「the Some Appliance Installer」StorageGRID 選取「*進階*&gt;*重新開機控制器*」、然後選取「*重新開機至StorageGRID *」。</block>
   <block id="3e66fa5bf36f76d2fc581f1ef343369d" category="list-text">在重新開機期間、監控節點的狀態、以判斷節點何時重新加入網格。</block>
   <block id="8086a95cfc7eadf19603caa0b59c297b" category="paragraph">應用裝置會重新開機並重新加入網格。此程序最多可能需要20分鐘。</block>
-  <block id="92509bf687a8af21fffd7107378de538" category="list-text">確認重新開機已完成、且節點已重新加入網格。在 Grid Manager 中、確認「節點」頁面顯示正常狀態（綠色核取記號圖示） <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。</block>
   <block id="f2c451e5cfa0cef9d6f648da8cc4b64d" category="list-text">從「支援系統管理程式」中、確認新的控制器是最佳的、並收集支援資料。SANtricity</block>
   <block id="f838b84263c45aeb4f1be3728754e3ad" category="summary">如果E5700SG控制器無法正常運作或故障、您可能需要更換它。</block>
   <block id="add9671f6034ac41fcd287a17504e8bd" category="doc">更換 E5700SG 運算控制器</block>
@@ -3808,7 +3792,6 @@
   <block id="0411119e4f79ad1707ac7d0f4dcfe1f9" category="sidebar">經常執行的程序</block>
   <block id="aefc32c543633d03426c4468621c16d0" category="sidebar">關閉和開啟產品電源</block>
   <block id="a676111fb737fcb72e7e7c965f76150f" category="sidebar">升級 SANtricity</block>
-  <block id="c55b834e11341e1ae1654b547833e156" category="sidebar">升級磁碟機韌體</block>
   <block id="4ca89cce8de48db97e7da87c4da0f321" category="sidebar">機架程序</block>
   <block id="e2a9fe764a1470ce20c66da753bdd352" category="sidebar">更換機架中的控制器</block>
   <block id="ee483790c835a22a06c38b59fd4f5d99" category="sidebar">新增擴充機櫃</block>
@@ -4092,7 +4075,6 @@
   <block id="3646dc64c9984fb8e4916b069a738c4d" category="list-text"><block ref="3646dc64c9984fb8e4916b069a738c4d" category="inline-link-macro-rx"></block></block>
   <block id="1eb5174a3405ee92fa2cb06763568414" category="paragraph">下圖顯示 SG1100 或 SG110 上的四個網路連接埠如何以固定連接埠連結模式（預設組態）連結。</block>
   <block id="80373303baca203e4e14cdd9e3730d3a" category="image-alt">Aggregate Port Bond Mode SG1100</block>
-  <block id="d724879fa330fae85100664fb33bd284" category="image-alt">SG110 集合式連接埠綁定模式</block>
   <block id="c185e2af57eb486402a7055cd7b9584b" category="image-alt">管理網路連接埠連結 SG1100</block>
   <block id="168fbbc8217ae40bd5086de4e4935611" category="image-alt">管理網路連接埠連結 SG110</block>
   <block id="835d59e48069a93606ecd047daaf1f61" category="summary">StorageGRID SG110 服務應用裝置和 SG1100 服務應用裝置可作為閘道節點和管理節點運作、在 StorageGRID 系統中提供高可用度負載平衡服務。這兩種應用裝置可同時做為閘道節點和管理節點（主要或非主要）。</block>
@@ -4724,9 +4706,6 @@
   <block id="b35ee31644277b926d6f67755bed8262" category="list-text">避免使用磁性欄位：</block>
   <block id="4f6fd854157171bc29496e1302686c0d" category="list-text">請將磁碟機遠離磁性裝置。</block>
   <block id="f66258d021b41e6fa19a1649533ef172" category="paragraph">磁區可能會破壞磁碟機上的所有資料、並對磁碟機電路造成無法修復的損害。</block>
-  <block id="c43f428e44c60919263219fc69f78b27" category="doc">使用 SANtricity System Manager 升級 SG5800 磁碟機韌體</block>
-  <block id="f92e54d30593fb7cc6d4478240b8477c" category="paragraph">升級應用裝置磁碟機上的韌體、確保您擁有所有最新功能和錯誤修正。</block>
-  <block id="cc65b159b524b20be43aac2014954759" category="paragraph">&lt;stdin&gt; 中未解決的指令 - 包括： ..//_INCLUDE / 升級磁碟機韌體 - 使用 -SANtricity - system-manager.adoc []</block>
   <block id="03dcfd6af80c1707e647b3cee9c7ee65" category="list-text">驗證要更換的磁碟機的左側 LED 是否閃爍琥珀色。如果 Grid Manager 或 BMC 使用者介面中回報磁碟機問題、 HDD02 或 HDD2 會參考上插槽中的磁碟機、而 HDD03 或 HDD3 則會參考下插槽中的磁碟機。</block>
   <block id="445e825246156afbf483be98791c154f" category="inline-link-macro">SG5800</block>
   <block id="9cef5aeb63436914780167a988745b83" category="list-text"><block ref="9cef5aeb63436914780167a988745b83" category="inline-link-macro-rx"></block></block>
@@ -5024,7 +5003,6 @@
   <block id="6a39f57ac2d1612428addd88ffb4531c" category="image-alt">顯示 SG5800 控制器上的 10/25-GbE 連接埠如何以固定模式連結的影像</block>
   <block id="4036333a04d1013d0a2ff245b1743cf3" category="image-alt">顯示 SG5800 控制器上的 10/25-GbE 連接埠如何以彙總模式連結的影像</block>
   <block id="21beafac072af3624f5cf77d3c470a43" category="paragraph">*SG6100* ：</block>
-  <block id="0fdec1cb4e0f4aebdbf64754e3c5c26a" category="image-alt">SG6100-CN Aggregate 連接埠綁定模式</block>
   <block id="cc5f703bb883e7b54c8db00321eecaae" category="paragraph">此圖顯示兩個 1-GbE 管理連接埠如何在管理網路的「主動式備份」網路連結模式中連結。</block>
   <block id="6cb92c0d4f550369b07be209fb280050" category="image-alt">管理網路連接埠連結 SG6100-cn</block>
   <block id="dc5df6ed37801dd73543ef70db9fc07c" category="paragraph">如果您打算使用 25-GbE 連結速度來連接 SG6100 、 SG6000 、 SG5800 或 SG5700 網路連接埠：</block>
@@ -5097,7 +5075,6 @@
   <block id="73b8548764adcb2d821a3a30eee387e8" category="list-text">如有需要、請使用SANtricity NetApp System Manager將所有磁碟區重新分配給偏好的擁有者。</block>
   <block id="829a1819c04fe8b6abc000f5eaa2f3da" category="list-text">選擇 * 儲存› Volumes （磁碟區） * 。</block>
   <block id="8a63702912777d73eaad4a55fa4ab3fc" category="list-text">選擇 * 更多›重新分配 Volume * 。</block>
-  <block id="a1ed4021c752a35d3fbd57d904dce03b" category="list-text">如果您在此程序期間將應用裝置置於維護模式、請結束維護模式、並等待節點重新開機並重新加入網格。此程序最多可能需要20分鐘。然後、在 Grid Manager 中、確認「節點」頁面顯示正常狀態（綠色核取記號圖示） <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。</block>
   <block id="f64ac56cef1f5e4f7896043e6750dc53" category="paragraph">您的控制器更換已完成。您可以恢復正常作業。</block>
   <block id="af8eaf0890f6f3a0074f43cec79c1e06" category="doc">更換儲存控制器機櫃中的 DIMM （ SG6160 ）</block>
   <block id="7a49dba6d57fb82bb002544c4cff4173" category="paragraph">如果存在記憶體不符或 DIMM 故障、您可以更換 E4000 中的 DIMM 。</block>
@@ -5155,7 +5132,6 @@
   <block id="125aeb33ae4459fc8222ee9ed2b717aa" category="doc">更換儲存控制器機櫃或擴充機櫃中的磁碟機（ SG6160 ）</block>
   <block id="5ee472a2b6b33fddd49024587c88b2f3" category="paragraph">您可以更換 SG6160 儲存控制器機櫃或擴充機櫃（ DE460C ）中的磁碟機。</block>
   <block id="e2b67368d81a86fe4528ce75a038bafd" category="paragraph">StorageGRID Grid Manager 可監控儲存陣列狀態、並在發生磁碟機故障時發出警示。  當 Grid Manager 發出警示、或是在任何時候、您都可以使用 SANtricity 系統管理員中的 Recovery Guru 來取得故障特定磁碟機的詳細資訊。  磁碟機故障時、其黃色警示LED會亮起。您可以在儲存陣列接收I/O時熱交換故障磁碟機</block>
-  <block id="1cdc03d12ae7d748296aee00f5109883" category="doc">使用 SANtricity System Manager 升級 SG6160 磁碟機韌體</block>
   <block id="994ab9a6584338b6df623d7d022d41de" category="doc">使用維護模式（ SG6160 ）升級 E4000 控制器上的 SANtricity OS</block>
   <block id="67ecfade4f78d4256e50f887e4676271" category="list-text">請遵循 _E4000 和 E5800 SANtricity 軟體與韌體升級指南 _ 或 SANtricity 系統管理員線上說明中的指示、以升級 E4000 控制器的韌體和 NVSRAM 。</block>
   <block id="45f3c485a67ff8478a381e767f0f6661" category="doc">使用 SANtricity System Manager 線上方法（ SG6160 ）升級 SG6100 磁碟機韌體</block>
@@ -5291,7 +5267,6 @@
   <block id="f3d66eb150682e2a60af093e5d16adc7" category="sidebar">SG5800 儲存設備</block>
   <block id="6cce22fcbeb08d45ad6d5da04f7403d3" category="sidebar">SG5800 網路資訊</block>
   <block id="f8d63b4eb5f7dd79754fe681c6077d13" category="sidebar">升級 SANtricity （ SG6160 ）</block>
-  <block id="bb16bf046b2fd7560a2b14a7f9ad9e54" category="sidebar">升級磁碟機韌體（ SG6160 ）</block>
   <block id="1dc91b81c3c8c4d17ed44a4e5d4339f6" category="sidebar">更換 SG6100-CN 控制器（ SG6160 ）</block>
   <block id="e96b749f34b2756fc2a0b8eac5a9e783" category="sidebar">更換儲存控制器控制器（ SG6160 ）</block>
   <block id="4b1c1ad38150ad91104a761cfb5a1382" category="sidebar">更換儲存控制器機櫃或擴充機櫃中的電源供應器（ SG6160 ）</block>
@@ -5708,10 +5683,7 @@
   <block id="0757f3b26ab245447cc41936cd3afefe" category="image-alt">圖說文字參考 2.</block>
   <block id="3cbfcbda43179f1df024e2d6051f5271" category="list-text">從 Grid Manager 中、選取 * 節點 * &gt; * 應用裝置節點 * &gt; * SANtricity 系統管理員 * 。控制器資訊位於<block ref="5f7e3517d1392ee1637563255b3cc9f7" category="inline-link-rx"></block>。</block>
   <block id="dd3e050849166c9b784e0ff7ea3bc78b" category="inline-image-macro">風扇圖示</block>
-  <block id="54e682c1e932dd0c4bfed689b5838167" category="list-text">查看 * Shelf* 下拉式清單右側的風扇圖示、判斷哪個機櫃的風扇<block ref="d8ed16a4ae23dc8d3334a7f3c4e05005" category="inline-image-macro-rx" type="image"></block>箱故障。</block>
   <block id="192a91d56dc6ef980c24ab2e0ae1423b" category="inline-image-macro">電源圖示</block>
-  <block id="0b1e2ac5c16b80c880fa2636f10e31c2" category="list-text">查看 * 機櫃 * 下拉式清單右側的電源圖示、判斷哪個機櫃的電源<block ref="2acf1b34d22964e8dbaecf0651bd6755" category="inline-image-macro-rx" type="image"></block>箱故障。</block>
-  <block id="d5dc60c63c442be4b800edee5dfd7825" category="list-text">查看 * 機櫃 * 下拉式清單右側的電源<block ref="2acf1b34d22964e8dbaecf0651bd6755" category="inline-image-macro-rx" type="image"></block>和風扇<block ref="d8ed16a4ae23dc8d3334a7f3c4e05005" category="inline-image-macro-rx" type="image"></block>圖示、以判斷哪個機櫃的電源供應器故障。</block>
   <block id="385670e63395d954db81d385b46f8236" category="doc">關於在 SG5800 儲存控制器上升級 SANtricity OS</block>
   <block id="461fe7b94ee4ef21c8144bcd702f1c6b" category="paragraph">如有需要、請諮詢並下載最新的 SANtricity 作業系統版本、以判斷是否符合 StorageGRID 應用裝置的使用資格<block ref="17b838622e0459e6c950b0d070de6b4f" category="inline-link-rx"></block>。</block>
   <block id="b87441e57987f2ad30acc24d0989a299" category="paragraph">綠色核取標記圖示表示沒有作用中的警示、而且節點已連線至網格。有關節點圖標的說明，請參閱<block ref="9d01e9b7dd507e2d1821030b4fd4830d" category="inline-link-rx"></block>。</block>
@@ -5731,7 +5703,6 @@
   <block id="c844d01687ddbc9954f7c427da1d4706" category="paragraph"><block ref="865edf77b3eba053e29e61ca4d9fc799" category="inline-link-macro-rx"></block>。</block>
   <block id="9a221fc8827a4991817e2b249cd1cf3d" category="admonition"><block ref="441002811e4fb104a452cffe39690fc5" category="inline-link-macro-rx"></block>從機架中取出產品之前、必須先使用。</block>
   <block id="638734fcdf0d50595d78d81bb639fd1b" category="paragraph">當兩個 SSD 磁碟機都正常運作時、系統會自動還原讀取快取功能。您可以<block ref="735aff2661f88efa8f6e8cceeb96bac0" category="inline-link-rx"></block>監控讀取快取命中率。由於快取是剛重建的、因此最初的命中率可能很低、但隨著存取物件資料的用戶端重新填入快取、快取應該會隨著時間而增加。</block>
-  <block id="ae4fa539a7c5cac501cec6d0e59f538b" category="list-text">查看 * Shelf* 下拉式清單右側的風扇圖示、判斷哪個產品的風扇<block ref="d8ed16a4ae23dc8d3334a7f3c4e05005" category="inline-image-macro-rx" type="image"></block>箱故障。</block>
   <block id="b8e55daf0cd7d7e3973b1e259f86f0cd" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程的維護期間更換 NIC 、因為在此程序期間可能會暫時失去這些物件的存取權。請參閱的相關資訊<block ref="7b41c2a82ff7a44a340b8559b6012e92" category="inline-link-rx"></block>。</block>
   <block id="7da93c6e68a43a9bce834b5ab317044f" category="admonition">此程序 * 不 * 支援熱交換。在拔下纜線和移除 NIC 之前、必須先使用 A <block ref="441002811e4fb104a452cffe39690fc5" category="inline-link-macro-rx"></block>。</block>
   <block id="f23564587172dfdbfe2370e00a02a9e5" category="paragraph">為避免服務中斷、請在開始更換網路介面卡（ NIC ）之前、確認所有其他儲存節點都已連接至網格、或在可接受服務中斷期間的排程維護期間更換 NIC 。請參閱的相關資訊<block ref="5059dc4531f4f3adf649d818b95a89ff" category="inline-link-macro-rx"></block>。</block>
@@ -5765,4 +5736,30 @@
   <block id="813eb6e57b4706c7df0e13ae0defacd8" category="list-text">如果您的應用裝置包含擴充機櫃，請參閱<block ref="ba1bb7195a934f0a465563dc7e705dd7" category="inline-link-macro-rx"></block>以取得纜線資訊。</block>
   <block id="c6ce792d1a06c8b72936713f0001140a" category="list-text">您已記錄應用裝置目前的 BMC 組態（如果仍可用）。</block>
   <block id="df5c8b40026819d555dd6dbdc002fb3e" category="list-text">輸入：<block ref="73a1c7bb6f54767f7e51d6973cad4923" prefix=" " category="inline-code"></block>顯示應用裝置目前的 BMC 組態。</block>
+  <block id="b79224966bc8b470ef537d5ffb51ff44" category="paragraph">裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。節點頁面應顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾選圖示<block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>），表示沒有作用中警示，且節點已連線至網格。</block>
+  <block id="df14b12403607f270bd6e168ec91f2c5" category="paragraph">裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。「 * 節點 * 」頁面應顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號圖示<block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>），表示沒有作用中警示，且節點已連線至網格。</block>
+  <block id="e1a4e21f94e19d24dcb24587293cd8bc" category="paragraph"><block ref="e1a4e21f94e19d24dcb24587293cd8bc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a071a7c175c6fede0936ac6e354e5055" category="paragraph"><block ref="a071a7c175c6fede0936ac6e354e5055" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="97d53609a22bc5ffa749725baf5ee763" category="paragraph"><block ref="97d53609a22bc5ffa749725baf5ee763" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="37a27ac52f6f7bdf04dde9ad07bfbadf" category="list-text">驅動器會出現一個燈泡圖示<block ref="7c1d5f8a3cb7dab00bcff0bcc128dacf" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="498ddb51986797c3286426de2dd0f64e" category="image-alt">SG110 Aggregate 連接埠綁定模式</block>
+  <block id="51a72060d29230ddba01b8db16fadc81" category="image-alt">SGF6112 Aggregate 連接埠綁定模式</block>
+  <block id="1728dd14177dbcdd0a6fa80cf61b4898" category="image-alt">SG6100-CN Aggregate 連接埠綁定模式</block>
+  <block id="80e3a4394232e9dc2d44663fd4b2fc7f" category="image-alt">SG5760 產品中的控制器，風扇迴廊和電源迴廊</block>
+  <block id="f8f749c27179878518aca7ac5b2d8019" category="image-alt">SG5760X 應用裝置中的控制器，風扇迴廊和電源迴廊</block>
+  <block id="4b0ead52797d3c32e845ecdb0b2845a2" category="image-alt">SG5860 產品中的控制器，風扇迴廊和動力迴廊</block>
+  <block id="f6885ee1bb99909b74bae4b3f3d7d0ca" category="list-title"><block ref="db1e9f09207f66d8c28f6f11a8cd6159" category="inline-image-macro-rx" type="image"></block>準備安裝</block>
+  <block id="575c830a8a4bb78c31fc0a83c2e1be15" category="list-title"><block ref="5b54f0079909bf49360d9930352446ad" category="inline-image-macro-rx" type="image"></block>安裝硬體</block>
+  <block id="5d66e252151466a967a4fe44fa8bd12f" category="paragraph-title"><block ref="f665cdd22f26f5f1a45b361806d94264" category="inline-image-macro-rx" type="image"></block>設定硬體</block>
+  <block id="c97913a5c47ca1aaefcb605790ba744c" category="paragraph-title"><block ref="dc7abc674acbb1b3c1270fc1cf1b983a" category="inline-image-macro-rx" type="image"></block>部署應用裝置節點</block>
+  <block id="95714c5faee0a7ee22897ffb9bb27d46" category="list-text">若要新增子網路，請按一下最後一個項目右側的插入圖示<block ref="04a444892ecdd89bfdaa29bcbf799187" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="9a70a6ae35e21c6544b20ca5f08a7c77" category="list-text">要刪除未使用的子網，請單擊刪除圖標<block ref="382e1d9aa4a1ad456c931180513d817a" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="a260587fbb1d0830942f420048880c97" category="list-text">確認重新開機已完成、且節點已重新加入網格。在 Grid Manager 中，確認「節點」頁面顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號圖示<block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>），表示沒有作用中警示，且節點已連線至網格。</block>
+  <block id="997a5fbd7bf48a6f361ad63bb5c3ea8b" category="list-text">查看 * Shelf* 下拉式清單右側的風扇圖示、判斷哪個機櫃的風扇<block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>箱故障。</block>
+  <block id="4679124015a3fb5a2b9a8d50c4bec768" category="list-text">查看 * 機櫃 * 下拉式清單右側的電源圖示、判斷哪個機櫃的電源<block ref="34a51d44013a1ce73b6f6d4343cad0e8" category="inline-image-macro-rx" type="image"></block>箱故障。</block>
+  <block id="73a5f23e1326c160cea1d64fb296d381" category="list-text">查看 * 機櫃 * 下拉式清單右側的電源<block ref="34a51d44013a1ce73b6f6d4343cad0e8" category="inline-image-macro-rx" type="image"></block>和風扇<block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>圖示、以判斷哪個機櫃的電源供應器故障。</block>
+  <block id="5be5b200ea87bda5139c19d04ce77e9d" category="list-text">如果您在此程序期間將應用裝置置於維護模式、請結束維護模式、並等待節點重新開機並重新加入網格。此程序最多可能需要20分鐘。接著，在 Grid Manager 中，確認「節點」頁面顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號圖示<block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>），表示沒有作用中警示，且節點已連線至網格。</block>
+  <block id="0160256cfe219f6b22fa00049dc8b08b" category="list-text">查看 * Shelf* 下拉式清單右側的風扇圖示、判斷哪個產品的風扇<block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>箱故障。</block>
+  <block id="1a41776500a52e28aa05db3c32dfc47a" category="sidebar">升級磁碟機韌體（ SG6160 線上方法）</block>
+  <block id="2c8a2ef75a9a05ce84a4b89f17f20322" category="sidebar">升級磁碟機韌體（ SG6160 離線方法）</block>
 </blocks>

@@ -67,8 +67,8 @@ NOTE: 為獲得最佳網路效能、所有節點都應在其Grid Network介面�
 NOTE: 未列出預設路由。如果未啟用用戶端網路、則預設路由將使用Grid Network閘道。
 
 +
-*** 若要新增子網路、請按一下插入圖示 image:../media/icon_plus_sign_black_on_white.gif["插入圖示"] 最後一項的右側。
-*** 若要移除未使用的子網路、請按一下刪除圖示 image:../media/icon_nms_delete_new.gif["刪除圖示"]。
+*** 若要新增子網路，請按一下最後一個項目右側的插入圖示image:../media/icon_plus_sign_black_on_white.gif["插入圖示"]。
+*** 要刪除未使用的子網，請單擊刪除圖標image:../media/icon_nms_delete_new.gif["刪除圖示"]。
 
 
 .. 按一下「 * 儲存 * 」。
@@ -92,8 +92,8 @@ NOTE: 未列出預設路由。如果未啟用用戶端網路、則預設路由�
 NOTE: 未列出預設路由。如果未啟用用戶端網路、則預設路由將使用Grid Network閘道。
 
 +
-*** 若要新增子網路、請按一下插入圖示 image:../media/icon_plus_sign_black_on_white.gif["插入圖示"] 最後一項的右側。
-*** 若要移除未使用的子網路、請按一下刪除圖示 image:../media/icon_nms_delete_new.gif["刪除圖示"]。
+*** 若要新增子網路，請按一下最後一個項目右側的插入圖示image:../media/icon_plus_sign_black_on_white.gif["插入圖示"]。
+*** 要刪除未使用的子網，請單擊刪除圖標image:../media/icon_nms_delete_new.gif["刪除圖示"]。
 
 
 .. 如果您要使用巨型框架、請將MTU欄位變更為適合巨型框架的值、例如9000。否則、請保留預設值1500。
@@ -148,8 +148,8 @@ CAUTION: 網路的MTU值必須符合節點所連接之交換器連接埠上所�
 NOTE: 無法使用管理網路閘道來設定預設路由。
 
 +
-*** 若要新增子網路、請按一下插入圖示 image:../media/icon_plus_sign_black_on_white.gif["插入圖示"] 最後一項的右側。
-*** 若要移除未使用的子網路、請按一下刪除圖示 image:../media/icon_nms_delete_new.gif["刪除圖示"]。
+*** 若要新增子網路，請按一下最後一個項目右側的插入圖示image:../media/icon_plus_sign_black_on_white.gif["插入圖示"]。
+*** 要刪除未使用的子網，請單擊刪除圖標image:../media/icon_nms_delete_new.gif["刪除圖示"]。
 
 
 .. 按一下「 * 儲存 * 」。
@@ -173,8 +173,8 @@ NOTE: 無法使用管理網路閘道來設定預設路由。
 NOTE: 無法使用管理網路閘道來設定預設路由。
 
 +
-*** 若要新增子網路、請按一下插入圖示 image:../media/icon_plus_sign_black_on_white.gif["插入圖示"] 最後一項的右側。
-*** 若要移除未使用的子網路、請按一下刪除圖示 image:../media/icon_nms_delete_new.gif["刪除圖示"]。
+*** 若要新增子網路，請按一下最後一個項目右側的插入圖示image:../media/icon_plus_sign_black_on_white.gif["插入圖示"]。
+*** 要刪除未使用的子網，請單擊刪除圖標image:../media/icon_nms_delete_new.gif["刪除圖示"]。
 
 
 .. 如果您要使用巨型框架、請將MTU欄位變更為適合巨型框架的值、例如9000。否則、請保留預設值1500。

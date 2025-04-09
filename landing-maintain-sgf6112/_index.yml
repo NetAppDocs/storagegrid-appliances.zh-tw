@@ -9,8 +9,10 @@ indexpage:
     links:
     - title: 升級 SANtricity
       url: "../sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html"
-    - title: 升級磁碟機韌體（ SG6160 ）
-      url: "../sg6100/upgrade-drive-firmware-using-santricity-system-manager.html"
+    - title: 升級磁碟機韌體（ SG6160 線上方法）
+      url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 升級磁碟機韌體（ SG6160 離線方法）
+      url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
     - title: 開啟或關閉識別 LED
       url: "../sg6100/turning-sgf6112-identify-led-on-and-off.html"
     - title: 在資料中心找到應用裝置

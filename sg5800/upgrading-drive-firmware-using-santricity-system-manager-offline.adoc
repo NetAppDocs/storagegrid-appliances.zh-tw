@@ -143,7 +143,7 @@ link:troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html[
 ** * 重新開機至 StorageGRID * 。
 ** * 重新開機進入維護模式 * 。重新啟動控制器、並將節點保持在維護模式。如果程序期間發生任何故障、而您想重新開始、請選取此選項。節點完成重新開機至維護模式後、請從失敗程序的適當步驟重新啟動。
 +
-裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。節點頁面應顯示正常狀態（綠色核取記號圖示） image:../media/icon_alert_green_checkmark.png["綠色核取記號"] 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。
+裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。節點頁面應顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾選圖示image:../media/icon_alert_green_checkmark.png["綠色核取記號"]），表示沒有作用中警示，且節點已連線至網格。
 
 +
 image::../media/nodes_menu.png[應用裝置節點重新加入網格]

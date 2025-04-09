@@ -23,7 +23,7 @@ summary: 直到安裝完成為止、才會StorageGRID 顯示此狀態。軟體�
 「監視器安裝」頁面會顯示安裝進度。
 
 +
-image::../media/monitor_installation_configure_storage.gif[此影像由周邊文字說明。]
+image::../media/monitor_installation_configure_storage.gif[監控安裝頁面]
 
 +
 藍色狀態列會指出目前正在進行的工作。綠色狀態列表示已成功完成的工作。
@@ -47,7 +47,7 @@ NOTE: 安裝程式可確保先前安裝中完成的工作不會重新執行。�
 
 . 繼續監控安裝進度、直到*安裝StorageGRID Sid*階段暫停、並在內嵌主控台顯示訊息、提示您使用Grid Manager在管理節點上核准此節點。前往下一步。
 +
-image::../media/monitor_installation_install_sgws.gif[此影像由周邊文字說明。]
+image::../media/monitor_installation_install_sgws.gif[監控安裝頁面]
 
 . 前往「主要管理」節點的Grid Manager、核准擱置的儲存節點、然後完成StorageGRID 「更新安裝」程序。
 +
@@ -95,7 +95,7 @@ NOTE: 安裝程式可確保先前安裝中完成的工作不會重新執行。�
 NOTE: 在安裝應用裝置主要管理節點期間、會出現第五個階段以載入 StorageGRID 安裝程式（範例螢幕擷取畫面僅顯示前四個階段）。如果正在載入 StorageGRID 安裝程式（第五階段）超過 10 分鐘、請手動重新整理網頁。
 
 +
-image::../media/monitor_installation_install_sgws.gif[此影像由周邊文字說明。]
+image::../media/monitor_installation_install_sgws.gif[監控安裝頁面]
 
 
 

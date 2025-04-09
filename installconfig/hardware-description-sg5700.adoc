@@ -175,7 +175,7 @@ image::../media/sg5760_front_and_back_views.gif[SG5760應用裝置的正面和�
 
 SG5760包含兩個控制器、兩個風扇迴管和兩個電源迴管。
 
-image::../media/sg5760_with_callouts.gif[控制器,fan canisters,and power canisters in SG5760 appliance]
+image::../media/sg5760_with_callouts.gif[SG5760 產品中的控制器，風扇迴廊和電源迴廊]
 
 [cols="1a,2a"]
 |===
@@ -223,7 +223,7 @@ image::../media/sg5760x_front_and_back_views.gif[SG5760X 應用裝置的前後�
 
 SG5760X 包含兩個控制器、兩個風扇迴廊和兩個電源迴廊。
 
-image::../media/sg5760x_with_callouts.gif[控制器,fan canisters,and power canisters in SG5760X appliance]
+image::../media/sg5760x_with_callouts.gif[SG5760X 應用裝置中的控制器，風扇迴廊和電源迴廊]
 
 [cols="1a,3a"]
 |===

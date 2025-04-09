@@ -260,7 +260,7 @@ image::../media/sg1100_aggregate_ports.png[Aggregate Port Bond Mode SG1100]
 
 SG110 ：
 
-image::../media/sgf6112_aggregate_ports.png[SG110 集合式連接埠綁定模式]
+image::../media/sgf6112_aggregate_ports.png[SG110 Aggregate 連接埠綁定模式]
 
 [cols="1a,3a"]
 |===
@@ -718,7 +718,7 @@ Aggregate連接埠連結模式::
 
 *SGF6112* ：
 
-image::../media/sgf6112_aggregate_ports.png[SGF6112 集合式連接埠綁定模式]
+image::../media/sgf6112_aggregate_ports.png[SGF6112 Aggregate 連接埠綁定模式]
 
 *SG6100* ：
 

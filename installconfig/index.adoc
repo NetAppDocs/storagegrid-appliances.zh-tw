@@ -13,7 +13,7 @@ summary: 請遵循這些高階步驟來安裝和設定 StorageGRID 應用裝置�
 [role="lead"]
 請遵循這些高階步驟來安裝和設定 StorageGRID 應用裝置、並將其部署為 StorageGRID 系統中的節點。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 準備安裝
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]準備安裝
 [role="quick-margin-list"]
 . 與 NetApp 專業服務顧問合作、自動化安裝與組態。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
 +
@@ -26,7 +26,7 @@ summary: 請遵循這些高階步驟來安裝和設定 StorageGRID 應用裝置�
 . link:reviewing-appliance-network-connections.html["收集網路資訊"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 安裝硬體
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]安裝硬體
 [role="quick-margin-list"]
 . link:registering-hardware.html["註冊硬體"]
 . 安裝到機櫃或機架中
@@ -44,7 +44,7 @@ summary: 請遵循這些高階步驟來安裝和設定 StorageGRID 應用裝置�
 . link:viewing-status-indicators.html["檢視狀態指示燈和代碼"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 設定硬體
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]設定硬體
 [role="quick-margin-para"]
 如果您要設定和部署多個應用裝置、請使用 NetApp ConfigBuilder 工具來自動化下列組態和部署步驟。如需相關指引、請聯絡您的 NetApp 專業服務顧問。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
 
@@ -69,7 +69,7 @@ summary: 請遵循這些高階步驟來安裝和設定 StorageGRID 應用裝置�
 
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 部署應用裝置節點
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]部署應用裝置節點
 [role="quick-margin-para"]
 將應用裝置部署為 StorageGRID 系統中的新節點。
 

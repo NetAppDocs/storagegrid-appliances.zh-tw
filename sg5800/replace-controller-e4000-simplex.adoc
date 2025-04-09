@@ -361,7 +361,7 @@ image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重�
 +
 應用裝置會重新開機並重新加入網格。此程序最多可能需要20分鐘。
 
-. 確認重新開機已完成、且節點已重新加入網格。在 Grid Manager 中、確認「節點」頁面顯示正常狀態（綠色核取記號圖示） image:../media/icon_alert_green_checkmark.png["綠色核取記號"] 節點名稱左側）、表示應用裝置節點沒有作用中警示、且節點已連線至網格。
+. 確認重新開機已完成、且節點已重新加入網格。在 Grid Manager 中，確認「節點」頁面顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號圖示image:../media/icon_alert_green_checkmark.png["綠色核取記號"]），表示沒有作用中警示，且節點已連線至網格。
 +
 image::../media/nodes_menu.png[應用裝置節點重新加入網格]
 

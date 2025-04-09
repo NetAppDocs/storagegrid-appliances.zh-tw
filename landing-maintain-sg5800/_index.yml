@@ -11,8 +11,10 @@ indexpage:
       url: "../sg5800/changing-link-configuration-of-e5800sg-controller.html"
     - title: 升級 SANtricity
       url: "../sg5800/upgrading-santricity-os-on-storage-controller.html"
-    - title: 升級磁碟機韌體
-      url: "../sg5800/upgrading-drive-firmware-using-santricity-system-manager.html"
+    - title: 升級磁碟機韌體（線上方法）
+      url: "../sg5800/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 升級磁碟機韌體（離線方法）
+      url: "../sg5800/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
   - title: 硬體程序
     links:
     - title: 更換 SG5800 運算控制器
