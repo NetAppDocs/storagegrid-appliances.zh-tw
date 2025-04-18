@@ -2865,7 +2865,6 @@
   <block id="9bb391312ffed336cc1adbf60045dba8" category="list-text">檢查產品正面的標籤、以取得相符的零件編號、確認您找到正確的產品。</block>
   <block id="d3cb531b4f9c05d46c6be8f0489a9b86" category="list-text">卸下前擋板（如果安裝了前擋板），以查看前面板控制按鈕和指示燈。</block>
   <block id="8727881150b0ace8b598a648cdfcd4e1" category="summary">NetApp StorageGRID 是一套軟體定義的物件儲存套件、可在公有雲、私有雲和混合式多雲端環境中支援各種使用案例。StorageGRID 提供 Amazon S3 API 的原生支援、並提供領先業界的創新技術、例如自動化生命週期管理、可長期以符合成本效益的方式儲存、保護、保護及保留非結構化資料。</block>
-  <block id="4fab2171e21f4258294a2a074494fa18" category="doc">StorageGRID 應用裝置文件</block>
   <block id="2e1c8345a49fcd97288e52caaad82a49" category="summary">在某些情況下、您可能需要在更換設備後更新 MAC 位址參照。</block>
   <block id="8731fac4810f4eee46647147bd16bf3d" category="paragraph">如果您要更換之應用裝置上的任何網路介面都已設定為使用 DHCP 、您可能需要更新 DHCP 伺服器上的永久 DHCP 租用指派、以參照替換應用裝置的 MAC 位址。此更新可確保替換應用裝置已指派預期的 IP 位址。</block>
   <block id="5d98e441c401a29a6e5bb2f1212a7a15" category="list-text">找到產品正面的標籤。標籤會列出應用裝置 BMC 管理連接埠的 MAC 位址。</block>
@@ -3865,7 +3864,6 @@
   <block id="8ef596bf4eb7277f78ad1d7ad4cc04de" category="sidebar">知識庫StorageGRID</block>
   <block id="c2d388654878e1108f99fdeaa465fcac" category="sidebar">NetApp部落格</block>
   <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">NetApp社群</block>
-  <block id="69d1c297210c956cee51bf4ccf9dc0d1" category="sidebar">StorageGRID 應用裝置文件</block>
   <block id="42201415720ad552ae0536ddda18b94e" category="sidebar">瞭解 StorageGRID 應用裝置</block>
   <block id="b7cd29c1531745149a88d6056a6c42c4" category="sidebar">應用裝置節點複製</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">總覽</block>
@@ -5762,4 +5760,5 @@
   <block id="0160256cfe219f6b22fa00049dc8b08b" category="list-text">查看 * Shelf* 下拉式清單右側的風扇圖示、判斷哪個產品的風扇<block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>箱故障。</block>
   <block id="1a41776500a52e28aa05db3c32dfc47a" category="sidebar">升級磁碟機韌體（ SG6160 線上方法）</block>
   <block id="2c8a2ef75a9a05ce84a4b89f17f20322" category="sidebar">升級磁碟機韌體（ SG6160 離線方法）</block>
+  <block id="d07792f91c33735c12a1ce89b21df7a3" category="sidebar">StorageGRID 應用裝置文件</block>
 </blocks>

@@ -1,6 +1,6 @@
 ---
 settings:
-  name: StorageGRID Appliances
+  name: StorageGRID appliances
   search: storagegrid-enable,storagegrid,storagegrid-appliances
   internal:
     pdf_enabled: true
