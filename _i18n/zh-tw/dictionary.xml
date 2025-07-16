@@ -5761,4 +5761,15 @@
   <block id="1a41776500a52e28aa05db3c32dfc47a" category="sidebar">升級磁碟機韌體（ SG6160 線上方法）</block>
   <block id="2c8a2ef75a9a05ce84a4b89f17f20322" category="sidebar">升級磁碟機韌體（ SG6160 離線方法）</block>
   <block id="d07792f91c33735c12a1ce89b21df7a3" category="sidebar">StorageGRID 應用裝置文件</block>
+  <block id="4ce226a87bcf5c8b5206d3dcf26776e4" category="paragraph">請勿對任何節點的網格網路、管理網路或用戶端網路使用包含下列 IPv4 位址的子網路：</block>
+  <block id="7fe4e99a363b04311cab23831409078b" category="list-text">192,168,130,101</block>
+  <block id="dd367c3bd8159d08cd43b50fd79ba62f" category="list-text">192,168,131,101</block>
+  <block id="7aa976b331aa928a278a01a273e03828" category="list-text">192,168,130,102</block>
+  <block id="ca0cb8238f1f4932fc687105b634015c" category="list-text">192,168,131,102</block>
+  <block id="76807ef71a6e9938e1cc3ce7343126bd" category="list-text">198.51.100.2</block>
+  <block id="88e52209b0f58bdbc48386707b417a40" category="list-text">198.51.100.4</block>
+  <block id="324dd9344f1e0b3f001a92a0f677443e" category="paragraph">例如，不要對任何節點的網格網路、管理網路或客戶端網路使用下列子網路範圍：</block>
+  <block id="7dc5983e9de89ec2bcacf21aec6d8399" category="list-text">192.168.130.0/24，因為此子網路範圍包含 IP 位址 192.168.130.101 和 192.168.130.102</block>
+  <block id="f3289a31e39c1161c9f3351ba19a4562" category="list-text">192.168.131.0/24，因為此子網路範圍包含 IP 位址 192.168.131.101 和 192.168.131.102</block>
+  <block id="1deaf9237f4171a62975b6710d5432b8" category="list-text">198.51.100.0/24，因為此子網路範圍包含 IP 位址 198.51.100.2 和 198.51.100.4</block>
 </blocks>
