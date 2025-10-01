@@ -4,7 +4,7 @@ permalink: whats-new-appliances.html
 keywords: storagegrid, appliance, whats new 
 summary: 瞭解本文件網站的新功能。 
 ---
-= 應用裝置的新功能
+= StorageGRID設備的新功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,28 +14,40 @@ summary: 瞭解本文件網站的新功能。
 
 
 [role="lead"]
-瞭解 StorageGRID 應用裝置的新功能。
+了解StorageGRID設備的新功能。
+
+
+
+== 用戶端網路無需 IP 位址即可配置
+
+現在您可以啟用客戶端網路而無需指定 IP 位址。這允許客戶端網路在StorageGRID中配置 VLAN 接口，而無需為接口本身提供額外的 IP 位址。請參閱link:.//installconfig/setting-ip-configuration.html["設定StorageGRID 靜態IP位址"] 。
+
+
+
+== StorageGRID軟體和 Appliance Installer 的版本號碼已對齊
+
+對於 StorgeGRID 版本 12.0， StorageGRID Appliance Installer 的版本號碼與StorageGRID軟體的版本相符。使用者不再需要弄清楚哪些版本可以一起使用。請參閱link:./installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html["驗StorageGRID 證並升級版本的應用程式"] 。
 
 
 
 == BMC 資訊
 
-現在提供使用 StorageGRID 應用裝置 BMC 介面的詳細資訊。請參閱。 link:./commonhardware/use-bmc.html["使用 StorageGRID 應用裝置主機板管理控制器（ BMC ）"]
+有關使用StorageGRID設備BMC介面的詳細資訊現已提供。請參閱link:./commonhardware/use-bmc.html["使用 StorageGRID 應用裝置主機板管理控制器（ BMC ）"] 。
 
 
 
 == SG5812 和 SG5860 應用裝置
 
-全新的 StorageGRID SG5812 和 SG5860 應用裝置是整合式儲存與運算平台、可在 StorageGRID 網格中作為儲存節點運作。如需詳細資訊、請參閱link:./installconfig/hardware-description-sg5800.html["SG5800 應用裝置：總覽"]。
+StorageGRID SG5812 和 SG5860 設備是整合式儲存和運算平台，可作為StorageGRID網格中的儲存節點運作。請參閱link:./installconfig/hardware-description-sg5800.html["SG5800 應用裝置：總覽"]了解更多。
 
 
 
 == SG6160 應用裝置
 
-全新的 StorageGRID SG6160 應用裝置包含運算控制器和儲存控制器機櫃、其中包含兩個儲存控制器和 60 個磁碟機、以及兩個用於快取的 NVMe SSD 磁碟機。您也可以選擇將 60 個磁碟機擴充機櫃新增至 SG6160 。如需詳細資訊、請參閱link:./installconfig/hardware-description-sg6100.html["SGF6100 應用裝置：總覽"]。
+新的StorageGRID SG6160 設備包括一個運算控制器和一個儲存控制器架，其中包含兩個儲存控制器和 60 個驅動器，以及兩個用於快取的 NVMe SSD 驅動器。可選地，可以為 SG6160 添加 60 個驅動器擴充架。參考link:./installconfig/hardware-description-sg6100.html["SGF6100 應用裝置：總覽"]了解更多。
 
 
 
 == SG110 和 SG1100 服務應用裝置
 
-全新的 StorageGRID SG110 和 SG1100 服務應用裝置是一項革命性的硬體更新、可提供更優異的管理與負載平衡效能。請參閱 link:./installconfig/hardware-description-sg110-and-1100.html["SG110 與 SG1100 服務應用裝置：概觀"]。
+新的StorageGRID SG110 和 SG1100 服務設備是革命性的硬體更新，可提供改進的管理和負載平衡效能。請參閱link:./installconfig/hardware-description-sg110-and-1100.html["SG110 與 SG1100 服務應用裝置：概觀"] 。

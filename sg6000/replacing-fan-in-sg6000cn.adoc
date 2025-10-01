@@ -1,0 +1,59 @@
+---
+permalink: sg6000/replacing-fan-in-sg6000cn.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000-cn, storage node, storage appliance, replacing, replace, fan, remove, removing, removal, install, installing, installation 
+summary: SG6000-CN 運算控制器有八個冷卻風扇。如果其中一個風扇發生故障，則必須盡快更換它以確保控制器正常冷卻。 
+---
+= 更換 SG6000-CN 計算控制器中的風扇
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6000-CN 運算控制器有八個冷卻風扇。如果其中一個風扇發生故障，則必須盡快更換它以確保控制器正常冷卻。
+
+.開始之前
+* 您已將替換風扇解壓縮。
+* 您有 link:locating-controller-in-data-center.html["實際放置設備"]。
+* 您已確認其他風扇已安裝並執行。
+
+
+.關於這項工作
+更換風扇時，儲存節點將無法存取。
+
+照片展示了 SG6000-CN 計算控制器的風扇。取下控制器的頂蓋後即可看到冷卻風扇。
+
+
+NOTE: 兩個電源供應器單元中的每個單元都有一個風扇。此程序不包含這些風扇。
+
+image::../media/fan_fru.png[風扇FRU]
+
+.步驟
+. link:power-sg6000-cn-controller-off-on.html["關閉 SG6000-CN 控制器"] 。
+. 提起頂蓋上的栓鎖、然後從產品上取下外蓋。
+. 找出故障的風扇。
++
+image::../media/fan_location.png[風扇位置]
+
+. 將故障風扇從機箱中提出。
++
+image::../media/fan_removal.png[卸下風扇]
+
+. 將替換風扇滑入機箱的開放式插槽。
++
+將風扇邊緣與導銷對齊。照片中的大頭針會圈起。
+
++
+image::../media/fan_guide_pin.png[風扇導引插銷]
+
+. 將風扇的連接器穩固地按入電路板。
++
+image::../media/fan_connector_check.png[風扇連接器檢查]
+
+. 將頂蓋裝回產品上、然後按下栓鎖、將護蓋固定到位。
+. link:power-sg6000-cn-controller-off-on.html#poweron["開啟 SG6000-CN 控制器的電源"] 。
+. 確認應用裝置節點出現在Grid Manager中、且未顯示任何警示。
+
+
+更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。

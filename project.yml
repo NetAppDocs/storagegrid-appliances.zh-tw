@@ -56,7 +56,7 @@ sidebar:
     - section: sg5800
     - section: sg6000
     - section: sg6100
-  - title: 啟用StorageGRID 功能
+  - title: StorageGRID解決方案和資源
     url: "/storagegrid-enable.html"
   - title: 法律聲明
     url: "/legal-notices.html"

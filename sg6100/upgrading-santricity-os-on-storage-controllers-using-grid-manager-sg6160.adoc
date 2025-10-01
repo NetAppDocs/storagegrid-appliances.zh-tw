@@ -23,7 +23,7 @@ summary: 對於目前使用 SANtricity OS 08.42.20.00 （ 11.42\ ）或更新版
 .關於這項工作
 SANtricity OS 升級進行期間、您無法執行其他軟體更新（ StorageGRID 軟體升級或 Hotfix ）。如果您在StorageGRID 完成更新程序之前嘗試啟動修補程式或更新版的功能、SANtricity 您會被重新導向SANtricity 到「更新版更新版」頁面。
 
-直到成功將更新套用至所有已選擇進行升級的適用節點為止、此程序才會完成SANtricity 。在SANtricity 每個節點上（依序）載入不一致的作業系統可能需要30分鐘以上、而重新啟動StorageGRID 每個不一致的儲存設備可能需要90分鐘。您網格中任何不使用 SANtricity OS 的節點都不會受到此程序的影響。
+直到SANtricity OS 升級成功應用於已選擇進行升級的所有適用節點後，該程序才算完成。在每個節點上載入SANtricity OS（順序）可能需要 30 分鐘以上，重新啟動每個StorageGRID儲存裝置則可能需要長達 90 分鐘。網格中不使用SANtricity OS 的節點不會受到此程序的影響。
 
 
 CAUTION: 下列步驟僅適用於使用Grid Manager執行升級的情況。當控制器使用早於 08.42.20.00 （ 11.42 ）的 SANtricity 作業系統時、無法使用 Grid Manager 來升級應用裝置中的儲存控制器。
@@ -32,12 +32,12 @@ CAUTION: 下列步驟僅適用於使用Grid Manager執行升級的情況。當�
 NOTE: 此程序會自動將NVSRAM升級 至SANtricity 與更新版有關的最新版本。您不需要套用個別的 NVSRAM 升級檔案。
 
 
-NOTE: 在開始此程序之前、請務必套用最新的 StorageGRID Hotfix 。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/storagegrid/maintain/storagegrid-hotfix-procedure.html["修復程序StorageGRID"^]。
+NOTE: 在開始此程序之前，請先套用最新的StorageGRID修補程式。看 https://docs.netapp.com/us-en/storagegrid/maintain/storagegrid-hotfix-procedure.html["修復程序StorageGRID"^]了解詳情。
 
 .步驟
 . [[download-SANtricity -OS]] 從下載新的 SANtricity OS 軟體檔案 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]。
 +
-請務必為SANtricity 儲存控制器選擇適用的作業系統版本。
+為您的儲存控制器選擇SANtricity OS 版本。
 
 . 選擇*維護*>*系統*>*軟體更新*。
 +
@@ -187,10 +187,10 @@ NOTE: 節點已核准並升級、但沒有錯誤、仍會繼續升級。
 
 
 
-. 對於需要不同SANtricity 的更新檔的任何節點、請重複此升級程序。
+. 對於處於「完成」階段且需要不同SANtricity OS 升級檔案的節點，重複此升級程序。
 +
 
-NOTE: 對於狀態為「Needs Attention（需要注意）」的任何節點、請使用維護模式來執行升級。
+NOTE: 對於狀態為需要注意的節點，使用維護模式執行升級。
 
 
 

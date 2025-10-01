@@ -61,8 +61,10 @@ indexpage:
       url: "/landing-maintain-sgf6112/index.html"
   - title: 軟件StorageGRID
     links:
-    - title: StorageGRID 11.9 文件
+    - title: StorageGRID 12.0 文檔
       url: https://docs.netapp.com/us-en/storagegrid/index.html
+    - title: StorageGRID 11.9 文件
+      url: https://docs.netapp.com/us-en/storagegrid-119/index.html
     - title: StorageGRID 11.8 文件
       url: https://docs.netapp.com/us-en/storagegrid-118/index.html
     - title: StorageGRID 11.7 文件
@@ -71,7 +73,7 @@ indexpage:
       url: https://docs.netapp.com/us-en/storagegrid-116/index.html
     - title: 本文檔的內容StorageGRID
       url: https://docs.netapp.com/us-en/storagegrid-115/index.html
-  - title: 啟用StorageGRID 功能
+  - title: StorageGRID解決方案和資源
     links:
     - title: 整合其他應用程式
       url: https://docs.netapp.com/us-en/storagegrid-enable/index.html

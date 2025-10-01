@@ -17,6 +17,8 @@ indexpage:
       url: "../sg6000/changing-link-configuration-of-sg6000-cn-controller.html"
     - title: 升級 SANtricity
       url: "../sg6000/upgrading-santricity-os-on-storage-controllers.html"
+    - title: 升級驅動器韌體（自動重新啟動方式）
+      url: "../sg6000/upgrading-drive-firmware-using-auto-reboot.html"
     - title: 升級磁碟機韌體（線上方法）
       url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager-online.html"
     - title: 升級磁碟機韌體（離線方法）
@@ -43,5 +45,7 @@ indexpage:
       url: "../sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
     - title: 更換 Fibre Channel HBA
       url: "../sg6000/reinstalling-fibre-channel-hba.html"
+    - title: 更換控制器風扇
+      url: "../sg6000/replacing-fan-in-sg6000cn.html"
     - title: 更換 CMOS 電池
       url: "../sg6000/replace-cmos-in-sg6000cn.html"

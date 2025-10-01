@@ -21,15 +21,13 @@ summary: 您可以變更SG6000-CN-控制器的乙太網路連結組態。您可�
 
 * 將*連接埠連結模式*從「固定」變更為「Aggregate」、或從「Aggregate」變更為「固定」
 * 將*網路連結模式*從主動備份變更為LACP、或從LACP變更為主動備份
+* 更改 *LACP 傳輸哈希策略* 和 *LACP PDU 速率* 值
 * 啟用或停用VLAN標記、或變更VLAN標記的值
 * 變更連結速度。
 
 
 .步驟
 . 從《SectionAppliance安裝程式》StorageGRID 中、選取*「Configure Networking」（設定網路）*>「* Link Configuration」（*連結組態）*。
-+
-image::../media/link_configuration_option.gif[連結組態]
-
 . [LINK_config_changes、start=2]]對連結組態進行所需的變更。
 +
 如需選項的詳細資訊、請參閱 link:../installconfig/configuring-network-links.html["設定網路連結"]。
@@ -56,13 +54,12 @@ link:../installconfig/setting-ip-configuration.html["設定StorageGRID 靜態IP�
 ** 選擇*重新開機StorageGRID 至S編*
 ** 選取*重新開機進入維護模式*、以重新啟動控制器、使節點保持維護模式。  如果您在程序期間遇到任何失敗、並想要重新啟動、請選取此選項。  節點完成重新開機至維護模式後、請從失敗程序的適當步驟重新啟動。
 +
-image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
+設備重新啟動並重新加入電網最多可能需要 20 分鐘。若要確認重啟已完成且節點已重新加入網格：
 
 +
-裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。「 * 節點 * 」頁面應顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號圖示image:../media/icon_alert_green_checkmark.png["綠色核取記號"]），表示沒有作用中警示，且節點已連線至網格。
+... 在網格管理器中，選擇*NODES*。
+... 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 
-+
-image::../media/nodes_menu.png[應用裝置節點重新加入網格]
 
 
 

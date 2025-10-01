@@ -35,10 +35,10 @@ NOTE: 此程序 * 不 * 支援熱交換。在拔下纜線和移除 NIC 之前、
 
 
 .關於這項工作
-為避免服務中斷、請在開始更換網路介面卡（ NIC ）之前、確認所有其他儲存節點都已連接至網格、或在可接受服務中斷期間的排程維護期間更換 NIC 。請參閱的相關資訊link:https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["繫泊節點連線狀態"]。
+若要防止服務中斷，請在開始更換網路介面卡 (NIC) 之前確認所有其他儲存節點都已連線至電網，或在可以接受服務中斷時間的計畫維護時段內更換 NIC。查看有關 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["繫泊節點連線狀態"^]。
 
 
-CAUTION: 如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程的維護期間更換 NIC 、因為在此程序期間可能會暫時失去這些物件的存取權。請參閱的相關資訊link:https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["為何不應使用單一複本複寫"]。
+CAUTION: 如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程的維護期間更換 NIC 、因為在此程序期間可能會暫時失去這些物件的存取權。請參閱的相關資訊 https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["為何不應使用單一複本複寫"^]。
 
 
 

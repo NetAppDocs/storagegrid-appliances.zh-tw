@@ -29,6 +29,8 @@ summary: 您可以在節點和磁碟層級啟用加密、以保護應用裝置�
 
 如果您使用 ConfigBuilder 來產生 JSON 檔案、則可以自動啟用節點加密。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
 
+此外，在啟用節點加密後啟用 FIPS 模式時， NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 模組用於靜態資料加密。參考 https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-tls-ssh-policy.html#select-a-security-policy["選擇安全策略"^]了解更多。
+
 .開始之前
 查看有關的信息 https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["設定 KMS"^]。
 
@@ -42,7 +44,7 @@ KMS可在應用StorageGRID 程式安裝於原地之前或之後、在Grid Manage
 
 
 
-CAUTION: 當裝置安裝時啟用節點加密時、會指派一個暫存金鑰。在應用裝置連線至金鑰管理系統（ KMS ）並設定 KMS 安全金鑰之前、應用裝置上的資料不會受到保護。如需其他資訊、請參閱 https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html["KMS 應用裝置組態總覽"^]。
+CAUTION: 當安裝啟用節點加密的裝置時，會指派一個臨時金鑰。在裝置連接到金鑰管理系統 (KMS) 並設定 KMS 安全金鑰之前，裝置上的資料不受保護。請參閱 https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html["KMS 應用裝置組態總覽"^]了解更多。
 
 如果沒有解密磁碟所需的 KMS 金鑰、設備上的資料就無法擷取、而且會有效遺失。當解密金鑰無法從 KMS 擷取時、就會發生這種情況。如果客戶清除KMS組態、KMS金鑰過期、與KMS的連線中斷、或是設備從StorageGRID 安裝KMS金鑰的作業系統中移除、金鑰就無法存取。
 
@@ -62,9 +64,6 @@ CAUTION: 當裝置安裝時啟用節點加密時、會指派一個暫存金鑰�
 CAUTION: 使用 KMS 金鑰加密應用裝置後、如果沒有使用相同的 KMS 金鑰、就無法解密應用裝置磁碟。
 
 . 選擇*設定硬體*>*節點加密*。
-+
-image::../media/kms_fde_enabled.png[已啟用KMS FDE]
-
 . 選取*啟用節點加密*。
 +
 在應用裝置安裝之前、您可以清除 * 啟用節點加密 * 、而不會有資料遺失的風險。安裝開始時、應用裝置節點會存取 StorageGRID 系統中的 KMS 加密金鑰、並開始磁碟加密。安裝應用裝置後、您無法停用節點加密。
@@ -104,7 +103,9 @@ NOTE: 設備一開始會設定指派給每個磁碟區的隨機非KMS加密金�
 
 磁碟機加密不適用於 SANtricity 管理的磁碟機。如果您的 StorageGRID 應用裝置具有 SED 和 SANtricity 控制器、則可以在中啟用磁碟機安全性 link:../installconfig/accessing-and-configuring-santricity-system-manager.html["系統管理程式SANtricity"]。
 
-您可以在初始應用裝置安裝期間啟用磁碟機加密、然後再載入 Grid Manager 。您也可以將應用裝置設為維護模式、以啟用節點加密或變更密碼。
+當您為具有 FIPS 磁碟機的StorageGRID裝置啟用磁碟機加密時，FIPS 磁碟機提供的 FIPS 加密將用於靜態資料的加密。
+
+您可以在載入 Grid Manager 之前在初始裝置安裝期間啟用磁碟機加密。您也可以將裝置置於維護模式來啟用磁碟機加密或變更密碼。
 
 .開始之前
 查看有關的信息 https://docs.netapp.com/us-en/storagegrid/admin/reviewing-storagegrid-encryption-methods.html["StorageGRID 加密方法"^]。
@@ -121,14 +122,14 @@ CAUTION: 請務必將磁碟機加密密碼短語儲存在安全的位置。如�
 
 . 存取 StorageGRID 應用裝置安裝程式。
 +
-** 在初始應用裝置安裝期間、開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個 IP 位址。
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
+** 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個 IP 位址。
 +
 `*https://_Controller_IP_:8443*`
 
 +
 `_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
 
-** 對於現有的 StorageGRID 應用裝置、 link:../commonhardware/placing-appliance-into-maintenance-mode.html["將產品置於維護模式"]。
 
 
 . 從 StorageGRID 應用裝置安裝程式首頁、選取 * 設定硬體 * > * 磁碟機加密 * 。
@@ -169,6 +170,7 @@ NOTE: 磁碟機一開始加密時、複雜密碼會設為預設的空白值、�
 
 . 存取 StorageGRID 應用裝置安裝程式。
 +
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
 ** 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個 IP 位址。
 +
 `*https://_Controller_IP_:8443*`
@@ -176,7 +178,6 @@ NOTE: 磁碟機一開始加密時、複雜密碼會設為預設的空白值、�
 +
 `_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
 
-** link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
 
 
 . 從 StorageGRID 應用裝置安裝程式中、選取警告橫幅中的 * 磁碟機加密 * 連結。
@@ -199,6 +200,7 @@ NOTE: 如果您輸入的複雜密碼和複雜密碼顯示文字值與先前輸�
 
 . 存取 StorageGRID 應用裝置安裝程式。
 +
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
 ** 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個 IP 位址。
 +
 `*https://_Controller_IP_:8443*`
@@ -206,7 +208,6 @@ NOTE: 如果您輸入的複雜密碼和複雜密碼顯示文字值與先前輸�
 +
 `_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
 
-** link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
 
 
 . 從 StorageGRID 應用裝置安裝程式中、選取 * 設定硬體 * > * 磁碟機加密 * 。
@@ -230,6 +231,7 @@ CAUTION: 設定新的複雜密碼後、如果沒有使用新的複雜密碼和�
 
 . 存取 StorageGRID 應用裝置安裝程式。
 +
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
 ** 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個 IP 位址。
 +
 `*https://_Controller_IP_:8443*`
@@ -237,7 +239,6 @@ CAUTION: 設定新的複雜密碼後、如果沒有使用新的複雜密碼和�
 +
 `_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
 
-** link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
 
 
 . 從 StorageGRID 應用裝置安裝程式中、選取 * 設定硬體 * > * 磁碟機加密 * 。

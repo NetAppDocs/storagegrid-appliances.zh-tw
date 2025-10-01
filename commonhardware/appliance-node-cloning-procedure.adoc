@@ -40,9 +40,6 @@ NOTE: 完成初始目標應用裝置組態後、請保持StorageGRID 開啟不�
 +
 「主要管理節點連線」區段會取代為「Clone target節點連線」區段。
 
-+
-image::../media/clone_peer_node_connection_section.png[複製目標節點連線區段]
-
 . 對於* Clone目標節點IP*、輸入指派給網路目標節點的暫用IP位址、以供複製資料傳輸流量使用、然後選取* Save*。
 +
 一般而言、您可以輸入Grid Network的IP位址、但如果您需要使用不同的網路來進行實體資料傳輸流量、請輸入該網路上目標節點的IP位址。
@@ -64,9 +61,6 @@ NOTE: 使用1-GbE管理網路進行複製資料傳輸、會導致複製速度變
 . 在StorageGRID 來源節點或目標節點上、使用《不實設備安裝程式」來監控複製進度。
 +
 來源節點和目標節點上的 StorageGRID 應用裝置安裝程式會指示類似的狀態。
-
-+
-image::../media/cloning_progress.png[複製進度]
 
 +
 「監控複製」頁面提供複製程序每個階段的詳細進度：

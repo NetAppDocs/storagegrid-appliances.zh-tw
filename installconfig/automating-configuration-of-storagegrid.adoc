@@ -38,6 +38,9 @@ Python指令碼用於自動化組態
 * 您已建立 `configure-storagegrid.json` 組態檔。若要建立此檔案、您可以修改範例組態檔案 (`configure-storagegrid.sample.json`）或空白組態檔 (`configure-storagegrid.blank.json`）。
 
 
+
+CAUTION: 儲存修改後的密碼部分的管理密碼和設定密碼 `configure-storagegrid.json`設定檔保存在安全的位置。安裝、擴充和維護過程都需要這些密碼。您還應該備份修改後的 `configure-storagegrid.json`設定檔並將其儲存在安全的位置。
+
 .關於這項工作
 您可以使用 `configure-storagegrid.py` Python指令碼和 `configure-storagegrid.json` 組態檔、以自動化StorageGRID 您的整個系統組態。
 

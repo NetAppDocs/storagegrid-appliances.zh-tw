@@ -9,9 +9,11 @@ indexpage:
     links:
     - title: 升級 SANtricity
       url: "../sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html"
-    - title: 升級磁碟機韌體（ SG6160 線上方法）
+    - title: 升級驅動器韌體（SG6160 - 自動重新啟動方法）
+      url: "../sg6100/upgrading-drive-firmware-using-auto-reboot.html"
+    - title: 升級驅動器韌體（SG6160 - 線上方法）
       url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager-online.html"
-    - title: 升級磁碟機韌體（ SG6160 離線方法）
+    - title: 升級驅動器韌體（SG6160 - 離線方法）
       url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
     - title: 開啟或關閉識別 LED
       url: "../sg6100/turning-sgf6112-identify-led-on-and-off.html"
@@ -35,9 +37,9 @@ indexpage:
       url: "../sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
   - title: 硬體程序
     links:
-    - title: 裝回機箱蓋
+    - title: 更換蓋子（SGF6112 或 SG6100-CN）
       url: "../sg6100/reinstalling-sgf6112-cover.html"
-    - title: 更換電源供應器
+    - title: 更換電源供應器（SGF6112或SG6100-CN）
       url: "../sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
     - title: 更換儲存控制器機櫃或擴充機櫃中的電源供應器（ SG6160 ）
       url: "../sg6100/replace-6100-cn-power-canister.html"
@@ -51,17 +53,15 @@ indexpage:
       url: "../sg6100/replace-drive-sg6100-cn.html"
     - title: 更換儲存控制器機櫃或擴充機櫃中的磁碟機（ SG6160 ）
       url: "../sg6100/replace-6160-drives-60.html"
-    - title: 更換內部 NIC （ SGF6112 和 SG6160 ）
+    - title: 更換內部網路卡（SGF6112 或 SG6100-CN）
       url: "../sg6100/replace-nic-in-sgf6112.html"
-    - title: 更換外部 NIC （ SG6160 ）
+    - title: 更換外部網卡（SG6100-CN）
       url: "../sg6100/replace-ocp-nic-sg6100-cn.html"
-    - title: 更換 DIMM （ SG6160 ）
+    - title: 更換儲存控制器機櫃中的 DIMM （ SG6160 ）
       url: "../sg6100/replace-dimms-e4000.html"
-    - title: 更換電池（ SG6160 ）
+    - title: 更換儲存控制器架（SG6160）中的電池
       url: "../sg6100/replace-battery-e4000.html"
-    - title: 裝回機箱蓋
-      url: "../sg6100/reinstalling-sgf6112-cover.html"
-    - title: 更換 CMOS 電池
+    - title: 更換 CMOS 電池（SGF6112 或 SG6100-CN）
       url: "../sg6100/replace-cmos-in-sgf6112.html"
     - title: 將擴充機櫃新增至部署的 SG6160
       url: "../sg6100/adding-expansion-shelf-to-deployed-sg6160.html"

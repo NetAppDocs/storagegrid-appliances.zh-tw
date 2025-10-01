@@ -32,6 +32,7 @@ NOTE: 視您設定的 ILM 原則而定、對本機不可用物件的要求可由
 
 * 在服務期間、 SSD 故障不會對節點根磁碟區（ StorageGRID 作業系統）的 RAID 外殼造成嚴重損壞、因此可完全恢復。
 * 如果多個 SSD 故障導致本機資料遺失、則可從其他節點上的複本或刪除編碼區塊自動還原物件資料。
+* 能夠作為 https://docs.netapp.com/us-en/storagegrid/admin/managing-load-balancing.html["具有快取的網關節點"^]。
 
 
 SG6160 提供下列資料保護功能：

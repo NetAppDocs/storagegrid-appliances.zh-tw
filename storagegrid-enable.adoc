@@ -4,7 +4,7 @@ permalink: storagegrid-enable.html
 keywords: storagegrid, how to enable, third-party solutions, tools, applications, examples 
 summary: 瞭解如何在StorageGRID 您的不實環境中測試及啟用應用程式。 
 ---
-= 如何在StorageGRID 您的環境中啟用支援功能
+= StorageGRID解決方案和資源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: 瞭解如何在StorageGRID 您的不實環境中測試及啟用應用�
 
 
 [role="lead"]
-前往 https://docs.netapp.com/us-en/storagegrid-enable/index.html["如何在StorageGRID 您的環境中啟用支援功能"^] 以瞭解如何在 StorageGRID 環境中測試及啟用應用程式。
+前往 https://docs.netapp.com/us-en/storagegrid-enable/index.html["StorageGRID解決方案和資源"^]了解如何在StorageGRID環境中測試和啟用應用程式。
 
-「 *storagegRID 啟用 * 」文件網站提供範例與指南、可在本網站的產品文件中加以擴充、並說明評估與整合 StorageGRID 的後續步驟。
+* StorageGRID解決方案和資源* 提供了擴展此網站中的產品文件的範例和手冊，並描述了評估和整合StorageGRID 的一些後續步驟。
 
 其中一些資訊包括：
 

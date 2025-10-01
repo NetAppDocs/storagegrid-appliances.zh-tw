@@ -464,6 +464,5 @@ image::../media/e5700sg_bonded_management_ports.gif[E5700SG連結式管理連接
 
 .相關資訊
 * link:cabling-appliance-sg5700.html["纜線應用裝置（SG5700）"]
-* link:gathering-installation-information-sg5700.html#port-bond-modes["連接埠連結模式（ E5700SG 控制器）"]
 * link:configuring-hardware.html["設定硬體（SG5700）"]
 

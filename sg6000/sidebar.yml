@@ -17,8 +17,10 @@ entries:
       url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html"
     - title: 使用SANtricity 維護模式升級儲存控制器上的作業系統
       url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html"
-  - title: 使用SANtricity 《支援系統管理程式》升級磁碟機韌體
+  - title: 升級驅動器韌體
     entries:
+    - title: 裝置重新啟動期間自動升級 SG6000 磁碟機韌體
+      url: "/sg6000/upgrading-drive-firmware-using-auto-reboot.html"
     - title: 使用線上方法、使用 SANtricity 系統管理員升級 SG6000 磁碟機韌體
       url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager-online.html"
     - title: 使用離線方法、使用 SANtricity System Manager 升級 SG6000 磁碟機韌體
@@ -50,6 +52,8 @@ entries:
     url: "/sg6000/replacing-sg6000-cn-controller.html"
   - title: 在SG6000-CN-控制器中更換一個或兩個電源供應器
     url: "/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
+  - title: 更換風扇
+    url: "/sg6000/replacing-fan-in-sg6000cn.html"
   - title: 更換 SG6000-CN 控制器中的 CMOS 電池
     url: "/sg6000/replace-cmos-in-sg6000cn.html"
   - title: 更換機架中的控制器

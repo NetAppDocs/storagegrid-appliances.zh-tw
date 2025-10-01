@@ -24,15 +24,13 @@ NOTE: 在極少數情況StorageGRID 下、將某個應用程式置於維護模�
 
 * 將*連接埠連結模式*從「固定」變更為「Aggregate」、或從「Aggregate」變更為「固定」
 * 將*網路連結模式*從主動備份變更為LACP、或從LACP變更為主動備份
+* 更改 *LACP 傳輸哈希策略* 和 *LACP PDU 速率* 值
 * 啟用或停用VLAN標記、或變更VLAN標記的值
 * 將連結速度從10-GbE變更為25-GbE、或從25-GbE變更為10-GbE
 
 
 .步驟
 . 從菜單中選擇* Configure Networking（配置網路）*>* Link Configuration（*連結組態）*。
-+
-image::../media/link_configuration_option.gif[連結組態]
-
 . [[change_link_configuration、sg5700、start=2]]對連結組態進行所需的變更。
 +
 如需選項的詳細資訊、請參閱 link:../installconfig/configuring-network-links.html["設定網路連結"]。
@@ -56,13 +54,12 @@ NOTE: 如果您變更所連線的網路或連結、可能會失去連線。如�
 ** 選取*重新開機至StorageGRID SESW*、以重新啟動控制器、並使節點重新加入網格。如果您已在維護模式下完成工作、並準備好讓節點恢復正常作業、請選取此選項。
 ** 選取*重新開機進入維護模式*、以重新啟動控制器、使節點保持維護模式。（此選項僅在控制器處於維護模式時可用。） 如果在重新加入網格之前需要在節點上執行其他維護作業、請選取此選項。
 +
-image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
+設備重新啟動並重新加入電網最多可能需要 20 分鐘。若要確認重啟已完成且節點已重新加入網格：
 
 +
-裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。「 * 節點 * 」頁面應顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號圖示image:../media/icon_alert_green_checkmark.png["綠色核取記號"]），表示沒有作用中警示，且節點已連線至網格。
+... 在網格管理器中，選擇*NODES*。
+... 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 
-+
-image::../media/nodes_menu.png[應用裝置節點重新加入網格]
 
 
 

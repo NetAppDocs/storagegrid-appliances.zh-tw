@@ -817,7 +817,7 @@ image::../media/sg5800_leds.png[SG5800 控制器上的狀態指示燈]
 
 
 .相關資訊
-link:https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]
+https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]
 
 --
 .SG6000

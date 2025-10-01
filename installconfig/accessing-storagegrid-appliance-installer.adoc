@@ -109,9 +109,6 @@ image::../media/sg6100_admin_network_port.png[SGF6112 上的管理網路連接�
 +
 畫面會出現「the不再安裝StorageGRID 程式」首頁。第一次存取此頁面時顯示的資訊和訊息、取決於您的應用裝置目前如何連線StorageGRID 至各個網站。可能會出現錯誤訊息、稍後將予以解決。
 
-+
-image::../media/appliance_installer_home_5700_5600.png[StorageGRID 應用裝置安裝程式首頁頂端的螢幕擷取畫面]
-
 
 
 . 如果您無法使用 DHCP 取得 IP 位址、則可以使用連結本機連線。
@@ -205,7 +202,4 @@ NOTE: 如果您無法透過連結本機連線存取首頁、請將服務筆記�
 link:verifying-and-upgrading-storagegrid-appliance-installer-version.html["驗StorageGRID 證並升級版本的應用程式"]
 
 * 請檢閱StorageGRID 顯示在「畫面中心設備安裝程式」首頁上的任何訊息、並視需要設定連結組態和IP組態。
-+
-image::../media/appliance_installer_home_services_appliance.png[應用裝置安裝程式首頁]
-
 

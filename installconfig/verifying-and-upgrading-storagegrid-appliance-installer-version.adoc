@@ -23,10 +23,7 @@ summary: 應用裝置上的《產品安裝程式版本」必須與安裝在您�
 
 .步驟
 . 從「VMware應用裝置安裝程式」StorageGRID 中、選取*進階*>*升級韌體*。
-. 比較目前的韌體版本與StorageGRID 安裝在您的系統上的軟體版本。（從Grid Manager頂端、選取說明圖示、然後選取*關於*。）
-+
-兩個版本中的第二個數字應該相符。例如StorageGRID 、如果您的Sf2系統執行的是11.*6*._x_._y_版、StorageGRID 則該版本的《EzAppliance Installer》應該是3.*6*。_z_。
-
+. 確保目前韌體版本與StorageGRID系統上安裝的軟體版本相符。  （從網格管理器的頂部，選擇幫助圖示並選擇*關於*。）
 . 如果應用裝置的StorageGRID 版本低於此版本、請前往 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]。
 +
 以您NetApp帳戶的使用者名稱和密碼登入。

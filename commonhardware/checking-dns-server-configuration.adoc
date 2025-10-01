@@ -31,9 +31,6 @@ summary: 您可以檢查並暫時變更此應用裝置節點目前正在使用�
 .步驟
 . 從《SectionAppliance安裝程式》StorageGRID 中、選取*「Configure Networking」（設定網路）*>「* DNS Configuration」（* DNS組態）*。
 . 確認指定的DNS伺服器正確無誤。
-+
-image::../media/dns_configuration.png[DNS 組態]
-
 . 如有需要、請變更DNS伺服器。
 +
 
@@ -48,17 +45,16 @@ NOTE: 對DNS設定所做的變更是暫時性的、在您結束維護模式時�
 ** 選取*重新開機至StorageGRID SESW*、以重新啟動控制器、並使節點重新加入網格。如果您已在維護模式下完成工作、並準備好讓節點恢復正常作業、請選取此選項。
 ** 選取*重新開機進入維護模式*、以重新啟動控制器、使節點保持維護模式。（此選項僅在控制器處於維護模式時可用。） 如果在重新加入網格之前需要在節點上執行其他維護作業、請選取此選項。
 +
-image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
-
-+
 
 NOTE: 當節點重新開機並重新加入網格時、會使用Grid Manager中列出的全系統DNS伺服器。重新加入網格後、當StorageGRID 應用裝置處於維護模式時、應用裝置將不再使用在《支援環境安裝程式（Choice Appliance Installer）」中指定的暫用DNS伺服器。
 
 +
-裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。「 * 節點 * 」頁面應顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號圖示image:../media/icon_alert_green_checkmark.png["綠色核取記號"]），表示沒有作用中警示，且節點已連線至網格。
+設備重新啟動並重新加入電網最多可能需要 20 分鐘。若要確認重啟已完成且節點已重新加入網格：
 
 +
-image::../media/nodes_menu.png[應用裝置節點重新加入網格]
+... 在網格管理器中，選擇*NODES*。
+... 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
+
 
 
 

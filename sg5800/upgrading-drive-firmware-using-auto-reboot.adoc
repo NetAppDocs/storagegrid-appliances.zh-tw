@@ -1,0 +1,35 @@
+---
+permalink: sg5800/upgrading-drive-firmware-using-auto-reboot.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5800, storage node, storage appliance, upgrade, firmware, drive, disk, automatic 
+summary: StorageGRID裝置安裝程式會在裝置重新啟動期間自動安裝最新的 E 系列磁碟機韌體檔案。 
+---
+= 裝置重新啟動期間自動升級 SG5800 磁碟機韌體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID裝置安裝程式會在裝置重新啟動期間自動安裝最新的 E 系列磁碟機韌體檔案。
+
+E 系列驅動器韌體檔案包含在StorageGRID軟體中。每當StorageGRID設備重新啟動時，就會自動安裝這些更新：
+
+* 進入link:../installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html["維護模式"]
+* 作為 https://docs.netapp.com/us-en/storagegrid/maintain/rolling-reboot-procedure.html["滾動重啟"]
+* 在 https://docs.netapp.com/us-en/storagegrid/upgrade/performing-upgrade.html["StorageGRID版本升級"]或者 https://docs.netapp.com/us-en/storagegrid/maintain/applying-hotfix.html["修補程式安裝"]
+* 在link:../sg5800/upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html["SANtricity作業系統升級"]使用維護模式
+
+
+
+CAUTION: 對於狀態為「需要注意」的節點，不會嘗試升級磁碟機韌體。
+
+
+NOTE: 當設備重新啟動時，儲存控制器的 I/O（輸入/輸出）活動將停止。
+
+您也可以使用SANtricity System Manager 手動安裝磁碟機韌體升級link:upgrading-drive-firmware-using-santricity-system-manager-online.html["在線的"]或者link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["離線"]方法：
+
+* 在將新驅動器韌體升級打包到StorageGRID軟體之前應用它
+* 如果自動驅動器韌體升級失敗
+* 使用SANtricity System Managerlink:upgrading-drive-firmware-using-santricity-system-manager-online.html["線上驅動器韌體升級"]從網格管理器而不是重新啟動節點
+

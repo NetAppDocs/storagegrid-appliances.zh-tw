@@ -423,6 +423,5 @@ NOTE: 如果您選擇使用少於四個連接埠、請注意StorageGRID 、安�
 
 .相關資訊
 * link:cabling-appliance.html["纜線應用裝置（ SG5800 ）"]
-* link:gathering-installation-information-sg5800.html#port-bond-modes["連接埠連結模式（ SG5800 控制器）"]
 * link:configuring-hardware.html["設定硬體（ SG5800 ）"]
 

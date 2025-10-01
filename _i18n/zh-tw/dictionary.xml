@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="daad4dadeda8cd86f01c8ad7f2a30465" category="summary">瞭解本文件網站的新功能。</block>
-  <block id="896ec268e957d3c662f84637cbe5cff2" category="doc">應用裝置的新功能</block>
-  <block id="72537bf3eb1f84421991e3c2fd3c6510" category="paragraph">瞭解 StorageGRID 應用裝置的新功能。</block>
   <block id="4e2d1b46d32d63f7b20c891a226971a0" category="summary">您可以變更服務應用裝置的乙太網路連結組態。您可以變更連接埠連結模式、網路連結模式及連結速度。</block>
   <block id="e4d7bc194db0f2b04796f28dca2cb07d" category="doc">變更 SG100 或 SG1000 的連結組態</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">開始之前</block>
@@ -17,7 +15,6 @@
   <block id="9375de3fffbb63f94a7ca68331299b22" category="list-text">變更連結速度</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
   <block id="367036cf69b30581b06bcee0c6dc8adf" category="list-text">從《SectionAppliance安裝程式》StorageGRID 中、選取*「Configure Networking」（設定網路）*&gt;「* Link Configuration」（*連結組態）*。</block>
-  <block id="884c9ef72af2e78c7b74cf8d6e2b4c99" category="image-alt">連結組態</block>
   <block id="5ed828ee565fa5c9fbd8cbc8e3525b3b" category="list-text">對連結組態進行所需的變更。</block>
   <block id="93b46e606d32a493646a41bbb400d80a" category="inline-link-macro">設定網路連結</block>
   <block id="532e90648f85289ca52e279e04af505e" category="paragraph">如需選項的詳細資訊、請參閱 <block ref="9620710b4214f33b112991452d5e6dd9" category="inline-link-macro-rx"></block>。</block>
@@ -32,9 +29,7 @@
   <block id="f692cc6109248f1a2005c9e0d4276b6a" category="list-text">一旦您確信連結組態變更正常運作、請重新啟動節點。從「the Sof the Sof the Some Installer」選取「*進階*&gt;*重新開機控制器*」StorageGRID 、然後選取下列其中一個選項：</block>
   <block id="a452636b12293b1064300f8550209aa0" category="list-text">選取*重新開機至StorageGRID SESW*、以重新啟動控制器、並使節點重新加入網格。如果您已在維護模式下完成工作、並準備好讓節點恢復正常作業、請選取此選項。</block>
   <block id="16e036b76973c9fbae0f82be319571c0" category="list-text">選取*重新開機進入維護模式*、以重新啟動控制器、使節點保持維護模式。（此選項僅在控制器處於維護模式時可用。） 如果在重新加入網格之前需要在節點上執行其他維護作業、請選取此選項。</block>
-  <block id="abae4054ff73709d783731ccc01cb620" category="image-alt">以維護模式重新啟動控制器</block>
   <block id="3626aefc9cb2effa31b269c155b93cb3" category="inline-image-macro">綠色核取記號</block>
-  <block id="4a7717f111c2730f0f856e7f7bce4120" category="image-alt">應用裝置節點重新加入網格</block>
   <block id="d302ab60418523bd0761c847d8a30df9" category="summary">找到控制器、以便執行硬體維護或升級。</block>
   <block id="5a98db7f59331b6532861044538d04ed" category="doc">在資料中心找到 SG100 或 SG1000</block>
   <block id="0636a539e7c50b052e11551aa970b3e7" category="list-text">您已確定需要維護的控制器。</block>
@@ -240,13 +235,11 @@
   <block id="3befe165a449c2011ecba00696c3f4ab" category="list-text">擷取歸檔。</block>
   <block id="1d24290d8f4a79eeaafbecffc1f4a350" category="list-text">從《Sile Appliance Installer》StorageGRID （英文）中、選取*進階*&gt;*上傳StorageGRID 《Some Software*》（英文）。</block>
   <block id="6fd2b0d88a0ea6f057348837593e1cf4" category="list-text">按一下「*移除*」以移除目前的軟體套件。</block>
-  <block id="1f288c0ba3f88bf0912012d36eb9d7dd" category="image-alt">應用裝置安裝程式-移除目前的軟體</block>
   <block id="59773e84f2479ffeb34ba9422edf9f9c" category="list-text">選擇*主頁*返回主頁。</block>
   <block id="2d636e90bd2e05a13f9a7e54cc9ff4de" category="list-text">確認目前狀態為「Ready to start installation of primary Admin Node name with software version x.y」（已準備好開始安裝軟體版本x.y的主管理節點名稱）、且已啟用* Start Installation*（開始安裝）按鈕。</block>
   <block id="34aaa9f52a702ada229db511977b71dd" category="inline-link-macro">節點複製程序</block>
   <block id="a1f1be355f492a1c3b5a6745d2cd5b1a" category="admonition">如果您要將管理節點應用裝置部署為節點複製目標、請在此停止部署程序、然後繼續 <block ref="87d967605804492a459cd5cfc0edb4e9" category="inline-link-macro-rx"></block>。</block>
   <block id="78f0e03ec13f92327369d4737eac3530" category="list-text">從「the Some Appliance Installer」首頁、按一下StorageGRID 「*開始安裝*」。</block>
-  <block id="3c90ca8c817ea8ed7231082584be44e9" category="image-alt">裝置主要管理節點安裝</block>
   <block id="21880bccf04609cb32fd02b3492c1c70" category="paragraph">目前狀態會變更為「Installation is in progress、」、並顯示「Monitor Installation（監控安裝）」頁面。</block>
   <block id="cc09b8c42e6afc4bc4bf30d9d74e8e98" category="admonition">如果您需要手動存取「監視器安裝」頁面、請從功能表列按一下「*監視器安裝*」。</block>
   <block id="13645cb57f6c05cc6d551be93d19472a" category="section-title">將服務應用裝置部署為閘道或非主要管理節點</block>
@@ -276,7 +269,6 @@
   <block id="58f5281bfc13f45500c73e000e05f9ca" category="list-text">等待顯示已發現的IP位址清單。</block>
   <block id="1922214d107424462c42cf882e7de7fc" category="list-text">選取要部署此應用裝置儲存節點的網格主要管理節點。</block>
   <block id="a9961a735e989eb42049492c3004496f" category="list-text">在 * 節點名稱 * 欄位中、提供您要用於此應用裝置節點的系統名稱、然後按一下 * 儲存 * 。</block>
-  <block id="859aba5803f535249e29a8ffe2c32c6d" category="paragraph">此處顯示的名稱將是應用裝置節點的系統名稱。內部 StorageGRID 作業需要系統名稱、因此無法變更。</block>
   <block id="06f9cb221f1c7b35766aeb533e33b69c" category="list-text">在「安裝」區段中、確認目前狀態為「準備開始安裝<block ref="b63eb060814c4999e77b01e66538f258" prefix=" " category="inline-code"></block> 使用主要管理節點進入網格<block ref="2f9ba536b02b69b5417cd803edfcffc0" prefix=" " category="inline-code"></block> "且已啟用*開始安裝*按鈕。</block>
   <block id="94ec460361fb2b4faa500cbfe2736123" category="paragraph">如果*開始安裝*按鈕未啟用、您可能需要變更網路組態或連接埠設定。如需相關指示、請參閱產品的維護指示。</block>
   <block id="7219d53a2c987afebdf600ccc504d1ab" category="list-text">如果網格包含多個應用裝置節點、請針對每個應用裝置重複上述步驟。</block>
@@ -303,7 +295,6 @@
   <block id="21d0a42aa427e078d6f2796054b85816" category="paragraph"><block ref="6917f9bedddc8cdc51ddf02112a053de" prefix="" category="inline-code"></block></block>
   <block id="2cd9e50279694c1cdb4d853c37e792cc" category="paragraph">適用於<block ref="02aec1529605bb382b74fa6f761efe49" prefix=" " category="inline-code"></block>、在StorageGRID 任何一個不支援的網路上使用應用裝置的IP位址。</block>
   <block id="17c2ba6f5d294a5e23ff98a2ff52d694" category="list-text">選擇*設定硬體*&gt;* BMC組態*。</block>
-  <block id="aef23cdc48ae3ad9e0fa5ebf7ce30990" category="image-alt">顯示「進階」&gt;「BMC組態」選項的快照</block>
   <block id="449368099d0de5a7077c42f1aca8c1f6" category="paragraph">出現「Baseboard Management Controller Configuration（基礎板管理控制器組態）」</block>
   <block id="c6191d53580a62b3f358a0b14d004777" category="list-text">在提供的兩個欄位中、輸入管理員或 root 帳戶的新密碼。</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">選擇*保存*。</block>
@@ -478,10 +469,8 @@
   <block id="6ff6544aaa51426d71952e2ebef91b73" category="list-text">您有 <block ref="ed5233e808c737b997a7ac8b5adf83e3" category="inline-xref-macro-rx"></block> 在 NetApp 專業服務顧問的指導下、</block>
   <block id="392bd3f83fb497794f409fa5908887f0" category="list-text">您的應用裝置包含與 StorageGRID 11.5 或更新版本相容的最新韌體。</block>
   <block id="6989c71b2a87387280764a414d928c27" category="list-text">在 StorageGRID 應用裝置安裝程式中、選取 * 進階 * &gt; * 更新應用裝置組態 * 。此時會出現「更新設備組態」頁面。</block>
-  <block id="cbe31f798cc3e7c32cac515491c124dd" category="list-text">瀏覽並選擇含有您要上傳之組態的 JSON 檔案。</block>
   <block id="d46a96ea002a2622b5221351849dc6b1" category="paragraph">檔案已上傳並驗證。驗證程序完成時、檔案名稱會顯示在綠色核取符號旁。</block>
   <block id="290a1393a687387a0aab8539cbb4052d" category="admonition">如果 JSON 檔案的組態包含的節、您可能會失去與應用裝置的連線<block ref="88866c7f25f440b85f72e94f3ff0f6c7" prefix=" " category="inline-code"></block>、<block ref="3e11ca2215bada5ab235ee73e4ff7cd0" prefix=" " category="inline-code"></block>或兩者。如果您在 1 分鐘內未重新連線、請使用指派給應用裝置的其他 IP 位址之一重新輸入應用裝置 URL 。</block>
-  <block id="96916133d9ba89b1f760d8b0b4fcb081" category="image-alt">已上傳更新應用裝置組態Json</block>
   <block id="8e0735294c657cc50de7b9a561384c96" category="paragraph">「*節點名稱*」下拉式清單會填入Json檔案中定義的頂層節點名稱。</block>
   <block id="79bd604c7b5c55401f644a52f8f8abfe" category="admonition">如果檔案無效、檔案名稱會以紅色顯示、並以黃色橫幅顯示錯誤訊息。無效檔案未套用至應用裝置。ConfigBuilder 會驗證您是否擁有有效的 JSON 檔案。</block>
   <block id="849df754ceb7398c2f1dcb1f6669d5e6" category="list-text">從「*節點名稱*」下拉式清單中選取節點。</block>
@@ -523,9 +512,6 @@
   <block id="0bd1ebb8adfbf1e090886b61a44fa183" category="list-text">如果有多個交換器參與LACP連結、交換器就會支援多機箱連結集合群組（MLAG）或等效群組。</block>
   <block id="7a16b458f081a864eaec46c995f71a14" category="list-text">您瞭解如何將交換器設定為使用VLAN、LACP及MLAG或同等功能。</block>
   <block id="cbf86ac3f1d65bf121f658300bdf8d03" category="list-text">您知道每個網路使用的獨特VLAN標記。此VLAN標記將新增至每個網路封包、以確保網路流量路由傳送至正確的網路。</block>
-  <block id="5edfb40dcb0feee76db0e3a873f86be2" category="paragraph">如果您要使用非預設設定、只需要在「連結組態」頁面上設定設定。</block>
-  <block id="963ef2881ceb08a6b1068cebfe95022d" category="admonition">LACP 傳輸雜湊原則為第 2+3 層。</block>
-  <block id="22499a5ffbf9b728615e764619cd6641" category="paragraph">下圖和表格摘要說明每個應用裝置的連接埠連結模式和網路連結模式選項。如需詳細資訊、請參閱下列內容：</block>
   <block id="c38542129740143e2a0bf6c1f3541335" category="inline-link-macro">連接埠連結模式（ SG1000 和 SG100 ）</block>
   <block id="c8601bd42029e342379783c8c5069d36" category="list-text"><block ref="c8601bd42029e342379783c8c5069d36" category="inline-link-macro-rx"></block></block>
   <block id="82a72fa35fefeb5381cab2f9df0591be" category="inline-link-macro">連接埠連結模式（ E5700SG ）</block>
@@ -542,7 +528,6 @@
   <block id="dfcf28d0734569a6a693bc8194de62bf" category="paragraph">G</block>
   <block id="9a0b20aa83e4ff54db1dc65d7fffc81a" category="paragraph">連接埠2和4會連結至Grid Network。</block>
   <block id="3b77bfb40cca1aeaac40987763d5db69" category="paragraph">下表摘要說明設定四個網路連接埠的選項。如果您要使用非預設設定、只需要在「連結組態」頁面上設定設定。</block>
-  <block id="0bb5bc8c343d548791adf82612aa51eb" category="cell">用戶端網路已停用（預設）</block>
   <block id="9aa23effe1b468678525d6ee79604d14" category="cell">用戶端網路已啟用</block>
   <block id="6c3b66c95bb75951ca92ec6bfbafdae9" category="paragraph">雙主動備份（預設）</block>
   <block id="cbebcb15dfcbdd917c675bf0c49bc313" category="list-text">連接埠2和4使用適用於Grid Network的主動備份連結。</block>
@@ -589,12 +574,10 @@
   <block id="0739ae8aa2b43e4e7e5a0617281bed7e" category="list-text">從「SectionAppliance安裝程式」的功能表列StorageGRID 中、按一下「*組態網路*」&gt;「*連結組態*」。</block>
   <block id="243a7c2280790d37c7a538bdc19d52a0" category="paragraph">「網路連結組態」頁面會顯示設備的圖表、其中的網路和管理連接埠編號為。</block>
   <block id="a7376391c049942740ccb462df6110ad" category="paragraph">「連結狀態」表格會列出編號連接埠的連結狀態、連結速度及其他統計資料。</block>
-  <block id="0a8523a5bf4cee11579c89bb72ef61bd" category="paragraph">第一次存取此頁面時：</block>
   <block id="13ec900250dfbf5deff43edd1fa81325" category="list-text">*連結速度*設為*自動*。</block>
   <block id="ee3ab223aa68cc0a434098c1bf72ce26" category="list-text">*連接埠連結模式*設為*固定*。</block>
   <block id="cff1222d1c020eb5ac8acd4415ae9068" category="list-text">*網格網路的網路連結模式*設為*主動備份*。</block>
   <block id="4484337f5eb57c24be5343405ae5d3ac" category="list-text">*管理網路*已啟用、網路連結模式設定為*獨立*。</block>
-  <block id="db11999d9ac559043dba87eeefc4ba89" category="list-text">*用戶端網路*已停用。</block>
   <block id="678a14800d0067fb610b6fe26abe74fa" category="list-text">從「*連結速度*」下拉式清單中選取網路連接埠的連結速度。</block>
   <block id="fd97c4115309fef0e4ee36ad4e9340d6" category="paragraph">您用於Grid Network和用戶端網路的網路交換器也必須支援並設定此速度。您必須使用適當的介面卡或收發器來設定連結速度。如果可能、請使用自動連結速度、因為此選項會與連結合作夥伴協調連結速度和轉送錯誤修正（FEC）模式。</block>
   <block id="db4e395504590bb6b4cbf1c602935822" category="list-text">使用 SFP28 收發器和 SFP28 雙軸纜線或光纖纜線。</block>
@@ -604,17 +587,11 @@
   <block id="19a606bbcfd9d697186c901ac498b423" category="list-text">如果應用裝置未連線至管理網路、請清除管理網路的 * 啟用網路 * 核取方塊。</block>
   <block id="6b2749b4a21ea3ca29b065b3ceb01f57" category="list-text">如果設備已連線至用戶端網路、請選取用戶端網路的 * 啟用網路 * 核取方塊。</block>
   <block id="251a4c3325d24cce3beeb2fa25236ac7" category="paragraph">此時會顯示資料NIC連接埠的用戶端網路設定。</block>
-  <block id="25c899868c0ab58b54991ab4e420ba6d" category="list-text">請參閱表、並設定連接埠連結模式和網路連結模式。</block>
-  <block id="68a18867002d487cc62c6a9ecebf9378" category="paragraph">此範例顯示：</block>
-  <block id="cd83853a650afd5076a9331407337acb" category="list-text">* Aggregate *和* lacp *已選取用於Grid和用戶端網路。您必須為每個網路指定唯一的VLAN標記。您可以選取0到4095之間的值。</block>
-  <block id="628b5c26ad127e5f7b4637ec9133ff2d" category="list-text">*已為管理網路選取Active備份*。</block>
-  <block id="30151ebcc272344d1d0c87b4647751b2" category="image-alt">網路連結組態Aggregate</block>
   <block id="f8cda4fa97747963f0bdbaa3f6353c91" category="admonition">如果您變更所連線的網路或連結、可能會失去連線。如果您在 1 分鐘內未重新連線、請使用指派給應用裝置的其他 IP 位址之一、重新輸入 StorageGRID 應用裝置安裝程式的 URL ： +<block ref="7cb9429482151be5ab9338810b072fc0" prefix=" " category="inline-code"></block></block>
   <block id="066e55e7e1c84f08925cd52856fb53b5" category="summary">您應該確認是否可以從StorageGRID 應用裝置存取所使用的資訊網。若要驗證透過網路閘道的路由、您應該測試StorageGRID 與眾不同子網路上的《解決方案安裝程式與IP位址之間的連線能力。您也可以驗證MTU設定。</block>
   <block id="2ebf210000257f92489fc857f0a17e39" category="doc">驗證網路連線</block>
   <block id="26402c5857d6789e24bbd4321a204213" category="list-text">從「SectionAppliance安裝程式」的功能表列StorageGRID 中、按一下「*組態網路*」&gt;「* Ping和MTU Test*」。</block>
   <block id="3c0a4cd6fff077ca9dfc20c1f1608752" category="paragraph">Ping和MTU Test（Ping和MTU測試）頁面隨即出現。</block>
-  <block id="6d7f2752312c0c72f0b4a8ec9320c075" category="image-alt">以擷取畫面擷取StorageGRID 畫面顯示的Ping應用程式和MTU測試選項</block>
   <block id="989961d88e80002ba54e15ceeb5a8848" category="list-text">從*網路*下拉式方塊中、選取您要測試的網路：網格、管理或用戶端。</block>
   <block id="a463579ad768fa90aa8e48b3112897f0" category="list-text">輸入該網路上主機的IPV4位址或完整網域名稱（FQDN）。</block>
   <block id="69274deb0d907f50897a3d7cadce87c4" category="paragraph">例如、您可能想要ping網路或主要管理節點上的閘道。</block>
@@ -1074,13 +1051,8 @@
   <block id="11736bd160e7611675a9da6c8aef68fb" category="paragraph">在此階段、安裝程式會連線至儲存控制器、清除任何現有的組態、根據設定的 RAID 模式建立 RAID 、為 StorageGRID 軟體和物件資料儲存設備分配磁碟區、以及設定主機設定。</block>
   <block id="7b2b31935da0a65fbd06d5fbbae7f12b" category="paragraph">2.安裝作業系統*</block>
   <block id="a8a61bc10862f2fc629995eddcfede77" category="paragraph">在此階段、安裝程式會將基礎作業系統映像複製到StorageGRID 應用裝置中以供使用。</block>
-  <block id="1f487bf7f1e15720d6787034da97a50c" category="list-text">繼續監控安裝進度、直到*安裝StorageGRID Sid*階段暫停、並在內嵌主控台顯示訊息、提示您使用Grid Manager在管理節點上核准此節點。前往下一步。</block>
-  <block id="1e866556514b57a6ca20673afcdd0c95" category="list-text">前往「主要管理」節點的Grid Manager、核准擱置的儲存節點、然後完成StorageGRID 「更新安裝」程序。</block>
   <block id="ed66fdbdee04e5bd00ff3d6705a14d8f" category="paragraph">當您從Grid Manager按一下* Install*時、階段3完成、階段4 *完成安裝*開始。當階段4完成時、控制器會重新開機。</block>
   <block id="b7645a5dea01ea0ae993086869bb054c" category="open-title">服務應用裝置</block>
-  <block id="993f9ac47c95cc23abd19e92c3a3e3ca" category="list-text">若要監控安裝進度、請按一下功能表列中的*監控安裝*。</block>
-  <block id="064408320caa8d239f07d5926a25b069" category="image-alt">監控安裝-服務應用</block>
-  <block id="c9336d7080bc57d338b2bad2efe38313" category="list-text">檢閱前兩個安裝階段的進度。</block>
   <block id="ca24497a603bbc47076b2ca3cbe5a2ac" category="paragraph">在此階段中、安裝程式會清除應用裝置中磁碟機的任何現有組態、並設定主機設定。</block>
   <block id="90f6370ccbecc973aa1553afa395b729" category="list-text">繼續監控安裝進度、直到下列其中一個程序發生為止：</block>
   <block id="8a8aaccc64167e205ae2e772ed0fe5b4" category="list-text">對於應用裝置主要管理節點安裝、您不需要核准節點。設備隨即重新開機。您可以跳過下一步。</block>
@@ -1252,13 +1224,11 @@
   <block id="6ab1dd1f72b54c2d536817b45836991c" category="list-text">記下自動顯示的IPV4位址。</block>
   <block id="eab33d5476faed22151b1e5a3cc5aeec" category="paragraph">DHCP是將IP位址指派給儲存控制器管理連接埠的預設方法。</block>
   <block id="329881d8ef653446f40f711e4fc8fd15" category="admonition">可能需要幾分鐘時間才能顯示DHCP值。</block>
-  <block id="2478b72df9b3df0d12bdb93bc30b1581" category="image-alt">儲存控制器網路組態IPV4</block>
   <block id="f604fb9581a7125a29e81a338cdf6ab7" category="list-text">您也可以為儲存控制器管理連接埠設定靜態IP位址。</block>
   <block id="13b980687862811535e502373a89cc85" category="admonition">您應該為管理連接埠指派靜態IP、或為DHCP伺服器上的位址指派永久租用。</block>
   <block id="ef629ab48bf286b5597c22d0257a9354" category="list-text">選擇* Static *（靜態*）。</block>
   <block id="e7531855a45d79108e15469d6937761e" category="list-text">輸入使用CIDR表示法的IPV4位址。</block>
   <block id="79658e10ca015f24acdccf34e6840296" category="list-text">輸入預設閘道。</block>
-  <block id="ffed8e091cbdcd40a6509d0b896ebf40" category="image-alt">儲存控制器網路組態：IPV4和預設閘道</block>
   <block id="3c7ae12db7024ffd08d2bca474f5ed35" category="paragraph">您可能需要幾分鐘的時間才能套用變更。</block>
   <block id="fa819e302c806f17c39d49ed55f0265d" category="paragraph">當您連線SANtricity 至「靜態系統管理程式」時、您將使用新的靜態IP位址作為URL：+<block ref="29c66d4541758aec7932976994c3319a" prefix=" " category="inline-code"></block></block>
   <block id="16eb8283e310826145f33fe6116ba3eb" category="summary">功能完善的SG100服務應用裝置和SG1000服務應用裝置可做為閘道節點和管理節點、在一個不穩定的系統中提供高可用度負載平衡服務。StorageGRID StorageGRID這兩種應用裝置可同時做為閘道節點和管理節點（主要或非主要）。</block>
@@ -1399,10 +1369,8 @@
   <block id="51b43c5cf6988abb280d004ec1666a67" category="list-text">從用戶端輸入StorageGRID URL以供使用、例如：+<block ref="6917f9bedddc8cdc51ddf02112a053de" prefix=" " category="inline-code"></block></block>
   <block id="12198d252bf3b642e069b294c7b66c4e" category="paragraph">適用於<block ref="084b04ddf10548423f917e57f376273a" prefix=" " category="inline-code"></block>、在StorageGRID 任何一個不支援的網路上使用應用裝置的IP位址。</block>
   <block id="b387480c32602d7d4ac7bb3512eed8ea" category="paragraph">DHCP是指派IP位址給此連接埠的預設方法。</block>
-  <block id="64f89d60272ac6e6ad720c4d2d1e534e" category="image-alt">顯示DHCP位址的「底層管理控制器組態」頁面</block>
   <block id="39a657274976bbb1e10fb080cd063c3f" category="list-text">（可選）設置BMC管理端口的靜態IP地址。</block>
   <block id="4ccf540eaa2191c8430174f93410db5a" category="admonition">您應該為BMC管理連接埠指派靜態IP、或為DHCP伺服器上的位址指派永久租用。</block>
-  <block id="7eb88061c9c3e57cb63e8f9fc96e4c5b" category="image-alt">基礎板管理控制器組態靜態選項</block>
   <block id="17f5037c7f0277d3791a5e41dc6bfa31" category="summary">為應用裝置加電後、您可以設定 StorageGRID 將使用的網路連線。 </block>
   <block id="3a750eadf0b9a6ed9ba7b3ae25d8f9da" category="doc">設定硬體：總覽</block>
   <block id="84c9a5dd7875faf7ff328da41854d786" category="paragraph">為應用裝置加電後、您可以設定 StorageGRID 將使用的網路連線。</block>
@@ -1440,9 +1408,6 @@
   <block id="455af4fdfc1650d3bb3aa40d5212412a" category="list-text">輸入產品序號和要求的詳細資料。</block>
   <block id="9fcab783d1ffadeafb84de00efe883d9" category="paragraph">註冊核准後、您可以下載任何必要的軟體。核准程序可能需要24小時。</block>
   <block id="540cfee1ee6cf69741ea7882dee9046b" category="summary">您可以使用 StorageGRID 應用裝置安裝程式來設定用於 StorageGRID Grid 、 Admin 和 Client Networks 上服務應用裝置或應用裝置儲存節點的 IP 位址和路由資訊。</block>
-  <block id="ace24bc975660f0938328697c5a3a29e" category="paragraph">您可以使用 StorageGRID 應用裝置安裝程式來設定 StorageGRID Grid 、 Admin 和 Client Networks 上用於服務應用裝置或應用裝置儲存節點的 IP 位址和路由資訊。</block>
-  <block id="20194938d092aada3894d91f974635b1" category="paragraph">您必須為每個連線網路上的應用裝置指派靜態IP、或為DHCP伺服器上的位址指派永久租期。</block>
-  <block id="5b08fd074d07e130b7030658ef41253f" category="paragraph">若要變更連結組態、請參閱下列指示：</block>
   <block id="2b5484ac1beb20f49e7510af44ecb06a" category="inline-link-macro">變更 SG100 或 SG1000 服務應用裝置的連結組態</block>
   <block id="8db5a2ab114ff083348a78bccc01e9d0" category="list-text"><block ref="8db5a2ab114ff083348a78bccc01e9d0" category="inline-link-macro-rx"></block></block>
   <block id="6141ffb867b1efe81e5e69a5c89b8a99" category="inline-link-macro">變更E5700SG控制器的連結組態</block>
@@ -1453,7 +1418,6 @@
   <block id="82f7d371d2d7c13ff9845d035836740a" category="list-text"><block ref="82f7d371d2d7c13ff9845d035836740a" category="inline-link-macro-rx"></block></block>
   <block id="c7bda52b89759b00cb8ad65f67df014c" category="list-text">在《SectionAppliance安裝程式》StorageGRID 中、選取*「Configure Networking」（設定網路）*&gt;「* IP Configuration」（* IP組態）*。</block>
   <block id="3e1955c43a21db08b53694f46adc7b87" category="paragraph">此時會顯示「IP組態」頁面。</block>
-  <block id="393c626884d6951f668d66e9fb0e53b2" category="list-text">若要設定網格網路、請在頁面的「*網格網路*」區段中選取*靜態*或* DHCP *。</block>
   <block id="2cb7413cf8ab9a1ebb5ebf4c70da43cb" category="list-text">如果您選取*靜態*、請依照下列步驟設定網格網路：</block>
   <block id="f6b5a4b458f38afdd04b463403cd5dd2" category="list-text">使用CIDR表示法輸入靜態的IPV4位址。</block>
   <block id="b99c484862b0a5adea755d7f7256436c" category="list-text">輸入閘道。</block>
@@ -1465,27 +1429,20 @@
   <block id="fb6fa3155d58cfbb940022791050df66" category="paragraph">如果您失去StorageGRID 了與該產品安裝程式的連線、請使用剛指派的新靜態IP位址重新輸入URL。例如、+<block ref="7cb9429482151be5ab9338810b072fc0" prefix=" " category="inline-code"></block></block>
   <block id="a2b64f6433d021f997a563b2aea815e4" category="list-text">確認網格網路子網路清單正確無誤。</block>
   <block id="1e5525a7408a5f05eab0a28d87fbf2b2" category="paragraph">如果您有網格子網路、則需要網格網路閘道。指定的所有網格子網路都必須透過此閘道才能連線。當您開始StorageGRID 安裝時、也必須在主要管理節點的Grid Network Subnet List（網格網路子網路清單）中定義這些Grid Network子網路。</block>
-  <block id="95c601a1b60eb13cd59109591804d00a" category="admonition">未列出預設路由。如果未啟用用戶端網路、則預設路由將使用Grid Network閘道。</block>
   <block id="408ea845582fc67ccb1d6fd994905d7e" category="inline-image-macro">插入圖示</block>
   <block id="5f11c7889df3330ff1f653f5e5702931" category="inline-image-macro">刪除圖示</block>
   <block id="a46bbb4dd037b68158879e9e446ba4ab" category="list-text">如果您選取* DHcp*、請依照下列步驟設定Grid Network：</block>
   <block id="140b4bda6d38a9f86842d22758d11a13" category="list-text">選擇* DHcp*單選按鈕後，單擊*保存*。</block>
   <block id="a1563c17c233f64f135160e3aaf751c8" category="paragraph">系統會自動填入「* IPV4位址*」、「*閘道*」及「*子網路*」欄位。如果DHCP伺服器設定為指派MTU值、則* MTU *欄位會填入該值、且欄位會變成唯讀。</block>
   <block id="d80e86a8c3f205ac96b864dcc1056511" category="paragraph">您的網頁瀏覽器會自動重新導向StorageGRID 至全新的IP位址、以供使用。</block>
-  <block id="0f22d3c4dad1ddecef2e3527a53c0ad5" category="list-text">若要設定管理網路、請在頁面的「*管理網路*」區段中選取「*靜態*」或「* DHCP *」。</block>
   <block id="c24284d6781e2040bde43e938c31b31d" category="admonition">若要設定管理網路、請在「連結組態」頁面上啟用管理網路。</block>
-  <block id="ad0a07da1eeff182337b6cc902cd13bb" category="image-alt">管理網路IP</block>
   <block id="b4f7e2ebad529279712b23b3df07afab" category="list-text">如果您選取*靜態*、請依照下列步驟設定管理網路：</block>
   <block id="5e2079034a2848cbc791631cddb60f79" category="list-text">在設備上的Management Port 1（管理連接埠1）中輸入靜態的IPv4位址、使用CIDR表示法。</block>
-  <block id="ac050aef24047fa3166dfc10edfa2633" category="paragraph">管理連接埠1是設備右端兩個1-GbE RJ45連接埠的左側。</block>
   <block id="004ac3a4acb44a1e55fb990c532d2ad3" category="paragraph">如果您失去StorageGRID 了與該產品安裝程式的連線、請使用剛指派的新靜態IP位址重新輸入URL。例如、+<block ref="55e85fa3cf66eb01568c8d8c9b767542" prefix=" " category="inline-code"></block></block>
   <block id="4a1d3b11657f7d9a2d739b6acca26d15" category="list-text">確認管理網路子網路清單正確無誤。</block>
   <block id="4bacb0355ac4f24ed8c6141dd090b579" category="paragraph">您必須使用所提供的閘道來確認所有子網路都可以連線。</block>
   <block id="730b5cf7f8c5232ea4d3e44a57411b0a" category="admonition">無法使用管理網路閘道來設定預設路由。</block>
   <block id="87bc58fa5e6cd0ff86a6bc8e4178b739" category="list-text">如果您選取* DHcp*、請依照下列步驟設定管理網路：</block>
-  <block id="0c82965c220124f54856d4d5f199a9b8" category="list-text">若要設定用戶端網路、請在頁面的*用戶端網路*區段中選取*靜態*或* DHCP *。</block>
-  <block id="9b974fa6d50efe3907ff2cfbb9242bc0" category="admonition">若要設定用戶端網路、請在「連結組態」頁面上啟用「用戶端網路」。</block>
-  <block id="6a3ad34c43a331480ed0cf6934a31adb" category="image-alt">用戶端網路IP</block>
   <block id="7ddda42e329a10ce8363fbec77be26b2" category="list-text">如果您選取*靜態*、請依照下列步驟設定用戶端網路：</block>
   <block id="7b2db1150f4e5ccf99360a2c6d7d4eb4" category="list-text">確認用戶端網路閘道的IP位址正確無誤。</block>
   <block id="429da124c272f0e27d3d68a3ac2d4334" category="admonition">如果已啟用用戶端網路、則會顯示預設路由。預設路由會使用用戶端網路閘道、且在用戶端網路啟用時無法移至其他介面。</block>
@@ -1516,20 +1473,10 @@
   <block id="7b940fdd0fc044a70abf19e87a459209" category="paragraph">連接埠連線表列出需要網格網路上TCP連線的節點類型。針對每種節點類型、表格會列出您的應用裝置應可存取的Grid Network連接埠。</block>
   <block id="38357ded564177fb36b2b799380256cf" category="paragraph">您可以測試表格中所列應用裝置連接埠與Grid Network中其他節點之間的連線能力。</block>
   <block id="2520b2e6b1e66cf4dcc5e7768ed2138d" category="list-text">從*網路*下拉式清單中、選取您要測試的網路：*網格*、*管理*或*用戶端*。</block>
-  <block id="dd201c3f227a0121f5e2907ddbf37c73" category="list-text">為該網路上的主機指定一系列的IPv6位址。</block>
-  <block id="5359019b8c8e32b86dd7464c746c1a3d" category="paragraph">例如、您可能想要探查網路或主要管理節點上的閘道。</block>
-  <block id="65d201a132f8c3e8fb910e37dca0c0a6" category="paragraph">使用連字號指定範圍、如範例所示。</block>
   <block id="6315d4dcaeb6a486d2c53cfe457a5e80" category="list-text">輸入TCP連接埠號碼、以逗號分隔的連接埠清單、或連接埠範圍。</block>
-  <block id="5cca6d6df455588f713f290c0cc69689" category="image-alt">連接埠連線測試</block>
-  <block id="06aea9a6ad1453aa35cb81733b621111" category="list-text">如果所選的連接埠層級網路連線有效、「Port connections test passed」（連接埠連線測試通過）訊息會顯示在綠色橫幅中。nmap命令輸出會列在橫幅下方。</block>
-  <block id="818a0bcc63d36b242c6fcea3b66987d2" category="image-alt">連接埠連線測試通過</block>
-  <block id="4fafb503a1c0ce677c0070efc8d2b387" category="list-text">如果與遠端主機建立連接埠層級的網路連線、但主機未接聽一個或多個選取的連接埠、則「Port Connectivity test failed」（連接埠連線測試失敗）訊息會顯示在黃色橫幅中。nmap命令輸出會列在橫幅下方。</block>
   <block id="4c78df6ef51ca57ddfc4d17dcf9591ac" category="paragraph">主機未接聽的任何遠端連接埠都會顯示「Closed」（已關閉）狀態。 例如、當您嘗試連線的節點處於預先安裝狀態、StorageGRID 且該節點上尚未執行「更新服務」時、您可能會看到這個黃色橫幅。</block>
-  <block id="643ce849ab48920fd2983239cbe5d7ea" category="image-alt">nmap測試黃色橫幅</block>
-  <block id="cb2fe8130d4e1cf523e386b3cf10d26a" category="list-text">如果無法為一或多個選取的連接埠建立連接埠層級網路連線、則紅色橫幅會顯示「連接埠連線測試失敗」訊息。nmap命令輸出會列在橫幅下方。</block>
   <block id="f282870d442edda2838250457b055810" category="paragraph">紅色橫幅表示TCP連線嘗試連接遠端主機上的連接埠、但未將任何內容傳回傳送者。當沒有傳回回應時、連接埠的狀態為「已篩選」、可能會被防火牆封鎖。</block>
   <block id="0f99e277940b266478422badbb16b8d6" category="admonition">也會列出「Closed」（已關閉）的連接埠。</block>
-  <block id="d9e8f46e28922211f8d74a14b7249d3a" category="image-alt">nmap測試紅色橫幅</block>
   <block id="31b7f4afaff44d97bd4507909ce7925a" category="summary">安裝StorageGRID 此產品之前、您應該先瞭解哪些網路可以連線至應用裝置。</block>
   <block id="aeefff382472953c95a40e851dbe0e88" category="doc">網路類型StorageGRID</block>
   <block id="5fd0ea78f1f4110e6a664eae5cf78486" category="inline-link">網路準則</block>
@@ -1706,7 +1653,6 @@
   <block id="d7e44acf8ea1e878605fc24ac366dbbf" category="inline-link-macro">判斷應用裝置網路連線</block>
   <block id="5cd9d4596c6b019d51f8bb5bc0229ec3" category="list-text"><block ref="5cd9d4596c6b019d51f8bb5bc0229ec3" category="inline-link-macro-rx"></block></block>
   <block id="b089e1f62584198a3a26de9b0eb790c6" category="inline-link-macro">連接埠連結模式（ SG6000-CN 控制器）</block>
-  <block id="b912f8b379f85ef884da66f283c94601" category="list-text"><block ref="b912f8b379f85ef884da66f283c94601" category="inline-link-macro-rx"></block></block>
   <block id="93391729b9b14c1d32f6950fa8cd5022" category="list-text"><block ref="93391729b9b14c1d32f6950fa8cd5022" category="inline-link-macro-rx"></block></block>
   <block id="450cfe5983713c7ae2321e9047dd5f38" category="summary">您可以在節點和磁碟層級啟用加密、以保護應用裝置中的磁碟、避免實體遺失或從站台移除。</block>
   <block id="3d41eed86011ac421d2d79cfeb45fd92" category="doc">選用：啟用節點或磁碟機加密</block>
@@ -1728,7 +1674,6 @@
   <block id="9a470dfb9a8484bf439126aff614b62e" category="paragraph">如果沒有解密磁碟所需的 KMS 金鑰、設備上的資料就無法擷取、而且會有效遺失。當解密金鑰無法從 KMS 擷取時、就會發生這種情況。如果客戶清除KMS組態、KMS金鑰過期、與KMS的連線中斷、或是設備從StorageGRID 安裝KMS金鑰的作業系統中移除、金鑰就無法存取。</block>
   <block id="590cbf74b84dfc73c6dc4c168b611ff4" category="admonition">使用 KMS 金鑰加密應用裝置後、如果沒有使用相同的 KMS 金鑰、就無法解密應用裝置磁碟。</block>
   <block id="cd2916f9f46b3e024123c6c0202b8d14" category="list-text">選擇*設定硬體*&gt;*節點加密*。</block>
-  <block id="acacb8cd31572a3bc3d65a66ee2c76d9" category="image-alt">已啟用KMS FDE</block>
   <block id="6052e60019e6274827bcda1319890602" category="list-text">選取*啟用節點加密*。</block>
   <block id="6f4875bc91f233a866a4367604a7e1f5" category="paragraph">在應用裝置安裝之前、您可以清除 * 啟用節點加密 * 、而不會有資料遺失的風險。安裝開始時、應用裝置節點會存取 StorageGRID 系統中的 KMS 加密金鑰、並開始磁碟加密。安裝應用裝置後、您無法停用節點加密。</block>
   <block id="969a77a042cf3eedb9bd76af9822fc8b" category="admonition">將已啟用節點加密的應用裝置新增至具有 KMS 的 StorageGRID 網站之後、您就無法停止對該節點使用 KMS 加密。</block>
@@ -1739,14 +1684,11 @@
   <block id="57fc37510182888ed4e833d1dc9f83cf" category="paragraph">當應用裝置節點處於維護模式時、您可以檢視節點加密狀態、KMS詳細資料及使用中的憑證。請參閱 <block ref="04852d1b427afc14d010bc081f44a3aa" category="inline-link-macro-rx"></block> 以取得資訊。</block>
   <block id="f4b6f694a5501888787381e6a815ab2e" category="paragraph">加密的 SED 會在設備關機或從應用裝置移除磁碟機時自動鎖定。加密的 SED 會在電源恢復後保持鎖定、直到輸入正確的密碼。若要在不手動重新輸入複雜密碼的情況下存取磁碟機、複雜密碼會儲存在 StorageGRID 應用裝置上、以便在應用裝置重新啟動時、解除鎖定仍留在應用裝置中的加密磁碟機。任何知道密碼短語的人都可以存取使用 SED 密碼短語加密的磁碟機。</block>
   <block id="0ffb3b992e7b67a3cf4b6e86c5e6d58e" category="paragraph">磁碟機加密不適用於 SANtricity 管理的磁碟機。如果您的 StorageGRID 應用裝置具有 SED 和 SANtricity 控制器、則可以在中啟用磁碟機安全性 <block ref="26de6fd427efcc81f7ad7cd6aad9003d" category="inline-link-macro-rx"></block>。</block>
-  <block id="0fb0c001659e1b8d7876247f8c4b3eac" category="paragraph">您可以在初始應用裝置安裝期間啟用磁碟機加密、然後再載入 Grid Manager 。您也可以將應用裝置設為維護模式、以啟用節點加密或變更密碼。</block>
   <block id="d112382db4537727ec6a38fd83f7931d" category="paragraph">一開始啟用磁碟機加密時、會設定複雜密碼。如果更換運算節點、或將加密的 SED 移至新的運算節點、您必須手動重新輸入複雜密碼。</block>
   <block id="68054e05b3829648df9f1eed60b84a85" category="admonition">請務必將磁碟機加密密碼短語儲存在安全的位置。如果 SED 安裝在其他 StorageGRID 應用裝置中、則必須手動輸入相同的密碼、才能存取加密的 SED 。</block>
   <block id="a7168e3fce65db38199c759024bcc6ad" category="section-title">啟用磁碟機加密</block>
   <block id="d7dbcf1eda63c64b0752519f1f051644" category="list-text">存取 StorageGRID 應用裝置安裝程式。</block>
-  <block id="75239ce64897ffd4ab0711612f9ba764" category="list-text">在初始應用裝置安裝期間、開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個 IP 位址。</block>
   <block id="6ffdcdf36dc3466c29bb60285b33c054" category="inline-link-macro">將產品置於維護模式</block>
-  <block id="5e6a9293d89a56cb3dd27ead57b7074c" category="list-text">對於現有的 StorageGRID 應用裝置、 <block ref="7e1e4060774e5ff9cb2b883f10bf74c0" category="inline-link-macro-rx"></block>。</block>
   <block id="86b7ddc9043ca70607d67321e3afc2a6" category="list-text">從 StorageGRID 應用裝置安裝程式首頁、選取 * 設定硬體 * &gt; * 磁碟機加密 * 。</block>
   <block id="dd242980060f10318c4c8a7f62b97bcc" category="list-text">選取 * 啟用磁碟機加密 * 。</block>
   <block id="78043297ab3ce4f159d05eead172416f" category="admonition">啟用磁碟機加密並設定密碼後、 SED 磁碟機即為硬體加密。如果沒有使用相同的複雜密碼、就無法存取磁碟機的內容。</block>
@@ -1925,7 +1867,6 @@
   <block id="b836395e2ae90393d394fc272be4bac5" category="inline-link-macro">驗StorageGRID 證並升級版本的應用程式</block>
   <block id="489e5a313a6ad7b7d942c07ac6863707" category="paragraph"><block ref="489e5a313a6ad7b7d942c07ac6863707" category="inline-link-macro-rx"></block></block>
   <block id="e38bdd7be63ededd8fb5046f8d1a1341" category="list-text">請檢閱StorageGRID 顯示在「畫面中心設備安裝程式」首頁上的任何訊息、並視需要設定連結組態和IP組態。</block>
-  <block id="c702366d656d74d0f594a11d94aac38b" category="image-alt">應用裝置安裝程式首頁</block>
   <block id="b051f28e2e0f59597d15b50433321609" category="doc">收集網路資訊（ SG5700 ）</block>
   <block id="468b735b6f1e19374d5c566b43572deb" category="section-title">連接SANtricity 到E2800控制器上的《E2800系統管理程式》所需的資訊</block>
   <block id="e72d262eca371fa527accc4474b08889" category="paragraph">您可以將 E2800 系列控制器連接至 SANtricity 系統管理員所使用的管理網路。</block>
@@ -1972,7 +1913,6 @@
   <block id="a2db8f53d50d94626b7ef7c693f3e83f" category="image-alt">E5700SG連結式管理連接埠</block>
   <block id="f04a293a1824c897570164410da2fb8b" category="inline-link-macro">纜線應用裝置（SG5700）</block>
   <block id="768f3270c0a984cee2351aa0bddca77a" category="list-text"><block ref="768f3270c0a984cee2351aa0bddca77a" category="inline-link-macro-rx"></block></block>
-  <block id="80192f911347d0ddc6fb476460fe8817" category="list-text"><block ref="80192f911347d0ddc6fb476460fe8817" category="inline-link-macro-rx"></block></block>
   <block id="43b16b9086cb39b7acc1e48b70ce437d" category="inline-link-macro">設定硬體（SG5700）</block>
   <block id="5f79a3d4ea624e38196669fb74539b33" category="list-text"><block ref="5f79a3d4ea624e38196669fb74539b33" category="inline-link-macro-rx"></block></block>
   <block id="690f16106254d6825ab94e99d275b00a" category="summary">安裝本產品之前、您必須確定您打算使用的場地和機櫃或機架符合StorageGRID 有關產品的規格。</block>
@@ -2039,7 +1979,6 @@
   <block id="cd094988cef611c4cd783e3f599066bd" category="doc">StorageGRID 應用裝置安裝程式正在執行時、請重新啟動應用裝置</block>
   <block id="c2e7ee7722f424871993af836e5103f1" category="paragraph">此程序僅適用於應用裝置執行 StorageGRID 應用裝置安裝程式的情況。安裝完成後、StorageGRID 此步驟將不再運作、因為無法再使用到此版本的NetApp應用裝置安裝程式。</block>
   <block id="02216cbac729ad477642e5a027c8218f" category="list-text">從「the Some Appliance Installer」StorageGRID 按一下「*進階*」&gt;「*重新開機控制器*」、然後選取下列其中一個選項：</block>
-  <block id="7d5d5d0e4568c8557b0e5e4487448bdb" category="paragraph">設備隨即重新開機。</block>
   <block id="1366a9144b0eb756899d4ccb7f295ab6" category="summary">設備和控制器包含可協助您判斷應用裝置元件狀態的指示燈。</block>
   <block id="0e655d2e5d1d7c0e78ca19de2419837d" category="paragraph">此應用裝置內含的指示燈可協助您判斷應用裝置控制器和兩個 SSD 的狀態：</block>
   <block id="0425c776f02886fc2ad3d02d6a30aea0" category="inline-xref">產品指示燈和按鈕</block>
@@ -2214,8 +2153,6 @@
   <block id="3a80b8476efec1a81aee27516564f0d0" category="paragraph">來自原廠預先安裝的不含不含「功能」的應用程式。StorageGRID StorageGRID如果您要將應用裝置新增至最近升級StorageGRID 的更新的版本、可能需要手動升級StorageGRID 該應用裝置的安裝程式、才能將應用裝置安裝為新節點。</block>
   <block id="572b04ed5c08044cab5519d8dcd2fa96" category="paragraph">當您升級至新版的更新版本時、會自動升級此產品的安裝程式。StorageGRID StorageGRID您不需要在已安裝的應用裝置節點上升級 StorageGRID 應用裝置安裝程式。僅當您安裝的應用裝置含有StorageGRID 舊版的《一套》的《一套應用程式》安裝程式時、才需要執行此程序。</block>
   <block id="d7f2a0465ab2ab35fa9ebaae47487be8" category="list-text">從「VMware應用裝置安裝程式」StorageGRID 中、選取*進階*&gt;*升級韌體*。</block>
-  <block id="903e1527e19be4df9c4bd666ece1cb13" category="list-text">比較目前的韌體版本與StorageGRID 安裝在您的系統上的軟體版本。（從Grid Manager頂端、選取說明圖示、然後選取*關於*。）</block>
-  <block id="4b0e2759588b4734dc2913ad0077702f" category="paragraph">兩個版本中的第二個數字應該相符。例如StorageGRID 、如果您的Sf2系統執行的是11.*6*._x_._y_版、StorageGRID 則該版本的《EzAppliance Installer》應該是3.*6*。_z_。</block>
   <block id="8b809a0e37267e8d0cb9ee41d3a54fa1" category="list-text">如果應用裝置的StorageGRID 版本低於此版本、請前往<block ref="17b838622e0459e6c950b0d070de6b4f" category="inline-link-rx"></block>。</block>
   <block id="d6aa373ef73e5efc5061936104d29d95" category="paragraph">以您NetApp帳戶的使用者名稱和密碼登入。</block>
   <block id="a662a1f621c8bd2ce1cbba14407fa0f5" category="list-text">下載StorageGRID 適當版本的*支援檔案for the Sof the Sof the Sof the Sof the Sof the Sof the Sof the Sof the Sof the Sof</block>
@@ -2636,12 +2573,10 @@
   <block id="1ad48ec3a7913e569a91ccc60227023f" category="list-text">您已諮詢<block ref="59eff0a7409a2083b143c03284b14f62" category="inline-link-rx"></block> 確認您用於升級的 SANtricity 作業系統版本與您的應用裝置相容。</block>
   <block id="82828b75bd7c1299c73c3da5ba0b0b2d" category="inline-link">維護或根存取權限</block>
   <block id="9a4832beec51f38ad760c485e07c9b9c" category="list-text">您有資源配置通關密碼。</block>
-  <block id="5973629dedc46aea0b358220d599bfbd" category="paragraph">直到成功將更新套用至所有已選擇進行升級的適用節點為止、此程序才會完成SANtricity 。在SANtricity 每個節點上（依序）載入不一致的作業系統可能需要30分鐘以上、而重新啟動StorageGRID 每個不一致的儲存設備可能需要90分鐘。您網格中任何不使用 SANtricity OS 的節點都不會受到此程序的影響。</block>
   <block id="78b2a3316e8d5167c09213c366ccdf88" category="admonition">下列步驟僅適用於使用Grid Manager執行升級的情況。當控制器使用早於 08.42.20.00 （ 11.42 ）的 SANtricity 作業系統時、無法使用 Grid Manager 來升級應用裝置中的儲存控制器。</block>
   <block id="61d38d1cdbd76386b6ca992b9d0137ee" category="admonition">此程序會自動將NVSRAM升級 至SANtricity 與更新版有關的最新版本。您不需要套用個別的 NVSRAM 升級檔案。</block>
   <block id="19ad05ce216828cf31d75db3b5189076" category="inline-link">修復程序StorageGRID</block>
   <block id="64b1188ca4b7a6d7d7865cd0446674b5" category="list-text">[[download-SANtricity -OS]] 從下載新的 SANtricity OS 軟體檔案<block ref="17b838622e0459e6c950b0d070de6b4f" category="inline-link-rx"></block>。</block>
-  <block id="a2e0fe599ce2640e2f1503063be0609a" category="paragraph">請務必為SANtricity 儲存控制器選擇適用的作業系統版本。</block>
   <block id="7daa4593875eaec3bb3ad0aa81b013a8" category="list-text">選擇*維護*&gt;*系統*&gt;*軟體更新*。</block>
   <block id="87104bef25a5392dec6522792de0b376" category="image-alt">軟體更新登陸頁面</block>
   <block id="0307a7db9f4d72baff253e1322580ca2" category="list-text">在「更新作業系統」區段中、選取*更新*。SANtricity</block>
@@ -2704,8 +2639,6 @@
   <block id="fd9d7864d85ad77481d8d273f86b177a" category="inline-xref">下載 SANtricity 作業系統</block>
   <block id="c7119a01ad3a0246d6e502fcf1542526" category="list-text">當您準備好繼續核准節點時、 <block ref="221485128cc3179c422734dcada4a2d7" category="inline-xref-macro-rx"></block> 以重新啟動升級程序。</block>
   <block id="b55351ef221e1f7c56efb85a5e93ea93" category="admonition">節點已核准並升級、但沒有錯誤、仍會繼續升級。</block>
-  <block id="47554527e3caf2ef5673dd817216a7b4" category="list-text">對於需要不同SANtricity 的更新檔的任何節點、請重複此升級程序。</block>
-  <block id="40e6ec0ba08691f8bf73f78bc177c657" category="admonition">對於狀態為「Needs Attention（需要注意）」的任何節點、請使用維護模式來執行升級。</block>
   <block id="39e51c89e2fbc9bd58b8301b9be1e07e" category="doc">重新安裝 NIC</block>
   <block id="c0ce89e53f48ad69404bd79d5a7f6151" category="inline-link">監控節點連線狀態</block>
   <block id="2476382d1fb7937c6e08639e92e9d711" category="inline-link">為何不應使用單一複本複寫</block>
@@ -2784,7 +2717,6 @@
   <block id="c9f0f895fb98ab9159f51fd0297e236d" category="paragraph">8.</block>
   <block id="070dbf1f4e3b4cc95e8103a4d4e2227e" category="paragraph">FAN_SYS7</block>
   <block id="a1aef99d924ad1b6af551298b930355c" category="list-text">使用風扇上的藍色彈片、將故障風扇從機箱中提出。</block>
-  <block id="a06a89697080d39b76934f673e0f7142" category="paragraph">請務必將風扇上的連接器與電路板上的插槽對齊。</block>
   <block id="25d33805c4fc3fc9ef5848f3d1c76650" category="list-text">將風扇的接頭穩固地按入電路板（突出顯示插槽）。</block>
   <block id="28e41029e41676fc4c53ea6a68e37bf2" category="doc">重新安裝 CMOS 電池</block>
   <block id="37d27b84d37ca2c4710cb9b17554424e" category="list-text">找到產品背面的雙插槽擴充卡組件。</block>
@@ -2891,7 +2823,6 @@
   <block id="8255c7da2ba184f989c75875e666eabd" category="list-text"><block ref="4cd2207367a623927b4e22931306634a" category="inline-link-macro-rx"></block>。</block>
   <block id="df0e7b14891538a4e2643f5009af6867" category="list-text">從StorageGRID 來源節點上的「供應器安裝程式」、在首頁的「安裝」區段中、選取「*啟用複製*」。</block>
   <block id="f94eea5ecd11112f1cd02cdb4a1dea3d" category="paragraph">「主要管理節點連線」區段會取代為「Clone target節點連線」區段。</block>
-  <block id="1ae4449cbd62c8bf3d2266984d08b176" category="image-alt">複製目標節點連線區段</block>
   <block id="a6ff51af402ffc042cc6f424c5a38665" category="list-text">對於* Clone目標節點IP*、輸入指派給網路目標節點的暫用IP位址、以供複製資料傳輸流量使用、然後選取* Save*。</block>
   <block id="49392cb3f12f0f4faf19a8d47933589c" category="paragraph">一般而言、您可以輸入Grid Network的IP位址、但如果您需要使用不同的網路來進行實體資料傳輸流量、請輸入該網路上目標節點的IP位址。</block>
   <block id="5ffb9c2b7661912b40cc22d51807d486" category="admonition">使用1-GbE管理網路進行複製資料傳輸、會導致複製速度變慢。</block>
@@ -2901,7 +2832,6 @@
   <block id="3cffdaddf1d95ec3c052fcf96560a030" category="paragraph">當*開始複製*啟用時、*目前狀態*會指出StorageGRID 選擇用於複製流量的物件網路、以及使用該網路連線的相關資訊。請參閱 <block ref="54e13ce1c122f0b18d12f8e7a211ecbf" category="inline-link-macro-rx"></block>。</block>
   <block id="d081af9c1bc1822369d68ca6df434792" category="list-text">在來源節點上選取*開始複製*。</block>
   <block id="41f39a54349270e6f7a3ec7e34353a95" category="list-text">在StorageGRID 來源節點或目標節點上、使用《不實設備安裝程式」來監控複製進度。</block>
-  <block id="f19c0dcdf0806f3540561c4ac08be4b4" category="image-alt">複製進度</block>
   <block id="98c6d1132a15d72d0dc9e50596f25fb1" category="paragraph">「監控複製」頁面提供複製程序每個階段的詳細進度：</block>
   <block id="b2fdb0b814b9eb6027f8fdbc3554f684" category="list-text">*建立複製對等關係*可顯示複製設定與組態的進度。</block>
   <block id="7cd71f893105d0c4aa42d18c693390d9" category="list-text">*從此節點複製另一個節點*會顯示資料傳輸的進度。（複製程序的這一部分可能需要數天才能完成。）</block>
@@ -2986,7 +2916,6 @@
   <block id="b959fd8ab2a0acd7b6945c942f03d2a7" category="section-title">更換應用裝置的硬體需求</block>
   <block id="8b817ddf1c4850340f6d234f071fae76" category="paragraph">確保更換設備符合下列條件：</block>
   <block id="af11eea53677ab5b08aa19cdcafd56ee" category="list-text">來源節點（正在更換的應用裝置）和目標（新）應用裝置必須是相同類型的應用裝置：</block>
-  <block id="2dfbae24004209154659df1bc8fa2a85" category="list-text">您只能將管理節點應用裝置或閘道節點應用裝置複製到新的服務應用裝置。</block>
   <block id="3ed00b5839a316ad99941cddc347868b" category="list-text">您只能將儲存節點應用裝置複製到新的儲存應用裝置。</block>
   <block id="481d4b10597e9f9335c607d5115fd3db" category="paragraph">例如、您可以用SG100來取代SG1000節點應用裝置、或是用SG1000應用裝置來取代SG100應用裝置。</block>
   <block id="ad3b23cccdc3e368ff647e8b569cfd36" category="paragraph">例如、您可以使用 SG6000 應用裝置來更換 SG5700 節點應用裝置。</block>
@@ -2997,8 +2926,6 @@
   <block id="92c2cadeeb1bb5e0bff4e708f04ce25b" category="paragraph">臨時 IP 位址通常與複製的來源節點應用裝置位於相同的子網路上、而且在複製完成後不需要。來源和目標應用裝置必須同時連線StorageGRID 至您的支援區的主要管理節點、才能建立複製連線。</block>
   <block id="6961f30385cb1f1c5f237a44d1c01e61" category="list-text">判斷要用於複製資料傳輸流量的網路、以提供最佳的資料傳輸效能、而不會降低StorageGRID 網路效能或資料可用度。</block>
   <block id="abfec6d1f524b72ccd15f918c923008f" category="inline-link-macro">啟用節點加密</block>
-  <block id="8d4954f7887339a90dbe76578b481ffe" category="list-text">判斷目標應用裝置是否會使用金鑰管理伺服器（KMS）進行節點加密、以便在初始目標應用裝置安裝期間啟用節點加密、然後再進行複製。您可以檢查來源應用裝置節點上是否已啟用節點加密、如中所述 <block ref="6bd92e423fc3e97f612a11738e3a3c13" category="inline-link-macro-rx"></block>。</block>
-  <block id="f3547558aa9eeb591224d3b73c6fe1f6" category="paragraph">來源節點和目標應用裝置可以有不同的節點加密設定。資料解密與加密會在資料傳輸期間、以及當目標節點重新啟動並加入網格時自動執行。</block>
   <block id="760f793060ea29dfdd18f4fc69ab4f9d" category="paragraph">來源節點和目標應用裝置可以有不同的RAID設定。</block>
   <block id="665b2ee84b3ce1addec753e47812a753" category="list-text">規劃足夠的時間來完成節點複製程序。可能需要數天的時間、才能將資料從運作中的儲存節點傳輸到目標應用裝置。排定複製時間、將對貴企業的影響降至最低。</block>
   <block id="ed44cdb4d3e080dee6b895b78592b4b8" category="list-text">一次只能複製一個應用裝置節點。複製可防止您StorageGRID 同時執行其他的還原維護功能。</block>
@@ -3008,7 +2935,6 @@
   <block id="91fba6642e220c9d6b627c272ca1f4b0" category="inline-link">設定金鑰管理伺服器</block>
   <block id="629dd4a72c9a27968c541923d0344da9" category="list-text">您已在安裝期間啟用應用裝置的節點加密。安裝應用裝置後、您無法啟用節點加密。</block>
   <block id="b25287ab8cd241c0615caa9ee3977f49" category="list-text">從《SectionAppliance安裝程式》StorageGRID 中、選取*「Configure Hardware」（設定硬體）&gt;「* Node Encryption」（*節點加密）*。</block>
-  <block id="60c896bdd4a0f80aba9556a7b4ddc643" category="image-alt">KMS清除組態</block>
   <block id="c9f56ea3956bda9c0db17221dd58d433" category="paragraph">「節點加密」頁面包含三個區段：</block>
   <block id="02f3eed45638835e6c2a74a9381b7d99" category="list-text">「加密狀態」會顯示裝置的節點加密是啟用還是停用。</block>
   <block id="58af1337eff937c1778b18fc1d2d04ea" category="list-text">金鑰管理伺服器詳細資料顯示用於加密應用裝置的KMS相關資訊。您可以展開伺服器和用戶端憑證區段、以檢視憑證詳細資料和狀態。</block>
@@ -3032,12 +2958,10 @@
   <block id="fd8a717127a0d6719a26012959bc93a7" category="admonition">如果您打算在使用相同 KMS 金鑰的 StorageGRID 系統中重新安裝應用裝置節點、請勿清除 KMS 組態。</block>
   <block id="d9250059f2e6a3a0886a966474c0dbd3" category="list-text">在您恢復和重新安裝遺失KMS組態且無法恢復KMS金鑰的節點之前。</block>
   <block id="13d59202c4fe4b227b0ffea4ffc47fde" category="list-text">在退回任何先前在您所在地點使用的應用裝置之前。</block>
-  <block id="78e2d755d0c3ee81563f0a9e1d1d1118" category="list-text">停用已啟用節點加密的應用裝置之後。</block>
   <block id="a4acd8f362ef69e75aa7c275c2284a9e" category="admonition">在清除KMS之前、先取消委任應用裝置、將其資料移至StorageGRID 您的作業系統中的其他節點。在設備停用之前清除KMS、將會導致資料遺失、並可能使設備無法運作。</block>
   <block id="cd80975d288452eb565f7e329099c92f" category="admonition">如果清除KMS組態、設備上的資料將永久刪除。此資料無法恢復。</block>
   <block id="643d4b2a6dadfc29d1e4dbda9839b995" category="list-text">在視窗底部、選取*清除KMS金鑰及刪除資料*。</block>
   <block id="9b0de832981b0e8f7f03ea88cc86d706" category="list-text">如果您確定要清除KMS組態、請輸入<block ref="0df8b254b1c32f697f55857ce88fda56" prefix=" " category="inline-code"></block> 在警告對話方塊中、選取 * 清除 KMS 金鑰和刪除資料 * 。</block>
-  <block id="05ef98a9646843a8a3468143a3db462d" category="paragraph">KMS加密金鑰和所有資料都會從節點刪除、然後設備重新開機。這可能需要20分鐘的時間。</block>
   <block id="d02998317920f8f7ad0339e0f94f8513" category="list-text">確認節點加密已停用、且*金鑰管理伺服器詳細資料*中的金鑰與憑證資訊、以及*清除KMS金鑰與刪除資料*控制項已從視窗中移除。</block>
   <block id="30bf3ba32c51e5f7438ddf7451d5b0b7" category="paragraph">在網格中重新安裝節點加密之前、無法在應用裝置上重新啟用節點加密。</block>
   <block id="66a05384c891c390cd34f3b79245d267" category="inline-link">準備設備以重新安裝的說明</block>
@@ -3069,7 +2993,6 @@
   <block id="8c5d254e51e9f1e5d958d3fa04801116" category="paragraph">例如、當加密節點離線時、如果網格的 DNS 伺服器發生變更、則當節點重新連線時將無法連線至 KMS 、因為它仍在使用先前的 DNS 值。在StorageGRID 《現象集應用裝置安裝程式」中輸入新的DNS伺服器IP位址、可讓暫時的KMS連線解密節點資料。</block>
   <block id="77e44278c570e6245333c2ea64457cf4" category="list-text">從《SectionAppliance安裝程式》StorageGRID 中、選取*「Configure Networking」（設定網路）*&gt;「* DNS Configuration」（* DNS組態）*。</block>
   <block id="6ac429bf1799aaad72126c9d0ac16655" category="list-text">確認指定的DNS伺服器正確無誤。</block>
-  <block id="489f99357e51540f388c06988f7d5a29" category="image-alt">DNS 組態</block>
   <block id="ae2b8854f0c06f1c19bdd3547a7bb3a6" category="list-text">如有需要、請變更DNS伺服器。</block>
   <block id="0899cb9af703e4172b04d218a2b5090d" category="admonition">對DNS設定所做的變更是暫時性的、在您結束維護模式時會遺失。</block>
   <block id="f0060746134f73b65262cb9c42d134f3" category="list-text">當您對暫用DNS設定感到滿意時、請選取*儲存*。</block>
@@ -3091,10 +3014,8 @@
   <block id="ff8c6259f98e7b3f90427e2a9c6125ca" category="paragraph">如有可能、請使用包含設備管理網路連接埠IP位址的URL。</block>
   <block id="ca465ef8ceac31201abde2daa0806e70" category="admonition">如果您與應用裝置的管理連接埠有直接連線、請使用<block ref="ef2bb6ab32a29df99d3cf76b861533ec" prefix=" " category="inline-code"></block> 存取 StorageGRID 應用裝置安裝程式頁面。</block>
   <block id="32a9ef313cf9ae0754ab603da718fff0" category="list-text">從《支援產品安裝程式（the不支援產品）：確認產品處於維護模式。StorageGRID</block>
-  <block id="b23b30ba9f90923e06f3b9134c82773f" category="image-alt">維護模式訊息</block>
   <block id="996d9c44c18058f46f19f8b08f2b7ef1" category="list-text">執行任何必要的維護工作。</block>
   <block id="38f1d0318b55a509ae2295dc98a1e2a4" category="list-text">完成維護工作之後、請結束維護模式並恢復正常節點作業。從「the Some Appliance Installer」StorageGRID 選取「*進階*&gt;*重新開機控制器*」、然後選取「*重新開機至StorageGRID *」。</block>
-  <block id="995987ebbc472d22e2d7254b73719763" category="image-alt">節點頁面正常狀態</block>
   <block id="c09c49cefc060b3f3a83479a0da196a5" category="summary">維護 SG5700 儲存設備的硬體。</block>
   <block id="d3e9c057184a58370d4b3d1066c37345" category="doc">維護 SG5700 儲存設備硬體</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
@@ -3122,9 +3043,6 @@
   <block id="2a5c95d1ab363cfba7c8340366621c0e" category="summary">在您的站台安裝應用裝置硬體。</block>
   <block id="c252e5f60f530925bfd78fc1dabb74ff" category="doc">安裝應用裝置硬體</block>
   <block id="4f358682bbd405c1f8afe04ebda90829" category="summary">瞭解如何在StorageGRID 您的不實環境中測試及啟用應用程式。</block>
-  <block id="696ea9ebe2a9f57bb062aba5c1d58b10" category="doc">如何在StorageGRID 您的環境中啟用支援功能</block>
-  <block id="fa7f52ddda62fe1d2363b41a26e0b3d7" category="paragraph">前往<block ref="0e0fa9204b8188a393de62aba466cfd2" category="inline-link-rx"></block> 以瞭解如何在 StorageGRID 環境中測試及啟用應用程式。</block>
-  <block id="73d37b18fd6bead589b7f5fbc79b27fe" category="paragraph">「 *storagegRID 啟用 * 」文件網站提供範例與指南、可在本網站的產品文件中加以擴充、並說明評估與整合 StorageGRID 的後續步驟。</block>
   <block id="184be814f5401398fdf0f1ce3a702551" category="paragraph">其中一些資訊包括：</block>
   <block id="524a8f1f430dca0d85bebbcd3c376862" category="list-text">過去StorageGRID 和目前版本的驗證協力廠商解決方案清單。</block>
   <block id="8dfc12a5cc6be10182743183e843c496" category="list-text">產品功能指南。例如、這些指南提供您建立雲端儲存資源池所需的所有資訊。</block>
@@ -3163,7 +3081,6 @@
   <block id="1edf5177dbb06e39e541b1d32a83268e" category="paragraph">HDD11.</block>
   <block id="1c4680a7c4d48df9c1f32e46a4e30214" category="list-text">將可更換的元件移至更換的應用裝置。</block>
   <block id="294718a9bfa4787785e6c0bc7e668f54" category="paragraph">請遵循所提供的維護指示、重新安裝可更換的元件。</block>
-  <block id="2e2efda69088b78188474424c347e346" category="admonition">如果您想要保留磁碟機上的資料、請務必將 SSD 磁碟機插入故障應用裝置中所佔用的磁碟機插槽。如果您不這麼做、應用裝置安裝程式會顯示警告訊息、您必須將磁碟機放入正確的插槽、然後重新啟動應用裝置、設備才能重新加入網格。</block>
   <block id="fadc88cd0b2f17c2130cb8814db82929" category="inline-link-macro">將替換產品安裝到機櫃或機架中</block>
   <block id="a4c24c1e4a12470715433d6f6a22590b" category="list-text"><block ref="e863dd214d46a90fc51854e24b3dd0fd" category="inline-link-macro-rx"></block>。</block>
   <block id="05af8dc3b0588fc5c9ecb2b6c178bee0" category="list-text">開啟產品電源。</block>
@@ -3355,27 +3272,17 @@
   <block id="f838b84263c45aeb4f1be3728754e3ad" category="summary">如果E5700SG控制器無法正常運作或故障、您可能需要更換它。</block>
   <block id="add9671f6034ac41fcd287a17504e8bd" category="doc">更換 E5700SG 運算控制器</block>
   <block id="3113d1c6db21b6292b515b6f9d7ab0b1" category="list-text">您已下載E系列指示、以更換故障的E5700控制器。</block>
-  <block id="1222bf122e651e13e7f8c4547aa07c01" category="admonition">只有當您需要更多詳細資料來執行特定步驟時、才可使用E系列說明進行參考。請勿仰賴 E 系列指示來更換 StorageGRID 應用裝置中的控制器、因為程序不同。例如、E5700控制器的E系列說明說明如何從故障控制器中取出電池和主機介面卡（HIC）、並將其安裝在更換的控制器中。這些步驟不適用於 E5700SG 控制器。</block>
-  <block id="e9bd290e03f625f6bed79c79fb12c3af" category="paragraph">當您更換控制器時、將無法存取應用裝置儲存節點。如果E5700SG控制器運作正常、您可以在本程序開始時執行管制關機。</block>
   <block id="9970256edb163e41e7c836e590be3d3b" category="admonition">如果您在安裝StorageGRID 完此程序之前更換控制器、可能StorageGRID 無法在完成此程序後立即存取《產品安裝程式（到此程序）」。雖然您可以從與應用裝置位於同一子網路上的其他主機存取 StorageGRID 應用裝置安裝程式、但您無法從其他子網路上的主機存取。此情況應在15分鐘內自行解決（當原始控制器的任何ARP快取項目逾時時）、或者您可以從本機路由器或閘道手動清除任何舊的ARP快取項目、以立即清除此狀況。</block>
   <block id="5f4633dab4809d0ef564716830b660d0" category="list-text">關閉 E5700SG 控制器。</block>
-  <block id="9f714fb482b7d712fa442c1dab434e88" category="list-text">關閉E5700SG控制器：+<block ref="fc4ea1f1e2486ddf4a90174ec40b0013" prefix=" " category="inline-code"></block></block>
   <block id="259104854fc640bc8bfcb5a5cd5dcd2e" category="list-text">等待快取記憶體中的任何資料寫入磁碟機。</block>
-  <block id="44e448e3a5af541365e863371be367f4" category="paragraph">需要將快取資料寫入磁碟機時、E2800控制器背面的綠色快取作用中LED會亮起。您必須等待此LED燈關閉。</block>
-  <block id="a98148bc0629a67d04a5611ffa983a30" category="list-text">關閉電源。</block>
-  <block id="6a6bfe27b15a61b35332bb4233f19126" category="list-text">關閉產品上的兩個電源開關。</block>
-  <block id="e470e0b7859ee1ee16564cc7e8e48968" category="list-text">等待所有LED關閉。</block>
   <block id="fa0330fb59f572dc8b0652440bf2f86a" category="list-text">如果StorageGRID 連接至控制器的整個DHCP網路使用DHCP伺服器：</block>
   <block id="7e795510f2694b9daa8917105ed0bcd0" category="list-text">記下更換控制器上連接埠的MAC位址（位於控制器的標籤上）。</block>
   <block id="629e8c407c41e21d4d31deb818491b1c" category="list-text">請網路管理員更新原始控制器的IP位址設定、以反映更換控制器的MAC位址。</block>
-  <block id="57a094478e00a6f3f3c0f7a2235135da" category="admonition">您必須先確認原始控制器的IP位址已更新、才能將電源供應給更換的控制器。否則、當控制器開機時、就會取得新的DHCP IP位址、而且可能無法重新連線StorageGRID 到故障。此步驟適用於StorageGRID 連接至控制器的所有環節網路。</block>
-  <block id="8f3cbfc24bf8320bd71da8013c93640b" category="list-text">開啟產品電源、並監控控制器LED和七段顯示器。</block>
   <block id="c55c2810ba6c5c4a4fc9c1538acd29bc" category="paragraph">控制器成功開機後、七段顯示器應顯示下列項目：</block>
   <block id="d25d4484df6622f99b69e1a9d5de68b5" category="list-text">E2800 系列控制器：</block>
   <block id="bdfd83c6f7ad247022830d70be061223" category="paragraph">最終狀態是<block ref="ac627ab1ccbdb62ec96e702f07f6425b" prefix=" " category="inline-code"></block>。</block>
   <block id="5e3d5a8322a4cbda882ebea3fafa9c14" category="list-text">E5700SG 控制器：</block>
   <block id="24b2276b0b6b2a1cee60625fbdf5cb8d" category="paragraph">最終狀態是<block ref="594c16ca0695f6665d7cf4971707adf6" prefix=" " category="inline-code"></block>。</block>
-  <block id="f506cf75a2431e6747fee271be2cabd2" category="list-text">確認應用裝置儲存節點出現在Grid Manager中、且未顯示任何警示。</block>
   <block id="43036268f8f8f794b0b3907415b6a448" category="summary">您可能需要升級SANtricity E2800控制器上的SESEOS軟體、變更E5700SG控制器的乙太網路連結組態、更換E2800控制器或E5700SG控制器、或更換特定元件。本節中的程序假設應用裝置已部署為StorageGRID 位於整個系統的儲存節點。</block>
   <block id="69818011b0546598f8cf54ee8dcd5983" category="paragraph">本節將說明維護 SG5700 應用裝置的特定程序。</block>
   <block id="c6fb9c1aef7dadb44645ef83c118a607" category="summary">您可以變更E5700SG控制器的乙太網路連結組態。您可以變更連接埠連結模式、網路連結模式及連結速度。</block>
@@ -3502,15 +3409,11 @@
   <block id="35a79182a56cf7b6a5c7f17b651e577a" category="list-text">擴充櫃中的風扇在初次啟動時可能會非常大聲。開機期間的大聲雜訊是正常現象。</block>
   <block id="74ebcbaf6455d0bcd9e4bb9ee4a1e5f2" category="list-text">監控StorageGRID 《不再使用的應用程式》安裝程式的首頁。</block>
   <block id="af67f8a003327c9eebf3ca126d6cb15e" category="paragraph">大約五分鐘後、擴充櫃就會完成開機、並由系統偵測到。首頁會顯示偵測到的新擴充磁碟櫃數目、並啟用「開始擴充」按鈕。</block>
-  <block id="957964cae6043f2330c8f38caea3a302" category="paragraph">螢幕擷取畫面會根據現有或新擴充櫃的數量、顯示可能出現在首頁上的訊息範例、如下所示：</block>
-  <block id="76cc5756e68583a87585e18328dacff2" category="list-text">頁面頂端圈起的橫幅會指出偵測到的擴充櫃總數。</block>
   <block id="07f9fb3c25d4ea7d4a0c16903911a5c3" category="list-text">橫幅會指出擴充櫃的總數、無論是設定和部署磁碟櫃、或是新的和未設定的磁碟櫃。</block>
   <block id="ab80f29a225d89c0651a4e8cb849f351" category="list-text">如果未偵測到擴充櫃、則不會顯示橫幅。</block>
-  <block id="19e11cd215ec0245efaf88df78d9438c" category="list-text">頁面底部的圓圈訊息表示擴充功能已準備好開始。</block>
   <block id="1d130ab24341487fcdc1f035fbdedcd9" category="list-text">此訊息會指出StorageGRID 正在偵測的新擴充機櫃數目。「附加」表示偵測到磁碟櫃。「'Unconfigured（未設定）'表示機櫃是新的、但尚未使用StorageGRID NetApp應用裝置安裝程式進行設定。</block>
   <block id="e7f701eb3f4d3bc2a8e21b88702b3bd9" category="admonition">此訊息不包含已部署的擴充機櫃。頁面頂端橫幅中的計數會包含這些項目。</block>
   <block id="8d426a4b83be884612d4705a8868e88e" category="list-text">如果未偵測到新的擴充機櫃、則不會顯示此訊息。</block>
-  <block id="d7d78702f25ae6e640f0e9ead01e70e3" category="image-alt">擴充櫃安裝</block>
   <block id="6142d5c437d47108ffff21767d02e7c7" category="list-text">如有必要、請解決首頁訊息中所述的任何問題。</block>
   <block id="5dbe6dd58ce8816fc5c10017f5b548e0" category="paragraph">例如、使用SANtricity NetApp System Manager解決任何儲存硬體問題。</block>
   <block id="d3eecd11ceabfc66a157208681c6212a" category="list-text">確認主頁上顯示的擴充櫃數量與您要新增的擴充櫃數量相符。</block>
@@ -3518,12 +3421,9 @@
   <block id="25d87e8b2a6c2915dc06f4e9b9b88f03" category="list-text">[[start_hending]按一下「*開始擴充*」以設定擴充櫃、並使其可供物件儲存使用。</block>
   <block id="6b2dcdd7d0c3d8607ad63fa1ffa831c6" category="list-text">監控擴充櫃組態的進度。</block>
   <block id="0b1a45d06edabb3a0d30f19e32313f3b" category="paragraph">進度列會顯示在網頁上、如同在初始安裝期間一樣。</block>
-  <block id="423e88fbd5a2dc0f512f8a2aab010253" category="image-alt">監控擴充機櫃組態</block>
   <block id="8e3fc62e7ff2327410f5fd196fe8eb39" category="paragraph">組態完成後、應用裝置會自動重新開機、以結束維護模式並重新加入網格。此程序最多可能需要20分鐘。</block>
   <block id="22c78d9f214674f57243dd456395e62d" category="inline-xref">擴充櫃組態</block>
   <block id="8a0be3414d4074a33b893709085c355f" category="admonition">若要在擴充櫃組態失敗時重試、請移至StorageGRID 「精選應用裝置安裝程式」、選取「*進階*&gt;*重新開機控制器*」、然後選取「*重新開機到維護模式*」。節點重新開機後、請重試 <block ref="4cfad85fe4ed7cd2abe5a1a25adfc10c" category="inline-xref-macro-rx"></block>。</block>
-  <block id="6337530d62799abe1e3e579f1a39fba6" category="paragraph">重新開機完成後、「*工作*」索引標籤會顯示如下螢幕快照：</block>
-  <block id="81e9272bb451de8aaf7b16d82b9f0208" category="image-alt">重新開機完成</block>
   <block id="a6b3ba0004b2a9a8396f15a73114a062" category="list-text">確認應用裝置儲存節點和新擴充櫃的狀態。</block>
   <block id="6b5138f4d805b8079a4f07b226e6885a" category="list-text">在 Grid Manager 中、選取 * 節點 * 、並確認應用裝置儲存節點有綠色的核取記號圖示。</block>
   <block id="3323a22b50b501b0a1012ae5490e2561" category="inline-link">監控節點連線狀態</block>
@@ -3854,7 +3754,6 @@
   <block id="f9f44cf635afea4827c5ef9038b46622" category="sidebar">部署應用裝置節點</block>
   <block id="2d4f4568ad652ff08727bc044f1373cc" category="sidebar">軟件StorageGRID</block>
   <block id="7bb5d1e21ca0bacc168d63d7155d3755" category="sidebar">StorageGRID 11.8 文件</block>
-  <block id="09f63f5e49731771c9b8f2aea5094d6c" category="sidebar">啟用StorageGRID 功能</block>
   <block id="f79d19698773a72634d43a876efcc14e" category="sidebar">整合其他應用程式</block>
   <block id="81a123ccab93cd947289b672b0e50348" category="sidebar">示範與教學課程</block>
   <block id="37a22f48989cdc6e7e3429f09be3fc5c" category="sidebar">視頻庫StorageGRID</block>
@@ -3896,7 +3795,6 @@
   <block id="9f18ec4b5bc626a36f20fd0e9e308fd5" category="sidebar">SG5700 硬體維護</block>
   <block id="d28b16956366aefb66b4d3c0ad6adff9" category="sidebar">維護組態程序 - SG5700</block>
   <block id="caff72d0e2c3e37ad045f03285930c9e" category="sidebar">升級SANtricity 儲存控制器上的作業系統</block>
-  <block id="873b100e9a6f8ed042c76735435554a9" category="sidebar">使用SANtricity 《支援系統管理程式》升級磁碟機韌體</block>
   <block id="788697afde4234909fea250e5a71febf" category="sidebar">硬體程序 - SG5700</block>
   <block id="135afcef01f98d5baf9ce0f2a4fdac8a" category="sidebar">更換 E2800 儲存控制器</block>
   <block id="20d0c8c63ccb67cd86f204b9e52007b4" category="sidebar">更換其他硬體元件</block>
@@ -3987,11 +3885,9 @@
   <block id="21f8809422673987244d000d11281874" category="paragraph">完成所有安裝階段後、請關閉視窗。</block>
   <block id="42af9b60b35d6bca9c17ff477c884ccc" category="admonition">在安裝應用裝置主要管理節點期間、會出現第五個階段以載入 StorageGRID 安裝程式（範例螢幕擷取畫面僅顯示前四個階段）。如果正在載入 StorageGRID 安裝程式（第五階段）超過 10 分鐘、請手動重新整理網頁。</block>
   <block id="cc6d0074c1cc81f39341600a31c22eea" category="inline-link">前往 Grid Manager</block>
-  <block id="cc721c163db74d07c83f165fac1cbd51" category="list-text">對於管理節點或閘道節點應用裝置、來源節點應用裝置和目標應用裝置不需要使用相同的應用裝置機型、但變更應用裝置機型可能需要更換纜線或 SFP 模組。</block>
   <block id="186e64d4b1a267ec9b06d82dfc3ea37a" category="list-text">對於 Storage Node 應用裝置、來源節點應用裝置和目標應用裝置不需要是相同類型的應用裝置；不過：</block>
   <block id="28cb9e1a7b17557df2dab7da635677b4" category="list-text">目標應用裝置的儲存容量必須大於來源應用裝置。</block>
   <block id="765e8dcfe93408233d1db737b46e3c4b" category="list-text">目標應用裝置的物件儲存磁碟區數量必須等於或大於來源應用裝置。</block>
-  <block id="a407ca9605b77abba5ba2f3dd9568e9b" category="paragraph">例如、您無法將 SG6000 節點應用裝置（ 16 個物件儲存區磁碟區）更換為 SGF6112 應用裝置（ 12 個物件儲存區磁碟區）。</block>
   <block id="544c640a61781fbf87772d3bf0e70c8b" category="list-text">判斷目標應用裝置上的RAID模式是否應從預設設定變更、以便在複製前於初始目標應用裝置安裝期間指定此資訊。您可以在Grid Manager的「*節點*」頁面上、檢視來源應用裝置節點目前RAID模式的相關資訊。選取應用裝置的 * 硬體 * 標籤。</block>
   <block id="d5d17dfc38d13ef9b05b43e504f88d75" category="list-text">目標儲存設備中的磁碟區數量必須大於或等於來源節點中的磁碟區數量。即使目標應用裝置的容量大於來源節點、您也無法將具有 16 個物件儲存區（ rangedb ）的來源節點複製到具有 12 個物件儲存區的目標儲存應用裝置。除了 SFF6112 儲存設備只有 12 個物件儲存磁碟區之外、大部分的儲存設備都有 16 個物件儲存磁碟區。</block>
   <block id="f90f2ceee9e0e6f2c8dc65452c0e826d" category="paragraph">來源節點和目標節點上的 StorageGRID 應用裝置安裝程式會指示類似的狀態。</block>
@@ -4305,8 +4201,6 @@
   <block id="380123042491bcae0dd2a0a161797913" category="list-text">使用SANtricity NetApp System Manager收集儲存陣列的支援資料。</block>
   <block id="d029fbc0df9ff497084580115c77f756" category="list-text">選擇*收集支援資料*。</block>
   <block id="29a68d61d60066cd588a1db699936685" category="paragraph">檔案會以* support-data.7z*的名稱儲存在瀏覽器的「下載」資料夾中。</block>
-  <block id="6a1a2ebdb9dbf1f40191fb7d4e47648e" category="list-text">確認重新開機已完成、且節點已重新加入網格。在 Grid Manager 中、確認「 * 節點 * 」頁面顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號）、表示沒有作用中警示、且節點已連線至網格。</block>
-  <block id="3f1422be48953516b5581d5164f4380a" category="admonition">從開啟電源開關到節點重新加入網格並在 Grid Manager 中顯示正常狀態、可能需要 20 分鐘。」</block>
   <block id="73b88ee21321ff50111268d79d4120b8" category="doc">使用離線方法、使用 SANtricity System Manager 升級 SG5800 磁碟機韌體</block>
   <block id="1464eb966468f8e80ec78f5cd52b8139" category="summary">如果 E4000 控制器無法正常運作或故障、您可能需要更換它。</block>
   <block id="c595b95dcefcc7a1bb5de535ba5fd773" category="doc">更換 E4000 控制器（ SG5800 ）</block>
@@ -4580,14 +4474,10 @@
   <block id="fa89f08543b6ca518071711a3bd8ae93" category="list-text">如果仍有報告電力容器故障、請重複中的步驟 <block ref="c5e4ac8ffd3690740ad7837d610d213f" category="inline-xref-macro-rx"></block> 和 <block ref="0d240e4a1e9b2ac9c0cbe94c4248016d" category="inline-xref-macro-rx"></block>。如果問題持續發生、請聯絡技術支援部門。</block>
   <block id="8d50e29d2dbe5c9bd78247f7b1bdb86f" category="list-text">移除防靜電保護。</block>
   <block id="63eb0ab9c5f8ba589cfaff743b11a8d7" category="paragraph">您的電力箱更換已完成。您可以恢復正常作業。</block>
-  <block id="67e61ec95be7440ca50351a3be0bc2a7" category="doc">更換 SG5800 控制器</block>
   <block id="364650f21807adee20cde64ae4a5d3e9" category="paragraph">如果 SG5800 控制器無法正常運作或故障、您可能需要更換它。</block>
-  <block id="d5ceae45ad71c42a4ef35fb1c37197d2" category="paragraph">當您更換控制器時、將無法存取應用裝置儲存節點。如果 SG5800 控制器運作正常、您可以在本程序開始時執行控制關機。</block>
   <block id="caa1c5d5fd1e7ba64de8d71286bb8318" category="admonition">如果您在安裝StorageGRID 完此程序之前更換控制器、可能StorageGRID 無法在完成此程序後立即存取《產品安裝程式（到此程序）」。雖然您可以從與應用裝置位於同一子網路的其他主機存取 StorageGRID 應用裝置安裝程式、但您無法從其他子網路上的主機存取。此情況應在15分鐘內自行解決（當原始控制器的任何ARP快取項目逾時時）、或者您可以從本機路由器或閘道手動清除任何舊的ARP快取項目、以立即清除此狀況。</block>
-  <block id="ff4a4cfe4d47b7b6bc9984272252afd0" category="list-text">從 SANtricity 系統管理員首頁、選取檢視進行中的作業。</block>
   <block id="aafe5c594f12727470503cdf24758823" category="admonition">為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或踩踏。
 擠壓CAM握把上的栓鎖直到釋放為止、然後打開右側的CAM握把、即可從產品中釋放控制器。</block>
-  <block id="116708dbf8cbcdd4ed3a0eaa59b210d5" category="list-text">開啟產品電源、並監控控制器 LED 。</block>
   <block id="dc6b37d166611f437c69e6665f804874" category="paragraph">更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱<block ref="4fc2cab5a4eb2f6a408378b0d596ae42" category="inline-link-rx"></block> 頁面以取得更多資訊。</block>
   <block id="af263895971d2bc4de76ea61e8f007e4" category="summary">檢閱 E4000 活性碳罐類型和要求。</block>
   <block id="3d9e5773b68ef87e500a23bf5751a364" category="doc">更換 SG5860 中的風扇箱</block>
@@ -4875,7 +4765,6 @@
   <block id="c909fc818077c5d3842f165f06969656" category="paragraph">何時 <block ref="a60a1925451f4c518cadfb0c9a8cb902" category="inline-link-macro-rx"></block> 對於 SG5800 控制器、您可以將連接埠連結用於連接至 Grid Network 和選用用戶端網路的 10/25-GbE 連接埠。連接埠連結功能可在StorageGRID 各個解決方案之間提供備援路徑、協助您保護資料。SG5800 控制器上的 10/25-GbE 網路連接埠支援固定連接埠連結模式或網格網路和用戶端網路連線的集合連接埠連結模式。</block>
   <block id="a3e8083d0442011586bcf6da733d19fc" category="inline-link-macro">纜線應用裝置（ SG5800 ）</block>
   <block id="c36daddf4bddb94512e35b104e308feb" category="list-text"><block ref="c36daddf4bddb94512e35b104e308feb" category="inline-link-macro-rx"></block></block>
-  <block id="b37aca179ce5c7c105c2b7a7315da3f4" category="list-text"><block ref="b37aca179ce5c7c105c2b7a7315da3f4" category="inline-link-macro-rx"></block></block>
   <block id="931fd544263f9ff67d7e42906ed24ceb" category="inline-link-macro">設定硬體（ SG5800 ）</block>
   <block id="8f33dac7a1c98315502062c85cca89a8" category="list-text"><block ref="8f33dac7a1c98315502062c85cca89a8" category="inline-link-macro-rx"></block></block>
   <block id="97db59e2ae1f0cf7bff3e47eebb96e27" category="paragraph">*SGF6112* ：</block>
@@ -5050,7 +4939,6 @@
   <block id="7d090f8d618279a3d149398716b33fdb" category="doc">維護 SG5800 儲存設備硬體</block>
   <block id="f7e2b8e3d85d290dcca43cce02c80067" category="section-title">SG5812 和 SG5860 應用裝置</block>
   <block id="f9b87deff325082cc0a1f50f4e181511" category="inline-link-macro">SGF6100 應用裝置：總覽</block>
-  <block id="e12ebc016927211d63794de19e7cf124" category="paragraph">全新的 StorageGRID SG110 和 SG1100 服務應用裝置是一項革命性的硬體更新、可提供更優異的管理與負載平衡效能。請參閱 <block ref="3c058555c619096548fbed1bbe78e3c7" category="inline-link-macro-rx"></block>。</block>
   <block id="b60e3f350dfafff923b7172d86b066de" category="doc">重新安裝內部 NIC</block>
   <block id="3f069ee729875ead128854e2d4b0be0c" category="list-text"><block ref="3f069ee729875ead128854e2d4b0be0c" category="inline-link-macro-rx"></block></block>
   <block id="3f05f5216237fcf2b2bad4efa8026d10" category="list-text">您已確認替換應用裝置上的 StorageGRID 應用裝置安裝程式版本與 StorageGRID 系統的軟體版本相符、如有必要、可升級或降級 StorageGRID 應用裝置安裝程式韌體。</block>
@@ -5271,10 +5159,6 @@
   <block id="982ae3aea4734aa7e1eded70b7f60794" category="sidebar">更換 SGF6112 或 SG6100-CN 中的風扇（ SG6160 ）</block>
   <block id="febcfd461af3265bdb47b88615490ba4" category="sidebar">更換儲存控制器機櫃或擴充機櫃中的風扇（ SG6160 ）</block>
   <block id="cfdea9725f37741c5c465e1f99806049" category="sidebar">更換 SGF6112 中的磁碟機</block>
-  <block id="b5a370808976d26b5863b321417b9447" category="sidebar">更換內部 NIC （ SGF6112 和 SG6160 ）</block>
-  <block id="6160bc78506e7a4a802a5a71f5b0c192" category="sidebar">更換外部 NIC （ SG6160 ）</block>
-  <block id="63cba1504c48a2c26d4d599e250b651c" category="sidebar">更換 DIMM （ SG6160 ）</block>
-  <block id="de4454f572601b9993fa9bb1fdd12775" category="sidebar">更換電池（ SG6160 ）</block>
   <block id="01ae44aaa848b714b27c4385be44170e" category="sidebar">維護 SG5800 硬體</block>
   <block id="a52004ceedaf01dddcc71fceeb3b5134" category="sidebar">SG5800 硬體維護</block>
   <block id="66db453d1fbfd54c6cd6227309339cf6" category="sidebar">維護組態程序 - SG5800</block>
@@ -5289,14 +5173,9 @@
   <block id="df4fcbfb70ff24d37ca16e6fcbd9536e" category="sidebar">安裝 12 個磁碟機櫃（ SGF6112 ）</block>
   <block id="f97b7a3e415eea7b9a452de77cc3405b" category="sidebar">設定 SANtricity 系統管理員（ SG5700 、 SG5800 、 SG6000 和 SG6100 ）</block>
   <block id="1093da8a6d23bc50f1ac46e7305c04f9" category="sidebar">疑難排解安裝（ SG5800 或 SG6100 ）</block>
-  <block id="31cb4cd18f0b157246f637e618b45dc6" category="sidebar">使用 SANtricity 系統管理員（ SG6160 ）升級磁碟機韌體</block>
-  <block id="0f6f36dc2bf579a4fe0bcd94f0aae0d4" category="sidebar">使用 SANtricity System Manager 線上方法升級 SG6100 磁碟機韌體</block>
-  <block id="516eaa38d25580e59ed23d9eccdba702" category="sidebar">使用 SANtricity System Manager 離線方法升級 SG6100 磁碟機韌體</block>
   <block id="b0672f12d96d0f38d95e03cbf80aa7bd" category="sidebar">SGF6112 或 SG6100-CN （ SG6160 ）</block>
   <block id="2db9b7ed7075356c49f0fe44fb9558dd" category="sidebar">儲存控制器機櫃或擴充機櫃（ SG6160 ）</block>
   <block id="c0c97c5cc95065f4fb2ce8f089b8b227" category="sidebar">SG6100-CN （ SG6160 ）</block>
-  <block id="febf161387f73ddb0423c5da500716cf" category="sidebar">內部 NIC （ SGF6112 和 SG6160 ）</block>
-  <block id="bfb27aa707c73a44d7c9a84b4f5892dc" category="sidebar">外部 NIC （ SG6160 ）</block>
   <block id="0c5b49805cedde0be71bd8e1248caea5" category="sidebar">SG6100-CN 控制器（ SG6160 ）</block>
   <block id="109cfb866393048721520c64b6a72dcd" category="sidebar">E4000 控制器（ SG6160 ）</block>
   <block id="1b137b50e38b53f7a19b8ae2f6114d7d" category="sidebar">重新放置在機架中</block>
@@ -5392,7 +5271,6 @@
   <block id="0d62b6adecaf87bf7af8afc6946e6857" category="list-text">琥珀色：電源供應器故障。</block>
   <block id="9eda08f277c75d2cbd6cbe89a3a578b1" category="paragraph">識別 LED</block>
   <block id="b673288e438383d0a8a5fd24fa185140" category="list-text">您有<block ref="4b9b8ad1fd2d0c7e2de41ab41c589ff5" category="inline-link-rx"></block>。</block>
-  <block id="609295eb0c681d6c1424fff83e27f505" category="admonition">在開始此程序之前、請務必套用最新的 StorageGRID Hotfix 。如需詳細資訊、請參閱<block ref="4c6c5bde6eefe6b83cf8fcf6cfafcbf0" category="inline-link-rx"></block>。</block>
   <block id="53a1c12160c727fefa8453478aa1dd20" category="list-text">來源應用裝置處於預先安裝狀態、就像您擁有的一樣<block ref="d8179f874ceb9655a4c19cb17f6c7478" category="inline-link-rx"></block>。</block>
   <block id="66cc02950de74fa96e9f918a807f3106" category="paragraph">存取變更 IP 工具並更新 MTU 設定、如所述<block ref="8adfe8e8a2d3ccaaf3f07fd9e52d3fc4" category="inline-link-rx"></block>。</block>
   <block id="4e1662db936106068fd744ad81e3f5f1" category="paragraph">在複製期間、下列應用裝置組態不會傳輸至替換應用裝置。您必須在更換設備的初始設定期間進行設定。</block>
@@ -5492,12 +5370,10 @@
   <block id="637caad455a57e19afcd30b9c02674b0" category="open-title">SG5700 和 SG5800</block>
   <block id="eb1a4beef110ceda19ffa08d7d3c5511" category="inline-link">實作磁碟機安全性</block>
   <block id="edc7c6a0a6b43c141f2158dab7e2fe46" category="paragraph">對於 SG5700 和 SG5800 儲存設備、請遵循 SANtricity 系統管理員中的「」高階步驟<block ref="30ac7c9d072f9a088ff3ecff057331d7" category="inline-link-rx"></block>。</block>
-  <block id="7c069ddd5dad8ecd4ee00173477e13a1" category="paragraph">對於 SG6060 儲存設備、只有在安裝儲存設備之前已設定金鑰管理、才能在 SSD 磁碟機上自動啟用磁碟機安全性。</block>
   <block id="b321866a74d5de79233bf6878dbd4501" category="list-text">為您的儲存陣列配備支援安全功能的磁碟機（ FDE 磁碟機或 FIPS 磁碟機）。</block>
   <block id="12696fff85009a1ef2901d8929335983" category="list-text">對於需要FIPS支援的磁碟區、請僅使用FIPS磁碟機。</block>
   <block id="a8f349d358cf5164a86a3b184efab1c3" category="list-text">在磁碟區群組或集區中混合使用 FIPS 和 FDE 磁碟機、會導致所有磁碟機都被視為 FDE 磁碟機。</block>
   <block id="5a9a863055dc29aed89d8c77f4e168a4" category="list-text">FDE 磁碟機無法新增至或用作 All FIPS Volume 群組或集區中的備援磁碟機。</block>
-  <block id="0579aa3685f75e3b2f4e2835bd1277f2" category="list-text">對於 E4000 控制器機櫃、請建立安全金鑰（控制器和磁碟機共用的一串字元、用於讀寫存取）。</block>
   <block id="febebabfe962a13cf87eb0ff7729dcb2" category="inline-link">建立內部金鑰</block>
   <block id="2c6c5c9b7b46bbd4da92a18c67ee7c48" category="list-text">您可以<block ref="6ec3cd897a97c3edb24a1fe750b56c9b" category="inline-link-rx"></block>從控制器的持續記憶體或使用金鑰管理伺服器所提供的外部金鑰。</block>
   <block id="3b38026201c87a4c8932e38d5e80aa11" category="inline-link">使用金鑰管理伺服器建立驗證</block>
@@ -5514,7 +5390,6 @@
   <block id="00eb0afe39b7bb07ee33907e04143322" category="list-text">安裝完成後、請在 SANtricity 系統管理員中、<block ref="7c1ab5b17d759a83d6a4eac233344f46" category="inline-link-rx"></block>針對所有磁碟集區或磁碟區群組進行。</block>
   <block id="e7d1344a53b797c760231d6d67e01bd9" category="list-text">管理用戶端使用的<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>是。</block>
   <block id="b54a31b113abaae54f0e1d652d40bd79" category="list-text">用戶端或服務型筆記型電腦具有<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>。</block>
-  <block id="92cc52a4541f1cee178e5e7bb1312d38" category="image-alt">StorageGRID 應用裝置安裝程式首頁頂端的螢幕擷取畫面</block>
   <block id="15c2366d765d58299bad2b1257f33e5c" category="admonition">您可以StorageGRID 直接使用自動化Python指令碼、也可以將其作為範例、說明如何在StorageGRID 網格部署和自行開發的組態工具中使用「靜態安裝REST API」。請參閱的說明<block ref="8f6f997668adf715032c29362b329763" category="inline-link-rx"></block>。</block>
   <block id="b070f93443d48805f685978787f43388" category="list-text">您已連線至正在使用設定的應用裝置上的 StorageGRID 應用裝置安裝程式<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>。</block>
   <block id="39ed22a75288844801e288ae98729e0c" category="admonition">您也可以使用或來設定系統<block ref="211fd8fdc92725b38616205e7f1e7a76" category="inline-link-rx"></block><block ref="2b9b559fdbf6b83dc49f82aaedacac2d" category="inline-link-macro-rx"></block>。</block>
@@ -5565,7 +5440,6 @@
   <block id="3874b74af884b67f89c6c2adc59d6564" category="paragraph">此圖顯示電源供應器的位置、並識別 SG6100-CN 運算控制器後方的 LED 。其他狀態和活動 LED 位於應用裝置連接埠上。這些 LED 可能會因產品型號而異。</block>
   <block id="2e6dfafd88c45e0ec399efb6c48564d4" category="image-alt">後置 LED SG6100-CN</block>
   <block id="65243f9b11da4aff53ef2492bd2914b0" category="list-text"><block ref="65243f9b11da4aff53ef2492bd2914b0" category="inline-link-rx"></block></block>
-  <block id="21e4cc108031bba39206d7b6b9caf5eb" category="list-text">對於除主管理節點外的所有應用裝置節點、「安裝 StorageGRID 」階段會暫停、並在內嵌主控台上顯示訊息、提示您使用核准管理節點上的此節點<block ref="e9b839af5117614531eec6994f76d987" category="inline-link-rx"></block>。前往下一步。</block>
   <block id="c4343f2a5127528d5f6935b01fef86a5" category="list-text"><block ref="6f88de86b8743bbe23202c83b893e250" category="inline-link-rx"></block>在主要管理節點上、核准擱置的網格節點、然後完成 StorageGRID 安裝程序。</block>
   <block id="d08e16a033b319c3d200b9268a3bdf72" category="list-text"><block ref="d08e16a033b319c3d200b9268a3bdf72" category="inline-link-rx"></block></block>
   <block id="2ba45c55f69f733db3f04d7fc73830ff" category="admonition">所有 DDP 和 RAID 類型的磁碟區大小不一致。DDP 和 RAID6 運作方式的差異會導致不同的磁碟區大小。</block>
@@ -5586,7 +5460,6 @@
   <block id="4e566fed33a5fbe94f583058b0167bb7" category="list-text">用戶端具有<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block>。</block>
   <block id="0f7cdc2213ae0614b6880519b807dd83" category="paragraph">如需 StorageGRID 應用裝置所有可用加密方法的相關資訊、請參閱<block ref="9240b1c7fca3b4c00aaf60d976e6caee" category="inline-link-rx"></block>。</block>
   <block id="a18c863efe264b8a820a3aa5f15dce6e" category="paragraph">查看有關的信息<block ref="1ab6cf7b725cd1db8724fbcf79291fd1" category="inline-link-rx"></block>。</block>
-  <block id="6c36a8ed89f3113c9a4d345d07c525a3" category="admonition">當裝置安裝時啟用節點加密時、會指派一個暫存金鑰。在應用裝置連線至金鑰管理系統（ KMS ）並設定 KMS 安全金鑰之前、應用裝置上的資料不會受到保護。如需其他資訊、請參閱<block ref="1b141fe85ee275193be0bd326245089d" category="inline-link-rx"></block>。</block>
   <block id="d453e448de3170f088f49a44683b6aaf" category="paragraph">查看有關的信息<block ref="9240b1c7fca3b4c00aaf60d976e6caee" category="inline-link-rx"></block>。</block>
   <block id="a834eba1793fd24a3b0df9777ed08ac4" category="paragraph">您無法為負載平衡器端點使用重新對應的連接埠。如果您需要移除重新對應的連接埠，請遵循中的步驟<block ref="ddc2fed20f0a5902c2e31af029d5bc0b" category="inline-link-rx"></block>。</block>
   <block id="37718a7243f3d42aa9519f9d8931c1b7" category="list-text">* 磁碟機加密 * （ StorageGRID 11.8 及更新版本）：管理磁碟機加密及檢視磁碟機加密狀態的作業。</block>
@@ -5651,13 +5524,11 @@
   <block id="e6523bc6b0aa210bcea1be5b2e6318ec" category="section-title">[[view-boot-codes]] 檢視開機代碼（僅限 SGF6112 和 SG6160 ）</block>
   <block id="badc9a052fb8dc6b6ee7a3020215193b" category="section-title">[ 檢視錯誤代碼 ] 檢視錯誤代碼（僅限 SGF6112 和 SG6160 ）</block>
   <block id="a318b0e440c8e88d015bff11ce8a6e4c" category="paragraph">如果SG6000-CN-控制器開機時發生硬體錯誤、BMC會記錄錯誤代碼。視需要、您可以使用 BMC 介面或應用裝置序列連接埠來檢視這些錯誤代碼、然後與技術支援人員合作解決問題。</block>
-  <block id="99095f0bedc8e3d1410fe6eff42af5fc" category="image-alt">StorageGRID 應用裝置安裝程式中的 Ping 測試結果螢幕擷取畫面</block>
   <block id="e7ea23a54c0ddebee1c1492e0cc1ea3d" category="paragraph">此外、您也可以在管理網路和用戶端網路上、以及在諸如外部NFS或DNS伺服器所使用的udp連接埠上測試連線能力。如需這些連接埠的清單，請參閱<block ref="1e586dd4a6252c59d7456ca897ae854e" category="inline-link-rx"></block>。</block>
   <block id="bdf32cd6e5bfe0d5860a2d5151fe3289" category="paragraph">下圖顯示 SG100 和 SG1000 正面的狀態指示燈和按鈕。</block>
   <block id="1a2ed7d39e0db03d9b5d4d6a46779876" category="paragraph">下圖顯示電源供應器的位置、並識別 SG100 和 SG1000 背面的 LED 。其他狀態和活動 LED 位於應用裝置連接埠上。這些 LED 可能會因產品型號而異。</block>
   <block id="d74a4b83ad81c51e5fafde7ae7461979" category="paragraph">下圖顯示 SG110 和 SG1100 設備正面的指示燈和按鈕。</block>
   <block id="20e957672cdc3dd43e0123cfc44ed26b" category="paragraph">下圖顯示電源供應器的位置、並識別 SG110 和 SG1100 背面的 LED 。其他狀態和活動 LED 位於應用裝置連接埠上。這些 LED 可能會因產品型號而異。</block>
-  <block id="64f2a2a9a6275d1679af729cb7fec6ac" category="paragraph"><block ref="64f2a2a9a6275d1679af729cb7fec6ac" category="inline-link-macro-rx"></block></block>
   <block id="64dc56b6855e747e49efa5dfe185c62b" category="paragraph">下圖顯示 SG6000-CN 控制器正面的狀態指示燈和按鈕。</block>
   <block id="89a12c9cfe23a1dee6be66e2fb554131" category="paragraph">下圖顯示電源供應器的位置、並識別 SG6000-CN 控制器後方的 LED 。其他狀態和活動 LED 位於應用裝置連接埠上。這些 LED 可能會因產品型號而異。</block>
   <block id="6caee75b38d61d4801420e3aec0b9ea6" category="paragraph">下圖顯示 SG6100 應用裝置正面的指示燈和按鈕。</block>
@@ -5674,7 +5545,6 @@
   <block id="729e9f8a1afa4afe767302dd73394d10" category="list-text">您必須使用登入 Grid Manager<block ref="b84b4e728cab50bf316de2913d9bfde1" category="inline-link-rx"></block> 。</block>
   <block id="ba435d2f285faf2c9d0a780aaf4916ed" category="paragraph">若要更換產品中的磁碟機、電源風扇箱、風扇箱、電源箱或磁碟抽屜、請存取<block ref="305b653a8d7ae8e7e9656f618c2cf6b6" category="inline-link-rx"></block>。</block>
   <block id="3d73a67961e1a613e0b4583610182b70" category="doc">關於在 SG5700 儲存控制器上升級 SANtricity OS</block>
-  <block id="a3fb3bbf2cf1bd106246d3e5db977eee" category="list-text"><block ref="a3fb3bbf2cf1bd106246d3e5db977eee" category="inline-link-macro-rx"></block></block>
   <block id="d440998a1c8beb2d7f6513462969f958" category="list-text">使用 Ping 測試工具檢查任何網路上的 IP 位址連線、這些網路可能會受到您在步驟中所做的連結組態變更影響<block ref="2b33924fedc837b12bedd9a200e4d03f" category="inline-xref-macro-rx"></block>。</block>
   <block id="89da1e2c5db02ccb941cd0e6d0b78782" category="list-text">從 Grid Manager 中、選取 * 節點 * &gt; * 應用裝置節點 * &gt; * SANtricity 系統管理員 * 。控制器資訊位於<block ref="a1aaf7bb5ac3c80e5c2b1588aa506a0d" category="inline-link-rx"></block>。</block>
   <block id="a5ee4cd59c510c6a402f181d8d799c9b" category="image-alt">圖說文字參考 1.</block>
@@ -5703,8 +5573,6 @@
   <block id="638734fcdf0d50595d78d81bb639fd1b" category="paragraph">當兩個 SSD 磁碟機都正常運作時、系統會自動還原讀取快取功能。您可以<block ref="735aff2661f88efa8f6e8cceeb96bac0" category="inline-link-rx"></block>監控讀取快取命中率。由於快取是剛重建的、因此最初的命中率可能很低、但隨著存取物件資料的用戶端重新填入快取、快取應該會隨著時間而增加。</block>
   <block id="b8e55daf0cd7d7e3973b1e259f86f0cd" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程的維護期間更換 NIC 、因為在此程序期間可能會暫時失去這些物件的存取權。請參閱的相關資訊<block ref="7b41c2a82ff7a44a340b8559b6012e92" category="inline-link-rx"></block>。</block>
   <block id="7da93c6e68a43a9bce834b5ab317044f" category="admonition">此程序 * 不 * 支援熱交換。在拔下纜線和移除 NIC 之前、必須先使用 A <block ref="441002811e4fb104a452cffe39690fc5" category="inline-link-macro-rx"></block>。</block>
-  <block id="f23564587172dfdbfe2370e00a02a9e5" category="paragraph">為避免服務中斷、請在開始更換網路介面卡（ NIC ）之前、確認所有其他儲存節點都已連接至網格、或在可接受服務中斷期間的排程維護期間更換 NIC 。請參閱的相關資訊<block ref="5059dc4531f4f3adf649d818b95a89ff" category="inline-link-macro-rx"></block>。</block>
-  <block id="84504c6b7f2491dc5bc7090a8c2b9821" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程的維護期間更換 NIC 、因為在此程序期間可能會暫時失去這些物件的存取權。請參閱的相關資訊<block ref="f62f9b0fd270f830287bb631ff88ea28" category="inline-link-macro-rx"></block>。</block>
   <block id="04690c654e14c31aaff7dcdf3ee29f7f" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、則必須在排程維護期間更換風扇、因為在此程序期間可能會暫時失去這些物件的存取權。請參閱的相關資訊<block ref="7b41c2a82ff7a44a340b8559b6012e92" category="inline-link-rx"></block>。</block>
   <block id="57f986120565d62fe336f74024a0a5dc" category="list-text"><block ref="b8ccfb419e995cdda7f100cd08c73614" category="inline-link-macro-rx"></block>。</block>
   <block id="cdc6c3e5556c763f3a315ba4edf24802" category="admonition">如果您曾經使用過僅建立一個物件複本的 ILM 規則、而且同時更換兩個電源供應器、則必須在排程維護期間更換電源供應器、因為在本程序期間、您可能會暫時失去這些物件的存取權。請參閱的相關資訊<block ref="7b41c2a82ff7a44a340b8559b6012e92" category="inline-link-rx"></block>。</block>
@@ -5713,13 +5581,8 @@
   <block id="6df3b6aa83b520cdd88f98e9d7ae2f92" category="doc">使用 Grid Manager 升級 SG6100 儲存控制器上的 SANtricity OS</block>
   <block id="73ceb72d67ba34612609e1f83759b680" category="inline-link-macro">使用維護模式升級 SG6100 控制器上的 SANtricity OS</block>
   <block id="35be643dd560ae241670f92b1cd69cf6" category="list-text"><block ref="35be643dd560ae241670f92b1cd69cf6" category="inline-link-macro-rx"></block></block>
-  <block id="2f0574719ffbf08aeb528b5265507fb2" category="inline-link">StorageGRID 11.9 文件</block>
-  <block id="fb9bf062d669886ba82eb2cef6e06bb0" category="paragraph">請移至<block ref="8a6d41e812d44c3c4b339dfb6a2bafbd" category="inline-link-rx"></block>以瞭解如何設定及使用 StorageGRID 11.9 系統。</block>
   <block id="d9419a01ee4fdcd160bf1446e5a481f5" category="list-text"><block ref="d9419a01ee4fdcd160bf1446e5a481f5" category="inline-link-rx"></block></block>
   <block id="0ceab7293af6c07bc39db5e5d82dd9d5" category="section-title">BMC 資訊</block>
-  <block id="383618c189ef21ef243ef8ab02426094" category="paragraph">現在提供使用 StorageGRID 應用裝置 BMC 介面的詳細資訊。請參閱。 <block ref="df528c7928eba5c1226970c2705dfb3a" category="inline-link-macro-rx"></block></block>
-  <block id="4c3023a359ba4319887ce079f8ee7f9b" category="paragraph">全新的 StorageGRID SG5812 和 SG5860 應用裝置是整合式儲存與運算平台、可在 StorageGRID 網格中作為儲存節點運作。如需詳細資訊、請參閱<block ref="2a413e9ad740d8bf3ae3102a4c99aa8a" category="inline-link-macro-rx"></block>。</block>
-  <block id="32b906eb47adfda8201e47113c29db5b" category="paragraph">全新的 StorageGRID SG6160 應用裝置包含運算控制器和儲存控制器機櫃、其中包含兩個儲存控制器和 60 個磁碟機、以及兩個用於快取的 NVMe SSD 磁碟機。您也可以選擇將 60 個磁碟機擴充機櫃新增至 SG6160 。如需詳細資訊、請參閱<block ref="476efecdba735494e72d7970bc2f3e26" category="inline-link-macro-rx"></block>。</block>
   <block id="a875f4e3e98d1c995967b1dfb394ca2e" category="sidebar">StorageGRID 11.9 文件</block>
   <block id="8bd00e89826dbd3fcf80ca108d7a008d" category="sidebar">管理磁碟機</block>
   <block id="d9435157d60631f5b40942f8da9f9d4f" category="sidebar">開啟或關閉識別 LED</block>
@@ -5734,8 +5597,6 @@
   <block id="813eb6e57b4706c7df0e13ae0defacd8" category="list-text">如果您的應用裝置包含擴充機櫃，請參閱<block ref="ba1bb7195a934f0a465563dc7e705dd7" category="inline-link-macro-rx"></block>以取得纜線資訊。</block>
   <block id="c6ce792d1a06c8b72936713f0001140a" category="list-text">您已記錄應用裝置目前的 BMC 組態（如果仍可用）。</block>
   <block id="df5c8b40026819d555dd6dbdc002fb3e" category="list-text">輸入：<block ref="73a1c7bb6f54767f7e51d6973cad4923" prefix=" " category="inline-code"></block>顯示應用裝置目前的 BMC 組態。</block>
-  <block id="b79224966bc8b470ef537d5ffb51ff44" category="paragraph">裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。節點頁面應顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾選圖示<block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>），表示沒有作用中警示，且節點已連線至網格。</block>
-  <block id="df14b12403607f270bd6e168ec91f2c5" category="paragraph">裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。「 * 節點 * 」頁面應顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號圖示<block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>），表示沒有作用中警示，且節點已連線至網格。</block>
   <block id="e1a4e21f94e19d24dcb24587293cd8bc" category="paragraph"><block ref="e1a4e21f94e19d24dcb24587293cd8bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a071a7c175c6fede0936ac6e354e5055" category="paragraph"><block ref="a071a7c175c6fede0936ac6e354e5055" category="inline-image-macro-rx" type="image"></block></block>
   <block id="97d53609a22bc5ffa749725baf5ee763" category="paragraph"><block ref="97d53609a22bc5ffa749725baf5ee763" category="inline-image-macro-rx" type="image"></block></block>
@@ -5752,14 +5613,10 @@
   <block id="c97913a5c47ca1aaefcb605790ba744c" category="paragraph-title"><block ref="dc7abc674acbb1b3c1270fc1cf1b983a" category="inline-image-macro-rx" type="image"></block>部署應用裝置節點</block>
   <block id="95714c5faee0a7ee22897ffb9bb27d46" category="list-text">若要新增子網路，請按一下最後一個項目右側的插入圖示<block ref="04a444892ecdd89bfdaa29bcbf799187" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="9a70a6ae35e21c6544b20ca5f08a7c77" category="list-text">要刪除未使用的子網，請單擊刪除圖標<block ref="382e1d9aa4a1ad456c931180513d817a" category="inline-image-macro-rx" type="image"></block>。</block>
-  <block id="a260587fbb1d0830942f420048880c97" category="list-text">確認重新開機已完成、且節點已重新加入網格。在 Grid Manager 中，確認「節點」頁面顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號圖示<block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>），表示沒有作用中警示，且節點已連線至網格。</block>
   <block id="997a5fbd7bf48a6f361ad63bb5c3ea8b" category="list-text">查看 * Shelf* 下拉式清單右側的風扇圖示、判斷哪個機櫃的風扇<block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>箱故障。</block>
   <block id="4679124015a3fb5a2b9a8d50c4bec768" category="list-text">查看 * 機櫃 * 下拉式清單右側的電源圖示、判斷哪個機櫃的電源<block ref="34a51d44013a1ce73b6f6d4343cad0e8" category="inline-image-macro-rx" type="image"></block>箱故障。</block>
   <block id="73a5f23e1326c160cea1d64fb296d381" category="list-text">查看 * 機櫃 * 下拉式清單右側的電源<block ref="34a51d44013a1ce73b6f6d4343cad0e8" category="inline-image-macro-rx" type="image"></block>和風扇<block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>圖示、以判斷哪個機櫃的電源供應器故障。</block>
-  <block id="5be5b200ea87bda5139c19d04ce77e9d" category="list-text">如果您在此程序期間將應用裝置置於維護模式、請結束維護模式、並等待節點重新開機並重新加入網格。此程序最多可能需要20分鐘。接著，在 Grid Manager 中，確認「節點」頁面顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號圖示<block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>），表示沒有作用中警示，且節點已連線至網格。</block>
   <block id="0160256cfe219f6b22fa00049dc8b08b" category="list-text">查看 * Shelf* 下拉式清單右側的風扇圖示、判斷哪個產品的風扇<block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>箱故障。</block>
-  <block id="1a41776500a52e28aa05db3c32dfc47a" category="sidebar">升級磁碟機韌體（ SG6160 線上方法）</block>
-  <block id="2c8a2ef75a9a05ce84a4b89f17f20322" category="sidebar">升級磁碟機韌體（ SG6160 離線方法）</block>
   <block id="d07792f91c33735c12a1ce89b21df7a3" category="sidebar">StorageGRID 應用裝置文件</block>
   <block id="4ce226a87bcf5c8b5206d3dcf26776e4" category="paragraph">請勿對任何節點的網格網路、管理網路或用戶端網路使用包含下列 IPv4 位址的子網路：</block>
   <block id="7fe4e99a363b04311cab23831409078b" category="list-text">192,168,130,101</block>
@@ -5772,4 +5629,183 @@
   <block id="7dc5983e9de89ec2bcacf21aec6d8399" category="list-text">192.168.130.0/24，因為此子網路範圍包含 IP 位址 192.168.130.101 和 192.168.130.102</block>
   <block id="f3289a31e39c1161c9f3351ba19a4562" category="list-text">192.168.131.0/24，因為此子網路範圍包含 IP 位址 192.168.131.101 和 192.168.131.102</block>
   <block id="1deaf9237f4171a62975b6710d5432b8" category="list-text">198.51.100.0/24，因為此子網路範圍包含 IP 位址 198.51.100.2 和 198.51.100.4</block>
+  <block id="e24a803fd4a0c35ddf14fffbc08b6cfb" category="paragraph">設備重新啟動並重新加入電網最多可能需要 20 分鐘。若要確認重啟已完成且節點已重新加入網格：</block>
+  <block id="b670710bc1dc45eda7828cc693319469" category="list-text">在網格管理器中，選擇*NODES*。</block>
+  <block id="154abdbeed3470514ea68789e229a738" category="list-text">驗證設備節點是否處於正常狀態（綠色複選標記圖標<block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。</block>
+  <block id="93a67d90a849449d960cede215097fff" category="paragraph">將風扇上的連接器與電路板上的插座對齊。</block>
+  <block id="52f6fbcebe879dd8881fcbb3f2b67145" category="paragraph">直到SANtricity OS 升級成功應用於已選擇進行升級的所有適用節點後，該程序才算完成。在每個節點上載入SANtricity OS（順序）可能需要 30 分鐘以上，重新啟動每個StorageGRID儲存裝置則可能需要長達 90 分鐘。網格中不使用SANtricity OS 的節點不會受到此程序的影響。</block>
+  <block id="c5bd3bd9f3e04a8cfc23ae70bb77a0e5" category="admonition">在開始此程序之前，請先套用最新的StorageGRID修補程式。看<block ref="4c6c5bde6eefe6b83cf8fcf6cfafcbf0" category="inline-link-rx"></block>了解詳情。</block>
+  <block id="6ef06a4ceadc3ce8568ae7ad816c7a06" category="paragraph">為您的儲存控制器選擇SANtricity OS 版本。</block>
+  <block id="749a5be7306d7e9fcefe858d0d961e23" category="list-text">對於處於「完成」階段且需要不同SANtricity OS 升級檔案的節點，重複此升級程序。</block>
+  <block id="79ca39202d9620e5539aba6bcb9cf8c6" category="admonition">對於狀態為需要注意的節點，使用維護模式執行升級。</block>
+  <block id="d5802324d0c6f77a6c1460a09ab86b0c" category="admonition">網關節點的節點克隆功能已停用。若要取代網關節點，請先將其退役，然後執行擴充功能以新增新的裝置網關節點。網關節點的退役和擴展過程比儲存節點快得多。</block>
+  <block id="1348b650bb9bc1f6059a09940c052534" category="list-text">您只能將管理節點設備複製到新的服務設備。</block>
+  <block id="5f6ae42d1aafbe687a1a3aaf2513e987" category="list-text">對於管理節點設備，來源節點設備和目標設備不需要是相同的設備型號；但是，更改設備型號可能需要更換電纜或 SFP 模組。</block>
+  <block id="80225d08be164cdfe5823b870c3a4e5e" category="paragraph">例如，您不能用 SGF6112 設備（12 個物件儲存磁碟區）取代 SG6000 節點裝置（16 個物件儲存磁碟區）。</block>
+  <block id="3e802a8b9687c78b540ad5fac5b63bc5" category="list-text">決定是否將在目標裝置上使用金鑰管理伺服器 (KMS) 進行節點加密，以便您可以在複製之前在初始目標裝置安裝期間啟用節點加密。您可以檢查來源設備節點上是否啟用了節點加密，例如<block ref="6bd92e423fc3e97f612a11738e3a3c13" category="inline-link-macro-rx"></block>。</block>
+  <block id="b919638621c4eafee27ce1f8b1e741bf" category="paragraph">來源節點和目標設備可以有不同的節點加密設置，但有以下例外。對於以下設備，不支援從未加密節點來源到節點加密目標的節點克隆：</block>
+  <block id="4b060d44006837b60e71d1c6a082a054" category="list-text">不含節點加密的 SGF6112 節點設備到有節點加密的 SGF6112 設備</block>
+  <block id="77a2dd48d49a7b10de0abd9bf1120c33" category="list-text">不含節點加密的 SG1100 節點設備到有節點加密的 SG1100 設備</block>
+  <block id="ea0b3822aa7556ab1d57375d559f3f51" category="list-text">不含節點加密的 SG110 節點設備到有節點加密的 SG110 設備</block>
+  <block id="2a0a8055925e06f3f23d0483b2409160" category="paragraph">在資料傳輸過程中以及目標節點重新啟動並加入電網時，資料解密和加密會自動執行。</block>
+  <block id="e185affb0d1d90404c2a75a4a306e57a" category="paragraph">不支援從沒有節點加密的 SG110 來源節點裝置到具有節點加密的 SG110 裝置目標的節點複製。</block>
+  <block id="79cc74aa062b649aa9442b8837708eea" category="paragraph">不支援從沒有節點加密的 SG1100 來源節點裝置到具有節點加密的 SG1100 裝置目標的節點複製。</block>
+  <block id="7841a1dadd1b2280e147c4ceb88ed7c1" category="section-title">SGF6112 設備克隆資訊與限制</block>
+  <block id="763c4fea3d57dcd7c19546b7f79a38f6" category="paragraph">不支援從沒有節點加密的 SGF6112 來源節點設備到具有節點加密的 SGF6112 設備目標進行節點克隆。</block>
+  <block id="7676440baaa16ec567a09dcde7fb8d84" category="list-text">停用已啟用節點加密的裝置後。</block>
+  <block id="8b094ce4a3dea15f5c7b26fefba185e5" category="paragraph">KMS 加密金鑰和所有資料將從節點中刪除，並且裝置將重新啟動。設備重啟過程中會出現一個對話框，這可能需要最多 20 分鐘。</block>
+  <block id="081e273399720a2bcb9ab842465796c1" category="paragraph">對於 SG6060 儲存設備，只有在安裝儲存設備之前配置了金鑰管理，才能在 SSD 驅動器上自動啟用驅動器安全性。</block>
+  <block id="996cf0fe6dfcaefd990ade55f4dd743f" category="list-text">對於 E2800 控制器架，建立一個安全金鑰（控制器和磁碟機共用的用於讀寫存取的一串字串）。</block>
+  <block id="cc47c5ee89eecc752dd4066d97c0c05f" category="list-text">LACP傳輸雜湊策略和PDU速率</block>
+  <block id="1b580d85d7cd504270d50ff1898e690b" category="list-text">在「上傳 JSON」部分中，瀏覽並選擇要上傳的 JSON 設定檔。</block>
+  <block id="7449247ffcf965bdf264f6020225b2a1" category="admonition">儲存修改後的密碼部分的管理密碼和設定密碼<block ref="3b39322b4d4c4cc0e164289cecbf36f4" prefix=" " category="inline-code"></block>設定檔保存在安全的位置。安裝、擴充和維護過程都需要這些密碼。您還應該備份修改後的<block ref="3b39322b4d4c4cc0e164289cecbf36f4" prefix=" " category="inline-code"></block>設定檔並將其儲存在安全的位置。</block>
+  <block id="c0571984ffde12f3ed9c04640729cf39" category="admonition">連接埠 1 的實體連結狀態在軟體中不可用，此時必須使用 SG5800 控制器上的狀態 LED 進行驗證。</block>
+  <block id="42e2b8eb5b96fba7c6a9d8b8408d17fe" category="inline-xref">預設設定</block>
+  <block id="a0f77c680bb4e4c50a253edde079e6f7" category="paragraph">如果您想要使用除以下值以外的值，則只需在「連結配置」頁面上配置設定<block ref="0353e5f57a74c3ee00fb2db77f747cfd" category="inline-xref-macro-rx"></block>。</block>
+  <block id="492e2112f98c1c5c9ae7dd839617ba0c" category="inline-link">暫時更改 LACP PDU 速率</block>
+  <block id="cedb1cff6c5a590a2d00e7885cbdbf2b" category="admonition">按照這些說明進行的 LACP PDU 速率變更在StorageGRID環境中保持不變。若要在裝置中安裝的網路元件執行維護作業時暫時變更 LACP PDU 速率，請參閱<block ref="53557ca6c3df0379d4315795031bbac1" category="inline-link-rx"></block>。</block>
+  <block id="2993081253b9e8a4d688263b6a58640f" category="paragraph">[[port_config_tables]]圖表總結了每個裝置的連接埠綁定模式和網路綁定模式的選項。有關詳細信息，請參閱以下內容：</block>
+  <block id="1a6db3feac69a625044ba0be8a80f3a6" category="cell">用戶端網路已停用</block>
+  <block id="927ec9c2ef5774c5ce667b068b7b40e6" category="cell">用戶端網路已啟用（預設）</block>
+  <block id="79e5f98b372b0736e8ae7481d64d9a9d" category="list-text">可以在網格網路部分指定 LACP PDU 速率和 LACP 傳輸雜湊策略值。</block>
+  <block id="86eb1647b042cc99523712324f832cf6" category="list-text">可以在網格網路和客戶端網路部分指定 LACP PDU 速率和 LACP 傳輸雜湊策略值。</block>
+  <block id="0bcaa0b52e3be83ae46118c54bb1ebef" category="list-text">可以在連結設定部分指定 LACP PDU 速率和 LACP 傳輸雜湊策略值。</block>
+  <block id="d07aa64e988c99c857428deebf8d17cc" category="admonition">對於 SG5800，連接埠 1 的連結狀態在軟體中不可用，必須使用 SG5800 控制器上的狀態 LED 進行實體驗證。</block>
+  <block id="05682b3d503979cba2c2b03775fee41a" category="paragraph">[[default_values]]首次造訪此頁面時，預設值為：</block>
+  <block id="84b475180317c239ad9321972c61a8fc" category="list-text">*LACP 傳輸哈希策略*設定為*Layer2+3*。</block>
+  <block id="24df05eda467306f610fde4c74b8308e" category="list-text">*LACP PDU 速率*設定為*快速*。</block>
+  <block id="fa9c45ab73dc90e79f9f8e841d30d187" category="list-text">*客戶端網路*已啟用。</block>
+  <block id="3bf455f0fbfa441ca98213b50daca3e0" category="inline-xref">固定和聚合連接埠綁定模式配置表</block>
+  <block id="61bb2ace2bcc184cf04ea06f4cbd2a04" category="list-text">請參閱<block ref="8bd637545e92e369abbbb906aaace025" category="inline-xref-macro-rx"></block>對於每種裝置類型，並配置連接埠綁定模式和網路綁定模式以符合您的網路配置。</block>
+  <block id="d8b41d0e632fbfd4373de7854b0398f2" category="paragraph">您必須為網格和用戶端網路指定唯一的 VLAN 標籤。您可以選擇 0 到 4095 之間的值。</block>
+  <block id="850157bc95c4ffca1cdcbc55c013127e" category="inline-link">刪除StorageGRID設備上的連接埠重新映射</block>
+  <block id="9bec22f7a42fe8d0910acd43281c1ec3" category="admonition">對連接埠重新映射的支援已棄用，並將在未來的版本中刪除。若要刪除重新映射的端口，請參閱<block ref="e143f77b13dc745aead5dba632a71792" category="inline-link-rx"></block>。</block>
+  <block id="eb306140d9d83491857370360109d098" category="inline-link">如何重新命名網格、網站或節點</block>
+  <block id="6d0791dba87ee7ef0fb1ac7837270779" category="paragraph">此處顯示的名稱將是設備節點的系統名稱。系統名稱是內部StorageGRID操作所必需的，並且不能更改。若要變更設備節點的顯示名稱，請參閱<block ref="1b088768cc0953b1c1a38e35175f5ef5" category="inline-link-rx"></block>。</block>
+  <block id="4e79269529185d09c026a9a29b4203fc" category="list-text">為將部署此設備閘道或非主管理節點的網格選擇主管理節點。</block>
+  <block id="346292b5d42f68777473a4f6ec554687" category="inline-link">具有快取的網關節點</block>
+  <block id="11d32edf990f4c784cee89725f7ab17d" category="list-text">能夠作為<block ref="e8c45bebf543a99e87d6e0fda23c5762" category="inline-link-rx"></block>。</block>
+  <block id="cfc5ee852e071866dba8d42736b10c04" category="list-text">繼續監控安裝進度，直到*安裝StorageGRID*階段暫停並且嵌入式控制台上出現一條訊息，提示您使用網格管理器在管理節點上批准此節點；然後，請轉到下一步。</block>
+  <block id="05d13b5d561ee02e05de7ea4f7169cee" category="list-text"><block ref="6f88de86b8743bbe23202c83b893e250" category="inline-link-rx"></block>主管理節點，批准待處理的儲存節點，並完成StorageGRID安裝流程。</block>
+  <block id="376bb4454cc4f54c591b8f4ae07ae743" category="list-text">對於除主管理節點之外的所有裝置節點，「安裝StorageGRID」階段將暫停，且嵌入式控制台上會出現一則訊息，提示您使用<block ref="e9b839af5117614531eec6994f76d987" category="inline-link-rx"></block>；然後，轉到下一步。</block>
+  <block id="3ac50f2a980e2a0dd9d6fa781710632a" category="inline-link">選擇安全策略</block>
+  <block id="2111243c6011996eba7d5df0a47ac508" category="paragraph">此外，在啟用節點加密後啟用 FIPS 模式時， NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 模組用於靜態資料加密。參考<block ref="0e91844ad7f820ecc514bcaae0035f92" category="inline-link-rx"></block>了解更多。</block>
+  <block id="7c64a0ffe12c24b27b1dd68957dd18aa" category="admonition">當安裝啟用節點加密的裝置時，會指派一個臨時金鑰。在裝置連接到金鑰管理系統 (KMS) 並設定 KMS 安全金鑰之前，裝置上的資料不受保護。請參閱<block ref="1b141fe85ee275193be0bd326245089d" category="inline-link-rx"></block>了解更多。</block>
+  <block id="51ec0745d9ba491bcc4f5f242c8c0d31" category="paragraph">當您為具有 FIPS 磁碟機的StorageGRID裝置啟用磁碟機加密時，FIPS 磁碟機提供的 FIPS 加密將用於靜態資料的加密。</block>
+  <block id="ff6fefc7a96e8115d9c98e950380cb1b" category="paragraph">您可以在載入 Grid Manager 之前在初始裝置安裝期間啟用磁碟機加密。您也可以將裝置置於維護模式來啟用磁碟機加密或變更密碼。</block>
+  <block id="116223f137ea3845e7fe9e00cf3db9f7" category="list-text">在 LAN IP 設定中，記下自動顯示的 IPv4 位址。</block>
+  <block id="c4f9ab6ec4683b52f60fbb0c35c9b7a4" category="paragraph">使用StorageGRID設備安裝程式為網格、管理和用戶端網路上的服務設備或儲存節點設定 IP 位址和路由。</block>
+  <block id="dba7d8cb51428f3af7952906a5441cb2" category="paragraph">您必須為每個連接的網格或管理網路上的裝置指派靜態 IP 位址，或為 DHCP 伺服器上的位址指派永久租約。對於連接的用戶端網絡，靜態 IP 位址或 DHCP 配置是可選的。</block>
+  <block id="46f8f9f2504faca1c8273c28591fd77d" category="paragraph">若要啟用或停用連結或變更連結配置，請參閱以下說明：</block>
+  <block id="4ccba481cc1a24370110d7f5f54a75a9" category="list-text">若要設定網格網絡，請在頁面的*網格網絡*部分中選擇*靜態*或*DHCP*，然後輸入您的網絡設定。</block>
+  <block id="84a8921b25f505d0d2077aeb5db4bc16" category="open-title">靜止的</block>
+  <block id="711fa32db7d8fa61bb55ab99fce525cc" category="admonition">如果未啟用客戶端網絡，則預設路由將使用網格網路網關。</block>
+  <block id="54201c55d2bdc7a9e19d9e032d8c0ede" category="open-title">DHCP</block>
+  <block id="07e361ec46281065d0b85ab2b1c73dcd" category="list-text">若要設定管理網絡，請在頁面的*管理網路*部分中選擇*靜態*或*DHCP*，然後輸入您的網路設定。</block>
+  <block id="5fc3b5e9a0ffa500c7ecfe39a1bd93d6" category="paragraph">看<block ref="a611aca18a9129c1d8e32ddb3978bf58" category="inline-link-macro-rx"></block>用於裝置上的管理連接埠 1 位置。</block>
+  <block id="5b28462b9d764259a24b4f66f2ea7b44" category="list-text">若要設定用戶端網絡，請在頁面的*用戶端網路*部分中選擇*靜態*、*DHCP*或*無*，然後輸入您的網路設定。</block>
+  <block id="c9469a2a7efc428091d21815f570608c" category="admonition">要設定客戶端網絡，請確保在「連結配置」頁面上啟用了客戶端網路。</block>
+  <block id="1a3ac1dfe5949a399544e688a22d6550" category="paragraph">選擇「*無*」以啟用用戶端網路而不指定 IP 位址。客戶端網路只需要一個IP位址即可直接存取。啟用沒有 IP 位址的用戶端網路可讓您在StorageGRID中設定客戶端網路 VLAN 介面。</block>
+  <block id="b2beef90d56fec1347de6cb05b617a9a" category="list-text">確保目前韌體版本與StorageGRID系統上安裝的軟體版本相符。  （從網格管理器的頂部，選擇幫助圖示並選擇*關於*。）</block>
+  <block id="a7d8cbd46926f6c579c484bd8f0a4964" category="list-text">為該網路上的主機指定以空格分隔的清單或 IPv4 位址範圍。</block>
+  <block id="519fd188a6d26ab1f5748480aeb6777e" category="list-text">如果所選連接埠層級網路連線有效，則會以綠色橫幅顯示「連接埠連線測試通過」訊息。 nmap 命令輸出列在橫幅下方。無法存取的主機不會出現在 nmap 指令輸出中。</block>
+  <block id="97af24ee4e7bcdcd9bde87b1c20b08b7" category="list-text">如果與遠端主機建立了端口級網路連接，但主機未監聽一個或多個選定的端口，則會在黃色橫幅中顯示「端口連接測試失敗」訊息。 nmap 命令輸出列在橫幅下方。無法存取的主機不會出現在 nmap 指令輸出中。</block>
+  <block id="75b6952e1b78e30da0f9732825f6bc55" category="list-text">如果無法為一個或多個選定連接埠建立連接埠層級網路連接，則會以紅色橫幅顯示「連接埠連接測試失敗」訊息。 nmap 命令輸出列在橫幅下方。無法存取的主機不會出現在 nmap 指令輸出中。</block>
+  <block id="83505730592b01e4b45f87ba87a47e33" category="paragraph"><block ref="83505730592b01e4b45f87ba87a47e33" category="inline-link-rx"></block></block>
+  <block id="7ddf79f59d8500f228016871545e472a" category="list-text">更改 *LACP 傳輸哈希策略* 和 *LACP PDU 速率* 值</block>
+  <block id="81771753b4828b855413fa8b278a463a" category="admonition">如果要保留磁碟機上的數據，請將 SSD 磁碟機插入故障裝置中佔用的相同磁碟機插槽。如果不這樣做，設備安裝程式將顯示警告，您必須將驅動器放入正確的插槽並重新啟動設備，然後設備才能重新加入電網。</block>
+  <block id="9b1463c2fbb55d9aff5c2628744f0374" category="list-text">確認重啟已完成且節點已重新加入網格：</block>
+  <block id="d1f65a57ea588af4d00d2b30842fb1e6" category="doc">更換StorageGRID E5700SG 運算控制器</block>
+  <block id="cb259545c2cc29e07151188fa7d7d773" category="admonition">有關具體步驟的更多詳細信息，請參閱 E 系列說明。請勿使用它們來更換StorageGRID設備中的控制器，因為步驟不同。例如，E5700 控制器的 E 系列說明描述如何從故障控制器中取出電池和主機介面卡 (HIC) 並將其安裝到替換控制器中。這些步驟不適用於StorageGRID E5700SG 控制器。</block>
+  <block id="b07aa18ca9b17d8191a731883bbbdc2d" category="paragraph">更換控制器後，您將無法存取設備儲存節點。如果 E5700SG 控制器功能正常，您可以在此程序開始時執行受控關機。</block>
+  <block id="8c6fc42de5ee4d7523ea532ec3a7892f" category="list-text">關閉 E5700SG 控制器：<block ref="9960d9237c92d9efd1ab4f4c0c346db6" prefix="*" category="inline-code"></block> *</block>
+  <block id="da11ca32f13c883ee6321bb4b9566faa" category="admonition">在將替換控制器插入裝置之前，必須確保原始控制器的 IP 位址已更新。否則，控制器啟動時將取得新的 DHCP IP 位址，並且可能無法重新連線到StorageGRID。此步驟適用於連接到控制器的所有StorageGRID網路。</block>
+  <block id="f43add39ca41d919e14f8440c8486a32" category="list-text">設備重新加入電網後，確認設備儲存節點出現在電網管理器中，且沒有警報。</block>
+  <block id="d402bddb0ef14f70e05cc38b28e58c54" category="summary">StorageGRID裝置安裝程式會在裝置重新啟動期間自動安裝最新的 E 系列磁碟機韌體檔案。</block>
+  <block id="8fbf20b68a29423a934b008cfd8f63bf" category="doc">裝置重新啟動期間自動升級 SG5700 磁碟機韌體</block>
+  <block id="7a8cd094e0132808e26a53b9d5cfac4e" category="paragraph">E 系列驅動器韌體檔案包含在StorageGRID軟體中。每當StorageGRID設備重新啟動時，就會自動安裝這些更新：</block>
+  <block id="fb7012bf68598fe46e332e9984d48fe9" category="list-text">進入<block ref="b5490e0279a2f5a6483200b39302195e" category="inline-link-macro-rx"></block></block>
+  <block id="0a24ee67619a105d9b63f98ee8357cb5" category="inline-link">滾動重啟</block>
+  <block id="6d63e957188ebc1d75a0098de3933ebb" category="list-text">作為<block ref="2fce402806412dafe2b75772872b209b" category="inline-link-rx"></block></block>
+  <block id="61a65e5e75034bc0622f65caf5244895" category="inline-link">StorageGRID版本升級</block>
+  <block id="5cede0e7965441c495faf1468fa4c02f" category="inline-link">修補程式安裝</block>
+  <block id="bacd5e6adb4a14d69d15f940d5628fce" category="list-text">在<block ref="aca70949664c8940430757a2a9d2c661" category="inline-link-rx"></block>或者<block ref="83386095b84f55716db277438e50860d" category="inline-link-rx"></block></block>
+  <block id="4780e356a8e04a8a6aadec3ed327d181" category="inline-link-macro">SANtricity作業系統升級</block>
+  <block id="5bcfe2b9ddcceca42aa9be3f2e6c41d6" category="list-text">在<block ref="761c7e27b88cb40b7c9a1aa261c2d024" category="inline-link-macro-rx"></block>使用維護模式</block>
+  <block id="b6e81f26a22253953774577f971cbb30" category="admonition">對於狀態為「需要注意」的節點，不會嘗試升級磁碟機韌體。</block>
+  <block id="c083bb27482eb9f03672f6c6ff536952" category="admonition">當設備重新啟動時，儲存控制器的 I/O（輸入/輸出）活動將停止。</block>
+  <block id="7f46165474d11ee5836777d85df2cdab" category="inline-link-macro">在線的</block>
+  <block id="27a21354321dfbc28f0cb17b995bb9ca" category="inline-link-macro">離線</block>
+  <block id="09a4c1386f483e4dedbcd5d1da2477b6" category="paragraph">您也可以使用SANtricity System Manager 手動安裝磁碟機韌體升級<block ref="1f7c4490af2a3f5aff5aec9ed89afbbd" category="inline-link-macro-rx"></block>或者<block ref="d125fe9f650c04b0bdfdb63077a4fb86" category="inline-link-macro-rx"></block>方法：</block>
+  <block id="d67774ef4260e4fef8756c907981a64a" category="list-text">在將新驅動器韌體升級打包到StorageGRID軟體之前應用它</block>
+  <block id="cc80d14e2ef2979c28576a3cc3932236" category="list-text">如果自動驅動器韌體升級失敗</block>
+  <block id="951638cfdbc1f60d4acdb6651c37d758" category="inline-link-macro">線上驅動器韌體升級</block>
+  <block id="924ea1116b808beea2b8a3ef2da9da7e" category="list-text">使用SANtricity System Manager<block ref="73dc5a93cf3772ff7419a034755f9071" category="inline-link-macro-rx"></block>從網格管理器而不是重新啟動節點</block>
+  <block id="8ee0511d6122ca7e64d85d85fd90b3c2" category="admonition">從開啟電源開關到節點重新加入電網並在電網管理器中顯示正常狀態可能需要 20 分鐘。</block>
+  <block id="0fda3e81adce27f0a43d4add01121d69" category="doc">更換StorageGRID SG5800 控制器</block>
+  <block id="d9c9b706426a967c92d90dc2cb2f5c0f" category="paragraph">更換控制器後，您將無法存取設備儲存節點。如果 SG5800 控制器功能正常，您可以在此程序開始時執行受控關機。</block>
+  <block id="eba67f2de5d7f9260ae88a2080dd2f03" category="list-text">控制器重新啟動且設備重新加入電網後，確認設備儲存節點出現在電網管理器中且沒有出現警報。</block>
+  <block id="f59b5e6d42c24861a136cad2f92946fb" category="admonition">從開啟電源開關到節點重新加入電網並在電網管理器中顯示正常狀態可能需要 20 分鐘。</block>
+  <block id="8891c24cf6217ee9912bde2fc031e0f1" category="doc">裝置重新啟動期間自動升級 SG5800 磁碟機韌體</block>
+  <block id="69f8aafede16fee08cd47f8dc0c0d4f6" category="list-text">在<block ref="f60eea5df0b2ef9e0f32c874180d50d5" category="inline-link-macro-rx"></block>使用維護模式</block>
+  <block id="fc88043c6bcea979f4c345ea569ecba8" category="paragraph">根據現有或新的擴充架的數量，主頁上可能出現的訊息範例：</block>
+  <block id="9e71171ece37d79d6a9ea0b46f4f2e83" category="list-text">頁面頂部顯示的橫幅指示偵測到的擴充架總數。</block>
+  <block id="287d3c085da3b5779cf076e1815c7217" category="list-text">頁面底部的消息表明擴展已準備好開始。</block>
+  <block id="d927c8996626c51de70a8dfc5704162b" category="paragraph">重新啟動完成後，將顯示「*任務*」選項卡，其中顯示重新啟動節點或將裝置置於維護模式的選項。</block>
+  <block id="8eca4ebb793a1236eac6e1dd47dd0f10" category="section-title">[[poweron]]開啟 SG6000-CN 控制器並驗證操作</block>
+  <block id="eb147bbc308036fe81fabc831fb029ad" category="summary">SG6000-CN 運算控制器有八個冷卻風扇。如果其中一個風扇發生故障，則必須盡快更換它以確保控制器正常冷卻。</block>
+  <block id="c27db0c89dbd2f09176329a7fcf1645b" category="doc">更換 SG6000-CN 計算控制器中的風扇</block>
+  <block id="58e9871c73652215d8793286f86ac1fb" category="paragraph">更換風扇時，儲存節點將無法存取。</block>
+  <block id="e7a2bf1d05b1975e8efb0afe9d894d7c" category="paragraph">照片展示了 SG6000-CN 計算控制器的風扇。取下控制器的頂蓋後即可看到冷卻風扇。</block>
+  <block id="e3adab8693ad6718b75f011019d81021" category="inline-link-macro">關閉 SG6000-CN 控制器</block>
+  <block id="f18ad71e7bc41bfd9820a24769c81f45" category="list-text"><block ref="de621e9e43a5cbee2ab858b1b01c1dd5" category="inline-link-macro-rx"></block> 。</block>
+  <block id="4f2a14752c431d2be7bed888d2348499" category="inline-link-macro">開啟 SG6000-CN 控制器的電源</block>
+  <block id="9a6dfa814e1fbd601165e5cabcc590e6" category="list-text"><block ref="1a4c391eba2f8df3a361e5ddcc9c0f45" category="inline-link-macro-rx"></block> 。</block>
+  <block id="138c06581aceef985ba7ca7ca2bd2b34" category="doc">裝置重新啟動期間自動升級 SG6000 磁碟機韌體</block>
+  <block id="f8d58678ae6fba4539d4eadcf0f8e742" category="list-text">在<block ref="304d1b4330ceea4e3f283a17b032b6aa" category="inline-link-macro-rx"></block>使用維護模式</block>
+  <block id="9cf8090236a8cb34d7589adfe37ffa49" category="list-text">如果您在此過程中將設備置於維護模式，請退出維護模式並等待節點重新啟動並重新加入電網。此過程可能需要長達 20 分鐘。若要確認重啟已完成且節點已重新加入網格：</block>
+  <block id="0bc848cf28aa5774c4025f8f6506c9ab" category="paragraph">若要防止服務中斷，請在開始更換網路介面卡 (NIC) 之前確認所有其他儲存節點都已連線至電網，或在可以接受服務中斷時間的計畫維護時段內更換 NIC。查看有關<block ref="9d975a939bfa99d9fb2558b4051f724b" category="inline-link-rx"></block>。</block>
+  <block id="d4dff92c01453825dc12c1a566e1b252" category="inline-link-macro">從機櫃或機架移除故障控制器</block>
+  <block id="66375ea801d8da7c3deebb6cf791a047" category="list-text"><block ref="40702ecd126ba9bd33757ca9b517f379" category="inline-link-macro-rx"></block> 。</block>
+  <block id="15fcb03cb9cb3bbbe8be0b20b19b8c06" category="list-text">請注意故障控制器中可更換組件（兩個電源、三個 NIC 和兩個 SSD）的位置。</block>
+  <block id="46dded0d12f997e003755d98d2f75370" category="list-text">將可更換的組件轉移到更換控制器。</block>
+  <block id="f125c6ac1a78aa0ff5a24318371dd330" category="admonition">如果要保留磁碟機上的數據，請將 SSD 磁碟機插入故障裝置中佔用的相同磁碟機插槽。如果不這樣做，設備安裝程式將顯示警告，您必須將驅動器放入正確的插槽並重新啟動控制器，然後控制器才能重新加入電網。</block>
+  <block id="c69b34106fdf1b72fec034e3baa1c99d" category="inline-link-macro">將替換控制器安裝到機櫃或機架中</block>
+  <block id="8fce7c0144a940f37356de4b05f9ac03" category="list-text"><block ref="20c889cb497b19c6d78c457067272345" category="inline-link-macro-rx"></block> 。</block>
+  <block id="8ac73f13e2902ea7b6ebc3206cf4e576" category="doc">裝置重新啟動期間自動升級 SG6160 磁碟機韌體</block>
+  <block id="a53555787eb9101bec73830602e0bb62" category="list-text">在<block ref="b3a7463520c62d140f81699021ea94dc" category="inline-link-macro-rx"></block>使用維護模式</block>
+  <block id="b7daca44acbdce2ad9adb9ec5b318f4b" category="inline-link">StorageGRID 12.0 文檔</block>
+  <block id="9dfc67a67b34935b9d51d04e94d0bd2f" category="paragraph">前往<block ref="b9e47dcffd0e3534b2aa2e23c80b77c4" category="inline-link-rx"></block>了解如何設定和使用StorageGRID 12.0 系統。</block>
+  <block id="63e3b64d9d602e40bbccab8712d1918a" category="list-text"><block ref="63e3b64d9d602e40bbccab8712d1918a" category="inline-link-rx"></block></block>
+  <block id="4acae57d3119f0b81d2bfd14c9585f13" category="doc">StorageGRID解決方案和資源</block>
+  <block id="7a4f669ff4b9f9df5860c2049386e61b" category="paragraph">前往<block ref="f382e11c205630073ea43ce3c4862094" category="inline-link-rx"></block>了解如何在StorageGRID環境中測試和啟用應用程式。</block>
+  <block id="ab1a62ba7061547a3e40c2c2e68d2227" category="paragraph">* StorageGRID解決方案和資源* 提供了擴展此網站中的產品文件的範例和手冊，並描述了評估和整合StorageGRID 的一些後續步驟。</block>
+  <block id="c88bd810bd23be56afce3a210193ca53" category="doc">StorageGRID設備的新功能</block>
+  <block id="9e7ff586eaf3e125b3e99adb4feab378" category="paragraph">了解StorageGRID設備的新功能。</block>
+  <block id="9cb2effa5447f497640162f9043211b9" category="section-title">用戶端網路無需 IP 位址即可配置</block>
+  <block id="9b21fb91c113bca08c0dafc981fbde3c" category="paragraph">現在您可以啟用客戶端網路而無需指定 IP 位址。這允許客戶端網路在StorageGRID中配置 VLAN 接口，而無需為接口本身提供額外的 IP 位址。請參閱<block ref="eed0824756b778339518fbc737f79ca8" category="inline-link-macro-rx"></block> 。</block>
+  <block id="35fbd63802091eabd711a8d6c290ea7e" category="section-title">StorageGRID軟體和 Appliance Installer 的版本號碼已對齊</block>
+  <block id="07df4015289344b98ba5f422f4375357" category="paragraph">對於 StorgeGRID 版本 12.0， StorageGRID Appliance Installer 的版本號碼與StorageGRID軟體的版本相符。使用者不再需要弄清楚哪些版本可以一起使用。請參閱<block ref="d2475d6316f915c8f13cbc6042a2740a" category="inline-link-macro-rx"></block> 。</block>
+  <block id="cc40ed7be5c299ae5a8b275911b0f977" category="paragraph">有關使用StorageGRID設備BMC介面的詳細資訊現已提供。請參閱<block ref="df528c7928eba5c1226970c2705dfb3a" category="inline-link-macro-rx"></block> 。</block>
+  <block id="9ec0b5d75f31e1b17949c51f840f6c80" category="paragraph">StorageGRID SG5812 和 SG5860 設備是整合式儲存和運算平台，可作為StorageGRID網格中的儲存節點運作。請參閱<block ref="2a413e9ad740d8bf3ae3102a4c99aa8a" category="inline-link-macro-rx"></block>了解更多。</block>
+  <block id="3429de8e072434c40c803b51121fb59b" category="paragraph">新的StorageGRID SG6160 設備包括一個運算控制器和一個儲存控制器架，其中包含兩個儲存控制器和 60 個驅動器，以及兩個用於快取的 NVMe SSD 驅動器。可選地，可以為 SG6160 添加 60 個驅動器擴充架。參考<block ref="476efecdba735494e72d7970bc2f3e26" category="inline-link-macro-rx"></block>了解更多。</block>
+  <block id="bd93fd0e5db12dc754488c18420fcc3c" category="paragraph">新的StorageGRID SG110 和 SG1100 服務設備是革命性的硬體更新，可提供改進的管理和負載平衡效能。請參閱<block ref="3c058555c619096548fbed1bbe78e3c7" category="inline-link-macro-rx"></block> 。</block>
+  <block id="7fb4dbe99c9c5f63516376b6bf611317" category="sidebar">StorageGRID 12.0 文檔</block>
+  <block id="ca92eb1bedb20765e52302f985f5f837" category="sidebar">升級驅動器韌體（自動重新啟動方式）</block>
+  <block id="1bd7abdd556a1cf4b4d3341a4ea95b3e" category="sidebar">更換控制器風扇</block>
+  <block id="52b906a48c564a22264dc19facc06b5d" category="sidebar">升級驅動器韌體（SG6160 - 自動重新啟動方法）</block>
+  <block id="04c4beb65cd6013f9bac11bc3ee2bca7" category="sidebar">升級驅動器韌體（SG6160 - 線上方法）</block>
+  <block id="70fba296ba62ee4d473786bd6883acb4" category="sidebar">升級驅動器韌體（SG6160 - 離線方法）</block>
+  <block id="300f58a1bb7a05b81cd9e59e9ae0357f" category="sidebar">更換蓋子（SGF6112 或 SG6100-CN）</block>
+  <block id="47e8540e588799fbf73ee95e5009399d" category="sidebar">更換電源供應器（SGF6112或SG6100-CN）</block>
+  <block id="08449fbad70560f6925381eb5824dd6f" category="sidebar">更換內部網路卡（SGF6112 或 SG6100-CN）</block>
+  <block id="d30a6df627941d8e46bc54dda8cb0adf" category="sidebar">更換外部網卡（SG6100-CN）</block>
+  <block id="92af570f070d33d5248fe4a8b9cf66b5" category="sidebar">更換儲存控制器架（SG6160）中的電池</block>
+  <block id="13f699c390fa92482fbb1b15d0e705b4" category="sidebar">更換 CMOS 電池（SGF6112 或 SG6100-CN）</block>
+  <block id="c55b834e11341e1ae1654b547833e156" category="sidebar">升級驅動器韌體</block>
+  <block id="bb16bf046b2fd7560a2b14a7f9ad9e54" category="sidebar">升級驅動器韌體（SG6160）</block>
+  <block id="9ed61dec5a7f3f16d6a5d3a265f76321" category="sidebar">使用SANtricity System Manager 線上方法升級 SG6160 磁碟機韌體</block>
+  <block id="883368f2f68b2c26ebcfb31f09f529d5" category="sidebar">使用SANtricity System Manager 離線方法升級 SG6160 磁碟機韌體</block>
+  <block id="58abe205d3265bf2555ee7c37bee89cb" category="sidebar">內部網路卡（SGF6112 或 SG6100-CN）</block>
+  <block id="b883da35aa37ea53f8afe4d94c8d01ee" category="sidebar">外部網路卡 (SG6100-CN)</block>
 </blocks>

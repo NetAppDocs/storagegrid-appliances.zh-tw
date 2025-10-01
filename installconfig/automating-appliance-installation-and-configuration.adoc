@@ -24,6 +24,7 @@ summary: 自動化安裝與組態可用於部署多StorageGRID 個版本的不�
 ** 連接埠連結模式
 ** 網路連結模式
 ** 連結速度
+** LACP傳輸雜湊策略和PDU速率
 
 
 
@@ -81,16 +82,13 @@ NOTE: 您可以StorageGRID 直接使用自動化Python指令碼、也可以將�
 
 .步驟
 . 在 StorageGRID 應用裝置安裝程式中、選取 * 進階 * > * 更新應用裝置組態 * 。此時會出現「更新設備組態」頁面。
-. 瀏覽並選擇含有您要上傳之組態的 JSON 檔案。
+. 在「上傳 JSON」部分中，瀏覽並選擇要上傳的 JSON 設定檔。
 +
 檔案已上傳並驗證。驗證程序完成時、檔案名稱會顯示在綠色核取符號旁。
 
 +
 
 NOTE: 如果 JSON 檔案的組態包含的節、您可能會失去與應用裝置的連線 `link_config`、 `networks`或兩者。如果您在 1 分鐘內未重新連線、請使用指派給應用裝置的其他 IP 位址之一重新輸入應用裝置 URL 。
-
-+
-image::../media/update_appliance_configuration_valid_json.png[已上傳更新應用裝置組態Json]
 
 +
 「*節點名稱*」下拉式清單會填入Json檔案中定義的頂層節點名稱。

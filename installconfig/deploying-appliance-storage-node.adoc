@@ -17,6 +17,10 @@ summary: 安裝及設定儲存應用裝置之後、您可以將其部署為Stora
 * 如果您要複製應用裝置節點、請繼續執行 link:../commonhardware/appliance-node-cloning-procedure.html["應用裝置節點複製"] 流程。
 * 設備已安裝在機架或機櫃中、並已連接至您的網路、並已開啟電源。
 * 網路連結、IP位址和連接埠重新對應（如有必要）已使用StorageGRID 《應用程式安裝程式》為應用裝置設定。
++
+
+NOTE: 對連接埠重新映射的支援已棄用，並將在未來的版本中刪除。若要刪除重新映射的端口，請參閱 https://docs.netapp.com/us-en/storagegrid/maintain/removing-port-remaps.html["刪除StorageGRID設備上的連接埠重新映射"^]。
+
 * 您知道指派給應用裝置運算控制器的其中一個IP位址。您可以將IP位址用於任何附加StorageGRID 的靜態網路。
 * 已部署適用於此系統的主要管理節點StorageGRID 。
 * 列出在《IP組態》頁面StorageGRID 上的所有Grid Network子網路、均已在主要管理節點的Grid Network Subnet List（網格網路子網路清單）中定義。
@@ -57,7 +61,7 @@ NOTE: 中繼資料 - 只能在應用裝置部署期間選取。如果選取中�
 
 . 在 * 節點名稱 * 欄位中、提供您要用於此應用裝置節點的系統名稱、然後按一下 * 儲存 * 。
 +
-此處顯示的名稱將是應用裝置節點的系統名稱。內部 StorageGRID 作業需要系統名稱、因此無法變更。
+此處顯示的名稱將是設備節點的系統名稱。系統名稱是內部StorageGRID操作所必需的，並且不能更改。若要變更設備節點的顯示名稱，請參閱 https://docs.netapp.com/us-en/storagegrid/maintain/rename-grid-site-node.html#how-to-rename-grid-sites-or-nodes["如何重新命名網格、網站或節點"^]。
 
 . 在「*主要管理節點連線*」區段中、判斷您是否需要指定主要管理節點的IP位址。
 +

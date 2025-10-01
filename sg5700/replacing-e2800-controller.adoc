@@ -375,16 +375,15 @@ NOTE: 將IP位址指派給更換控制器的步驟取決於您是否將管理連
 
 . 如果設備使用安全磁碟機、請依照E2800控制器更換程序中的指示、匯入磁碟機安全金鑰。
 . 讓產品恢復正常運作模式。從「the Some Appliance Installer」StorageGRID 選取「*進階*>*重新開機控制器*」、然後選取「*重新開機至StorageGRID *」。
-+
-image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
-
 . 在重新開機期間、監控節點的狀態、以判斷節點何時重新加入網格。
 +
 應用裝置會重新開機並重新加入網格。此程序最多可能需要20分鐘。
 
-. 確認重新開機已完成、且節點已重新加入網格。在 Grid Manager 中，確認「節點」頁面顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號圖示image:../media/icon_alert_green_checkmark.png["綠色核取記號"]），表示沒有作用中警示，且節點已連線至網格。
+. 確認重啟已完成且節點已重新加入網格：
 +
-image::../media/nodes_menu.png[應用裝置節點重新加入網格]
+.. 在網格管理器中，選擇*NODES*。
+.. 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
+
 
 . 從「支援系統管理程式」中、確認新的控制器是最佳的、並收集支援資料。SANtricity
 

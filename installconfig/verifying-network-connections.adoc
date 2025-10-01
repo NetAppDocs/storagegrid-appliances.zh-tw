@@ -18,9 +18,6 @@ summary: 您應該確認是否可以從StorageGRID 應用裝置存取所使用�
 +
 Ping和MTU Test（Ping和MTU測試）頁面隨即出現。
 
-+
-image::../media/ping_test_start.png[以擷取畫面擷取StorageGRID 畫面顯示的Ping應用程式和MTU測試選項]
-
 . 從*網路*下拉式方塊中、選取您要測試的網路：網格、管理或用戶端。
 . 輸入該網路上主機的IPV4位址或完整網域名稱（FQDN）。
 +
@@ -33,9 +30,6 @@ image::../media/ping_test_start.png[以擷取畫面擷取StorageGRID 畫面顯�
 . 按一下「*測試連線能力*」。
 +
 如果網路連線有效、會出現「Ping test passed」（Ping測試通過）訊息、並列出ping命令輸出。
-
-+
-image::../media/ping_test_passed.png[StorageGRID 應用裝置安裝程式中的 Ping 測試結果螢幕擷取畫面]
 
 
 

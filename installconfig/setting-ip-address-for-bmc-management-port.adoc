@@ -78,21 +78,15 @@ NOTE: 您只能將此連接埠連接至安全、值得信賴的內部管理網�
 
 . 選擇*設定硬體*>* BMC組態*。
 +
-image::../media/bmc_configuration_page.gif[顯示「進階」>「BMC組態」選項的快照]
-
-+
 出現「Baseboard Management Controller Configuration（基礎板管理控制器組態）」
 
-. 記下自動顯示的IPV4位址。
+. 在 LAN IP 設定中，記下自動顯示的 IPv4 位址。
 +
 DHCP是指派IP位址給此連接埠的預設方法。
 
 +
 
 NOTE: 可能需要幾分鐘時間才能顯示DHCP值。
-
-+
-image::../media/bmc_configuration_dhcp_address.gif[顯示DHCP位址的「底層管理控制器組態」頁面]
 
 . （可選）設置BMC管理端口的靜態IP地址。
 +
@@ -103,9 +97,6 @@ NOTE: 您應該為BMC管理連接埠指派靜態IP、或為DHCP伺服器上的�
 .. 選擇* Static *（靜態*）。
 .. 輸入使用CIDR表示法的IPV4位址。
 .. 輸入預設閘道。
-+
-image::../media/bmc_configuration_static_ip.gif[基礎板管理控制器組態靜態選項]
-
 .. 按一下「 * 儲存 * 」。
 +
 您可能需要幾分鐘的時間才能套用變更。

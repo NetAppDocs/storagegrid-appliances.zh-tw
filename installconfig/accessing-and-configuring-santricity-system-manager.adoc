@@ -121,7 +121,7 @@ image::../media/sam_home_page.gif[《系統管理程式》首頁的螢幕擷取�
 --
 .SG6060
 --
-對於 SG6060 儲存設備、只有在安裝儲存設備之前已設定金鑰管理、才能在 SSD 磁碟機上自動啟用磁碟機安全性。
+對於 SG6060 儲存設備，只有在安裝儲存設備之前配置了金鑰管理，才能在 SSD 驅動器上自動啟用驅動器安全性。
 
 .. 為您的儲存陣列配備支援安全功能的磁碟機（ FDE 磁碟機或 FIPS 磁碟機）。
 +
@@ -130,7 +130,7 @@ image::../media/sam_home_page.gif[《系統管理程式》首頁的螢幕擷取�
 *** FDE 磁碟機無法新增至或用作 All FIPS Volume 群組或集區中的備援磁碟機。
 
 
-.. 對於 E4000 控制器機櫃、請建立安全金鑰（控制器和磁碟機共用的一串字元、用於讀寫存取）。
+.. 對於 E2800 控制器架，建立一個安全金鑰（控制器和磁碟機共用的用於讀寫存取的一串字串）。
 +
 *** 您可以 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/create-internal-security-key.html["建立內部金鑰"^]從控制器的持續記憶體或使用金鑰管理伺服器所提供的外部金鑰。
 *** 若要使用金鑰管理伺服器所提供的外部金鑰、您必須先在 SANtricity 系統管理員中使用 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html["使用金鑰管理伺服器建立驗證"^]。
@@ -250,9 +250,6 @@ DHCP是將IP位址指派給儲存控制器管理連接埠的預設方法。
 
 NOTE: 可能需要幾分鐘時間才能顯示DHCP值。
 
-+
-image::../media/storage_controller_network_config_ipv4.gif[儲存控制器網路組態IPV4]
-
 . 您也可以為儲存控制器管理連接埠設定靜態IP位址。
 +
 
@@ -262,9 +259,6 @@ NOTE: 您應該為管理連接埠指派靜態IP、或為DHCP伺服器上的位�
 .. 選擇* Static *（靜態*）。
 .. 輸入使用CIDR表示法的IPV4位址。
 .. 輸入預設閘道。
-+
-image::../media/storage_controller_ipv4_and_def_gateway.gif[儲存控制器網路組態：IPV4和預設閘道]
-
 .. 按一下「 * 儲存 * 」。
 +
 您可能需要幾分鐘的時間才能套用變更。

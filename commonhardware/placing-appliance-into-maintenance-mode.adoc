@@ -48,18 +48,14 @@ image::../media/maintenance_mode_urls.png[維護模式URL]
 NOTE: 如果您與應用裝置的管理連接埠有直接連線、請使用 `+https://169.254.0.1:8443+` 存取 StorageGRID 應用裝置安裝程式頁面。
 
 . 從《支援產品安裝程式（the不支援產品）：確認產品處於維護模式。StorageGRID
-+
-image::../media/maintenance_mode_notification_bar.png[維護模式訊息]
-
 . 執行任何必要的維護工作。
 . 完成維護工作之後、請結束維護模式並恢復正常節點作業。從「the Some Appliance Installer」StorageGRID 選取「*進階*>*重新開機控制器*」、然後選取「*重新開機至StorageGRID *」。
 +
-image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
+設備重新啟動並重新加入電網最多可能需要 20 分鐘。若要確認重啟已完成且節點已重新加入網格：
 
 +
-裝置重新開機和重新加入網格可能需要20分鐘的時間。若要確認重新開機已完成、且節點已重新加入網格、請返回Grid Manager。「 * 節點 * 」頁面應顯示應用裝置節點的正常狀態（節點名稱左側的綠色勾號圖示image:../media/icon_alert_green_checkmark.png["綠色核取記號"]），表示沒有作用中警示，且節點已連線至網格。
+.. 在網格管理器中，選擇*NODES*。
+.. 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 
-+
-image::../media/nodes_menu.png[節點頁面正常狀態]
 
 

@@ -552,7 +552,6 @@ image::../media/sg6000_cn_bonded_managemente_ports.png[1-GbE連接埠]
 .相關資訊
 * link:../installconfig/hardware-description-sg6000.html#sg6000-controllers["SG6000 控制器"]
 * link:../installconfig/reviewing-appliance-network-connections.html["判斷應用裝置網路連線"]
-* link:../installconfig/gathering-installation-information-sg6000.html#port-bond-modes["連接埠連結模式（ SG6000-CN 控制器）"]
 * link:cabling-appliance.html["纜線應用裝置"]
 * link:../installconfig/setting-ip-configuration.html["設定StorageGRID 靜態IP位址"]
 
