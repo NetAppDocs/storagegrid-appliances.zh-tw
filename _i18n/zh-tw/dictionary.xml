@@ -4685,7 +4685,6 @@
   <block id="023a03630e96cd25b69d134411531e8c" category="paragraph">SG6100-CN 運算控制器的電源供應器（第 1 / 2 ）</block>
   <block id="471615f4f3a518f7bbbe1d1ef8f319de" category="paragraph">SG6100-CN 運算控制器的連接器</block>
   <block id="cc53c11094cddf3f51bd4537e9e7158b" category="paragraph">E4000 控制器機櫃的風扇（第 1 / 2 ）</block>
-  <block id="e5a8c894ca52500bc6bcb77e429cb813" category="paragraph">E 系列 E400 儲存控制器（圖 1 ）和連接器</block>
   <block id="8e6dd71ab1d82f641fffaf74f1a6f6b8" category="paragraph">E4000 控制器機櫃的電源供應器（第 1 / 2 ）</block>
   <block id="7f515b7b271e2f2650ab9205041ae23a" category="section-title">SG6100 控制器</block>
   <block id="e095a9ee88152254e105acb911c6ddc3" category="section-title">SG6100-CN 運算控制器</block>
@@ -5808,4 +5807,5 @@
   <block id="883368f2f68b2c26ebcfb31f09f529d5" category="sidebar">使用SANtricity System Manager 離線方法升級 SG6160 磁碟機韌體</block>
   <block id="58abe205d3265bf2555ee7c37bee89cb" category="sidebar">內部網路卡（SGF6112 或 SG6100-CN）</block>
   <block id="b883da35aa37ea53f8afe4d94c8d01ee" category="sidebar">外部網路卡 (SG6100-CN)</block>
+  <block id="45d6f533deefe293ac89312b73991e3c" category="paragraph">E系列E4000儲存控制器（1/2）及連接器</block>
 </blocks>
