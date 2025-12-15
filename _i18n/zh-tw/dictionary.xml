@@ -5808,4 +5808,11 @@
   <block id="58abe205d3265bf2555ee7c37bee89cb" category="sidebar">內部網路卡（SGF6112 或 SG6100-CN）</block>
   <block id="b883da35aa37ea53f8afe4d94c8d01ee" category="sidebar">外部網路卡 (SG6100-CN)</block>
   <block id="45d6f533deefe293ac89312b73991e3c" category="paragraph">E系列E4000儲存控制器（1/2）及連接器</block>
+  <block id="d66dc455f8396fdf0a25675ee37c3850" category="paragraph"><block ref="d66dc455f8396fdf0a25675ee37c3850" category="inline-link-macro-rx"></block></block>
+  <block id="c0d04b56c858cb378ce2f78658d31e47" category="paragraph"><block ref="c0d04b56c858cb378ce2f78658d31e47" category="inline-link-macro-rx"></block></block>
+  <block id="e89d5647eeef5607c80ed881e7f2a688" category="paragraph"><block ref="e89d5647eeef5607c80ed881e7f2a688" category="inline-link-macro-rx"></block></block>
+  <block id="33722e85f36a5c0937ae34b929f815cc" category="paragraph"><block ref="33722e85f36a5c0937ae34b929f815cc" category="inline-link-macro-rx"></block></block>
+  <block id="563b1774437ac478e7c976ac7144d4ba" category="paragraph"><block ref="563b1774437ac478e7c976ac7144d4ba" category="inline-link-macro-rx"></block></block>
+  <block id="ecd831cf9ca8bc83bd1bbdbfa1f4f693" category="paragraph"><block ref="ecd831cf9ca8bc83bd1bbdbfa1f4f693" category="inline-link-macro-rx"></block></block>
+  <block id="25c6e9b66962fe13c106a3caf7544197" category="list-text">每個擴充架配有擴充櫃和四條 SAS 纜線。</block>
 </blocks>

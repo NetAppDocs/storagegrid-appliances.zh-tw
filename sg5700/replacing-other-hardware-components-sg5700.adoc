@@ -35,14 +35,14 @@ summary: 您可能需要更換StorageGRID 處理器內的控制器電池、磁�
  a| 
 磁碟機
  a| 
-更換E2800 12磁碟機或24磁碟機櫃中的磁碟機
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-12-24-supertask-task.html["更換E2800 12磁碟機或24磁碟機櫃中的磁碟機"^]
 
 
 
  a| 
 電力風扇容器
  a| 
-更換E2800機櫃中的電源風扇機箱
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-fan-supertask-task.html["更換E2800機櫃中的電源風扇機箱"^]
 
 |===
 
@@ -57,27 +57,27 @@ summary: 您可能需要更換StorageGRID 處理器內的控制器電池、磁�
  a| 
 磁碟機
  a| 
-更換E2860磁碟櫃中的磁碟機
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-12-24-supertask-task.html["更換E2860磁碟櫃中的磁碟機"^]
 
 
 
  a| 
 電力箱
  a| 
-更換E2860磁碟櫃中的電力箱
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-60-replace-power-task.html["更換E2860磁碟櫃中的電力箱"^]
 
 
 
  a| 
 風扇容器
  a| 
-更換E2860磁碟櫃中的風扇容器
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-fan-supertask-task.html["更換E2860磁碟櫃中的風扇容器"^]
 
 
 
  a| 
 磁碟機抽屜
  a| 
-更換E2860磁碟櫃中的磁碟機匣
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-60-supertask-task.html["更換E2860磁碟櫃中的磁碟機匣"^]
 
 |===
