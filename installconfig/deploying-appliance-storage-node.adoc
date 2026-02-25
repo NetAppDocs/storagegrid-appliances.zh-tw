@@ -119,3 +119,6 @@ NOTE: 如果您需要手動存取「監視器安裝」頁面、請按一下「*�
 NOTE: 如果您需要一次部署多個應用裝置儲存節點、可以使用下列連結來自動化安裝程序： ../installconfig/unially-applie-install-install-configuration.html#unially-with -configure-Sga-py-script[`configure-sga.py` 應用裝置安裝指令碼 ] 。
 
 
+
+.接下來呢？
+了解 link:https://docs.netapp.com/us-en/storagegrid/swnodes/navigating-to-grid-manager.html["配置網格並完成安裝"^] 和 link:monitoring-appliance-installation.html["監控設備安裝"]。

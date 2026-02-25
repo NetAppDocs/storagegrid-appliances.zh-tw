@@ -184,3 +184,6 @@ NOTE: 如果您需要手動存取「監視器安裝」頁面、請從功能表�
 
 . 如果網格包含多個應用裝置節點、請針對每個應用裝置重複上述步驟。
 
+
+.接下來呢？
+了解 link:https://docs.netapp.com/us-en/storagegrid/swnodes/navigating-to-grid-manager.html["配置網格並完成安裝"^] 和 link:monitoring-appliance-installation.html["監控設備安裝"]。

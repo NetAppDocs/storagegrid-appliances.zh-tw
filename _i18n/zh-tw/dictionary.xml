@@ -5163,7 +5163,6 @@
   <block id="66db453d1fbfd54c6cd6227309339cf6" category="sidebar">維護組態程序 - SG5800</block>
   <block id="998790f9ab6f4b8c9d5c5f4b8fe9fb04" category="sidebar">使用 SANtricity System Manager 離線方法升級 SG5800 磁碟機韌體</block>
   <block id="be6a822c7c939a85f260e4c1b126877e" category="sidebar">硬體程序 - SG5800</block>
-  <block id="3a7e137bff919e7eb144afcb96534cd0" category="sidebar">更換 SG5800 控制器</block>
   <block id="7e7251144a00e421936f34a8a2fccbc9" category="sidebar">更換 E4000 控制器</block>
   <block id="d52b6b7bb1340659104ecf27f81d8465" category="sidebar">更換風扇（ SG5860 ）</block>
   <block id="eabb04d32e9b0a5c85136275fc80f072" category="sidebar">更換電源供應器（ SG5812 ）</block>
@@ -5815,4 +5814,36 @@
   <block id="563b1774437ac478e7c976ac7144d4ba" category="paragraph"><block ref="563b1774437ac478e7c976ac7144d4ba" category="inline-link-macro-rx"></block></block>
   <block id="ecd831cf9ca8bc83bd1bbdbfa1f4f693" category="paragraph"><block ref="ecd831cf9ca8bc83bd1bbdbfa1f4f693" category="inline-link-macro-rx"></block></block>
   <block id="25c6e9b66962fe13c106a3caf7544197" category="list-text">每個擴充架配有擴充櫃和四條 SAS 纜線。</block>
+  <block id="bf7a7919e351a1a6c8b89c398faa1328" category="inline-link-macro">配置網格並完成安裝</block>
+  <block id="22989b878271e76ef8bf5b08fad5e7d6" category="inline-link-macro">監控設備安裝</block>
+  <block id="2048d83aeb526b7695d1ff32348540df" category="paragraph">了解 <block ref="7a1653b967287a1946fde1ee086529bd" category="inline-link-macro-rx"></block> 和 <block ref="52503075dfbaade950e111995566ccce" category="inline-link-macro-rx"></block>。</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
+  <block id="bdaa382a9049928db036ba1631c0b174" category="paragraph-title"><block ref="79bf5670869810cb20409fdc24ec5377" category="inline-image-macro-rx" type="image"></block> 配置</block>
+  <block id="dee3a7a685c2c720894ed0f2e07992a3" category="inline-link-macro">配置網格並完成安裝</block>
+  <block id="19d9d1db654f94e3eb6fcc7e6af5321c" category="paragraph">當所有節點都部署完畢後，使用 Grid Manager <block ref="0e3c3da0a4935b39895881a3e1ba1fa6" category="inline-link-macro-rx"></block>。</block>
+  <block id="21d16072e421374602ab88939126fd95" category="summary">您可能需要更換 SG5800 控制器中的 CMOS 電池，以便系統的服務和應用程式能夠進行精確的時間同步並繼續正常運作。</block>
+  <block id="69216d92847d4af52b52771d3c3ae7ae" category="doc">更換 SG5800 控制器中的 CMOS 電池</block>
+  <block id="ef873613d11c9b9b25aaed3ff67cd134" category="paragraph">更換 CMOS 電池時，您將無法存取應用裝置 Storage Node。為避免服務中斷，請在開始更換 CMOS 電池之前確認所有其他 Storage Node 均已連接到網格，或在計劃維護時段期間更換電池（在可接受服務中斷期間）。</block>
+  <block id="18546461d45525827f263fdff9a119e4" category="section-title">步驟 1：關閉 SG5800 控制器</block>
+  <block id="ab997ba06a268869466210f14377a777" category="section-title">步驟 2：從應用裝置中取出控制器</block>
+  <block id="2cf2e55bf4beebbc2bf1d7eb20b6849f" category="admonition">為防止效能下降，請勿扭曲、折疊、擠壓或踩踏纜線。</block>
+  <block id="5fb9af22ffedd74df1492c91f96b8d7a" category="list-text">將控制器模組翻過來，放在平坦穩定的表面上。</block>
+  <block id="7f55eb94cdf1a4b21094c894e466a775" category="list-text">按下控制器模組側面的藍色按鈕打開蓋子，然後向上旋轉蓋子，將其從控制器模組上取下。</block>
+  <block id="f396ab354e7d8d3083cb0440e7c9071f" category="image-alt">打開 SG5800 控制器模組蓋</block>
+  <block id="182e97c3add734b1fd99f0eee3f49103" category="section-title">步驟 3：更換 CMOS 電池</block>
+  <block id="9ea8197531786638801dd649be89466a" category="list-text">找到 CMOS 電池。</block>
+  <block id="c044d37265ebeb1da6ae41687ebe2874" category="image-alt">更換 SG5800 控制器中的 CMOS 電池位置</block>
+  <block id="9c79b200590fdd1b4448109404ae9fa8" category="admonition">您的控制器外觀可能與圖中所示略有不同。但是，CMOS 電池的位置相同。</block>
+  <block id="4d588aa7140258cf33c90bf84373b987" category="list-text">輕輕推動電池並將其從電池座旋轉移開，然後將其從設備中取出。</block>
+  <block id="9e5b0cf96e39c07e340d8e7e3f98141d" category="admonition">從電池座中取出電池時，請注意電池的極性。電池上標有加號，必須正確安裝在電池座中。電池座附近的加號會指示電池的正確安裝方向。</block>
+  <block id="ea4330063aff847ec18a76ddefbeb737" category="list-text">從防靜電運送袋中取出更換電池。</block>
+  <block id="b1288294c924e966dd5f1e52dc50d8fa" category="list-text">找到控制器模組中的空電池座。</block>
+  <block id="3f438088c150922b6b48db4eb6139959" category="list-text">注意 CMOS 電池的極性,然後將電池傾斜一定角度並向下按壓,將其插入電池座。</block>
+  <block id="f03bfb81b0d6ffbb00f9e9e58c111c93" category="list-text">目視檢查電池，確保其完全安裝在電池座中，且極性正確。</block>
+  <block id="9f8a96e46f0e86179108737100c29b9d" category="list-text">重新安裝控制器蓋。</block>
+  <block id="e607ef3b8ec06559c2e929e8f3cdafdc" category="section-title">步驟 4：將控制器重新安裝到應用裝置中</block>
+  <block id="a403d8265c5e6d43e2ea0d96d972952c" category="list-text">將控制器安裝到設備中：</block>
+  <block id="327397f6c0f0348d5802bda44790ddff" category="list-text">將控制器翻轉過來，使可拆卸蓋朝下。</block>
+  <block id="0a984775a796371a39701d3f492a05d3" category="list-text">重新連接電纜。</block>
+  <block id="67e61ec95be7440ca50351a3be0bc2a7" category="sidebar">更換 SG5800 控制器</block>
 </blocks>

@@ -36,6 +36,8 @@ entries:
     url: "/sg5800/replace-controller-5800sg.html"
   - title: 更換 E4000 控制器
     url: "/sg5800/replace-controller-e4000-simplex.html"
+  - title: 更換 CMOS 電池
+    url: "/sg5800/replace-cmos-battery-sg5800.html"
   - title: 更換風扇（ SG5860 ）
     url: "/sg5800/replace-fan-canister.html"
   - title: 更換電源供應器（ SG5812 ）
