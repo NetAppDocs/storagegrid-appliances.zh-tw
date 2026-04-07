@@ -119,7 +119,7 @@ NOTE: 服務筆記型電腦連線可能在安裝程序的某些階段無法使�
 . 確認應用裝置節點出現在Grid Manager中、且未顯示任何警示。
 
 
-更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。
 
 .相關資訊
 * link:../installconfig/sg6000-cn-installing-into-cabinet-or-rack.html["將 SG6000-CN 安裝到機櫃或機架中"]

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, storage node, storage appliance, Replacing, replace, sg6100-cn, controller, remove, removing, removal, install, installing, installation 
 summary: 如果 SG6100-CN 控制器無法以最佳方式運作或發生故障、您可能需要更換該控制器。 
 ---
-= 更換 SG6100-cn 控制器
+= 更換 SG6100-CN 控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -136,4 +136,4 @@ CAUTION: 如果要保留磁碟機上的數據，請將 SSD 磁碟機插入故障
 . 確認應用裝置節點出現在Grid Manager中、且未顯示任何警示。
 
 
-更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。

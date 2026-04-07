@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 更換 E4000 磁碟機之前、請先檢閱需求與考量事項。 
 ---
-= 更換 SG5800 磁碟機總覽
+= SG5800 磁碟機更換要求
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace 60-drive power canister, replacing E4000 power canister, E4000, E-Series, eseries 
 summary: 更換60個磁碟機控制器磁碟櫃或磁碟機磁碟櫃、其中包含兩個電源插座以提供電源備援。 
 ---
-= 更換儲存控制器機櫃或擴充機櫃中的電源箱（ SG6160 ）
+= 更換 SG6160 儲存控制器機櫃或擴充機櫃中的電源箱
 :allow-uri-read: 
 :experimental: 
 :icons: font

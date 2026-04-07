@@ -35,7 +35,7 @@ CAUTION: 請勿一次在多個 StorageGRID 應用裝置上升級磁碟機韌體�
 . 使用SANtricity 下列其中一種方法來存取《系統管理程式》：
 +
 ** 使用StorageGRID 《Suse安裝程式》、然後選取*進階*>* SANtricity 《系統管理員*》
-** 使用 Grid Manager 並選擇 * 節點 * > *_Storage Node_* > * SANtricity System Manager*
+** 使用 Grid Manager 並選擇 *Nodes* > *_Storage Node_* > *SANtricity System Manager*
 ** 瀏覽至儲存控制器 IP 以使用 SANtricity 系統管理員：
 +
 `*https://_Storage_Controller_IP_*`

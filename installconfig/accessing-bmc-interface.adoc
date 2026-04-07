@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: BMC, baseboard management controller, access, open, login 
 summary: 您可以使用 DHCP 或靜態 IP 位址、在下列應用裝置機型上存取 BMC 介面：  
 ---
-= 存取BMC介面
+= 存取 StorageGRID 應用裝置上的 BMC 介面
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,10 +15,15 @@ summary: 您可以使用 DHCP 或靜態 IP 位址、在下列應用裝置機型�
 
 * SG100
 * SG110
+* SG120
 * SG1000
 * SG1100
-* SG6000
-* SG6100
+* SG1200
+* SG6060
+* SGF6112
+* SGF6212
+* SG6160
+* SG6260
 
 
 .開始之前
@@ -37,6 +42,11 @@ image::../media/sg100_bmc_management_port.png[SG100 BMC 管理連接埠]
 image::../media/sgf6112_cn_bmc_management_port.png[BMC 管理連接埠 SG110]
 
 --
+.SG120
+--
+image::../media/sg120_bmc_management_port.png[BMC 管理連接埠 SG120]
+
+--
 .SG1000
 --
 image::../media/sg1000_bmc_management_port.png[SG1000 BMC管理連接埠]
@@ -45,6 +55,11 @@ image::../media/sg1000_bmc_management_port.png[SG1000 BMC管理連接埠]
 .SG1100
 --
 image::../media/sg1100_bmc_management_port.png[BMC 管理連接埠 SG1100]
+
+--
+.SG1200
+--
+image::../media/sg1200_bmc_management_port.png[BMC 管理連接埠 SG1200]
 
 --
 .SG6000
@@ -61,6 +76,17 @@ image::../media/sgf6112_cn_bmc_management_port.png[BMC 管理連接埠 SGF6112]
 _SG6100-CN_ ：
 
 image::../media/sg6100_cn_bmc_management_port.png[BMC 管理連接埠 SG610-CN]
+
+--
+.SG6200
+--
+_SGF6212_：
+
+image::../media/sgf6212_bmc_management_port.png[BMC 管理連接埠 SGF6212]
+
+_SG6200-CN_：
+
+image::../media/sg6200_cn_bmc_management_port.png[BMC 管理連接埠 SG6200-CN]
 
 --
 ====
@@ -85,9 +111,6 @@ NOTE: 如果您尚未設定 `BMC_Port_IP`、請依照中的指示進行 link:con
 NOTE: 預設使用者取決於您何時安裝 StorageGRID 應用裝置。新安裝的預設使用者為 * 管理 * 、舊版安裝的預設使用者為 * 根目錄 * 。
 
 . 選取*登入*。
-+
-image::../media/bmc_dashboard.gif[BMC儀表板]
-
 . 或者、選取*設定*>*使用者管理*、然後按一下任何「停用」使用者、即可建立其他使用者。
 +
 

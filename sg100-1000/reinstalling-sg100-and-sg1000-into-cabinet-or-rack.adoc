@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, appliance, install, installing, installation, cabinet, rack, controller, remove, removing, removal 
 summary: 將 SG100 或 SG1000 從機櫃或機架上取下、即可拆下機箱頂蓋、或將產品移至其他位置、然後在硬體維護完成時、將產品重新裝入機櫃或機架。 
 ---
-= 將 SG100 或 SG1000 重新放置在機櫃或機架中
+= 將 SG100 或 SG1000 在機櫃或機架中重新定位
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -51,7 +51,7 @@ image::../media/sg6060_rack_retaining_screws.png[SG6060機架固定螺絲]
 . 選用：如果您要從機櫃或機架中完全移除產品、請遵循軌道套件的指示、將產品從軌道中移除。
 
 
-更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。
 
 
 

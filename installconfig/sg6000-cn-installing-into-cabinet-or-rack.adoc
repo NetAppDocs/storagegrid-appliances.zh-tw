@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, sg6000-cn, rail, rails 
 summary: 您可以在機櫃或機架中安裝一組 SG6000-CN 控制器的滑軌、然後將控制器滑到滑軌上。 
 ---
-= 安裝 SG6000-CN 控制器（ SG6060 和 SG6024 ）
+= 為 SG6060 和 SG6024 安裝 SG6000-CN 控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

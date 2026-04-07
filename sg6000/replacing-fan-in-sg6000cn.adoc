@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000-cn, storage node, storage appliance, replacing, replace, fan, remove, removing, removal, install, installing, installation 
 summary: SG6000-CN 運算控制器有八個冷卻風扇。如果其中一個風扇發生故障，則必須盡快更換它以確保控制器正常冷卻。 
 ---
-= 更換 SG6000-CN 計算控制器中的風扇
+= 更換 SG6000-CN 運算控制器中的風扇
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -56,4 +56,4 @@ image::../media/fan_connector_check.png[風扇連接器檢查]
 . 確認應用裝置節點出現在Grid Manager中、且未顯示任何警示。
 
 
-更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。

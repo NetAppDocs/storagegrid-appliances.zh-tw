@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SNMP, configure, setup, set up 
 summary: 如果您熟悉硬體的 SNMP 設定、可以使用 BMC 介面來設定 SG6100 、 SG6000 和服務應用裝置的 SNMP 設定。您可以提供安全的社群字串、啟用SNMP設陷、以及指定最多五個SNMP目的地。 
 ---
-= 設定 BMC 的 SNMP 設定
+= 為 StorageGRID 應用裝置中的 BMC 設定 SNMP 設定
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,7 +15,7 @@ summary: 如果您熟悉硬體的 SNMP 設定、可以使用 BMC 介面來設定
 
 [role="tabbed-block"]
 ====
-.SG110 、 SG1100 、 SG6100-CN 、 SGF6112
+.SG110、SG120、SG1100、SG1200、SG6100、SG6200
 --
 .開始之前
 * 您知道如何 link:../installconfig/accessing-bmc-interface.html["存取 BMC 儀表板"]。

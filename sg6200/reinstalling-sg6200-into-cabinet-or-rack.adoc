@@ -1,0 +1,84 @@
+---
+permalink: sg6200/reinstalling-sg6200-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6212, sg6200, sg6200cn, storage node, storage appliance, install, installing, installation, cabinet, rack 
+summary: 將 SGF6212 從機櫃或機架中取出，以便存取頂蓋或將應用裝置移至其他位置，硬體維護完成後，再將應用裝置重新安裝到機櫃或機架中。 
+---
+= 將 SGF6212 或 SG6200-CN 重新安置到機櫃或機架中
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+將 SGF6212 或 SG6200-CN 從機櫃或機架中取出，以便存取頂蓋或將應用裝置移至其他位置，硬體維護完成後，再將應用裝置重新安裝到機櫃或機架中。
+
+
+
+== 從機櫃或機架移除 SGF6212 或 SG6200-CN
+
+.開始之前
+* 您有標籤可識別連接至 SGF6212 或 SG6200-CN 的每條纜線。
+* 您有link:locating-sg6200-in-data-center.html["實際找到 SGF6212 或 SG6200-CN 的位置"]在資料中心執行維護作業。
+* 您有 link:power-sg6200-off-on.html#shut-down-the-sgf6212-appliance-or-sg6200-cn-controller["關閉 SGF6212 或 SG6200-CN"]。
++
+
+CAUTION: 請勿使用電源開關關閉產品。
+
+
+
+.步驟
+. 標示產品電源纜線、然後拔下產品電源纜線。
+. 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
+. 標記並拔下應用裝置資料纜線和任何 SFP+ 或 SFP28 收發器。
++
+
+NOTE: 為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或踩踏。
+
+. 鬆開產品前面板上的兩顆緊固螺絲。
++
+image::../media/s25_rack_retaining_screws.png[SGF6212 或 SG6200-CN 機架固定螺絲]
+
+. 將 SGF6212 或 SG6200-CN 向前滑出機架，直到安裝導軌完全伸出，並且聽到兩側的閂鎖發出咔嗒聲。
++
+產品頂蓋可供使用。
+
+. 選用：如果您要從機櫃或機架中完全移除產品、請遵循軌道套件的指示、將產品從軌道中移除。
+
+
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。
+
+
+
+== 將 SGF6212 或 SG6200-CN 重新安裝到機櫃或機架中
+
+.開始之前
+您有link:reinstalling-sg6200-cover.html["已重新安裝設備護蓋"]。
+
+.步驟
+. 按下藍色導軌釋放裝置，即可同時釋放兩個機架導軌，然後將 SGF6212 或 SG6200-CN 滑入機架，直到完全就位。
++
+如果您無法進一步移動控制器、請拉動機箱兩側的藍色閂鎖、將控制器完全滑入。
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[SG6000滑軌]
+
++
+
+NOTE: 在您開啟控制器電源之前、請勿連接前擋板。
+
+. 鎖緊控制器前面板上的緊固螺絲、將控制器固定在機架中。
++
+image::../media/s25_rack_retaining_screws.png[SG6060機架固定螺絲]
+
+. 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
+. link:../installconfig/cabling-appliance.html["重新連接控制器資料纜線以及所有 SFP+、SFP28、QSFP+、QSFP28 或 QSFP56 收發器。"]。
++
+
+NOTE: 為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或踩踏。
+
+. link:../installconfig/connecting-power-cords-and-applying-power.html["重新連接控制器電源線"]。
+
+
+.完成後
+link:power-sg6200-off-on.html#power-on-sgf6212-or-sg6200-cn-and-verify-operation["重新啟動應用裝置"]。

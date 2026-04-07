@@ -23,6 +23,8 @@ entries:
       url: "/installconfig/gathering-installation-information-sg100-and-sg1000.html"
     - title: SG110 和 SG1100
       url: "/installconfig/gathering-installation-information-sg110-and-sg1100.html"
+    - title: SG120 和 SG1200
+      url: "/installconfig/gathering-installation-information-sg120-and-sg1200.html"
     - title: SG5700
       url: "/installconfig/gathering-installation-information-sg5700.html"
     - title: SG5800
@@ -31,6 +33,8 @@ entries:
       url: "/installconfig/gathering-installation-information-sg6000.html"
     - title: SG6100
       url: "/installconfig/gathering-installation-information-sg6100.html"
+    - title: SG6200
+      url: "/installconfig/gathering-installation-information-sg6200.html"
 - title: 自動化應用裝置的安裝與組態
   url: "/installconfig/automating-appliance-installation-and-configuration.html"
 - title: 自動化 StorageGRID 組態
@@ -48,6 +52,8 @@ entries:
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
     - title: SG110 和 SG1100
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html"
+    - title: SG120 和 SG1200
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg120-and-sg1200.html"
     - title: SG5700
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html"
     - title: SG5800
@@ -76,6 +82,17 @@ entries:
         url: "/installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html"
       - title: 安裝 SG6100-CN 控制器（ SG6160 ）
         url: "/installconfig/sg6100-cn-installing-into-cabinet-or-rack.html"
+    - title: SG6200
+      entries:
+      - title: 總覽
+        pdf-filename: 將 SG6200 安裝到機櫃或機架中
+        url: "/installconfig/installing-hardware-sg6200.html"
+      - title: 安裝 60 磁碟機櫃（SG6260）
+        url: "/installconfig/sg6260-installing-60-drive-shelves-into-cabinet-or-rack.html"
+      - title: 安裝 12 磁碟機機櫃（SGF6212）
+        url: "/installconfig/installing-appliance-in-cabinet-or-rack-sgf6212.html"
+      - title: 安裝 SG6200-CN 控制器（SG6260）
+        url: "/installconfig/sg6200-cn-installing-into-cabinet-or-rack.html"
   - title: 纜線應用裝置
     url: "/installconfig/cabling-appliance.html"
   - title: 連接並供電
@@ -100,9 +117,9 @@ entries:
       url: "/installconfig/verifying-network-connections.html"
     - title: 驗證連接埠層級的網路連線
       url: "/installconfig/verifying-port-level-network-connections.html"
-  - title: 設定 SANtricity 系統管理員（ SG5700 、 SG5800 、 SG6000 和 SG6100 ）
+  - title: 設定 SANtricity System Manager
     url: "/installconfig/accessing-and-configuring-santricity-system-manager.html"
-  - title: 設定 BMC 介面（ SG100 、 SG110 、 SG1000 、 SG1100 、 SG6000 、 和 SG6100 ）
+  - title: 設定 BMC 介面
     entries:
     - title: 總覽
       url: "/installconfig/configuring-bmc-interface.html"
@@ -116,11 +133,11 @@ entries:
       url: "/installconfig/configuring-snmp-settings-for-bmc.html"
     - title: 設定電子郵件通知
       url: "/installconfig/setting-up-email-notifications-for-alerts.html"
-  - title: 選用：啟用節點或磁碟機加密
+  - title: 啟用節點或磁碟機加密 （選用）
     url: "/installconfig/optional-enabling-node-encryption.html"
-  - title: 選用：變更 RAID 模式（ SG5760 、 SG5860 、 SG6000 和 SG6160 ）
+  - title: 變更 RAID 模式（選用）
     url: "/installconfig/optional-changing-raid-mode.html"
-  - title: 選用：重新對應網路連接埠
+  - title: 重新映射網路連接埠 （選用）
     url: "/installconfig/optional-remapping-network-ports-for-appliance.html"
 - title: 部署應用裝置節點
   url: "/landing-deploy-appliance/index.html"
@@ -137,7 +154,11 @@ entries:
     url: "/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html"
   - title: 疑難排解安裝（ SG110 和 SG1100 ）
     url: "/installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html"
+  - title: 疑難排解安裝（SG120 和 SG1200）
+    url: "/installconfig/troubleshooting-hardware-installation-sg120-and-sg1200.html"
   - title: 疑難排解安裝（ SG5700 或 SG6000 ）
     url: "/installconfig/troubleshooting-hardware-installation.html"
   - title: 疑難排解安裝（ SG5800 或 SG6100 ）
     url: "/installconfig/troubleshooting-hardware-installation-sg6100.html"
+  - title: 疑難排解安裝 (SG6200)
+    url: "/installconfig/troubleshooting-hardware-installation-sg6200.html"

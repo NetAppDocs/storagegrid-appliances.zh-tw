@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, locate, find, locating, finding, identify, blue led, blue light 
 summary: 控制器正面和背面的藍色識別LED可開啟、以協助在資料中心找到應用裝置。 
 ---
-= 開啟和關閉 SG6000-CN 控制器識別 LED
+= 開啟和關閉 SG6000-CN 控制器的識別 LED 指示燈
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

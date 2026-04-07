@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: unpack, unbox, prepare, inventory, components, contents 
 summary: 安裝StorageGRID 此產品之前、請先打開所有包裝箱的包裝、然後比較包裝單上的物品。 
 ---
-= 打開包裝盒
+= 打開 StorageGRID 應用裝置包裝箱
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -72,6 +72,42 @@ image::../media/rail_kit.gif[軌道套件]
 image::../media/sgf_6112_front_bezel.png[前擋板]
 
 --
+
+
+* * 電源線 *
++
+
+TIP: 您的機櫃可能有特殊的電源線、您可以使用這些電源線、而非產品隨附的電源線。
+
++
+適用於您所在國家 / 地區的兩條電源線::
++
+--
+image::../media/power_cords.gif[電源線]
+
+--
+
+
+
+
+--
+.SG120 和 SG1200
+--
+* *硬體*
++
+SG120 或 SG1200::
++
+--
+image::../media/sg120_front_view.png[前端磁碟機 SG120 和 SG1200 應用裝置]
+
+--
+附說明的軌道套件::
++
+--
+image::../media/rail_kit.gif[軌道套件]
+
+--
+前邊框（圖中未顯示）::
 
 
 * * 電源線 *
@@ -518,6 +554,128 @@ image::../media/rail_kit.gif[軌道套件]
 image::../media/sgf_6112_front_bezel.png[前擋板]
 
 --
+
+
+* * 電源線 *
++
+
+TIP: 您的機櫃可能有特殊的電源線、您可以使用這些電源線、而非產品隨附的電源線。
+
++
+適用於您所在國家 / 地區的兩條電源線::
++
+--
+image::../media/power_cords.gif[電源線]
+
+--
+
+
+
+
+--
+.SG6200
+--
+* *SG6260 硬體*
++
+SG6200-CN 控制器::
++
+--
+image::../media/s25_front_with_ssds.png[SG6200-CN 控制器]
+
+--
+E4000 控制器機櫃、未安裝磁碟機::
++
+--
+image::../media/de460c_table_size.gif[E4000 4U 控制器]
+
+--
+兩個前擋板（圖中未顯示）::
++
+--
+image::../media/rail_kit.gif[軌道套件]
+
+--
+60 個 NL-SAS 磁碟機::
++
+--
+image::../media/sg5760_drive.gif[60 個 NL-SAS 磁碟機]
+
+--
+四個控制點::
++
+--
+image::../media/handles.gif[E4000 控制器]
+
+--
+用於方孔機架安裝的後支架和鎖緊螺帽::
++
+--
+image::../media/back_brackets_table_size.gif[SG5860 的後支架和鎖緊螺帽]
+
+--
+一條 100 GbE 至 4x25GbE 中斷互連纜線::
++
+--
+image::../media/sg6100_4x25gbe_spf28_cable.png[100 GbE 至 4x25GbE 中斷纜線]
+
+--
+適用於您所在國家 / 地區的四條電源線::
++
+--
+image::../media/power_cords.gif[電源線]
+
+--
+
+
+* *SG6260 擴充櫃*
++
+未安裝磁碟機的擴充機櫃::
++
+--
+image::../media/de460c_table_size.gif[E4000 4U 控制器]
+
+--
+前邊框（未顯示）::
++
+--
+image::../media/sg5760_drive.gif[磁碟機]
+
+--
+附說明的一種軌道套件::
++
+--
+image::../media/rail_kit.gif[軌道套件]
+
+--
+四個控制點::
++
+--
+image::../media/handles.gif[E4000 控制器]
+
+--
+用於方孔機架安裝的後支架和鎖緊螺帽::
++
+--
+image::../media/back_brackets_table_size.gif[SG5860 的後支架和鎖緊螺帽]
+
+--
+
+
+* *SGF6212 硬體*
++
+SGF6212::
++
+--
+image::../media/s25_front_with_ssds.png[前置磁碟機 SGF6212 應用裝置]
+
+--
+附說明的軌道套件::
++
+--
+image::../media/rail_kit.gif[軌道套件]
+
+--
+前邊框（未顯示）::
 
 
 * * 電源線 *

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: network connections, network connection, network, connection, connectivity, verify, verifying, check, checking, ports, port, port-level, port level, test, testing, udp, Client Network, Admin Network 
 summary: 為了確保StorageGRID 不受防火牆阻礙、請確認StorageGRID 《不適用》裝置安裝程式可連線至特定IP位址或位址範圍內的特定TCP連接埠或連接埠集。 
 ---
-= 驗證連接埠層級的網路連線
+= 驗證 StorageGRID 應用裝置上的連接埠層級網路連線
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

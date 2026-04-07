@@ -1,0 +1,45 @@
+---
+permalink: sg6200/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6200 storage appliance, SGF6212 storage appliance, maintain, maintaining, hardware, procedures, tasks 
+summary: 您可能需要對您的應用裝置執行維護程序。本節提供維護 sg6200 應用裝置的特定程序。 
+---
+= 維護 SG6200 應用裝置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要對設備進行維護程序。本節包含維護 SG6200 設備的特定程序。
+
+本節中的程序假設應用裝置已部署為StorageGRID 位於整個系統的儲存節點。
+
+* 維護組態程序 * 是使用 Appliance Installer 、 Grid Manager 或 BMC 介面來執行。這些程序包括：
+
+* link:turning-sg6200-identify-led-on-and-off.html["開啟和關閉產品識別 LED"]
+* link:locating-sg6200-in-data-center.html["在資料中心找到應用裝置"]
+* link:power-sg6200-off-on.html["關閉產品電源"]
+* link:changing-link-configuration-of-sg6200-appliance.html["變更應用裝置的連結組態"]
+
+
+*硬體維護程序* 需要對特定的 SGF6212 或 SG6260 元件進行實體操作。
+
+
+
+== 磁碟機韌體升級
+
+每次應用裝置重新開機時，系統會自動檢查 SG6260 中磁碟機的韌體。必要時、韌體會自動升級至目前 StorageGRID 版本所需的版本。通常、韌體升級會在 StorageGRID 軟體升級期間進行。現有 StorageGRID 版本所需的任何磁碟機韌體升級都會包含在 Hotfix 中。請遵循每個 Hotfix 隨附的指示、確保升級套用至所有可從中受益的磁碟機。
+
+此外，SG6260 中的磁碟機可以透過 SANtricity 使用 link:upgrading-drive-firmware-using-santricity-system-manager-online.html["SANtricity System Manager 線上版"] 或 link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["SANtricity System Manager 離線"] 程序進行更新。
+
+
+NOTE: 維護 SGF6212 設備不需要 SANtricity System Manager。
+
+
+
+== 一般維護程序
+
+請參閱 link:../commonhardware/index.html["一般維護程序"] 適用於所有應用裝置的相同程序、例如套用 Hotfix 、還原節點或站台、以及執行網路維護。
+
+請參閱 link:../installconfig/configuring-hardware.html["設定應用裝置硬體"] 應用裝置的維護程序、也可在初始應用裝置安裝和組態期間執行。

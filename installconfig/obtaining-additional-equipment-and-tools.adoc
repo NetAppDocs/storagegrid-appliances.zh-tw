@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: equipment to install appliance, tools for installation 
 summary: 安裝 StorageGRID 應用裝置之前、請確認您擁有所需的所有額外設備和工具。 
 ---
-= 取得其他設備和工具
+= 取得 StorageGRID 應用裝置所需的其他設備和工具
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -83,7 +83,7 @@ NOTE: 某些連接埠可能不支援10/100乙太網路速度。
 *** 10-GbE QSFP-to SFP 介面卡（ QSA ）和 SFP+
 *** 25-GbE QSFP-to SFP 介面卡（ QSA ）和 SFP28
 *** 40-GbE QSFP+
-*** 100-GbE QFSP28
+*** 100-GbE QSFP28
 
 
 
@@ -121,7 +121,46 @@ NOTE: 某些連接埠可能不支援10/100乙太網路速度。
 *** 10-GbE QSFP-to SFP 介面卡（ QSA ）和 SFP+
 *** 25-GbE QSFP-to SFP 介面卡（ QSA ）和 SFP28
 *** 40-GbE QSFP+
-*** 100-GbE QFSP28
+*** 100-GbE QSFP28
+
+
+
+
+
+
+--
+乙太網路纜線:: RJ-45 （ Cat5/Cat5e/Cat6/Cat6a ）
+
+
+--
+.SG120 和 SG1200
+--
+您需要下列額外設備來安裝和設定 SG120 和 SG1200 硬體。
+
+光纖纜線和收發器::
++
+--
+* 纜線、 1 至 4 條：
++
+** 雙軸纜線 / 銅線
+** 光纖 / 光纖
+
+
+* 收發器 / 介面卡、每個介面卡 1 到 4 個、根據連結速度（不支援混合速度）：
++
+** SG120：
++
+*** 10-GbE SFP+
+*** 25-GbE SFP28
+
+
+** SG1200：
++
+*** 10-GbE QSFP-to SFP 介面卡（ QSA ）和 SFP+
+*** 25-GbE QSFP-to SFP 介面卡（ QSA ）和 SFP28
+*** 40-GbE QSFP+
+*** 100-GbE QSFP28
+*** 200-GbE QSFP56（僅限 200GbE NIC）
 
 
 
@@ -211,6 +250,36 @@ NOTE: 某些連接埠可能不支援10/100乙太網路速度。
 ** 10-GbE SFP+
 ** 25-GbE SFP28
 ** 100-GbE QSFP28
+
+
+
+
+--
+乙太網路纜線:: RJ-45 （ Cat5/Cat5e/Cat6/Cat6a ）
+選用工具:: 60個磁碟機櫃的機械式起重
+
+
+--
+.SG6200
+--
+您需要下列額外設備來安裝及設定 SG6100 硬體。
+
+纜線和收發器::
++
+--
+* 纜線、 1 至 4 條：
++
+** 雙軸纜線 / 銅線
+** 光纖 / 光纖
+
+
+* 收發器 / 介面卡、每個介面卡 1 到 8 個、根據連結速度（不支援混合速度）：
++
+** 10-GbE SFP+
+** 25-GbE SFP28
+** 40-GbE QSFP+
+** 100-GbE QSFP28
+** 200-GbE QSFP56（僅限 200 GbE NIC）
 
 
 

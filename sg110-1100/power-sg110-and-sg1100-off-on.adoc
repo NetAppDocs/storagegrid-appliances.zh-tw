@@ -2,9 +2,9 @@
 permalink: sg110-1100/power-sg110-and-sg1100-off-on.html 
 sidebar: sidebar 
 keywords: storagegrid, sg110, sg1100, power off, turn off, shut off, shutdown, shut down, power on, turn on, start 
-summary: 您可以關閉 SGF6112 應用裝置、然後重新開啟電源以執行維護。 
+summary: 您可以關閉 SG110 或 SG1100 應用裝置、然後重新開機以執行維護。 
 ---
-= 關閉和開啟 SG110 或 SG1100 電源
+= SG110 或 SG1100 的電源開關
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

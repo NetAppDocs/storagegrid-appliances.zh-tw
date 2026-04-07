@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: appliance installer, installer, access, accessing, start, starting 
 summary: 您必須存取StorageGRID 《RideseAppliance安裝程式》、以驗證安裝程式版本、並設定應用裝置與StorageGRID 三個「鏈」網路之間的連線：網格網路、管理網路（選用）和用戶端網路（選用）。 
 ---
-= 存取StorageGRID 產品安裝程式
+= 存取 StorageGRID 應用裝置安裝程式
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,6 +13,9 @@ summary: 您必須存取StorageGRID 《RideseAppliance安裝程式》、以驗�
 [role="lead"]
 您必須存取StorageGRID 《RidsAppliance安裝程式》、以驗證安裝程式版本、並設定應用裝置與StorageGRID 三個「Ridworks」（網格網路）、「Admin Network」（管理網路）（選用）和「Client Network」（用戶端網路）（選用）之間的連線。
 
+.關於這項工作
+若要開始存取 StorageGRID 應用裝置安裝程式、您可以在服務應用裝置或儲存設備控制器上、使用 DHCP 指派的管理網路連接埠 IP 位址（假設已連線至管理網路）、 或者、您也可以將服務筆記型電腦直接連接至服務應用裝置或儲存設備控制器。
+
 .開始之前
 * 您正在使用任何可連線StorageGRID 至「管理員網路」的管理用戶端、或是您有一台服務用筆記型電腦。
 * 用戶端或服務型筆記型電腦具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
@@ -20,9 +23,6 @@ summary: 您必須存取StorageGRID 《RideseAppliance安裝程式》、以驗�
 * 您知道這些網路上服務應用裝置或儲存設備控制器的 IP 位址、閘道和子網路。
 * 您已設定要使用的網路交換器。
 
-
-.關於這項工作
-若要開始存取 StorageGRID 應用裝置安裝程式、您可以在服務應用裝置或儲存設備控制器上、使用 DHCP 指派的管理網路連接埠 IP 位址（假設已連線至管理網路）、 或者、您也可以將服務筆記型電腦直接連接至服務應用裝置或儲存設備控制器。
 
 .步驟
 . 如果可能、請使用 DHCP 位址作為服務應用裝置或儲存設備控制器上的管理網路連接埠。管理網路連接埠會在下圖中反白顯示。（如果管理網路未連線、請使用網格網路上的 IP 位址。）
@@ -39,6 +39,11 @@ image::../media/sg100_admin_network_port.png[SG100上的管理網路連接埠]
 image::../media/sg6100_admin_network_port.png[SG110 上的管理網路連接埠]
 
 --
+.SG120
+--
+image::../media/sg120_admin_network_port.png[SG120 上的管理網路連接埠]
+
+--
 .SG1000
 --
 image::../media/sg1000_admin_network_port.png[SG1000 上的管理網路連接埠]
@@ -47,6 +52,11 @@ image::../media/sg1000_admin_network_port.png[SG1000 上的管理網路連接埠
 .SG1100
 --
 image::../media/sg1100_admin_network_port.png[SG1100 上的管理網路連接埠]
+
+--
+.SG1200
+--
+image::../media/sg1200_admin_network_port.png[SG1200 上的管理網路連接埠]
 
 --
 .E5700SG
@@ -89,9 +99,19 @@ image::../media/sg6000_cn_admin_network_port.png[SG6000-CN-控制器上的管理
 image::../media/sg6100_cn_admin_network_port.png[SG6000-CN-控制器上的管理網路連接埠]
 
 --
+.SG6200-CN
+--
+image::../media/sg6200_cn_admin_network_port.png[SG6200-CN 控制器上的管理網路連接埠]
+
+--
 .SGF6112
 --
 image::../media/sg6100_admin_network_port.png[SGF6112 上的管理網路連接埠]
+
+--
+.SGF6212
+--
+image::../media/sgf6212_admin_network_port.png[SGF6212 上的管理網路連接埠]
 
 --
 ====
@@ -129,6 +149,13 @@ image::../media/sg100_link_local_port.png[SG100連結本機連線]
 image::../media/sg6100_link_local_port.png[SG110 連結本機連線]
 
 --
+.SG120
+--
+使用乙太網路纜線、將服務筆記型電腦直接連接至應用裝置最右側的 RJ-45 連接埠。
+
+image::../media/sg120_link_local_port.png[SG120 Link-Local 連線]
+
+--
 .SG1000
 --
 使用乙太網路纜線、將服務型筆記型電腦直接連接至服務應用裝置最右側的RJ-45連接埠。
@@ -141,6 +168,13 @@ image::../media/sg1000_link_local_port.png[SG1000 連結本機連線]
 使用乙太網路纜線、將服務筆記型電腦直接連接至應用裝置最右側的 RJ-45 連接埠。
 
 image::../media/sg1100_link_local_port.png[SG1100 連結本機連線]
+
+--
+.SG1200
+--
+使用乙太網路纜線、將服務筆記型電腦直接連接至應用裝置最右側的 RJ-45 連接埠。
+
+image::../media/sg1200_link_local_port.png[SG1200 Link-Local 連線]
 
 --
 .E5700SG
@@ -171,11 +205,25 @@ image::../media/sg6000_cn_link_local_port.png[SG6000-CN.管理連接埠的位置
 image::../media/sg6100_cn_link_local_port.png[SG6100-CN 的管理連接埠位置]
 
 --
+.SG6200-CN
+--
+使用乙太網路線將服務筆記型電腦直接連接到 SG6200-CN 控制器最右側的 RJ-45 連接埠。
+
+image::../media/sg6200_cn_link_local_port.png[SG6200-CN 管理連接埠的位置]
+
+--
 .SGF6112
 --
 使用乙太網路纜線、將服務筆記型電腦直接連接至應用裝置最右側的 RJ-45 連接埠。
 
 image::../media/sg6100_link_local_port.png[SGF6112 連結本機連線]
+
+--
+.SGF6212
+--
+使用乙太網路纜線、將服務筆記型電腦直接連接至應用裝置最右側的 RJ-45 連接埠。
+
+image::../media/sgf6212_link_local_port.png[SGF6212 Link-Local 連線]
 
 --
 ====

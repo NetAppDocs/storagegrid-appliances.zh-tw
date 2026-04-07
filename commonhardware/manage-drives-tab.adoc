@@ -1,10 +1,10 @@
 ---
 permalink: commonhardware/manage-drives-tab.html 
 sidebar: sidebar 
-keywords: sgf6112, sg110, sg1100, sg6160, manage drives tab, locate drive, fail drive, logically replace drive 
+keywords: sgf6112, sg110, sg1100, sg6160, sg6200, sg6260, sgf6212 manage drives tab, locate drive, fail drive, logically replace drive 
 summary: 您可以使用 Grid Manager 中的「管理磁碟機」索引標籤、針對支援此功能的應用裝置、在磁碟機上執行疑難排解和維護工作。 
 ---
-= 使用管理磁碟機索引標籤（ SG110 、 SG1100 、 SGF6112 和 SG6160 ）
+= 使用 SG110、SG120、SG1100、SG1200、SG6100 和 SG6200 StorageGRID 應用裝置的「管理磁碟機」標籤
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -50,7 +50,7 @@ image:../media/manage_drives_tab_details.png["管理磁碟機索引標籤磁碟�
 
 若要在應用裝置中實際找到磁碟機：
 
-. 從 Grid Manager 中、選取 * 節點 * > * 資料中心 * 。
+. 從 Grid Manager 中，選取 * 節點 * > *_ 資料中心 _*。
 . 選擇 *_appliance 儲存節點 _* > * 管理磁碟機 * > * 配置 * > *_drive_* 。
 +
 出現磁碟機詳細資料面板。
@@ -70,7 +70,7 @@ image:../media/manage_drives_tab_details.png["管理磁碟機索引標籤磁碟�
 
 如果需要重建或重新初始化儲存設備中的磁碟機：
 
-. 從 Grid Manager 中、選取 * 節點 * > * 資料中心 * 。
+. 從 Grid Manager 中，選取 * 節點 * > *_ 資料中心 _*。
 . 選擇 *_appliance 儲存節點 _* > * 管理磁碟機 * > * 配置 * > *_drive_* 。
 +
 出現磁碟機詳細資料面板。
@@ -87,7 +87,7 @@ image:../media/manage_drives_tab_details.png["管理磁碟機索引標籤磁碟�
 
 若要進行疑難排解、您可以手動將懷疑故障的磁碟機「故障」。然後系統將在沒有該磁碟機的情況下執行。
 
-. 從 Grid Manager 中、選取 * 節點 * > * 資料中心 * 。
+. 從 Grid Manager 中，選取 * 節點 * > *_ 資料中心 _*。
 . 選擇 *_appliance 儲存節點 _* > * 管理磁碟機 * > * 配置 * > *_drive_* 。
 +
 出現磁碟機詳細資料面板。

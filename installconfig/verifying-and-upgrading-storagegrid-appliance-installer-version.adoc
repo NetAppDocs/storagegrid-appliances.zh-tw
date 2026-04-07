@@ -13,13 +13,13 @@ summary: 應用裝置上的《產品安裝程式版本」必須與安裝在您�
 [role="lead"]
 應用裝置上的《產品安裝程式版本」必須與安裝在您的支援系統上的軟體版本相符、才能確保支援所有的功能。StorageGRID StorageGRID StorageGRID
 
-.開始之前
-您已存取StorageGRID 了《應用程式安裝程式：
-
 .關於這項工作
 來自原廠預先安裝的不含不含「功能」的應用程式。StorageGRID StorageGRID如果您要將應用裝置新增至最近升級StorageGRID 的更新的版本、可能需要手動升級StorageGRID 該應用裝置的安裝程式、才能將應用裝置安裝為新節點。
 
 當您升級至新版的更新版本時、會自動升級此產品的安裝程式。StorageGRID StorageGRID您不需要在已安裝的應用裝置節點上升級 StorageGRID 應用裝置安裝程式。僅當您安裝的應用裝置含有StorageGRID 舊版的《一套》的《一套應用程式》安裝程式時、才需要執行此程序。
+
+.開始之前
+您已存取StorageGRID 了《應用程式安裝程式：
 
 .步驟
 . 從「VMware應用裝置安裝程式」StorageGRID 中、選取*進階*>*升級韌體*。

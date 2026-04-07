@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, storage node, storage appliance, Replacing, replace, E5700sg, controller, remove, removing, removal, install, installing, installation 
 summary: 如果E5700SG控制器無法正常運作或故障、您可能需要更換它。 
 ---
-= 更換StorageGRID E5700SG 運算控制器
+= 更換 StorageGRID E5700SG 運算控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -95,7 +95,7 @@ CAUTION: 請務必用兩隻手支撐控制器的重量。
 . 設備重新加入電網後，確認設備儲存節點出現在電網管理器中，且沒有警報。
 
 
-更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。
 
 .相關資訊
 https://docs.netapp.com/us-en/e-series-family/index.html["NetApp E 系列文件"^]

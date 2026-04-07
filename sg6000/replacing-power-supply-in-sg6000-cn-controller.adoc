@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, sg6000-cn, power supply, remove, removing, removal, install, installing, installation 
 summary: SG6000-CN-控制器有兩個電源供應器可供備援。如果其中一個電源供應器故障、您必須儘快更換、以確保運算控制器具有備援電源。 
 ---
-= 更換SG6000-CN-控制器中的電源供應器
+= 更換 SG6000-CN 控制器中的電源
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

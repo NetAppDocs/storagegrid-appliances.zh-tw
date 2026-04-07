@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, sgf6112, SG6160, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, independent, active-backup, active backup 
 summary: 使用下表記錄您連線至應用裝置的每個網路所需的資訊。這些值是安裝和設定硬體所需的值。 
 ---
-= 收集網路資訊（ SG6100 ）
+= 收集 SG6100 的網路資訊
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

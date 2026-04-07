@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg1000, SG100, power off, turn off, shut off, shutdown, shut down, 
 summary: 關閉服務應用裝置以執行硬體維護。 
 ---
-= 關閉 SG100 或 SG1000
+= 關閉 SG100 或 SG1000 服務應用裝置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

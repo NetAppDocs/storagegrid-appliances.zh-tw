@@ -1,0 +1,46 @@
+---
+permalink: installconfig/installing-hardware-sg6200.html 
+sidebar: sidebar 
+keywords: install, sg6200, sg6212, expansion shelf, cabinet, rack, drives 
+summary: 對於 SG6260 和 SGF6212、您需要在機櫃或機架中安裝導軌、並將控制器機櫃、任何擴充機櫃和運算控制器滑到導軌上。 
+---
+= 將 SG6200 安裝到機櫃或機架中
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於 SG6260 和 SGF6212、您需要在機櫃或機架中安裝導軌、並將控制器機櫃、任何擴充機櫃和運算控制器滑到導軌上。
+
+[cols="1a,2a,2a"]
+|===
+| 模型 | 安裝 | 以取得資訊 
+
+
+ a| 
+SG6260
+ a| 
+60 個磁碟機控制器機櫃和任何 60 個磁碟機擴充機櫃
+ a| 
+link:sg6260-installing-60-drive-shelves-into-cabinet-or-rack.html["安裝 60 個磁碟機櫃"]
+
+
+
+ a| 
+SG6212
+ a| 
+12 個磁碟機的應用裝置機櫃
+ a| 
+link:installing-appliance-in-cabinet-or-rack-sgf6212.html["安裝 12 個磁碟機櫃"]
+
+
+
+ a| 
+SG6260
+ a| 
+SG6200-CN 運算控制器
+ a| 
+link:sg6200-cn-installing-into-cabinet-or-rack.html["安裝 SG6200-CN 控制器"]
+
+|===

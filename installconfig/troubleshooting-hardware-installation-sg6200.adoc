@@ -1,0 +1,626 @@
+---
+permalink: installconfig/troubleshooting-hardware-installation-sg6200.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6200, sgf6212, troubleshoot, troubleshooting, hardware, install, installation, boot codes, boot-up codes, start codes, codes, boot, start, bmc, error codes, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck, connection, sg6260, e4000 
+summary: 如果在安裝期間遇到問題、您可能會發現檢閱與硬體設定和連線問題相關的疑難排解資訊很有幫助。 
+---
+= SG6200 硬體安裝疑難排解
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果在安裝期間遇到問題、您可能會發現檢閱與硬體設定和連線問題相關的疑難排解資訊很有幫助。
+
+
+
+== [[view-boot-codes]]檢視開機代碼（僅限 SGF6212 和 SG6260）
+
+當您為應用裝置供電時、BMC會記錄一系列開機代碼。您可以在連接至BMC管理連接埠的圖形化主控台上檢視這些代碼。
+
+.開始之前
+* 您知道如何 link:accessing-bmc-interface.html["存取 BMC 儀表板"]。
+* 如果您想要使用LAN上序列（SOL）、就有使用IPMI SOL主控台應用程式的經驗。
+
+
+.步驟
+. 請選擇下列其中一種方法來檢視應用裝置控制器的開機代碼、並收集所需的設備。
++
+[cols="1a,2a"]
+|===
+| 方法 | 必要設備 
+
+
+ a| 
+VGA主控台
+ a| 
+** 支援VGA的監視器
+** VGA纜線
+
+
+
+
+ a| 
+KVM
+ a| 
+** RJ-45纜線
+
+
+
+
+ a| 
+序列連接埠
+ a| 
+** USB 傳輸線
+** 虛擬序列終端機
+
+
+
+
+ a| 
+解決方案
+ a| 
+** 虛擬序列終端機
+
+
+|===
+. 如果您使用的是VGA主控台、請執行下列步驟：
++
+.. 將具備VGA功能的監視器連接至設備背面的VGA連接埠。
+.. 檢視監視器上顯示的代碼。
+
+
+. 如果您使用的是BMC KVM、請執行下列步驟：
++
+.. 連線至 BMC 管理連接埠、然後登入 BMC Web 介面。
+.. 選擇*遠端控制*。
+.. 啟動KVM。
+.. 檢視虛擬監視器上的代碼。
+
+
+. 如果您使用的是序列連接埠和終端機、請執行下列步驟：
++
+.. 連接至裝置背面的序列 USB 連接埠。
+.. 使用設定 `115200 8-N-1`。
+.. 檢視列印在序列終端機上的代碼。
+
+
+. 如果您使用的是SOL、請執行下列步驟：
++
+.. 使用BMC IP位址和登入認證連線至IPMI SOL。
++
+`ipmitool -I lanplus -H _BMC_Port_IP_ -U admin -P _Password_ sol activate`
+
++
+
+NOTE: 在某些情況下、預設使用者名稱可能是「 root 」、而非「 admin 」。
+
+.. 檢視虛擬序列終端機上的代碼。
+
+
+. 請使用表格查詢產品的代碼。
++
+[cols="1a,3a"]
+|===
+| 程式碼 | 表示 
+
+
+ a| 
+HT
+ a| 
+主要開機指令碼正在等待作業系統開機完成。
+
+
+
+ a| 
+嗨
+ a| 
+主開機指令碼已啟動。
+
+
+
+ a| 
+PP
+ a| 
+系統正在檢查是否需要更新FPGA。
+
+
+
+ a| 
+HP
+ a| 
+系統正在檢查網路介面卡（NIC）韌體是否需要更新。
+
+
+
+ a| 
+經常預算
+ a| 
+套用韌體更新後、系統正在重新開機。
+
+
+
+ a| 
+FP
+ a| 
+硬體子系統韌體更新檢查已完成。控制器之間的通訊服務正在啟動。
+
+
+
+ a| 
+他
+ a| 
+僅適用於 SG6260：
+
+系統正在等待與儲存控制器連線、並與SANtricity 該作業系統同步。
+
+* 附註 * ：如果開機程序未在此階段進行、請執行下列步驟：
+
+.. 確認 SG6200-CN 控制器與兩個儲存控制器之間的四條互連纜線已牢固連接。
+.. 視需要更換一或多條纜線、然後再試一次。
+.. 如果這無法解決問題、請聯絡技術支援部門。
+
+
+
+
+ a| 
+硬拷貝
+ a| 
+系統正在檢查現有StorageGRID 的安裝資料。
+
+
+
+ a| 
+好
+ a| 
+此產品正在執行中。StorageGRID
+
+
+
+ a| 
+HA
+ a| 
+執行中。StorageGRID
+
+|===
+
+
+
+
+== [[view-error-codes]]檢視錯誤代碼（僅限 SGF6212 和 SG6260）
+
+如果設備開機時發生硬體錯誤、BMC會記錄錯誤代碼。視需要、您可以使用應用裝置序列連接埠檢視這些錯誤代碼、然後與技術支援人員合作解決問題。
+
+.開始之前
+* 收集所需設備：
++
+** USB 傳輸線
+** 虛擬序列終端機
+
+
+
+
+.步驟
+. 連接至裝置背面的序列 USB 連接埠。
+. 使用設定 `115200 8-N-1`。
+. 檢閱列印在序列終端上的資訊、以取得目前代碼和先前的代碼。
++
+如果顯示下列任一錯誤代碼、請與技術支援部門合作以解決問題。
+
++
+[cols="1a,3a"]
+|===
+| 程式碼 | 表示 
+
+
+ a| 
+0E
+ a| 
+找不到微碼
+
+
+
+ a| 
+0x0F
+ a| 
+微碼未載入
+
+
+
+ a| 
+x50
+ a| 
+記憶體初始化錯誤。記憶體類型無效或記憶體速度不相容。
+
+
+
+ a| 
+051
+ a| 
+記憶體初始化錯誤。SPD讀取失敗。
+
+
+
+ a| 
+x52
+ a| 
+記憶體初始化錯誤。無效的記憶體大小或記憶體模組不符。
+
+
+
+ a| 
+x53
+ a| 
+記憶體初始化錯誤。未偵測到可用的記憶體。
+
+
+
+ a| 
+x54
+ a| 
+未指定的記憶體初始化錯誤
+
+
+
+ a| 
+x55
+ a| 
+未安裝記憶體
+
+
+
+ a| 
+x56
+ a| 
+無效的CPU類型或速度
+
+
+
+ a| 
+x57
+ a| 
+CPU不相符
+
+
+
+ a| 
+0658
+ a| 
+CPU自我測試失敗、或可能發生CPU快取錯誤
+
+
+
+ a| 
+x59
+ a| 
+找不到CPU微碼、或微碼更新失敗
+
+
+
+ a| 
+0125A
+ a| 
+內部CPU錯誤
+
+
+
+ a| 
+x5B
+ a| 
+無法使用重設PPI
+
+
+
+ a| 
+0x5C
+ a| 
+Pei階段BMC自我測試失敗
+
+
+
+ a| 
+xD0
+ a| 
+CPU初始化錯誤
+
+
+
+ a| 
+0xD1
+ a| 
+北橋初始化錯誤
+
+
+
+ a| 
+xD2
+ a| 
+South Bridge初始化錯誤
+
+
+
+ a| 
+xD3
+ a| 
+部分架構通訊協定無法使用
+
+
+
+ a| 
+xD4
+ a| 
+PCI資源配置錯誤。資源不足。
+
+
+
+ a| 
+xD5
+ a| 
+沒有空間可用於舊版選項ROM
+
+
+
+ a| 
+xD6
+ a| 
+找不到主控台輸出裝置
+
+
+
+ a| 
+xD7
+ a| 
+找不到主控台輸入裝置
+
+
+
+ a| 
+xD8
+ a| 
+密碼無效
+
+
+
+ a| 
+xD9
+ a| 
+載入開機選項時發生錯誤（LoadImage傳回錯誤）
+
+
+
+ a| 
+xDA
+ a| 
+開機選項失敗（StartImage傳回錯誤）
+
+
+
+ a| 
+xDB
+ a| 
+Flash更新失敗
+
+
+
+ a| 
+0xDC
+ a| 
+無法使用重設傳輸協定
+
+
+
+ a| 
+xDD
+ a| 
+DXE階段BMC自我測試失敗
+
+
+
+ a| 
+xE8
+ a| 
+MRC：ERR_no_memory
+
+
+
+ a| 
+0xE9
+ a| 
+MRC：ERR_LD_Lock
+
+
+
+ a| 
+xeA
+ a| 
+MRC：ERR_DDR_INIT
+
+
+
+ a| 
+xEB
+ a| 
+MRC：ERR_MEM_TEST
+
+
+
+ a| 
+xEC
+ a| 
+MRC：ERR_VENDO_SPECTRY
+
+
+
+ a| 
+xED
+ a| 
+MRC：ERR_DIMM_compat
+
+
+
+ a| 
+xEE
+ a| 
+MRC：ERR_MRC_相 容性
+
+
+
+ a| 
+xEF
+ a| 
+MRC：ERR_MRC_strstruct
+
+
+
+ a| 
+xF0
+ a| 
+MRC：ERR_SET_VDD
+
+
+
+ a| 
+0xF1
+ a| 
+MRC：ERR_IOT_MEM_緩 衝
+
+
+
+ a| 
+xF2
+ a| 
+MRC：ERR_RC_INERNERY
+
+
+
+ a| 
+xf3
+ a| 
+MRC：ERR_INVALID_RED_存取
+
+
+
+ a| 
+xf4
+ a| 
+MRC：ERR_SET_MC_Freq
+
+
+
+ a| 
+xf5
+ a| 
+MRC：ERR_Read_MC_Freq
+
+
+
+ a| 
+x70
+ a| 
+MRC：ERR_DIMM_channel
+
+
+
+ a| 
+x74
+ a| 
+MRC：ERR_BIST_Check
+
+
+
+ a| 
+xf6
+ a| 
+MRC：ERR_SMBUS
+
+
+
+ a| 
+xF7
+ a| 
+MRC：ERR_PCU
+
+
+
+ a| 
+xF8
+ a| 
+MRC：ERR_NGN
+
+
+
+ a| 
+xf9
+ a| 
+MRC：ERR_Interlet_ferress
+
+|===
+
+
+
+
+== 硬體設定似乎當機
+
+如果硬體故障或纜線錯誤導致應用裝置無法完成開機處理、則可能無法使用《支援產品安裝程式」StorageGRID 。
+
+.步驟
+. 查看設備上的 LED 和 / 或 BMC （如果配備）中顯示的開機和錯誤代碼。
+. 如果您需要解決問題的協助、請聯絡技術支援部門。
+
+
+
+
+== 連線問題
+
+
+
+=== 擴充機櫃不會出現在 Appliance Installer（SG6260）中
+
+如果您已安裝擴充機櫃、但這些擴充機櫃並未出現在 StorageGRID 應用裝置安裝程式中、則應確認機櫃已完全安裝並開啟電源。
+
+.關於這項工作
+您可以在StorageGRID 《NetApp應用裝置安裝程式：
+
+* 「*首頁*」頁面包含擴充櫃的相關訊息。
++
+image::../media/expansion_shelf_home_page_msg.png[擴充櫃訊息]
+
+* 「*進階*>* RAID模式*」頁面會依磁碟機數量指出設備是否包含擴充櫃。
+
+
+如果 StorageGRID 應用裝置安裝程式頁面沒有顯示擴充機櫃、請遵循此程序。
+
+.步驟
+. 確認所有必要的纜線均已穩固連接。請參閱 link:cabling-appliance.html["纜線應用裝置"]。
+. 請確認擴充架已通電。請參閱 link:connecting-power-cords-and-applying-power.html["連接電源線並接通電源（SG6200）"]。
+. 如果您需要解決問題的協助、請聯絡技術支援部門。
+
+
+
+
+=== 無法連線至應用裝置
+
+如果您無法連線至儲存設備、可能是網路問題、或是硬體安裝可能未成功完成。
+
+.步驟
+. 嘗試使用應用裝置的IP位址ping應用裝置：+
++
+`*ping _appliance/controller_IP_*`
+
+. 如果ping沒有回應、請確認您使用的是正確的IP位址。
++
+您可以在Grid Network、管理網路或用戶端網路上使用應用裝置的IP位址。
+
+. 如果IP位址正確、請檢查設備纜線、QSFP或SFP收發器、以及網路設定。
+. 如果可以實體存取應用裝置、您可以直接連線至永久性連結本機 IP `169.254.0.1` 檢查控制器網路組態、必要時進行更新。如需詳細指示、請參閱中的步驟2 link:accessing-storagegrid-appliance-installer.html["存取StorageGRID 產品安裝程式"]。
++
+如果仍無法解決問題、請聯絡技術支援部門。
+
+. 如果ping成功、請開啟網頁瀏覽器。
+. 輸入 StorageGRID 應用裝置安裝程式或 SANtricity 系統管理員的 URL ： +
+`*https://_appliances_controller_IP_:8443*`
++
+隨即顯示首頁。
+
+

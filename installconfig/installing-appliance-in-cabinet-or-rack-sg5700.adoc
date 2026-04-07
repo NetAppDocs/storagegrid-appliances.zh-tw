@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, sg5712, sg5760, install, cabinet, rack, rails, drives 
 summary: 您可以在機櫃或機架中安裝一組軌道、然後將產品滑入軌道。如果您有 SG5760 、請在安裝應用裝置後安裝磁碟機。 
 ---
-= 安裝至機櫃或機架（ SG5700 ）
+= 將 SG5700 安裝到機櫃或機架中
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

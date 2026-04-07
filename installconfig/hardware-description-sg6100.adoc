@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, sgf6112, storage node, storage appliance, appliance models, appliance features, specifications 
 summary: StorageGRID SG6100 系列應用裝置在 StorageGRID 系統中作為儲存節點運作。  就像所有 StorageGRID 應用裝置一樣、它們可以在單一部署中自由地與其他應用裝置機型和純軟體節點混用。 
 ---
-= SG6100 應用裝置：總覽
+= StorageGRID SG6100 應用裝置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -59,7 +59,7 @@ SGF6112 應用裝置包含下列元件：
 * 兩個 2.1/2.6 GHz 165 W 處理器、提供 48 核心（ 96 執行緒）
 * 256 GB RAM
 * 2 個 1/10 GBase-T 連接埠
-* 4 個 10/25 GbE 乙太網路連接埠、用於網格 / 用戶端網路流量
+* 4 個 10/25 GbE 乙太網路連接埠，用於 Grid/Client 網路流量（或使用選用的 100G NIC SKU 最多可達 4 x 100 GbE）
 * 1 個 256 GB 內部開機磁碟機（包括 StorageGRID 軟體）
 * 基礎板管理控制器（BMC）、可簡化硬體管理
 * 備援電源供應器與風扇
@@ -229,7 +229,7 @@ image::../media/q2024_rear_leds.png[後置 LED SGF6112]
  a| 
 * 藍色、閃爍：表示設備位於機櫃或機架中。
 * 藍色、恆亮：識別機櫃或機架中的設備。
-* 不亮：機櫃或機架中無法識別產品的外觀。
+* 關閉：設備在機櫃或機架中無法以視覺方式識別。
 
 
 |===
@@ -438,7 +438,7 @@ image::../media/q2023_rear_leds.png[後置 LED SG6100-CN]
  a| 
 * 藍色、閃爍：表示設備位於機櫃或機架中。
 * 藍色、恆亮：識別機櫃或機架中的設備。
-* 不亮：機櫃或機架中無法識別產品的外觀。
+* 關閉：設備在機櫃或機架中無法以視覺方式識別。
 
 
 |===

@@ -63,8 +63,8 @@ IMPORTANT: 請勿在關閉握把時過度施力。
 當磁碟機完全插入時、您會聽到「喀」一聲。
 
 +
-更換的磁碟機會自動重建、並使用工作磁碟機中的鏡射資料。  您可以使用Grid Manager來檢查重新建置的狀態。前往 * 節點 * > `*Appliance Node*` >*硬體*。「 Storage RAID Mode 」（儲存 RAID 模式）欄位包含「 Rebuilding 」（重建）訊息、直到磁碟機完全重建為止。
+被替換的磁碟機會自動使用正常磁碟機的鏡像資料重建。您可以使用 Grid Manager 查看重建狀態。前往 *Nodes* > `*Appliance Node*` > *Hardware*。Storage RAID Mode 欄位會顯示「rebuilding」訊息，直到磁碟機完全重建完成。
 
 
 
-更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, SANtricity System Manager, SANtricity, System Manager, configure, configuring, setup, set up, setting up, access, accessing, E-Series AutoSupport, autosupport, configure, configuring, setup, set up, setting up, access, accessing, hardware, status, diagnostic, environment drives, drive, temperature, IP, IP address, management port, Appliance Installer 
 summary: 您可以使用SANtricity NetApp系統管理程式來監控儲存控制器櫃中的儲存控制器、儲存磁碟及其他硬體元件狀態。您也可以設定E系列AutoSupport 支援的Proxy、讓您不AutoSupport 需使用管理連接埠、就能從應用裝置傳送靜態訊息。 
 ---
-= 設定 SANtricity 系統管理員（ SG6160 、 SG6000 、 SG5700 和 SG5800 ）
+= 為 SG6260、SG6160、SG6000、SG5700 和 SG5800 StorageGRID 應用裝置配置 SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,24 +13,45 @@ summary: 您可以使用SANtricity NetApp系統管理程式來監控儲存控制
 [role="lead"]
 您可以使用SANtricity NetApp系統管理程式來監控儲存控制器櫃中的儲存控制器、儲存磁碟及其他硬體元件狀態。您也可以設定E系列AutoSupport 支援的Proxy、讓您不AutoSupport 需使用管理連接埠、就能從應用裝置傳送靜態訊息。
 
+以下 StorageGRID 應用裝置可以存取 SANtricity System Manager：
+
+* SG5712
+* SG5760
+* SG5812
+* SG5860
+* SGF6024.
+* SG6060
+* SG6160
+* SG6260
+
+
+您可以使用SANtricity 「系統管理程式」來監控下列項目：
+
+* 效能資料、例如儲存陣列層級效能、I/O延遲、CPU使用率及處理量
+* 硬體元件狀態
+* 支援功能、包括檢視診斷資料
+
+
+您可以使用SANtricity 「靜態系統管理員」來設定下列設定：
+
+* 儲存控制器機櫃中元件的電子郵件警示、SNMP警示或系統記錄警示
+* 儲存AutoSupport 控制器機櫃中元件的E系列支援設定。
++
+如需 E 系列 AutoSupport 的其他詳細資訊，請參閱 https://docs.netapp.com/us-en/e-series-family/index.html["NetApp E 系列文件"^]。
+
+* 磁碟機安全金鑰，用於解鎖受保護的磁碟機
++
+
+NOTE: 如果您的應用裝置啟用了磁碟機安全功能，則必須設定並存取 SANtricity System Manager。
+
+* 管理員密碼、用於存取SANtricity 《系統管理程式》
+
+
 
 
 == 設定及存取SANtricity 《整套系統管理程式》
 
 您可能需要存取SANtricity 儲存控制器上的「靜態系統管理程式」、才能監控儲存控制器機櫃中的硬體、或是設定E系列AutoSupport 支援。
-
-.開始之前
-* 您使用的是 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
-* 若要透過 Grid Manager 存取 SANtricity 系統管理員、您已安裝 StorageGRID 、且擁有儲存設備管理員權限或根存取權限。
-* 若要使用 StorageGRID 應用裝置安裝程式存取 SANtricity 系統管理員、您必須擁有 SANtricity 系統管理員的使用者名稱和密碼。
-* 若要使用網頁瀏覽器直接存取 SANtricity 系統管理員、您必須擁有 SANtricity 系統管理員的使用者名稱和密碼。
-
-
-
-NOTE: 您必須擁有SANtricity 更新版本的韌體8.70或更新版本、SANtricity 才能使用Grid Manager或StorageGRID NetApp設備安裝程式來存取《更新版》。您可以使用StorageGRID 《支援》*《支援*》>*《關於*》來檢查韌體版本。
-
-
-NOTE: 從SANtricity Grid Manager或應用裝置安裝程式存取「支援系統管理程式」、通常只能用來監控硬體及設定E系列AutoSupport 支援。SANtricity 系統管理員中的許多功能和作業（例如升級韌體）不適用於監控 StorageGRID 應用裝置。為避免發生問題、請務必遵循設備的硬體安裝與維護指示。
 
 .關於這項工作
 根據SANtricity 您所處的安裝與組態程序階段、有三種方法可以存取「支援系統管理程式」：
@@ -67,11 +88,24 @@ NOTE: 使用Grid Manager或StorageGRID NetApp應用裝置安裝程式、您無�
 * 管理員密碼、用於存取SANtricity 《系統管理程式》
 
 
+.開始之前
+* 您使用的是 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 若要透過 Grid Manager 存取 SANtricity 系統管理員、您已安裝 StorageGRID 、且擁有儲存設備管理員權限或根存取權限。
+* 若要使用 StorageGRID 應用裝置安裝程式存取 SANtricity 系統管理員、您必須擁有 SANtricity 系統管理員的使用者名稱和密碼。
+* 若要使用網頁瀏覽器直接存取 SANtricity 系統管理員、您必須擁有 SANtricity 系統管理員的使用者名稱和密碼。
+
+
+
+NOTE: 您必須擁有SANtricity 更新版本的韌體8.70或更新版本、SANtricity 才能使用Grid Manager或StorageGRID NetApp設備安裝程式來存取《更新版》。您可以使用StorageGRID 《支援》*《支援*》>*《關於*》來檢查韌體版本。
+
+
+NOTE: 從SANtricity Grid Manager或應用裝置安裝程式存取「支援系統管理程式」、通常只能用來監控硬體及設定E系列AutoSupport 支援。SANtricity 系統管理員中的許多功能和作業（例如升級韌體）不適用於監控 StorageGRID 應用裝置。為避免發生問題、請務必遵循設備的硬體安裝與維護指示。
+
 .步驟
 . 執行下列其中一項：
 +
 ** 使用StorageGRID 《Suse安裝程式》、然後選取*進階*>* SANtricity 《系統管理員*》
-** 使用 Grid Manager 並選取 * 節點 * > `*_appliance Storage Node_*` >* SANtricity 《系統管理程式》*
+** 使用 Grid Manager 並選取 *Nodes* > `*_appliance Storage Node_*` > *SANtricity System Manager*
 
 
 +
@@ -157,6 +191,22 @@ SG6160 儲存設備可在 SG6100-CN 運算控制器和 E4000 控制器機櫃中�
 
 
 --
+.SG6260
+--
+SG6260 儲存設備可在 SG6200-CN 運算控制器和 E4000 控制器機架中配備符合 FIPS 標準的硬碟。SG6200-CN 硬碟和 E4000 硬碟的硬碟加密配置是分開的。
+
+.. link:optional-enabling-node-encryption.html#drive-encryption["啟用磁碟機加密"] 適用於安裝在 SG6200-CN 運算節點中的 SED SSD。
+.. 建立安全金鑰（控制器和磁碟機共用的字元字串、用於讀取 / 寫入存取）。
++
+*** 您可以 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/create-internal-security-key.html["建立內部金鑰"^]從控制器的持續記憶體或使用金鑰管理伺服器所提供的外部金鑰。
+*** 若要使用金鑰管理伺服器所提供的外部金鑰、您必須先在 SANtricity 系統管理員中使用 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html["使用金鑰管理伺服器建立驗證"^]。
+
+
+.. link:deploying-appliance-storage-node.html["開始安裝"]產品。
+.. 安裝完成後、請在 SANtricity 系統管理員中、 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/enable-security.html["啟用磁碟機安全性"^]針對所有磁碟集區或磁碟區群組進行。
+
+
+--
 ====
 
 
@@ -226,7 +276,7 @@ image::../media/sam_hardware_controllers_a_and_b.gif[Hardware Status（硬體狀
 DHCP指派的位址可以隨時變更。為控制器指派靜態IP位址、以確保存取一致。
 
 
-NOTE: 只有當您無法從 StorageGRID 應用裝置安裝程式（ * 進階 * > * SANtricity 系統管理員 * ）或網格管理程式（ * 節點 * > * SANtricity 系統管理程式 * ）存取 SANtricity 系統管理程式時、才需遵循此程序。
+NOTE: 只有當您無法透過 StorageGRID Appliance Installer（*Advanced* > *SANtricity System Manager*）或 Grid Manager（*Nodes* > *SANtricity System Manager*）存取 SANtricity System Manager 時，才應依照此步驟操作。
 
 .步驟
 . 從用戶端輸入StorageGRID URL以供使用、例如：+

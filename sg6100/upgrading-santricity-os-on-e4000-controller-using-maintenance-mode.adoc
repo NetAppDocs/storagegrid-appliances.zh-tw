@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, storage node, storage appliance, controller, e4000, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
 summary: 您可以使用維護模式來升級 E4000 控制器上的 SANtricity OS 。 
 ---
-= 使用維護模式（ SG6160 ）升級 E4000 控制器上的 SANtricity OS
+= 在維護模式下升級 SG6160 E4000 上的 SANtricity 作業系統
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -52,7 +52,7 @@ NOTE: 立即啟動升級檔案。請勿延遲啟動。
 設備重新啟動並重新加入電網最多可能需要 20 分鐘。若要確認重啟已完成且節點已重新加入網格：
 
 +
-... 在網格管理器中，選擇*NODES*。
+... 在 Grid Manager 中，選擇 *Nodes* 。
 ... 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, deploy node, deploying node, node, deploy, deploying 
 summary: 安裝及設定儲存應用裝置之後、您可以將其部署為StorageGRID 位於整個系統的儲存節點。當您將應用裝置部署為儲存節點時、請使用StorageGRID 應用裝置隨附的《一套解決方案》安裝程式。 
 ---
-= 部署應用裝置儲存節點
+= 部署 StorageGRID 應用裝置儲存節點
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, sg6060, install, installing, installation, 60-drive shelves, 60-drive shelf, 60 drive shelves, 60 drive shelf, 60 drive, 60-drive, shelf, shelves, drive, disk, 60 
 summary: 您可以在機櫃或機架中安裝一組 E2860 控制器機櫃的滑軌、然後將控制器機櫃滑到滑軌上。如果您要安裝60個磁碟機擴充磁碟櫃、同樣的程序也適用。 
 ---
-= 安裝 60 個磁碟機櫃（ SG6060 ）
+= 為 SG6060 安裝 60 個磁碟機櫃
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

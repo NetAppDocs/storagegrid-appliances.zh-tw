@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installation REST API, REST API, installation REST APIs, REST APIs, Appliance Installer API, Appliance Installer APIs, Install API, Install APIs, Installer API, Installer APIs, Installation API, Installation APIs, api, apis 
 summary: 提供兩個REST API來執行安裝工作：《支援安裝》API和《支援使用者支援應用程式》API。StorageGRID StorageGRID StorageGRID 
 ---
-= 安裝REST API總覽
+= StorageGRID 安裝 REST API
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

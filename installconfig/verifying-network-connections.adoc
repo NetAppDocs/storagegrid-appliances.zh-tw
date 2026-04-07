@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: network connections, network connection, network, connection, connectivity, verify, verifying, check, checking, mtu, test, testing 
 summary: 您應該確認是否可以從StorageGRID 應用裝置存取所使用的資訊網。若要驗證透過網路閘道的路由、您應該測試StorageGRID 與眾不同子網路上的《解決方案安裝程式與IP位址之間的連線能力。您也可以驗證MTU設定。 
 ---
-= 驗證網路連線
+= 驗證 StorageGRID 應用裝置上的網路連線
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

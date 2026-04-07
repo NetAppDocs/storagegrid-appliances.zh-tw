@@ -33,7 +33,7 @@ CAUTION: 如果您移除工作正常的磁碟機、就會關閉應用裝置節�
 .步驟
 . 驗證要更換的磁碟機的左側 LED 是否閃爍琥珀色。如果 Grid Manager 或 BMC 使用者介面中回報磁碟機問題、 HDD02 或 HDD2 會參考上插槽中的磁碟機、而 HDD03 或 HDD3 則會參考下插槽中的磁碟機。
 +
-您也可以使用Grid Manager來監控SSD的狀態。選擇*節點*。然後選取 `*Appliance Node*` >*硬體*。如果磁碟機故障、「Storage RAID Mode（儲存RAID模式）」欄位會顯示關於哪個磁碟機故障的訊息。
+您也可以使用 Grid Manager 來監控 SSD 的狀態。選取 *Nodes* 。然後選取 `*Appliance Node*` > *Hardware* 。如果磁碟機故障、 Storage RAID Mode 欄位會包含有關哪個磁碟機故障的訊息。
 
 . 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
 . 打開備用磁碟機的包裝、並將其放在產品附近無靜電且水平的表面上。
@@ -64,8 +64,8 @@ CAUTION: 請勿在關閉握把時過度施力。
 當磁碟機完全插入時、您會聽到「喀」一聲。
 
 +
-磁碟機會自動以工作磁碟機的鏡射資料重建。您可以使用Grid Manager來檢查重新建置的狀態。選擇*節點*。然後選取 `*Appliance Node*` >*硬體*。Storage RAID Mode（儲存RAID模式）欄位會顯示「正在重建」訊息、直到磁碟機完全重建為止。
+系統會自動使用正常硬碟的鏡像資料重建硬碟。您可以使用 Grid Manager 查看重建狀態。選擇 *Nodes* 。然後選擇 `*Appliance Node*` > *Hardware* 。在硬碟完全重建完成之前、 Storage RAID Mode 欄位會顯示「 `rebuilding` 」訊息。
 
 
 
-更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。

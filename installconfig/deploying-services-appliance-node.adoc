@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg110, sg1100, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
 summary: 您可以將服務應用裝置部署為主要管理節點、非主要管理節點或閘道節點。所有服務應用裝置都可以同時做為閘道節點和管理節點 \ （主要或非主要 \ ）運作。 
 ---
-= 部署服務應用裝置節點
+= 部署 StorageGRID 服務應用裝置節點
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

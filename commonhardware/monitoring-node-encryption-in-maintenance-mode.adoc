@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: kms, key management server, monitor, monitoring, status, encryption 
 summary: 如果您在安裝期間為應用裝置啟用節點加密、則可以監控每個應用裝置節點的節點加密狀態、包括節點加密狀態和金鑰管理伺服器（KMS）詳細資料。 
 ---
-= 在維護模式中監控節點加密
+= 監控處於維護模式的 StorageGRID 應用裝置的節點加密
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -49,7 +49,7 @@ CAUTION: 清除KMS組態會刪除應用裝置中的資料、使其永遠無法�
 設備重新啟動並重新加入電網最多可能需要 20 分鐘。若要確認重啟已完成且節點已重新加入網格：
 
 +
-... 在網格管理器中，選擇*NODES*。
+... 在 Grid Manager 中，選擇 *Nodes* 。
 ... 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 
 

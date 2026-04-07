@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, bmc 
 summary: 部分 StorageGRID 應用裝置包含基礎板管理控制器（ BMC ）、可讓您在設備組態、監控和診斷方面、進行低階硬體存取。 
 ---
-= 使用 StorageGRID 應用裝置主機板管理控制器（ BMC ）
+= StorageGRID 應用裝置的底板管理控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,10 +17,13 @@ summary: 部分 StorageGRID 應用裝置包含基礎板管理控制器（ BMC �
 
 * SG100
 * SG110
+* SG120
 * SG1000
 * SG1100
+* SG1200
 * SG6000
 * SG6100
+* SG6200
 
 
 如需使用這些應用裝置的 BMC 介面的詳細資訊、請參閱 https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMC 使用者指南"^]。只有在技術支援人員的指導下、您才應存取 StorageGRID 文件中未記載的 BMC 功能。
@@ -42,26 +45,32 @@ summary: 部分 StorageGRID 應用裝置包含基礎板管理控制器（ BMC �
 * link:../installconfig/setting-up-email-notifications-for-alerts.html["設定電子郵件警示通知"]
 * 硬體安裝疑難排解：
 +
-** link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html["SG1000 和 SG100"]
-** link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html["SG1100 和 SG110"]
+** link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html["SG100 與 SG1000"]
+** link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html["SG110 和 SG1100"]
+** link:../installconfig/troubleshooting-hardware-installation-sg120-and-sg1200.html["SG120 和 SG1200"]
 ** link:../installconfig/troubleshooting-hardware-installation.html["SG6000"]
 ** link:../installconfig/troubleshooting-hardware-installation-sg6100.html["SG6100"]
+** link:../installconfig/troubleshooting-hardware-installation-sg6200.html["SG6200"]
 
 
 * 判斷應用裝置的電源狀態：
 +
 ** link:../sg100-1000/shut-down-sg100-and-sg1000.html["SG1000 和 SG100"]
-** link:../sg110-1100/power-sg110-and-sg1100-off-on.html["SG1100 和 SG110"]
+** link:../sg110-1100/power-sg110-and-sg1100-off-on.html["SG110 和 SG1100"]
+** link:../sg120-1200/power-sg120-and-sg1200-off-on.html["SG120 和 SG1200"]
 ** link:../sg6000/power-sg6000-cn-controller-off-on.html["SG6000"]
 ** link:../sg6100/power-sgf6112-off-on.html["SG6100"]
+** link:../sg6200/power-sg6200-off-on.html["SG6200"]
 
 
 * 開啟和關閉產品識別 LED ：
 +
 ** link:../sg100-1000/turning-controller-identify-led-on-and-off.html["SG1000 和 SG100"]
 ** link:../sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html["SG1100 和 SG110"]
+** link:../sg120-1200/turning-sg120-and-sg1200-identify-led-on-and-off.html["SG120 和 SG1200"]
 ** link:../sg6000/turning-controller-identify-led-on-and-off.html["SG6000"]
 ** link:../sg6100/turning-sgf6112-identify-led-on-and-off.html["SG6100"]
+** link:../sg6200/turning-sg6200-identify-led-on-and-off.html["SG6200"]
 
 
 

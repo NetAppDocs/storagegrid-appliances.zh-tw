@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, appliance, locate, find, locating, finding, identify, blue led, blue light 
 summary: 找到應用裝置、以便執行硬體維護或升級。 
 ---
-= 在資料中心找到 SGF6112 應用裝置或 SG6100-cn 控制器
+= 在資料中心找到 SGF6112 應用裝置或 SG6100-CN 控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

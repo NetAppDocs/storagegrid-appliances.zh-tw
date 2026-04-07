@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, admin node, link configuration, link, configure, configuring, ethernet, port bond mode, port bond, network bond mode, network bond, link speed, vlan tagging, vlan tag 
 summary: 您可以變更SG6000-CN-控制器的乙太網路連結組態。您可以變更連接埠連結模式、網路連結模式及連結速度。 
 ---
-= 變更SG6000-CN-控制器的連結組態
+= 更改 SG6000-CN 控制器的連結配置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -57,7 +57,7 @@ link:../installconfig/setting-ip-configuration.html["設定StorageGRID 靜態IP�
 設備重新啟動並重新加入電網最多可能需要 20 分鐘。若要確認重啟已完成且節點已重新加入網格：
 
 +
-... 在網格管理器中，選擇*NODES*。
+... 在 Grid Manager 中，選擇 *Nodes* 。
 ... 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 
 

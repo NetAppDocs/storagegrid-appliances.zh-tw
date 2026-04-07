@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, locate, find, locating, finding, identify, blue led, blue light 
 summary: 控制器正面和背面的藍色識別LED可開啟、以協助在資料中心找到應用裝置。 
 ---
-= 開啟和關閉 SG100 或 SG1000 識別 LED
+= 開啟和關閉 SG100 或 SG1000 的識別指示燈
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

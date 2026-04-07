@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, storage node, storage appliance, maintain, maintaining, hardware, procedures, tasks 
 summary: 您可能需要升級SANtricity E2800控制器上的SESEOS軟體、變更E5700SG控制器的乙太網路連結組態、更換E2800控制器或E5700SG控制器、或更換特定元件。本節中的程序假設應用裝置已部署為StorageGRID 位於整個系統的儲存節點。 
 ---
-= 維護SG5700應用裝置
+= 維護 SG5700 應用裝置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

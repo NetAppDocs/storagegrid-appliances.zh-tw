@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, power off, turn off, shut off, shutdown, shut down, sg6000-cn, controller, power on, turn on, start 
 summary: 您可以關閉 SG6000-CN 控制器並重新開機以執行維護。 
 ---
-= 關閉和開啟 SG6000-CN 控制器
+= 關閉並開啟 SG6000-CN 控制器的電源
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

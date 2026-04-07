@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 更換 E4000 中的 DIMM （ SG5800 ）
+= 更換 SG5800 中 E4000 控制器的 DIMM
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -29,7 +29,7 @@ summary:
 
 * 存取 SANtricity 系統管理員：
 +
-** 從 Grid Manager 中、選取 * 節點 * > * 應用裝置節點 * > * SANtricity 系統管理員 * 。控制器資訊位於 https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricity 系統管理員標籤"]。
+** 從 Grid Manager 中，選擇 *Nodes* > *_appliance node_* > *SANtricity System Manager*。控制器資訊位於 https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricity 系統管理員標籤"]。
 +
 
 NOTE: 在本程序的某些步驟中、您可能無法使用 Grid Manager 存取 SANtricity 系統管理員。如果 SG5800 控制器關閉、您將需要使用瀏覽器存取 SANtricity 系統管理員。
@@ -265,7 +265,7 @@ NOTE: 將控制器圓筒滑入機箱時、請勿過度施力、以免損壞連�
 
 . 確認重啟已完成且節點已重新加入網格：
 +
-.. 在網格管理器中，選擇*NODES*。
+.. 在 Grid Manager 中，選擇 *Nodes* 。
 .. 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 +
 

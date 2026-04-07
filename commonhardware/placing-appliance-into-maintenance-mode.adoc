@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, maintenance mode 
 summary: 您必須先將設備置於維護模式、才能執行特定的維護程序。 
 ---
-= 將應用裝置置於維護模式
+= 將 StorageGRID 應用裝置置於維護模式
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -25,7 +25,7 @@ summary: 您必須先將設備置於維護模式、才能執行特定的維護�
 NOTE: 在維護模式下、用於某個應用程式的管理員帳戶密碼和SSH主機金鑰StorageGRID 與設備使用中的相同。
 
 .步驟
-. 從Grid Manager中選取* nodes *。
+. 從 Grid Manager 中選擇 *Nodes* 。
 . 從節點頁面的樹狀檢視中、選取應用裝置儲存節點。
 . 選取*工作*。
 . 選擇*維護模式*。隨即顯示確認對話方塊。
@@ -54,7 +54,7 @@ NOTE: 如果您與應用裝置的管理連接埠有直接連線、請使用 `+ht
 設備重新啟動並重新加入電網最多可能需要 20 分鐘。若要確認重啟已完成且節點已重新加入網格：
 
 +
-.. 在網格管理器中，選擇*NODES*。
+.. 在 Grid Manager 中，選擇 *Nodes* 。
 .. 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 
 

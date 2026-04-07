@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, sg6000, sg6060, sgf6024, expansion shelf, cabinet, rack, drives 
 summary: 對於 SG6060 和 SGF6024 、您可以在機櫃或機架中安裝滑軌、然後將控制器機櫃、任何擴充機櫃和運算控制器滑到滑軌上。對於 SG6060 、在安裝磁碟櫃之前、請勿在每個機櫃中安裝磁碟機。 
 ---
-= 安裝至機櫃或機架（ SG6000 ）
+= 將 SG6000 安裝到機櫃或機架中
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

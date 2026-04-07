@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sg6000, sg6060, sg6060x, storage appliance 
 summary: 《SESSG6060與SG60X應用裝置：StorageGRID 運算控制器與儲存控制器櫃、包含兩個儲存控制器與60個磁碟機。 
 ---
-= SG6060 和 SG6060X 設備：總覽
+= StorageGRID SG6060 和 SG6060X 應用裝置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -137,7 +137,7 @@ image::../media/q2023_rear_leds.png[後置 LED SG6000-CN]
  a| 
 * 藍色、閃爍：表示設備位於機櫃或機架中。
 * 藍色、恆亮：識別機櫃或機架中的設備。
-* 不亮：機櫃或機架中無法識別產品的外觀。
+* 關閉：設備在機櫃或機架中無法以視覺方式識別。
 
 
 |===

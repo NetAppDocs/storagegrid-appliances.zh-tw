@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: automate, automating, automation, automatic, install, installation, configuration, configure 
 summary: 自動化安裝與組態可用於部署多StorageGRID 個版本的不二執行個體、或是一個大型且複雜StorageGRID 的例項。 
 ---
-= 自動化應用裝置的安裝與組態
+= 自動化 StorageGRID 應用裝置安裝與組態
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

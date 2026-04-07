@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, storage node, install, installing, installation, cabinet, rack, rail, rails 
 summary: 您可以在機櫃或機架中安裝產品的滑軌組、然後將產品滑到滑軌上。 
 ---
-= 安裝至機櫃或機架（ SGF6112 ）
+= 將 SGF6112 安裝到機櫃或機架中
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace canister, replacing E4000 canister, E4000 replace fan, replacing E4000 fan, E4000, E-Series, eseries 
 summary: 檢閱 E4000 活性碳罐類型和要求。 
 ---
-= 更換 SG5860 中的風扇箱
+= 更換 SG5860 中的風扇外殼
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

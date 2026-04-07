@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: register, registering, registration, support 
 summary: 註冊應用裝置硬體可提供支援效益。 
 ---
-= 註冊硬體
+= 註冊 StorageGRID 應用裝置硬體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

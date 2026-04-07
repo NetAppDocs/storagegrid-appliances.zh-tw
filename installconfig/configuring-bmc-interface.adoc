@@ -2,18 +2,42 @@
 permalink: installconfig/configuring-bmc-interface.html 
 sidebar: sidebar 
 keywords: BMC, baseboard management controller, configure, setup, set up 
-summary: SG6100 、 SG6000 或服務應用裝置上的主機板管理控制器（ BMC ）使用者介面提供硬體的狀態資訊、並可讓您設定應用裝置的 SNMP 設定和其他選項。 
+summary: SG6200、SG6100、SG6000 或服務應用裝置上的基板管理控制器（BMC）使用者介面提供有關硬體的狀態資訊，並允許您設定 SNMP 設定和應用裝置的其他選項。 
 ---
-= BMC 介面：概觀（ SG100 、 SG110 、 SG1000 、 SG1100 、 SG6000 、 和 SG6100 ）
+= SG6000、SG6100 和 SG6200 StorageGRID 應用裝置和服務應用裝置的 BMC 介面
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-SG6100 、 SG6000 或服務應用裝置上的主機板管理控制器（ BMC ）使用者介面、可提供硬體的狀態資訊、並可讓您設定應用裝置的 SNMP 設定和其他選項。
+基板管理控制器（BMC）的使用者介面提供有關硬體的狀態資訊，並允許低階硬體存取，以進行應用裝置組態、監控和診斷。
 
-安裝應用裝置時、請使用本節中的下列程序來設定 BMC ：
+您可以使用 BMC 來：
+
+* 疑難排解硬體安裝問題
+* 設定 SNMP 設定
+* 確定您應用裝置的電源狀態
+* 控制您設備上的識別 LED
+
+
+以下 StorageGRID 應用裝置支援 BMC 介面：
+
+* SG100
+* SG110
+* SG120
+* SG1000
+* SG1100
+* SG1200
+* SGF6024.
+* SGF6112
+* SGF6212
+* SG6060
+* SG6160
+* SG6260
+
+
+如果您正在安裝設備，請使用下列步驟設定 BMC：
 
 * link:../installconfig/changing-root-password-for-bmc-interface.html["變更 BMC 介面的管理或根密碼"]
 * link:../installconfig/setting-ip-address-for-bmc-management-port.html["設定BMC管理連接埠的IP位址"]
@@ -22,12 +46,10 @@ SG6100 、 SG6000 或服務應用裝置上的主機板管理控制器（ BMC ）
 * link:../installconfig/setting-up-email-notifications-for-alerts.html["設定 BMC 警示的電子郵件通知"]
 
 
-[NOTE]
-====
-如果應用裝置已安裝至網格、且正在執行 StorageGRID 軟體、請使用下列程序：
+如果您已將應用裝置安裝到網格中並且正在執行 StorageGRID 軟體，請使用下列程序：
 
 * link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"] 存取 StorageGRID 應用裝置安裝程式。
-* 請參閱 link:../installconfig/setting-ip-address-for-bmc-management-port.html["設定BMC管理連接埠的IP位址"] 如需使用 StorageGRID 應用裝置安裝程式存取 BMC 介面的相關資訊、
+* 有關使用 StorageGRID Appliance Installer 存取 BMC 介面的資訊，請參閱 link:../installconfig/setting-ip-address-for-bmc-management-port.html["設定BMC管理連接埠的IP位址"]。
 
 
-====
+若要深入瞭解設定 BMC 後可以使用的功能，請參閱link:../commonhardware/use-bmc.html["使用 BMC 介面"]和 https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["BMC 使用者指南"^]。

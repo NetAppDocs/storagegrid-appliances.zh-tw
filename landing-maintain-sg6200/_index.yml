@@ -1,0 +1,67 @@
+---
+indexpage:
+  title: 維護 SG6200 儲存設備硬體
+  summary: 維護 SG6200 儲存設備的硬體。
+  keywords: maintain storagegrid sg6200
+  lead: 維護 SG6200 儲存設備的硬體。
+  tiles:
+  - title: 經常執行的程序
+    links:
+    - title: 升級 SANtricity
+      url: "../sg6200/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6260.html"
+    - title: 升級磁碟機韌體（SG6200 - 自動重新開機方法）
+      url: "../sg6200/upgrading-drive-firmware-using-auto-reboot.html"
+    - title: 升級磁碟機韌體（SG6200 - 線上方法）
+      url: "../sg6200/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: 升級磁碟機韌體（SG6200 - 離線方法）
+      url: "../sg6200/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
+    - title: 開啟或關閉識別 LED
+      url: "../sg6200/turning-sg6200-identify-led-on-and-off.html"
+    - title: 在資料中心找到應用裝置
+      url: "../sg6200/locating-sg6200-in-data-center.html"
+    - title: 關閉和開啟產品電源
+      url: "../sg6200/power-sg6200-off-on.html"
+    - title: 變更連結組態
+      url: "../sg6200/changing-link-configuration-of-sg6200-appliance.html"
+    - title: 確認要更換的元件
+      url: "../sg6200/verify-component-to-replace.html"
+  - title: 機架程序
+    links:
+    - title: 更換 SGF6212 應用裝置
+      url: "../sg6200/replacing-sgf6212-appliance.html"
+    - title: 更換 SG6200-CN 控制器（SG6260）
+      url: "../sg6200/replacing-sg6200-cn-controller.html"
+    - title: 更換儲存控制器 controller（SG6260）
+      url: "../sg6200/replace-controller-e4000-duplex.html"
+    - title: 將 SGF6212 或 SG6200-CN 重新安置到機架中
+      url: "../sg6200/reinstalling-sg6200-into-cabinet-or-rack.html"
+  - title: 硬體程序
+    links:
+    - title: 更換外蓋（SGF6212 或 SG6200-CN）
+      url: "../sg6200/reinstalling-sg6200-cover.html"
+    - title: 更換電源供應器（SGF6212 或 SG6200-CN）
+      url: "../sg6200/replacing-one-or-more-power-supplies-in-sg6200-appliance.html"
+    - title: 更換儲存控制器機櫃或擴充機櫃中的電源供應器（SG6260）
+      url: "../sg6200/replace-e4000-power-canister.html"
+    - title: 更換 SGF6212 或 SG6200-CN（SG6260）中的風扇
+      url: "../sg6200/replacing-fan-in-sg6200.html"
+    - title: 更換儲存控制器機櫃或擴充機櫃中的風扇 (SG6260)
+      url: "../sg6200/replace-e4000-fan-canister.html"
+    - title: 更換 SGF6212 中的磁碟機
+      url: "../sg6200/replacing-drive-in-sgf6212.html"
+    - title: 更換 SG6200-CN 中的磁碟機
+      url: "../sg6200/replace-drive-sg6200-cn.html"
+    - title: 更換儲存控制器機櫃或擴充機櫃中的磁碟機（SG6260）
+      url: "../sg6200/replace-6260-drives-60.html"
+    - title: 更換內部 NIC（SGF6212 或 SG6200-CN）
+      url: "../sg6200/replace-nic-in-sg6200.html"
+    - title: 更換外部 NIC（SG6200-CN）
+      url: "../sg6200/replace-ocp-nic-sg6200-cn.html"
+    - title: 更換儲存控制器機架中的 DIMM（SG6260）
+      url: "../sg6200/replace-dimms-e4000.html"
+    - title: 更換儲存控制器機櫃 (SG6260) 中的電池
+      url: "../sg6200/replace-battery-e4000.html"
+    - title: 更換 CMOS 電池（SGF6212 或 SG6200-CN）
+      url: "../sg6200/replace-cmos-in-sg6200.html"
+    - title: 為已部署的 SG6260 新增擴充架
+      url: "../sg6200/adding-expansion-shelf-to-deployed-sg6260.html"

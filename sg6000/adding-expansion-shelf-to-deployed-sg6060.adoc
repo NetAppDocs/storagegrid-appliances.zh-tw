@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, sg6060, expansion shelf, expansion, drive, disk, install, installing, installation, add, adding, expand 
 summary: 若要增加儲存容量、您可以將一或兩個擴充櫃新增至部署StorageGRID 在整個系統中的SG6060。 
 ---
-= 新增擴充櫃至已部署的SG6060
+= 在已部署的 SG6060 設備新增擴充架
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -185,7 +185,7 @@ NOTE: 若要在擴充櫃組態失敗時重試、請移至StorageGRID 「精選�
 
 . 確認應用裝置儲存節點和新擴充櫃的狀態。
 +
-.. 在 Grid Manager 中、選取 * 節點 * 、並確認應用裝置儲存節點有綠色的核取記號圖示。
+.. 在 Grid Manager 中，選取 *Nodes*，並確認應用裝置 Storage Node 具有綠色勾選圖示。
 +
 綠色核取標記圖示表示沒有作用中的警示、而且節點已連線至網格。有關節點圖標的說明，請參閱 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["監控節點連線狀態"^]。
 

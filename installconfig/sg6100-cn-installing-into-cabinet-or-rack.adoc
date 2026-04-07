@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, sg6100-cn, rail, rails, sg6160 
 summary: 您可以在機櫃或機架中安裝一組 SG6100-CN 控制器的滑軌、然後將控制器滑到滑軌上。 
 ---
-= 安裝 SG6100-CN 控制器（ SG6160 ）
+= 為 SG6160 安裝 SG6100-CN 控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

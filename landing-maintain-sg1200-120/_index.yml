@@ -1,0 +1,37 @@
+---
+indexpage:
+  title: 維護 SG120 和 SG1200 服務應用裝置硬體
+  summary: 維護 SG120 和 SG1200 服務應用裝置的硬體。
+  keywords: maintain storagegrid sg120, maintain storagegrid sg1200
+  lead: 維護 SG120 和 SG1200 服務應用裝置的硬體。
+  tiles:
+  - title: 經常執行的程序
+    links:
+    - title: 開啟或關閉識別 LED
+      url: "../sg120-1200/turning-sg120-and-sg1200-identify-led-on-and-off.html"
+    - title: 在資料中心找到應用裝置
+      url: "../sg120-1200/locating-sg120-and-sg1200-in-data-center.html"
+    - title: 關閉和開啟產品電源
+      url: "../sg120-1200/power-sg120-and-sg1200-off-on.html"
+    - title: 變更連結組態
+      url: "../sg120-1200/changing-link-configuration-of-sg120-and-sg1200-appliance.html"
+  - title: 機架程序
+    links:
+    - title: 更換 SG120 或 SG1200 應用裝置
+      url: "../sg120-1200/replacing-sg120-and-sg1200-appliance.html"
+    - title: 將 SG120 或 SG1200 重新安置到機架中
+      url: "../sg120-1200/reinstalling-sg120-and-sg1200-into-cabinet-or-rack.html"
+  - title: 硬體程序
+    links:
+    - title: 裝回機箱蓋
+      url: "../sg120-1200/reinstalling-sg120-and-sg1200-cover.html"
+    - title: 更換電源供應器
+      url: "../sg120-1200/replacing-one-or-more-power-supplies-in-sg120-and-sg1200-appliance.html"
+    - title: 更換風扇
+      url: "../sg120-1200/replacing-fan-in-sg120-and-sg1200.html"
+    - title: 更換磁碟機
+      url: "../sg120-1200/replacing-drive-in-sg120-and-sg1200.html"
+    - title: 更換 NIC
+      url: "../sg120-1200/replace-nic-in-sg120-and-sg1200.html"
+    - title: 更換 CMOS 電池
+      url: "../sg120-1200/replace-cmos-in-sg120-and-sg1200.html"

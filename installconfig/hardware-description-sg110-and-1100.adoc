@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg110, sg1100, service appliance, services appliance, gateway Node, admin node, overview, models, features, applications, how to use, services 
 summary: StorageGRID SG110 服務應用裝置和 SG1100 服務應用裝置可作為閘道節點和管理節點運作、在 StorageGRID 系統中提供高可用度負載平衡服務。這兩種應用裝置可同時做為閘道節點和管理節點（主要或非主要）。 
 ---
-= SG110 與 SG1100 應用裝置：概覽
+= StorageGRID SG110 和 SG1100 應用裝置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -72,7 +72,7 @@ image::../media/q2024_rear_leds.png[後置 LED SG110 和 SG1100]
  a| 
 * 藍色、閃爍：表示設備位於機櫃或機架中。
 * 藍色、恆亮：識別機櫃或機架中的設備。
-* 不亮：機櫃或機架中無法識別產品的外觀。
+* 關閉：設備在機櫃或機架中無法以視覺方式識別。
 
 
 |===

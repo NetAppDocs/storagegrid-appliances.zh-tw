@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5800, storage node, storage appliance, Replacing, replace, e4000, controller, remove, removing, removal, install, installing, installation 
 summary: 如果 E4000 控制器無法正常運作或故障、您可能需要更換它。 
 ---
-= 更換 E4000 控制器（ SG5800 ）
+= 更換 SG5800 中的 E4000 控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -27,7 +27,7 @@ NOTE: 請勿仰賴 E 系列指示來更換 StorageGRID 應用裝置中的控制�
 * 您必須使用登入 Grid Manager https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^] 。
 * 存取 SANtricity 系統管理員：
 +
-** 從 Grid Manager 中、選取 * 節點 * > * 應用裝置節點 * > * SANtricity 系統管理員 * 。控制器資訊位於 https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricity 系統管理員標籤"^]。
+** 從 Grid Manager 中，選擇 *Nodes* > *_appliance node_* > *SANtricity System Manager*。控制器資訊位於 https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["SANtricity 系統管理員標籤"^]。
 ** 將 Management Station 中的瀏覽器指向控制器的網域名稱或 IP 位址。
 
 
@@ -360,7 +360,7 @@ passPhrase="passPhrase";
 
 . 確認重啟已完成且節點已重新加入網格：
 +
-.. 在網格管理器中，選擇*NODES*。
+.. 在 Grid Manager 中，選擇 *Nodes* 。
 .. 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 
 
@@ -387,4 +387,4 @@ passPhrase="passPhrase";
 
 
 .接下來呢？
-更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。

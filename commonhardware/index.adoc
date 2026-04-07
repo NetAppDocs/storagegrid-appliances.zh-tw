@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: maintain overview, maintenance overview, about maintain, about maintenance 
 summary: 請依照下列指示維護 StorageGRID 系統。 
 ---
-= 節點維護的一般程序：總覽
+= StorageGRID 應用裝置的常見維護程序
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -38,10 +38,12 @@ NOTE: 在這些說明中， "Linux " 指的是 Red Hat ® Enterprise Linux ® �
 
 每種類型的 StorageGRID 應用裝置的特定維護程序、請在應用裝置維護章節中說明：
 
+* link:../sg6200/index.html["維護 SG6200 應用裝置"]
 * link:../sg6100/index.html["維護 SG6100 應用裝置"]
 * link:../sg6000/index.html["維護 SG6000 應用裝置"]
-* link:../sg5800/index.html["維護 SG5800 應用裝置"]
 * link:../sg5700/index.html["維護SG5700應用裝置"]
-* link:../sg110-1100/index.html["維護 SG110 和 SG1100 設備"]
+* link:../sg5800/index.html["維護 SG5800 應用裝置"]
 * link:../sg100-1000/index.html["維護 SG100 和 SG1000 設備"]
+* link:../sg110-1100/index.html["維護 SG110 和 SG1100 設備"]
+* link:../sg120-1200/index.html["維護 SG120 和 SG1200 應用裝置"]
 

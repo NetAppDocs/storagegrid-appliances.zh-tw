@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, sg6100, sg6112, expansion shelf, cabinet, rack, drives 
 summary: 對於 SG6160 和 SGF6112 、您可以在機櫃或機架中安裝滑軌、然後將控制器機櫃、任何擴充機櫃和運算控制器滑到滑軌上。 
 ---
-= 安裝至機櫃或機架（ SG6100 ）
+= 將 SG6100 安裝到機櫃或機架中
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

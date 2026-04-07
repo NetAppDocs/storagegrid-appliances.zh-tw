@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, drive shelf, drive shelves, 24-drive, shelf, shelves, rail, rails 
 summary: 您可以在機櫃或機架中安裝一組 EF570 控制器機櫃的滑軌、然後將陣列滑入滑軌。 
 ---
-= 安裝 24 個磁碟機櫃（ SGF6024 ）
+= 安裝 SGF6024 的 24 磁碟機櫃
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

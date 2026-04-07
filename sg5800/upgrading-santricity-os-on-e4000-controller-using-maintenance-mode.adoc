@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5800, storage node, storage appliance, controller, e2800, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
 summary: 若儲存控制器目前使用SANtricity 的是08.42.20.00之前的版本（11.42\）、您必須使用維護模式程序來套用升級。 
 ---
-= 使用維護模式升級 E4000 控制器上的 SANtricity OS
+= 使用維護模式升級 SG5800 E4000 控制器上的 SANtricity 作業系統
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,8 +12,6 @@ summary: 若儲存控制器目前使用SANtricity 的是08.42.20.00之前的版�
 
 [role="lead"]
 您可以使用維護模式來升級 E4000 控制器上的 SANtricity OS 。
-
-若儲存控制器目前使用SANtricity 的是08.42.20.00（11.42）之前版本的作業系統、您必須使用維護模式程序來套用升級。
 
 
 NOTE: 若儲存控制器目前使用的 SANtricity OS 版本低於 08.42.20.00 （ 11.42 ）、建議使用 link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["使用 Grid Manager 來套用升級"]。不過、如果您偏好使用維護模式程序、或是技術支援人員指示您使用維護模式程序。
@@ -54,7 +52,7 @@ NOTE: 立即啟動升級檔案。請勿延遲啟動。
 設備重新啟動並重新加入電網最多可能需要 20 分鐘。若要確認重啟已完成且節點已重新加入網格：
 
 +
-... 在網格管理器中，選擇*NODES*。
+... 在 Grid Manager 中，選擇 *Nodes* 。
 ... 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 
 

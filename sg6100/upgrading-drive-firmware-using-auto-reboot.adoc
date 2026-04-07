@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6160, storage node, storage appliance, upgrade, firmware, drive, disk, automatic 
 summary: StorageGRID裝置安裝程式會在裝置重新啟動期間自動安裝最新的 E 系列磁碟機韌體檔案。 
 ---
-= 裝置重新啟動期間自動升級 SG6160 磁碟機韌體
+= 在應用裝置重新開機期間升級 SG6160 磁碟機韌體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

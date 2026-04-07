@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: mtu, change, changing 
 summary: 您可以變更為應用裝置節點設定IP位址時所指派的MTU設定。 
 ---
-= 變更MTU設定
+= 變更 StorageGRID 應用裝置的 MTU 設定
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -55,7 +55,7 @@ NOTE: 為獲得最佳網路效能、所有節點都應在其Grid Network介面�
 設備重新啟動並重新加入電網最多可能需要 20 分鐘。若要確認重啟已完成且節點已重新加入網格：
 
 +
-... 在網格管理器中，選擇*NODES*。
+... 在 Grid Manager 中，選擇 *Nodes* 。
 ... 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 
 

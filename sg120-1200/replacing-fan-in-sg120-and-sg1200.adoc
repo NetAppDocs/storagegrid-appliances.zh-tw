@@ -1,0 +1,117 @@
+---
+permalink: sg120-1200/replacing-fan-in-sg120-and-sg1200.html 
+sidebar: sidebar 
+keywords: storagegrid, sg120, sg1200, admin appliance, replacing, replace, fan, remove, removing, removal, install, installing 
+summary: SG120 或 SG1200 應用裝置配備八個散熱風扇。如果其中一個風扇發生故障、您必須盡快更換、以確保應用裝置正常散熱。 
+---
+= 更換 SG120 或 SG1200 的風扇
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG120 或 SG1200 應用裝置有七個散熱風扇。如果其中一個風扇故障、您必須盡快更換、以確保應用裝置正常散熱。
+
+.關於這項工作
+為避免服務中斷、請確認所有其他儲存節點均已連接至網格、然後再開始更換風扇、或在可接受服務中斷期間的排程維護期間更換風扇。請參閱的相關資訊 https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["監控節點連線狀態"^]。
+
+更換風扇時、無法存取應用裝置節點。
+
+取下應用裝置的頂蓋後，即可存取冷卻風扇。
+
+
+NOTE: 兩個電源供應器單元中的每個單元都有一個風扇。此程序不包含電源供應器風扇。
+
+.開始之前
+* 您擁有正確的更換風扇。
+* 您有 link:verify-component-to-replace.html["已確定要更換的風扇的位置"]。
+* 您有link:locating-sg120-and-sg1200-in-data-center.html["SG120 或 SG1200 應用裝置的實際位置"]，您正在資料中心更換風扇。
++
+
+NOTE: 從機架中移除應用裝置之前，需要 link:power-sg120-and-sg1200-off-on.html#shut-down-the-sg120-or-sg1200-appliance["受控制的產品關機"]。
+
+* 您已中斷所有纜線的連線並link:reinstalling-sg120-and-sg1200-cover.html["已取下產品護蓋"]。
+* 您已確認其他風扇已安裝並執行。
+
+
+.步驟
+. 將防靜電腕帶的綁帶末端包覆在您的腕帶上、並將扣夾末端固定在金屬接地上、以避免產生靜電。
+. 找到您需要更換的風扇。
++
+機殼內七個風扇的位置如下（圖中所示為 StorageGRID 應用裝置前半部分，頂蓋已移除）：
+
++
+image::../media/drw_fan_position_ieops-2614.svg[StorageGRID 設備機箱中的風扇位置]
+
++
+|===
+| 機箱位置 | 風扇單元 
+
+
+ a| 
+1.
+ a| 
+FAN_SYS0
+
+
+
+ a| 
+2.
+ a| 
+FAN_SYS1
+
+
+
+ a| 
+3.
+ a| 
+FAN_SYS2
+
+
+
+ a| 
+4.
+ a| 
+FAN_SYS3
+
+
+
+ a| 
+5.
+ a| 
+FAN_SYS4
+
+
+
+ a| 
+6.
+ a| 
+FAN_SYS5
+
+
+
+ a| 
+7.
+ a| 
+FAN_SYS6
+
+|===
+. 使用風扇上的藍色彈片、將故障風扇從機箱中提出。
++
+image:../media/drw_s2025_fan_replace_ieops-2552.svg["從機箱中移除風扇"]
+
+. 將替換風扇滑入機箱的開放式插槽。
++
+將風扇上的連接器與電路板上的插座對齊。
+
+. 將風扇的連接器穩固地按入電路板。
+. link:reinstalling-sg120-and-sg1200-cover.html["將頂蓋裝回產品上"]，然後按下閂鎖，將蓋子固定到位。
+. link:power-sg120-and-sg1200-off-on.html["開啟產品電源"] 並監控應用裝置 LED 和開機代碼。
++
+使用BMC介面來監控開機狀態。
+
+. 確認應用裝置節點出現在Grid Manager中、且未顯示任何警示。
+
+
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。

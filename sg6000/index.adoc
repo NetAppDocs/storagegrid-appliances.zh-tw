@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, maintain, maintaining, hardware, procedures, tasks 
 summary: 您可能需要在SG6000應用裝置上執行維護程序。本節中的程序假設應用裝置已部署為StorageGRID 位於整個系統的儲存節點。 
 ---
-= 維護 SG6000 應用裝置
+= 對 SG6000 應用裝置進行維護
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

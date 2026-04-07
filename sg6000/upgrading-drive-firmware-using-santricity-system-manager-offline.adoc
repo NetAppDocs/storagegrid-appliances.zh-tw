@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, upgrade, firmware, drive, disk, SANtricity System Manager, SANtricity 
 summary: 您可以升級磁碟機韌體、以確保擁有所有最新的功能和錯誤修復。 
 ---
-= 使用離線方法、使用 SANtricity 系統管理員升級 SG6000 磁碟機韌體
+= 使用 SANtricity System Manager 離線方法升級 SG6000 磁碟機韌體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -43,7 +43,7 @@ NOTE: 如果您要升級屬於快取群組一部分的 SSD 磁碟機中的韌體
 . 使用SANtricity 下列其中一種方法來存取《系統管理程式》：
 +
 ** 使用StorageGRID 《Suse安裝程式》、然後選取*進階*>* SANtricity 《系統管理員*》
-** 使用 Grid Manager 並選擇 * 節點 * > *_Storage Node_* > * SANtricity System Manager*
+** 使用 Grid Manager 並選擇 *Nodes* > *_Storage Node_* > *SANtricity System Manager*
 ** 瀏覽至儲存控制器 IP 以使用 SANtricity 系統管理員：
 +
 `*https://_Storage_Controller_IP_*`
@@ -152,7 +152,7 @@ link:troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html[
 設備重新啟動並重新加入電網最多可能需要 20 分鐘。若要確認重啟已完成且節點已重新加入網格：
 
 +
-... 在網格管理器中，選擇*NODES*。
+... 在 Grid Manager 中，選擇 *Nodes* 。
 ... 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 
 

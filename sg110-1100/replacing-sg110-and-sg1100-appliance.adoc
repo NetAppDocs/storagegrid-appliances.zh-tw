@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg110, sg1100, Replacing, replace, remove, removing, removal, install, installing, installation 
 summary: 如果設備無法正常運作或故障、您可能需要更換設備。 
 ---
-= 更換 SG110 或 SG110 設備
+= 更換 SG110 或 SG1100 應用裝置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -145,4 +145,4 @@ WARNING: 為了避免資料遺失、如果 Appliance Installer 指出需要變�
 * link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html#view-error-codes["檢視應用裝置的開機代碼"]
 
 
-更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。

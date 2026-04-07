@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure, setup, set up, IP, IP address 
 summary: 您可以使用 StorageGRID 應用裝置安裝程式來設定用於 StorageGRID Grid 、 Admin 和 Client Networks 上服務應用裝置或應用裝置儲存節點的 IP 位址和路由資訊。 
 ---
-= 設定StorageGRID 靜態IP位址
+= 設定 StorageGRID 應用裝置 IP 位址
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -22,10 +22,12 @@ summary: 您可以使用 StorageGRID 應用裝置安裝程式來設定用於 Sto
 
 * link:../sg100-1000/changing-link-configuration-of-services-appliance.html["變更 SG100 或 SG1000 服務應用裝置的連結組態"]
 * link:../sg110-1100/changing-link-configuration-of-sg110-and-sg1100-appliance.html["變更 SG110 或 SG1100 服務應用裝置的連結組態"]
+* link:../sg120-1200/changing-link-configuration-of-sg120-and-sg1200-appliance.html["變更 SG120 或 SG1200 服務應用裝置的連結組態"]
 * link:../sg5700/changing-link-configuration-of-e5700sg-controller.html["變更E5700SG控制器的連結組態"]
 * link:../sg5800/changing-link-configuration-of-sg5800-controller.html["變更 SG5800 控制器的連結組態"]
 * link:../sg6000/changing-link-configuration-of-sg6000-cn-controller.html["變更 SG6000-CN 控制器的連結組態"]
 * link:../sg6100/changing-link-configuration-of-sgf6112-appliance.html["變更 SG6100 應用裝置的連結組態"]
+* link:../sg6200/changing-link-configuration-of-sg6200-appliance.html["變更 SG6200 應用裝置的連結組態"]
 
 
 [NOTE]

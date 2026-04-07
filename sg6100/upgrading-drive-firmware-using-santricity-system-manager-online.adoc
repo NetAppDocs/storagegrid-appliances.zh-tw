@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, storage node, storage appliance, upgrade, upgrading, firmware, drive, disk, SANtricity System Manager, SANtricity 
 summary: 您可以升級磁碟機韌體、以確保擁有所有最新的功能和錯誤修復。 
 ---
-= 使用 SANtricity System Manager 線上方法（ SG6160 ）升級 SG6100 磁碟機韌體
+= 使用 SANtricity 線上方法升級 SG6160 磁碟機韌體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -36,7 +36,7 @@ CAUTION: 請勿一次在多個 StorageGRID 應用裝置上升級磁碟機韌體�
 . 使用SANtricity 下列其中一種方法來存取《系統管理程式》：
 +
 ** 使用StorageGRID 《Suse安裝程式》、然後選取*進階*>* SANtricity 《系統管理員*》
-** 使用 Grid Manager 並選擇 * 節點 * > *_Storage Node_* > * SANtricity System Manager*
+** 使用 Grid Manager 並選擇 *Nodes* > *_Storage Node_* > *SANtricity System Manager*
 ** 瀏覽至儲存控制器 IP 以使用 SANtricity 系統管理員：
 +
 `*https://_Storage_Controller_IP_*`

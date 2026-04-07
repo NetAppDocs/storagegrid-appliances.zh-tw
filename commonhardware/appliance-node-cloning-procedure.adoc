@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, appliance node clone, appliance node cloning, node clone, node cloning 
 summary: 複製程序可能需要數天的時間、才能在來源節點（正在更換的應用裝置）和目標（新的）應用裝置之間傳輸資料。 
 ---
-= 複製應用裝置節點
+= 複製 StorageGRID 應用裝置節點
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -52,7 +52,7 @@ NOTE: 使用1-GbE管理網路進行複製資料傳輸、會導致複製速度變
 在設定並驗證目標應用裝置之後、在「安裝」區段中、會在來源節點上啟用*開始複製*。
 
 +
-如果存在妨礙複製的問題、*開始複製*不會啟用、您必須解決的問題會列為*連線狀態*。這些問題會列在StorageGRID 來源節點和目標應用裝置的「支援中心安裝程式」首頁上。一次只會顯示一個問題、狀態會隨著情況變更而自動更新。解決所有的複製問題以啟用*開始複製*。
+如果有封鎖複製的問題，則 *Start Cloning* 功能將不會啟用，您必須解決的問題將顯示在 *Connection state* 中。這些問題會列在來源節點和目標應用裝置的 StorageGRID Appliance Installer 首頁上。一次只顯示一個問題，狀態會隨著情況的變化自動更新。請解決所有複製問題以啟用 *Start Cloning* 功能。
 
 +
 當*開始複製*啟用時、*目前狀態*會指出StorageGRID 選擇用於複製流量的物件網路、以及使用該網路連線的相關資訊。請參閱 link:considerations-and-requirements-for-appliance-node-cloning.html["應用裝置節點複製的考量與要求"]。

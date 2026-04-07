@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remap appliance ports, network, internal to external port mapping 
 summary: 您可以選擇性地將應用裝置節點上的內部連接埠重新對應至不同的外部連接埠。例如、由於防火牆問題、您可能需要重新對應連接埠。 
 ---
-= 選用：重新對應應用裝置的網路連接埠
+= 重新映射 StorageGRID 應用裝置的網路連接埠
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

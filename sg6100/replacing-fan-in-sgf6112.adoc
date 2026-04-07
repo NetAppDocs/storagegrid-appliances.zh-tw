@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, sg6100-cn, sg6160, storage appliance, Replacing, replace, fan, remove, removing, removal, install, installing 
 summary: SGF6112 應用裝置和 SG6100-CN 控制器具有八個冷卻風扇。如果其中一個風扇故障、您必須儘快更換、以確保產品具有適當的冷卻效果。 
 ---
-= 更換 SGF6112 或 SG6100-CN 中的風扇（ SG6160 ）
+= 更換 SGF6112 或 SG6100-CN 中的風扇
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -132,4 +132,4 @@ image::../media/sgf6112_fan_socket_check.png[風扇連接器檢查]
 . 確認應用裝置節點出現在Grid Manager中、且未顯示任何警示。
 
 
-更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。

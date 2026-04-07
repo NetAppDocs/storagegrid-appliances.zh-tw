@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, troubleshoot, storage node, storage appliance, upgrade, upgrading, firmware, drive, disk, SANtricity System Manager, SANtricity 
 summary: 疑難排解使用 SANtricity 系統管理員來升級應用裝置磁碟機上的韌體時可能發生的錯誤。 
 ---
-= 疑難排解磁碟機韌體升級錯誤（ SG6160 ）
+= 疑難排解 SG6160 磁碟機韌體升級錯誤
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

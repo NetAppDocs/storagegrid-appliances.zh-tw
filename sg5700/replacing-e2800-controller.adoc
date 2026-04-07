@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, storage node, storage appliance, Replacing, replace, e2800, controller, remove, removing, removal, install, installing, installation 
 summary: 如果 E2800 控制器無法正常運作或故障、您可能需要更換它。 
 ---
-= 更換SG5700中的E2800系列儲存控制器
+= 更換 SG5700 中的 E2800 系列儲存控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -224,14 +224,14 @@ image::../media/e2800_remove_battery.gif[電池卡扣]
 . 翻轉控制器、確認電池安裝正確。
 +
 
-CAUTION: *可能的硬體損壞*：電池正面的金屬法蘭必須完全插入控制器上的插槽（如第一個圖所示）。如果電池安裝不正確（如第二個圖所示）、則金屬法蘭可能會接觸控制器板、造成損壞。
+CAUTION: *可能造成硬體損壞* -- 電池前端的金屬凸緣必須完全插入控制器上的插槽（如第一張圖所示）。如果電池安裝不正確（如第二張圖所示），金屬凸緣可能會接觸到控制器電路板，造成損壞。
 
 +
 ** *正確：電池的金屬法蘭已完全插入控制器上的插槽：*
 +
 image::../media/e2800_battery_flange_ok.gif[電池法蘭正確]
 
-** *不正確：電池的金屬法蘭未插入控制器上的插槽：*
+** *不正確 -- 電池的金屬凸緣未插入控制器上的插槽：*
 +
 image::../media/e2800_battery_flange_not_ok.gif[電池法蘭不正確]
 
@@ -381,11 +381,11 @@ NOTE: 將IP位址指派給更換控制器的步驟取決於您是否將管理連
 
 . 確認重啟已完成且節點已重新加入網格：
 +
-.. 在網格管理器中，選擇*NODES*。
+.. 在 Grid Manager 中，選擇 *Nodes* 。
 .. 驗證設備節點是否處於正常狀態（綠色複選標記圖標image:../media/icon_alert_green_checkmark.png["綠色核取記號"]（在節點名稱左側），這表示沒有活動警報並且節點已連接到電網。
 
 
 . 從「支援系統管理程式」中、確認新的控制器是最佳的、並收集支援資料。SANtricity
 
 
-更換零件後、請將故障零件歸還給NetApp、如套件隨附的RMA指示所述。請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨擴大機；更換"^] 頁面以取得更多資訊。
+更換零件後，請依照套件隨附的 RMA 說明將故障零件退回至 NetApp。如需詳細資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨與更換"^]頁面。

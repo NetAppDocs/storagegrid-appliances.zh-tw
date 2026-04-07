@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, raid, raid mode, change, changing, modify, DDP, ddp16, RAID 6 
 summary: 在某些應用裝置機型上、您可以變更為應用裝置上的不同 RAID 模式、以符合您的儲存和還原需求。您只能在部署應用裝置儲存節點之前變更模式。 
 ---
-= 選用：變更 RAID 模式（ SG5760 、 SG5860 、 SG6000 和 SG6160 ）
+= 變更 SG5760、SG5860、SG6000、SG6160 或 SG6260 的 RAID 模式
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,6 +14,16 @@ summary: 在某些應用裝置機型上、您可以變更為應用裝置上的�
 在某些應用裝置機型上、您可以變更為應用裝置上的不同 RAID 模式、以符合您的儲存和還原需求。您只能在部署應用裝置儲存節點之前變更模式。
 
 如果您使用 ConfigBuilder 來產生 JSON 檔案、則可以自動變更 RAID 模式。請參閱 link:automating-appliance-installation-and-configuration.html["自動化應用裝置的安裝與組態"]。
+
+您可以變更下列應用裝置的 RAID 模式：
+
+* SG5760
+* SG5860
+* SGF6024.
+* SG6060
+* SG6160
+* SG6260
+
 
 .關於這項工作
 如果您的應用裝置支援、您可以選擇下列其中一個 Volume 組態選項：
@@ -25,7 +35,7 @@ NOTE: 所有 DDP 和 RAID 類型的磁碟區大小不一致。DDP 和 RAID6 運�
 +
 ** 相較於 RAID 6 、 DDP 可提供更好的系統效能、減少磁碟機故障後的重建時間、並簡化管理。
 ** 每個儲存設備或擴充機櫃都會建立一個磁碟集區。
-** DDP 在 SG5760 、 SG5860 和 SG6160 應用裝置中提供抽屜遺失保護。
+** DDP 可在 SG5760、SG5860、SG6160 和 SG6260 應用裝置中提供磁碟櫃遺失保護。
 +
 
 NOTE: 由於有兩個 SSD 、 DDP 無法在 SG6060 設備中提供抽屜遺失保護。任何新增至 SG6060 的擴充機櫃都能有效保護抽屜遺失。
@@ -120,6 +130,30 @@ CAUTION: 如果已設定任何磁碟區、或StorageGRID 先前安裝了支援�
 
 --
 .SG6160
+--
+.開始之前
+* 您正在使用任何可連線StorageGRID 到該功能的用戶端。
+* 用戶端具有 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+
+
+.步驟
+. 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個IP位址。
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` 是運算控制器（而非儲存控制器）的IP位址、位於StorageGRID 任一張介紹網上。
+
++
+畫面會出現「the不再安裝StorageGRID 程式」首頁。
+
+. 選擇*進階*>* RAID模式*。
+. 在「*組態RAID模式*」頁面上、從「模式」下拉式清單中選取所需的RAID模式。
+. 按一下「 * 儲存 * 」。
+
+
+--
+.SG6260
 --
 .開始之前
 * 您正在使用任何可連線StorageGRID 到該功能的用戶端。

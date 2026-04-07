@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: email, notifications, alerts, set up, setup, configure, configuration, bmc 
 summary: 如果您希望在警示發生時傳送電子郵件通知、請使用 BMC 介面來設定 SMTP 設定、使用者、 LAN 目的地、警示原則和事件篩選器。 
 ---
-= 設定 BMC 警示的電子郵件通知
+= 設定 StorageGRID 應用裝置上 BMC 警示的電子郵件通知
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
