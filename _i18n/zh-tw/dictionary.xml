@@ -5498,7 +5498,6 @@
   <block id="05d13b5d561ee02e05de7ea4f7169cee" category="list-text"><block ref="6f88de86b8743bbe23202c83b893e250" category="inline-link-rx"></block>主管理節點，批准待處理的儲存節點，並完成StorageGRID安裝流程。</block>
   <block id="376bb4454cc4f54c591b8f4ae07ae743" category="list-text">對於除主管理節點之外的所有裝置節點，「安裝StorageGRID」階段將暫停，且嵌入式控制台上會出現一則訊息，提示您使用<block ref="e9b839af5117614531eec6994f76d987" category="inline-link-rx"></block>；然後，轉到下一步。</block>
   <block id="3ac50f2a980e2a0dd9d6fa781710632a" category="inline-link">選擇安全策略</block>
-  <block id="2111243c6011996eba7d5df0a47ac508" category="paragraph">此外，在啟用節點加密後啟用 FIPS 模式時， NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 模組用於靜態資料加密。參考<block ref="0e91844ad7f820ecc514bcaae0035f92" category="inline-link-rx"></block>了解更多。</block>
   <block id="7c64a0ffe12c24b27b1dd68957dd18aa" category="admonition">當安裝啟用節點加密的裝置時，會指派一個臨時金鑰。在裝置連接到金鑰管理系統 (KMS) 並設定 KMS 安全金鑰之前，裝置上的資料不受保護。請參閱<block ref="1b141fe85ee275193be0bd326245089d" category="inline-link-rx"></block>了解更多。</block>
   <block id="51ec0745d9ba491bcc4f5f242c8c0d31" category="paragraph">當您為具有 FIPS 磁碟機的StorageGRID裝置啟用磁碟機加密時，FIPS 磁碟機提供的 FIPS 加密將用於靜態資料的加密。</block>
   <block id="ff6fefc7a96e8115d9c98e950380cb1b" category="paragraph">您可以在載入 Grid Manager 之前在初始裝置安裝期間啟用磁碟機加密。您也可以將裝置置於維護模式來啟用磁碟機加密或變更密碼。</block>
@@ -5559,7 +5558,6 @@
   <block id="9e71171ece37d79d6a9ea0b46f4f2e83" category="list-text">頁面頂部顯示的橫幅指示偵測到的擴充架總數。</block>
   <block id="287d3c085da3b5779cf076e1815c7217" category="list-text">頁面底部的消息表明擴展已準備好開始。</block>
   <block id="d927c8996626c51de70a8dfc5704162b" category="paragraph">重新啟動完成後，將顯示「*任務*」選項卡，其中顯示重新啟動節點或將裝置置於維護模式的選項。</block>
-  <block id="8eca4ebb793a1236eac6e1dd47dd0f10" category="section-title">[[poweron]]開啟 SG6000-CN 控制器並驗證操作</block>
   <block id="eb147bbc308036fe81fabc831fb029ad" category="summary">SG6000-CN 運算控制器有八個冷卻風扇。如果其中一個風扇發生故障，則必須盡快更換它以確保控制器正常冷卻。</block>
   <block id="58e9871c73652215d8793286f86ac1fb" category="paragraph">更換風扇時，儲存節點將無法存取。</block>
   <block id="e7a2bf1d05b1975e8efb0afe9d894d7c" category="paragraph">照片展示了 SG6000-CN 計算控制器的風扇。取下控制器的頂蓋後即可看到冷卻風扇。</block>
@@ -6587,4 +6585,5 @@
   <block id="e878dffa8e66e8c25ff8e57de8cc1e29" category="sidebar">外部 NIC（SG6260）</block>
   <block id="2ba40bc143304c6482f4d84aed967cc7" category="sidebar">SG6200-CN 控制器（SG6260）</block>
   <block id="966b0abd256df531996f5779b0267572" category="sidebar">E4000 控制器（SG6260）</block>
+  <block id="7a6eea70e2a063993169b9f20b674a54" category="paragraph">此外，啟用節點加密後再啟用 FIPS 模式時，將使用 NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 模組對靜態資料進行加密。如需詳細資訊，請參閱<block ref="fb536484ccdd3f2f62bef4c60558bb81" category="inline-link-rx"></block>。</block>
 </blocks>
