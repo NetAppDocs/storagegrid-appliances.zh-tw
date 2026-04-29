@@ -6586,4 +6586,5 @@
   <block id="2ba40bc143304c6482f4d84aed967cc7" category="sidebar">SG6200-CN 控制器（SG6260）</block>
   <block id="966b0abd256df531996f5779b0267572" category="sidebar">E4000 控制器（SG6260）</block>
   <block id="7a6eea70e2a063993169b9f20b674a54" category="paragraph">此外，啟用節點加密後再啟用 FIPS 模式時，將使用 NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 模組對靜態資料進行加密。如需詳細資訊，請參閱<block ref="fb536484ccdd3f2f62bef4c60558bb81" category="inline-link-rx"></block>。</block>
+  <block id="8eca4ebb793a1236eac6e1dd47dd0f10" category="section-title">[[poweron]]開啟 SG6000-CN 控制器電源並驗證其運作狀況</block>
 </blocks>
