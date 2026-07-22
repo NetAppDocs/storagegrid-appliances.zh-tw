@@ -15,6 +15,7 @@ summary: 將 SG100 或 SG1000 從機櫃或機架上取下、即可拆下機箱�
 
 
 
+[[remove-sg100-or-sg1000-from-cabinet-or-rack]]
 == 從機櫃或機架上卸下 SG100 或 SG1000
 
 將 SG100 或 SG1000 從機櫃或機架上取下、即可裝上機箱頂蓋、或將產品移至其他位置。
@@ -55,6 +56,7 @@ image::../media/sg6060_rack_retaining_screws.png[SG6060機架固定螺絲]
 
 
 
+[[reinstall-sg100-or-sg1000-into-cabinet-or-rack]]
 == 將 SG100 或 SG1000 重新安裝到機櫃或機架中
 
 硬體維護完成後、請將產品重新安裝到機櫃或機架中。

@@ -15,6 +15,7 @@ summary: 您可以關閉 SGF6112 應用裝置、然後重新開啟電源以執�
 
 
 
+[[shut-down-the-sg120-or-sg1200-appliance]]
 == 關閉 SG120 或 SG1200 應用裝置
 
 關閉設備以執行硬體維護。
@@ -60,6 +61,7 @@ CAUTION: 您必須輸入下列指定的命令、以控制裝置的關機。最�
 
 
 
+[[power-on-sg120-or-sg1200-and-verify-operation]]
 == 開啟 SG120 或 SG1200 的電源並驗證其運作狀況
 
 完成維護後、開啟控制器電源。

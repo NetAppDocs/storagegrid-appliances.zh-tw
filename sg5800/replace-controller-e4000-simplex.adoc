@@ -44,6 +44,7 @@ NOTE: 請勿仰賴 E 系列指示來更換 StorageGRID 應用裝置中的控制�
 
 
 
+[[step-1-prepare-to-replace-controller]]
 == 步驟1：準備更換控制器
 
 儲存磁碟機安全金鑰、備份組態及收集支援資料、以準備更換控制器機箱。然後、您可以停止主機I/O作業、並關閉控制器機櫃的電源。
@@ -105,6 +106,7 @@ CAUTION: * 資料存取可能中斷 * —如果儲存陣列中的所有磁碟機
 
 
 
+[[step-2-place-the-controller-offline]]
 == 步驟 2 ：將控制器離線
 
 使控制器離線、並確認所有作業都已完成。
@@ -127,6 +129,7 @@ CAUTION: * 資料存取可能中斷 * —如果儲存陣列中的所有磁碟機
 
 
 
+[[step-3-remove-e4000-controller-canister]]
 == 步驟 3 ：取下 E4000 控制器箱
 
 取下 E4000 控制器箱。
@@ -146,6 +149,7 @@ CAUTION: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線�
 
 
 
+[[step-4-determine-parts-to-transfer-to-replacement-controller]]
 == 步驟 4 ：確定要傳輸到更換控制器的零件
 
 您的更換控制器可能已預先安裝零件。確定必須將哪些零件轉移到更換控制器圓筒。
@@ -162,6 +166,8 @@ CAUTION: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線�
 
 
 
+[[step-5-remove-the-battery]]
+[[step5_remove_battery]]
 == 步驟 5 ：取出電池
 
 已從受損的控制器中取出電池、並將其安裝在替換控制器中。
@@ -200,6 +206,8 @@ image::../media/legend_icon_02.png[圖說文字參考 2.]
 
 
 
+[[step-6-move-the-dimms]]
+[[step6_remove_dimm]]
 == 步驟 6 ：移動 DIMM
 
 從受損的控制器圓筒中取出 DIMM 、並將其安裝到更換的控制器圓筒中。
@@ -258,6 +266,8 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 
 
 
+[[step-7-install-the-battery]]
+[[step7_install_battery]]
 == 步驟 7 ：安裝電池
 
 將電池裝入更換的控制器容器中。
@@ -274,6 +284,8 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 
 
 
+[[step-8-replace-controller]]
+[[step8_replace_controller]]
 == 步驟 8 ：更換控制器
 
 安裝替換控制器、並確認節點已重新加入網格。

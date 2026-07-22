@@ -18,6 +18,7 @@ summary: 您可能需要更換 SG5800 控制器中的 CMOS 電池，以便系統
 
 
 
+[[step-1-shut-down-the-sg5800-controller]]
 == 步驟 1：關閉 SG5800 控制器
 
 .步驟
@@ -40,6 +41,7 @@ summary: 您可能需要更換 SG5800 控制器中的 CMOS 電池，以便系統
 
 
 
+[[step-2-remove-the-controller-from-the-appliance]]
 == 步驟 2：從應用裝置中取出控制器
 
 .步驟
@@ -64,6 +66,7 @@ image::../media/drw_sg5800_open_controller_module_cover_IEOPS-695.svg[打開 SG5
 
 
 
+[[step-3-replace-the-cmos-battery]]
 == 步驟 3：更換 CMOS 電池
 
 .步驟
@@ -89,6 +92,7 @@ NOTE: 從電池座中取出電池時，請注意電池的極性。電池上標�
 
 
 
+[[step-4-reinstall-the-controller-into-the-appliance]]
 == 步驟 4：將控制器重新安裝到應用裝置中
 
 .步驟

@@ -2,7 +2,7 @@
 permalink: installconfig/accessing-storagegrid-appliance-installer.html 
 sidebar: sidebar 
 keywords: appliance installer, installer, access, accessing, start, starting 
-summary: 您必須存取StorageGRID 《RideseAppliance安裝程式》、以驗證安裝程式版本、並設定應用裝置與StorageGRID 三個「鏈」網路之間的連線：網格網路、管理網路（選用）和用戶端網路（選用）。 
+summary: 您必須存取 StorageGRID 應用裝置安裝程式，以驗證安裝程式版本並設定應用裝置與三個 StorageGRID 網路（網格網路、管理網路（選購）和用戶端網路（選購））之間的連線。 
 ---
 = 存取 StorageGRID 應用裝置安裝程式
 :allow-uri-read: 

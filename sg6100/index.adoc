@@ -27,6 +27,7 @@ summary: 您可能需要在裝置上執行維護程序。本節將說明維護 S
 
 
 
+[[drive-firmware-upgrade]]
 == 磁碟機韌體升級
 
 每次設備重新開機時、會自動檢查 SGF6112 磁碟機上的韌體。必要時、韌體會自動升級至目前 StorageGRID 版本所預期的版本。通常、韌體升級會在 StorageGRID 軟體升級期間進行。現有 StorageGRID 版本的任何必要磁碟機韌體升級都會包含在 Hotfix 中。請遵循每個 Hotfix 所提供的指示、以確保升級套用至所有能從中受益的磁碟機。
@@ -36,6 +37,7 @@ NOTE: 您不需要 SANtricity 系統管理員來維護 SGF6112 應用裝置。
 
 
 
+[[general-maintenance-procedures]]
 == 一般維護程序
 
 請參閱 link:../commonhardware/index.html["一般維護程序"] 適用於所有應用裝置的相同程序、例如套用 Hotfix 、還原節點或站台、以及執行網路維護。

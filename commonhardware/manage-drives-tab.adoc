@@ -46,6 +46,7 @@ image:../media/manage_drives_tab_details.png["管理磁碟機索引標籤磁碟�
 
 
 
+[[turn-locator-light-on-or-off]]
 == 開啟或關閉定位燈
 
 若要在應用裝置中實際找到磁碟機：
@@ -66,6 +67,7 @@ image:../media/manage_drives_tab_details.png["管理磁碟機索引標籤磁碟�
 
 
 
+[[logically-replace-drivelogically-replace-drive]]
 == [[邏輯 置換式磁碟機 ]] 邏輯置換磁碟機
 
 如果需要重建或重新初始化儲存設備中的磁碟機：
@@ -83,6 +85,7 @@ image:../media/manage_drives_tab_details.png["管理磁碟機索引標籤磁碟�
 
 
 
+[[fail-drive]]
 == 故障磁碟機
 
 若要進行疑難排解、您可以手動將懷疑故障的磁碟機「故障」。然後系統將在沒有該磁碟機的情況下執行。

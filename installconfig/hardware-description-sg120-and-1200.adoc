@@ -2,7 +2,7 @@
 permalink: installconfig/hardware-description-sg120-and-1200.html 
 sidebar: sidebar 
 keywords: storagegrid, sg120, sg1200, service appliance, services appliance, gateway Node, admin node, overview, models, features, applications, how to use, services 
-summary: StorageGRID SG120 服務應用裝置和 SG1200 服務應用裝置可以作為閘道節點和管理節點運作，從而在 StorageGRID 系統中提供高可用性負載平衡服務。這兩個應用裝置可以同時作為閘道節點和管理節點（主節點或非主節點）運作。 
+summary: StorageGRID SG120 服務應用裝置和 SG1200 服務應用裝置可作為閘道節點和管理節點運作，以在 StorageGRID 系統中提供高可用度負載平衡服務。這兩個應用裝置可同時作為閘道節點和管理節點（主要或非主要）運作。 
 ---
 = StorageGRID SG120 和 SG1200 應用裝置
 :allow-uri-read: 
@@ -15,6 +15,7 @@ StorageGRID SG120 服務應用裝置和 SG1200 服務應用裝置可作為閘道
 
 
 
+[[appliance-features]]
 == 應用裝置功能
 
 SG120 和 SG1200 應用裝置提供下列功能：
@@ -22,6 +23,7 @@ SG120 和 SG1200 應用裝置提供下列功能：
 * 閘道節點或管理節點功能StorageGRID 適用於一個不全系統。
 * 旨在簡化節點部署與組態的《產品安裝程式（the StorageGRID
 * 部署後、即可從StorageGRID 現有的管理節點或從下載到本機磁碟機的軟體存取此功能。為了進一步簡化部署程序、最新版軟體會在製造期間預先載入應用裝置。
+* 一顆 AMD 3.65 GHz 處理器，提供 16 個核心（32 個執行緒）
 * 用於監控和診斷部分應用裝置硬體的基礎板管理控制器（BMC）。
 * 連線到所有三StorageGRID 個不完整網路的能力、包括Grid Network、管理網路和用戶端網路：
 +
@@ -33,6 +35,7 @@ SG120 和 SG1200 應用裝置提供下列功能：
 
 
 
+[[sg120-and-sg1200-diagrams]]
 == SG120 與 SG1200 圖表
 
 此圖顯示移除邊框後的 SG120 和 SG1200 正面。從正面看，這兩款產品除了邊框上的產品名稱外完全相同。
@@ -76,6 +79,7 @@ image::../media/sg120_sg1200_rear_leds.png[後方 LED 燈 SG120 和 SG1200]
 |===
 
 
+[[sg120-connectors]]
 == SG120 連接器
 
 此圖顯示 SG120 的背面，包括連接埠、風扇和電源供應器。
@@ -151,6 +155,7 @@ BMC管理連接埠
 |===
 
 
+[[sg1200-connectors]]
 == SG1200 連接器
 
 此圖顯示 SG1200 背面的連接器。
@@ -228,6 +233,7 @@ BMC管理連接埠
 |===
 
 
+[[sg120-and-sg1200-applications]]
 == SG120 與 SG1200 應用程式
 
 您可以透過以下方式設定 StorageGRID 服務應用裝置，以提供閘道服務以及部分網格管理服務的備援。

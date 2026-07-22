@@ -15,6 +15,7 @@ summary: 您可以關閉 SG6000-CN 控制器並重新開機以執行維護。
 
 
 
+[[shut-down-sg6000-cn-controller]]
 == 關閉SG6000-CN.控制器
 
 關閉SG6000-CN-控制器以執行硬體維護。
@@ -83,6 +84,7 @@ image::../media/bmc_power_control_page_controller_off.png[BMC Power Control頁�
 
 
 
+[[poweronpower-on-sg6000-cn-controller-and-verify-operation]]
 == [[poweron]]開啟 SG6000-CN 控制器電源並驗證其運作狀況
 
 完成維護後、開啟控制器電源。

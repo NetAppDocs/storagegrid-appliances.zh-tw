@@ -2,7 +2,7 @@
 permalink: installconfig/hardware-description-sg5700.html 
 sidebar: sidebar 
 keywords: sg5700, sg5712, sg5712x, sg5760, sg5760x, storage appliance 
-summary: SG5700 StorageGRID 產品是整合式儲存與運算平台、可在StorageGRID 整個網格中作為儲存節點運作。此應用裝置可用於結合應用裝置儲存節點和虛擬（軟體型）儲存節點的混合式網格環境。 
+summary: SG5700 StorageGRID 產品是整合式儲存與運算平台、可在StorageGRID 整個網格中作為儲存節點運作。此應用裝置可在混合式網格環境中使用、此環境結合了應用裝置儲存節點和虛擬（軟體型）儲存節點。 
 ---
 = StorageGRID SG5700 應用裝置
 :allow-uri-read: 
@@ -26,6 +26,7 @@ SG5700應用裝置共有四種機型：SG5712和SG5712X、以及SG5760和SG5760X
 
 
 
+[[sg5700-components]]
 == SG5700 元件
 
 SG5700 機型包含下列元件：
@@ -77,10 +78,12 @@ SG5700 機型包含下列元件：
 
 
 
+[[sg5700-diagrams]]
 == SG5700 圖表
 
 
 
+[[sg5712-front-and-rear-views]]
 === SG5712 前後視圖
 
 圖中所示為 SG5712 的前後端、這是一款 2U 機箱、可容納 12 個磁碟機。
@@ -89,6 +92,7 @@ image::../media/sg5712_front_and_back_views.gif[SG5712應用裝置的正面和�
 
 
 
+[[sg5712-components]]
 === SG5712 元件
 
 SG5712包含兩個控制器和兩個電源風扇迴管。
@@ -122,6 +126,7 @@ E5700SG控制器（運算控制器）
 |===
 
 
+[[sg5712x-front-and-rear-views]]
 === SG5712X 前後視圖
 
 圖中所示為 SG5712X 的前後端、這是一款 2U 機箱、可容納 12 個磁碟機。
@@ -130,6 +135,7 @@ image::../media/sg5712x_front_and_back_views.gif[SG5712X 應用裝置的前後�
 
 
 
+[[sg5712x-components]]
 === SG5712X 元件
 
 SG5712X 包含兩個控制器和兩個電源風扇迴廊。
@@ -163,6 +169,7 @@ E5700SG控制器（運算控制器）
 |===
 
 
+[[sg5760-front-and-rear-views]]
 === SG5760 前後視圖
 
 圖中所示為 SG5760 機型的前後方、 4U 機箱可在 5 個磁碟機抽屜中容納 60 個磁碟機。
@@ -171,6 +178,7 @@ image::../media/sg5760_front_and_back_views.gif[SG5760應用裝置的正面和�
 
 
 
+[[sg5760-components]]
 === SG5760 元件
 
 SG5760包含兩個控制器、兩個風扇迴管和兩個電源迴管。
@@ -211,6 +219,7 @@ E5700SG控制器（運算控制器）
 |===
 
 
+[[sg5760x-front-and-rear-views]]
 === SG5760X 前後視圖
 
 圖中所示為 SG5760X 機型的前後方、 4U 機箱可在 5 個磁碟機抽屜中容納 60 個磁碟機。
@@ -219,6 +228,7 @@ image::../media/sg5760x_front_and_back_views.gif[SG5760X 應用裝置的前後�
 
 
 
+[[sg5760x-components]]
 === SG5760X 元件
 
 SG5760X 包含兩個控制器、兩個風扇迴廊和兩個電源迴廊。
@@ -259,6 +269,7 @@ E5700SG控制器（運算控制器）
 |===
 
 
+[[sg5700-controllers]]
 == SG5700 控制器
 
 12個磁碟機的SG5712和SG5712X、以及60個磁碟機的SG5760和SG5760X機型StorageGRID 、均包含E5700SG運算控制器和E系列E2800儲存控制器。
@@ -271,6 +282,7 @@ E2800A 和 E2800B 控制器的規格和功能完全相同、但互連連接埠�
 
 
 
+[[e5700sg-compute-controller]]
 === E5700SG 運算控制器
 
 * 做為應用裝置的運算伺服器。
@@ -369,6 +381,7 @@ image::../media/e5700sg_controller_with_callouts.gif[E5700SG控制器上的連�
 |===
 
 
+[[e2800-storage-controller]]
 === E2800 儲存控制器
 
 SG5700設備使用兩種版本的E2800儲存控制器：E2800A和E2800B。E2800A沒有HIC、E2800B則有四埠HIC。除了互連連接埠的位置之外、兩個控制器版本的規格和功能完全相同。

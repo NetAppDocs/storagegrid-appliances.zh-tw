@@ -18,6 +18,7 @@ TIP: 請使用 ConfigBuilder 隨附的活頁簿、而非使用表格。使用 Co
 
 
 
+[[check-storagegrid-version]]
 == 檢查 StorageGRID 版本
 
 安裝 SGF6212 或 SG6260 應用裝置之前、請確認您的 StorageGRID 系統使用的是所需版本的 StorageGRID 軟體。
@@ -42,6 +43,7 @@ SG6260
 |===
 
 
+[[connect-to-santricity-system-manager]]
 == 連線至 SANtricity 系統管理員
 
 您需要將 SG6260 應用裝置中的兩個儲存控制器連接到您將用於 SANtricity System Manager 的管理網路。控制器 A 位於頂部，控制器 B 位於底部。
@@ -142,6 +144,7 @@ IP位址格式
 |===
 
 
+[[administration-and-maintenance-ports]]
 == 系統管理與維護連接埠
 
 管理員網路for支援功能是選用的網路、可用於系統管理和維護。StorageGRID此應用裝置使用應用裝置上的下列 1/10-GbE 連接埠連線至管理網路。
@@ -222,6 +225,7 @@ DHCP指派給管理網路連接埠的IP位址（如果在開機後可用）
 |===
 
 
+[[networking-ports]]
 == 網路連接埠
 
 應用裝置上的四個網路連接埠可連接StorageGRID 至「知識網」和選用的「用戶端網路」。
@@ -282,6 +286,7 @@ DHCP指派給管理網路連接埠的IP位址（如果在開機後可用）
 |===
 
 
+[[grid-network-ports]]
 == 網格網路連接埠
 
 Grid Network for StorageGRID 效能不只是一項必要的網路、可用於所有內部StorageGRID 的資訊流量。應用裝置使用四個網路連接埠連線至Grid Network。
@@ -353,6 +358,7 @@ VLAN 標記（如果已啟用 VLAN 標記）
 |===
 
 
+[[client-network-ports]]
 == 用戶端網路連接埠
 
 Client Network for StorageGRID 推銷是選用的網路、通常用於提供用戶端傳輸協定存取網格。應用裝置使用四個網路連接埠連線至用戶端網路。
@@ -423,6 +429,7 @@ VLAN 標記（如果已啟用 VLAN 標記）
 |===
 
 
+[[bmc-management-network-ports]]
 == BMC管理網路連接埠
 
 您可以使用圖中圓圈內的 1-GbE 管理連接埠、存取應用裝置上的 BMC 介面。此連接埠支援使用智慧型平台管理介面（IPMI）標準、透過乙太網路遠端管理控制器硬體。
@@ -472,12 +479,14 @@ BMC管理網路的DHCP指派IP位址（如果在開機後可用）
 |===
 
 
+[[port-bond-modes]]
 == 連接埠連結模式
 
 當link:configuring-network-links.html["設定網路連結"]針對 SGF6212 應用裝置時，您可以對連接至 Grid Network 和選用 Client Network 的連接埠，以及連接至選用 Admin Network 的 1/10-GbE 管理連接埠使用連接埠綁定。連接埠綁定透過在 StorageGRID 網路和應用裝置之間提供備援路徑來協助保護您的資料。
 
 
 
+[[network-bond-modes]]
 === 網路連結模式
 
 應用裝置上的網路連接埠支援網格網路和用戶端網路連線的固定連接埠連結模式或集合連接埠連結模式。
@@ -563,6 +572,7 @@ NOTE: 如果您選擇使用少於四個網路連接埠、請注意、安裝應�
 
 
 
+[[network-bond-modes-for-management-ports]]
 === 管理連接埠的網路連結模式
 
 對於兩個 1/10-GbE 管理連接埠、您可以選擇「自主網路連結」模式或「主動式備份」網路連結模式、以連線至選用的管理網路。

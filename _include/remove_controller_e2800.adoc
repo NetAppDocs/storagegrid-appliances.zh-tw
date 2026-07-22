@@ -4,6 +4,7 @@
 
 
 
+[[step-3-remove-the-controller]]
 == 步驟 3 ：移除控制器
 
 從設備中取出故障控制器。

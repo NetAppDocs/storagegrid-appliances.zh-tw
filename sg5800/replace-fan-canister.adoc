@@ -32,6 +32,7 @@ CAUTION: *可能的設備損壞*-如果您在開啟電源的情況下執行此�
 
 
 
+[[step-1-prepare-to-replace-fan-canister]]
 == 步驟1：準備更換風扇容器
 
 準備更換風扇箱、方法是收集儲存陣列的支援資料、並找出故障元件。
@@ -77,6 +78,7 @@ NOTE: 如果磁碟櫃中的第二個風扇磁碟櫃沒有*最佳*狀態、請勿
 
 
 
+[[step-2-remove-failed-fan-canister-and-install-new-one]]
 == 步驟2：移除故障的風扇容器、然後安裝新的
 
 移除故障的風扇容器、以便更換新的風扇容器。
@@ -96,6 +98,7 @@ CAUTION: 如果您未關閉儲存陣列的電源、請務必在30分鐘內取出
 
 
 
+[[step-3-complete-fan-canister-replacement]]
 == 步驟3：完整更換風扇容器
 
 確認新的風扇容器運作正常、收集支援資料、並恢復正常作業。

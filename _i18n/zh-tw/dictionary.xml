@@ -202,7 +202,6 @@
   <block id="5b3b1684d4744d60d0ea559befae0b79" category="doc">維護 SG6000 儲存設備硬體</block>
   <block id="a8f1846e6f8184bc3046276498b961f1" category="summary">準備您的站台以安裝 StorageGRID 系統。</block>
   <block id="8f58a5361471a29bd4cd009b10ad3e55" category="doc">準備 StorageGRID 安裝</block>
-  <block id="7ed8cfd7589ccb16457b793b3fcdbe4a" category="summary">您可以將服務應用裝置部署為主要管理節點、非主要管理節點或閘道節點。所有服務應用裝置都可以同時做為閘道節點和管理節點 \ （主要或非主要 \ ）運作。</block>
   <block id="336299dd63542543d20b9e2473db44b8" category="doc">部署服務應用裝置節點</block>
   <block id="c6e7000dc5b49d6aeef69c46f89c0fda" category="paragraph">您可以將服務應用裝置部署為主要管理節點、非主要管理節點或閘道節點。所有服務應用裝置都可以同時做為閘道節點和管理節點（主要或非主要）運作。</block>
   <block id="5982956d1cd896b46b04ee40aafef91c" category="section-title">將服務應用裝置部署為主要管理節點</block>
@@ -433,7 +432,6 @@
   <block id="637d84093e47a2d311f70c16efd1fbaf" category="section-title">自動化選項</block>
   <block id="860c87a182ca31f44cc41655b6ef0e38" category="paragraph">若要自動化應用裝置的安裝與組態、請使用下列一或多個選項：</block>
   <block id="580a5e0ce39ae2ec5351c812bce2c0fd" category="inline-link-macro">NetApp ConfigBuilder 工具</block>
-  <block id="37d45de60b7a8ed97f4f0abd5b1f4fe7" category="list-text">產生包含組態詳細資料的 JSON 檔案。請與 NetApp 專業服務顧問合作使用 <block ref="6e01088b801244abaf1606b43aa333bc" category="inline-link-macro-rx"></block> 若要完成這些步驟：</block>
   <block id="47d00aac8daab338422a3465a9886690" category="list-text">請洽詢 NetApp 專業服務部門以取得銷售訂單編號。</block>
   <block id="28f34d834b7a27ef978d9d87c9083c40" category="list-text">從 ConfigBuilder 取得活頁簿。</block>
   <block id="f927657604cba8e17d1d86e40d1cf59f" category="list-text">請諮詢專業服務部門以完成工作簿。</block>
@@ -621,7 +619,6 @@
   <block id="0fee0f52421181527dca342e62631904" category="list-text">針對您想要通知警示原則群組的每個事件建立篩選器。</block>
   <block id="be3213e417fd502705643e4549968d50" category="list-text">您可以針對電源動作、特定感應器事件或所有事件建立事件篩選器。</block>
   <block id="5119bbd8747a73ede6231374d0ae78d9" category="list-text">如果您不確定要監控哪些事件、請選取*所有感測器*作為感測器類型、*所有事件*作為事件選項。如果您收到不想要的通知、可以稍後變更您的選擇。</block>
-  <block id="fcf672ea93cdf70821fc498932b88f50" category="summary">SG5700 StorageGRID 產品是整合式儲存與運算平台、可在StorageGRID 整個網格中作為儲存節點運作。此應用裝置可用於結合應用裝置儲存節點和虛擬（軟體型）儲存節點的混合式網格環境。</block>
   <block id="9988d2e8cbe0869dd21d6284c017b853" category="paragraph">SG5700 StorageGRID 產品是整合式儲存與運算平台、可在StorageGRID 整個網格中作為儲存節點運作。此應用裝置可在混合式網格環境中使用、此環境結合了應用裝置儲存節點和虛擬（軟體型）儲存節點。</block>
   <block id="bfdc9d1fb0dc76b1f5af63251ca8d737" category="paragraph">SSG5700系列應用裝置提供下列功能：StorageGRID</block>
   <block id="63c4aebff5dcf4232c42fbc5ca0e270e" category="list-text">整合StorageGRID 適用於整個過程的儲存與運算元素。</block>
@@ -1154,7 +1151,6 @@
   <block id="ccff858e243f2d310a8c9501d4e241f9" category="paragraph">您可以使用SANtricity 「靜態系統管理員」來設定下列設定：</block>
   <block id="7480b3d5b96758e9706895f9f09074a6" category="list-text">儲存控制器機櫃中元件的電子郵件警示、SNMP警示或系統記錄警示</block>
   <block id="2afb5eeba8ea3c04fefb11c5aac8aaa0" category="list-text">儲存AutoSupport 控制器機櫃中元件的E系列支援設定。</block>
-  <block id="0d50ff542a20edfdc030f87225abed8a" category="list-text">磁碟機安全金鑰、用於解除鎖定安全磁碟機（如果啟用磁碟機安全功能、則需要此步驟）</block>
   <block id="ee9d34135078ea9745c7862276886545" category="list-text">管理員密碼、用於存取SANtricity 《系統管理程式》</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">執行下列其中一項：</block>
   <block id="d88448093f00932101bdf21de1585cc1" category="list-text">使用StorageGRID 《Suse安裝程式》、然後選取*進階*&gt;* SANtricity 《系統管理員*》</block>
@@ -1213,7 +1209,6 @@
   <block id="79658e10ca015f24acdccf34e6840296" category="list-text">輸入預設閘道。</block>
   <block id="3c7ae12db7024ffd08d2bca474f5ed35" category="paragraph">您可能需要幾分鐘的時間才能套用變更。</block>
   <block id="fa819e302c806f17c39d49ed55f0265d" category="paragraph">當您連線SANtricity 至「靜態系統管理程式」時、您將使用新的靜態IP位址作為URL：+<block ref="29c66d4541758aec7932976994c3319a" prefix=" " category="inline-code"></block></block>
-  <block id="16eb8283e310826145f33fe6116ba3eb" category="summary">功能完善的SG100服務應用裝置和SG1000服務應用裝置可做為閘道節點和管理節點、在一個不穩定的系統中提供高可用度負載平衡服務。StorageGRID StorageGRID這兩種應用裝置可同時做為閘道節點和管理節點（主要或非主要）。</block>
   <block id="6d0ade2fa24dcd390db4eebf8a1390df" category="paragraph">功能完善的SG100服務應用裝置和SG1000服務應用裝置可做為閘道節點和管理節點、在一個不穩定的系統中提供高可用度負載平衡服務。StorageGRID StorageGRID這兩種設備可同時做為閘道節點和管理節點（主要或非主要）運作。</block>
   <block id="07c7e7e8da60c1194366cb92a963b708" category="section-title">應用裝置功能</block>
   <block id="b9d4703bd7bc28d5d3523eb88d7e2146" category="paragraph">服務應用裝置的兩種機型都提供下列功能：</block>
@@ -1417,7 +1412,6 @@
   <block id="05da532ab893fe35781cf6f2b75bf763" category="list-text">如果您選取* DHC*、請依照下列步驟設定用戶端網路：</block>
   <block id="c66bca512904c85a57880fa47eaa3ce9" category="paragraph">系統會自動填入「* IPV4位址*」和「*閘道*」欄位。如果DHCP伺服器設定為指派MTU值、則* MTU *欄位會填入該值、且欄位會變成唯讀。</block>
   <block id="d80dcce5a45b36200579b2180aa0d922" category="list-text">確認閘道正確。</block>
-  <block id="f68ea530857d41d84c76df868f9eb7d9" category="summary">您可以使用 DHCP 或靜態 IP 位址、在下列應用裝置機型上存取 BMC 介面： </block>
   <block id="b2c25fe42d77ac47cb90bf69bf420964" category="paragraph">您可以使用 DHCP 或靜態 IP 位址、在下列應用裝置機型上存取 BMC 介面：</block>
   <block id="2883e46b0cc053610a740a38d3926f04" category="list-text">應用裝置上的 BMC 管理連接埠會連線至您打算使用的管理網路。</block>
   <block id="4be2dcfae6d0da21daf5c0d492c93112" category="image-alt">SG100 BMC 管理連接埠</block>
@@ -1780,7 +1774,6 @@
   <block id="60b8ced56b242b43efe07a671368d5a7" category="list-text">安裝前12個磁碟機之後、請輕推中央並關閉兩個槓桿、將抽屜滑回。</block>
   <block id="3202a3d2f21835931c6e615b4e441dec" category="list-text">對其他四個藥櫃重複這些步驟。</block>
   <block id="f0e4d108bd327aa0295d08fc98aaafd0" category="list-text">連接前擋板。</block>
-  <block id="f8f92f8e3df4caaa331a15ebf21c66fe" category="summary">您必須存取StorageGRID 《RideseAppliance安裝程式》、以驗證安裝程式版本、並設定應用裝置與StorageGRID 三個「鏈」網路之間的連線：網格網路、管理網路（選用）和用戶端網路（選用）。</block>
   <block id="5ec7f22d3e51b38237d9e49f06df79c2" category="paragraph">您必須存取StorageGRID 《RidsAppliance安裝程式》、以驗證安裝程式版本、並設定應用裝置與StorageGRID 三個「Ridworks」（網格網路）、「Admin Network」（管理網路）（選用）和「Client Network」（用戶端網路）（選用）之間的連線。</block>
   <block id="be86e83cca4c5d05fe7d5b6b9a6e55ee" category="list-text">服務應用裝置或儲存設備控制器會連線至您打算使用的所有 StorageGRID 網路。</block>
   <block id="17afffb34f67dd060b9cdff4dad524cf" category="list-text">您知道這些網路上服務應用裝置或儲存設備控制器的 IP 位址、閘道和子網路。</block>
@@ -2749,7 +2742,6 @@
   <block id="a79e81724891718056b140bfa1a514de" category="list-text">請網路管理員將您移除的應用裝置DNS /網路和IP位址與替換應用裝置的MAC位址建立關聯。</block>
   <block id="8953cf6acd035e33305d53707b5a433b" category="admonition">您必須先確認原始應用裝置的所有IP位址都已更新、才能為替換應用裝置供電。否則、當裝置開機時、就會取得新的DHCP IP位址、而且可能無法重新連線StorageGRID 到效益。此步驟適用於StorageGRID 所有連接至應用裝置的資訊網路。</block>
   <block id="e94bdaef0d9cae7ec49505ca7dc2034e" category="admonition">如果原始應用裝置使用靜態IP位址、則新應用裝置會自動採用您移除的應用裝置IP位址。</block>
-  <block id="5848604b5fe59288c4b2e70e183c15f3" category="summary">複製程序可能需要數天的時間、才能在來源節點（正在更換的應用裝置）和目標（新的）應用裝置之間傳輸資料。</block>
   <block id="2dfb9b9fe663376184bfd65a4deb94fd" category="doc">複製應用裝置節點</block>
   <block id="0235e20f203c294d37deda19de63884d" category="paragraph">複製程序可能需要數天的時間、才能在來源節點（正在更換的應用裝置）和目標（新）應用裝置之間傳輸資料。</block>
   <block id="47e8652b2101615daf061495f94fd6e3" category="list-text">您已將相容的目標應用裝置安裝在機櫃或機架中、連接所有纜線並接上電力。</block>
@@ -2831,8 +2823,6 @@
   <block id="5662450490d384590a15e305a3d7dbf1" category="paragraph">如果在複製時遇到下列任何問題、複製程序會停止、並產生錯誤訊息：</block>
   <block id="6b6698841d4a344fe258deb6bde48008" category="list-text">網路組態錯誤</block>
   <block id="b330203392074bd8387d32b32cbd4c30" category="list-text">來源設備與目標設備之間缺乏連線能力</block>
-  <block id="59d2f54bed9c6d1ff315a058a4a52671" category="list-text">來源與目標應用裝置不相容</block>
-  <block id="89e16c9efc1a3195a41f4ac0343ca036" category="list-text">儲存節點是容量不足的替換應用裝置</block>
   <block id="82a441e64c838645d368374b712e97b3" category="paragraph">您必須解決複製的每個問題才能繼續。</block>
   <block id="e4652cabe8177b6898c3fceccf7e0889" category="summary">請依照下列指示維護 StorageGRID 系統。</block>
   <block id="0eb7986c87b6853bd0db330cbf27b26c" category="section-title">關於這些指示</block>
@@ -2869,7 +2859,6 @@
   <block id="665b2ee84b3ce1addec753e47812a753" category="list-text">規劃足夠的時間來完成節點複製程序。可能需要數天的時間、才能將資料從運作中的儲存節點傳輸到目標應用裝置。排定複製時間、將對貴企業的影響降至最低。</block>
   <block id="ed44cdb4d3e080dee6b895b78592b4b8" category="list-text">一次只能複製一個應用裝置節點。複製可防止您StorageGRID 同時執行其他的還原維護功能。</block>
   <block id="3bb09eb481180921ee13fa6049a488e0" category="list-text">複製應用裝置節點之後、您可以使用返回預先安裝狀態的來源應用裝置做為目標、來複製另一個相容的節點應用裝置。</block>
-  <block id="e485a2bb58eff1a96bc2f6c877e4c6e8" category="summary">如果您在安裝期間為應用裝置啟用節點加密、則可以監控每個應用裝置節點的節點加密狀態、包括節點加密狀態和金鑰管理伺服器（KMS）詳細資料。</block>
   <block id="a7a12ea1a4c80643b85cc22b459bd606" category="paragraph">如果您在安裝期間為應用裝置啟用節點加密、則可以監控每個應用裝置節點的節點加密狀態、包括節點加密狀態和金鑰管理伺服器（KMS）詳細資料。</block>
   <block id="91fba6642e220c9d6b627c272ca1f4b0" category="inline-link">設定金鑰管理伺服器</block>
   <block id="629dd4a72c9a27968c541923d0344da9" category="list-text">您已在安裝期間啟用應用裝置的節點加密。安裝應用裝置後、您無法啟用節點加密。</block>
@@ -3151,7 +3140,6 @@
   <block id="4ebeeaa7ee87ac8b2673d03aa209528d" category="list-text"><block ref="44281fb68d37f427e8563b8bb64bc984" category="inline-link-macro-rx"></block>，然後向下按閂鎖以將主機蓋固定到位。</block>
   <block id="e8cbcebfd4a0149b15a9fe6fe6bfb926" category="inline-link-macro">開啟產品電源</block>
   <block id="1b0eb2545518d0e0366e6b971f537a44" category="list-text"><block ref="417f185b431b470ffef7aa3d838054f4" category="inline-link-macro-rx"></block> 並監控應用裝置 LED 和開機代碼。</block>
-  <block id="bf04cfba5d2cd0ba1be7c4d7cde79fba" category="summary">如果網路介面卡無法正常運作或故障、您可能需要更換 SGF6112 中的網路介面卡（ NIC\ ）。</block>
   <block id="025553a609b217df0cc104ad958d9e8c" category="list-text">移除 NIC</block>
   <block id="d492c7ad8ff60caffa0e7efaeedbb9a4" category="inline-link-macro">要更換的 NIC 的位置</block>
   <block id="54f61529cc51ad6624acceb851e19e96" category="list-text">您已決定 <block ref="157fb39ae4912c0305e48246cdfc5cc6" category="inline-link-macro-rx"></block>。</block>
@@ -3243,7 +3231,6 @@
   <block id="459b2d61785b202f6e87131bca916dcc" category="list-text">如果儲存控制器使用SANtricity 的是版本早於08.42.20.00（11.42）的更新版、請使用維護模式來執行升級。</block>
   <block id="c29cf29a2bce34e5013e1a82ec72ef4a" category="inline-link-macro">使用SANtricity 維護模式升級E2800控制器上的作業系統</block>
   <block id="646d87e1de76b95beee2ac952a5c5653" category="paragraph"><block ref="646d87e1de76b95beee2ac952a5c5653" category="inline-link-macro-rx"></block></block>
-  <block id="d1bb1de66e65ddf766b2dc80cb3a706c" category="summary">若儲存控制器目前使用SANtricity 的是08.42.20.00之前的版本（11.42\）、您必須使用維護模式程序來套用升級。</block>
   <block id="fe39b5535f4e6df2b9e600318b2459d3" category="paragraph">若儲存控制器目前使用SANtricity 的是08.42.20.00（11.42）之前版本的作業系統、您必須使用維護模式程序來套用升級。</block>
   <block id="4ff199beae6291bec2f5557a8578779a" category="list-text">您必須將E5700SG控制器放入 <block ref="66517df9b2a708b9947fc0143b4273f5" category="inline-link-macro-rx"></block>中斷與E2800控制器的連線。</block>
   <block id="5bd0791bf672edd73937c100b2f0ddfc" category="paragraph">請勿一次在多個 StorageGRID 應用裝置上的 E 系列控制器中升級 SANtricity OS 或 NVSRAM 。</block>
@@ -3255,7 +3242,6 @@
   <block id="ccb1df2c12036c342b870e4c64ece899" category="list-text">請遵循_E2800與E5700 SANtricity 《VMware更新軟體與韌體指南》_或SANtricity 《VMware系統管理程式》線上說明中的指示、以升級E2800控制器的韌體與NVSRAM.</block>
   <block id="8d6b5bef60ff6bcada8bf246bf494e34" category="admonition">立即啟動升級檔案。請勿延遲啟動。</block>
   <block id="63842e9ce414fd5ee413e3082d8d6932" category="list-text">選取*重新開機進入維護模式*、以重新啟動控制器、使節點保持維護模式。  如果您在程序期間遇到任何失敗、並想要重新啟動、請選取此選項。  節點完成重新開機至維護模式後、請從失敗程序的適當步驟重新啟動。</block>
-  <block id="9742999f9fee77777cbda7af8a8b8ebc" category="summary">對於目前使用SANtricity 更新版本的儲存控制器、您必須使用Grid Manager來套用升級。</block>
   <block id="73e6ae3c7ecd9bcb5330f9692132c087" category="doc">使用 Grid Manager 升級 SG5700 儲存控制器上的 SANtricity OS</block>
   <block id="be5478803b1a452fb672a118c66f1f8e" category="paragraph">對於目前使用SANtricity 不支援更新版本的儲存控制器、您必須使用Grid Manager進行升級。</block>
   <block id="29c81145f8df4c302d2a5db797d28b64" category="paragraph"><block ref="29c81145f8df4c302d2a5db797d28b64" category="inline-link-rx"></block></block>
@@ -3880,7 +3866,6 @@
   <block id="80373303baca203e4e14cdd9e3730d3a" category="image-alt">Aggregate Port Bond Mode SG1100</block>
   <block id="c185e2af57eb486402a7055cd7b9584b" category="image-alt">管理網路連接埠連結 SG1100</block>
   <block id="168fbbc8217ae40bd5086de4e4935611" category="image-alt">管理網路連接埠連結 SG110</block>
-  <block id="835d59e48069a93606ecd047daaf1f61" category="summary">StorageGRID SG110 服務應用裝置和 SG1100 服務應用裝置可作為閘道節點和管理節點運作、在 StorageGRID 系統中提供高可用度負載平衡服務。這兩種應用裝置可同時做為閘道節點和管理節點（主要或非主要）。</block>
   <block id="df039f5a970acf6d438e3773b9545296" category="paragraph">StorageGRID SG110 服務應用裝置和 SG1100 服務應用裝置可作為閘道節點和管理節點運作、在 StorageGRID 系統中提供高可用度負載平衡服務。這兩種設備可同時做為閘道節點和管理節點（主要或非主要）運作。</block>
   <block id="78fe9ec70c03c307edaf827b55bf78d3" category="list-text">SG110 最多支援四個 10 或 25 GbE 連線至 Grid Network 和 Client Network 。</block>
   <block id="da5b95c24564c9b901b35d67fe3e06f9" category="list-text">SG1100 最多可支援四個 10 、 25 、 40 或 100 GbE 連線至 Grid Network 和 Client Network 。</block>
@@ -3933,7 +3918,6 @@
   <block id="0a5b0b97f6329c71c665a41fb8e50546" category="paragraph"><block ref="0a5b0b97f6329c71c665a41fb8e50546" category="inline-link-macro-rx"></block></block>
   <block id="17f139a2fd45164bf31db4cbc506794e" category="paragraph"><block ref="94283cdb05b445a973e84301f97caf0b" category="inline-link-macro-rx"></block> 以存取頂蓋。</block>
   <block id="a216695ce5b47cfaec12a1b19ae3fb60" category="paragraph"><block ref="1b46dbdc1359715fefc31e850941339c" category="inline-link-macro-rx"></block>。</block>
-  <block id="4cac03fe582c6e9c7b00f6150d8de44e" category="summary">如果 SG110 或 SG1100 中的網路介面卡無法正常運作或故障、您可能需要更換其中的網路介面卡（ NIC ）。</block>
   <block id="4c68b0943e79e049731958e525193bbd" category="paragraph">如果 SG110 或 SG1100 中的網路介面卡（ NIC ）無法正常運作或故障、您可能需要更換該卡。</block>
   <block id="927be83d9035c123f8d7d9e8cfafeb94" category="inline-link-macro">實體放置 SG110 或 SG1100 應用裝置</block>
   <block id="24bf7ce85a6fb58803cea8f5c88ca74b" category="list-text">您有 <block ref="452dbc820d5040c6f7a26972163c857d" category="inline-link-macro-rx"></block> 您要更換資料中心內 NIC 的位置。</block>
@@ -4759,7 +4743,6 @@
   <block id="21beafac072af3624f5cf77d3c470a43" category="paragraph">*SG6100* ：</block>
   <block id="cc5f703bb883e7b54c8db00321eecaae" category="paragraph">此圖顯示兩個 1-GbE 管理連接埠如何在管理網路的「主動式備份」網路連結模式中連結。</block>
   <block id="6cb92c0d4f550369b07be209fb280050" category="image-alt">管理網路連接埠連結 SG6100-cn</block>
-  <block id="dcba35698266a429ba97a9df72d33ecb" category="summary">SG5800 StorageGRID 應用裝置是整合式儲存與運算平台、可在 StorageGRID 網格中作為儲存節點運作。此應用裝置可用於結合應用裝置儲存節點和虛擬（軟體型）儲存節點的混合式網格環境。</block>
   <block id="bc0affc4503a133a51781ca78ac8bdaa" category="paragraph">SG5800 應用裝置有兩種機型： SG5812 和 SG5860 。</block>
   <block id="1d59ebac544f15dc4241a8a4af7a618d" category="section-title">SG5800 元件</block>
   <block id="5581a20a3b85686c910dfa4dab223387" category="paragraph">SG5800 機型包括下列元件：</block>
@@ -4950,7 +4933,6 @@
   <block id="77442a88ebd7cb0929276245bb6fa261" category="doc">更換 SGF6112 或 SG6100-CN 中的一個或兩個電源</block>
   <block id="b40f48980b91f6eeeaca45a02098961f" category="paragraph">圖中顯示 SGF6112 應用裝置或 SG6100-CN 運算節點的兩個電源供應器單元。電源供應器可從產品背面存取。</block>
   <block id="56347f82384b21f0e089b756280bf350" category="image-alt">SGF6112 或 SG6100-cn 背面、附兩個電源供應器</block>
-  <block id="45c26226adb5ac780361eb67562102b4" category="summary">如果網路介面卡無法正常運作或故障、您可能需要更換 SG6100-CN 中的網路介面卡（ NIC\ ）。</block>
   <block id="68389729ef500c851bd175b61c435629" category="paragraph">如果 SG6100-CN 中的外部網路介面卡（ NIC ）無法正常運作或故障、您可能需要更換該卡。</block>
   <block id="873f4e1b6b1acfd0f6ea7fc4a7cee73c" category="image-alt">NIC 面板。</block>
   <block id="a906778e494f0b40580e1e85dcb33e85" category="inline-link-macro">實體放置 SG6100-CN 控制器</block>
@@ -4969,7 +4951,6 @@
   <block id="b362454c1b783a548faa935e3a1610de" category="paragraph">如果您沒有其他維護程序可在產品中執行、請在產品移除後將產品送回機架、連接纜線並接上電源。</block>
   <block id="f40a968e022f47cf01d4d58ef9437f0c" category="summary">SGF6112 應用裝置和 SG6100-CN 控制器具有八個冷卻風扇。如果其中一個風扇故障、您必須儘快更換、以確保產品具有適當的冷卻效果。</block>
   <block id="dff98198bff06709975037453d00df52" category="list-text">您有 <block ref="8a600a3d3695735e4213dc5c6fac3a3e" category="inline-link-macro-rx"></block> 您要在資料中心更換風扇的位置。</block>
-  <block id="7a70e2c3c98205b7029ea7982add5e80" category="summary">對於目前使用 SANtricity OS 08.42.20.00 （ 11.42\ ）或更新版本的儲存控制器、您可以使用 Grid Manager 或維護模式來套用升級。</block>
   <block id="80bcdb369c1aaaea9daefaf6cf5773ae" category="inline-link-macro">使用維護模式升級 SG6160 控制器上的 SANtricity OS</block>
   <block id="75bae77bd5a1e5d5a3fa60c2123780ca" category="summary">如果 SG6100-CN 控制器無法以最佳方式運作或發生故障、您可能需要更換該控制器。</block>
   <block id="001591654095885fb8e8bae93eba4b37" category="paragraph">更換 SG6100-CN 控制器時、將無法存取應用裝置儲存節點。如果 SG6100-CN 控制器運作正常、您可以在本程序開始時執行管制關機。</block>
@@ -5578,8 +5559,6 @@
   <block id="8fce7c0144a940f37356de4b05f9ac03" category="list-text"><block ref="20c889cb497b19c6d78c457067272345" category="inline-link-macro-rx"></block> 。</block>
   <block id="8ac73f13e2902ea7b6ebc3206cf4e576" category="doc">裝置重新啟動期間自動升級 SG6160 磁碟機韌體</block>
   <block id="a53555787eb9101bec73830602e0bb62" category="list-text">在<block ref="b3a7463520c62d140f81699021ea94dc" category="inline-link-macro-rx"></block>使用維護模式</block>
-  <block id="b7daca44acbdce2ad9adb9ec5b318f4b" category="inline-link">StorageGRID 12.0 文檔</block>
-  <block id="9dfc67a67b34935b9d51d04e94d0bd2f" category="paragraph">前往<block ref="b9e47dcffd0e3534b2aa2e23c80b77c4" category="inline-link-rx"></block>了解如何設定和使用StorageGRID 12.0 系統。</block>
   <block id="63e3b64d9d602e40bbccab8712d1918a" category="list-text"><block ref="63e3b64d9d602e40bbccab8712d1918a" category="inline-link-rx"></block></block>
   <block id="4acae57d3119f0b81d2bfd14c9585f13" category="doc">StorageGRID解決方案和資源</block>
   <block id="7a4f669ff4b9f9df5860c2049386e61b" category="paragraph">前往<block ref="f382e11c205630073ea43ce3c4862094" category="inline-link-rx"></block>了解如何在StorageGRID環境中測試和啟用應用程式。</block>
@@ -5832,7 +5811,6 @@
   <block id="aad8333d9e08949cd787302910775fbd" category="inline-link-macro">在已部署的 SG6200 新增擴充架的說明</block>
   <block id="77541c94006da9bb86a8b552d9150ad3" category="list-text">如果您的設備包含擴充架，請參閱 <block ref="3c6d222471db8085e113525c8d296c6e" category="inline-link-macro-rx"></block> 以取得佈線資訊。</block>
   <block id="0b778849bc67a68c1504430e6f89c910" category="doc">變更 StorageGRID 應用裝置上的 BMC 管理員或 root 密碼</block>
-  <block id="1e4d0568052c73aee41b0cb2ff1595bd" category="summary">SG6200、SG6100、SG6000 或服務應用裝置上的基板管理控制器（BMC）使用者介面提供有關硬體的狀態資訊，並允許您設定 SNMP 設定和應用裝置的其他選項。</block>
   <block id="adf9a7e2462899f094ee8d99eacd965c" category="doc">SG6000、SG6100 和 SG6200 StorageGRID 應用裝置和服務應用裝置的 BMC 介面</block>
   <block id="75fa8c64fee9e263091f2aabe5ba9979" category="paragraph">基板管理控制器（BMC）的使用者介面提供有關硬體的狀態資訊，並允許低階硬體存取，以進行應用裝置組態、監控和診斷。</block>
   <block id="1b198eee3944850f4a8e4e9951682d03" category="paragraph">您可以使用 BMC 來：</block>
@@ -5953,7 +5931,6 @@
   <block id="1338bd416f1abedfada7187cbfb63e8d" category="image-alt">SG6200-CN 網路管理連接埠</block>
   <block id="3148745e05a92a83fbcdbccae31be2ff" category="doc">StorageGRID SG100 和 SG1000 應用裝置</block>
   <block id="8a9e7a4a0ba3117db1340bac2975d997" category="doc">StorageGRID SG110 和 SG1100 應用裝置</block>
-  <block id="54dff7bc9e8851c674baa85e0141c6e2" category="summary">StorageGRID SG120 服務應用裝置和 SG1200 服務應用裝置可以作為閘道節點和管理節點運作，從而在 StorageGRID 系統中提供高可用性負載平衡服務。這兩個應用裝置可以同時作為閘道節點和管理節點（主節點或非主節點）運作。</block>
   <block id="72d14a85defc92fd5fda26789faa138e" category="doc">StorageGRID SG120 和 SG1200 應用裝置</block>
   <block id="570d10e11394117783d8c8dab12bf825" category="paragraph">StorageGRID SG120 服務應用裝置和 SG1200 服務應用裝置可作為閘道節點和管理節點運作，以在 StorageGRID 系統中提供高可用度負載平衡服務。這兩個應用裝置可同時作為閘道節點和管理節點（主要或非主要）運作。</block>
   <block id="d5df4584b0480b86b0b995c289936913" category="paragraph">SG120 和 SG1200 應用裝置提供下列功能：</block>
@@ -5999,7 +5976,6 @@
   <block id="3d925e4ac6c7edb56daad072a9390dbf" category="section-title">SG6200 硬體元件</block>
   <block id="483be79b3dc8c7471d09aae41e9bdf85" category="section-title">SGF6212 應用裝置</block>
   <block id="cef36d6e2f38b36fe14bff6966550a5a" category="paragraph">SGF6212 應用裝置包含下列元件：</block>
-  <block id="af670023b4c4ecbebf3b7158d7faf276" category="list-text">240 GB 內建開機磁碟機（包含 StorageGRID 軟體）</block>
   <block id="a1e9cd3e861e4270eeaaad03d992621e" category="list-text">4 個 10/25/40/100GbE 乙太網路連接埠，用於 Grid/Client 網路流量（或 4 個 200GbE，可選配 200 GbE NIC）</block>
   <block id="625a5060aef941dce2ab4f1a83799fff" category="list-text">12 個用於資料儲存的 NVMe SSD</block>
   <block id="3b0c38c561c81b8b7610b9dce48319ec" category="section-title">SG6260 應用裝置</block>
@@ -6025,7 +6001,6 @@
   <block id="24c4f54304a2b2a1f8221451d3337f81" category="image-alt">SG6260 後視圖</block>
   <block id="652eb9f76a7f5eb8d212f34d0750c8fc" category="paragraph">SG6200-CN 運算控制器的電源供應器（1 / 2）</block>
   <block id="78029a54d37a7b9067334796ad30c931" category="paragraph">SG6200-CN 運算控制器的連接器</block>
-  <block id="e5a8c894ca52500bc6bcb77e429cb813" category="paragraph">E 系列 E400 儲存控制器（1 / 2）與連接器</block>
   <block id="d753a76a0baf8f1c6857bce395567f76" category="section-title">SG6200 控制器</block>
   <block id="aac0c58f7aca8c4f08a48de6a596c61d" category="section-title">SG6200-CN 運算控制器</block>
   <block id="a09cfb881650bb87069f49e82edd9a62" category="paragraph">此圖顯示 SG6200-CN 運算控制器背面的連接埠。</block>
@@ -6249,7 +6224,6 @@
   <block id="d623147a5f7d75bb8912c700c2393455" category="list-text">您有<block ref="1f791f788031021f9297b1694c7fd1de" category="inline-link-macro-rx"></block>，您正在資料中心更換 CMOS 電池。</block>
   <block id="21530853daff50ee68eb3826cbdc3d23" category="admonition">從機架中移除應用裝置之前，需要 <block ref="aacef6b8aacbdb58a17a36f8322c5fa8" category="inline-link-macro-rx"></block>。</block>
   <block id="7bd65d76c2104f3111ba3e70e63f679b" category="list-text">您已中斷所有纜線的連線並<block ref="c69f25429c7763eb6c3c9bf0c5f5c46e" category="inline-link-macro-rx"></block>。</block>
-  <block id="2a2e917b8f70968ad6c8b3c645b9a2bc" category="summary">如果 SG120 或 SG1200 中的網路介面卡（NIC）運作不佳或發生故障，您可能需要更換該網路卡。</block>
   <block id="9e7295186913519c3b66f256adc3bcbc" category="doc">更換 SG120 或 SG1200 中的網路卡</block>
   <block id="e5c0747c33f9c713cf1e76eeac41700c" category="paragraph">如果 SG120 或 SG1200 中的網路介面卡（NIC）運作不佳或發生故障，您可能需要更換該網路卡。</block>
   <block id="ad2860de0ccbcf99211869ef137b43df" category="list-text">您有<block ref="1f791f788031021f9297b1694c7fd1de" category="inline-link-macro-rx"></block>，您正在資料中心更換 NIC。</block>
@@ -6454,13 +6428,11 @@
   <block id="7ec81f7c59287b2ec24608a13dbeef87" category="paragraph">您可以更換 SG6260 中的風扇匣。</block>
   <block id="401ba8db4cfce3b1103d073d1ca8e572" category="doc">更換儲存控制器機櫃或擴充機櫃中的電源箱 (SG6260)</block>
   <block id="1e0769c0e45b3c53ce145d67fc0fa62a" category="paragraph">您可以更換 SG6260 儲存控制器架或擴充架（DE460C）中的電源盒。</block>
-  <block id="c85adbc7b90b709c79f5f11a6473e485" category="summary">如果 SGF6212 中的網路介面卡（NIC）運作不佳或發生故障，您可能需要更換該網路卡。</block>
   <block id="e1c697f14a5f48d1180fc721ee2847f8" category="doc">更換 SGF6212 或 SG6200-CN 中的內部 NIC</block>
   <block id="aadb26ed1258e60d5437e37df86b363b" category="paragraph">如果 SGF6212 或 SG6200-CN 中的內部網路介面卡（NIC）運作不佳或發生故障，則可能需要更換該 NIC。</block>
   <block id="e90ea74cdd5b93d7b4771e731f1e1a12" category="list-text">您有<block ref="a553a7500f49ff052d8271ae45ee79db" category="inline-link-macro-rx"></block>需要更換資料中心的 NIC。</block>
   <block id="a10d08d1cc67ca2a00e50e2c259fd686" category="inline-image-macro">設備中 NIC 的位置</block>
   <block id="a5509df1d5502655fac5ba26da0f1f0e" category="paragraph"><block ref="a5509df1d5502655fac5ba26da0f1f0e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0480b9d04998086ac97bce91f3527114" category="summary">如果 SG6200-CN 中的網路介面卡（NIC）運作不佳或發生故障，您可能需要更換該網卡。</block>
   <block id="d34c29ed7eba5e18d02dde98ce165589" category="doc">更換 SG6200-CN 中的外部網路卡</block>
   <block id="8525225888042219b00b3182f1404adb" category="paragraph">如果 SG6200-CN 中的外部網路介面卡（NIC）運作不佳或發生故障，您可能需要更換該外部網路介面卡。</block>
   <block id="f23564587172dfdbfe2370e00a02a9e5" category="paragraph">若要防止服務中斷，請在開始更換網路介面卡（NIC）之前確認所有其他儲存節點已連接至網格，或在可接受服務中斷期間的排程維護時段內更換 NIC。請參閱<block ref="5059dc4531f4f3adf649d818b95a89ff" category="inline-link-macro-rx"></block>的相關資訊。</block>
@@ -6587,4 +6559,44 @@
   <block id="966b0abd256df531996f5779b0267572" category="sidebar">E4000 控制器（SG6260）</block>
   <block id="7a6eea70e2a063993169b9f20b674a54" category="paragraph">此外，啟用節點加密後再啟用 FIPS 模式時，將使用 NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 模組對靜態資料進行加密。如需詳細資訊，請參閱<block ref="fb536484ccdd3f2f62bef4c60558bb81" category="inline-link-rx"></block>。</block>
   <block id="8eca4ebb793a1236eac6e1dd47dd0f10" category="section-title">[[poweron]]開啟 SG6000-CN 控制器電源並驗證其運作狀況</block>
+  <block id="a02c04f57c9d24a09341ad188ad5056d" category="list-text">如果您在目標節點的任何連接埠上啟用 DHCP，而這些連接埠在來源節點上設定為靜態，請確保來源節點的任何 MAC 位址都沒有永久的 DHCP 租約。否則，複製程序結束時可能會發生 IP 位址衝突。</block>
+  <block id="96478ad56343da4a15ef813226b04122" category="admonition">如果在複製過程結束時遇到 IP 位址衝突，請確保來源節點上具有靜態 IP 位址的連接埠（這些連接埠的 MAC 位址在目標節點上已啟用 DHCP）未被指派永久 DHCP 租約。請刪除或更新 DHCP 伺服器上的永久 DHCP 租約以解決此衝突。</block>
+  <block id="59f7e3046921d51c539dddae36c2f01e" category="list-text">複製作業正在進行中</block>
+  <block id="898b0a39f4fcce4a02baaef85f8249ed" category="list-text">目標應用裝置無法連接到主要管理節點</block>
+  <block id="ada492f01e47b0cf2cb0325cfb6b126b" category="list-text">來源與目標應用裝置不相容</block>
+  <block id="d891b9ae76665fdd65302619a8cab907" category="list-text">來源應用裝置和目標應用裝置處於不同的維護模式狀態</block>
+  <block id="a1d0f709a30e4dd825cc3f94604ddc58" category="list-text">來源和目標應用裝置上的 StorageGRID Appliance Installer 版本不相符</block>
+  <block id="5bfb9b8aced7a740a38c3bd0db4afb0f" category="list-text">對於儲存節點，目標應用裝置的儲存設備不相容或容量不足。</block>
+  <block id="c5cf1be6c0cbbea4909300064ca7fda2" category="list-text">目標應用裝置尚未準備就緒</block>
+  <block id="ec0af0bbc716d1a5abbaca3cb637701b" category="inline-link">在 Grid Manager 中變更應用裝置 BMC 密碼</block>
+  <block id="7cd10a307ffaa778f670752af271bec0" category="list-text"><block ref="7cd10a307ffaa778f670752af271bec0" category="inline-link-rx"></block></block>
+  <block id="aa0d1628396078d94f836e15c538d5f9" category="inline-link">設定 BMC LAN IP 組態</block>
+  <block id="1b40980b31e6fbd345cb7b3dfbdcc7e2" category="list-text"><block ref="1b40980b31e6fbd345cb7b3dfbdcc7e2" category="inline-link-rx"></block></block>
+  <block id="7f6a4921bb59e8bb7057d8d99f29ceba" category="summary">在某些應用裝置型號上，您可以使用 BMC 管理連接埠的 DHCP 或靜態 IP 位址存取 BMC 介面。</block>
+  <block id="5c295dca198e2a97205f66e0540b51da" category="summary">您必須存取 StorageGRID 應用裝置安裝程式，以驗證安裝程式版本並設定應用裝置與三個 StorageGRID 網路（網格網路、管理網路（選購）和用戶端網路（選購））之間的連線。</block>
+  <block id="f923e1c5f5f06ed886029456eda68f25" category="list-text">產生包含組態詳情的 JSON 檔案。請與您的 NetApp 專業諮詢服務顧問合作，使用 <block ref="cb38605f979ad15fdfe0937bcdfa8b06" category="inline-link-macro-rx"></block>（需要登入）完成以下步驟：</block>
+  <block id="030b6039a516e96f184d0033c5814913" category="summary">SG6200、SG6100、SG6000 或服務應用裝置上的基板管理控制器 （BMC） 使用者介面提供有關硬體的狀態資訊，並可讓您設定應用裝置的 SNMP 設定和其他選項。</block>
+  <block id="ce3beac288ae30a03c252463cd88a868" category="list-text">一顆 AMD 3.65 GHz 處理器，提供 16 個核心（32 個執行緒）</block>
+  <block id="d7b98c4ffe3354b92b68c3db83a903b6" category="summary">SG5800 StorageGRID 應用裝置是一個整合的儲存設備和運算平台，可作為 StorageGRID 網格中的儲存節點運作。該應用裝置可用於混合網格環境，該環境結合了應用裝置儲存節點和虛擬（基於軟體的）儲存節點。</block>
+  <block id="54230842be04c518b856973c6c5538dd" category="list-text">一顆 AMD 3.55 GHz 處理器，提供 32 個核心（64 個執行緒）</block>
+  <block id="966a50ab5dd74b514ad3fc94147789aa" category="list-text">256 GB 內建開機磁碟機（包含 StorageGRID 軟體）</block>
+  <block id="13fb2c57cf2bf7b44f9e7cd6f877ca18" category="summary">StorageGRID 提供兩個 REST API 來執行安裝任務，分別是 StorageGRID 安裝 API 和 StorageGRID 應用裝置安裝程式 API。</block>
+  <block id="46c643cc3d01be44e67474011d1dd8b3" category="list-text">*temporary-password*: 在安裝期間對臨時密碼執行操作，以保護 mgmt-api 的安全。</block>
+  <block id="8c4a2e17b81ab2d77d98df9bed08e6b9" category="paragraph"><block ref="8c4a2e17b81ab2d77d98df9bed08e6b9" category="inline-link-rx"></block></block>
+  <block id="282418dc956670d70cbccc928ae61570" category="paragraph">單槽擴充組件中的 NIC 1</block>
+  <block id="c95e915262dda80ae4ee7b439321663d" category="paragraph">用於網格和用戶端網路的 10/25-GbE 乙太網路連接埠</block>
+  <block id="9ca0a6cf757875ae6fac7bb5191dd0d2" category="paragraph">單槽擴充組件中的 NIC 2</block>
+  <block id="2568c6c63541d1ca1e03cf2d69d3b8f6" category="paragraph">用於管理網路的 1/10-GbE 乙太網路連接埠</block>
+  <block id="d96661054a63102b40cffbc0a3c80934" category="paragraph">單槽擴充組件中的 NIC 3</block>
+  <block id="24b89649152883ff93478293160852c4" category="admonition">SG1200 應用裝置支援更高速的網路連接埠，並且可能安裝了更高速的網路卡。</block>
+  <block id="8c088bcedd8df5fd658d18dd1f766f49" category="summary">如果 SGF6112 中的網路介面卡 (NIC) 運作不佳或發生故障，則可能需要更換該網路介面卡。</block>
+  <block id="29c5953fe558bfdf13f8371d885e60da" category="summary">如果 SG6100-CN 中的網路介面卡 （NIC） 運作不佳或發生故障，您可能需要更換該網卡。</block>
+  <block id="b03c6be97f39c7f0ba4c6b57360c5c24" category="summary">如果 SGF6212 中的網路介面卡 （NIC） 運作不佳或發生故障，則可能需要更換該網路介面卡。</block>
+  <block id="ea0f3ca004bd8c54c135a08d619fd276" category="admonition">某些應用裝置支援更高速度的網路連接埠，且可能已安裝更高速度的 NIC。</block>
+  <block id="09edbf13f6b5850cdc6dfc569bc775ad" category="summary">如果 SG6200-CN 中的網路介面卡 (NIC) 運作不佳或發生故障，您可能需要更換該網路介面卡。</block>
+  <block id="73b13828240be2d4ed9ff2f029c5ac9c" category="summary">對於目前使用 SANtricity 作業系統 08.42.20.00 (11.42) 或更新版本的儲存設備控制器，您可以使用 Grid Manager 或維護模式來套用升級。</block>
+  <block id="3d2cdd02c109aa569f1302e572d040ba" category="inline-link">StorageGRID 12.1 文件</block>
+  <block id="04d321322c8bed5ea3ecf52d0cc925ff" category="paragraph">前往<block ref="96bdbd25d3882b5d0b14b10ec28bb02d" category="inline-link-rx"></block>了解如何設定和使用 StorageGRID 12.1 系統。</block>
+  <block id="db37c78d5faa7061d7b5039209b440c1" category="list-text"><block ref="db37c78d5faa7061d7b5039209b440c1" category="inline-link-rx"></block></block>
+  <block id="d70a1ab70742f2af598f9acb795fc0f2" category="sidebar">StorageGRID 12.1 文件</block>
 </blocks>

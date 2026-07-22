@@ -15,6 +15,8 @@ summary: 將 SGF6112 從機櫃或機架中取出、以便拆裝機箱頂蓋或�
 
 
 
+[[remove-sgf6112-or-sg6100-cn-from-cabinet-or-rack]]
+[[remove-from-rack]]
 == 從機櫃或機架上卸下 SGF6112 或 SG6100-CN
 
 .開始之前
@@ -50,6 +52,7 @@ image::../media/sg6060_rack_retaining_screws.png[SGF6112 或 SG6100-CN 機架固
 
 
 
+[[reinstall-sgf6112-or-sg6100-cn-into-cabinet-or-rack]]
 == 將 SGF6112 或 SG6100-cn 重新安裝到機櫃或機架中
 
 .開始之前

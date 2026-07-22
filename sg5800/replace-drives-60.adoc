@@ -36,6 +36,7 @@ StorageGRID Grid Manager 可監控應用裝置狀態、並在發生磁碟機故�
 
 
 
+[[step-1-prepare-to-replace-drive]]
 == 步驟1：準備更換磁碟機
 
 請檢查SANtricity 「恢復大師」（Recovery Guru）以準備更換磁碟機、並完成所有必要步驟。然後、您可以找到故障元件。
@@ -75,6 +76,7 @@ StorageGRID Grid Manager 可監控應用裝置狀態、並在發生磁碟機故�
 
 
 
+[[step-2-remove-failed-drive]]
 == 步驟2：移除故障磁碟機
 
 移除故障磁碟機、以新磁碟機取代。
@@ -103,6 +105,7 @@ NOTE: 如果您不小心移除作用中的磁碟機、請等待至少30秒、然
 
 
 
+[[step-3-install-new-drive]]
 == 步驟3：安裝新磁碟機
 
 安裝新磁碟機以更換故障磁碟機。
@@ -129,6 +132,7 @@ CAUTION: *可能會遺失資料存取*-將磁碟機抽屜推回機箱時、請�
 
 
 
+[[step-4-complete-drive-replacement]]
 == 步驟4：完成磁碟機更換
 
 確認新磁碟機運作正常。

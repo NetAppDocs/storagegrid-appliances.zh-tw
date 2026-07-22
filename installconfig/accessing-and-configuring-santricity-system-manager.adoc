@@ -49,9 +49,23 @@ NOTE: 如果您的應用裝置啟用了磁碟機安全功能，則必須設定�
 
 
 
+[[set-up-and-access-santricity-system-manager]]
 == 設定及存取SANtricity 《整套系統管理程式》
 
 您可能需要存取SANtricity 儲存控制器上的「靜態系統管理程式」、才能監控儲存控制器機櫃中的硬體、或是設定E系列AutoSupport 支援。
+
+.開始之前
+* 您使用的是 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
+* 若要透過 Grid Manager 存取 SANtricity 系統管理員、您已安裝 StorageGRID 、且擁有儲存設備管理員權限或根存取權限。
+* 若要使用 StorageGRID 應用裝置安裝程式存取 SANtricity 系統管理員、您必須擁有 SANtricity 系統管理員的使用者名稱和密碼。
+* 若要使用網頁瀏覽器直接存取 SANtricity 系統管理員、您必須擁有 SANtricity 系統管理員的使用者名稱和密碼。
+
+
+
+NOTE: 您必須擁有SANtricity 更新版本的韌體8.70或更新版本、SANtricity 才能使用Grid Manager或StorageGRID NetApp設備安裝程式來存取《更新版》。您可以使用StorageGRID 《支援》*《支援*》>*《關於*》來檢查韌體版本。
+
+
+NOTE: 從SANtricity Grid Manager或應用裝置安裝程式存取「支援系統管理程式」、通常只能用來監控硬體及設定E系列AutoSupport 支援。SANtricity 系統管理員中的許多功能和作業（例如升級韌體）不適用於監控 StorageGRID 應用裝置。為避免發生問題、請務必遵循設備的硬體安裝與維護指示。
 
 .關於這項工作
 根據SANtricity 您所處的安裝與組態程序階段、有三種方法可以存取「支援系統管理程式」：
@@ -69,37 +83,6 @@ NOTE: 部署節點之後、StorageGRID 您就無法再使用「叢集設備安�
 
 
 NOTE: 使用Grid Manager或StorageGRID NetApp應用裝置安裝程式、您無需SANtricity 設定或連接應用裝置的管理連接埠、即可存取《支援系統管理程式》。
-
-您可以使用SANtricity 「系統管理程式」來監控下列項目：
-
-* 效能資料、例如儲存陣列層級效能、I/O延遲、CPU使用率及處理量
-* 硬體元件狀態
-* 支援功能、包括檢視診斷資料
-
-
-您可以使用SANtricity 「靜態系統管理員」來設定下列設定：
-
-* 儲存控制器機櫃中元件的電子郵件警示、SNMP警示或系統記錄警示
-* 儲存AutoSupport 控制器機櫃中元件的E系列支援設定。
-+
-如需 E 系列 AutoSupport 的其他詳細資訊，請參閱 https://docs.netapp.com/us-en/e-series-family/index.html["NetApp E 系列文件"^]。
-
-* 磁碟機安全金鑰、用於解除鎖定安全磁碟機（如果啟用磁碟機安全功能、則需要此步驟）
-* 管理員密碼、用於存取SANtricity 《系統管理程式》
-
-
-.開始之前
-* 您使用的是 https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["支援的網頁瀏覽器"^]。
-* 若要透過 Grid Manager 存取 SANtricity 系統管理員、您已安裝 StorageGRID 、且擁有儲存設備管理員權限或根存取權限。
-* 若要使用 StorageGRID 應用裝置安裝程式存取 SANtricity 系統管理員、您必須擁有 SANtricity 系統管理員的使用者名稱和密碼。
-* 若要使用網頁瀏覽器直接存取 SANtricity 系統管理員、您必須擁有 SANtricity 系統管理員的使用者名稱和密碼。
-
-
-
-NOTE: 您必須擁有SANtricity 更新版本的韌體8.70或更新版本、SANtricity 才能使用Grid Manager或StorageGRID NetApp設備安裝程式來存取《更新版》。您可以使用StorageGRID 《支援》*《支援*》>*《關於*》來檢查韌體版本。
-
-
-NOTE: 從SANtricity Grid Manager或應用裝置安裝程式存取「支援系統管理程式」、通常只能用來監控硬體及設定E系列AutoSupport 支援。SANtricity 系統管理員中的許多功能和作業（例如升級韌體）不適用於監控 StorageGRID 應用裝置。為避免發生問題、請務必遵循設備的硬體安裝與維護指示。
 
 .步驟
 . 執行下列其中一項：
@@ -212,6 +195,7 @@ SG6260 儲存設備可在 SG6200-CN 運算控制器和 E4000 控制器機架中�
 
 
 
+[[review-hardware-status-in-santricity-system-manager]]
 == 在SANtricity 《Sytricity System Manager》中檢視硬體狀態
 
 您可以使用SANtricity 「支援系統管理程式」來監控及管理儲存控制器機櫃中的個別硬體元件、並檢閱硬體診斷與環境資訊、例如元件溫度、以及與磁碟機相關的問題。
@@ -263,6 +247,7 @@ image::../media/sam_hardware_controllers_a_and_b.gif[Hardware Status（硬體狀
 
 
 
+[[set-ip-addresses-for-storage-controllers-using-storagegrid-appliance-installer]]
 == 使用StorageGRID 一套解決方法安裝程式來設定儲存控制器的IP位址
 
 每個儲存控制器上的管理連接埠1會將應用裝置連線至管理網路、以利SANtricity 執行《系統管理程式》。如果您無法從 StorageGRID 應用裝置安裝程式存取 SANtricity 系統管理員、請為每個儲存控制器設定靜態 IP 位址、以確保您不會失去與控制器機櫃中硬體和控制器韌體的管理連線。

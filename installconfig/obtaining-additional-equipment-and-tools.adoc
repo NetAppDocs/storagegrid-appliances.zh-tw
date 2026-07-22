@@ -15,6 +15,7 @@ summary: 安裝 StorageGRID 應用裝置之前、請確認您擁有所需的所�
 
 
 
+[[all-appliances]]
 == 所有應用裝置
 
 您需要下列設備來安裝及設定所有應用裝置。
@@ -53,6 +54,7 @@ NOTE: 某些連接埠可能不支援10/100乙太網路速度。
 
 
 
+[[appliance-specific-equipment-and-tools]]
 == 設備專屬設備與工具
 
 [role="tabbed-block"]

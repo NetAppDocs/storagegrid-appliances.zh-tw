@@ -35,6 +35,7 @@ summary:
 
 
 
+[[step-1-determine-if-you-need-to-replace-a-dimm]]
 == 步驟1：判斷您是否需要更換DIMM
 
 更換DIMM之前、請先確認控制器的快取大小。
@@ -52,6 +53,7 @@ summary:
 
 
 
+[[step-2-place-controller-offline]]
 == 步驟2：將控制器離線
 
 將控制器離線、以便安全地移除和更換DIMM。
@@ -100,6 +102,7 @@ NOTE: 在更新狀態之前、請勿開始任何其他作業。
 
 
 
+[[step-3-remove-controller-canister]]
 == 步驟 3 ：取下控制器箱
 
 從系統中取下控制器圓筒、然後取下控制器圓筒蓋。
@@ -121,6 +124,7 @@ image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[打開控�
 
 
 
+[[step-4-replace-the-dimms]]
 == 步驟 4 ：更換 DIMM
 
 找到控制器內的 DIMM 、將其卸下並裝回。
@@ -192,6 +196,7 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 
 
 
+[[step-5-reinstall-the-controller-canister]]
 == 步驟 5 ：重新安裝控制器容器
 
 將控制器圓筒重新安裝到機箱中。
@@ -225,6 +230,7 @@ NOTE: 將控制器圓筒滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-6-complete-dimms-replacement]]
 == 步驟 6 ：完全更換 DIMM
 
 將控制器置於線上、收集支援資料並恢復作業。

@@ -2,7 +2,7 @@
 permalink: installconfig/hardware-description-sg5800.html 
 sidebar: sidebar 
 keywords: sg5800, sg5812, sg5860, storage appliance 
-summary: SG5800 StorageGRID 應用裝置是整合式儲存與運算平台、可在 StorageGRID 網格中作為儲存節點運作。此應用裝置可用於結合應用裝置儲存節點和虛擬（軟體型）儲存節點的混合式網格環境。 
+summary: SG5800 StorageGRID 應用裝置是一個整合的儲存設備和運算平台，可作為 StorageGRID 網格中的儲存節點運作。該應用裝置可用於混合網格環境，該環境結合了應用裝置儲存節點和虛擬（基於軟體的）儲存節點。 
 ---
 = StorageGRID SG5800 應用裝置
 :allow-uri-read: 
@@ -26,6 +26,7 @@ SG5800 應用裝置有兩種機型： SG5812 和 SG5860 。
 
 
 
+[[sg5800-components]]
 == SG5800 元件
 
 SG5800 機型包括下列元件：
@@ -57,10 +58,12 @@ SG5800 機型包括下列元件：
 
 
 
+[[sg5800-diagrams]]
 == SG5800 圖表
 
 
 
+[[sg5812-front-and-rear-views]]
 === SG5812 前後視圖
 
 圖中顯示 SG5812 的前後方、這是一款 2U 機箱、可容納 12 個磁碟機。
@@ -69,6 +72,7 @@ image::../media/sg5812_front_and_back_views.png[SG5812 產品的前後方]
 
 
 
+[[sg5812-components]]
 === SG5812 元件
 
 SG5812 包含兩個控制器和兩個電源風扇迴廊。
@@ -102,6 +106,7 @@ SG5800 控制器（運算控制器）
 |===
 
 
+[[sg5860-front-and-rear-views]]
 === SG5860 前後視圖
 
 圖中所示為 SG5860 機型的前後方、 4U 機箱可在 5 個磁碟機抽屜中容納 60 個磁碟機。
@@ -110,6 +115,7 @@ image::../media/sg5860_front_and_back_views.png[SG5860 產品的前後方]
 
 
 
+[[sg5860-components]]
 === SG5860 元件
 
 SG5860 包含兩個控制器、兩個風扇迴廊和兩個電源迴廊。
@@ -150,12 +156,14 @@ SG5800 控制器（運算控制器）
 |===
 
 
+[[sg5800-controller]]
 == SG5800 控制器
 
 12 個磁碟機 SG5812 和 60 個磁碟機 SG5860 機型的 StorageGRID 應用裝置均包含 SG5800 運算控制器和 E 系列 E4000 儲存控制器。
 
 
 
+[[sg5800-compute-controller]]
 === SG5800 運算控制器
 
 * 做為應用裝置的運算伺服器。
@@ -238,6 +246,7 @@ image::../media/sg5800_controller_with_callouts.png[SG5800 控制器上的連接
 |===
 
 
+[[e4000-storage-controller]]
 === E4000 儲存控制器
 
 E4000 系列儲存控制器具有下列規格：

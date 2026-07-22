@@ -4,6 +4,7 @@
 
 
 
+[[step-5-move-hic-to-new-controller-if-needed]]
 == 步驟 5 ：視需要將 HIC 移至新的控制器
 
 如果故障控制器包含主機介面卡（HIC）、請將HIC從故障控制器移至更換控制器。

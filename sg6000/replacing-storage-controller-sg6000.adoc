@@ -57,6 +57,7 @@ NOTE: 大多數應用裝置機型的儲存控制器不含主機介面卡（ HIC 
 
 
 
+[[step-1-prepare-the-replacement-controller]]
 == 步驟 1 ：準備更換控制器
 
 準備更換 E2800A 或 E2800B 控制器。
@@ -114,6 +115,7 @@ FRU零件編號。此編號必須符合目前安裝之控制器的更換零件�
 |===
 
 
+[[step-2-take-the-controller-offline]]
 == 步驟 2 ：將控制器離線
 
 準備移除故障控制器、並將其離線。
@@ -146,6 +148,7 @@ NOTE: 在更換元件之前和之後收集支援資料、可確保在更換元�
 
 
 
+[[step-3-remove-the-controller]]
 == 步驟 3 ：移除控制器
 
 從設備中取出故障控制器。
@@ -169,6 +172,7 @@ CAUTION: 請務必用兩隻手支撐控制器的重量。
 
 
 
+[[step-4-move-battery-to-the-new-controller]]
 == 步驟 4 ：將電池移至新的控制器
 
 從故障控制器中取出電池、然後將其安裝到更換控制器中。
@@ -256,6 +260,7 @@ image::../media/e2800_battery_flange_not_ok.gif[電池法蘭不正確]
 
 
 
+[[step-5-move-hic-to-new-controller-if-needed]]
 == 步驟 5 ：視需要將 HIC 移至新的控制器
 
 如果故障控制器包含主機介面卡（HIC）、請將HIC從故障控制器移至更換控制器。
@@ -364,6 +369,8 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.png[E2800A 面板�
 ====
 
 
+[[step-6-replace-controller]]
+[[step6_replace_controller]]
 == 步驟 6 ：更換控制器
 
 安裝替換控制器、並確認其已重新加入網格。

@@ -1,7 +1,7 @@
 ---
 permalink: sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html 
 sidebar: sidebar 
-keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, i/o module, input/output module, power supply, fan, 60-drive expansion shelf, expansion shelf 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, io module, input-output module, power supply, fan, 60-drive expansion shelf, expansion shelf 
 summary: 您可能需要更換擴充櫃中的輸入/輸出模組、電源供應器或風扇。 
 ---
 = 更換選購的 SG6000 60 磁碟機擴充櫃中的硬體元件

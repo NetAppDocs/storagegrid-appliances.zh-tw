@@ -15,6 +15,7 @@ summary: 您可以關閉 SG6200 應用裝置，然後再重新啟動以進行維
 
 
 
+[[shut-down-the-sgf6212-appliance-or-sg6200-cn-controller]]
 == 關閉 SGF6212 應用裝置或 SG6200-CN 控制器
 
 關閉設備以執行硬體維護。
@@ -60,6 +61,7 @@ CAUTION: 您必須輸入下列指定的命令、以控制裝置的關機。最�
 
 
 
+[[power-on-sgf6212-or-sg6200-cn-and-verify-operation]]
 == 開啟 SGF6212 或 SG6200-CN 的電源並驗證作業
 
 完成維護後、開啟控制器電源。

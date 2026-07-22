@@ -15,6 +15,7 @@ summary: 取下產品外蓋以檢修內部組件以進行維護、完成後請�
 
 
 
+[[remove-sg6000-cn-controller-cover]]
 == 取下SG6000-CN-控制器護蓋
 
 取下控制器護蓋、以存取內部元件進行維護。
@@ -40,6 +41,7 @@ CAUTION: 將ESD腕帶末端包覆在您的腕帶上、並將扣夾末端固定�
 
 
 
+[[reinstall-sg6000-cn-controller-cover]]
 == 重新安裝SG6000-CN-控制器護蓋
 
 內部硬體維護完成後、請重新安裝控制器護蓋。

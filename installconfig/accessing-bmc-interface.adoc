@@ -2,7 +2,7 @@
 permalink: installconfig/accessing-bmc-interface.html 
 sidebar: sidebar 
 keywords: BMC, baseboard management controller, access, open, login 
-summary: 您可以使用 DHCP 或靜態 IP 位址、在下列應用裝置機型上存取 BMC 介面：  
+summary: 在某些應用裝置型號上，您可以使用 BMC 管理連接埠的 DHCP 或靜態 IP 位址存取 BMC 介面。 
 ---
 = 存取 StorageGRID 應用裝置上的 BMC 介面
 :allow-uri-read: 

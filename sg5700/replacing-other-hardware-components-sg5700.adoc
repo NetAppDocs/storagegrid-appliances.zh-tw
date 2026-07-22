@@ -25,6 +25,7 @@ summary: 您可能需要更換StorageGRID 處理器內的控制器電池、磁�
 
 
 
+[[sg5712-component-replacement-instructions]]
 == SG5712元件更換說明
 
 [cols="1a,3a"]
@@ -47,6 +48,7 @@ link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-fan-supe
 |===
 
 
+[[sg5760-component-replacement-instructions]]
 == SG5760 元件更換說明
 
 [cols="1a,3a"]

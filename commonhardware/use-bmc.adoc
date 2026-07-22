@@ -36,11 +36,14 @@ summary: 部分 StorageGRID 應用裝置包含基礎板管理控制器（ BMC �
 
 
 
+[[bmc-use-for-storagegrid-appliances]]
 == BMC 適用於 StorageGRID 應用裝置
 
 下列 BMC 程序已記錄下來、可搭配支援的 StorageGRID 應用裝置使用：
 
 * link:../installconfig/accessing-bmc-interface.html["存取 BMC 儀表板"]
+* https://docs.netapp.com/us-en/storagegrid/harden/hardening-guidelines-for-storagegrid-nodes.html#change-appliance-bmc-password["在 Grid Manager 中變更應用裝置 BMC 密碼"^]
+* https://docs.netapp.com/us-en/storagegrid/maintain/changing-nodes-network-configuration.html#change-appliance-node-bmc-lan-ip-settings["設定 BMC LAN IP 組態"^]
 * link:../installconfig/configuring-snmp-settings-for-bmc.html["設定 BMC SNMP 設定"]
 * link:../installconfig/setting-up-email-notifications-for-alerts.html["設定電子郵件警示通知"]
 * 硬體安裝疑難排解：
@@ -77,6 +80,7 @@ summary: 部分 StorageGRID 應用裝置包含基礎板管理控制器（ BMC �
 
 
 
+[[bmc-features-not-supported-for-storagegrid-appliances]]
 == StorageGRID 應用裝置不支援 BMC 功能
 
 下列 BMC 功能與 StorageGRID 特定組態衝突、不應使用。

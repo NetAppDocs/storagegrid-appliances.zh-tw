@@ -1,7 +1,7 @@
 ---
 permalink: installconfig/gathering-installation-information-sg5700.html 
 sidebar: sidebar 
-keywords: storagegrid, sg5700, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10/25-gbe, 10/25 gbe, e5700sg, independent, active-backup, active backup, 1-gbe, 1 gbe 
+keywords: storagegrid, sg5700, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10-gbe, 10 gbe, 25-gbe, 25 gbe, e5700sg, independent, active-backup, active backup, 1-gbe, 1 gbe 
 summary: 使用表格記錄您連線至應用裝置的每個網路所需的資訊。這些值是安裝和設定硬體所需的值。 
 ---
 = 收集 SG5700 的網路資訊
@@ -18,6 +18,7 @@ TIP: 請使用 ConfigBuilder 隨附的活頁簿、而非使用表格。使用 Co
 
 
 
+[[information-needed-to-connect-to-santricity-system-manager-on-e2800-controller]]
 == 連接SANtricity 到E2800控制器上的《E2800系統管理程式》所需的資訊
 
 您可以將 E2800 系列控制器連接至 SANtricity 系統管理員所使用的管理網路。
@@ -90,6 +91,7 @@ IP位址格式
 |===
 
 
+[[information-needed-to-connect-e5700sg-controller-to-admin-network]]
 == 將E5700SG控制器連接至管理網路所需的資訊
 
 管理員網路for支援功能是選用的網路、可用於系統管理和維護。StorageGRID應用裝置使用E5700SG控制器上的1-GbE管理連接埠來連線至管理網路。
@@ -162,6 +164,7 @@ DHCP指派的管理連接埠1 IP位址（如果在開機後可用）
 |===
 
 
+[[information-needed-to-connect-and-configure-1025-gbe-ports-on-e5700sg-controller]]
 == 在E5700SG控制器上連接及設定10/25-GbE連接埠所需的資訊
 
 E5700SG控制器上的四個10/25-GbE連接埠可連接StorageGRID 至「Se Grid Network and Client Network」（英文）。
@@ -223,6 +226,7 @@ NOTE: 請參閱 link:gathering-installation-information-sg5700.html#port-bond-mo
 |===
 
 
+[[information-needed-to-connect-e5700sg-controller-to-grid-network]]
 == 將E5700SG控制器連接至Grid Network所需的資訊
 
 Grid Network for StorageGRID 效能不只是一項必要的網路、可用於所有內部StorageGRID 的資訊流量。應用裝置使用E5700SG控制器上的10/25-GbE連接埠來連線至Grid Network。
@@ -295,6 +299,7 @@ VLAN 標記（如果已啟用 VLAN 標記）
 |===
 
 
+[[information-needed-to-connect-e5700sg-controller-to-client-network]]
 == 將E5700SG控制器連接至用戶端網路所需的資訊
 
 Client Network for StorageGRID 推銷是選用的網路、通常用於提供用戶端傳輸協定存取網格。應用裝置會使用E5700SG控制器上的10/25-GbE連接埠來連線至用戶端網路。
@@ -370,12 +375,14 @@ VLAN標記
 |===
 
 
+[[port-bond-modes]]
 == 連接埠連結模式
 
 何時 link:configuring-network-links.html["設定網路連結"] 對於 E5700SG 控制器、您可以使用連接埠連結連接至網格網路和選用用戶端網路的 10/25-GbE 連接埠、以及連接至選用管理網路的 1-GbE 管理連接埠。連接埠連結功能可在StorageGRID 各個解決方案之間提供備援路徑、協助您保護資料。
 
 
 
+[[network-bond-modes-for-1025-gbe-ports]]
 === 10/25-GbE連接埠的網路連結模式
 
 E5700SG控制器上的10/25-GbE網路連接埠支援固定連接埠連結模式、或是Grid Network和用戶端網路連線的Aggregate連接埠連結模式。
@@ -449,6 +456,7 @@ NOTE: 如果您選擇使用少於四個連接埠、請注意StorageGRID 、安�
 
 
 
+[[network-bond-modes-for-1-gbe-management-ports]]
 === 1 GbE管理連接埠的網路連結模式
 
 對於E5700SG控制器上的兩個1-GbE管理連接埠、您可以選擇「獨立網路連結模式」或「主動備份網路連結模式」、以連線至選用的管理網路。

@@ -15,6 +15,8 @@ summary: 如果在安裝期間遇到問題、您可能會發現檢閱與硬體�
 
 
 
+[[view-boot-up-codes-sg6000-cn-controller]]
+[[view-boot-codes]]
 == 檢視開機代碼（ SG6000-CN 控制器）
 
 當您為應用裝置供電時、BMC會記錄SG6000-CN-控制器的一系列開機代碼。您可以透過多種方式檢視這些代碼。
@@ -188,6 +190,8 @@ HA
 
 
 
+[[view-error-codes-sg6000-cn-controller]]
+[[error-codes]]
 == 檢視錯誤代碼（ SG6000-CN 控制器）
 
 如果SG6000-CN-控制器開機時發生硬體錯誤、BMC會記錄錯誤代碼。視需要、您可以使用 BMC 介面或應用裝置序列連接埠來檢視這些錯誤代碼、然後與技術支援人員合作解決問題。
@@ -584,6 +588,8 @@ MRC：ERR_Interlet_ferress
 
 
 
+[[hardware-setup-appears-to-hang-sg6000-or-sg5700]]
+[[hardware-setup-hangs]]
 == 硬體設定似乎當機（ SG6000 或 SG5700 ）
 
 如果硬體故障或纜線錯誤導致儲存控制器或應用裝置控制器無法完成開機處理、則 StorageGRID 應用裝置安裝程式可能無法使用。
@@ -647,12 +653,15 @@ https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["_E5700與E28
 ====
 
 
+[[connection-issues-sg5700-or-sg6000]]
+[[connection-issues]]
 == 連線問題（ SG5700 或 SG6000 ）
 
 如果StorageGRID 在安裝過程中遇到連線問題、您應該執行列出的修正行動步驟。
 
 
 
+[[unable-to-connect-to-sg6000-appliance]]
 === 無法連線至 SG6000 應用裝置
 
 如果您無法連線至應用裝置、可能是網路問題、或是硬體安裝可能未成功完成。
@@ -703,6 +712,7 @@ https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["_E5700與E28
 
 
 
+[[sg6060-expansion-shelves-dont-appear-in-appliance-installer]]
 === SG6060 擴充機櫃不會出現在應用裝置安裝程式中
 
 如果您已安裝 SG6060 的擴充機櫃、但這些擴充機櫃並未出現在 StorageGRID 應用裝置安裝程式中、則應確認機櫃已完全安裝並開啟電源。
@@ -729,6 +739,7 @@ image::../media/expansion_shelves_shown_by_num_of_drives.png[磁碟機數量]
 
 
 
+[[unable-to-connect-to-sg5700-appliance]]
 === 無法連線至 SG5700 應用裝置
 
 如果您無法連線至應用裝置、可能是網路問題、或是硬體安裝可能未成功完成。
@@ -778,6 +789,8 @@ image::../media/expansion_shelves_shown_by_num_of_drives.png[磁碟機數量]
 
 
 
+[[he-error-error-synchronizing-with-santricity-os-software-sg5700]]
+[[he-error]]
 == HE 錯誤：與 SANtricity OS 軟體同步時發生錯誤（ SG5700 ）
 
 如果 StorageGRID 應用裝置安裝程式無法與 SANtricity OS 軟體同步、運算控制器上的七個區段顯示會顯示 HE 錯誤代碼。

@@ -15,6 +15,7 @@ summary: 請依照下列指示維護 StorageGRID 系統。
 
 
 
+[[about-these-instructions]]
 == 關於這些指示
 
 這些指示說明所有節點的通用程序、例如如何套用軟體 Hotfix 、恢復網格節點、恢復故障站台、取消委任網格節點或整個站台、執行網路維護、執行主機層級和中介軟體維護程序、以及執行網格節點程序。
@@ -24,6 +25,7 @@ NOTE: 在這些說明中， "Linux " 指的是 Red Hat ® Enterprise Linux ® �
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 * 您對StorageGRID 此系統有廣泛的瞭解。
@@ -34,6 +36,7 @@ NOTE: 在這些說明中， "Linux " 指的是 Red Hat ® Enterprise Linux ® �
 
 
 
+[[maintenance-procedures-for-appliances]]
 == 設備的維護程序
 
 每種類型的 StorageGRID 應用裝置的特定維護程序、請在應用裝置維護章節中說明：

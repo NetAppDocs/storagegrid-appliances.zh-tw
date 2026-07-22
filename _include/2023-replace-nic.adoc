@@ -80,6 +80,7 @@ image::../media/one-slot-assembly-sgf6112.png[單插槽擴充卡組件中的 NIC
 
 
 
+[[reinstall-the-internal-nic]]
 == 重新安裝內部 NIC
 
 將更換的 NIC 安裝到與移除的 NIC 相同的位置。

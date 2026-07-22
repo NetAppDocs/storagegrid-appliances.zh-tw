@@ -31,10 +31,47 @@ NOTE: 從機架中移除應用裝置之前，需要 link:power-sg120-and-sg1200-
 +
 image::../media/drw_s2025_io_numbers_ieops-2554.svg[StorageGRID 應用裝置機箱中的內部 NIC 位置]
 
++
+[cols="1a,3a,5a"]
+|===
+|  | 裝置或零件名稱 | 說明 
+
+
+ a| 
+1.
+ a| 
+單槽擴充組件中的 NIC 1
+ a| 
+用於網格和用戶端網路的 10/25-GbE 乙太網路連接埠
+
+
+
+ a| 
+2.
+ a| 
+單槽擴充組件中的 NIC 2
+ a| 
+用於管理網路的 1/10-GbE 乙太網路連接埠
+
+
+
+ a| 
+3.
+ a| 
+單槽擴充組件中的 NIC 3
+ a| 
+用於網格和用戶端網路的 10/25-GbE 乙太網路連接埠
+
+|===
++
+
+NOTE: SG1200 應用裝置支援更高速的網路連接埠，並且可能安裝了更高速的網路卡。
 
 
 
 
+
+[[step-1-remove-the-nic]]
 == 步驟 1：移除 NIC
 
 [role="tabbed-block"]
@@ -79,6 +116,7 @@ image:../media/drw_s2025_IO_card_replace_ieops-2557.svg["從提升板組件移�
 ====
 
 
+[[step-2-reinstall-the-internal-nic]]
 == 步驟 2：重新安裝內建 NIC
 
 將更換的 NIC 安裝到與移除的 NIC 相同的位置。

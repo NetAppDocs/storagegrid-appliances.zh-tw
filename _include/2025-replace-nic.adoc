@@ -4,6 +4,7 @@
 
 
 
+[[step-1-remove-the-nic]]
 == 步驟 1：移除 NIC
 
 [role="tabbed-block"]
@@ -48,6 +49,7 @@ image:../media/drw_s2025_IO_card_replace_ieops-2557.svg["從提升板組件移�
 ====
 
 
+[[step-2-reinstall-the-internal-nic]]
 == 步驟 2：重新安裝內建 NIC
 
 將更換的 NIC 安裝到與移除的 NIC 相同的位置。

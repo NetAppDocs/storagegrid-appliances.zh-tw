@@ -15,6 +15,8 @@ summary: 將 SGF6212 從機櫃或機架中取出，以便存取頂蓋或將應�
 
 
 
+[[remove-sgf6212-or-sg6200-cn-from-cabinet-or-rack]]
+[[remove-from-rack]]
 == 從機櫃或機架移除 SGF6212 或 SG6200-CN
 
 .開始之前
@@ -50,6 +52,7 @@ image::../media/s25_rack_retaining_screws.png[SGF6212 或 SG6200-CN 機架固定
 
 
 
+[[reinstall-sgf6212-or-sg6200-cn-into-cabinet-or-rack]]
 == 將 SGF6212 或 SG6200-CN 重新安裝到機櫃或機架中
 
 .開始之前

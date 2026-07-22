@@ -26,6 +26,7 @@ NOTE: 為獲得最佳網路效能、所有節點都應在其Grid Network介面�
 
 
 
+[[change-the-mtu-setting-using-the-change-ip-tool]]
 == 使用變更IP工具變更MTU設定
 
 .開始之前
@@ -36,6 +37,7 @@ NOTE: 為獲得最佳網路效能、所有節點都應在其Grid Network介面�
 
 
 
+[[change-the-mtu-setting-using-maintenance-mode]]
 == 使用維護模式變更MTU設定
 
 如果無法使用變更IP工具存取這些設定、請使用維護模式變更MTU設定。

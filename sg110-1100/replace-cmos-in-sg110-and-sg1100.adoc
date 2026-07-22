@@ -21,6 +21,7 @@ summary: 請使用此程序更換主機板上的 CMOS 幣式電池。
 
 
 
+[[remove-the-cmos-battery]]
 == 取出 CMOS 電池
 
 .開始之前
@@ -73,6 +74,7 @@ image::../media/SGF6112-battery-cmos.png[CMOS 電池夾]
 
 
 
+[[reinstall-the-cmos-battery]]
 == 重新安裝 CMOS 電池
 
 將更換的 CMOS 電池裝入主機板上的插槽。

@@ -2,7 +2,7 @@
 permalink: installconfig/deploying-services-appliance-node.html 
 sidebar: sidebar 
 keywords: storagegrid, sg110, sg1100, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
-summary: 您可以將服務應用裝置部署為主要管理節點、非主要管理節點或閘道節點。所有服務應用裝置都可以同時做為閘道節點和管理節點 \ （主要或非主要 \ ）運作。 
+summary: 您可以將服務應用裝置部署為主要管理節點、非主要管理節點或閘道節點。所有服務應用裝置都可以同時做為閘道節點和管理節點（主要或非主要）運作。 
 ---
 = 部署 StorageGRID 服務應用裝置節點
 :allow-uri-read: 
@@ -15,6 +15,7 @@ summary: 您可以將服務應用裝置部署為主要管理節點、非主要�
 
 
 
+[[deploy-services-appliance-as-primary-admin-node]]
 == 將服務應用裝置部署為主要管理節點
 
 當您將服務應用裝置部署為主要管理節點時、您可以使用StorageGRID 應用裝置隨附的《支援服務應用程式安裝程式」來安裝StorageGRID 此版的更新、或是上傳您要安裝的軟體版本。您必須先安裝並設定主要管理節點、才能安裝任何其他應用裝置節點類型。主管理節點可連線至網格網路、以及選用的管理網路和用戶端網路（如果已設定一個或兩個）。
@@ -79,6 +80,7 @@ NOTE: 如果您需要手動存取「監視器安裝」頁面、請從功能表�
 
 
 
+[[deploy-services-appliance-as-gateway-or-non-primary-admin-node]]
 == 將服務應用裝置部署為閘道或非主要管理節點
 
 當您將服務應用裝置部署為閘道節點或非主要管理節點時、請使用StorageGRID 應用裝置隨附的《支援服務應用程式》安裝程式。

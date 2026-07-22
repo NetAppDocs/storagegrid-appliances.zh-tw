@@ -15,6 +15,8 @@ summary: 將 SG110 或 SG1100 從機櫃或機架上取下、即可拆裝機箱�
 
 
 
+[[remove-sg110-or-sg1100-from-cabinet-or-rack]]
+[[remove-from-rack]]
 == 從機櫃或機架上卸下 SG110 或 SG1100
 
 .開始之前
@@ -50,6 +52,7 @@ image::../media/sg6060_rack_retaining_screws.png[SG110 或 SG1100 機架固定�
 
 
 
+[[reinstall-sg110-or-sg1100-into-cabinet-or-rack]]
 == 將 SG110 或 SG1100 重新安裝到機櫃或機架中
 
 .開始之前

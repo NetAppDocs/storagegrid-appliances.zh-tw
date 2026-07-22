@@ -2,7 +2,7 @@
 permalink: installconfig/configuring-bmc-interface.html 
 sidebar: sidebar 
 keywords: BMC, baseboard management controller, configure, setup, set up 
-summary: SG6200、SG6100、SG6000 或服務應用裝置上的基板管理控制器（BMC）使用者介面提供有關硬體的狀態資訊，並允許您設定 SNMP 設定和應用裝置的其他選項。 
+summary: SG6200、SG6100、SG6000 或服務應用裝置上的基板管理控制器 （BMC） 使用者介面提供有關硬體的狀態資訊，並可讓您設定應用裝置的 SNMP 設定和其他選項。 
 ---
 = SG6000、SG6100 和 SG6200 StorageGRID 應用裝置和服務應用裝置的 BMC 介面
 :allow-uri-read: 

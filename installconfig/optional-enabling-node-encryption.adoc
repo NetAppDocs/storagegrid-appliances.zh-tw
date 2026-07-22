@@ -23,6 +23,7 @@ summary: 您可以在節點和磁碟層級啟用加密、以保護應用裝置�
 
 
 
+[[enable-node-encryption]]
 == 啟用節點加密
 
 如果您啟用節點加密、裝置中的磁碟可透過安全金鑰管理伺服器（KMS）加密來保護、避免實體遺失或從站台移除。您必須在裝置安裝期間選取並啟用節點加密。KMS 加密程序啟動後、您無法停用節點加密。
@@ -88,6 +89,7 @@ NOTE: 設備一開始會設定指派給每個磁碟區的隨機非KMS加密金�
 
 
 
+[[drive-encryption]]
 == 磁碟機加密
 
 磁碟機加密是在寫入和讀取程序期間、在自我加密磁碟機（ SED ）硬體上進行管理。存取這些磁碟機上的資料是由使用者定義的複雜密碼所控制。
@@ -118,6 +120,7 @@ CAUTION: 請務必將磁碟機加密密碼短語儲存在安全的位置。如�
 
 
 
+[[enable-drive-encryption]]
 === 啟用磁碟機加密
 
 . 存取 StorageGRID 應用裝置安裝程式。
@@ -156,6 +159,7 @@ NOTE: 磁碟機一開始加密時、複雜密碼會設為預設的空白值、�
 
 
 
+[[view-drive-encryption-status]]
 === 檢視磁碟機加密狀態
 
 . link:../commonhardware/placing-appliance-into-maintenance-mode.html["將設備置於維護模式"]。
@@ -164,6 +168,7 @@ NOTE: 磁碟機一開始加密時、複雜密碼會設為預設的空白值、�
 
 
 
+[[access-an-encrypted-drive]]
 === 存取加密磁碟機
 
 您必須輸入複雜密碼、才能在更換運算節點之後或將磁碟機移至新的運算節點之後存取加密磁碟機。
@@ -196,6 +201,7 @@ NOTE: 如果您輸入的複雜密碼和複雜密碼顯示文字值與先前輸�
 
 
 
+[[change-the-drive-encryption-passphrase]]
 === 變更磁碟機加密密碼
 
 . 存取 StorageGRID 應用裝置安裝程式。
@@ -227,6 +233,7 @@ CAUTION: 設定新的複雜密碼後、如果沒有使用新的複雜密碼和�
 
 
 
+[[disable-drive-encryption]]
 === 停用磁碟機加密
 
 . 存取 StorageGRID 應用裝置安裝程式。

@@ -31,11 +31,12 @@ summary: 自動化安裝與組態可用於部署多StorageGRID 個版本的不�
 
 
 
+[[automation-options]]
 == 自動化選項
 
 若要自動化應用裝置的安裝與組態、請使用下列一或多個選項：
 
-* 產生包含組態詳細資料的 JSON 檔案。請與 NetApp 專業服務顧問合作使用 link:https://configbuilder.netapp.com/index.aspx["NetApp ConfigBuilder 工具"^] 若要完成這些步驟：
+* 產生包含組態詳情的 JSON 檔案。請與您的 NetApp 專業諮詢服務顧問合作，使用 link:https://configbuilder.netapp.com/Index.aspx["NetApp ConfigBuilder 工具"^]（需要登入）完成以下步驟：
 +
 .. 請洽詢 NetApp 專業服務部門以取得銷售訂單編號。
 .. 從 ConfigBuilder 取得活頁簿。
@@ -69,6 +70,8 @@ NOTE: 您可以StorageGRID 直接使用自動化Python指令碼、也可以將�
 
 
 
+[[automate-appliance-configuration-using-storagegrid-appliance-installer]]
+[[automate-with-appliance-installer]]
 == 使用StorageGRID 應用程式安裝程式來自動化應用裝置組態
 
 產生 JSON 檔案之後、您可以使用 StorageGRID 應用裝置安裝程式來上傳 JSON 檔案、將一或多個應用裝置的組態自動化。
@@ -109,6 +112,8 @@ NOTE: 如果檔案無效、檔案名稱會以紅色顯示、並以黃色橫幅�
 
 
 
+[[automate-appliance-installation-and-configuration-using-configure-sga-py-script]]
+[[automate-with-configure-sga-py-script]]
 == 使用 configure-sga.py 指令碼自動化應用裝置的安裝與組態
 
 如果您是進階使用者、可以使用 `configure-sga.py` 指令碼、可自動化StorageGRID 許多有關應用程式節點的安裝與組態工作、包括安裝及設定主要管理節點。如果您有大量設備需要設定、此指令碼就很有用。

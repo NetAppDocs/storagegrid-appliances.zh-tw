@@ -2,7 +2,7 @@
 permalink: sg110-1100/replace-nic-in-sg110-and-sg1100.html 
 sidebar: sidebar 
 keywords: storagegrid, sg110, sg1100, admin node, admin appliance, replacing, replace, NIC, network interface card 
-summary: 如果 SG110 或 SG1100 中的網路介面卡無法正常運作或故障、您可能需要更換其中的網路介面卡（ NIC ）。 
+summary: 如果 SG110 或 SG1100 中的網路介面卡（ NIC ）無法正常運作或故障、您可能需要更換該卡。 
 ---
 = 更換 SG110 或 SG1100 中的網卡
 :allow-uri-read: 
@@ -21,6 +21,7 @@ summary: 如果 SG110 或 SG1100 中的網路介面卡無法正常運作或故�
 
 
 
+[[remove-the-nic]]
 == 移除 NIC
 
 .開始之前
@@ -115,6 +116,7 @@ image::../media/one-slot-assembly-sgf6112.png[單插槽擴充卡組件中的 NIC
 
 
 
+[[reinstall-the-internal-nic]]
 == 重新安裝內部 NIC
 
 將更換的 NIC 安裝到與移除的 NIC 相同的位置。

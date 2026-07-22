@@ -17,6 +17,7 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[why-clone-an-appliance-node]]
 == 為何要複製應用裝置節點？
 
 如果需要：
@@ -30,6 +31,7 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[which-storagegrid-network-is-used]]
 == 使用哪StorageGRID 一個呢？
 
 複製可透過StorageGRID 任一項功能、將資料從來源節點直接傳輸至目標應用裝置。網格網路通常會使用、但如果來源應用裝置連線至這些網路、您也可以使用管理網路或用戶端網路。選擇用於複製流量的網路、以提供最佳資料傳輸效能、而不會降低StorageGRID 網路效能或資料可用度。
@@ -38,6 +40,7 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[what-information-is-not-cloned]]
 == 哪些資訊未複製？
 
 在複製期間、下列應用裝置組態不會傳輸至替換應用裝置。您必須在更換設備的初始設定期間進行設定。
@@ -51,20 +54,27 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[what-issues-prevent-cloning]]
 == 哪些問題會妨礙複製？
 
 如果在複製時遇到下列任何問題、複製程序會停止、並產生錯誤訊息：
 
+* 複製作業正在進行中
 * 網路組態錯誤
+* 目標應用裝置無法連接到主要管理節點
 * 來源設備與目標設備之間缺乏連線能力
 * 來源與目標應用裝置不相容
-* 儲存節點是容量不足的替換應用裝置
+* 來源應用裝置和目標應用裝置處於不同的維護模式狀態
+* 來源和目標應用裝置上的 StorageGRID Appliance Installer 版本不相符
+* 對於儲存節點，目標應用裝置的儲存設備不相容或容量不足。
+* 目標應用裝置尚未準備就緒
 
 
 您必須解決複製的每個問題才能繼續。
 
 
 
+[[target-appliance-compatibility]]
 == 目標應用裝置相容性
 
 更換設備必須與要更換的來源節點類型相同、而且兩者都必須屬於同一個邏輯StorageGRID 版的站台。
@@ -73,6 +83,7 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[general-services-appliance-cloning-considerations]]
 === 一般服務應用裝置複製考量
 
 * 更換服務應用裝置的型號可能與它所更換的管理節點或閘道節點不同。
@@ -81,6 +92,7 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[general-storage-appliance-cloning-considerations]]
 === 一般儲存設備複製考量
 
 * 更換儲存設備的容量必須大於正在更換的儲存節點。
@@ -109,12 +121,14 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[sg100-appliance-cloning-information-and-restrictions]]
 === SG100 應用裝置複製資訊與限制
 
 您可以將 SG100 來源節點應用裝置複製到 SG110 、 SG1000 或 SG1100 服務目標應用裝置。將 SG100 複製到 SG1000 或 SG1100 服務目標應用裝置、可讓管理節點或閘道節點擁有更大的功能。
 
 
 
+[[sg110-appliance-cloning-information-and-restrictions]]
 === SG110 應用裝置複製資訊與限制
 
 您可以將 SG110 來源節點應用裝置複製到 SG1100 服務應用裝置目標、讓管理節點或閘道節點擁有更大的功能。
@@ -123,6 +137,7 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[sg120-appliance-cloning-information-and-restrictions]]
 === SG120 應用裝置複製資訊與限制
 
 您可以將 SG120 來源節點應用裝置複製到 SG1200 服務應用裝置目標，以賦予管理節點或閘道節點更強大的功能。
@@ -131,6 +146,7 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[sg1000-appliance-cloning-information-and-restrictions]]
 === SG1000 應用裝置複製資訊與限制
 
 您可以將 SG1000 來源節點應用裝置複製到 SG100 、 SG110 或 SG1100 服務目標應用裝置。
@@ -141,6 +157,7 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[sg1100-appliance-cloning-information-and-restrictions]]
 === SG1100 應用裝置複製資訊與限制
 
 您可以將 SG1100 來源節點應用裝置複製到 SG110 服務目標應用裝置。
@@ -153,6 +170,7 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[sg1200-appliance-cloning-information-and-restrictions]]
 === SG1200 應用裝置複製資訊與限制
 
 您可以將 SG1200 來源節點應用裝置複製到 SG120 服務目標應用裝置。
@@ -165,12 +183,14 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[sg5712-appliance-cloning-information-and-restrictions]]
 === SG5712 設備複製資訊與限制
 
 您可以將使用 DDP 設定的 SG5712 來源節點應用裝置複製到 SG5812 儲存目標應用裝置。
 
 
 
+[[sg5760-appliance-cloning-information-and-restrictions]]
 === SG5760 應用裝置複製資訊與限制
 
 * 您可以將使用 DDP16 設定的 SG5760 來源節點應用裝置複製到使用 DDP16 設定的 SG5860 儲存目標應用裝置。
@@ -180,18 +200,21 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[sg5812-appliance-cloning-information-and-restrictions]]
 === SG5812 設備複製資訊與限制
 
 您可以成功複製 SG5812 應用裝置作為來源或目標。
 
 
 
+[[sg5860-appliance-cloning-information-and-restrictions]]
 === SG5860 應用裝置複製資訊與限制
 
 您可以成功複製 SG5860 應用裝置作為來源或目標、但有一些限制（列於應用裝置的複製資訊和每個來源的限制中）。
 
 
 
+[[sg6060-appliance-cloning-information-and-restrictions]]
 === SG6060 應用裝置複製資訊與限制
 
 * 您可以將使用 DDP 或 DDP16 設定的 SG6060 來源節點應用裝置複製到具有相符 RAID 模式的 SG5860 儲存目標應用裝置。
@@ -201,12 +224,14 @@ summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上�
 
 
 
+[[sgf6112-appliance-cloning-information-and-restrictions]]
 === SGF6112 設備克隆資訊與限制
 
 不支援從未加密節點的 SGF6112 來源節點應用裝置複製節點到已加密節點的 SGF6112 或 SGF6212 應用裝置目標。
 
 
 
+[[sg6160-and-sg6260-appliance-cloning-information-and-restrictions]]
 === SG6160 和 SG6160 應用裝置複製資訊與限制
 
 您可以成功複製 SG6160 應用裝置作為來源或目標、但有一些限制（列於應用裝置的複製資訊和每個來源的限制中）。

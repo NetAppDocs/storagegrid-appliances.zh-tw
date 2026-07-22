@@ -4,6 +4,7 @@
 
 
 
+[[step-4-move-battery-to-the-new-controller]]
 == 步驟 4 ：將電池移至新的控制器
 
 從故障控制器中取出電池、然後將其安裝到更換控制器中。

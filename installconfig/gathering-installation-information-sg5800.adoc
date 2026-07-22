@@ -1,7 +1,7 @@
 ---
 permalink: installconfig/gathering-installation-information-sg5800.html 
 sidebar: sidebar 
-keywords: storagegrid, sg5800, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10/25-gbe, 10/25 gbe, SG5800, independent, active-backup, active backup, 1-gbe, 1 gbe 
+keywords: storagegrid, sg5800, storage node, storage appliance, install, information, site, pre-install, preparing, prepare, preinstall, info, preparation, port bond, port bonding, port bond mode, port-bond mode, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10-gbe, 10 gbe, 25-gbe, 25 gbe, SG5800, independent, active-backup, active backup, 1-gbe, 1 gbe 
 summary: 使用表格記錄您連線至應用裝置的每個網路所需的資訊。這些值是安裝和設定硬體所需的值。 
 ---
 = 收集 SG5800 的網路資訊
@@ -18,6 +18,7 @@ TIP: 請使用 ConfigBuilder 隨附的活頁簿、而非使用表格。使用 Co
 
 
 
+[[information-needed-to-connect-to-santricity-system-manager-on-e4000-controller]]
 == 連線至 E4000 控制器上的 SANtricity 系統管理員所需的資訊
 
 您將使用 SANtricity 系統管理員將 E4000 系列控制器連接至管理網路。
@@ -90,6 +91,7 @@ IP位址格式
 |===
 
 
+[[information-needed-to-connect-sg5800-controller-to-admin-network]]
 == 將 SG5800 控制器連接到管理網路所需的資訊
 
 管理員網路for支援功能是選用的網路、可用於系統管理和維護。StorageGRID此應用裝置使用 SG5800 控制器上的 1-GbE 管理連接埠、連接到管理網路。
@@ -145,6 +147,7 @@ DHCP指派的管理連接埠1 IP位址（如果在開機後可用）
 |===
 
 
+[[information-needed-to-connect-and-configure-1025-gbe-ports-on-sg5800-controller]]
 == 在 SG5800 控制器上連接和設定 10/25-GbE 連接埠所需的資訊
 
 SG5800 控制器上的四個 10/25-GbE 連接埠可連接至 StorageGRID 網格網路和用戶端網路。
@@ -205,6 +208,7 @@ NOTE: 請參閱 link:gathering-installation-information-sg5800.html#port-bond-mo
 |===
 
 
+[[information-needed-to-connect-sg5800-controller-to-grid-network]]
 == 將 SG5800 控制器連接至網格網路所需的資訊
 
 Grid Network for StorageGRID 效能不只是一項必要的網路、可用於所有內部StorageGRID 的資訊流量。此應用裝置使用 SG5800 控制器上的 10/25-GbE 連接埠、連接至 Grid Network 。
@@ -275,6 +279,7 @@ VLAN 標記（如果已啟用 VLAN 標記）
 |===
 
 
+[[information-needed-to-connect-sg5800-controller-to-client-network]]
 == 將 SG5800 控制器連接至用戶端網路所需的資訊
 
 Client Network for StorageGRID 推銷是選用的網路、通常用於提供用戶端傳輸協定存取網格。此應用裝置使用 SG5800 控制器上的 10/25-GbE 連接埠連接至用戶端網路。
@@ -350,12 +355,14 @@ VLAN標記
 |===
 
 
+[[port-bond-modes]]
 == 連接埠連結模式
 
 何時 link:configuring-network-links.html["設定網路連結"] 對於 SG5800 控制器、您可以將連接埠連結用於連接至 Grid Network 和選用用戶端網路的 10/25-GbE 連接埠。連接埠連結功能可在StorageGRID 各個解決方案之間提供備援路徑、協助您保護資料。SG5800 控制器上的 10/25-GbE 網路連接埠支援固定連接埠連結模式或網格網路和用戶端網路連線的集合連接埠連結模式。
 
 
 
+[[fixed-port-bond-mode]]
 === 固定連接埠連結模式
 
 固定模式是10/25-GbE網路連接埠的預設組態。
@@ -391,6 +398,7 @@ NOTE: 如果您不需要備援連線、則每個網路只能使用一個連接�
 
 
 
+[[aggregate-port-bond-mode]]
 === Aggregate連接埠連結模式
 
 Aggregate連接埠連結模式可大幅增加每StorageGRID 個支援網的整體效能、並提供額外的容錯移轉路徑。

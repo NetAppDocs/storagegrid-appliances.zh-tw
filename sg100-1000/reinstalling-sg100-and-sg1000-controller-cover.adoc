@@ -15,6 +15,7 @@ summary: 取下產品外蓋以檢修內部組件以進行維護、完成後請�
 
 
 
+[[remove-sg100-or-sg1000-appliance-cover]]
 == 取下 SG100 或 SG1000 設備護蓋
 
 取下產品外蓋、即可存取內部元件進行維護。
@@ -40,6 +41,7 @@ CAUTION: 將 ESD 腕帶的束帶端繞在手腕上、並將扣具端點固定在
 
 
 
+[[reinstall-sg100-or-sg1000-appliance-cover]]
 == 重新安裝 SG100 或 SG1000 設備護蓋
 
 完成內部硬體維護後、請重新安裝產品護蓋。

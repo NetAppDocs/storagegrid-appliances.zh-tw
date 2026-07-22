@@ -11,6 +11,7 @@ image:../media/drw_s2025_cover_replace_ieops-2559.svg["解鎖並卸下應用裝�
 
 
 
+[[step-2-reinstall-cover]]
 == 步驟 2：重新安裝護蓋
 
 .步驟

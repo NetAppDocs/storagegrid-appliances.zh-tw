@@ -59,6 +59,7 @@ CAUTION: 清除KMS組態會刪除應用裝置中的資料、使其永遠無法�
 
 
 
+[[clear-key-management-server-configuration]]
 == 清除金鑰管理伺服器組態
 
 清除金鑰管理伺服器（KMS）組態會停用設備上的節點加密。清除KMS組態之後、您設備上的資料將永久刪除、無法再存取。此資料無法恢復。

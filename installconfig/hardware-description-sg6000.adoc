@@ -17,6 +17,7 @@ summary: 《SESSG6060與SG60X應用裝置：StorageGRID 運算控制器與儲存
 
 
 
+[[sg6060-and-sg6060x-components]]
 == SG6060與SG6060X元件
 
 SG6060 和 SG6060X 設備包括下列元件：
@@ -64,12 +65,14 @@ E 系列 DE460C 機櫃是 4U 機櫃、包括：
 
 
 
+[[sg6060-and-sg6060x-diagrams]]
 == SG6060 和 SG6060X 圖表
 
 SG6060 和 SG6060X 的正面完全相同。
 
 
 
+[[sg6060-or-sg6060x-front-view]]
 === SG6060 或 SG6060X 正面視圖
 
 此圖顯示 SG6060 或 SG6060X 的正面、其中包括 1U 運算控制器、以及包含兩個儲存控制器和 60 個磁碟機的 4U 機櫃、位於五個磁碟機抽屜中。
@@ -143,6 +146,7 @@ image::../media/q2023_rear_leds.png[後置 LED SG6000-CN]
 |===
 
 
+[[sg6060-rear-view]]
 === SG6060 後視圖
 
 此圖顯示SG6060的背面、包括運算與儲存控制器、風扇和電源供應器。
@@ -190,6 +194,7 @@ E2860控制器機櫃的電源供應器（圖1）
 |===
 
 
+[[sg6060x-rear-view]]
 === SGXX 後視圖
 
 此圖顯示 SG6060X 的背面。
@@ -237,6 +242,7 @@ E2860控制器機櫃的電源供應器（圖1）
 |===
 
 
+[[expansion-shelf]]
 === 擴充機櫃
 
 此圖顯示SG6060和SG6060X選用擴充櫃的背面、包括輸入/輸出模組（IOM）、風扇和電源供應器。每個SG6060都可以安裝一個或兩個擴充櫃、這些擴充櫃可在初始安裝中隨附、或是稍後新增。
@@ -270,12 +276,14 @@ image::../media/de460c_expansion_shelf_rear_view.gif[擴充櫃後方]
 |===
 
 
+[[sg6000-controllers]]
 == SG6000 控制器
 
 根據機型而定、每種機型StorageGRID 的《SESSG6000應用》裝置都包含一個1U機箱中的SG6000-CN-CN-Compute Controller、以及2U或4U機箱中的雙工E系列儲存控制器。檢閱圖表以深入瞭解每種控制器類型。
 
 
 
+[[sg6000-cn-compute-controller]]
 === SG6000-CN 運算控制器
 
 * 提供應用裝置的運算資源。
@@ -374,6 +382,7 @@ BMC管理連接埠
 |===
 
 
+[[sgf6024-ef570-storage-controllers]]
 === SGF6024 ： EF570 儲存控制器
 
 * 兩個控制器可支援容錯移轉。
@@ -447,6 +456,7 @@ SG6000-CN 控制器有四個連線（每個 EF570 有兩個連線）。
 |===
 
 
+[[sg6060-and-sg6060x-e2800-storage-controllers]]
 === SG6060 和 SG6060X ： E2800 儲存控制器
 
 * 兩個控制器可支援容錯移轉。
@@ -632,6 +642,7 @@ SG6000-CN 控制器有四個連線（每個 E2800B 有兩個連線）。
 |===
 
 
+[[sg6060-and-sg6060x-ioms-for-optional-expansion-shelves]]
 === SG6060 和 SG6060X ：適用於選購擴充機櫃的 IOM
 
 擴充櫃包含兩個輸入/輸出模組（IOM）、可連接至儲存控制器或其他擴充櫃。

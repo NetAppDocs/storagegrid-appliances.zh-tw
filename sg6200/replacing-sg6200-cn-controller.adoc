@@ -83,6 +83,9 @@ CAUTION: 為避免效能降低、請勿在纜線上扭轉、摺疊、夾住或�
 +
 ... 若要還原 BMC 組態以使用靜態 IP 、網路遮罩和閘道、請輸入下列命令：
 +
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
 `*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
 
 +

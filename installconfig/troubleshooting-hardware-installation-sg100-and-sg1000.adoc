@@ -15,6 +15,8 @@ summary: 如果在安裝期間遇到問題、您可能會發現檢閱與硬體�
 
 
 
+[[view-boot-up-codes]]
+[[view-boot-codes]]
 == 檢視開機代碼
 
 當您為應用裝置供電時、BMC會記錄一系列開機代碼。您可以在連接至BMC管理連接埠的圖形化主控台上檢視這些代碼。
@@ -179,6 +181,7 @@ HA
 
 
 
+[[view-error-codes]]
 == 檢視錯誤代碼
 
 如果設備開機時發生硬體錯誤、BMC會記錄錯誤代碼。視需要、您可以使用 BMC 介面或應用裝置序列連接埠來檢視這些錯誤代碼、然後與技術支援人員合作解決問題。
@@ -575,6 +578,8 @@ MRC：ERR_Interlet_ferress
 
 
 
+[[hardware-setup-appears-to-hang]]
+[[hardware-setup-hangs]]
 == 硬體設定似乎當機
 
 如果硬體故障或纜線錯誤導致應用裝置無法完成開機處理、則可能無法使用《支援產品安裝程式」StorageGRID 。
@@ -586,6 +591,7 @@ MRC：ERR_Interlet_ferress
 
 
 
+[[connection-issues]]
 == 連線問題
 
 如果您無法連線至服務應用裝置、可能是網路問題、或是硬體安裝可能未成功完成。

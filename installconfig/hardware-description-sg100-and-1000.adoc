@@ -2,7 +2,7 @@
 permalink: installconfig/hardware-description-sg100-and-1000.html 
 sidebar: sidebar 
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, overview, models, features, applications, how to use, services 
-summary: 功能完善的SG100服務應用裝置和SG1000服務應用裝置可做為閘道節點和管理節點、在一個不穩定的系統中提供高可用度負載平衡服務。StorageGRID StorageGRID這兩種應用裝置可同時做為閘道節點和管理節點（主要或非主要）。 
+summary: 功能完善的SG100服務應用裝置和SG1000服務應用裝置可做為閘道節點和管理節點、在一個不穩定的系統中提供高可用度負載平衡服務。StorageGRID StorageGRID這兩種設備可同時做為閘道節點和管理節點（主要或非主要）運作。 
 ---
 = StorageGRID SG100 和 SG1000 應用裝置
 :allow-uri-read: 
@@ -15,6 +15,7 @@ summary: 功能完善的SG100服務應用裝置和SG1000服務應用裝置可做
 
 
 
+[[appliance-features]]
 == 應用裝置功能
 
 服務應用裝置的兩種機型都提供下列功能：
@@ -33,6 +34,7 @@ summary: 功能完善的SG100服務應用裝置和SG1000服務應用裝置可做
 
 
 
+[[sg100-and-sg1000-diagrams]]
 == SG100和SG1000圖表
 
 此圖顯示SG100和SG1000的正面、並已卸下擋板。從正面來說、除了擋板上的產品名稱之外、這兩種產品完全相同。
@@ -78,6 +80,7 @@ image::../media/q2023_rear_leds.png[後置 LED SG100 和 SG1000]
 |===
 
 
+[[sg100-connectors]]
 == SG100 連接器
 
 此圖顯示SG100背面的連接器。
@@ -153,6 +156,7 @@ BMC管理連接埠
 |===
 
 
+[[sg1000-connectors]]
 == SG1000 連接器
 
 此圖顯示 SG1000 背面的連接器。
@@ -228,6 +232,7 @@ BMC管理連接埠
 |===
 
 
+[[sg100-and-sg1000-applications]]
 == SG100與SG1000應用程式
 
 您可以StorageGRID 透過多種方式設定支援服務應用裝置、以提供閘道服務、以及某些網格管理服務的備援功能。

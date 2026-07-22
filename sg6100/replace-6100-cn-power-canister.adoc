@@ -34,6 +34,7 @@ summary: 更換60個磁碟機控制器磁碟櫃或磁碟機磁碟櫃、其中包
 
 
 
+[[step-1-prepare-to-replace-power-canister]]
 == 步驟1：準備更換電力箱
 
 準備更換60個磁碟機控制器櫃或磁碟機櫃中的電力箱。
@@ -80,6 +81,7 @@ NOTE: 您也可以在Recovery Guru的「詳細資料」區域中、找到故障�
 
 
 
+[[step-2-remove-failed-power-canister]]
 == 步驟2：移除故障的電力箱
 
 移除故障的電力容器、以便更換為新的電源容器。
@@ -102,6 +104,7 @@ CAUTION: 移除電力容器時、請務必用兩隻手支撐其重量。
 
 
 
+[[step-3-install-new-power-canister]]
 == 步驟3：安裝新的動力箱
 
 安裝新的電力容器以更換故障的電源箱。
@@ -120,6 +123,7 @@ CAUTION: 將動力箱滑入系統時、請勿過度施力、否則可能會損�
 
 
 
+[[step-4-complete-power-canister-replacement]]
 == 步驟4：完整更換電力箱
 
 確認新的電力容器運作正常、收集支援資料、並恢復正常作業。

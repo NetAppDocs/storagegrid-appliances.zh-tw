@@ -15,10 +15,12 @@ summary: 為應用裝置加電後、您可以設定 StorageGRID 將使用的網�
 
 
 
+[[required-hardware-configurations]]
 == 必要的硬體組態
 
 
 
+[[network-connections]]
 === 網路連線
 
 您必須設定並驗證所有應用裝置所需的網路連線：
@@ -30,6 +32,7 @@ summary: 為應用裝置加電後、您可以設定 StorageGRID 將使用的網�
 
 
 
+[[bmc-interface]]
 === BMC 介面
 
 如果您要安裝以下任何一種應用裝置，則必須link:../installconfig/configuring-bmc-interface.html["設定基板管理控制器 (BMC) 介面"]：
@@ -54,10 +57,12 @@ summary: 為應用裝置加電後、您可以設定 StorageGRID 將使用的網�
 
 
 
+[[optional-hardware-configurations]]
 == 選用硬體組態
 
 
 
+[[santricity-system-manager]]
 === 系統管理程式SANtricity
 
 如果您擁有以下應用裝置之一，即可link:../installconfig/accessing-and-configuring-santricity-system-manager.html["設定 SANtricity System Manager"]：
@@ -81,12 +86,14 @@ SANtricity System Manager 軟體可讓您執行以下操作：
 
 
 
+[[enable-node-or-drive-encryption]]
 === 啟用節點或磁碟機加密
 
 您可以 link:../installconfig/optional-enabling-node-encryption.html["啟用節點或磁碟機加密"] 採取措施保護應用裝置中的磁碟機和磁碟。
 
 
 
+[[change-raid-mode]]
 === 更改 RAID 模式
 
 您可以 link:../installconfig/optional-changing-raid-mode.html["變更儲存設備的 RAID 模式"] 以滿足您的儲存與還原需求。
@@ -103,6 +110,7 @@ SANtricity System Manager 軟體可讓您執行以下操作：
 
 
 
+[[remap-network-ports]]
 === 重新對應網路連接埠
 
 您可以 link:../installconfig/optional-remapping-network-ports-for-appliance.html["重新映射應用裝置上的網路連接埠"] 優化網路連線。
