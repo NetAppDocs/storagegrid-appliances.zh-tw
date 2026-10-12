@@ -67,7 +67,7 @@ NOTE: 請勿仰賴 E 系列指示來更換 StorageGRID 應用裝置中的控制�
 [[step-2-take-the-controller-offline]]
 == 步驟 2 ：將控制器離線
 
-準備移除故障控制器、並將其離線。您可以使用 SANtricity 系統管理員來執行這些步驟。
+準備移除故障控制器並將其離線。您可以使用 SANtricity System Manager 來執行這些步驟。
 
 .步驟
 . 確認故障控制器的更換零件編號與更換控制器的FRU零件編號相同。

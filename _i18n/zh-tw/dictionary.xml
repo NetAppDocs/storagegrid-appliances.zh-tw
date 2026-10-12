@@ -3460,7 +3460,6 @@
   <block id="ac4aec48ca363c61bde0b90a6357d2e0" category="list-text">打開新控制器的包裝、將其放置在無靜態的平面上。</block>
   <block id="71e69069470b78afcfd4256b5538ddde" category="paragraph">保存包裝材料、以便在運送故障控制器時使用。</block>
   <block id="e5a03effd8c40e9251d96a430d99a606" category="list-text">在更換的控制器背面找到MAC位址和FRU零件編號標籤。</block>
-  <block id="e8eb7bc58567e1c605a82158f0f62428" category="list-text">準備移除控制器。您可以使用SANtricity 「系統管理程式」來執行這些步驟。</block>
   <block id="270d6e2086af600326a1899c14eefca1" category="list-text">確認故障控制器的更換零件編號與更換控制器的FRU零件編號相同。</block>
   <block id="3a3cd7aeaa367cf5f0aa0b6e9c59f5d6" category="paragraph">當控制器發生故障且需要更換時、替換零件編號會顯示在Recovery Guru的「Details（詳細資料）」區域中。如果您需要手動尋找此號碼、可以在控制器的*基礎*索引標籤上查看。</block>
   <block id="96f2b7281e6f62383360de5bc3626f95" category="admonition">* 資料存取可能中斷及 #8212 ； * 如果兩個零件編號不同、請勿嘗試此程序。</block>
@@ -3734,7 +3733,6 @@
   <block id="b2f9b08b9c77fd0d4c43b02ecac55483" category="paragraph">安裝替換控制器、並確認其已重新加入網格。</block>
   <block id="2afc7927e5f45cc2a3ef83b60ea186cd" category="list-text">開啟控制器機櫃電源。</block>
   <block id="944f002f126d9f60a7abfb7abb8b19a6" category="section-title">步驟 1 ：準備更換控制器</block>
-  <block id="7dc8820948fbd0653bf70cd43dd02d4c" category="paragraph">準備移除故障控制器、並將其離線。</block>
   <block id="eb10eb07d3a38a1d82d1975eb3a3c409" category="list-text">如果您更換的應用裝置已啟用 SED 磁碟機的硬碟機加密、則您必須 <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> 可在第一次啓動更換設備時訪問加密的驅動器。</block>
   <block id="b01853030b7f0a28704ab7f8c1c35ee8" category="list-text">如果您更換的應用裝置已啟用 SED 磁碟機的磁碟機加密、則您必須 <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> 可在第一次啓動更換設備時訪問加密的驅動器。</block>
   <block id="f98925abc6cb4377ae64ff1ac4820659" category="paragraph">如果故障控制器包含主機介面卡（HIC）、請將HIC從故障控制器移至更換控制器。</block>
@@ -4792,7 +4790,6 @@
   <block id="4172e18c4b5f5ded61ea837b6d174a70" category="paragraph">如果 E4000 控制器無法以最佳方式運作或故障、您可能需要更換它。</block>
   <block id="58bdf6822075a4522e563db052cfb6b5" category="list-text">Grid Manager 警示會指出儲存控制器故障狀況、而 SANtricity 系統管理員中的 Grid Manager 或 Recovery Guru 會引導您更換控制器。</block>
   <block id="6699424a5a659b766310c519be0f253d" category="paragraph">準備更換 E4000 控制器。</block>
-  <block id="360f56d807bee32cc6fcc9d9bfb9b6f5" category="paragraph">準備移除故障控制器、並將其離線。您可以使用 SANtricity 系統管理員來執行這些步驟。</block>
   <block id="fe4869120ffec76b394daa282d99bd5b" category="paragraph">移除控制器容器。</block>
   <block id="1a2315b8628ae30414325b0eac31bb35" category="paragraph">從受損的控制器中取出電池、必要時將其安裝在替換控制器中。</block>
   <block id="29f964bec5ac520e4a2bd92eb3884f71" category="list-text">將電池移至更換的控制器圓筒並安裝：</block>
@@ -5568,7 +5565,6 @@
   <block id="9cb2effa5447f497640162f9043211b9" category="section-title">用戶端網路無需 IP 位址即可配置</block>
   <block id="9b21fb91c113bca08c0dafc981fbde3c" category="paragraph">現在您可以啟用客戶端網路而無需指定 IP 位址。這允許客戶端網路在StorageGRID中配置 VLAN 接口，而無需為接口本身提供額外的 IP 位址。請參閱<block ref="eed0824756b778339518fbc737f79ca8" category="inline-link-macro-rx"></block> 。</block>
   <block id="35fbd63802091eabd711a8d6c290ea7e" category="section-title">StorageGRID軟體和 Appliance Installer 的版本號碼已對齊</block>
-  <block id="07df4015289344b98ba5f422f4375357" category="paragraph">對於 StorgeGRID 版本 12.0， StorageGRID Appliance Installer 的版本號碼與StorageGRID軟體的版本相符。使用者不再需要弄清楚哪些版本可以一起使用。請參閱<block ref="d2475d6316f915c8f13cbc6042a2740a" category="inline-link-macro-rx"></block> 。</block>
   <block id="cc40ed7be5c299ae5a8b275911b0f977" category="paragraph">有關使用StorageGRID設備BMC介面的詳細資訊現已提供。請參閱<block ref="df528c7928eba5c1226970c2705dfb3a" category="inline-link-macro-rx"></block> 。</block>
   <block id="7fb4dbe99c9c5f63516376b6bf611317" category="sidebar">StorageGRID 12.0 文檔</block>
   <block id="ca92eb1bedb20765e52302f985f5f837" category="sidebar">升級驅動器韌體（自動重新啟動方式）</block>
@@ -6599,4 +6595,8 @@
   <block id="04d321322c8bed5ea3ecf52d0cc925ff" category="paragraph">前往<block ref="96bdbd25d3882b5d0b14b10ec28bb02d" category="inline-link-rx"></block>了解如何設定和使用 StorageGRID 12.1 系統。</block>
   <block id="db37c78d5faa7061d7b5039209b440c1" category="list-text"><block ref="db37c78d5faa7061d7b5039209b440c1" category="inline-link-rx"></block></block>
   <block id="d70a1ab70742f2af598f9acb795fc0f2" category="sidebar">StorageGRID 12.1 文件</block>
+  <block id="773b50832a8313c20ea7f7ec3cb3c5e4" category="paragraph">準備移除故障控制器並將其離線。您可以使用 SANtricity System Manager 來執行這些步驟。</block>
+  <block id="5e4e9f34966ee54cc6cc4af50cd4835c" category="paragraph">如果 E4000 控制器運作不佳或發生故障，您可能需要更換它。</block>
+  <block id="d23e59635824c5cc5d1b8b63a31f939f" category="paragraph">準備移除故障控制器並將其離線。您可以使用 SANtricity System Manager 來執行這些步驟。</block>
+  <block id="46d7056058f07da95a8d94d297493eb9" category="paragraph">從 StorageGRID 12.0 版本開始，StorageGRID 設備安裝程式的版本號碼與 StorageGRID 軟體的版本號碼一致。使用者不再需要自行判斷哪些版本可以相容。請參閱 <block ref="d2475d6316f915c8f13cbc6042a2740a" category="inline-link-macro-rx"></block>。</block>
 </blocks>
